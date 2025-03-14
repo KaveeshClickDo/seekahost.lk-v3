@@ -19,3 +19,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-montserrat);
 }
+
+.slick-next::before {
+  color: #155dfc !important;
+  font-size: 30px;
+}
+
+.slick-prev::before {
+  color: #155dfc !important;
+  font-size: 30px;
+}

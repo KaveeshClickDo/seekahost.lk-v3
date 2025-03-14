@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function PackagesPrices() {
-
     const [isMonthly, setIsMonthly] = useState(true);
 
     const pricing = [
@@ -73,11 +72,11 @@ export default function PackagesPrices() {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 670,
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '15px',
+                    centerPadding: '6px',
                 },
             },
         ],
@@ -92,7 +91,7 @@ export default function PackagesPrices() {
             className="py-12 bg-cover bg-center"
             style={{ backgroundImage: "url('/package-banner.svg')" }}
         >
-            <div className="max-w-7xl mx-auto px-4 text-center">
+            <div className="max-w-7xl mx-auto px-7 text-center">
                 <h3 className="text-blue-600">PBN Manager</h3>
                 <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
@@ -102,13 +101,10 @@ export default function PackagesPrices() {
                         SeekaHost
                     </span>
                 </h2>
-
-
                 <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
                     Protect your beloved with our comprehensive fulfillment and
                     credible insurance coverage you can rely on.
                 </p>
-
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
                         className={`cursor-pointer font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
@@ -141,11 +137,10 @@ export default function PackagesPrices() {
                         Yearly
                     </span>
                 </div>
-
                 <Slider {...settings}>
                     {pricing.map((plan, idx) => (
                         <div key={idx} className="px-2">
-                            <div className="group border rounded-lg p-6 transition duration-600 hover:shadow-lg bg-blue-50 border-blue-500 hover:bg-gradient-to-r hover:from-[#103040] hover:to-[#0A437F] hover:border-blue-950">
+                            <div className="group border rounded-lg p-6 transition duration-600 hover:shadow-lg bg-white border-blue-500 hover:bg-gradient-to-r hover:from-[#103040] hover:to-[#0A437F] hover:border-blue-950">
                                 <h3 className="text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
                                 <div className="flex items-baseline justify-center my-4">
                                     <span className="text-4xl font-bold text-blue-600 mr-1 group-hover:text-white">
