@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,8 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function PackagesPrices() {
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
-
-    // Handle hydration mismatch by only rendering the slider on the client
+    
     useEffect(() => {
         setIsClient(true);
     }, []);
