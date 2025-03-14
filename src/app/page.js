@@ -6,9 +6,9 @@ import Solution from "@/components/Solution";
 export default function Home() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
-      <Carousel /> */}
+      <Carousel />
       <Solution />
     </>
 

@@ -6,7 +6,7 @@ const Solution = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center mb-12">
-          <h1 className="inline-block bg-blue-100 text-blue-600 text-sm px-3 py-1 rounded-full mb-4">Our Solution</h1>
+          <h1 className="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mb-4">Our Solutions</h1>
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
             SeekaHost – 1 Click Solution for Hosting
           </h2>
