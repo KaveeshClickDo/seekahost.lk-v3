@@ -1,13 +1,18 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function PackagesPrices() {
     const [isMonthly, setIsMonthly] = useState(true);
+    const [isClient, setIsClient] = useState(false);
+
+    // Handle hydration mismatch by only rendering the slider on the client
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     const pricing = [
         {
@@ -55,7 +60,6 @@ export default function PackagesPrices() {
     const settings = {
         dots: false,
         infinite: false,
-        arrow: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -92,7 +96,7 @@ export default function PackagesPrices() {
             style={{ backgroundImage: "url('/package-banner.svg')" }}
         >
             <div className="max-w-7xl mx-auto px-7 text-center">
-                <h3 className="text-blue-600">PBN Manager</h3>
+                <h1 className="text-blue-600">PBN Manager</h1>
                 <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
                     <br className="hidden md:block" />
@@ -137,48 +141,68 @@ export default function PackagesPrices() {
                         Yearly
                     </span>
                 </div>
-                <Slider {...settings}>
-                    {pricing.map((plan, idx) => (
-                        <div key={idx} className="px-2">
-                            <div className="group border rounded-lg p-6 transition duration-600 hover:shadow-lg bg-white border-blue-500 hover:bg-gradient-to-r hover:from-[#103040] hover:to-[#0A437F] hover:border-blue-950">
-                                <h3 className="text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
-                                <div className="flex items-baseline justify-center my-4">
-                                    <span className="text-4xl font-bold text-blue-600 mr-1 group-hover:text-white">
-                                        ${isMonthly ? plan.monthlyPrice.toFixed(2) : plan.yearlyPrice.toFixed(2)}
-                                    </span>
-                                    <span className="text-gray-500 group-hover:text-white">
-                                        / {isMonthly ? 'mo' : 'yr'}
-                                    </span>
+                
+                {/* Only render slider content when client-side */}
+                <div className="min-h-[420px]">
+                    {isClient ? (
+                        <Slider {...settings}>
+                            {pricing.map((plan, idx) => (
+                                <div key={idx} className="px-2">
+                                    <div className="group border rounded-lg p-6 h-full transition duration-600 hover:shadow-lg bg-white border-blue-500 hover:bg-gradient-to-r hover:from-[#103040] hover:to-[#0A437F] hover:border-blue-950">
+                                        <h3 className="text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
+                                        <div className="flex items-baseline justify-center my-4">
+                                            <span className="text-4xl font-bold text-blue-600 mr-1 group-hover:text-white">
+                                                ${isMonthly ? plan.monthlyPrice.toFixed(2) : plan.yearlyPrice.toFixed(2)}
+                                            </span>
+                                            <span className="text-gray-500 group-hover:text-white">
+                                                / {isMonthly ? 'mo' : 'yr'}
+                                            </span>
+                                        </div>
+                                        <ul className="text-left mb-6 space-y-2 group-hover:text-white">
+                                            {plan.features.map((feature, fIdx) => (
+                                                <li key={fIdx} className="flex items-center">
+                                                    <svg
+                                                        className="w-4 h-4 text-blue-600 mr-2 group-hover:text-white"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        viewBox="0 0 24 24"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            d="M5 13l4 4L19 7"
+                                                        />
+                                                    </svg>
+                                                    {feature}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <button
+                                            className="w-full py-2 rounded text-white font-semibold transition bg-blue-600 group-hover:bg-white group-hover:text-blue-600"
+                                        >
+                                            Get This Plan
+                                        </button>
+                                    </div>
                                 </div>
-                                <ul className="text-left mb-6 space-y-2 group-hover:text-white">
-                                    {plan.features.map((feature, fIdx) => (
-                                        <li key={fIdx} className="flex items-center">
-                                            <svg
-                                                className="w-4 h-4 text-blue-600 mr-2 group-hover:text-white"
-                                                fill="none"
-                                                stroke="currentColor"
-                                                strokeWidth="2"
-                                                viewBox="0 0 24 24"
-                                            >
-                                                <path
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    d="M5 13l4 4L19 7"
-                                                />
-                                            </svg>
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <button
-                                    className="w-full py-2 rounded text-white font-semibold transition bg-blue-600 group-hover:bg-white group-hover:text-blue-600"
-                                >
-                                    Get This Plan
-                                </button>
+                            ))}
+                        </Slider>
+                    ) : (
+                        <div className="flex justify-center gap-4">
+                            {pricing.slice(0, 3).map((plan, idx) => (
+                                <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
+                                    <div className="border rounded-lg p-6 h-full bg-white border-blue-500">
+                                        <div className="h-64"></div>
+                                    </div>
+                                </div>
+                            ))}
+                            <div className="w-full md:hidden">
+                                <div className="border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm"></div>
                             </div>
                         </div>
-                    ))}
-                </Slider>
+                    )}
+                </div>
             </div>
         </section>
     );

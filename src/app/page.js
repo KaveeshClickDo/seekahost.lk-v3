@@ -5,8 +5,8 @@ import Carousel from "@/components/Carousel";
 export default function Home() {
   return (
     <>
-      {/* <Navbar />
-      <Hero /> */}
+      <Navbar />
+      <Hero />
       <Carousel />
     </>
 
