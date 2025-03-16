@@ -7,10 +7,10 @@ import Video from "@/components/Video";
 export default function Home() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <Carousel />
-      <Solution /> */}
+      <Solution />
       <Video />
     </>
 
