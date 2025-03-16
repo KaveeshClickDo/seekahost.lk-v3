@@ -4,16 +4,18 @@ import Carousel from "@/components/Carousel";
 import Solution from "@/components/Solution";
 import Video from "@/components/Video";
 import Reviews from "@/components/Review";
+import FAQs from "@/components/FAQ";
 
 export default function Home() {
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       <Hero />
       <Carousel />
       <Solution />
-      <Video /> */}
+      <Video />
       <Reviews />
+      <FAQs />
     </>
 
   );
