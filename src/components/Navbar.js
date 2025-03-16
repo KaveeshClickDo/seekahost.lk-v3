@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Navbar = () => {
+export default function Navbar () {
     const [isFixed, setIsFixed] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
@@ -38,12 +38,15 @@ const Navbar = () => {
                 Register Domain
             </Link>
             <div className="relative group hover:text-blue-500">
-                <Link href="#" className="flex items-center font-medium transition-all duration-300 focus:outline-none">
+                <button
+                    type="button"
+                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer"
+                >
                     Web Hosting
                     <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
-                </Link>
+                </button>
                 <div className="absolute left-0 w-56 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block z-10">
                     <Link href="https://www.seekahost.lk/wordpress-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-lg hover:text-blue-500 transition-all duration-300">
                         WordPress Web Hosting
@@ -124,7 +127,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                     href="/get-started"
-                    className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"  onClick={() => setMobileMenuOpen(false)}
+                    className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition" onClick={() => setMobileMenuOpen(false)}
                 >
                     Get Started
                 </Link>
@@ -174,6 +177,4 @@ const Navbar = () => {
             </nav>
         </>
     );
-};
-
-export default Navbar;
+}

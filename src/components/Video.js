@@ -14,7 +14,7 @@ export default function Video() {
         // Optional: Add responsive sizes
         // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
+        <div className="relative z-1 max-w-7xl mx-auto px-4">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-4xl font-bold text-white"><span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Why SeekaHost</span></h2>
             <p className="mt-4 text-white max-w-xl mx-auto">
@@ -132,7 +132,7 @@ export default function Video() {
       >
 
 
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
 
           <div className="md:w-1/2 mb-8 md:mb-0 md:pl-30 text-white">
             <p className="text-sm font-medium mb-2">Important For Transactions</p>

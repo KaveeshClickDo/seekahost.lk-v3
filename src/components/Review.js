@@ -1,7 +1,7 @@
 import { FaStar } from 'react-icons/fa'
 import Image from 'next/image'
 
-const Reviews = () => {
+export default function Reviews () {
     return (
         <section className="bg-blue-50 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 flex flex-col md:flex-row items-center">
@@ -109,5 +109,3 @@ const Reviews = () => {
         </section>
     )
 }
-
-export default Reviews
