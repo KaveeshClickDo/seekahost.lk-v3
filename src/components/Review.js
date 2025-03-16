@@ -15,7 +15,7 @@ const Reviews = () => {
                         <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Words of Trust
                         </p>
-                        <p className="mt-4 max-w-md text-lg text-gray-500">
+                        <p className="mt-4 max-w-md text-lg text-gray-600">
                             Over 18,000 companies of all sizes use Advantage to streamline their business marketing
                         </p>
                     </div>
@@ -46,7 +46,7 @@ const Reviews = () => {
                                 </div>
                             </div>
                             <p className="text-gray-600">
-                                “Advantage's unified platform has boosted our sales and marketing performance remarkably.”
+                                “Advantage&apos;s unified platform has boosted our sales and marketing performance remarkably.”
                             </p>
                         </div>
 
@@ -100,7 +100,7 @@ const Reviews = () => {
                                 </div>
                             </div>
                             <p className="text-gray-600">
-                                “We scaled our start-up significantly, all thanks to Advantage's robust tools.”
+                                “We scaled our start-up significantly, all thanks to Advantage&apos;s robust tools.”
                             </p>
                         </div>
                     </div>
