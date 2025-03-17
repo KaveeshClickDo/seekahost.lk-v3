@@ -54,8 +54,8 @@ export default function Hero () {
                     <Image
                         src="/hero-videoimage.webp"
                         alt="Hero Image"
-                        width={786}
-                        height={645}
+                        width={512}
+                        height={420}
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />
