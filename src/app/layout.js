@@ -7,7 +7,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'Web Hosting Sri Lanka: Best Website Hosting Services | SeekaHost',
+  title: {
+    default: 'Web Hosting Sri Lanka: Best Website Hosting Services | SeekaHost',
+    template: '%s | SeekaHost'
+  },
   description: 'Sri Lanka Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support Lanka Host!',
 };
 
