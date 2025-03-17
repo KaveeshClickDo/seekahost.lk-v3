@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Hero () {
     return (
-        <section className="relative h-[600px] w-full flex items-center overflow-hidden">
+        <section className="relative md:h-[600px] w-full flex items-center overflow-hidden">
             <div className="absolute inset-0 md:w-[72%] h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
-            <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center mt-10 md:mt:0">
 
 
                 <div className="text-white w-full max-w-2xl z-1">
@@ -50,7 +50,7 @@ export default function Hero () {
 
                 </div>
 
-                <div className="hidden md:block relative w-full max-w-lg z-1 justify-end ml-auto">
+                <div className="relative w-full max-w-lg z-1 justify-end ml-auto mt-8 md:mt-0">
                     <Image
                         src="/hero-videoimage.webp"
                         alt="Hero Image"

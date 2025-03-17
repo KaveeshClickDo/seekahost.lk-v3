@@ -34,6 +34,7 @@ body {
   overflow: hidden !important;
 } */
 
+ /* If you need smooth carousel hide below style */
 .slick-slide:not(.slick-active) {
   visibility: hidden !important;
   pointer-events: none !important;
