@@ -4,6 +4,10 @@ import Timeline from "./Timeline";
 import Reviews from "@/components/Review";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+    title: "About"
+}
+
 export default function about() {
     return (
         <>
