@@ -31,7 +31,7 @@ export default function Navbar () {
             <Link href="/" className="hover:text-blue-500 font-medium transition-all duration-300">
                 Home
             </Link>
-            <Link href="https://www.seekahost.lk/about-us/" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/about`} className="hover:text-blue-500 font-medium transition-all duration-300">
                 About
             </Link>
             <Link href="https://www.seekahost.lk/register-domain/" className="hover:text-blue-500 font-medium transition-all duration-300">
@@ -83,7 +83,7 @@ export default function Navbar () {
                 <Link href="/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     Home
                 </Link>
-                <Link href="https://www.seekahost.lk/about-us/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/about`} className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     About
                 </Link>
                 <Link href="https://www.seekahost.lk/register-domain/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
