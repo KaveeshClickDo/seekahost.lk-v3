@@ -29,3 +29,12 @@ body {
   color: #155dfc !important;
   font-size: 30px;
 }
+
+/* .slick-list {
+  overflow: hidden !important;
+} */
+
+.slick-slide:not(.slick-active) {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function PackagesPrices() {
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
-    
+
     useEffect(() => {
         setIsClient(true);
     }, []);
@@ -36,8 +36,8 @@ export default function PackagesPrices() {
         },
         {
             title: 'Premium Package',
-            monthlyPrice: 29,
-            yearlyPrice: 290,
+            monthlyPrice: 79,
+            yearlyPrice: 790,
             features: [
                 'Comprehensive Coverage',
                 '24/7 Customer Support',
@@ -46,8 +46,8 @@ export default function PackagesPrices() {
         },
         {
             title: 'Super Package',
-            monthlyPrice: 29,
-            yearlyPrice: 290,
+            monthlyPrice: 99,
+            yearlyPrice: 990,
             features: [
                 'Comprehensive Coverage',
                 '24/7 Customer Support',
@@ -65,6 +65,8 @@ export default function PackagesPrices() {
         initialSlide: 0,
         centerMode: false,
         centerPadding: "0",
+        cssEase: 'ease',
+        accessibility: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -140,7 +142,7 @@ export default function PackagesPrices() {
                         Yearly
                     </span>
                 </div>
-                
+
                 <div className="min-h-[420px]">
                     {isClient ? (
                         <Slider {...settings}>
