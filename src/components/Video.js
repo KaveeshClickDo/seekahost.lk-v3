@@ -11,8 +11,6 @@ export default function Video() {
           priority
           className="object-cover z-0"
           sizes="100vw"
-        // Optional: Add responsive sizes
-        // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="relative z-1 max-w-7xl mx-auto px-4">
           <div className="text-center mb-8">

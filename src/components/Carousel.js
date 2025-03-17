@@ -141,7 +141,6 @@ export default function PackagesPrices() {
                     </span>
                 </div>
                 
-                {/* Only render slider content when client-side */}
                 <div className="min-h-[420px]">
                     {isClient ? (
                         <Slider {...settings}>

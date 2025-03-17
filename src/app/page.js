@@ -5,6 +5,7 @@ import Solution from "@/components/Solution";
 import Video from "@/components/Video";
 import Reviews from "@/components/Review";
 import FAQs from "@/components/FAQ";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Video />
       <Reviews />
       <FAQs />
+      <Footer />
     </>
 
   );
