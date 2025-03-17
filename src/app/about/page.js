@@ -13,7 +13,7 @@ export default function about() {
 
                 <div className="md:w-1/2 px-5">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                        Sri Lanka's Best Web Host <br /> For Entrepreneurs & Business Owners
+                        Sri Lanka&rsquo;s Best Web Host <br /> For Entrepreneurs & Business Owners
                     </h2>
                     <p className="text-gray-700 mb-4">
                         “SeekaHost is far more than a hosting company with powerful hosting services and web solutions...
@@ -21,7 +21,7 @@ export default function about() {
                     </p>
                     <p className="text-gray-700 mb-4">
                         We love our customers...or “SeekaHosters” as we call them, and we are always looking to delight...
-                        that’s why we love to connect likeminded people and companies.
+                        that&rsquo;s why we love to connect likeminded people and companies.
                     </p>
                     <p className="text-gray-700">
                         We are a company run by Entrepreneurs, who drive entrepreneurial spirit and we love to help create, inspire
@@ -38,6 +38,7 @@ export default function about() {
                             width={552}
                             height={0}
                             className="rounded-3xl w-full h-auto"
+                            priority
                         />
                     </div>
 
@@ -50,6 +51,7 @@ export default function about() {
                                 width={268}
                                 height={0}
                                 className="rounded-3xl w-full h-auto"
+                                priority
                             />
                         </div>
                         <div className="w-full md:w-1/2 relative">
@@ -59,6 +61,7 @@ export default function about() {
                                 width={268}
                                 height={0}
                                 className="rounded-3xl w-full h-auto"
+                                priority
                             />
                         </div>
                     </div>
@@ -87,7 +90,7 @@ export default function about() {
                             We have strong partnerships with the best web service providers in the world to assist you with the latest technological advances and guarantee 99.9% uptime for your website. Because we believe in our promise, we offer a full 45-day money-back guarantee to all our customers.
                         </p>
                         <p className="text-white mb-4">
-                            If you’re new to web hosting and running an online presence, we will be there for you 24/7 with our technical support. We use Sofaculous, which gives you instant access to the most popular applications for website management, blogging, e-commerce, and more. You will find the set-up and management of your domain very smooth and easy and your shiny new website will be live in no time.
+                            If you&rsquo;re new to web hosting and running an online presence, we will be there for you 24/7 with our technical support. We use Sofaculous, which gives you instant access to the most popular applications for website management, blogging, e-commerce, and more. You will find the set-up and management of your domain very smooth and easy and your shiny new website will be live in no time.
                         </p>
                         <p className="text-white">
                             For website migration transfers, we have the latest tools and expertise to assist you to manage and optimize your online presence.
@@ -99,8 +102,8 @@ export default function about() {
                         <Image
                             src="/what-we-offer.webp"
                             alt="Persons using laptop"
-                            width={754}
-                            height={600}
+                            width={552}
+                            height={0}
                             className="rounded-md"
                         />
                     </div>
@@ -120,7 +123,7 @@ export default function about() {
                 <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center">
 
                     <div className="md:w-1/2 mb-8 md:mb-0 md:pl-5 text-white">
-                        <h1 className="inline-block bg-[#CCE5FF] text-[#1276DF] text-sm px-3 py-2 rounded-full mb-4">Our Vision</h1>
+                        <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm px-3 py-2 rounded-full mb-4">Our Vision</h1>
                         <h2 className="text-xl md:text-2xl mb-6 leading-snug">
                             Our Vision is to be the best web hosting service in the world and go beyond our customer expectations with SMART web hosting services at affordable prices..
                         </h2>
@@ -181,8 +184,8 @@ export default function about() {
                         <Image
                             src="/our-vision.webp"
                             alt="Persons using laptop"
-                            width={754}
-                            height={600}
+                            width={552}
+                            height={0}
                             className="rounded-md"
                         />
                     </div>
@@ -237,7 +240,7 @@ export default function about() {
                                     Cutting-Edge Server Technology
                                 </h3>
                                 <p className="text-gray-600">
-                                    Whether it's WordPress hosting or scalable cloud solutions, our advanced infrastructure ensures performance, security, and flexibility to support your business growth.
+                                    Whether it&rsquo;s WordPress hosting or scalable cloud solutions, our advanced infrastructure ensures performance, security, and flexibility to support your business growth.
                                 </p>
                             </div>
                         </div>
@@ -251,7 +254,7 @@ export default function about() {
                                     Smart Tools for Digital Success
                                 </h3>
                                 <p className="text-gray-600">
-                                    Leverage our SEO, online marketing, and visibility solutions to enhance your brand's reach, connect with customers, and stay ahead in the digital landscape.
+                                    Leverage our SEO, online marketing, and visibility solutions to enhance your brand&rsquo;s reach, connect with customers, and stay ahead in the digital landscape.
                                 </p>
                             </div>
                         </div>
