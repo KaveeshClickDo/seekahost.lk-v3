@@ -75,7 +75,7 @@ export default function PackagesPrices() {
                 },
             },
             {
-                breakpoint: 670,
+                breakpoint: 693,
                 settings: {
                     slidesToShow: 1,
                     centerMode: true,
@@ -94,7 +94,7 @@ export default function PackagesPrices() {
             className="py-12 bg-cover bg-center"
             style={{ backgroundImage: "url('/package-banner.svg')" }}
         >
-            <div className="max-w-7xl mx-auto px-7 text-center">
+            <div className="max-w-5xl mx-auto px-7 text-center">
                 <h1 className="text-blue-600">PBN Manager</h1>
                 <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
