@@ -26,7 +26,7 @@ export default function Solution () {
               </div>
               <div className="ml-4">
                 <Image
-                  src="ddos-protected.svg"
+                  src="/images/home/ddos-protected.svg"
                   alt="DDOS Protected"
                   width={100}
                   height={100}
@@ -46,7 +46,7 @@ export default function Solution () {
               </div>
               <div className="ml-4">
                 <Image
-                  src="instant-setup.svg"
+                  src="/images/home/instant-setup.svg"
                   alt="Instant Setup"
                   width={100}
                   height={100}
@@ -66,7 +66,7 @@ export default function Solution () {
               </div>
               <div className="ml-4">
                 <Image
-                  src="24-7-live-support.svg"
+                  src="/images/home/24-7-live-support.svg"
                   alt="24/7 Live Support"
                   width={100}
                   height={100}
@@ -86,7 +86,7 @@ export default function Solution () {
               </div>
               <div className="ml-4">
                 <Image
-                  src="guaranteed-uptime.svg"
+                  src="/images/home/guaranteed-uptime.svg"
                   alt="Guaranteed Uptime"
                   width={100}
                   height={100}
@@ -106,7 +106,7 @@ export default function Solution () {
               </div>
               <div className="ml-4">
                 <Image
-                  src="blog-management.svg"
+                  src="/images/home/blog-management.svg"
                   alt="Blog Management"
                   width={100}
                   height={100}
@@ -126,7 +126,7 @@ export default function Solution () {
               </div>
               <div className="ml-4">
                 <Image
-                  src="periodic-malware-scanner.svg"
+                  src="/images/home/periodic-malware-scanner.svg"
                   alt="Periodic Malware Scanner"
                   width={100}
                   height={100}

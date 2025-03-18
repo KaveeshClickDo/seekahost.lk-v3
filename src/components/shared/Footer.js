@@ -33,7 +33,7 @@ export default function Footer() {
 
           <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
             <Image
-              src="/phone-mockup.webp"
+              src="/images/shared/phone-mockup.webp"
               alt="Phone Mockup"
               width={292}
               height={369}
@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="container mx-auto lg:px-32 px-5">
           <div className="mb-8">
             <div className="mb-4">
-              <Image src="/footer-logo.webp" alt="SeekaHost" width={147} height={62} />
+              <Image src="/images/shared/footer-logo.webp" alt="SeekaHost" width={147} height={62} />
             </div>
             <hr className="border-gray-700 w-full" />
           </div>

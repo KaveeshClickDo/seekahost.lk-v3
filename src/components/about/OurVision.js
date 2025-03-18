@@ -4,7 +4,7 @@ export default function OurVision() {
         <section
             className="relative w-full bg-no-repeat bg-cover py-16"
             style={{
-                backgroundImage: "linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/middle-banner.svg')"
+                backgroundImage: "linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/images/shared/middle-banner.svg')"
             }}
         >
 
@@ -71,7 +71,7 @@ export default function OurVision() {
 
                 <div className="md:w-1/2 relative flex justify-center items-center">
                     <Image
-                        src="/our-vision.webp"
+                        src="/images/about/our-vision.webp"
                         alt="Persons using laptop"
                         width={552}
                         height={439}

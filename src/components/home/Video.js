@@ -5,7 +5,7 @@ export default function Video() {
     <>
       <section className="py-12 relative">
         <Image
-          src="/bg.svg"
+          src="/images/home/bg.svg"
           alt="Background"
           fill
           priority
@@ -23,7 +23,7 @@ export default function Video() {
 
           <div className="relative max-w-2xl mx-auto rounded-xl overflow-hidden shadow-xl border-4 border-white">
             <Image
-              src="/video-thumb.webp"
+              src="/images/home/video-thumb.webp"
               alt="Woman holding phone"
               width={700}
               height={399}
@@ -60,7 +60,7 @@ export default function Video() {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/learning.svg" width={40} height={40} alt="Lifelong Learning" />
+                  <Image src="/images/home/learning.svg" width={40} height={40} alt="Lifelong Learning" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Lifelong Learning</h3>
@@ -72,7 +72,7 @@ export default function Video() {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/education.svg" width={40} height={40} alt="Quality Education" />
+                  <Image src="/images/home/education.svg" width={40} height={40} alt="Quality Education" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Quality Education</h3>
@@ -84,7 +84,7 @@ export default function Video() {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/inclusivity.svg" width={40} height={40} alt="Inclusivity" />
+                  <Image src="/images/home/inclusivity.svg" width={40} height={40} alt="Inclusivity" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Inclusivity</h3>
@@ -96,7 +96,7 @@ export default function Video() {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/empowerment.svg" width={40} height={40} alt="Empowerment" />
+                  <Image src="/images/home/empowerment.svg" width={40} height={40} alt="Empowerment" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">Empowerment</h3>
@@ -111,7 +111,7 @@ export default function Video() {
           <div className="w-full md:w-1/3">
             <div className="flex justify-center">
               <Image
-                src="/woman-laptop.webp"
+                src="/images/home/woman-laptop.webp"
                 alt="Woman using laptop"
                 width={416}
                 height={539}
@@ -125,7 +125,7 @@ export default function Video() {
       <section
         className="relative w-full bg-no-repeat bg-cover py-16"
         style={{
-          backgroundImage: "linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/middle-banner.svg')"
+          backgroundImage: "linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/images/shared/middle-banner.svg')"
         }}
       >
 
@@ -140,15 +140,15 @@ export default function Video() {
             </h2>
             <ul className="space-y-2">
               <li className="flex items-start">
-                <span className="mr-2"><Image src="/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
+                <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
                 Money can be exchanged very easily
               </li>
               <li className="flex items-start">
-                <span className="mr-2"><Image src="/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
+                <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
                 Bills can be safely paid anywhere at any time
               </li>
               <li className="flex items-start">
-                <span className="mr-2"><Image src="/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
+                <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
                 Work quickly, saving your important time
               </li>
             </ul>
@@ -157,7 +157,7 @@ export default function Video() {
 
           <div className="md:w-1/2 relative flex justify-center items-center">
             <Image
-              src="/buynsell.webp"
+              src="/images/home/buynsell.webp"
               alt="Person using laptop"
               width={754}
               height={600}

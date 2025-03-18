@@ -27,7 +27,7 @@ export default function Reviews () {
                             <div className="flex items-center justify-between mb-4">
                                 <div className="flex items-center">
                                     <Image
-                                        src="/profile1.webp"
+                                        src="/images/shared/profile1.webp"
                                         alt="Karen Smith"
                                         width={48}
                                         height={48}
@@ -55,7 +55,7 @@ export default function Reviews () {
                             <div className="flex items-center justify-between mb-4">
                                 <div className="flex items-center">
                                     <Image
-                                        src="/profile2.webp"
+                                        src="/images/shared/profile2.webp"
                                         alt="Damian Doe"
                                         width={48}
                                         height={48}
@@ -82,7 +82,7 @@ export default function Reviews () {
                             <div className="flex items-center justify-between mb-4">
                                 <div className="flex items-center">
                                     <Image
-                                        src="/profile3.webp"
+                                        src="/images/shared/profile3.webp"
                                         alt="Alice Johnson"
                                         width={48}
                                         height={48}

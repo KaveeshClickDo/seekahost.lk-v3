@@ -27,7 +27,7 @@ export default function Hero () {
                     {/* Top larger image */}
                     <div className="w-full relative">
                         <Image
-                            src="/about-hero1.webp"
+                            src="/images/about/about-hero1.webp"
                             alt="People collaborating around a table"
                             width={552}
                             height={210}
@@ -40,7 +40,7 @@ export default function Hero () {
                     <div className="flex flex-row gap-4">
                         <div className="w-full md:w-1/2 relative">
                             <Image
-                                src="/about-hero2.webp"
+                                src="/images/about/about-hero2.webp"
                                 alt="Three people looking at laptop"
                                 width={268}
                                 height={211}
@@ -50,7 +50,7 @@ export default function Hero () {
                         </div>
                         <div className="w-full md:w-1/2 relative">
                             <Image
-                                src="/about-hero3.webp"
+                                src="/images/about/about-hero3.webp"
                                 alt="Two people looking at laptop"
                                 width={268}
                                 height={211}

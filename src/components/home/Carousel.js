@@ -94,7 +94,7 @@ export default function PackagesPrices() {
     return (
         <section
             className="py-12 bg-cover bg-center"
-            style={{ backgroundImage: "url('/package-banner.svg')" }}
+            style={{ backgroundImage: "url('/images/home/package-banner.svg')" }}
         >
             <div className="max-w-5xl mx-auto px-7 text-center">
                 <h1 className="text-blue-600">PBN Manager</h1>

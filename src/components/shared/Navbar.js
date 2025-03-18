@@ -154,7 +154,7 @@ export default function Navbar () {
     const NavbarContent = () => (
         <div className="container flex items-center justify-between md:pl-20">
             <Link href="/" className="text-2xl font-bold">
-                <Image src="/navbar-logo.webp" alt="SeekaHost" width={133} height={62} priority />
+                <Image src="/images/shared/navbar-logo.webp" alt="SeekaHost" width={133} height={62} priority />
             </Link>
             <DesktopMenu />
             <MobileHamburger />

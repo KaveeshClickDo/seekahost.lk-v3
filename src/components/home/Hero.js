@@ -52,7 +52,7 @@ export default function Hero () {
 
                 <div className="relative w-full max-w-lg z-1 justify-end ml-auto mt-8 md:mt-0">
                     <Image
-                        src="/hero-videoimage.webp"
+                        src="/images/home/hero-videoimage.webp"
                         alt="Hero Image"
                         width={512}
                         height={420}
