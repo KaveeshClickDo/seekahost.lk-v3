@@ -1,11 +1,11 @@
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import Carousel from "@/components/Carousel";
-import Solution from "@/components/Solution";
-import Video from "@/components/Video";
-import Reviews from "@/components/Review";
-import FAQs from "@/components/FAQ";
-import Footer from "@/components/Footer";
+import Hero from "@/components/home/Hero";
+import Navbar from "@/components/shared/Navbar";
+import Carousel from "@/components/home/Carousel";
+import Solution from "@/components/home/Solution";
+import Video from "@/components/home/Video";
+import Reviews from "@/components/shared/Review";
+import FAQs from "@/components/home/FAQ";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
