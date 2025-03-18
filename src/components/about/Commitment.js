@@ -7,9 +7,9 @@ export default function Commitment() {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-8">
-                    {/* Card 1 */}
+
                     <div className="bg-white rounded-2xl p-6 shadow-md relative overflow-hidden">
-                        {/* Blue corner accent */}
+
                         <div className="absolute top-0 left-0 w-4 h-full bg-[#1276DF]"></div>
                         <div className="ml-2">
                             <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -21,9 +21,9 @@ export default function Commitment() {
                         </div>
                     </div>
 
-                    {/* Card 2 */}
+
                     <div className="bg-white rounded-2xl p-6 shadow-md relative overflow-hidden">
-                        {/* Blue corner accent */}
+
                         <div className="absolute top-0 left-0 w-4 h-full bg-[#1276DF]"></div>
                         <div className="ml-2">
                             <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -35,9 +35,9 @@ export default function Commitment() {
                         </div>
                     </div>
 
-                    {/* Card 3 */}
+
                     <div className="bg-white rounded-2xl p-6 shadow-md relative overflow-hidden">
-                        {/* Blue corner accent */}
+
                         <div className="absolute top-0 left-0 w-4 h-full bg-[#1276DF]"></div>
                         <div className="ml-2">
                             <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -49,9 +49,9 @@ export default function Commitment() {
                         </div>
                     </div>
 
-                    {/* Card 4 */}
+
                     <div className="bg-white rounded-2xl p-6 shadow-md relative overflow-hidden">
-                        {/* Blue corner accent */}
+
                         <div className="absolute top-0 left-0 w-4 h-full bg-[#1276DF]"></div>
                         <div className="ml-2">
                             <h3 className="text-xl font-semibold text-gray-800 mb-3">

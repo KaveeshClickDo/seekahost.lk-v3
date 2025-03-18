@@ -24,7 +24,7 @@ export default function Hero () {
                 </div>
 
                 <div className="md:w-1/2 mt-6 md:mt-0 gap-4 grid">
-                    {/* Top larger image */}
+
                     <div className="w-full relative">
                         <Image
                             src="/images/about/about-hero1.webp"
@@ -36,7 +36,7 @@ export default function Hero () {
                         />
                     </div>
 
-                    {/* Bottom two images in a row */}
+
                     <div className="flex flex-row gap-4">
                         <div className="w-full md:w-1/2 relative">
                             <Image
