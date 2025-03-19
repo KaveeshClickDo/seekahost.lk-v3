@@ -8,7 +8,7 @@ import OurVision from "@/components/about/OurVision";
 import Commitment from "@/components/about/Commitment";
 
 export const metadata = {
-    title: "About"
+    title: "About-Us"
 }
 
 export default function about() {

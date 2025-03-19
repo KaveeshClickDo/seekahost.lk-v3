@@ -62,7 +62,7 @@ export default function Navbar () {
             <Link href="https://www.seekahost.lk/blog/" className="hover:text-blue-500 font-medium transition-all duration-300">
                 Blog
             </Link>
-            <Link href="https://www.seekahost.lk/contact-us/" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/contact" className="hover:text-blue-500 font-medium transition-all duration-300">
                 Contact Us
             </Link>
             <Link
@@ -83,7 +83,7 @@ export default function Navbar () {
                 <Link href="/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     Home
                 </Link>
-                <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/about`} className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/about" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     About
                 </Link>
                 <Link href="https://www.seekahost.lk/register-domain/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
@@ -122,7 +122,7 @@ export default function Navbar () {
                 <Link href="https://www.seekahost.lk/blog/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     Blog
                 </Link>
-                <Link href="https://www.seekahost.lk/contact-us/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     Contact Us
                 </Link>
                 <Link
