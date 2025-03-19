@@ -1,5 +1,5 @@
 import Image from "next/image"
-export default function Hero () {
+export default function Hero() {
     return (
         <>
             <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
@@ -10,8 +10,11 @@ export default function Hero () {
                         Sri Lanka&rsquo;s Best Web Host <br /> For Entrepreneurs & Business Owners
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                    Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
+                        Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
                     </p>
+                    <button className="bg-white text-[#0081FF] border border-[#0081FF] px-6 py-2 rounded-full hover:bg-[#0081FF] hover:text-white transition-colors">
+                        Talk With our Sales Team
+                    </button>
                 </div>
 
                 <div className="md:w-1/2 mt-6 md:mt-0 gap-4 grid">
