@@ -122,13 +122,14 @@ export default function Video() {
         </div>
       </section>
 
-      <section
-        className="relative w-full bg-no-repeat bg-cover py-16"
-        style={{
-          backgroundImage: "linear-gradient(rgba(30, 58, 138, 0.6), rgba(30, 58, 138, 0.6)), url('/images/shared/middle-banner.svg')"
-        }}
-      >
-
+      <section className="relative w-full py-16">
+        <Image
+          src="/images/shared/middle-banner.svg"
+          alt="Background Image"
+          fill
+          className="object-cover z-0"
+          priority
+        />
 
         <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
 

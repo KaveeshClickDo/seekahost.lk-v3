@@ -1,10 +1,17 @@
 import { FaStar } from 'react-icons/fa'
 import Image from 'next/image'
 
-export default function Reviews () {
+export default function Reviews() {
     return (
-        <section className="bg-blue-50 py-12">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 flex flex-col md:flex-row items-center">
+        <section className="relative w-full py-12">
+            <Image
+                src="\images\shared\review-banner.svg"
+                alt="Background Image"
+                fill
+                className="object-cover z-0"
+                priority
+            />
+            <div className="relative z-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-40 flex flex-col md:flex-row items-center">
 
                 <div className="md:flex md:items-center md:space-x-8">
 

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 export default function PackagesPrices() {
     const [isMonthly, setIsMonthly] = useState(true);
@@ -92,11 +93,15 @@ export default function PackagesPrices() {
     };
 
     return (
-        <section
-            className="py-12 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/home/package-banner.svg')" }}
-        >
-            <div className="max-w-5xl mx-auto px-7 text-center">
+        <section className="relative w-full py-12">
+            <Image
+                src="/images/home/package-banner.svg"
+                alt="Background Image"
+                fill
+                className="object-cover z-0"
+                priority
+            />
+            <div className="relative z-1 max-w-5xl mx-auto px-7 text-center">
                 <h1 className="text-blue-600">PBN Manager</h1>
                 <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
