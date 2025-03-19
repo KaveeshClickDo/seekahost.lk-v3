@@ -1,3 +1,5 @@
+import Hero from "@/components/contact/Hero"
+import Navbar from "@/components/shared/Navbar"
 
 export const metadata = {
     title: "Contact-Us"
@@ -5,6 +7,9 @@ export const metadata = {
 
 export default function contact () {
     return (
-        <h1>this is contact us page</h1>
+        <>
+        <Navbar />
+        <Hero />
+        </>
     )
 }

@@ -12,7 +12,7 @@ export default function Hero() {
                     <p className="text-[#1D216A] mb-4">
                         Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
                     </p>
-                    <button className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors">
+                    <button className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer">
                         Talk With our Sales Team
                     </button>
                 </div>
