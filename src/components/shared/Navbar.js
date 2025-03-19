@@ -31,7 +31,7 @@ export default function Navbar () {
             <Link href="/" className="hover:text-blue-500 font-medium transition-all duration-300">
                 Home
             </Link>
-            <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/about`} className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/about" className="hover:text-blue-500 font-medium transition-all duration-300">
                 About
             </Link>
             <Link href="https://www.seekahost.lk/register-domain/" className="hover:text-blue-500 font-medium transition-all duration-300">
