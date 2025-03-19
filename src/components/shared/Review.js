@@ -5,7 +5,7 @@ export default function Reviews() {
     return (
         <section className="relative w-full py-12">
             <Image
-                src="\images\shared\review-banner.svg"
+                src="/images/shared/review-banner.svg"
                 alt="Background Image"
                 fill
                 className="object-cover z-0"
