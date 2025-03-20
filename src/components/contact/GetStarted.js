@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
+import { MdArrowForward } from "react-icons/md";
+
 export default function GetStarted() {
     return (
         <section className="relative w-full py-16">
@@ -8,7 +10,7 @@ export default function GetStarted() {
                 <div className="md:w-1/2 mb-8 md:mb-0 md:pl-16 pl-6 text-white">
                     <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm px-3 py-2 rounded-full mb-4">Lorem ipsum dolor</h1>
                     <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-snug text-black">
-                    Lorem ipsum dolor et, consectetur
+                        Lorem ipsum dolor et, consectetur
                     </h2>
                     <ul className="space-y-2 mb-8">
                         <li className="flex items-start text-xl text-gray-700">
@@ -36,10 +38,17 @@ export default function GetStarted() {
                             Lorem ipsum dolor et, consectetur
                         </li>
                     </ul>
-                    <button className="bg-[#0066CC] text-white text-xl border border-[#0066CC] px-6 py-4 rounded-full hover:bg-white hover:text-[#0066CC] transition-colors">
-                        Get Started
-                    </button>
-                    <Link href="#" className="text-black text-xl px-10">Learn More ➡</Link>
+                    <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                        <button className="bg-blue-600 text-white text-base sm:text-lg md:text-xl w-full sm:w-auto border border-blue-600 px-4 sm:px-5 md:px-6 py-3 md:py-4 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-300 font-medium">
+                            Get Started
+                        </button>
+                        <Link
+                            href="#"
+                            className="flex items-center justify-center text-black text-base sm:text-lg md:text-xl hover:text-blue-600 transition-colors gap-1 sm:gap-2 py-2"
+                        >
+                            Learn More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                        </Link>
+                    </div>
                 </div>
 
 
