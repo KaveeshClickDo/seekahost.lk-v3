@@ -6,7 +6,7 @@ import Footer from "@/components/shared/Footer"
 import Navbar from "@/components/shared/Navbar"
 
 export const metadata = {
-    title: "Contact-Us"
+    title: "Contact Us"
 }
 
 export default function contact () {
