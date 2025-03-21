@@ -6,8 +6,17 @@ import Footer from "@/components/shared/Footer"
 import Navbar from "@/components/shared/Navbar"
 
 export const metadata = {
-    title: "Contact Us"
+    title: "Contact Us",
+    description: "Hai this is testing description",
 }
+
+// export async function generateMetadata({ params }){
+//     const newTitle = params;
+
+//     return {
+//         title: newTitle
+//     };
+// }
 
 export default function contact () {
     return (

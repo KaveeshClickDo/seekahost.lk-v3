@@ -78,7 +78,7 @@ export const siteSchema = {
     ]
   };
   
-  // You can export individual schemas if needed
+
   export const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
