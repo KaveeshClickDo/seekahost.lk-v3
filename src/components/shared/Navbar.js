@@ -34,7 +34,7 @@ export default function Navbar () {
             <Link href="/about" className="hover:text-blue-500 font-medium transition-all duration-300">
                 About
             </Link>
-            <Link href="https://www.seekahost.lk/register-domain/" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/register-domain" className="hover:text-blue-500 font-medium transition-all duration-300">
                 Register Domain
             </Link>
             <div className="relative group hover:text-blue-500">
@@ -86,7 +86,7 @@ export default function Navbar () {
                 <Link href="/about" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     About
                 </Link>
-                <Link href="https://www.seekahost.lk/register-domain/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/register-domain" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                     Register Domain
                 </Link>
                 <div>

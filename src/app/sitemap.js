@@ -18,5 +18,11 @@ export default function sitemap() {
         changeFrequency: 'yearly',
         priority: 1,
       },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/register-domain`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
     ]
   }
