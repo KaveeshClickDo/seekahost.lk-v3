@@ -6,10 +6,19 @@ import Video from "@/components/home/Video";
 import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/home/FAQ";
 import Footer from "@/components/shared/Footer";
+import Script from "next/script";
+import { siteSchema } from "./schema";
+
 
 export default function Home() {
   return (
     <>
+      <Script
+        id="schema-org-graph"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+      />
       <Navbar />
       <Hero />
       <Carousel />
