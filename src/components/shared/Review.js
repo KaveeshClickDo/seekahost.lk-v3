@@ -78,7 +78,7 @@ export default function Reviews() {
                                     </div>
                                 </div>
                                 <p className="text-gray-600">
-                                    "{reviewer.comment}"
+                                    {reviewer.comment}
                                 </p>
                             </div>
                         ))}
