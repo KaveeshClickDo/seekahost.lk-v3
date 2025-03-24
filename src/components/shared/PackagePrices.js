@@ -101,7 +101,7 @@ export default function PackagesPrices() {
                 className="object-cover z-0"
                 priority
             />
-            <div className="relative z-1 max-w-5xl mx-auto px-7 text-center">
+            <div className="relative z-1 max-w-7xl mx-auto px-7 text-center">
                 <h1 className="text-blue-600">PBN Manager</h1>
                 <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices

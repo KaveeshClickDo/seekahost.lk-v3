@@ -4,8 +4,8 @@ export default function WhySeekahost () {
     return (
         <>
         <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12 justify-center">
-          <div className="w-full md:w-1/3">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-15 justify-center">
+          <div className="w-full md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Why SeekaHost
             </h2>
@@ -61,8 +61,8 @@ export default function WhySeekahost () {
             </div>
           </div>
 
-          <div className="w-full md:w-1/3">
-            <div className="flex justify-center">
+          <div className="w-full md:w-1/2">
+            <div className="flex justify-center md:justify-end">
               <Image
                 src="/images/home/woman-laptop.webp"
                 alt="Woman using laptop"
@@ -84,9 +84,9 @@ export default function WhySeekahost () {
           priority
         />
 
-        <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        <div className="relative z-1 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
 
-          <div className="md:w-1/2 mb-8 md:mb-0 md:pl-30 text-white">
+          <div className="md:w-1/2 mb-8 md:mb-0 text-white">
             <p className="text-sm font-medium mb-2">Important For Transactions</p>
             <h2 className="text-2xl md:text-3xl mb-6 leading-snug">
               Useful for facilitating transactions<span className='font-semibold'> between <br />
@@ -109,12 +109,12 @@ export default function WhySeekahost () {
           </div>
 
 
-          <div className="md:w-1/2 relative flex justify-center items-center">
+          <div className="md:w-1/2 relative flex justify-center md:justify-end items-center">
             <Image
               src="/images/home/buynsell.webp"
               alt="Person using laptop"
-              width={754}
-              height={600}
+              width={560}
+              height={446}
               className="rounded-md"
             />
           </div>
