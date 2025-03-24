@@ -152,7 +152,7 @@ export default function Navbar () {
     );
 
     const NavbarContent = () => (
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto flex items-center justify-between md:pl-20">
             <Link href="/" className="text-2xl font-bold">
                 <Image src="/images/shared/navbar-logo.webp" alt="SeekaHost" width={133} height={62} priority />
             </Link>
