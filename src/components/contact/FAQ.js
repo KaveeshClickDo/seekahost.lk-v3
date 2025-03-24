@@ -1,11 +1,9 @@
 'use client';
 
-// FAQ.js
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 
 export default function FAQ() {
-  // FAQ data array - replace with your actual FAQ content
   const faqData = [
     {
       id: "faq-1",
@@ -39,15 +37,15 @@ export default function FAQ() {
     }
   ];
 
-  // Single state to track which FAQ item is open
+  const leftColumnFAQs = faqData.filter((_, index) => index % 2 === 0);
+  const rightColumnFAQs = faqData.filter((_, index) => index % 2 === 1);
+
   const [openItemId, setOpenItemId] = useState(null);
 
-  // Toggle function for a specific FAQ item
   const toggleFAQ = (id) => {
     setOpenItemId(openItemId === id ? null : id);
   };
 
-  // FAQ Item component with smooth transitions
   const FAQItem = ({ item }) => {
     const isOpen = openItemId === item.id;
     const contentRef = useRef(null);
@@ -114,20 +112,17 @@ export default function FAQ() {
           </div>
         </div>
 
-        {/* FAQ container with fixed columns */}
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:gap-4 px-6 md:px-10">
-          {/* Left column */}
           <div className="md:w-1/2 flex flex-col">
-            <FAQItem item={faqData[0]} />
-            <FAQItem item={faqData[2]} />
-            <FAQItem item={faqData[4]} />
+            {leftColumnFAQs.map(faq => (
+              <FAQItem key={faq.id} item={faq} />
+            ))}
           </div>
 
-          {/* Right column */}
           <div className="md:w-1/2 flex flex-col">
-            <FAQItem item={faqData[1]} />
-            <FAQItem item={faqData[3]} />
-            <FAQItem item={faqData[5]} />
+            {rightColumnFAQs.map(faq => (
+              <FAQItem key={faq.id} item={faq} />
+            ))}
           </div>
         </div>
       </div>
