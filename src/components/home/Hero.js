@@ -10,7 +10,7 @@ export default function Hero () {
 
                 <div className="text-white w-full max-w-2xl z-1">
                     <h1 className="text-xl md:text-5xl font-bold leading-tight">
-                        World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
+                        World&rsquo;s Best Multiple IP <br /> PBN Hosting Managers
                     </h1>
 
                     <p className="mt-4 text-lg opacity-90">
