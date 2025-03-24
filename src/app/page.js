@@ -1,6 +1,6 @@
 import Hero from "@/components/home/Hero";
 import Navbar from "@/components/shared/Navbar";
-import Carousel from "@/components/shared/Carousel";
+import PackagePrices from "@/components/shared/PackagePrices";
 import Solution from "@/components/home/Solution";
 import Video from "@/components/shared/Video";
 import Reviews from "@/components/shared/Review";
@@ -22,7 +22,7 @@ export default function Home() {
       />
       <Navbar />
       <Hero />
-      <Carousel />
+      <PackagePrices />
       <Solution />
       <Video />
       <WhySeekahost />
