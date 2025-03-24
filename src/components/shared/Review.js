@@ -2,7 +2,7 @@ import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function Reviews() {
-    // Array of reviewers data
+
     const reviewers = [
         {
             id: 1,
