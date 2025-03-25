@@ -1,4 +1,4 @@
-import Solution from "@/components/home/Solution";
+import Solution from "@/components/shared/Solution";
 import Video from "@/components/shared/Video";
 import Hero from "@/components/register-domain/Hero";
 import OrderNow from "@/components/register-domain/OrderNow";

@@ -17,12 +17,12 @@ export default function Hero () {
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
-                    <div className="mt-6 flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-lg">
+                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full max-w-lg">
                         <input
                             id="searchDomain"
                             type="text"
                             placeholder="Search for a domain..."
-                            className="flex-grow outline-none text-black px-2"
+                            className="flex-grow outline-none text-black"
                         />
                         <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
                             Search
