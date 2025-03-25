@@ -45,10 +45,10 @@ export default function Reviews() {
                         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">
                             Customer Reviews
                         </h2>
-                        <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        <p className="mt-2 text-3xl leading-8 font-bold tracking-tight sm:text-4xl">
                             Words of Trust
                         </p>
-                        <p className="mt-4 max-w-md text-lg text-gray-600">
+                        <p className="mt-4 max-w-md text-lg md:text-xl text-gray-700 font-medium">
                             Over 18,000 companies of all sizes use Advantage to streamline their business marketing
                         </p>
                     </div>
@@ -66,8 +66,8 @@ export default function Reviews() {
                                             className="rounded-full mr-3 object-cover"
                                         />
                                         <div>
-                                            <h3 className="font-semibold text-gray-900">{reviewer.name}</h3>
-                                            <p className="text-sm text-gray-500">{reviewer.company}</p>
+                                            <h3 className="font-semibold md:text-xl">{reviewer.name}</h3>
+                                            <p className="md:text-lg text-gray-700">{reviewer.company}</p>
                                         </div>
                                     </div>
 
@@ -77,7 +77,7 @@ export default function Reviews() {
                                         ))}
                                     </div>
                                 </div>
-                                <p className="text-gray-600">
+                                <p className="md:text-xl text-gray-700 font-medium">
                                     {reviewer.comment}
                                 </p>
                             </div>

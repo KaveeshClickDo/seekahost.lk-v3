@@ -28,19 +28,19 @@ export default function Navbar () {
 
     const DesktopMenu = () => (
         <div className="hidden xl:flex items-center space-x-10 md:pr-15">
-            <Link href="/" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
                 Home
             </Link>
-            <Link href="/about" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/about" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
                 About
             </Link>
-            <Link href="/register-domain" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/register-domain" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
                 Register Domain
             </Link>
             <div className="relative group hover:text-blue-500">
                 <button
                     type="button"
-                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer"
+                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg"
                 >
                     Web Hosting
                     <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,15 +59,15 @@ export default function Navbar () {
                     </Link>
                 </div>
             </div>
-            <Link href="https://www.seekahost.lk/blog/" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="https://www.seekahost.lk/blog/" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
                 Blog
             </Link>
-            <Link href="/contact" className="hover:text-blue-500 font-medium transition-all duration-300">
+            <Link href="/contact" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
                 Contact Us
             </Link>
             <Link
                 href="#"
-                className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition"
+                className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition text-lg"
             >
                 Get Started
             </Link>
@@ -80,19 +80,19 @@ export default function Navbar () {
                 }`}
         >
             <div className="pt-2 pb-3 space-y-1">
-                <Link href="/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Home
                 </Link>
-                <Link href="/about" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/about" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     About
                 </Link>
-                <Link href="/register-domain" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/register-domain" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Register Domain
                 </Link>
                 <div>
                     <button
                         onClick={() => setWebHostingDropdownOpen(!webHostingDropdownOpen)}
-                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none" aria-expanded={webHostingDropdownOpen}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
                     >
                         Web Hosting
                         {webHostingDropdownOpen ? (
@@ -107,27 +107,27 @@ export default function Navbar () {
                     </button>
                     {webHostingDropdownOpen && (
                         <div className="pl-4">
-                            <Link href="https://www.seekahost.lk/wordpress-hosting/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="https://www.seekahost.lk/wordpress-hosting/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 WordPress Web Hosting
                             </Link>
-                            <Link href="https://www.seekahost.lk/business-web-hosting/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="https://www.seekahost.lk/business-web-hosting/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 Business Web Hosting
                             </Link>
-                            <Link href="https://www.seekahost.lk/cheap-web-hosting-with-cpanel/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="https://www.seekahost.lk/cheap-web-hosting-with-cpanel/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 Cheap cPanel Hosting
                             </Link>
                         </div>
                     )}
                 </div>
-                <Link href="https://www.seekahost.lk/blog/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="https://www.seekahost.lk/blog/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Blog
                 </Link>
-                <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Contact Us
                 </Link>
                 <Link
                     href="#"
-                    className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition" onClick={() => setMobileMenuOpen(false)}
+                    className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition text-lg font-medium" onClick={() => setMobileMenuOpen(false)}
                 >
                     Get Started
                 </Link>

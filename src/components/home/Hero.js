@@ -9,11 +9,11 @@ export default function Hero () {
 
 
                 <div className="text-white w-full max-w-2xl z-1">
-                    <h1 className="text-xl md:text-5xl font-bold leading-tight">
+                    <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
                     </h1>
 
-                    <p className="mt-4 text-lg opacity-90">
+                    <p className="mt-4 text-md md:text-xl opacity-90">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -24,7 +24,7 @@ export default function Hero () {
                             placeholder="Search for a domain..."
                             className="flex-grow outline-none text-black"
                         />
-                        <button className="bg-blue-600 text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-700 transition">
+                        <button className="bg-blue-600 text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-700 transition md:text-lg">
                             Search
                         </button>
                     </div>

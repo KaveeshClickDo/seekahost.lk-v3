@@ -6,7 +6,7 @@ export default function WhySeekahost () {
         <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-15 justify-center">
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Why SeekaHost
             </h2>
 
@@ -16,8 +16,8 @@ export default function WhySeekahost () {
                   <Image src="/images/home/learning.svg" width={40} height={40} alt="Lifelong Learning" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800">Lifelong Learning</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-lg md:text-2xl font-semibold">Lifelong Learning</h3>
+                  <p className="text-gray-700 md:text-xl font-medium">
                     We champion continuous growth and exploration, inspiring our learners to embrace learning as a lifelong journey.
                   </p>
                 </div>
@@ -28,8 +28,8 @@ export default function WhySeekahost () {
                   <Image src="/images/home/education.svg" width={40} height={40} alt="Quality Education" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800">Quality Education</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-lg md:text-2xl font-semibold">Quality Education</h3>
+                  <p className="text-gray-700 md:text-xl font-medium">
                     SkillNest delivers high-quality courses, curated by leading experts, ensuring an exceptional learning experience for all.
                   </p>
                 </div>
@@ -40,8 +40,8 @@ export default function WhySeekahost () {
                   <Image src="/images/home/inclusivity.svg" width={40} height={40} alt="Inclusivity" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800">Inclusivity</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-lg md:text-2xl font-semibold">Inclusivity</h3>
+                  <p className="text-gray-700 md:text-xl font-medium">
                     We welcome learners of all backgrounds and skill levels, fostering an inclusive and supportive online community.
                   </p>
                 </div>
@@ -52,8 +52,8 @@ export default function WhySeekahost () {
                   <Image src="/images/home/empowerment.svg" width={40} height={40} alt="Empowerment" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800">Empowerment</h3>
-                  <p className="text-gray-600">
+                  <h3 className="text-lg md:text-2xl font-semibold">Empowerment</h3>
+                  <p className="text-gray-700 md:text-xl font-medium">
                     Our platform is designed to empower learners, giving them the tools and knowledge to thrive in their personal and professional endeavors.
                   </p>
                 </div>
@@ -87,21 +87,21 @@ export default function WhySeekahost () {
         <div className="relative z-1 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
 
           <div className="md:w-1/2 mb-8 md:mb-0 text-white">
-            <p className="text-sm font-medium mb-2">Important For Transactions</p>
-            <h2 className="text-2xl md:text-3xl mb-6 leading-snug">
+            <p className="text-sm md:text-2xl font-medium mb-2">Important For Transactions</p>
+            <h2 className="text-2xl md:text-4xl mb-6 leading-snug">
               Useful for facilitating transactions<span className='font-semibold'> between <br />
                 <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">buyers &amp; sellers</span></span>
             </h2>
             <ul className="space-y-2">
-              <li className="flex items-start">
+              <li className="flex items-start md:text-xl">
                 <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
                 Money can be exchanged very easily
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start md:text-xl">
                 <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
                 Bills can be safely paid anywhere at any time
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start md:text-xl">
                 <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
                 Work quickly, saving your important time
               </li>

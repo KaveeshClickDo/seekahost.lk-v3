@@ -36,8 +36,8 @@ export default function FAQs() {
 
     return (
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-            <p className="inline-block bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-full mb-4">Frequently Asked Question</p>
-            <h2 className="text-center text-3xl font-semibold text-gray-900 mb-8">
+            <p className="inline-block bg-blue-100 text-blue-700 text-sm md:text-lg px-3 py-1 rounded-full mb-4">Frequently Asked Question</p>
+            <h2 className="text-center text-3xl md:text-5xl font-semibold mb-8">
                 Questions about our services
             </h2>
             <div className="space-y-4">
@@ -50,10 +50,10 @@ export default function FAQs() {
                             onClick={() => toggleFAQ(index)}
                             className="flex justify-between items-center w-full text-left cursor-pointer"
                         >
-                            <span className="text-lg font-medium text-gray-900">
+                            <span className="text-lg md:text-2xl font-medium">
                                 {item.question}
                             </span>
-                            <span className="text-2xl font-bold text-gray-900">
+                            <span className="text-2xl font-bold">
                                 {openIndex === index ? <FiMinus className="w-5 h-5" /> : <FiPlus className="w-5 h-5" />}
                             </span>
                         </button>
@@ -62,7 +62,7 @@ export default function FAQs() {
                                 }`}
                         >
                             <hr className="border-gray-300 my-2" />
-                            <p className="text-gray-600 mt-2">{item.answer}</p>
+                            <p className="text-gray-700 mt-2 md:text-xl font-medium">{item.answer}</p>
                         </div>
                     </div>
                 ))}

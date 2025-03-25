@@ -102,8 +102,8 @@ export default function PackagesPrices() {
                 priority
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center">
-                <h1 className="text-blue-600">PBN Manager</h1>
-                <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
+                <h1 className="text-blue-600 md:text-xl">PBN Manager</h1>
+                <h2 className="text-3xl md:text-5xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
                     <br className="hidden md:block" />
                     With{" "}
@@ -111,13 +111,13 @@ export default function PackagesPrices() {
                         SeekaHost
                     </span>
                 </h2>
-                <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                <p className="text-gray-700 mb-8 max-w-2xl mx-auto md:text-xl font-medium">
                     Protect your beloved with our comprehensive fulfillment and
                     credible insurance coverage you can rely on.
                 </p>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
-                        className={`cursor-pointer font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer  md:text-xl font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
                         onClick={() => setIsMonthly(true)}
                     >
                         Monthly
@@ -141,7 +141,7 @@ export default function PackagesPrices() {
                         />
                     </div>
                     <span
-                        className={`cursor-pointer font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer  md:text-xl font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
                         onClick={() => setIsMonthly(false)}
                     >
                         Yearly
@@ -154,20 +154,20 @@ export default function PackagesPrices() {
                             {pricing.map((plan, idx) => (
                                 <div key={idx} className="px-2">
                                     <div className="group border rounded-lg p-6 h-full transition duration-600 hover:shadow-lg bg-white border-blue-500 hover:bg-gradient-to-r hover:from-[#103040] hover:to-[#0A437F] hover:border-blue-950">
-                                        <h3 className="text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
+                                        <h3 className="text-xl md:text-2xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
                                         <div className="flex items-baseline justify-center my-4">
                                             <span className="text-4xl font-bold text-blue-600 mr-1 group-hover:text-white">
                                                 ${isMonthly ? plan.monthlyPrice.toFixed(2) : plan.yearlyPrice.toFixed(2)}
                                             </span>
-                                            <span className="text-gray-500 group-hover:text-white">
+                                            <span className="text-gray-500 group-hover:text-white md:text-xl font-medium">
                                                 / {isMonthly ? 'mo' : 'yr'}
                                             </span>
                                         </div>
-                                        <ul className="text-left mb-6 space-y-2 group-hover:text-white">
+                                        <ul className="text-left mb-6 space-y-2 group-hover:text-white md:text-xl font-medium">
                                             {plan.features.map((feature, fIdx) => (
                                                 <li key={fIdx} className="flex items-center">
                                                     <svg
-                                                        className="w-4 h-4 text-blue-600 mr-2 group-hover:text-white"
+                                                        className="w-5 h-5 text-blue-600 mr-2 group-hover:text-white"
                                                         fill="none"
                                                         stroke="currentColor"
                                                         strokeWidth="2"
@@ -185,7 +185,7 @@ export default function PackagesPrices() {
                                             ))}
                                         </ul>
                                         <button
-                                            className="w-full py-2 rounded text-white font-semibold transition bg-blue-600 group-hover:bg-white group-hover:text-blue-600"
+                                            className="w-full py-2 rounded text-white font-semibold transition bg-blue-600 group-hover:bg-white group-hover:text-blue-600 md:text-xl"
                                         >
                                             Get This Plan
                                         </button>

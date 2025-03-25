@@ -1,10 +1,15 @@
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Figtree } from 'next/font/google';
 import './globals.css';
 import { siteSchema } from './schema';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
+});
+
+const figtree = Figtree({
+  subsets: ['latin'],
+  variable: '--font-figtree',
 });
 
 export const metadata = {
@@ -26,7 +31,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
       </head>
-      <body className={`${montserrat.variable} antialiased`}>
+      <body className={`${montserrat.variable} ${figtree.variable} antialiased`}>
         {children}
       </body>
     </html>

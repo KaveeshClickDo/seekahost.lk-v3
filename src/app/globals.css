@@ -2,15 +2,17 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #092a44;
   --font-montserrat: 'Montserrat', sans-serif;
+  --font-figtree: 'Figtree', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #000000;
-    -font-montserrat: 'Montserrat', sans-serif;
+    --foreground: #092a44;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-figtree: 'Figtree', sans-serif;
   }
 }
 
@@ -19,6 +21,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-montserrat);
 }
+
+h1, h2 {
+  font-family: var(--font-figtree);
+}
+
 
 .slick-next::before {
   color: #155dfc !important;
