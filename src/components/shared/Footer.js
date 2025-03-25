@@ -25,7 +25,8 @@ export default function Footer() {
                 className="flex-grow outline-none text-black"
               />
               <button className="bg-blue-600 text-white px-4 lg:px-6 py-2 rounded-full hover:bg-blue-700 transition">
-                Sign Up Free
+                <span className="max-[400px]:hidden">Sign Up Free</span>
+                <span className="hidden max-[400px]:inline">Sign Up</span>
               </button>
             </div>
           </div>
