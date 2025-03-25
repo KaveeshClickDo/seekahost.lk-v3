@@ -11,7 +11,7 @@ export default function WhatWeOffer() {
             />
 
 
-            <div className="relative z-1 max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center">
+            <div className="relative z-1 max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center">
 
                 <div className="md:w-1/2 px-5">
                     <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">

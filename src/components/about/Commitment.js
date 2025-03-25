@@ -1,12 +1,12 @@
 export default function Commitment() {
     return (
         <section className="bg-gradient-to-r from-[#09407A] to-[#136CC9] py-16 px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <h2 className="text-white text-3xl md:text-4xl font-medium text-center mb-12">
                     Our Commitment to Your Digital Success
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-8 md:px-4">
 
                     <div className="bg-white rounded-2xl p-6 shadow-md relative overflow-hidden">
 
