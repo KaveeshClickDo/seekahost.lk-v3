@@ -1,5 +1,6 @@
 import { Montserrat } from 'next/font/google';
 import './globals.css';
+import { siteSchema } from './schema';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -17,6 +18,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+        />
+      </head>
       <body className={`${montserrat.variable} antialiased`}>
         {children}
       </body>
