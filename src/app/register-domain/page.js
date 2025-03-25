@@ -8,6 +8,10 @@ import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 
+export const metadata = {
+    title: "Register Domain"
+}
+
 export default function registerDomain(){
 
     return(
