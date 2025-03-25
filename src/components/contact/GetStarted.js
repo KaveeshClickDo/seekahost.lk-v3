@@ -5,9 +5,9 @@ import { MdArrowForward } from "react-icons/md";
 export default function GetStarted() {
     return (
         <section className="relative w-full py-16">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center">
+            <div className="max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center">
 
-                <div className="md:w-1/2 mb-8 md:mb-0 md:pl-16 pl-6 text-white">
+                <div className="md:w-1/2 mb-8 md:mb-0 text-white">
                     <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm px-3 py-2 rounded-full mb-4">Lorem ipsum dolor</h1>
                     <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-snug text-black">
                         Lorem ipsum dolor et, consectetur

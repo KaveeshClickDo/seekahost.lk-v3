@@ -112,7 +112,7 @@ export default function FAQ() {
           </div>
         </div>
 
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:gap-4 px-6 md:px-10">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:gap-4 px-6 md:px-10">
           <div className="md:w-1/2 flex flex-col">
             {leftColumnFAQs.map(faq => (
               <FAQItem key={faq.id} item={faq} />

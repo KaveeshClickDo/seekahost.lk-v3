@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Solution () {
   return (
     <section className="py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-0">
 
         <div className="text-center mb-12">
           <h1 className="inline-block bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-full mb-4">Our Solutions</h1>
@@ -14,9 +14,9 @@ export default function Solution () {
         </div>
         
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center lg:mx-35">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-md w-full">
+          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Security, spam and malware</h3>
@@ -36,7 +36,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-md w-full">
+          <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Knowledge Base</h3>
@@ -56,7 +56,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-md w-full">
+          <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">SeekaHost Academy</h3>
@@ -76,7 +76,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-md w-full">
+          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Tutorials</h3>
