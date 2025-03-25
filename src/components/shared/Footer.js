@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="w-full font-sans">
       <div className="flex justify-center items-center py-10">
-        <div className="relative bg-blue-600 rounded-3xl px-10 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
+        <div className="relative bg-blue-600 rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
 
 
           <div className="text-white md:w-1/2 py-10 md:py-16">
@@ -22,9 +22,9 @@ export default function Footer() {
               <input
                 type="text"
                 placeholder="Email Address"
-                className="flex-grow outline-none text-black px-2"
+                className="flex-grow outline-none text-black"
               />
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+              <button className="bg-blue-600 text-white px-4 lg:px-6 py-2 rounded-full hover:bg-blue-700 transition">
                 Sign Up Free
               </button>
             </div>
@@ -45,7 +45,7 @@ export default function Footer() {
       </div>
 
       <div className="bg-[#001F40] text-white py-10">
-        <div className="container mx-auto lg:px-32 px-5">
+        <div className="container mx-auto px-5">
           <div className="mb-8">
             <div className="mb-4">
               <Image src="/images/shared/footer-logo.webp" alt="SeekaHost" width={147} height={62} />
