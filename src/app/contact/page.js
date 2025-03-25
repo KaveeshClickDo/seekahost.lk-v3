@@ -7,7 +7,7 @@ import Navbar from "@/components/shared/Navbar"
 
 export const metadata = {
     title: "Contact Us",
-    description: "Hai this is testing description",
+    description: "Contact Now Sri Lanka Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support Lanka Host!",
 }
 
 // export async function generateMetadata({ params }){
