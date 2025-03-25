@@ -57,7 +57,7 @@ export default function Video() {
               </button>
             </>
           ) : (
-            <div className="w-full h-[200px] md:h-[575px]">
+            <div className="w-full pb-[56.25%]">
               <iframe
                 width="100%"
                 height="100%"
