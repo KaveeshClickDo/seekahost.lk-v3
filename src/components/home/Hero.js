@@ -58,7 +58,7 @@ export default function Hero() {
 
 
                     <div className="mt-10 xl:mt-40 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
-                        {/* Card 1 */}
+
                         <div className="rounded-md flex flex-col items-center">
                             <Image
                                 src="/images/home/server-security.svg"
@@ -75,7 +75,7 @@ export default function Hero() {
                             </Link>
                         </div>
 
-                        {/* Card 2 */}
+
                         <div className="rounded-md flex flex-col items-center">
                             <Image
                                 src="/images/home/server-security.svg"
@@ -92,7 +92,7 @@ export default function Hero() {
                             </Link>
                         </div>
 
-                        {/* Card 3 */}
+
                         <div className="rounded-md flex flex-col items-center">
                             <Image
                                 src="/images/home/server-security.svg"
