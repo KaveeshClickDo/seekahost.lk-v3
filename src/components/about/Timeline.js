@@ -41,7 +41,7 @@ export default function Timeline () {
     return (
         <div className="py-16 bg-[#F5FAFF]">
             <div className="container mx-auto px-4  md:px-30">
-                <h2 className="text-3xl font-bold text-center mb-12 relative">
+                <h2 className="text-2xl  md:text-4xl font-bold text-center mb-12 relative">
                     <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Our Timeline</span>
                 </h2>
 
@@ -71,8 +71,8 @@ export default function Timeline () {
 
                                     <div className={`absolute top-0 -left-2 w-5 h-full bg-blue-500 rounded-l-2xl`}></div>
 
-                                    <h3 className="text-2xl font-bold text-blue-900 mb-2">{item.year}</h3>
-                                    <p className="text-gray-600">{item.description}</p>
+                                    <h3 className="text-2xl  md:text-3xl font-bold text-blue-900 mb-2">{item.year}</h3>
+                                    <p className="text-gray-600 md:text-xl font-medium">{item.description}</p>
                                 </div>
                             </div>
                         </div>

@@ -6,13 +6,13 @@ export default function Hero() {
             <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-6 md:px-0">
 
                 <div className="md:w-1/2 px-5 md:mr-15">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#1D276A] mb-4">
+                    <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                         Sri Lanka&rsquo;s Best Web Host <br /> For Entrepreneurs & Business Owners
                     </h2>
-                    <p className="text-[#1D216A] mb-4">
+                    <p className="text-[#1D216A] mb-4 md:text-xl">
                         Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
                     </p>
-                    <button className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer">
+                    <button className="bg-white text-[#0066CC] md:text-lg border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer">
                         Talk With our Sales Team
                     </button>
                 </div>
