@@ -63,7 +63,7 @@ export default function FAQ() {
           className="flex justify-between items-center cursor-pointer"
           onClick={() => toggleFAQ(item.id)}
         >
-          <h4 className="font-medium text-gray-800 md:text-2xl">{item.question}</h4>
+          <h4 className="font-medium md:text-2xl">{item.question}</h4>
           <button aria-label={isOpen ? "Collapse" : "Expand"} className={`text-blue-600 cursor-pointer flex items-center justify-center w-6 h-6 transition-transform duration-600 ${isOpen ? 'transform rotate-180 bg-blue-600 text-white rounded-md' : ''}`}>
             {isOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
