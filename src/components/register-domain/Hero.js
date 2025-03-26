@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Hero () {
     return (
-        <section className="relative md:h-[600px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 md:w-[72%] h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
+        <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
+            <div className="absolute inset-0 lg:w-[72%] h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
-            <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center mt-10 md:mt:0">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0">
 
 
                 <div className="text-white w-full max-w-2xl z-1">
@@ -13,7 +13,7 @@ export default function Hero () {
                     Register Domain Names
                     </h1>
 
-                    <p className="mt-4 text-lg opacity-90">
+                    <p className="mt-4 text-lg md:text-xl opacity-90">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -24,7 +24,7 @@ export default function Hero () {
                             placeholder="Search for a domain..."
                             className="flex-grow outline-none text-black"
                         />
-                        <button className="bg-blue-600 text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-700 transition">
+                        <button className="bg-blue-600 text-white  md:text-lg px-5 md:px-10 py-4 rounded-full hover:bg-blue-700 transition">
                             Search
                         </button>
                     </div>
@@ -50,7 +50,7 @@ export default function Hero () {
 
                 </div>
 
-                <div className="relative w-full max-w-lg z-1 justify-end ml-auto mt-8 md:mt-0">
+                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto mt-8 lg:mt-0">
                     <Image
                         src="/images/register-domain/register-domain-hero.webp"
                         alt="Hero Image"
