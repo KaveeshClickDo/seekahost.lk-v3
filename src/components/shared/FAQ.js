@@ -36,7 +36,7 @@ export default function FAQs() {
 
     return (
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-            <p className="inline-block bg-blue-100 text-blue-700 text-sm md:text-lg px-3 py-1 rounded-full mb-4">Frequently Asked Question</p>
+            <p className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4">Frequently Asked Question</p>
             <h2 className="text-center text-3xl md:text-5xl font-semibold mb-8">
                 Questions about our services
             </h2>

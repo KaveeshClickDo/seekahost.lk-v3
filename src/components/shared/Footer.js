@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="w-full">
       <div className="flex justify-center items-center py-10">
-        <div className="relative bg-blue-600 rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
+        <div className="relative bg-[#1276DF] rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
 
 
           <div className="text-white md:w-2/3 py-10 md:py-16">
@@ -24,7 +24,7 @@ export default function Footer() {
                 placeholder="Email Address"
                 className="flex-grow outline-none text-black"
               />
-              <button className="bg-blue-600 text-white px-4 lg:px-6 py-2 rounded-full hover:bg-blue-700 transition">
+              <button className="bg-[#1276DF] text-white px-4 lg:px-6 py-2 rounded-full hover:bg-blue-700 transition">
                 <span className="max-[400px]:hidden">Sign Up Free</span>
                 <span className="hidden max-[400px]:inline">Sign Up</span>
               </button>

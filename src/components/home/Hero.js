@@ -1,14 +1,22 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Hero () {
+export default function Hero() {
     return (
-        <section className="relative md:h-[600px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 md:w-[72%] h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
+        <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
+            <div className="absolute inset-0 lg:w-[72%] h-[47%] min-[420px]:h-[43%] sm:h-[39%] md:h-[42%] lg:h-[74%] xl:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px] z-2"></div>
+            <div className="absolute inset-0 lg:w-[72%] h-full bg-[#0A437F] rounded-br-[100px] z-1"></div>
+            <Image
+                src="/images/home/home-hero-bg.svg"
+                alt="Background Image"
+                fill
+                className="object-cover z-0 hidden lg:block"
+                priority
+            />
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt-0">
 
-            <div className="relative container mx-auto px-6 flex flex-col md:flex-row items-center mt-10 md:mt:0">
 
-
-                <div className="text-white w-full max-w-2xl z-1">
+                <div className="text-white w-full max-w-2xl z-3">
                     <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
                     </h1>
@@ -48,9 +56,62 @@ export default function Hero () {
                         </div>
                     </div>
 
+
+                    <div className="mt-10 xl:mt-40 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
+                        {/* Card 1 */}
+                        <div className="rounded-md flex flex-col items-center">
+                            <Image
+                                src="/images/home/server-security.svg"
+                                alt="Server Security Icon"
+                                width={27}
+                                height={27}
+                                className="mb-4"
+                                priority
+                            />
+                            <h2 className="text-lg font-semibold text-white">Web Hosting</h2>
+                            <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
+                            <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                                More Info
+                            </Link>
+                        </div>
+
+                        {/* Card 2 */}
+                        <div className="rounded-md flex flex-col items-center">
+                            <Image
+                                src="/images/home/server-security.svg"
+                                alt="Server Security Icon"
+                                width={27}
+                                height={27}
+                                className="mb-4"
+                                priority
+                            />
+                            <h2 className="text-xl font-semibold text-white">Web Hosting</h2>
+                            <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
+                            <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                                More Info
+                            </Link>
+                        </div>
+
+                        {/* Card 3 */}
+                        <div className="rounded-md flex flex-col items-center">
+                            <Image
+                                src="/images/home/server-security.svg"
+                                alt="Server Security Icon"
+                                width={27}
+                                height={27}
+                                className="mb-4"
+                                priority
+                            />
+                            <h2 className="text-xl font-semibold text-white">Web Hosting</h2>
+                            <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
+                            <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                                More Info
+                            </Link>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="relative w-full max-w-lg z-1 justify-end ml-auto mt-8 md:mt-0">
+                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-3 ml-auto mt-8 lg:mt-0">
                     <Image
                         src="/images/home/hero-videoimage.webp"
                         alt="Hero Image"
@@ -59,7 +120,7 @@ export default function Hero () {
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />
-                    <a
+                    {/* <a
                         href="https://www.youtube.com/watch?v=hx2W4fmqw_w"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -74,7 +135,7 @@ export default function Hero () {
                             <polygon points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
                             <path d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
                         </svg>
-                    </a>
+                    </a> */}
                 </div>
 
 

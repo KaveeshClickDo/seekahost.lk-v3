@@ -153,10 +153,10 @@ export default function PackagesPrices() {
                         <Slider {...settings}>
                             {pricing.map((plan, idx) => (
                                 <div key={idx} className="px-2">
-                                    <div className="group border rounded-lg p-6 h-full transition duration-600 hover:shadow-lg bg-white border-blue-500 hover:bg-gradient-to-r hover:from-[#103040] hover:to-[#0A437F] hover:border-blue-950">
+                                    <div className="group border rounded-2xl p-6 h-full transition duration-600 hover:shadow-lg bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
                                         <h3 className="text-xl md:text-2xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
                                         <div className="flex items-baseline justify-center my-4">
-                                            <span className="text-4xl font-bold text-blue-600 mr-1 group-hover:text-white">
+                                            <span className="text-4xl font-bold text-[#1276DF] mr-1 group-hover:text-white">
                                                 ${isMonthly ? plan.monthlyPrice.toFixed(2) : plan.yearlyPrice.toFixed(2)}
                                             </span>
                                             <span className="text-gray-500 group-hover:text-white md:text-xl font-medium">
@@ -185,7 +185,7 @@ export default function PackagesPrices() {
                                             ))}
                                         </ul>
                                         <button
-                                            className="w-full py-2 rounded text-white font-semibold transition bg-blue-600 group-hover:bg-white group-hover:text-blue-600 md:text-xl"
+                                            className="w-full py-2 rounded text-white font-semibold transition bg-[#1276DF] group-hover:bg-white group-hover:text-blue-600 md:text-xl"
                                         >
                                             Get This Plan
                                         </button>
