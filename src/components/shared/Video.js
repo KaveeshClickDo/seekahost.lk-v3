@@ -24,7 +24,7 @@ export default function Video() {
               Why SeekaHost
             </span>
           </h2>
-          <p className="mt-4 text-white max-w-xl mx-auto md:text-xl">
+          <p className="mt-4 text-white max-w-xl mx-auto md:text-xl font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor
             incididunt ut labore et dolore magna aliqua.
           </p>

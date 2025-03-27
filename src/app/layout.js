@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
       </head>
-      <body className={`${montserrat.variable} ${figtree.variable} antialiased`}>
+      <body suppressHydrationWarning className={`${montserrat.variable} ${figtree.variable} antialiased`}>
         {children}
       </body>
     </html>

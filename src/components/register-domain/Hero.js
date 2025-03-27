@@ -13,7 +13,7 @@ export default function Hero () {
                     Register Domain Names
                     </h1>
 
-                    <p className="mt-4 text-lg md:text-xl opacity-90">
+                    <p className="mt-4 text-lg md:text-xl opacity-90 font-medium">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -32,19 +32,19 @@ export default function Hero () {
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.com</span>
-                            <span className="text-white">Rs1976</span>
+                            <span className="text-white font-medium">Rs1976</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.co.uk</span>
-                            <span className="text-white">Rs1511</span>
+                            <span className="text-white font-medium">Rs1511</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.net</span>
-                            <span className="text-white">Rs2441</span>
+                            <span className="text-white font-medium">Rs2441</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.org</span>
-                            <span className="text-white">Rs2209</span>
+                            <span className="text-white font-medium">Rs2209</span>
                         </div>
                     </div>
 

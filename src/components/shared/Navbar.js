@@ -48,13 +48,13 @@ export default function Navbar () {
                     </svg>
                 </button>
                 <div className="absolute left-0 w-56 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block z-10">
-                    <Link href="https://www.seekahost.lk/wordpress-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-lg hover:text-blue-500 transition-all duration-300">
+                    <Link href="https://www.seekahost.lk/wordpress-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
                         WordPress Web Hosting
                     </Link>
-                    <Link href="https://www.seekahost.lk/business-web-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-lg hover:text-blue-500 transition-all duration-300">
+                    <Link href="https://www.seekahost.lk/business-web-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
                         Business Web Hosting
                     </Link>
-                    <Link href="https://www.seekahost.lk/cheap-web-hosting-with-cpanel/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-lg hover:text-blue-500 transition-all duration-300">
+                    <Link href="https://www.seekahost.lk/cheap-web-hosting-with-cpanel/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
                         Cheap cPanel Hosting
                     </Link>
                 </div>

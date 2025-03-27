@@ -12,19 +12,19 @@ export default function Footer() {
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               Ready to make a secure future?
             </h2>
-            <p className="text-white/90 text-base md:text-xl mb-6">
+            <p className="text-white/90 text-base md:text-xl mb-6 font-medium">
               Get your personalized insurance quote now and take the first step
               toward a worry-free future. Your security matters.
             </p>
 
 
-            <div className="mt-6 flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-md">
+            <div className="mt-6 flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-md font-medium">
               <input
                 type="text"
                 placeholder="Email Address"
                 className="flex-grow outline-none text-black"
               />
-              <button className="bg-[#1276DF] text-white px-4 lg:px-6 py-2 rounded-full hover:bg-blue-700 transition">
+              <button className="bg-[#1276DF] text-white font-medium px-4 lg:px-6 py-2 rounded-full hover:bg-blue-700 transition">
                 <span className="max-[400px]:hidden">Sign Up Free</span>
                 <span className="hidden max-[400px]:inline">Sign Up</span>
               </button>
@@ -57,8 +57,8 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-4">About</h3>
-              <p className="text-gray-300 mb-2 md:text-lg">© 2024 SeekaHost™ Ltd.</p>
-              <p className="text-gray-300 md:text-lg">Web Hosting Company</p>
+              <p className="text-gray-300 mb-2 md:text-lg font-medium">© 2024 SeekaHost™ Ltd.</p>
+              <p className="text-gray-300 md:text-lg font-medium">Web Hosting Company</p>
 
               <div className="flex mt-6 space-x-2">
                 <Link href="#" className="border border-white rounded-full p-2 hover:bg-white hover:text-navy-950 transition-colors">
@@ -76,42 +76,42 @@ export default function Footer() {
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-4">Hosting Services</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">Different Class IP Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">SEO Hosting A-Class IP</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Website Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-4">Domain Registration</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">Different Class IP Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">SEO Hosting A-Class IP</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Website Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-4">Support Services</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">Different Class IP Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">SEO Hosting A-Class IP</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Website Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
               </ul>
             </div>
           </div>
 
           <div className="mt-12 flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
+            <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
               Copyright © Seekahost 2024
             </div>
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-300 text-sm font-medium">
               <Link href="#" className="hover:text-white">Privacy Policy</Link>
               <span className="mx-2">|</span>
               <Link href="#" className="hover:text-white">Terms & Condition</Link>
