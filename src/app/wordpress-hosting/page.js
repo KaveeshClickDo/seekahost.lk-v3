@@ -10,9 +10,7 @@ import OrderNow1 from "@/components/wordpress-hosting/OrderNow-1";
 import OrderNow2 from "@/components/wordpress-hosting/OrderNow-2";
 import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
-import Screenshot from "@/components/wordpress-hosting/Screenshot";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
-import ScreenshotSlider2 from "@/components/wordpress-hosting/ScreenshotSlider2";
 
 export const metadata = {
     title: "WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
@@ -34,10 +32,6 @@ export default function WordpressHosting() {
         <Reviews />
         <FAQs />
         <Footer />
-
-        {/* <Screenshot /> */}
-        {/* <ScreenshotSlider2 /> */}
-        
         </>
     )
 }
