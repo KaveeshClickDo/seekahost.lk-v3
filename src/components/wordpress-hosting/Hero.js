@@ -53,7 +53,7 @@ export default function Hero() {
                         </li>
                     </ul>
 
-                    <button className="bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-blue-900 transition-colors cursor-pointer mt-6">
+                    <button className="bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-6">
                         Get Started
                     </button>
 
