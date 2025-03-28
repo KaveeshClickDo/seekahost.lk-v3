@@ -13,7 +13,7 @@ export default function Hero () {
                     Register Domain Names
                     </h1>
 
-                    <p className="mt-4 text-lg md:text-xl opacity-90 font-medium">
+                    <p className="mt-4 text-lg md:text-xl font-medium">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -54,8 +54,8 @@ export default function Hero () {
                     <Image
                         src="/images/register-domain/register-domain-hero.webp"
                         alt="Hero Image"
-                        width={512}
-                        height={420}
+                        width={672}
+                        height={551}
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />

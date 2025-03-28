@@ -36,8 +36,8 @@ export default function Footer() {
             <Image
               src="/images/shared/phone-mockup.webp"
               alt="Phone Mockup"
-              width={292}
-              height={369}
+              width={240}
+              height={303}
               className="w-60 h-auto drop-shadow-lg md:mt-[38%]"
               priority
             />

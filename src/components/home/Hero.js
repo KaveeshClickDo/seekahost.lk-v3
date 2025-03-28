@@ -21,7 +21,7 @@ export default function Hero() {
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl opacity-90">
+                    <p className="mt-4 text-md md:text-xl">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -115,8 +115,8 @@ export default function Hero() {
                     <Image
                         src="/images/home/hero-videoimage.webp"
                         alt="Hero Image"
-                        width={512}
-                        height={420}
+                        width={672}
+                        height={551}
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />

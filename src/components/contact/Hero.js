@@ -28,8 +28,8 @@ export default function Hero() {
                         <Image
                             src="/images/contact/contact-hero.webp"
                             alt="Call centre girl"
-                            width={497}
-                            height={396}
+                            width={609}
+                            height={486}
                             className="rounded-3xl w-full h-auto"
                             priority
                         />
