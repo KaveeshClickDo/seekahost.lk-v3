@@ -26,11 +26,11 @@ export default function ScreenshotSlider() {
     // Handle slide change
     const changeSlide = (index) => {
         if (isTransitioning) return;
-        
+
         setIsTransitioning(true);
         setPrevSlide(currentSlide);
         setCurrentSlide(index);
-        
+
         // Reset transition state after animation completes
         setTimeout(() => {
             setIsTransitioning(false);
@@ -60,10 +60,10 @@ export default function ScreenshotSlider() {
                                     key={index}
                                     className={`absolute top-0 left-0 w-full h-full transition-all duration-500 ease-in-out`}
                                     style={{
-                                        transform: index === currentSlide 
-                                            ? 'translateX(0)' 
-                                            : index === prevSlide 
-                                                ? 'translateX(100%)' 
+                                        transform: index === currentSlide
+                                            ? 'translateX(0)'
+                                            : index === prevSlide
+                                                ? 'translateX(100%)'
                                                 : 'translateX(100%)',
                                         opacity: index === currentSlide ? 1 : index === prevSlide ? 0 : 0,
                                         zIndex: index === currentSlide ? 2 : index === prevSlide ? 1 : 0,
@@ -79,7 +79,7 @@ export default function ScreenshotSlider() {
                                 </div>
                             ))}
                         </div>
-                        
+
                         {/* Static image for layout reference - hidden from view */}
                         <div className="opacity-0 invisible">
                             <Image
@@ -90,23 +90,22 @@ export default function ScreenshotSlider() {
                                 className="w-full h-auto rounded-l-lg shadow-lg"
                             />
                         </div>
-                        
+
                         {/* Dots indicator */}
-                        
+
                     </div>
                     <div className="absolute bottom-8 right-8 flex justify-center space-x-2">
-                            {screenshots.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => changeSlide(index)}
-                                    className={`w-2.5 h-2.5 rounded-full ${
-                                        index === currentSlide ? "bg-white" : "bg-white opacity-30"
+                        {screenshots.map((_, index) => (
+                            <button
+                                key={index}
+                                onClick={() => changeSlide(index)}
+                                className={`w-2.5 h-2.5 rounded-full ${index === currentSlide ? "bg-white" : "bg-white opacity-30"
                                     }`}
-                                    aria-label={`Go to slide ${index + 1}`}
-                                    disabled={isTransitioning}
-                                />
-                            ))}
-                        </div>
+                                aria-label={`Go to slide ${index + 1}`}
+                                disabled={isTransitioning}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div className="md:w-2/5 w-full md:pl-12 mt-10 md:mt-0 flex flex-col justify-center px-4 md:px-0">
                     <div><h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1></div>
