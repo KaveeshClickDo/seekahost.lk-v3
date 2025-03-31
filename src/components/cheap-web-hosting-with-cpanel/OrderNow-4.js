@@ -23,7 +23,7 @@ export default function OrderNow4() {
                     Ultimate Website Performance with cPanel Software
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
-                    Your SeekaHost cPanel Hosting account is loaded with software to maximize your website's performance. You can use CloudFlare to improve your site's content caching to decrease latency and enhance security against DDoS attacks. Access content compression settings for a faster loading site and instantly download backups to restore your website with DropMySute or choose your preferred PHP version and PHP extension. It's a powerhouse for the best web hosting experience.
+                    Your SeekaHost cPanel Hosting account is loaded with software to maximize your website&apos;s performance. You can use CloudFlare to improve your site&apos;s content caching to decrease latency and enhance security against DDoS attacks. Access content compression settings for a faster loading site and instantly download backups to restore your website with DropMySute or choose your preferred PHP version and PHP extension. It&apos;s a powerhouse for the best web hosting experience.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer md:text-lg font-medium">
                         Order Now

@@ -3,7 +3,6 @@ import OrderNow1 from "@/components/cheap-web-hosting-with-cpanel/OrderNow-1";
 import OrderNow2 from "@/components/cheap-web-hosting-with-cpanel/OrderNow-2";
 import OrderNow3 from "@/components/cheap-web-hosting-with-cpanel/OrderNow-3";
 import OrderNow4 from "@/components/cheap-web-hosting-with-cpanel/OrderNow-4";
-import MaintainPage from "@/components/MaintainPage";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
