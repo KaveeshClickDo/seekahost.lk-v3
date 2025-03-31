@@ -30,10 +30,8 @@ export default function PeopleCards() {
         }
     ];
 
-    // State for current slide
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    // Handle auto sliding
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % people.length);
@@ -64,7 +62,7 @@ export default function PeopleCards() {
                                             height={616}
                                             className="w-full h-auto rounded-3xl shadow-2xl shadow-black md:ml-4"
                                         />
-                                        {/* Play button - centered absolutely */}
+                                       
                                         <a
                                             href={person.videoUrl}
                                             target="_blank"
@@ -84,7 +82,7 @@ export default function PeopleCards() {
                                     </div>
                                 </div>
                             ))}
-                            {/* Show current slide statically to maintain layout */}
+                            
                             <div className="relative invisible">
                                 <Image
                                     src={people[0].image}
@@ -106,7 +104,7 @@ export default function PeopleCards() {
                     <p className="mb-2 text-lg md:text-xl text-white font-semibold">{people[currentSlide].name}</p>
                     <p className="text-white">{people[currentSlide].company}</p>
 
-                    {/* Dots indicator */}
+                    
                     <div className="flex justify-start space-x-2 mt-4">
                         {people.map((_, index) => (
                             <button
