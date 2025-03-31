@@ -99,7 +99,7 @@ export default function ScreenshotSlider() {
                             <button
                                 key={index}
                                 onClick={() => changeSlide(index)}
-                                className={`w-2.5 h-2.5 rounded-full ${index === currentSlide ? "bg-white" : "bg-white opacity-30"
+                                className={`md:w-3.5 md:h-3.5 w-2.5 h-2.5 rounded-full ${index === currentSlide ? "bg-white" : "bg-white opacity-30"
                                     }`}
                                 aria-label={`Go to slide ${index + 1}`}
                                 disabled={isTransitioning}
