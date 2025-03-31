@@ -51,15 +51,18 @@ export default function Navbar () {
                     <Link href="/wordpress-hosting" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
                         WordPress Web Hosting
                     </Link>
-                    <Link href="https://www.seekahost.lk/business-web-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                    <Link href="/business-web-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
                         Business Web Hosting
                     </Link>
-                    <Link href="https://www.seekahost.lk/cheap-web-hosting-with-cpanel/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                    <Link href="/cheap-web-hosting-with-cpanel" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
                         Cheap cPanel Hosting
+                    </Link>
+                    <Link href="/nodejs-hosting" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                        Node JS Hosting
                     </Link>
                 </div>
             </div>
-            <Link href="https://www.seekahost.lk/blog/" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
+            <Link href="/blog" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
                 Blog
             </Link>
             <Link href="/contact" className="hover:text-blue-500 font-medium transition-all duration-300 text-lg">
@@ -110,16 +113,19 @@ export default function Navbar () {
                             <Link href="/wordpress-hosting" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 WordPress Web Hosting
                             </Link>
-                            <Link href="https://www.seekahost.lk/business-web-hosting/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="/business-web-hosting" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 Business Web Hosting
                             </Link>
-                            <Link href="https://www.seekahost.lk/cheap-web-hosting-with-cpanel/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="/cheap-web-hosting-with-cpanel" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 Cheap cPanel Hosting
+                            </Link>
+                            <Link href="/nodejs-hosting" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                Node JS Hosting
                             </Link>
                         </div>
                     )}
                 </div>
-                <Link href="https://www.seekahost.lk/blog/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="/blog" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Blog
                 </Link>
                 <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
