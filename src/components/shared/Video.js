@@ -39,7 +39,6 @@ export default function Video() {
                 width={1008}
                 height={575}
                 className="w-full h-auto object-cover"
-                priority
               />
               <button
                 onClick={() => setShowVideo(true)}

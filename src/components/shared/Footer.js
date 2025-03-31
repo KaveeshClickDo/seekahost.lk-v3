@@ -39,7 +39,6 @@ export default function Footer() {
               width={240}
               height={303}
               className="w-60 h-auto drop-shadow-lg md:mt-[38%]"
-              priority
             />
           </div>
         </div>

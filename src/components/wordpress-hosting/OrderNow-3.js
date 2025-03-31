@@ -27,7 +27,6 @@ export default function OrderNow3() {
                             width={609}
                             height={486}
                             className="rounded-3xl w-full h-auto"
-                            priority
                         />
                     </div>
 

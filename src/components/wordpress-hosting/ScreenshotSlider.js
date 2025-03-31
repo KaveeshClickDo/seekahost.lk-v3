@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,8 +23,8 @@ export default function ScreenshotSlider() {
     // State to track if a transition is happening
     const [isTransitioning, setIsTransitioning] = useState(false);
 
-    // Handle slide change
-    const changeSlide = (index) => {
+    // Handle slide change - wrapped in useCallback to prevent recreation on every render
+    const changeSlide = useCallback((index) => {
         if (isTransitioning) return;
 
         setIsTransitioning(true);
@@ -36,7 +36,7 @@ export default function ScreenshotSlider() {
             setIsTransitioning(false);
             setPrevSlide(null);
         }, 500);
-    };
+    }, [currentSlide, isTransitioning]);
 
     // Handle auto sliding
     useEffect(() => {
@@ -46,7 +46,7 @@ export default function ScreenshotSlider() {
         }, 5000); // Increased time to allow for transitions
 
         return () => clearInterval(interval);
-    }, [currentSlide, screenshots.length, isTransitioning]);
+    }, [currentSlide, screenshots.length, changeSlide]);
 
     return (
         <section className="bg-[#F5FAFF]">
