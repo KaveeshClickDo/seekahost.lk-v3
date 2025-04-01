@@ -80,16 +80,18 @@ export default function Blog() {
                 {/* Featured Story */}
                 {featuredArticle && (
                     <div className="mb-12">
-                        <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF] rounded-lg">
+                        <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF] rounded-xl">
                             <div className="md:w-1/2 relative">
-                                <Image
-                                    src={featuredArticle.image}
-                                    alt={featuredArticle.title}
-                                    width={612}
-                                    height={344}
-                                    className="object-cover w-full h-full"
-                                    priority
-                                />
+                                <div className="flex justify-center">
+                                    <Image
+                                        src={featuredArticle.image}
+                                        alt={featuredArticle.title}
+                                        width={611}
+                                        height={343}
+                                        className="object-cover w-full h-full"
+                                        priority
+                                    />
+                                </div>
                             </div>
                             <div className="md:w-1/2 p-6">
                                 <div className="text-base text-blue-600 font-semibold tracking-wide uppercase mb-2">FEATURED STORY</div>
