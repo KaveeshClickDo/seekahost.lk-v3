@@ -3,12 +3,19 @@ import Image from 'next/image';
 export default function Hero() {
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 lg:w-[72%] h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
+            <div className="absolute inset-0 lg:w-[72%] h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px] z-1"></div>
+            <Image
+                src="/images/home/home-hero-bg.svg"
+                alt="Background Image"
+                fill
+                className="object-cover z-0 hidden lg:block"
+                priority
+            />
 
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0">
 
 
-                <div className="text-white w-full max-w-2xl z-1">
+                <div className="text-white w-full max-w-2xl z-2">
                     <h1 className="text-xl md:text-5xl font-bold leading-tight">
                         WordPress Hosting
                     </h1>
