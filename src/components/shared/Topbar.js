@@ -7,15 +7,15 @@ export default function Topbar() {
 
     const DesktopMenu = () => (
         <div className="hidden lg:flex items-center space-x-10 md:pr-15">
-            <Link href="/about" className="text-white hover:underline font-medium transition-all duration-300 text-lg">
+            <Link href="/about" className="hover:underline font-medium transition-all duration-300 text-lg">
                 About
             </Link>
-            <Link href="/contact" className="text-white hover:underline font-medium transition-all duration-300 text-lg">
+            <Link href="/contact" className="hover:underline font-medium transition-all duration-300 text-lg">
                 Contact Us
             </Link>
             <Link
                 href="#"
-                className="text-white hover:underline font-medium transition-all duration-300 text-lg"
+                className="hover:underline font-medium transition-all duration-300 text-lg"
             >
                 Sign In
             </Link>
@@ -23,10 +23,10 @@ export default function Topbar() {
     );
 
     return (
-        <nav className="w-full bg-[#0A437F] p-4 shadow">
+        <nav className="relative z-10 w-full bg-white shadow">
             <div className="container mx-auto flex items-center justify-between md:pl-5">
-                <Link href="/" className="text-2xl font-bold">
-                    <Image src="/images/shared/footer-logo.webp" alt="SeekaHost" width={133} height={62} priority />
+                <Link href="/">
+                    <Image src="/images/shared/navbar-logo.webp" alt="SeekaHost" width={200} height={93} priority />
                 </Link>
                 <DesktopMenu />
             </div>

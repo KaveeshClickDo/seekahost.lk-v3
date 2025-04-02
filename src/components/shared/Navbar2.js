@@ -25,15 +25,15 @@ export default function Navbar2() {
             <Link
                 href="/register-domain"
                 className={`font-medium transition-all duration-300 text-lg p-4 ${isActive('/register-domain')
-                    ? 'bg-blue-100 border-b-4 border-blue-500'
-                    : 'hover:bg-blue-100'
+                    ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
+                    : 'hover:bg-[#F5FAFF]'
                     }`}
             >
                 Register Domain
             </Link>
             <div className={`relative ${isWebHostingActive()
-                ? 'bg-blue-100 border-b-4 border-blue-500'
-                : 'hover:bg-blue-100'
+                ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
+                : 'hover:bg-[#F5FAFF]'
                 }`}>
                 <button
                     type="button"
@@ -178,8 +178,8 @@ export default function Navbar2() {
             <Link
                 href="/blog"
                 className={`font-medium transition-all duration-300 text-lg p-4 ${isActive('/blog')
-                    ? 'bg-blue-100 border-b-4 border-blue-500'
-                    : 'hover:bg-blue-100'
+                    ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
+                    : 'hover:bg-[#F5FAFF]'
                     }`}
             >
                 Blog
@@ -268,9 +268,9 @@ export default function Navbar2() {
     );
 
     return (
-        <nav className="w-full bg-white p-4 lg:p-0 shadow">
+        <nav className="relative w-full bg-white p-4 lg:p-0 shadow">
             <div className="container mx-auto flex items-center justify-between md:pl-10">
-                <Link href="/" className="lg:hidden text-2xl font-bold">
+                <Link href="/" className="lg:hidden">
                     <Image src="/images/shared/navbar-logo.webp" alt="SeekaHost" width={133} height={62} priority />
                 </Link>
                 <DesktopMenu />
