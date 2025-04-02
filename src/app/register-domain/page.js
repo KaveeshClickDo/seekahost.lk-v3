@@ -7,24 +7,30 @@ import PackagesPrices from "@/components/shared/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
+import Topbar from "@/components/shared/Topbar";
+import Navbar2 from "@/components/shared/Navbar2";
 
 export const metadata = {
     title: "Register Domain"
 }
 
-export default function registerDomain(){
+export default function registerDomain() {
 
-    return(
+    return (
         <>
-        <Navbar />
-        <Hero />
-        <OrderNow />
-        <Solution />
-        <Video />
-        <PackagesPrices />
-        <Reviews />
-        <FAQs />
-        <Footer />
+            {/* <Navbar /> */}
+            <div className="hidden lg:block">
+                <Topbar />
+            </div>
+            <Navbar2 />
+            <Hero />
+            <OrderNow />
+            <Solution />
+            <Video />
+            <PackagesPrices />
+            <Reviews />
+            <FAQs />
+            <Footer />
         </>
     )
 }

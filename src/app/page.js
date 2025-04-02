@@ -9,6 +9,8 @@ import Footer from "@/components/shared/Footer";
 // import Script from "next/script";
 // import { siteSchema } from "./schema";
 import WhySeekahost from "@/components/home/WhySeekahost";
+import Navbar2 from "@/components/shared/Navbar2";
+import Topbar from "@/components/shared/Topbar";
 
 
 export default function Home() {
@@ -20,7 +22,11 @@ export default function Home() {
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
       /> */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="hidden lg:block">
+        <Topbar />
+      </div>
+      <Navbar2 />
       <Hero />
       <PackagePrices />
       <Solution />

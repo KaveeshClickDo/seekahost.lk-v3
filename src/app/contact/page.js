@@ -4,6 +4,8 @@ import Hero from "@/components/contact/Hero"
 import Solution from "@/components/contact/Solution"
 import Footer from "@/components/shared/Footer"
 import Navbar from "@/components/shared/Navbar"
+import Navbar2 from "@/components/shared/Navbar2"
+import Topbar from "@/components/shared/Topbar"
 
 export const metadata = {
     title: "Contact Us",
@@ -18,15 +20,19 @@ export const metadata = {
 //     };
 // }
 
-export default function contact () {
+export default function contact() {
     return (
         <>
-        <Navbar />
-        <Hero />
-        <Solution />
-        <FAQ />
-        <GetStarted />
-        <Footer />
+            {/* <Navbar /> */}
+            <div className="hidden lg:block">
+                <Topbar />
+            </div>
+            <Navbar2 />
+            <Hero />
+            <Solution />
+            <FAQ />
+            <GetStarted />
+            <Footer />
         </>
     )
 }

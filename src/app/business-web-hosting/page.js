@@ -5,8 +5,10 @@ import OrderNow3 from "@/components/business-web-hosting/OrderNow-3";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
+import Navbar2 from "@/components/shared/Navbar2";
 import PackagesPrices from "@/components/shared/PackagePrices";
 import Reviews from "@/components/shared/Review";
+import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
 import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
@@ -20,7 +22,11 @@ export const metadata = {
 export default function BusinessWebHosting() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
+            <div className="hidden lg:block">
+                <Topbar />
+            </div>
+            <Navbar2 />
             <Hero />
             <PackagesPrices />
             <PeopleCards />

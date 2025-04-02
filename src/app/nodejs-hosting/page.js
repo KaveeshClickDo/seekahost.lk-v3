@@ -5,8 +5,10 @@ import OrderNow2 from "@/components/nodejs-hosting/OrderNow-2";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
+import Navbar2 from "@/components/shared/Navbar2";
 import PackagesPrices from "@/components/shared/PackagePrices";
 import Reviews from "@/components/shared/Review";
+import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 
@@ -18,17 +20,21 @@ export const metadata = {
 export default function NodeJSHosting() {
     return (
         <>
-        <Navbar />
-        <Hero />
-        <PackagesPrices />
-        <ScreenshotSlider />
-        <Features />
-        <OrderNow1 />
-        <Video />
-        <OrderNow2 />
-        <Reviews />
-        <FAQs />
-        <Footer />
+            {/* <Navbar /> */}
+            <div className="hidden lg:block">
+                <Topbar />
+            </div>
+            <Navbar2 />
+            <Hero />
+            <PackagesPrices />
+            <ScreenshotSlider />
+            <Features />
+            <OrderNow1 />
+            <Video />
+            <OrderNow2 />
+            <Reviews />
+            <FAQs />
+            <Footer />
         </>
     );
 }

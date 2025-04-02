@@ -3,17 +3,39 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar2() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
+    const pathname = usePathname();
+
+    const isActive = (path) => {
+        return pathname === path;
+    };
+
+    const isWebHostingActive = () => {
+        const webHostingPaths = ['/wordpress-hosting', '/business-web-hosting', '/cheap-web-hosting-with-cpanel', '/nodejs-hosting'];
+        return webHostingPaths.some(path => pathname === path);
+    };
 
     const DesktopMenu = () => (
         <div className="hidden lg:flex items-center md:pr-15">
-            <Link href="/register-domain" className="hover:bg-blue-100 font-medium transition-all duration-300 text-lg p-4">
+            <Link 
+                href="/register-domain" 
+                className={`font-medium transition-all duration-300 text-lg p-4 ${
+                    isActive('/register-domain') 
+                        ? 'bg-blue-100 border-b-4 border-blue-500' 
+                        : 'hover:bg-blue-100'
+                }`}
+            >
                 Register Domain
             </Link>
-            <div className="relative group hover:bg-blue-100 p-4">
+            <div className={`relative group p-4 ${
+                isWebHostingActive() 
+                    ? 'bg-blue-100 border-b-4 border-blue-500' 
+                    : 'hover:bg-blue-100'
+            }`}>
                 <button
                     type="button"
                     className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg"
@@ -35,7 +57,14 @@ export default function Navbar2() {
                     </Link>
                 </div>
             </div>
-            <Link href="/blog" className="hover:bg-blue-100 font-medium transition-all duration-300 text-lg p-4">
+            <Link 
+                href="/blog" 
+                className={`font-medium transition-all duration-300 text-lg p-4 ${
+                    isActive('/blog') 
+                        ? 'bg-blue-100 border-b-4 border-blue-500' 
+                        : 'hover:bg-blue-100'
+                }`}
+            >
                 Blog
             </Link>
         </div>
