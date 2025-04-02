@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function Navbar2() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
+    const [desktopWebHostingDropdownOpen, setDesktopWebHostingDropdownOpen] = useState(false);
     const pathname = usePathname();
 
     const isActive = (path) => {
@@ -31,7 +32,7 @@ export default function Navbar2() {
             >
                 Register Domain
             </Link>
-            <div className={`relative group p-4 ${
+            <div className={`relative p-4 ${
                 isWebHostingActive() 
                     ? 'bg-blue-100 border-b-4 border-blue-500' 
                     : 'hover:bg-blue-100'
@@ -39,23 +40,26 @@ export default function Navbar2() {
                 <button
                     type="button"
                     className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg"
+                    onClick={() => setDesktopWebHostingDropdownOpen(!desktopWebHostingDropdownOpen)}
                 >
                     Web Hosting
                 </button>
-                <div className="absolute left-0 w-56 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden group-hover:block z-10">
-                    <Link href="/wordpress-hosting" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
-                        WordPress Web Hosting
-                    </Link>
-                    <Link href="/business-web-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
-                        Business Web Hosting
-                    </Link>
-                    <Link href="/cheap-web-hosting-with-cpanel" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
-                        Cheap cPanel Hosting
-                    </Link>
-                    <Link href="/nodejs-hosting" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
-                        Node JS Hosting
-                    </Link>
-                </div>
+                {desktopWebHostingDropdownOpen && (
+                    <div className="absolute left-0 w-56 bg-white shadow-lg z-10">
+                        <Link href="/wordpress-hosting" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                            WordPress Web Hosting
+                        </Link>
+                        <Link href="/business-web-hosting/" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                            Business Web Hosting
+                        </Link>
+                        <Link href="/cheap-web-hosting-with-cpanel" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                            Cheap cPanel Hosting
+                        </Link>
+                        <Link href="/nodejs-hosting" className="block px-4 py-2 text-black hover:bg-gray-100 hover:text-blue-500 transition-all duration-300">
+                            Node JS Hosting
+                        </Link>
+                    </div>
+                )}
             </div>
             <Link 
                 href="/blog" 
