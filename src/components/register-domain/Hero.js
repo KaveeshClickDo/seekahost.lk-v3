@@ -28,7 +28,7 @@ export default function Hero() {
                         <input
                             id="searchDomain"
                             type="text"
-                            placeholder="Search for a domain..."
+                            placeholder="   Search for a domain..."
                             className="flex-grow outline-none text-black"
                         />
                         <button className="bg-blue-600 text-white  md:text-lg px-5 md:px-10 py-4 rounded-full hover:bg-blue-700 transition">
