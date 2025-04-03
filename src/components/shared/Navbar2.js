@@ -2,12 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import Hosting from '../navbar-menu/Hosting';
 import WordPress from '../navbar-menu/WordPress';
 import Servers from '../navbar-menu/Server';
 import Domains from '../navbar-menu/Domains';
+import Ecommers from '../navbar-menu/Ecommers';
 
 export default function Navbar2() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,7 +17,39 @@ export default function Navbar2() {
     const [desktopWordPressDropdownOpen, setDesktopWordPressDropdownOpen] = useState(false);
     const [desktopServersDropdownOpen, setDesktopServersDropdownOpen] = useState(false);
     const [desktopDomainsDropdownOpen, setDesktopDomainsDropdownOpen] = useState(false);
+    const [desktopEcommersDropdownOpen, setDesktopEcommersDropdownOpen] = useState(false);
     const pathname = usePathname();
+    
+    // Create a single ref for the entire navbar
+    const navbarRef = useRef(null);
+
+    // Function to close all desktop dropdowns
+    const closeAllDropdowns = () => {
+        setDesktopWebHostingDropdownOpen(false);
+        setDesktopWordPressDropdownOpen(false);
+        setDesktopServersDropdownOpen(false);
+        setDesktopDomainsDropdownOpen(false);
+        setWebHostingDropdownOpen(false);
+        setDesktopEcommersDropdownOpen(false);
+    };
+
+    // Handle outside clicks
+    useEffect(() => {
+        function handleClickOutside(event) {
+            // Close all dropdowns if the click is outside the navbar
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                closeAllDropdowns();
+            }
+        }
+
+        // Add event listener
+        document.addEventListener('mousedown', handleClickOutside);
+        
+        // Clean up the event listener
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
 
     const isActive = (path) => {
         return pathname === path;
@@ -42,6 +75,11 @@ export default function Navbar2() {
         return domainsPaths.some(path => pathname === path);
     };
 
+    const isEcommersActive = () => {
+        const ecommersPaths = ['/ecommers'];
+        return ecommersPaths.some(path => pathname === path);
+    };
+
     const DesktopMenu = () => (
         <div className="hidden lg:flex items-center md:pr-15">
 
@@ -57,6 +95,7 @@ export default function Navbar2() {
                         setDesktopWebHostingDropdownOpen(false);
                         setDesktopWordPressDropdownOpen(false);
                         setDesktopServersDropdownOpen(false);
+                        setDesktopEcommersDropdownOpen(false);
                     }}
                 >
                     Domains & SSL
@@ -77,6 +116,7 @@ export default function Navbar2() {
                         setDesktopWordPressDropdownOpen(false);
                         setDesktopServersDropdownOpen(false);
                         setDesktopDomainsDropdownOpen(false);
+                        setDesktopEcommersDropdownOpen(false);
                     }}
                 >
                     Hosting
@@ -85,15 +125,28 @@ export default function Navbar2() {
                     <Hosting />
                 )}
             </div>
-            <Link
-                href="#"
-                className={`font-medium transition-all duration-300 text-lg p-4 ${isActive('/ecommerce')
-                    ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
-                    : 'hover:bg-[#F5FAFF]'
-                    }`}
-            >
-                eCommerce
-            </Link>
+            <div className={`relative ${isEcommersActive()
+                ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
+                : 'hover:bg-[#F5FAFF]'
+                }`}>
+                <button
+                    type="button"
+                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg p-4"
+                    onClick={() => {
+                        setDesktopEcommersDropdownOpen(!desktopEcommersDropdownOpen)
+                        setDesktopWebHostingDropdownOpen(false);
+                        setDesktopServersDropdownOpen(false);
+                        setDesktopDomainsDropdownOpen(false);
+                        setDesktopWordPressDropdownOpen(false);
+                    }}
+
+                >
+                    eCommers
+                </button>
+                {desktopEcommersDropdownOpen && (
+                    <Ecommers />
+                )}
+            </div>
             <div className={`relative ${isWordpressActive()
                 ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
                 : 'hover:bg-[#F5FAFF]'
@@ -106,6 +159,7 @@ export default function Navbar2() {
                         setDesktopWebHostingDropdownOpen(false);
                         setDesktopServersDropdownOpen(false);
                         setDesktopDomainsDropdownOpen(false);
+                        setDesktopEcommersDropdownOpen(false);
                     }}
 
                 >
@@ -127,6 +181,7 @@ export default function Navbar2() {
                         setDesktopWordPressDropdownOpen(false);
                         setDesktopWebHostingDropdownOpen(false);
                         setDesktopDomainsDropdownOpen(false);
+                        setDesktopEcommersDropdownOpen(false);
                     }}
 
                 >
@@ -229,7 +284,7 @@ export default function Navbar2() {
     );
 
     return (
-        <nav className="relative w-full bg-white p-4 lg:p-0 shadow">
+        <nav ref={navbarRef} className="relative w-full bg-white p-4 lg:p-0 shadow">
             <div className="container mx-auto flex items-center justify-between md:pl-10">
                 <Link href="/" className="lg:hidden">
                     <Image src="/images/shared/navbar-logo.png" alt="SeekaHost" width={133} height={62} priority />
