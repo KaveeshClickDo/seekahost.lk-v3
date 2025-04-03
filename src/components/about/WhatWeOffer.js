@@ -3,7 +3,7 @@ export default function WhatWeOffer() {
     return (
         <section className="relative w-full py-16">
             <Image
-                src="/images/shared/middle-banner.svg"
+                src="/images/shared/middle-banner.png"
                 alt="Background Image"
                 fill
                 className="object-cover z-0"

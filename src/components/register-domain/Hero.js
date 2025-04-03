@@ -15,7 +15,7 @@ export default function Hero() {
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0">
 
 
-                <div className="text-white w-full max-w-2xl z-2">
+                <div className="text-white w-full max-w-2xl z-2 md:mb-10">
                     <h1 className="text-xl md:text-5xl font-bold leading-tight">
                         Register Domain Names
                     </h1>

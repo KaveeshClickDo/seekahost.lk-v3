@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="container mx-auto px-5">
           <div className="mb-8">
             <div className="mb-4">
-              <Image src="/images/shared/footer-logo.webp" alt="SeekaHost" width={147} height={62} />
+              <Image src="/images/shared/footer-logo.png" alt="SeekaHost" width={147} height={62} />
             </div>
             <hr className="border-gray-700 w-full" />
           </div>
@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-4">About</h3>
-              <p className="text-gray-300 mb-2 md:text-lg font-medium">© 2024 SeekaHost™ Ltd.</p>
+              <p className="text-gray-300 mb-2 md:text-lg font-medium">© 2025 SeekaHost™ Ltd.</p>
               <p className="text-gray-300 md:text-lg font-medium">Web Hosting Company</p>
 
               <div className="flex mt-6 space-x-2">
@@ -108,7 +108,7 @@ export default function Footer() {
 
           <div className="mt-12 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
-              Copyright © Seekahost 2024
+              Copyright © Seekahost 2025
             </div>
             <div className="text-gray-300 text-sm font-medium">
               <Link href="#" className="hover:text-white">Privacy Policy</Link>

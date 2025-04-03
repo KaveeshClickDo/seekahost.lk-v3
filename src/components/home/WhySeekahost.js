@@ -77,11 +77,10 @@ export default function WhySeekahost () {
 
       <section className="relative w-full py-16">
         <Image
-          src="/images/shared/middle-banner.svg"
+          src="/images/shared/middle-banner.png"
           alt="Background Image"
           fill
           className="object-cover z-0"
-          priority
         />
 
         <div className="relative z-1 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
