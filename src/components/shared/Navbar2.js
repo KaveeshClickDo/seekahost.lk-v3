@@ -12,14 +12,18 @@ import Ecommers from '../navbar-menu/Ecommers';
 
 export default function Navbar2() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
+    const [domainsDropdownOpen, setDomainsDropdownOpen] = useState(false);
+    const [wordPressDropdownOpen, setWordPressDropdownOpen] = useState(false);
+
     const [desktopWebHostingDropdownOpen, setDesktopWebHostingDropdownOpen] = useState(false);
     const [desktopWordPressDropdownOpen, setDesktopWordPressDropdownOpen] = useState(false);
     const [desktopServersDropdownOpen, setDesktopServersDropdownOpen] = useState(false);
     const [desktopDomainsDropdownOpen, setDesktopDomainsDropdownOpen] = useState(false);
     const [desktopEcommersDropdownOpen, setDesktopEcommersDropdownOpen] = useState(false);
     const pathname = usePathname();
-    
+
     // Create a single ref for the entire navbar
     const navbarRef = useRef(null);
 
@@ -44,7 +48,7 @@ export default function Navbar2() {
 
         // Add event listener
         document.addEventListener('mousedown', handleClickOutside);
-        
+
         // Clean up the event listener
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
@@ -209,21 +213,36 @@ export default function Navbar2() {
                 }`}
         >
             <div className="pt-2 pb-3 space-y-1">
-                <Link href="/" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                    Home
-                </Link>
-                <Link href="/about" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                    About
-                </Link>
-                <Link href="/register-domain" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                    Register Domain
-                </Link>
+                <div>
+                    <button
+                        onClick={() => setDomainsDropdownOpen(!domainsDropdownOpen)}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
+                    >
+                        Domains & SSL
+                        {domainsDropdownOpen ? (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        )}
+                    </button>
+                    {domainsDropdownOpen && (
+                        <div className="pl-4">
+                            <Link href="/register-domain" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                Register Domain
+                            </Link>
+                        </div>
+                    )}
+                </div>
                 <div>
                     <button
                         onClick={() => setWebHostingDropdownOpen(!webHostingDropdownOpen)}
                         className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
                     >
-                        Web Hosting
+                        Hosting
                         {webHostingDropdownOpen ? (
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
@@ -236,9 +255,6 @@ export default function Navbar2() {
                     </button>
                     {webHostingDropdownOpen && (
                         <div className="pl-4">
-                            <Link href="/wordpress-hosting" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                WordPress Web Hosting
-                            </Link>
                             <Link href="/business-web-hosting" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 Business Web Hosting
                             </Link>
@@ -251,8 +267,38 @@ export default function Navbar2() {
                         </div>
                     )}
                 </div>
+                <Link href="#" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                    eCommers
+                </Link>
+                <div>
+                    <button
+                        onClick={() => setWordPressDropdownOpen(!wordPressDropdownOpen)}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
+                    >
+                        WordPress
+                        {wordPressDropdownOpen ? (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        )}
+                    </button>
+                    {wordPressDropdownOpen && (
+                        <div className="pl-4">
+                            <Link href="/wordpress-hosting" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                WordPress Web Hosting
+                            </Link>
+                        </div>
+                    )}
+                </div>
                 <Link href="/blog" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Blog
+                </Link>
+                <Link href="/about" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                    About
                 </Link>
                 <Link href="/contact" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Contact Us
