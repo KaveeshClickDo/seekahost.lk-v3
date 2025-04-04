@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Features() {
     return (
-        <section className="max-w-5xl mx-auto py-12 px-4 md:px-0">
+        <section className="max-w-5xl mx-auto py-12 px-4 md:px-0 md:my-10">
 
             <div className="text-center">
                 <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">

@@ -39,7 +39,7 @@ export default function Reviews() {
                 className="object-cover z-0"
                 priority
             />
-            <div className="relative z-1 max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div className="relative z-1 max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:my-10">
                 <div className="md:flex md:items-center md:space-x-8">
                     <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
                         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">

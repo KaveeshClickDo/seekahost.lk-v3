@@ -10,7 +10,7 @@ export default function OurVision() {
                 /> */}
 
 
-            <div className="relative z-1 max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center">
+            <div className="relative z-1 max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center md:my-10">
 
                 <div className="md:w-1/2 mb-8 md:mb-0 md:pl-5 text-white">
                     <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm md:text-xl font-medium px-3 py-2 rounded-full mb-4">Our Vision</h1>

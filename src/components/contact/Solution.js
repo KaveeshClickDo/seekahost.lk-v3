@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Solution () {
   return (
-    <section className="py-12">
+    <section className="py-12 md:my-10">
       <div className="max-w-7xl mx-auto px-4 md:px-0">
 
         <div className="text-center mb-12">

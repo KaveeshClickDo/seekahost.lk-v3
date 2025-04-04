@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function OrderNow1() {
     return (
         <>
-            <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0">
+            <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 md:my-10">
 
                 <div className="md:w-1/2 md:mr-15">
                     <div className="w-full relative">

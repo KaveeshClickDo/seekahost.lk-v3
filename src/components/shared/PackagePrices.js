@@ -101,7 +101,7 @@ export default function PackagesPrices() {
                 className="object-cover z-0"
                 priority
             />
-            <div className="relative z-1 max-w-7xl mx-auto px-7 text-center">
+            <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h1 className="text-blue-600 md:text-xl">PBN Manager</h1>
                 <h2 className="text-3xl md:text-5xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
@@ -152,8 +152,8 @@ export default function PackagesPrices() {
                     {isClient ? (
                         <Slider {...settings}>
                             {pricing.map((plan, idx) => (
-                                <div key={idx} className="px-2">
-                                    <div className="group border rounded-2xl p-6 h-full transition duration-600 hover:shadow-lg bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
+                                <div key={idx} className="p-2">
+                                    <div className="group border rounded-2xl p-6 h-full transition duration-600 shadow-md hover:shadow-[#09407A] bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
                                         <h3 className="text-xl md:text-2xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
                                         <div className="flex items-baseline justify-center my-4">
                                             <span className="text-4xl font-bold text-[#1276DF] mr-1 group-hover:text-white">

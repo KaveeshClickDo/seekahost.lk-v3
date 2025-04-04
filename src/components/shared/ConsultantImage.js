@@ -16,7 +16,7 @@ export default function ConsultantImage() {
   if (!showConsultantImage) return null;
 
   return (
-    <div className="hidden lg:block fixed right-2 top-7/16 transform -translate-y-1/2 z-10">
+    <div className="fixed right-2 top-7/16 transform -translate-y-1/2 z-10">
       <Image
         src="/images/home/Personal-Consultant.png"
         alt="Personal Consultant"

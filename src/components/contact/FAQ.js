@@ -104,7 +104,7 @@ export default function FAQ() {
         priority
         className="absolute inset-0 object-cover z-0"
       />
-      <div className="relative z-1">
+      <div className="relative z-1 md:my-10">
         <div className="text-center mb-8">
           <h2 className="text-white text-md md:text-xl font-medium">FAQ</h2>
           <div className="relative inline-block">

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function WhySeekahost() {
   return (
     <>
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white md:my-10">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-15 justify-center">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -83,13 +83,13 @@ export default function WhySeekahost() {
           className="object-cover z-0"
         /> */}
 
-        <div className="relative z-1 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div className="relative z-1 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center md:my-10">
 
           <div className="md:w-1/2 mb-8 md:mb-0 text-white">
             <p className="text-sm md:text-2xl font-medium mb-2">Important For Transactions</p>
             <h2 className="text-2xl md:text-4xl mb-6 leading-snug">
-              Useful for facilitating transactions<span className='font-semibold'> between <br />
-                <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">buyers &amp; sellers</span></span>
+              Useful for facilitating transactions<span className='font-semibold'><br />
+                <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">between buyers &amp; sellers</span></span>
             </h2>
             <ul className="space-y-2">
               <li className="flex items-start md:text-xl">

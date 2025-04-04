@@ -4,7 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 
 export default function GetStarted() {
     return (
-        <section className="relative w-full py-16">
+        <section className="relative w-full py-16 md:my-10">
             <div className="max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center">
 
                 <div className="md:w-1/2 mb-8 md:mb-0 text-white">
