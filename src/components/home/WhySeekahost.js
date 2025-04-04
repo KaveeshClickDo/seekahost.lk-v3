@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function WhySeekahost () {
-    return (
-        <>
-        <section className="py-16 bg-white">
+export default function WhySeekahost() {
+  return (
+    <>
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-15 justify-center">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -13,10 +13,10 @@ export default function WhySeekahost () {
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/images/home/learning.svg" width={40} height={40} alt="Lifelong Learning" />
+                  <Image src="/images/home/learning.svg" width={50} height={50} alt="Lifelong Learning" />
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-2xl font-semibold">Lifelong Learning</h3>
+                  <h3 className="text-lg md:text-2xl font-semibold mb-2">Lifelong Learning</h3>
                   <p className="text-gray-700 md:text-xl font-medium">
                     We champion continuous growth and exploration, inspiring our learners to embrace learning as a lifelong journey.
                   </p>
@@ -25,10 +25,10 @@ export default function WhySeekahost () {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/images/home/education.svg" width={40} height={40} alt="Quality Education" />
+                  <Image src="/images/home/education.svg" width={50} height={50} alt="Quality Education" />
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-2xl font-semibold">Quality Education</h3>
+                  <h3 className="text-lg md:text-2xl font-semibold mb-2">Quality Education</h3>
                   <p className="text-gray-700 md:text-xl font-medium">
                     SkillNest delivers high-quality courses, curated by leading experts, ensuring an exceptional learning experience for all.
                   </p>
@@ -37,10 +37,10 @@ export default function WhySeekahost () {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/images/home/inclusivity.svg" width={40} height={40} alt="Inclusivity" />
+                  <Image src="/images/home/inclusivity.svg" width={50} height={50} alt="Inclusivity" />
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-2xl font-semibold">Inclusivity</h3>
+                  <h3 className="text-lg md:text-2xl font-semibold mb-2">Inclusivity</h3>
                   <p className="text-gray-700 md:text-xl font-medium">
                     We welcome learners of all backgrounds and skill levels, fostering an inclusive and supportive online community.
                   </p>
@@ -49,10 +49,10 @@ export default function WhySeekahost () {
 
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <Image src="/images/home/empowerment.svg" width={40} height={40} alt="Empowerment" />
+                  <Image src="/images/home/empowerment.svg" width={50} height={50} alt="Empowerment" />
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-2xl font-semibold">Empowerment</h3>
+                  <h3 className="text-lg md:text-2xl font-semibold mb-2">Empowerment</h3>
                   <p className="text-gray-700 md:text-xl font-medium">
                     Our platform is designed to empower learners, giving them the tools and knowledge to thrive in their personal and professional endeavors.
                   </p>
@@ -75,13 +75,13 @@ export default function WhySeekahost () {
         </div>
       </section>
 
-      <section className="relative w-full py-16">
-        <Image
+      <section className="relative w-full py-16 bg-gradient-to-b from-[#09407A] to-[#136CC9]">
+        {/* <Image
           src="/images/shared/middle-banner.png"
           alt="Background Image"
           fill
           className="object-cover z-0"
-        />
+        /> */}
 
         <div className="relative z-1 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
 
@@ -93,15 +93,30 @@ export default function WhySeekahost () {
             </h2>
             <ul className="space-y-2">
               <li className="flex items-start md:text-xl">
-                <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
+                <span className="mr-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
+                    <circle cx="53" cy="50" r="40" fill="rgba(255, 255, 255, 0.2)" />
+                    <path d="M40 55 L50 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
                 Money can be exchanged very easily
               </li>
               <li className="flex items-start md:text-xl">
-                <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
+              <span className="mr-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
+                    <circle cx="53" cy="50" r="40" fill="rgba(255, 255, 255, 0.2)" />
+                    <path d="M40 55 L50 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
                 Bills can be safely paid anywhere at any time
               </li>
               <li className="flex items-start md:text-xl">
-                <span className="mr-2"><Image src="/images/home/tick-mark.svg" alt="Tick mark icon" width={20} height={20} /></span>
+              <span className="mr-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
+                    <circle cx="53" cy="50" r="40" fill="rgba(255, 255, 255, 0.2)" />
+                    <path d="M40 55 L50 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
                 Work quickly, saving your important time
               </li>
             </ul>
@@ -119,6 +134,6 @@ export default function WhySeekahost () {
           </div>
         </div>
       </section>
-        </>
-    );
+    </>
+  );
 }

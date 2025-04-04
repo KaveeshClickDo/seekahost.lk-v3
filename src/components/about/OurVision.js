@@ -1,13 +1,13 @@
 import Image from "next/image"
 export default function OurVision() {
     return (
-        <section className="relative w-full py-16">
-                <Image
+        <section className="relative w-full py-16 bg-gradient-to-b from-[#09407A] to-[#136CC9]">
+                {/* <Image
                   src="/images/shared/middle-banner.png"
                   alt="Background Image"
                   fill
                   className="object-cover z-0"
-                />
+                /> */}
 
 
             <div className="relative z-1 max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center">
