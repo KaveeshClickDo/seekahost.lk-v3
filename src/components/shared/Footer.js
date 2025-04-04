@@ -53,71 +53,157 @@ export default function Footer() {
             <hr className="border-gray-700 w-full" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-4">About</h3>
               <p className="text-gray-300 mb-2 md:text-lg font-medium">© 2025 SeekaHost™ Ltd.</p>
               <p className="text-gray-300 md:text-lg font-medium">Web Hosting Company</p>
 
-              <div className="flex mt-6 space-x-2">
-                <Link href="#" className="border border-white rounded-full p-2 hover:bg-white hover:text-navy-950 transition-colors">
-                  <span className="text-sm">ig</span>
-                </Link>
-                <Link href="#" className="border border-white rounded-full p-2 hover:bg-white hover:text-navy-950 transition-colors">
-                  <span className="text-sm">tw</span>
-                </Link>
-                <Link href="#" className="border border-white rounded-full p-2 hover:bg-white hover:text-navy-950 transition-colors">
-                  <span className="text-sm">fb</span>
-                </Link>
+              <div className="flex md:flex-col mt-6">
+                <div className="flex">
+                  <Link href="#">
+                    <div className="p-2">
+                      <Image
+                        src="/images/socialmedia-icons/youtube.svg"
+                        alt="youtube"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="p-2">
+                      <Image
+                        src="/images/socialmedia-icons/twitter.svg"
+                        alt="Twitter"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="p-2">
+                      <Image
+                        src="/images/socialmedia-icons/facebook.svg"
+                        alt="Facebook"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </Link>
+                </div>
+                <div className="flex">
+                  <Link href="#">
+                    <div className="p-2">
+                      <Image
+                        src="/images/socialmedia-icons/linkedin.svg"
+                        alt="Linkedin"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="p-2">
+                      <Image
+                        src="/images/socialmedia-icons/whatsapp.svg"
+                        alt="Whatsapp"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </Link>
+                  <Link href="#">
+                    <div className="p-2">
+                      <Image
+                        src="/images/socialmedia-icons/tiktok.svg"
+                        alt="Tiktok"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-medium mb-4">Hosting Services</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg md:text-xl font-medium mb-5">Hosting Services</h3>
+              <ul className="space-y-4">
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
               </ul>
+
+              <h3 className="text-lg md:text-xl font-medium mb-5 mt-8">Our Company</h3>
+              <ul className="space-y-4">
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">About SeekaHost™</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SeekaHost™ University</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SeekaHost Blog</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Contact Us</Link></li>
+              </ul>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-medium mb-4">Domain Registration</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg md:text-xl font-medium mb-5">Domain Registration</h3>
+              <ul className="space-y-4">
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
               </ul>
+
+              <h3 className="text-lg md:text-xl font-medium mb-5 mt-10">Email Hosting Solutions</h3>
+              <ul className="space-y-4">
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Email Address</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Email Hosting Plans</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Access Webmail Login</Link></li>
+              </ul>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-medium mb-4">Support Services</h3>
-              <ul className="space-y-2">
+              <h3 className="text-lg md:text-xl font-medium mb-5">Support Services</h3>
+              <ul className="space-y-4">
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
+              </ul>
+
+              <h3 className="text-lg md:text-xl font-medium mb-5 mt-10">Community & Resources</h3>
+              <ul className="space-y-4">
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">PBN Demystified</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Expiration Checker</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Guide To Create A Blog</Link></li>
               </ul>
             </div>
           </div>
+          <hr className="border-gray-700 w-full" />
 
           <div className="mt-12 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
-              Copyright © Seekahost 2025
-            </div>
-            <div className="text-gray-300 text-sm font-medium">
+              Copyright © Seekahost 2025 <br />
               <Link href="#" className="hover:text-white">Privacy Policy</Link>
               <span className="mx-2">|</span>
               <Link href="#" className="hover:text-white">Terms & Condition</Link>
             </div>
+            <div className="text-gray-300 text-sm font-medium mt-2">
+              Pay with confidence & security <br />
+              <Image
+                src="/images/shared/payment-methods-new.png"
+                alt="payment methods"
+                width={500}
+                height={51}
+                className="mt-1"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }
