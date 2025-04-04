@@ -1,5 +1,4 @@
 import Hero from "@/components/home/Hero";
-import Navbar from "@/components/shared/Navbar";
 import PackagePrices from "@/components/shared/PackagePrices";
 import Solution from "@/components/shared/Solution";
 import Video from "@/components/shared/Video";
@@ -11,7 +10,7 @@ import Footer from "@/components/shared/Footer";
 import WhySeekahost from "@/components/home/WhySeekahost";
 import Navbar2 from "@/components/shared/Navbar2";
 import Topbar from "@/components/shared/Topbar";
-
+import ConsultantImage from "@/components/shared/ConsultantImage";
 
 export default function Home() {
   return (
@@ -22,13 +21,15 @@ export default function Home() {
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
       /> */}
-      {/* <Navbar /> */}
       <div className="hidden lg:block">
         <Topbar />
       </div>
       <Navbar2 />
+      <ConsultantImage />
       <Hero />
-      <PackagePrices />
+      <div id="package-prices-section">
+        <PackagePrices />
+      </div>
       <Solution />
       <Video />
       <WhySeekahost />
@@ -36,6 +37,5 @@ export default function Home() {
       <FAQs />
       <Footer />
     </>
-
   );
 }

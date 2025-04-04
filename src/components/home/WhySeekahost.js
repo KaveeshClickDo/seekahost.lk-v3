@@ -95,8 +95,8 @@ export default function WhySeekahost() {
               <li className="flex items-start md:text-xl">
                 <span className="mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
-                    <circle cx="53" cy="50" r="40" fill="rgba(255, 255, 255, 0.2)" />
-                    <path d="M40 55 L50 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="53" cy="48" r="40" fill="rgba(255, 255, 255, 0.2)" />
+                    <path d="M40 55 L50 65 L70 35" stroke="white" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 Money can be exchanged very easily
@@ -104,8 +104,8 @@ export default function WhySeekahost() {
               <li className="flex items-start md:text-xl">
               <span className="mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
-                    <circle cx="53" cy="50" r="40" fill="rgba(255, 255, 255, 0.2)" />
-                    <path d="M40 55 L50 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="53" cy="48" r="40" fill="rgba(255, 255, 255, 0.2)" />
+                    <path d="M40 55 L50 65 L70 35" stroke="white" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 Bills can be safely paid anywhere at any time
@@ -113,8 +113,8 @@ export default function WhySeekahost() {
               <li className="flex items-start md:text-xl">
               <span className="mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
-                    <circle cx="53" cy="50" r="40" fill="rgba(255, 255, 255, 0.2)" />
-                    <path d="M40 55 L50 65 L70 35" stroke="white" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="53" cy="48" r="40" fill="rgba(255, 255, 255, 0.2)" />
+                    <path d="M40 55 L50 65 L70 35" stroke="white" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>
                 Work quickly, saving your important time

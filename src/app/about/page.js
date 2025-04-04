@@ -1,4 +1,3 @@
-import Navbar from "@/components/shared/Navbar";
 import Timeline from "@/components/about/Timeline";
 import Reviews from "@/components/shared/Review";
 import Footer from "@/components/shared/Footer";

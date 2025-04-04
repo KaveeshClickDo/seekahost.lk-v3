@@ -1,6 +1,5 @@
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
-import Navbar from "@/components/shared/Navbar";
 import Navbar2 from "@/components/shared/Navbar2";
 import PackagesPrices from "@/components/shared/PackagePrices";
 import Reviews from "@/components/shared/Review";

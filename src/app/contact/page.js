@@ -3,7 +3,6 @@ import GetStarted from "@/components/contact/GetStarted"
 import Hero from "@/components/contact/Hero"
 import Solution from "@/components/contact/Solution"
 import Footer from "@/components/shared/Footer"
-import Navbar from "@/components/shared/Navbar"
 import Navbar2 from "@/components/shared/Navbar2"
 import Topbar from "@/components/shared/Topbar"
 
