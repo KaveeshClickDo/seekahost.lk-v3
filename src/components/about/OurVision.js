@@ -14,10 +14,10 @@ export default function OurVision() {
 
                 <div className="md:w-1/2 mb-8 md:mb-0 md:pl-5 text-white">
                     <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm md:text-xl font-medium px-3 py-2 rounded-full mb-4">Our Vision</h1>
-                    <h2 className="text-xl md:text-3xl mb-6 leading-snug">
+                    <h2 className="text-xl md:text-2xl mb-6 leading-snug">
                         Our Vision is to be the best web hosting service in the world and go beyond our customer expectations with SMART web hosting services at affordable prices..
                     </h2>
-                    <ul className="space-y-2">
+                    <ul className="space-y-4">
                         <li className="flex items-start text-sm md:text-xl font-medium">
                             <span className="mr-2 w-5 flex-shrink-0">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

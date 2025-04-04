@@ -9,7 +9,7 @@ export default function Footer() {
 
 
           <div className="text-white md:w-2/3 py-10 md:py-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to make a secure future?
             </h2>
             <p className="text-white/90 text-base md:text-xl mb-6 font-medium">

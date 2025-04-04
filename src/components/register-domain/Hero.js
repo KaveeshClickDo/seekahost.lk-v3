@@ -16,11 +16,11 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2 md:mb-10">
-                    <h1 className="text-xl md:text-5xl font-bold leading-tight">
+                    <h1 className="text-xl md:text-4xl font-bold leading-tight">
                         Register Domain Names
                     </h1>
 
-                    <p className="mt-4 text-lg md:text-xl font-medium">
+                    <p className="mt-4 text-md md:text-lg">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 

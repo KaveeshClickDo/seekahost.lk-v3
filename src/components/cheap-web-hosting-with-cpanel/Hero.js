@@ -16,16 +16,16 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2">
-                    <h1 className="text-xl md:text-5xl font-bold leading-tight">
+                    <h1 className="text-xl md:text-4xl font-bold leading-tight">
                         Cheap Web Hosting With cPanel
                     </h1>
 
-                    <p className="mt-4 text-lg md:text-xl font-medium">
+                    <p className="mt-6 text-lg md:text-xl font-medium">
                         Get the cheapest cPanel hosting services in Sri Lanka with all the support you need to create websites and blogs. Everything you need to get online with simple clicks.
                     </p>
 
                     <ul className="space-y-2 mt-4">
-                        <li className="flex items-start text-sm md:text-xl font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -34,7 +34,7 @@ export default function Hero() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
                         </li>
 
-                        <li className="flex items-start text-sm md:text-xl font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -42,7 +42,7 @@ export default function Hero() {
                             </span>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
                         </li>
-                        <li className="flex items-start text-sm md:text-xl font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

@@ -17,14 +17,14 @@ export default function Video() {
         className="object-cover z-0"
         sizes="100vw"
       />
-      <div className="relative z-1 max-w-7xl mx-auto px-4 md:my-10">
+      <div className="relative z-1 max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-white md:mb-6">
             <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">
               Why SeekaHost
             </span>
           </h2>
-          <p className="mt-4 text-white max-w-xl mx-auto md:text-xl font-medium">
+          <p className="mt-4 text-white max-w-xl mx-auto md:text-lg font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor
             incididunt ut labore et dolore magna aliqua.
           </p>

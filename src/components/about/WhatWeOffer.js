@@ -14,7 +14,7 @@ export default function WhatWeOffer() {
             <div className="relative z-1 max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center md:my-10">
 
                 <div className="md:w-1/2 px-5">
-                    <h2 className="text-2xl  md:text-4xl font-semibold text-white mb-4">
+                    <h2 className="text-2xl  md:text-4xl font-semibold text-white mb-6">
                         What we offer for <br /> <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65"> Sri Lankans</span>
                     </h2>
                     <p className="text-white md:text-xl mb-4  font-medium">
