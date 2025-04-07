@@ -12,6 +12,7 @@ import Video from "@/components/shared/Video";
 import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "Business Web Hosting Sri Lanka: Best Business Web Hosting"
@@ -37,6 +38,7 @@ export default function BusinessWebHosting() {
             <OrderNow3 />
             <Reviews />
             <FAQs />
+            <BacktoTop />
             <Footer />
         </>
     );

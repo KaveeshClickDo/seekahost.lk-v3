@@ -12,6 +12,7 @@ import Topbar from "@/components/shared/Topbar";
 import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "Cheap Web Hosting With cPanel - Sri lanka's Best Host"
@@ -37,6 +38,7 @@ export default function CheapWebHostingWithcPanel() {
             <OrderNow4 />
             <Reviews />
             <FAQs />
+            <BacktoTop />
             <Footer />
         </>
     );

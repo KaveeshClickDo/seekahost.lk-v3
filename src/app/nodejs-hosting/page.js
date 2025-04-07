@@ -10,6 +10,7 @@ import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "NodeJS Hosting Sri Lanka: Best NodeJs Hosting"
@@ -33,6 +34,7 @@ export default function NodeJSHosting() {
             <OrderNow2 />
             <Reviews />
             <FAQs />
+            <BacktoTop />
             <Footer />
         </>
     );

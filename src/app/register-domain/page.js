@@ -8,6 +8,7 @@ import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Topbar from "@/components/shared/Topbar";
 import Navbar2 from "@/components/shared/Navbar2";
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "Register Domain"
@@ -29,6 +30,7 @@ export default function registerDomain() {
             <PackagesPrices />
             <Reviews />
             <FAQs />
+            <BacktoTop />
             <Footer />
         </>
     )

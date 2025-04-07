@@ -5,6 +5,7 @@ import Solution from "@/components/contact/Solution"
 import Footer from "@/components/shared/Footer"
 import Navbar2 from "@/components/shared/Navbar2"
 import Topbar from "@/components/shared/Topbar"
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "Contact Us",
@@ -31,6 +32,7 @@ export default function contact() {
             <Solution />
             <FAQ />
             <GetStarted />
+            <BacktoTop />
             <Footer />
         </>
     )
