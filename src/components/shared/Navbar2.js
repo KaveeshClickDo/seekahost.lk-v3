@@ -340,7 +340,7 @@ export default function Navbar2() {
                 </Link>
                 <Link
                     href="#"
-                    className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition text-lg font-medium" onClick={() => setMobileMenuOpen(false)}
+                    className="bg-[#0081FF] text-white px-4 py-2 rounded-full hover:bg-blue-600 transition text-lg font-medium" onClick={() => setMobileMenuOpen(false)}
                 >
                     Sign In
                 </Link>

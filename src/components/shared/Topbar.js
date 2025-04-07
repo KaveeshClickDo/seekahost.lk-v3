@@ -15,7 +15,7 @@ export default function Topbar() {
             </Link>
             <Link
                 href="#"
-                className="hover:underline font-medium transition-all duration-300 text-lg"
+                className="bg-[#0081FF] text-white px-6 py-2 rounded-full hover:bg-blue-600 transition md:text-lg"
             >
                 Sign In
             </Link>
