@@ -68,7 +68,7 @@ export default function WhySeekahost() {
                 alt="Woman using laptop"
                 width={416}
                 height={539}
-                className="rounded-xl shadow-lg"
+                className="rounded-xl shadow-lg w-1/2 h-1/2 md:w-full md:h-full"
               />
             </div>
           </div>

@@ -9,11 +9,11 @@ export default function GetStarted() {
 
                 <div className="md:w-1/2 mb-8 md:mb-0 text-white">
                     <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm px-3 py-2 rounded-full mb-4">Lorem ipsum dolor</h1>
-                    <h2 className="text-3xl md:text-4xl font-semibold mb-6 leading-snug text-black">
+                    <h2 className="text-2xl md:text-4xl font-semibold mb-6 leading-snug text-black">
                         Lorem ipsum dolor et, consectetur
                     </h2>
                     <ul className="space-y-2 mb-8">
-                        <li className="flex items-start text-xl text-gray-700 font-medium">
+                        <li className="flex items-start text-md md:text-xl text-gray-700 font-medium">
                             <span className="mr-2 w-5 flex-shrink-0">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="10" cy="10" r="6" fill="#1276DF" />
@@ -21,7 +21,7 @@ export default function GetStarted() {
                             </span>
                             Lorem ipsum dolor et, consectetur
                         </li>
-                        <li className="flex items-start text-xl text-gray-700 font-medium">
+                        <li className="flex items-start text-md md:text-xl text-gray-700 font-medium">
                             <span className="mr-2 w-5 flex-shrink-0">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="10" cy="10" r="6" fill="#1276DF" />
@@ -29,7 +29,7 @@ export default function GetStarted() {
                             </span>
                             Lorem ipsum dolor et, consectetur
                         </li>
-                        <li className="flex items-start text-xl text-gray-700 font-medium">
+                        <li className="flex items-start text-md md:text-xl text-gray-700 font-medium">
                             <span className="mr-2 w-5 flex-shrink-0">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="10" cy="10" r="6" fill="#1276DF" />

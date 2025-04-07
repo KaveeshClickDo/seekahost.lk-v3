@@ -19,7 +19,7 @@ export default function Solution () {
           <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">DDOS Protected</h3>
+                <h3 className="text-lg md:text-2xl font-semibold mb-2">DDOS Protected</h3>
                 <p className="text-gray-700 md:text-xl font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
@@ -30,6 +30,7 @@ export default function Solution () {
                   alt="DDOS Protected"
                   width={100}
                   height={100}
+                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                 />
               </div>
             </div>
@@ -39,7 +40,7 @@ export default function Solution () {
           <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">Instant Setup</h3>
+                <h3 className="text-lg md:text-2xl font-semibold mb-2">Instant Setup</h3>
                 <p className="text-gray-700 md:text-xl font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
@@ -50,6 +51,7 @@ export default function Solution () {
                   alt="Instant Setup"
                   width={100}
                   height={100}
+                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                 />
               </div>
             </div>
@@ -59,7 +61,7 @@ export default function Solution () {
           <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">24/7 Live Support</h3>
+                <h3 className="text-lg md:text-2xl font-semibold mb-2">24/7 Live Support</h3>
                 <p className="text-gray-700 md:text-xl font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
@@ -70,6 +72,7 @@ export default function Solution () {
                   alt="24/7 Live Support"
                   width={100}
                   height={100}
+                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                 />
               </div>
             </div>
@@ -79,7 +82,7 @@ export default function Solution () {
           <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">Guaranteed Uptime</h3>
+                <h3 className="text-lg md:text-2xl font-semibold mb-2">Guaranteed Uptime</h3>
                 <p className="text-gray-700 md:text-xl font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
@@ -90,6 +93,7 @@ export default function Solution () {
                   alt="Guaranteed Uptime"
                   width={100}
                   height={100}
+                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                 />
               </div>
             </div>
@@ -99,7 +103,7 @@ export default function Solution () {
           <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">Blog Management</h3>
+                <h3 className="text-lg md:text-2xl font-semibold mb-2">Blog Management</h3>
                 <p className="text-gray-700 md:text-xl font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
@@ -110,6 +114,7 @@ export default function Solution () {
                   alt="Blog Management"
                   width={100}
                   height={100}
+                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                 />
               </div>
             </div>
@@ -119,7 +124,7 @@ export default function Solution () {
           <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-semibold mb-2">Periodic Malware Scanner</h3>
+                <h3 className="text-lg md:text-2xl font-semibold mb-2">Periodic Malware Scanner</h3>
                 <p className="text-gray-700 md:text-xl font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
@@ -130,6 +135,7 @@ export default function Solution () {
                   alt="Periodic Malware Scanner"
                   width={100}
                   height={100}
+                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
                 />
               </div>
             </div>
