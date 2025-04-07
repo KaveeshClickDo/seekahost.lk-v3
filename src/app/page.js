@@ -12,6 +12,7 @@ import Navbar2 from "@/components/shared/Navbar2";
 import Topbar from "@/components/shared/Topbar";
 import ConsultantImage from "@/components/shared/ConsultantImage";
 import BacktoTop from "@/components/shared/BacktoTop";
+import PersonalConsultant from "@/components/home/PersonalConsultant";
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
       <Video />
       <WhySeekahost />
       <Reviews />
+      <div id="personal-consultant-section">
+      <PersonalConsultant />
+      </div>
       <FAQs />
       <BacktoTop />
       <Footer />
