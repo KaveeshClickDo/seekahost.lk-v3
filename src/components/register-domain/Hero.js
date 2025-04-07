@@ -16,7 +16,7 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2 md:mb-10">
-                    <h1 className="text-xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
                         Register Domain Names
                     </h1>
 

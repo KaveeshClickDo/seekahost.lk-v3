@@ -16,11 +16,11 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2">
-                    <h1 className="text-xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
                         Cheap Web Hosting With cPanel
                     </h1>
 
-                    <p className="mt-6 text-lg md:text-xl font-medium">
+                    <p className="mt-6 text-md md:text-lg font-medium">
                         Get the cheapest cPanel hosting services in Sri Lanka with all the support you need to create websites and blogs. Everything you need to get online with simple clicks.
                     </p>
 

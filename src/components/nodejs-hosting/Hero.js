@@ -16,11 +16,11 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2">
-                    <h1 className="text-xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
                         Node.js Hosting Sri Lanka
                     </h1>
 
-                    <p className="mt-4 text-lg md:text-xl font-medium">
+                    <p className="mt-4 text-md md:text-lg font-medium">
                         High performance, secure, super fast WP hosting services for bloggers and business owners with world class web support.
                     </p>
 

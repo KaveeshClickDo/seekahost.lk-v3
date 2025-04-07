@@ -16,11 +16,11 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2">
-                    <h1 className="text-xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
                         Lanka Business Web Hosting
                     </h1>
 
-                    <p className="mt-6 text-lg md:text-xl font-medium">
+                    <p className="mt-6 text-md md:text-lg font-medium">
                         High performance, secure, super-fast business website hosting services in Sri Lanka for Sri Lankan business owners with 24/7 support. Ideal for startups and big business owners that need powerful & reliable Lanka host.
                     </p>
 

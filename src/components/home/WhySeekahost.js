@@ -6,7 +6,7 @@ export default function WhySeekahost() {
       <section className="py-16 bg-white md:my-10">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-15 justify-center">
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold mb-8">
               Why SeekaHost
             </h2>
 

@@ -103,7 +103,7 @@ export default function PackagesPrices() {
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h1 className="text-blue-600 md:text-xl">PBN Manager</h1>
-                <h2 className="text-3xl md:text-4xl mb-4 text-[#042552]">
+                <h2 className="text-2xl md:text-4xl mb-4 text-[#042552]">
                     Best Plans & Cheapest Prices
                     <br className="hidden md:block" />
                     With{" "}

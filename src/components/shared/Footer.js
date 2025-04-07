@@ -9,7 +9,7 @@ export default function Footer() {
 
 
           <div className="text-white md:w-2/3 py-10 md:py-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4">
               Ready to make a secure future?
             </h2>
             <p className="text-white/90 text-base md:text-xl mb-6 font-medium">
@@ -135,6 +135,7 @@ export default function Footer() {
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
                 <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Best SEO Hosting</Link></li>
               </ul>
 
               <h3 className="text-lg md:text-xl font-medium mb-5 mt-8">Our Company</h3>
@@ -149,11 +150,12 @@ export default function Footer() {
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-5">Domain Registration</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Name Search</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Buy Domains Names</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Registration Guide</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Private Name Servers</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Expired Domains For PBN</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Free SSL Certificate</Link></li>
               </ul>
 
               <h3 className="text-lg md:text-xl font-medium mb-5 mt-10">Email Hosting Solutions</h3>
@@ -167,11 +169,12 @@ export default function Footer() {
             <div>
               <h3 className="text-lg md:text-xl font-medium mb-5">Support Services</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Small Business Web Design</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Private Blog Network Guide</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">PBN SEO Tutorials</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Technical Support</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Frequently Asked Questions</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Client Area Login</Link></li>
               </ul>
 
               <h3 className="text-lg md:text-xl font-medium mb-5 mt-10">Community & Resources</h3>
