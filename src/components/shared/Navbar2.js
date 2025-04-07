@@ -216,7 +216,8 @@ export default function Navbar2() {
                 <div>
                     <button
                         onClick={() => setDomainsDropdownOpen(!domainsDropdownOpen)}
-                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" 
+                        aria-expanded={domainsDropdownOpen}
                     >
                         Domains & SSL
                         {domainsDropdownOpen ? (
@@ -247,7 +248,8 @@ export default function Navbar2() {
                 <div>
                     <button
                         onClick={() => setWebHostingDropdownOpen(!webHostingDropdownOpen)}
-                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" 
+                        aria-expanded={webHostingDropdownOpen}
                     >
                         Hosting
                         {webHostingDropdownOpen ? (
@@ -301,7 +303,8 @@ export default function Navbar2() {
                 <div>
                     <button
                         onClick={() => setWordPressDropdownOpen(!wordPressDropdownOpen)}
-                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" aria-expanded={webHostingDropdownOpen}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium" 
+                        aria-expanded={wordPressDropdownOpen}
                     >
                         WordPress
                         {wordPressDropdownOpen ? (
