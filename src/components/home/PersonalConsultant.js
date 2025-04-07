@@ -11,7 +11,7 @@ export default function PersonalConsultant() {
                             Personal Consultant
                         </h2>
                         <p className="text-white mb-8 md:text-xl font-medium">
-                            Your dedicated point of contact for personalized guidance and support. We're here around the clock with 24/7 ticket assistance whenever you need us.
+                            Your dedicated point of contact for personalized guidance and support. We&apos;re here around the clock with 24/7 ticket assistance whenever you need us.
                         </p>
 
                         <div className="space-y-6 text-white">
