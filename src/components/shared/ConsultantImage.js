@@ -42,6 +42,7 @@ export default function ConsultantImage() {
         width={201}
         height={320}
         className="object-contain"
+        priority
       />
       <button 
         onClick={() => setShowConsultantImage(false)}
