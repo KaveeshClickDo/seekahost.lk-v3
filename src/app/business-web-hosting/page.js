@@ -22,7 +22,6 @@ export const metadata = {
 export default function BusinessWebHosting() {
     return (
         <>
-            {/* <Navbar /> */}
             <div className="hidden lg:block">
                 <Topbar />
             </div>

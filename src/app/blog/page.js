@@ -1,4 +1,3 @@
-// components/Blog.js
 import Footer from '@/components/shared/Footer';
 import Navbar2 from '@/components/shared/Navbar2';
 import Topbar from '@/components/shared/Topbar';
@@ -70,13 +69,11 @@ const blogData = [
 ];
 
 export default function Blog() {
-    // Filter out the featured article
     const featuredArticle = blogData.find(article => article.isFeatured);
     const regularArticles = blogData.filter(article => !article.isFeatured);
 
     return (
         <>
-            {/* <Navbar /> */}
             <div className="hidden lg:block">
                 <Topbar />
             </div>
@@ -92,8 +89,8 @@ export default function Blog() {
                                 <Image
                                     src={featuredArticle.image}
                                     alt={featuredArticle.title}
-                                    layout="fill" // Fills the parent container
-                                    objectFit="cover" // Ensures the image covers the container
+                                    layout="fill"
+                                    objectFit="cover"
                                     className="rounded-xl"
                                     priority
                                 />

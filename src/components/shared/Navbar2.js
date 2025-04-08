@@ -24,10 +24,8 @@ export default function Navbar2() {
     const [desktopEcommersDropdownOpen, setDesktopEcommersDropdownOpen] = useState(false);
     const pathname = usePathname();
 
-    // Create a single ref for the entire navbar
     const navbarRef = useRef(null);
 
-    // Function to close all desktop dropdowns
     const closeAllDropdowns = () => {
         setDesktopWebHostingDropdownOpen(false);
         setDesktopWordPressDropdownOpen(false);
@@ -37,19 +35,16 @@ export default function Navbar2() {
         setDesktopEcommersDropdownOpen(false);
     };
 
-    // Handle outside clicks
     useEffect(() => {
         function handleClickOutside(event) {
-            // Close all dropdowns if the click is outside the navbar
+
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 closeAllDropdowns();
             }
         }
 
-        // Add event listener
         document.addEventListener('mousedown', handleClickOutside);
 
-        // Clean up the event listener
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };

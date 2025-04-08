@@ -18,7 +18,6 @@ export default function registerDomain() {
 
     return (
         <>
-            {/* <Navbar /> */}
             <div className="hidden lg:block">
                 <Topbar />
             </div>

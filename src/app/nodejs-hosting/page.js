@@ -20,7 +20,6 @@ export const metadata = {
 export default function NodeJSHosting() {
     return (
         <>
-            {/* <Navbar /> */}
             <div className="hidden lg:block">
                 <Topbar />
             </div>

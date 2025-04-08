@@ -16,7 +16,6 @@ export const metadata = {
 export default function about() {
     return (
         <>
-            {/* <Navbar /> */}
             <div className="hidden lg:block">
                 <Topbar />
             </div>

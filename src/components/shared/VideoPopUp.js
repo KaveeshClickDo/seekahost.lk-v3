@@ -1,4 +1,3 @@
-// VideoPopup.jsx - This will be a client component
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -6,7 +5,6 @@ import { useState, useEffect } from 'react';
 export default function VideoPopup({ videoId }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close popup when escape key is pressed
   useEffect(() => {
     const handleEscKey = (event) => {
       if (event.key === 'Escape') {

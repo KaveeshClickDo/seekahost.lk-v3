@@ -8,11 +8,10 @@ export default function ConsultantImage() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Delay the initial appearance by 3 seconds
+
     const showTimer = setTimeout(() => {
       setShowConsultantImage(true);
 
-      // Add a small additional delay before animating in
       setTimeout(() => {
         setIsVisible(true);
       }, 100);

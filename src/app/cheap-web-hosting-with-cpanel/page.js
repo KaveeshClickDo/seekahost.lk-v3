@@ -22,7 +22,6 @@ export const metadata = {
 export default function CheapWebHostingWithcPanel() {
     return (
         <>
-            {/* <Navbar /> */}
             <div className="hidden lg:block">
                 <Topbar />
             </div>

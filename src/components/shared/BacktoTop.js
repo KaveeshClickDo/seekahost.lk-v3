@@ -7,7 +7,7 @@ export default function BacktoTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if scrolled more than page height
+
       if (window.scrollY > 100) {
         setIsVisible(true);
       } else {
@@ -15,10 +15,10 @@ export default function BacktoTop() {
       }
     };
 
-    // Attach the scroll event listener
+
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
