@@ -6,7 +6,7 @@ import VideoPopup from '../shared/VideoPopUp';
 export default function Hero() {
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 lg:w-[72%] h-[4%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[41%] lg:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
+            <div className="absolute inset-0 lg:w-[72%] h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[41%] lg:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
             <div className="absolute inset-0 lg:w-[72%] h-full bg-[#0A437F] rounded-br-[100px] z-1"></div>
             <Image
                 src="/images/home/home-hero-bg.svg"
@@ -113,7 +113,7 @@ export default function Hero() {
                         alt="Hero Image"
                         width={672}
                         height={551}
-                        className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
+                        className="w-full rounded-lg shadow-lg"
                         priority
                     />
                     <VideoPopup videoId="hx2W4fmqw_w" />
