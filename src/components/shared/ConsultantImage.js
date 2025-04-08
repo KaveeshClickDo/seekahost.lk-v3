@@ -1,24 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 export default function ConsultantImage() {
-  const [showConsultantImage, setShowConsultantImage] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-
-    const showTimer = setTimeout(() => {
-      setShowConsultantImage(true);
-
-      setTimeout(() => {
-        setIsVisible(true);
-      }, 100);
-    }, 1000);
-
-    return () => clearTimeout(showTimer);
-  }, []);
+  const [showConsultantImage, setShowConsultantImage] = useState(true);
 
   const scrollToPackagePrices = () => {
     const packagePricesSection = document.getElementById("package-prices-section");
@@ -37,10 +23,7 @@ export default function ConsultantImage() {
   if (!showConsultantImage) return null;
 
   return (
-    <div
-      className={`fixed right-2 top-7/16 transform -translate-y-1/2 z-10 transition-all duration-500 ease-in-out ${isVisible ? 'translate-x-0' : 'translate-x-full'
-        }`}
-    >
+    <div className="fixed right-2 top-7/16 transform -translate-y-1/2 z-10">
       <Image
         src="/images/home/Personal-Consultant.png"
         alt="Personal Consultant"
