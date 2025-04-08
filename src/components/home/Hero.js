@@ -113,7 +113,7 @@ export default function Hero() {
                         alt="Hero Image"
                         width={672}
                         height={551}
-                        className="w-full rounded-lg shadow-lg"
+                        className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />
                     <VideoPopup videoId="hx2W4fmqw_w" />
