@@ -1,7 +1,29 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
+    const [showVideoPopup, setShowVideoPopup] = useState(false);
+    
+    // Close popup when escape key is pressed
+    useEffect(() => {
+        const handleEscKey = (event) => {
+            if (event.key === 'Escape') {
+                setShowVideoPopup(false);
+            }
+        };
+        
+        if (showVideoPopup) {
+            document.addEventListener('keydown', handleEscKey);
+        }
+        
+        return () => {
+            document.removeEventListener('keydown', handleEscKey);
+        };
+    }, [showVideoPopup]);
+
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
             <div className="absolute inset-0 lg:w-[72%] h-[4%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[41%] lg:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
@@ -14,7 +36,6 @@ export default function Hero() {
                 priority
             />
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10">
-
 
                 <div className="text-white w-full max-w-2xl z-3">
                     <h1 className="text-2xl md:text-4xl font-bold leading-tight">
@@ -120,11 +141,9 @@ export default function Hero() {
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />
-                    {/* <a
-                        href="https://www.youtube.com/watch?v=hx2W4fmqw_w"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Watch introduction video on YouTube"
+                    <button
+                        onClick={() => setShowVideoPopup(true)}
+                        aria-label="Watch introduction video"
                         className="absolute bottom-6 left-6 bg-transparent p-3 rounded-full shadow-lg cursor-pointer flex items-center justify-center"
                     >
                         <svg
@@ -135,11 +154,35 @@ export default function Hero() {
                             <polygon points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
                             <path d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
                         </svg>
-                    </a> */}
+                    </button>
                 </div>
-
-
             </div>
+
+            {/* Video Popup */}
+            {showVideoPopup && (
+                <div className="fixed inset-0 bg-black/75 flex items-center justify-center z-50">
+                    <div className="relative w-full max-w-4xl mx-4">
+                        <div className="bg-black rounded-lg overflow-hidden aspect-video">
+                            <iframe 
+                                width="100%" 
+                                height="100%"
+                                src="https://www.youtube.com/embed/hx2W4fmqw_w?autoplay=1"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
+                        <button 
+                            onClick={() => setShowVideoPopup(false)}
+                            className="absolute -top-10 right-0 text-white text-xl font-bold hover:text-gray-300"
+                        >
+                            Close ×
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
