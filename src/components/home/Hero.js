@@ -1,4 +1,3 @@
-// Hero.jsx - This remains a server component
 import Image from 'next/image';
 import Link from 'next/link';
 import PopUpVideo from '../shared/PopUpVideo';

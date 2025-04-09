@@ -9,7 +9,6 @@ export default function PopUpVideo({ videoId, onVideoStateChange }) {
     const handleEscKey = (event) => {
       if (event.key === 'Escape') {
         setIsOpen(false);
-        // Inform parent when video is closed via Escape key
         if (onVideoStateChange) {
           onVideoStateChange(false);
         }
@@ -27,7 +26,6 @@ export default function PopUpVideo({ videoId, onVideoStateChange }) {
 
   const openVideo = () => {
     setIsOpen(true);
-    // Inform parent when video is opened
     if (onVideoStateChange) {
       onVideoStateChange(true);
     }
@@ -35,7 +33,6 @@ export default function PopUpVideo({ videoId, onVideoStateChange }) {
 
   const closeVideo = () => {
     setIsOpen(false);
-    // Inform parent when video is closed
     if (onVideoStateChange) {
       onVideoStateChange(false);
     }

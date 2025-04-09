@@ -35,7 +35,6 @@ export default function PeopleCards() {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
     useEffect(() => {
-        // Only set up the interval if no video is playing
         if (!isVideoPlaying) {
             const interval = setInterval(() => {
                 setCurrentSlide((prev) => (prev + 1) % people.length);
@@ -43,11 +42,9 @@ export default function PeopleCards() {
 
             return () => clearInterval(interval);
         }
-        // If a video is playing, don't set up the interval
         return () => {};
     }, [people.length, isVideoPlaying]);
 
-    // Handle video state changes
     const handleVideoState = (isPlaying) => {
         setIsVideoPlaying(isPlaying);
     };
