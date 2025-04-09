@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image"
-import VideoPopupSlider from "../shared/VideoPopUpSlider";
+import PopUpVideo from "../shared/PopUpVideo";
 
 export default function PeopleCards() {
 
@@ -76,7 +76,7 @@ export default function PeopleCards() {
                                         />
                                        
                                        <div className="absolute top-7/16 left-6/16 md:left-7/16">
-                                            <VideoPopupSlider 
+                                            <PopUpVideo
                                                 videoId={person.videoUrl} 
                                                 onVideoStateChange={handleVideoState}
                                             />

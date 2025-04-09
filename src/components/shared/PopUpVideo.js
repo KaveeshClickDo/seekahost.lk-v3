@@ -2,13 +2,17 @@
 
 import { useState, useEffect } from 'react';
 
-export default function VideoPopup({ videoId }) {
+export default function PopUpVideo({ videoId, onVideoStateChange }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleEscKey = (event) => {
       if (event.key === 'Escape') {
         setIsOpen(false);
+        // Inform parent when video is closed via Escape key
+        if (onVideoStateChange) {
+          onVideoStateChange(false);
+        }
       }
     };
 
@@ -19,12 +23,28 @@ export default function VideoPopup({ videoId }) {
     return () => {
       document.removeEventListener('keydown', handleEscKey);
     };
-  }, [isOpen]);
+  }, [isOpen, onVideoStateChange]);
+
+  const openVideo = () => {
+    setIsOpen(true);
+    // Inform parent when video is opened
+    if (onVideoStateChange) {
+      onVideoStateChange(true);
+    }
+  };
+
+  const closeVideo = () => {
+    setIsOpen(false);
+    // Inform parent when video is closed
+    if (onVideoStateChange) {
+      onVideoStateChange(false);
+    }
+  };
 
   return (
     <>
       <button
-        onClick={() => setIsOpen(true)}
+        onClick={openVideo}
         aria-label="Watch introduction video"
         className="bg-transparent rounded-full shadow-lg cursor-pointer"
       >
@@ -59,7 +79,7 @@ export default function VideoPopup({ videoId }) {
               ></iframe>
             </div>
             <button
-              onClick={() => setIsOpen(false)}
+              onClick={closeVideo}
               className="absolute -top-12 right-0 text-white hover:opacity-80 transition-opacity"
               aria-label="Close video"
             >

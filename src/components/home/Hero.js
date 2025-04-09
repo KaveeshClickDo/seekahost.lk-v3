@@ -1,8 +1,7 @@
 // Hero.jsx - This remains a server component
 import Image from 'next/image';
 import Link from 'next/link';
-import VideoPopup from '../shared/VideoPopUp';
-import VideoPopupSlider from '../shared/VideoPopUpSlider';
+import PopUpVideo from '../shared/PopUpVideo';
 
 export default function Hero() {
     return (
@@ -118,7 +117,7 @@ export default function Hero() {
                         priority
                     />
                     <div className="absolute bottom-6 left-6">
-                        <VideoPopupSlider
+                        <PopUpVideo
                             videoId="hx2W4fmqw_w"
                             onVideoStateChange={null}
                         />
