@@ -64,7 +64,7 @@ export default function PeopleCards() {
                                         />
                                        
                                         <a
-                                            href={person.videoUrl}
+                                            // href={person.videoUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             aria-label="Watch introduction video on YouTube"
