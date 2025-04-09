@@ -8,7 +8,7 @@ import Commitment from "@/components/about/Commitment";
 import Topbar from "@/components/shared/Topbar";
 import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
-import SignUpIsland from "@/components/shared/SignUpIsland";
+import CTA from "@/components/shared/CTA";
 
 export const metadata = {
     title: "About Us"
@@ -28,7 +28,7 @@ export default function about() {
             <Reviews />
             <Commitment />
             <BacktoTop />
-            <SignUpIsland />
+            <CTA />
             <Footer />
         </>
     )

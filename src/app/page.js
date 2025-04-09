@@ -13,7 +13,7 @@ import Topbar from "@/components/shared/Topbar";
 import ConsultantImage from "@/components/shared/ConsultantImage";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PersonalConsultant from "@/components/home/PersonalConsultant";
-import SignUpIsland from "@/components/shared/SignUpIsland";
+import CTA from "@/components/shared/CTA";
 
 export default function Home() {
   return (
@@ -42,7 +42,7 @@ export default function Home() {
       </div>
       <FAQs />
       <BacktoTop />
-      <SignUpIsland />
+      <CTA />
       <Footer />
     </>
   );

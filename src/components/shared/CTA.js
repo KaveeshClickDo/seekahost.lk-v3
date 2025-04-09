@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function SignUpIsland() {
+export default function CTA() {
     return (
         <section className="w-full">
             <div className="flex justify-center items-center py-10">
