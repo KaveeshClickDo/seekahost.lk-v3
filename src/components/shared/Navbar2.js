@@ -366,7 +366,7 @@ export default function Navbar2() {
         <nav ref={navbarRef} className="relative w-full bg-white p-4 lg:p-0 shadow">
             <div className="container mx-auto flex items-center justify-between md:pl-10">
                 <Link href="/" className="lg:hidden">
-                    <Image src="/images/shared/navbar-logo.png" alt="SeekaHost" width={133} height={62} priority />
+                    <Image src="/images/shared/navbar-logo.webp" alt="SeekaHost" width={133} height={62} priority />
                 </Link>
                 <DesktopMenu />
                 <MobileHamburger />

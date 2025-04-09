@@ -37,7 +37,7 @@ export default function Video() {
                 src="/images/shared/video-thumb.webp"
                 alt="Woman holding phone"
                 width={1008}
-                height={575}
+                height={567}
                 className="w-full h-auto object-cover"
               />
               <button
