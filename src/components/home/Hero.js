@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import VideoPopup from '../shared/VideoPopUp';
+import VideoPopupSlider from '../shared/VideoPopUpSlider';
 
 export default function Hero() {
     return (
@@ -116,7 +117,12 @@ export default function Hero() {
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px] object-cover"
                         priority
                     />
-                    <VideoPopup videoId="hx2W4fmqw_w" />
+                    <div className="absolute bottom-6 left-6">
+                        <VideoPopupSlider
+                            videoId="hx2W4fmqw_w"
+                            onVideoStateChange={null}
+                        />
+                    </div>
                 </div>
             </div>
         </section>

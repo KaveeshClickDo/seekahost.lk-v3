@@ -46,12 +46,17 @@ export default function Video() {
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent p-3 rounded-full shadow-lg cursor-pointer flex items-center justify-center"
               >
                 <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 26 26"
-                  className="w-20 h-20 transition duration-1000 fill-white opacity-60 hover:opacity-100"
-                >
-                  <polygon points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
-                  <path d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
+                  className="w-15 h-15 md:w-25 md:h-25 transition duration-1000 fill-white opacity-60 hover:opacity-100"
+                  strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM10.6935 15.8458L15.4137 13.059C16.1954 12.5974 16.1954 11.4026 15.4137 10.941L10.6935 8.15419C9.93371 7.70561 9 8.28947 9 9.21316V14.7868C9 15.7105 9.93371 16.2944 10.6935 15.8458Z"
+                    fill="white">
+                  </path>
                 </svg>
               </button>
             </>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image"
+import VideoPopupSlider from "../shared/VideoPopUpSlider";
 
 export default function PeopleCards() {
 
@@ -12,33 +13,44 @@ export default function PeopleCards() {
             company: "Business Owner",
             image: "/images/wordpress-hosting/people-card-1.webp",
             comment: "Lorem ipsum dolor sit uno, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet",
-            videoUrl: "https://www.youtube.com/watch?v=hx2W4fmqw_w"
+            videoUrl: "hx2W4fmqw_w"
         },
         {
             name: "Sarah Juli",
             company: "Business Manager",
             image: "/images/wordpress-hosting/people-card-2.webp",
             comment: "Lorem ipsum dolor sit duos, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet",
-            videoUrl: "https://www.youtube.com/watch?v=hx2W4fmqw_w"
+            videoUrl: "hx2W4fmqw_w"
         },
         {
             name: "Sarah Juli",
             company: "Business Handler",
             image: "/images/wordpress-hosting/people-card-3.webp",
             comment: "Lorem ipsum dolor sit thres, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet",
-            videoUrl: "https://www.youtube.com/watch?v=hx2W4fmqw_w"
+            videoUrl: "hx2W4fmqw_w"
         }
     ];
 
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % people.length);
-        }, 3000);
+        // Only set up the interval if no video is playing
+        if (!isVideoPlaying) {
+            const interval = setInterval(() => {
+                setCurrentSlide((prev) => (prev + 1) % people.length);
+            }, 3000);
 
-        return () => clearInterval(interval);
-    }, [people.length]);
+            return () => clearInterval(interval);
+        }
+        // If a video is playing, don't set up the interval
+        return () => {};
+    }, [people.length, isVideoPlaying]);
+
+    // Handle video state changes
+    const handleVideoState = (isPlaying) => {
+        setIsVideoPlaying(isPlaying);
+    };
 
     return (
         <section className="relative min-h-[600px]">
@@ -63,22 +75,12 @@ export default function PeopleCards() {
                                             className="w-full h-auto rounded-3xl shadow-2xl shadow-black md:ml-4"
                                         />
                                        
-                                        <a
-                                            // href={person.videoUrl}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label="Watch introduction video on YouTube"
-                                            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-transparent p-3 rounded-full cursor-pointer flex items-center justify-center z-10"
-                                        >
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 26 26"
-                                                className="md:w-20 md:h-20 w-10 h-10 transition duration-1000 fill-white opacity-60 hover:opacity-100"
-                                            >
-                                                <polygon points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
-                                                <path d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z" />
-                                            </svg>
-                                        </a>
+                                       <div className="absolute top-7/16 left-6/16 md:left-7/16">
+                                            <VideoPopupSlider 
+                                                videoId={person.videoUrl} 
+                                                onVideoStateChange={handleVideoState}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             ))}
