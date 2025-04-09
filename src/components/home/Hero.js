@@ -112,8 +112,8 @@ export default function Hero() {
                         src="/images/home/hero-image.webp"
                         alt="Hero Image"
                         width={672}
-                        height={551}
-                        className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
+                        height={546}
+                        className="w-full rounded-lg shadow-lg rounded-tl-[100px] object-cover"
                         priority
                     />
                     <VideoPopup videoId="hx2W4fmqw_w" />

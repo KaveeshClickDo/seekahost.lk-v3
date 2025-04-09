@@ -25,7 +25,7 @@ export default function ConsultantImage() {
   return (
     <div className="fixed right-2 top-7/16 transform -translate-y-1/2 z-10">
       <Image
-        src="/images/home/Personal-Consultant.png"
+        src="/images/home/Personal-Consultant.webp"
         alt="Personal Consultant"
         width={201}
         height={320}
