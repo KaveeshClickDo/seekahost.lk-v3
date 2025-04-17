@@ -56,8 +56,8 @@ export default function GetStarted() {
                     <Image
                         src="/images/contact/contact-getstarted.webp"
                         alt="Human call center"
-                        width={552}
-                        height={439}
+                        width={2557}
+                        height={2034}
                         className="rounded-md"
                     />
                 </div>
