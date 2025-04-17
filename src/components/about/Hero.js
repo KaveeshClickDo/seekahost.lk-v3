@@ -23,8 +23,8 @@ export default function Hero() {
                         <Image
                             src="/images/about/about-hero1.webp"
                             alt="People collaborating around a table"
-                            width={609}
-                            height={232}
+                            width={2900}
+                            height={1104}
                             className="rounded-3xl w-full h-auto"
                             priority
                         />
@@ -36,8 +36,8 @@ export default function Hero() {
                             <Image
                                 src="/images/about/about-hero2.webp"
                                 alt="Three people looking at laptop"
-                                width={297}
-                                height={234}
+                                width={1400}
+                                height={1104}
                                 className="rounded-3xl w-full h-auto"
                                 priority
                             />
@@ -46,8 +46,8 @@ export default function Hero() {
                             <Image
                                 src="/images/about/about-hero3.webp"
                                 alt="Two people looking at laptop"
-                                width={297}
-                                height={234}
+                                width={1400}
+                                height={1104}
                                 className="rounded-3xl w-full h-auto"
                                 priority
                             />

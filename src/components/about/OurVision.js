@@ -74,8 +74,8 @@ export default function OurVision() {
                     <Image
                         src="/images/about/our-vision.webp"
                         alt="Persons using laptop"
-                        width={552}
-                        height={439}
+                        width={2582}
+                        height={2054}
                         className="rounded-md"
                     />
                 </div>

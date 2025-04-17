@@ -159,8 +159,8 @@ export default function Footer() {
               <Image
                 src="/images/shared/payment-methods-new.png"
                 alt="payment methods"
-                width={500}
-                height={51}
+                width={350}
+                height={36}
                 className="mt-1"
               />
             </div>

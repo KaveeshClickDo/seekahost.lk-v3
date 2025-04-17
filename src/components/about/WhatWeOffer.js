@@ -37,8 +37,8 @@ export default function WhatWeOffer() {
                     <Image
                         src="/images/about/what-we-offer.webp"
                         alt="Persons using laptop"
-                        width={552}
-                        height={439}
+                        width={2572}
+                        height={2046}
                         className="rounded-md"
                     />
                 </div>
