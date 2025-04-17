@@ -66,8 +66,8 @@ export default function WhySeekahost() {
               <Image
                 src="/images/home/woman-laptop.webp"
                 alt="Woman using laptop"
-                width={416}
-                height={539}
+                width={2112}
+                height={2736}
                 className="rounded-xl shadow-lg w-1/2 h-1/2 md:w-full md:h-full"
               />
             </div>
@@ -127,8 +127,8 @@ export default function WhySeekahost() {
             <Image
               src="/images/home/buynsell.webp"
               alt="Person using laptop"
-              width={560}
-              height={446}
+              width={2554}
+              height={2031}
               className="rounded-md"
             />
           </div>

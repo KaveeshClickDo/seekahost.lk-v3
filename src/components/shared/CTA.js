@@ -35,8 +35,8 @@ export default function CTA() {
                         <Image
                             src="/images/shared/phone-mockup.webp"
                             alt="Phone Mockup"
-                            width={240}
-                            height={303}
+                            width={1167}
+                            height={1476}
                             className="w-60 h-auto drop-shadow-lg md:mt-[38%]"
                         />
                     </div>

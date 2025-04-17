@@ -57,8 +57,8 @@ export default function PersonalConsultant() {
                             <Image
                                 src="/images/home/consultant-image.webp"
                                 alt="consultant image"
-                                width={486}
-                                height={703}
+                                width={1944}
+                                height={2812}
                                 className="w-full md:w-7/8 h-auto"
                             />
                         </div>

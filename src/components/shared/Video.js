@@ -36,9 +36,9 @@ export default function Video() {
               <Image
                 src="/images/shared/video-thumb.webp"
                 alt="Woman holding phone"
-                width={1008}
-                height={567}
-                className="w-full h-auto object-cover"
+                width={1825}
+                height={1027}
+                className="w-full h-auto"
               />
               <button
                 onClick={() => setShowVideo(true)}

@@ -5,15 +5,15 @@ import PopUpVideo from '../shared/PopUpVideo';
 export default function Hero() {
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 lg:w-[72%] h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[41%] lg:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
-            <div className="absolute inset-0 lg:w-[72%] h-full bg-[#0A437F] rounded-br-[100px] z-1"></div>
-            <Image
+            <div className="absolute inset-0 lg:w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[41%] lg:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
+            <div className="absolute inset-0 lg:w-full h-full bg-[#0A437F] z-1"></div>
+            {/* <Image
                 src="/images/home/home-hero-bg.svg"
                 alt="Background Image"
                 fill
                 className="object-cover z-0 hidden lg:block"
                 priority
-            />
+            /> */}
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10">
                 <div className="text-white w-full max-w-2xl z-3">
                     <h1 className="text-2xl md:text-4xl font-bold leading-tight">
@@ -110,9 +110,9 @@ export default function Hero() {
                     <Image
                         src="/images/home/hero-image.webp"
                         alt="Hero Image"
-                        width={672}
-                        height={546}
-                        className="w-full rounded-lg shadow-lg rounded-tl-[100px] object-cover"
+                        width={3144}
+                        height={2580}
+                        className="w-full h-auto rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />
                     <div className="absolute bottom-6 left-6">
