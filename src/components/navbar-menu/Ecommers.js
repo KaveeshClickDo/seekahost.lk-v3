@@ -10,7 +10,7 @@ export default function Ecommers() {
                     <h3 className="font-medium text-gray-700 mb-4 uppercase text-sm">CREATE YOUR ONLINE STORE</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <Link href="/register-domain" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>

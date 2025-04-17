@@ -62,8 +62,8 @@ export default function Hero() {
                     <Image
                         src="/images/cheap-web-hosting-with-cpanel/cpanel-hero.webp"
                         alt="Hero Image"
-                        width={672}
-                        height={551}
+                        width={3144}
+                        height={2580}
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />

@@ -29,8 +29,8 @@ export default function OrderNow() {
                         <Image
                             src="/images/register-domain/order-now.webp"
                             alt="Order now Image"
-                            width={609}
-                            height={486}
+                            width={2900}
+                            height={2312}
                             className="rounded-3xl w-full h-auto"
                             priority
                         />

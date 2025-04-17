@@ -67,8 +67,8 @@ export default function PeopleCards() {
                                         <Image
                                             src={person.image}
                                             alt={`${person.name} Image`}
-                                            width={406}
-                                            height={616}
+                                            width={1840}
+                                            height={2792}
                                             className="w-full h-auto rounded-3xl shadow-2xl shadow-black md:ml-4"
                                         />
                                        

@@ -72,8 +72,8 @@ export default function ScreenshotSlider() {
                                     <Image
                                         src={src}
                                         alt={`WordPress Hosting Control Panel ${index + 1}`}
-                                        width={760}
-                                        height={530}
+                                        width={3040}
+                                        height={2120}
                                         className="w-full h-auto rounded-l-lg shadow-lg"
                                     />
                                 </div>
