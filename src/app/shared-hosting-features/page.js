@@ -153,35 +153,22 @@ export default function HostingFeatures() {
                 <h1 className="text-4xl font-bold text-center mb-2">Compare our plans</h1>
                 <p className="text-center text-gray-600 mb-8">See at a glance what each plan costs and what you get for your money.</p>
 
-                <div className="overflow-x-auto">
+                <div className="relative overflow-x-auto overflow-y-auto max-h-[70vh] border border-gray-200 rounded-lg shadow-sm">
                     <table className="w-full border-collapse">
-                        <thead>
+                        <thead className="bg-white">
                             <tr className="border-b border-gray-500">
-                                <th className="py-4 px-6 text-left font-semibold text-lg md:text-xl">Choose your Plan</th>
+                                <th className="sticky top-0 bg-white py-4 px-6 text-left font-semibold text-lg md:text-xl z-10 shadow-sm"></th>
                                 {plans.map((plan, index) => (
-                                    <th key={index} className="py-4 px-6 text-center font-semibold text-lg md:text-xl">
+                                    <th
+                                        key={index}
+                                        className="sticky top-0 bg-white py-4 px-6 text-center font-semibold text-lg md:text-xl z-10 shadow-sm"
+                                    >
                                         {plan.name}
                                     </th>
                                 ))}
                             </tr>
                         </thead>
                         <tbody>
-                            {/* Add buttons row */}
-                            <tr className="border-b border-gray-300">
-                                <td className="py-4 px-6 font-semibold md:text-lg">
-                                    Select plan
-                                </td>
-                                {plans.map((plan, index) => (
-                                    <td key={index} className="py-4 px-6 text-center">
-                                        <Link href="#"
-                                            className="py-2 px-4 rounded text-white font-semibold transition bg-[#1276DF] hover:bg-blue-700 md:text-xl inline-block"
-                                        >
-                                            Get Plan
-                                        </Link>
-                                    </td>
-                                ))}
-                            </tr>
-                            
                             <tr className="border-b border-gray-500 bg-[#F5FAFF]">
                                 <td colSpan={4} className="py-4 px-6 font-semibold md:text-lg">
                                     Top features
@@ -256,7 +243,7 @@ export default function HostingFeatures() {
                                     ))}
                                 </tr>
                             ))}
-                            
+
                             {/* Add buttons at the bottom as well */}
                             <tr className="border-b border-gray-300">
                                 <td className="py-4 px-6 font-semibold md:text-lg">
