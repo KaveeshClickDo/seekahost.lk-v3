@@ -4,12 +4,16 @@ import Topbar from "@/components/shared/Topbar";
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import Link from "next/link";
 
+export const metadata = {
+    title: "Compare Plans"
+}
+
 export default function HostingFeatures() {
     // Plans data
     const plans = [
-        { name: "Starter", },
-        { name: "Turbo", },
-        { name: "Supersonic", }
+        { name: "Starter", price: 280, },
+        { name: "Turbo",  price: 500, },
+        { name: "Supersonic",  price: 700, }
     ];
 
     // Features data - each feature has a name and values for each plan
@@ -254,8 +258,9 @@ export default function HostingFeatures() {
                                         <Link href="#"
                                             className="py-2 px-4 rounded text-white font-semibold transition bg-[#1276DF] hover:bg-blue-700 md:text-xl inline-block"
                                         >
-                                            Get Plan
+                                            Get {plan.name}
                                         </Link>
+                                        <p className="mb-4 text-gray-500 md:text-xl font-medium">LKR{plan.price}/mo</p>
                                     </td>
                                 ))}
                             </tr>
