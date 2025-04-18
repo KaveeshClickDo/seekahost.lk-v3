@@ -1,14 +1,7 @@
-"use client";
 import Image from 'next/image';
+import SeePlansButton from './SeePlansButton';
 
 export default function Hero() {
-
-    const scrollToWpPackagePrices = () => {
-        const wpPackagePricesSection = document.getElementById("wordpress-package-prices-section");
-        if (wpPackagePricesSection) {
-            wpPackagePricesSection.scrollIntoView({ behavior: "smooth" });
-        }
-      };
 
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
@@ -75,13 +68,7 @@ export default function Hero() {
                         </div>
                         <div className="text-sm">with a 1-year term</div>
                     </div>
-
-                    <div 
-                        className="inline-block bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-6"
-                        onClick={scrollToWpPackagePrices}
-                        >
-                        See Plans
-                    </div>
+                    <SeePlansButton />
 
                 </div>
 
