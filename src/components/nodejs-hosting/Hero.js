@@ -70,8 +70,9 @@ export default function Hero() {
                     <Image
                         src="/images/nodejs-hosting/nodejs-hero.webp"
                         alt="Hero Image"
-                        width={3144}
-                        height={2580}
+                        width={672}
+                        height={551}
+                        quality={90}
                         className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
                         priority
                     />
