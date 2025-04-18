@@ -55,7 +55,7 @@ export default function Reviews() {
 
                     <div className="md:w-1/2 flex flex-col space-y-6">
                         {reviewers.map((reviewer) => (
-                            <div key={reviewer.id} className="bg-white shadow-lg rounded-lg p-6">
+                            <div key={reviewer.id} className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="flex items-center">
                                         <Image

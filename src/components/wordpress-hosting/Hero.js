@@ -1,6 +1,15 @@
+"use client";
 import Image from 'next/image';
 
 export default function Hero() {
+
+    const scrollToWpPackagePrices = () => {
+        const wpPackagePricesSection = document.getElementById("wordpress-package-prices-section");
+        if (wpPackagePricesSection) {
+            wpPackagePricesSection.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
             <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] z-1"></div>
@@ -20,8 +29,8 @@ export default function Hero() {
                         WordPress Hosting
                     </h1>
 
-                    <p className="mt-4 text-md md:text-lg font-medium">
-                        High performance, secure, super fast WP hosting services for bloggers and business owners with world class web support.
+                    <p className="mt-4 text-md md:text-xl font-lg font-medium">
+                        Ultrafast, Managed, Simple to Use
                     </p>
 
                     <ul className="space-y-2 mt-4">
@@ -31,7 +40,7 @@ export default function Hero() {
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            Automated setup, migration & updates
                         </li>
 
                         <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
@@ -40,7 +49,7 @@ export default function Hero() {
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            Multi-level security for extra peace of mind
                         </li>
                         <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
@@ -48,21 +57,31 @@ export default function Hero() {
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            Top-rated 24/7 expert support
                         </li>
                     </ul>
 
-                    <button className="bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-6">
-                        Get Started
-                    </button>
+                    <div className="mt-6">
+                        <div className="bg-yellow-500 text-blue-950 text-xs font-semibold inline-block px-2 py-1 rounded">
+                            Save 90%
+                        </div>
+                        <div className="line-through text-gray-300 text-sm mt-1">LKR2,800/month</div>
+                    </div>
+
+                    <div className="mt-4">
+                        <div className="flex items-baseline">
+                            <span className="text-xl md:text-3xl font-bold">LKR280</span>
+                            <span className="text-sm ml-1">/month</span>
+                        </div>
+                        <div className="text-sm">with a 1-year term</div>
+                    </div>
+
+                    <div 
+                        className="inline-block bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-6"
+                        onClick={scrollToWpPackagePrices}
+                        >
+                        See Plans
+                    </div>
 
                 </div>
 

@@ -25,7 +25,7 @@ export default function ControlPanel() {
             <div className="md:w-1/2 grid grid-cols-2 gap-6 relative md:my-10">
                 
                 <div className="grid gap-6 mb-10">
-                    <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow-sm">
+                    <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
                             src="/images/shared/ddos-protected.svg"
                             alt="Domain Registration"
@@ -43,7 +43,7 @@ export default function ControlPanel() {
                     </div>
 
 
-                    <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow-sm">
+                    <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
                             src="/images/shared/ddos-protected.svg"
                             alt="WP Hosting Plans"
@@ -62,7 +62,7 @@ export default function ControlPanel() {
                 </div>
 
                 <div className="grid gap-6 mt-10">
-                    <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow-sm">
+                    <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
                             src="/images/shared/ddos-protected.svg"
                             alt="1-Click WP Installer"
@@ -80,7 +80,7 @@ export default function ControlPanel() {
                     </div>
 
 
-                    <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow-sm">
+                    <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
                             src="/images/shared/ddos-protected.svg"
                             alt="Website Traffic/Data"

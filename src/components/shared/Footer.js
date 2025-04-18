@@ -15,9 +15,9 @@ export default function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             <div>
-              <h3 className="text-lg md:text-xl font-medium mb-4">About</h3>
-              <p className="text-gray-300 mb-2 md:text-lg font-medium">© 2025 SeekaHost™ Ltd.</p>
-              <p className="text-gray-300 md:text-lg font-medium">Web Hosting Company</p>
+              <h3 className="md:text-lg font-medium mb-4">About</h3>
+              <p className="text-gray-300 mb-2 font-medium">© 2025 SeekaHost™ Ltd.</p>
+              <p className="text-gray-300 font-medium">Web Hosting Company</p>
 
               <div className="flex md:flex-col mt-6">
                 <div className="flex">
@@ -88,60 +88,60 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-medium mb-5">Hosting Services</h3>
+              <h3 className="md:text-lg font-medium mb-5">Hosting Services</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Different Class IP Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SEO Hosting A-Class IP</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Website Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Blog Hosting</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Best SEO Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">WordPress Hosting Plans</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Different Class IP Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">SEO Hosting A-Class IP</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">WordPress Website Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">WordPress Blog Hosting</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Best SEO Hosting</Link></li>
               </ul>
 
-              <h3 className="text-lg md:text-xl font-medium mb-5 mt-8">Our Company</h3>
+              <h3 className="md:text-lg font-medium mb-5 mt-8">Our Company</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">About SeekaHost™</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SeekaHost™ University</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">SeekaHost Blog</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Contact Us</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg md:text-xl font-medium mb-5">Domain Registration</h3>
-              <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Name Search</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Buy Domains Names</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Registration Guide</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Private Name Servers</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Expired Domains For PBN</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Free SSL Certificate</Link></li>
-              </ul>
-
-              <h3 className="text-lg md:text-xl font-medium mb-5 mt-10">Email Hosting Solutions</h3>
-              <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Email Address</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Email Hosting Plans</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Access Webmail Login</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">About SeekaHost™</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">SeekaHost™ University</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">SeekaHost Blog</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Contact Us</Link></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg md:text-xl font-medium mb-5">Support Services</h3>
+              <h3 className="md:text-lg font-medium mb-5">Domain Registration</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Small Business Web Design</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Private Blog Network Guide</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">PBN SEO Tutorials</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">WordPress Technical Support</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Frequently Asked Questions</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Client Area Login</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Domain Name Search</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Buy Domains Names</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Domain Registration Guide</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Private Name Servers</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Expired Domains For PBN</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Free SSL Certificate</Link></li>
               </ul>
 
-              <h3 className="text-lg md:text-xl font-medium mb-5 mt-10">Community & Resources</h3>
+              <h3 className="md:text-lg font-medium mb-5 mt-10">Email Hosting Solutions</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">PBN Demystified</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Domain Expiration Checker</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white md:text-lg font-medium">Guide To Create A Blog</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Domain Email Address</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Email Hosting Plans</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Access Webmail Login</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="md:text-lg font-medium mb-5">Support Services</h3>
+              <ul className="space-y-4">
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Small Business Web Design</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Private Blog Network Guide</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">PBN SEO Tutorials</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">WordPress Technical Support</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Frequently Asked Questions</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Client Area Login</Link></li>
+              </ul>
+
+              <h3 className="md:text-lg font-medium mb-5 mt-10">Community & Resources</h3>
+              <ul className="space-y-4">
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">PBN Demystified</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Domain Expiration Checker</Link></li>
+                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Guide To Create A Blog</Link></li>
               </ul>
             </div>
           </div>

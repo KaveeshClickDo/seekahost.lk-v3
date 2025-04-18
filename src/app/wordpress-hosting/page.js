@@ -1,7 +1,6 @@
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar2 from "@/components/shared/Navbar2";
-import PackagesPrices from "@/components/shared/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
@@ -13,6 +12,7 @@ import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
+import WpPackagesPrices from "@/components/wordpress-hosting/WpPackagePrice";
 
 export const metadata = {
     title: "WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
@@ -26,7 +26,9 @@ export default function WordpressHosting() {
             </div>
             <Navbar2 />
             <Hero />
-            <PackagesPrices />
+            <div id="wordpress-package-prices-section">
+                <WpPackagesPrices />
+            </div>
             <PeopleCards />
             <OrderNow1 />
             <ScreenshotSlider />
