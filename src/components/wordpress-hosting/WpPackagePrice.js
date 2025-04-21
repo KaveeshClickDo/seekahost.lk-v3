@@ -198,33 +198,33 @@ export default function WpPackagesPrices() {
                         <Slider {...settings}>
                             {pricing.map((plan, idx) => (
                                 <div key={idx} className="p-4">
-                                    <div className="relative group border rounded-2xl p-6 h-full transition duration-600 shadow-md hover:shadow-[#09407A] bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
+                                    <div className={`relative border rounded-2xl p-6 h-full transition duration-400 shadow-md hover:shadow-lg bg-white border-none ${idx === 1 ? 'bg-gradient-to-t from-[#136CC9] to-[#09407A] shadow-[#09407A]' : ''}`}>
                                         {plan.isBestValue && (
                                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
                                             </div>
                                         )}
-                                        <h3 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
+                                        <h3 className={`text-lg md:text-xl font-semibold mb-2 ${idx === 1 ? 'text-white' : ''}`}>{plan.title}</h3>
                                         <div className="flex items-baseline justify-center mt-4">
-                                            <span className="text-4xl font-bold text-[#1276DF] mr-1 group-hover:text-white">
+                                            <span className={`text-4xl font-bold mr-1 ${idx === 1 ? 'text-white' : 'text-[#1276DF]'}`}>
                                                 LKR{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
                                             </span>
-                                            <span className="text-gray-500 group-hover:text-white md:text-xl font-medium">
+                                            <span className={`${idx === 1 ? 'text-white' : 'text-gray-500'} md:text-xl font-medium`}>
                                                 / {isMonthly ? 'mo' : 'yr'}
                                             </span>
                                         </div>
-                                        <p className="mb-4 text-gray-500 group-hover:text-white md:text-xl font-medium">{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
+                                        <p className={`mb-4 md:text-xl font-medium ${idx === 1 ? 'text-white' : 'text-gray-500'}`}>{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
                                         <button
-                                            className="w-full mb-4 py-2 rounded text-white font-semibold transition bg-[#1276DF] group-hover:bg-white group-hover:text-blue-600 md:text-xl"
+                                            className={`w-full mb-4 py-2 rounded font-semibold transition md:text-xl ${idx === 1 ? 'bg-white text-blue-600' : 'bg-[#1276DF] text-white'}`}
                                         >
                                             Get {plan.title}
                                         </button>
                                         <hr className="mb-4 text-gray-300" />
-                                        <ul className="text-left mb-6 space-y-2 group-hover:text-white md:text-lg font-medium">
+                                        <ul className={`text-left mb-6 space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
                                             {plan.features.map((feature, fIdx) => (
                                                 <li key={fIdx} className="flex items-center">
                                                     <svg
-                                                        className="w-5 h-5 text-blue-600 mr-2 group-hover:text-white"
+                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
                                                         fill="none"
                                                         stroke="currentColor"
                                                         strokeWidth="2"
@@ -245,7 +245,7 @@ export default function WpPackagesPrices() {
                                             {plan.wpfeatures.map((feature, fIdx) => (
                                                 <li key={fIdx} className="flex items-center">
                                                     <svg
-                                                        className="w-5 h-5 text-blue-600 mr-2 group-hover:text-white"
+                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
                                                         fill="none"
                                                         stroke="currentColor"
                                                         strokeWidth="2"
@@ -267,7 +267,7 @@ export default function WpPackagesPrices() {
                                             {plan.hostfeatures.map((feature, fIdx) => (
                                                 <li key={fIdx} className="flex items-center">
                                                     <svg
-                                                        className="w-5 h-5 text-blue-600 mr-2 group-hover:text-white"
+                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
                                                         fill="none"
                                                         stroke="currentColor"
                                                         strokeWidth="2"
@@ -292,7 +292,7 @@ export default function WpPackagesPrices() {
                         <div className="flex justify-center gap-4">
                             {pricing.slice(0, 3).map((plan, idx) => (
                                 <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
-                                    <div className="relative border rounded-lg p-6 h-full bg-white border-blue-500">
+                                    <div className={`relative border rounded-lg p-6 h-full ${idx === 1 ? 'bg-gradient-to-t from-[#136CC9] to-[#09407A] border-none' : 'bg-white border-blue-500'}`}>
                                         {plan.isBestValue && (
                                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
