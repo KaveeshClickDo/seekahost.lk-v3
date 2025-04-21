@@ -40,6 +40,7 @@ export default function WpPackagesPrices() {
                 'Daily Backup',
                 'Enhanced Security',
             ],
+            isBestValue: false,
         },
         {
             title: 'Turbo',
@@ -67,6 +68,7 @@ export default function WpPackagesPrices() {
                 'Enhanced Security',
                 'On-Demand Backup Copies',
             ],
+            isBestValue: true, // This plan will show the "Best Value" badge
         },
         {
             title: 'Supersonic',
@@ -96,6 +98,7 @@ export default function WpPackagesPrices() {
                 'On-Demand Backup Copies',
                 'Free Private DNS',
             ],
+            isBestValue: false,
         },
     ];
 
@@ -159,7 +162,7 @@ export default function WpPackagesPrices() {
                 </p>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
-                        className={`cursor-pointer  md:text-xl font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer md:text-xl font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
                         onClick={() => setIsMonthly(true)}
                     >
                         Monthly
@@ -183,7 +186,7 @@ export default function WpPackagesPrices() {
                         />
                     </div>
                     <span
-                        className={`cursor-pointer  md:text-xl font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer md:text-xl font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
                         onClick={() => setIsMonthly(false)}
                     >
                         Yearly
@@ -194,8 +197,13 @@ export default function WpPackagesPrices() {
                     {isClient ? (
                         <Slider {...settings}>
                             {pricing.map((plan, idx) => (
-                                <div key={idx} className="p-2">
-                                    <div className="group border rounded-2xl p-6 h-full transition duration-600 shadow-md hover:shadow-[#09407A] bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
+                                <div key={idx} className="p-4">
+                                    <div className="relative group border rounded-2xl p-6 h-full transition duration-600 shadow-md hover:shadow-[#09407A] bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
+                                        {plan.isBestValue && (
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                                BEST VALUE
+                                            </div>
+                                        )}
                                         <h3 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
                                         <div className="flex items-baseline justify-center mt-4">
                                             <span className="text-4xl font-bold text-[#1276DF] mr-1 group-hover:text-white">
@@ -276,7 +284,6 @@ export default function WpPackagesPrices() {
                                                 </li>
                                             ))}
                                         </ul>
-                                        
                                     </div>
                                 </div>
                             ))}
@@ -285,20 +292,31 @@ export default function WpPackagesPrices() {
                         <div className="flex justify-center gap-4">
                             {pricing.slice(0, 3).map((plan, idx) => (
                                 <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
-                                    <div className="border rounded-lg p-6 h-full bg-white border-blue-500">
+                                    <div className="relative border rounded-lg p-6 h-full bg-white border-blue-500">
+                                        {plan.isBestValue && (
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                                BEST VALUE
+                                            </div>
+                                        )}
                                         <div className="h-64"></div>
                                     </div>
                                 </div>
                             ))}
                             <div className="w-full md:hidden">
-                                <div className="border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm"></div>
+                                <div className="relative border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm">
+                                    {pricing[0].isBestValue && (
+                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                            BEST VALUE
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     )}
                 </div>
                 <Link href="/shared-hosting-features" className="bg-white text-[#0066CC] md:text-lg border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-medium">
-                        Compare Packages
-                    </Link>
+                    Compare Packages
+                </Link>
             </div>
         </section>
     );
