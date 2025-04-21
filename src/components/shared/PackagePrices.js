@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function PackagesPrices() {
     const [isMonthly, setIsMonthly] = useState(true);
@@ -16,44 +17,88 @@ export default function PackagesPrices() {
 
     const pricing = [
         {
-            title: 'Basic Package',
-            monthlyPrice: 29,
-            yearlyPrice: 290,
+            title: 'Starter',
+            monthlyPrice: 280,
+            yearlyPrice: 2000,
+            specialTextMonth: '30 days of Free Trial',
+            specialTextYear: 'Renews for LKR2800/yr',
             features: [
-                'Comprehensive Coverage',
-                '24/7 Customer Support',
-                'Quick Claims Processing',
+                '1 Website',
+                '10 GB Web Space',
+                '~10,000 Visits Monthly',
+                'Unmetered Traffic',
             ],
+            wpfeatures: [
+                'WordPress Auto-Install',
+                'Free Automated Migrations',
+                'Fully Managed Updates',
+                'Speed Optimizer WP Plugin',
+            ],
+            hostfeatures: [
+                'Free SSL, Email',
+                'Unlimited Database',
+                'Daily Backup',
+                'Enhanced Security',
+            ],
+            isBestValue: false,
         },
         {
-            title: 'Standard Package',
-            monthlyPrice: 59,
-            yearlyPrice: 590,
+            title: 'Turbo',
+            monthlyPrice: 500,
+            yearlyPrice: 5000,
+            specialTextMonth: 'Renews at LKR580/mo',
+            specialTextYear: 'Renews for LKR5800/yr',
             features: [
-                'Enhanced Coverage Options',
-                'Personalized Service',
-                'Flexible Fee Rates',
+                'Unlimited Websites',
+                '20 GB Web Space',
+                '~100,000 Visits Monthly',
+                'Unmetered Traffic',
             ],
+            wpfeatures: [
+                'WordPress Auto-Install',
+                'Free Automated Migrations',
+                'Fully Managed Updates',
+                'Speed Optimizer WP Plugin',
+                'WordPress Staging',
+            ],
+            hostfeatures: [
+                'Free SSL, Email',
+                'Unlimited Database',
+                'Daily Backup',
+                'Enhanced Security',
+                'On-Demand Backup Copies',
+            ],
+            isBestValue: true, // This plan will show the "Best Value" badge
         },
         {
-            title: 'Premium Package',
-            monthlyPrice: 79,
-            yearlyPrice: 790,
+            title: 'Supersonic',
+            monthlyPrice: 700,
+            yearlyPrice: 7000,
+            specialTextMonth: 'Renews at LKR780/mo',
+            specialTextYear: 'Renews for LKR7800/yr',
             features: [
-                'Comprehensive Coverage',
-                '24/7 Customer Support',
-                'Quick Claims Processing',
+                'Unlimited Websites',
+                '40 GB Web Space',
+                '~400,000 Visits Monthly',
+                'Unmetered Traffic',
             ],
-        },
-        {
-            title: 'Super Package',
-            monthlyPrice: 99,
-            yearlyPrice: 990,
-            features: [
-                'Comprehensive Coverage',
-                '24/7 Customer Support',
-                'Quick Claims Processing',
+            wpfeatures: [
+                'WordPress Auto-Install',
+                'Free Automated Migrations',
+                'Fully Managed Updates',
+                'Speed Optimizer WP Plugin',
+                'WordPress Staging',
+                '30% Faster PHP',
             ],
+            hostfeatures: [
+                'Free SSL, Email',
+                'Unlimited Database',
+                'Daily Backup',
+                'Enhanced Security',
+                'On-Demand Backup Copies',
+                'Free Private DNS',
+            ],
+            isBestValue: false,
         },
     ];
 
@@ -117,7 +162,7 @@ export default function PackagesPrices() {
                 </p>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
-                        className={`cursor-pointer  md:text-xl font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer md:text-xl font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
                         onClick={() => setIsMonthly(true)}
                     >
                         Monthly
@@ -141,7 +186,7 @@ export default function PackagesPrices() {
                         />
                     </div>
                     <span
-                        className={`cursor-pointer  md:text-xl font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer md:text-xl font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
                         onClick={() => setIsMonthly(false)}
                     >
                         Yearly
@@ -152,22 +197,77 @@ export default function PackagesPrices() {
                     {isClient ? (
                         <Slider {...settings}>
                             {pricing.map((plan, idx) => (
-                                <div key={idx} className="p-2">
-                                    <div className="group border rounded-2xl p-6 h-full transition duration-600 shadow-md hover:shadow-[#09407A] bg-white border-none hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A]">
-                                        <h3 className="text-lg md:text-xl font-semibold mb-2 group-hover:text-white">{plan.title}</h3>
-                                        <div className="flex items-baseline justify-center my-4">
-                                            <span className="text-4xl font-bold text-[#1276DF] mr-1 group-hover:text-white">
-                                                ${isMonthly ? plan.monthlyPrice.toFixed(2) : plan.yearlyPrice.toFixed(2)}
+                                <div key={idx} className="p-4">
+                                    <div className={`relative border rounded-2xl p-6 h-full transition duration-400 shadow-md hover:shadow-lg bg-white border-none ${idx === 1 ? 'bg-gradient-to-t from-[#136CC9] to-[#09407A] shadow-[#09407A]' : ''}`}>
+                                        {plan.isBestValue && (
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                                BEST VALUE
+                                            </div>
+                                        )}
+                                        <h3 className={`text-lg md:text-xl font-semibold mb-2 ${idx === 1 ? 'text-white' : ''}`}>{plan.title}</h3>
+                                        <div className="flex items-baseline justify-center mt-4">
+                                            <span className={`text-4xl font-bold mr-1 ${idx === 1 ? 'text-white' : 'text-[#1276DF]'}`}>
+                                                LKR{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
                                             </span>
-                                            <span className="text-gray-500 group-hover:text-white md:text-xl font-medium">
+                                            <span className={`${idx === 1 ? 'text-white' : 'text-gray-500'} md:text-xl font-medium`}>
                                                 / {isMonthly ? 'mo' : 'yr'}
                                             </span>
                                         </div>
-                                        <ul className="text-left mb-6 space-y-2 group-hover:text-white md:text-lg font-medium">
+                                        <p className={`mb-4 md:text-xl font-medium ${idx === 1 ? 'text-white' : 'text-gray-500'}`}>{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
+                                        <button
+                                            className={`w-full mb-4 py-2 rounded font-semibold transition md:text-xl ${idx === 1 ? 'bg-white text-blue-600' : 'bg-[#1276DF] text-white'}`}
+                                        >
+                                            Get {plan.title}
+                                        </button>
+                                        <hr className="mb-4 text-gray-300" />
+                                        <ul className={`text-left mb-6 space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
                                             {plan.features.map((feature, fIdx) => (
                                                 <li key={fIdx} className="flex items-center">
                                                     <svg
-                                                        className="w-5 h-5 text-blue-600 mr-2 group-hover:text-white"
+                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        viewBox="0 0 24 24"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            d="M5 13l4 4L19 7"
+                                                        />
+                                                    </svg>
+                                                    {feature}
+                                                </li>
+                                            ))}
+                                            <p className="font-semibold my-3">Managed WordPress Features</p>
+
+                                            {plan.wpfeatures.map((feature, fIdx) => (
+                                                <li key={fIdx} className="flex items-center">
+                                                    <svg
+                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        strokeWidth="2"
+                                                        viewBox="0 0 24 24"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <path
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            d="M5 13l4 4L19 7"
+                                                        />
+                                                    </svg>
+                                                    {feature}
+                                                </li>
+                                            ))}
+
+                                            <p className="font-semibold my-3">Hosting Features</p>
+
+                                            {plan.hostfeatures.map((feature, fIdx) => (
+                                                <li key={fIdx} className="flex items-center">
+                                                    <svg
+                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
                                                         fill="none"
                                                         stroke="currentColor"
                                                         strokeWidth="2"
@@ -184,11 +284,6 @@ export default function PackagesPrices() {
                                                 </li>
                                             ))}
                                         </ul>
-                                        <button
-                                            className="w-full py-2 rounded text-white font-semibold transition bg-[#1276DF] group-hover:bg-white group-hover:text-blue-600 md:text-xl"
-                                        >
-                                            Get This Plan
-                                        </button>
                                     </div>
                                 </div>
                             ))}
@@ -197,17 +292,31 @@ export default function PackagesPrices() {
                         <div className="flex justify-center gap-4">
                             {pricing.slice(0, 3).map((plan, idx) => (
                                 <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
-                                    <div className="border rounded-lg p-6 h-full bg-white border-blue-500">
+                                    <div className={`relative border rounded-lg p-6 h-full ${idx === 1 ? 'bg-gradient-to-t from-[#136CC9] to-[#09407A] border-none' : 'bg-white border-blue-500'}`}>
+                                        {plan.isBestValue && (
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                                BEST VALUE
+                                            </div>
+                                        )}
                                         <div className="h-64"></div>
                                     </div>
                                 </div>
                             ))}
                             <div className="w-full md:hidden">
-                                <div className="border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm"></div>
+                                <div className="relative border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm">
+                                    {pricing[0].isBestValue && (
+                                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                            BEST VALUE
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     )}
                 </div>
+                <Link href="/shared-hosting-features" className="bg-white text-[#0066CC] md:text-lg border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-medium">
+                    Compare Packages
+                </Link>
             </div>
         </section>
     );
