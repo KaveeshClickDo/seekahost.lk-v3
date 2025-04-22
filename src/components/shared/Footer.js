@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
             <div>
               <h3 className="md:text-lg font-medium mb-4">About</h3>
-              <p className="text-gray-300 mb-2 font-medium">© 2025 SeekaHost™ Ltd.</p>
+              <p className="text-gray-300 mb-2 font-medium">2025 SeekaHost™</p>
               <p className="text-gray-300 font-medium">Web Hosting Company</p>
 
               <div className="flex md:flex-col mt-6">
@@ -149,7 +149,8 @@ export default function Footer() {
 
           <div className="mt-12 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
-              Copyright © Seekahost 2025 <br />
+              Copyright © 2025 Seekahost Uk Data Centers Ltd. All Rights Reserved. <br />
+              Company number 16026964. <br />
               <Link href="#" className="hover:text-white">Privacy Policy</Link>
               <span className="mx-2">|</span>
               <Link href="#" className="hover:text-white">Terms & Condition</Link>
