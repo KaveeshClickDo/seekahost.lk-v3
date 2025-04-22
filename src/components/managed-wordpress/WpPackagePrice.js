@@ -240,7 +240,7 @@ export default function WpPackagesPrices() {
                                                     {feature}
                                                 </li>
                                             ))}
-                                            <p className="font-semibold my-3">WordPress Features</p>
+                                            <p className="font-semibold my-3">Managed WordPress Features</p>
 
                                             {plan.wpfeatures.map((feature, fIdx) => (
                                                 <li key={fIdx} className="flex items-center">
