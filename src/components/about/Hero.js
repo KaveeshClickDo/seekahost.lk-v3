@@ -3,7 +3,7 @@ export default function Hero() {
     return (
         <>
             <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
-            <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-6 md:px-0">
+            <section className="flex flex-col md:flex-row items-center justify-between max-w-350 mx-auto py-12 px-6 md:px-0">
 
                 <div className="md:w-1/2 px-5 md:mr-15">
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">

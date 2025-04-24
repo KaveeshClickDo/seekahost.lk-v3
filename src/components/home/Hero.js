@@ -14,7 +14,7 @@ export default function Hero() {
                 className="object-cover z-0 hidden lg:block"
                 priority
             /> */}
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
                 <div className="text-white w-full max-w-2xl z-3">
                     <h1 className="text-2xl md:text-4xl font-bold leading-tight">
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
@@ -28,8 +28,8 @@ export default function Hero() {
                         <input
                             id="searchDomain"
                             type="text"
-                            placeholder="   Search for a domain..."
-                            className="flex-grow outline-none text-black"
+                            placeholder="Search for a domain..."
+                            className="flex-grow outline-none text-black px-2"
                         />
                         <button className="bg-[#0081FF] text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition md:text-lg">
                             Search

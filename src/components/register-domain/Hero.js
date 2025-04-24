@@ -12,7 +12,7 @@ export default function Hero() {
                 priority
             /> */}
 
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
 
 
                 <div className="text-white w-full max-w-2xl z-2 md:mb-10">
@@ -28,8 +28,8 @@ export default function Hero() {
                         <input
                             id="searchDomain"
                             type="text"
-                            placeholder="   Search for a domain..."
-                            className="flex-grow outline-none text-black"
+                            placeholder="Search for a domain..."
+                            className="flex-grow outline-none text-black px-2"
                         />
                         <button className="bg-[#0081FF] text-white  md:text-lg px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition">
                             Search
