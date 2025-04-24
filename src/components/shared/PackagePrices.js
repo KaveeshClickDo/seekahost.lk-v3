@@ -220,70 +220,87 @@ export default function PackagesPrices() {
                                             Get {plan.title}
                                         </button>
                                         <hr className="mb-4 text-gray-300" />
-                                        <ul className={`text-left mb-6 space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
-                                            {plan.features.map((feature, fIdx) => (
-                                                <li key={fIdx} className="flex items-center">
-                                                    <svg
-                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        viewBox="0 0 24 24"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="M5 13l4 4L19 7"
-                                                        />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                            <p className="font-semibold my-3">Managed WordPress Features</p>
-
-                                            {plan.wpfeatures.map((feature, fIdx) => (
-                                                <li key={fIdx} className="flex items-center">
-                                                    <svg
-                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        viewBox="0 0 24 24"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="M5 13l4 4L19 7"
-                                                        />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-
-                                            <p className="font-semibold my-3">Hosting Features</p>
-
-                                            {plan.hostfeatures.map((feature, fIdx) => (
-                                                <li key={fIdx} className="flex items-center">
-                                                    <svg
-                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        viewBox="0 0 24 24"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="M5 13l4 4L19 7"
-                                                        />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        
+                                        {/* General Features */}
+                                        <div className="mb-6">
+                                            <ul className={`text-left space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
+                                                {plan.features.map((feature, fIdx) => (
+                                                    <li key={fIdx} className="flex items-center">
+                                                        <svg
+                                                            className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            strokeWidth="2"
+                                                            viewBox="0 0 24 24"
+                                                            aria-hidden="true"
+                                                        >
+                                                            <path
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                d="M5 13l4 4L19 7"
+                                                            />
+                                                        </svg>
+                                                        {feature}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        
+                                        {/* WordPress Features */}
+                                        <div className="mb-6">
+                                            <h4 className={`font-semibold mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
+                                                Managed WordPress Features
+                                            </h4>
+                                            <ul className={`text-left space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
+                                                {plan.wpfeatures.map((feature, fIdx) => (
+                                                    <li key={fIdx} className="flex items-center">
+                                                        <svg
+                                                            className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            strokeWidth="2"
+                                                            viewBox="0 0 24 24"
+                                                            aria-hidden="true"
+                                                        >
+                                                            <path
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                d="M5 13l4 4L19 7"
+                                                            />
+                                                        </svg>
+                                                        {feature}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                        
+                                        {/* Hosting Features */}
+                                        <div>
+                                            <h4 className={`font-semibold mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
+                                                Hosting Features
+                                            </h4>
+                                            <ul className={`text-left space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
+                                                {plan.hostfeatures.map((feature, fIdx) => (
+                                                    <li key={fIdx} className="flex items-center">
+                                                        <svg
+                                                            className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            strokeWidth="2"
+                                                            viewBox="0 0 24 24"
+                                                            aria-hidden="true"
+                                                        >
+                                                            <path
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                d="M5 13l4 4L19 7"
+                                                            />
+                                                        </svg>
+                                                        {feature}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             ))}
