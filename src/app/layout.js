@@ -13,6 +13,7 @@ const figtree = Figtree({
 });
 
 export const metadata = {
+  robots: 'noindex,nofollow',
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   // metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://dev.seekahost.lk'),
   title: {
