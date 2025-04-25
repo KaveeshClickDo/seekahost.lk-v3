@@ -6,7 +6,7 @@ export default function OrderNow1() {
 
                 <div className="md:w-1/2 px-5 md:mr-15">
                 <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
-                        Easy To Manage Via Web Hosting Control Panel
+                Manage your custom site in a few clicks
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
                         SeekaHost offers the best and easy to use WordPress hosting control panel. The custom-built web hosting control panel for WordPress gives you a 1-click WordPress hosting solution with free SSL certificates and 1-clicka activation.
@@ -23,7 +23,7 @@ export default function OrderNow1() {
                 <div className="md:w-1/2 mt-6 md:mt-0">
                 <div className="w-full relative">
                         <Image
-                            src="/images/wordpress-hosting/order-now-1.webp"
+                            src="/images/business-web-hosting/order-now-1.webp"
                             alt="Order now Image"
                             width={2900}
                             height={2312}

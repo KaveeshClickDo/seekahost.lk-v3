@@ -7,7 +7,7 @@ export default function OrderNow2() {
                 <div className="md:w-1/2 md:mr-15">
                     <div className="w-full relative">
                         <Image
-                            src="/images/wordpress-hosting/order-now-2.webp"
+                            src="/images/business-web-hosting/order-now-2.webp"
                             alt="Order now Image"
                             width={2900}
                             height={2312}
@@ -23,7 +23,7 @@ export default function OrderNow2() {
                         Ideal For Business Websites
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
-                        If you are looking for the best WordPress hosting solution for your business websites, SeekaHost offers a range of WP sevrices. From managed WP to easy to manage control panel as well as cPanels and Webmin or even Plesk control panel with support.
+                        If you are looking for the best WooCommerce hosting solution for your business websites, SeekaHost offers a range of WP sevrices. From managed WP to easy to manage control panel as well as cPanels and Webmin or even Plesk control panel with support.
                     </p>
                     <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
                         However, we do recommend you using the SeekaHost control panel for the best user experience and WordPress site speeds.

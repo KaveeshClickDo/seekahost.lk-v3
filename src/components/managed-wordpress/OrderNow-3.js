@@ -7,7 +7,7 @@ export default function OrderNow3() {
                 <div className="md:w-1/2 px-5 md:mr-15">
 
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
-                        Multiple IP WordPress Hosting
+                    Learn more about managed WordPress features
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
                         If you are looking for multiple IP hosting for WordPress blogs or websites you use for SEO, then SeekaHost offers the best solution.
@@ -22,7 +22,7 @@ export default function OrderNow3() {
                 <div className="md:w-1/2 mt-6 md:mt-0">
                     <div className="w-full relative">
                         <Image
-                            src="/images/wordpress-hosting/order-now-3.webp"
+                            src="/images/cheap-web-hosting-with-cpanel/order-now-3.webp"
                             alt="Order now Image"
                             width={2900}
                             height={2312}

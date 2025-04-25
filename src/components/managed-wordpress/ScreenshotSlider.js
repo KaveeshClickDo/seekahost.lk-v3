@@ -110,7 +110,7 @@ export default function ScreenshotSlider() {
                 <div className="md:w-2/5 w-full md:pl-12 mt-10 md:mt-0 flex flex-col justify-center px-4 md:px-0">
                     <div><h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1></div>
                     <h2 className="mt-2 text-2xl md:text-4xl font-bold">
-                        Inside WordPress Hosting Control Panel
+                        Inside Managed WordPress Control Panel
                     </h2>
                     <ul className="space-y-2 mb-8 my-8">
                         <li className="flex items-start md:text-xl text-gray-700 font-medium">
