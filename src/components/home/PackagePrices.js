@@ -6,101 +6,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import Link from 'next/link';
+import { homePkgPrices } from '@/data/packagePrices';
 
 export default function PackagesPrices() {
+    const pricing = homePkgPrices;
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
     }, []);
-
-    const pricing = [
-        {
-            title: 'Starter',
-            monthlyPrice: 280,
-            yearlyPrice: 2000,
-            specialTextMonth: '30 days of Free Trial',
-            specialTextYear: 'Renews for LKR2800/yr',
-            features: [
-                '1 Website',
-                '10 GB Web Space',
-                '~10,000 Visits Monthly',
-                'Unmetered Traffic',
-            ],
-            wpfeatures: [
-                'WordPress Auto-Install',
-                'Free Automated Migrations',
-                'Fully Managed Updates',
-                'Speed Optimizer WP Plugin',
-            ],
-            hostfeatures: [
-                'Free SSL, Email',
-                'Unlimited Database',
-                'Daily Backup',
-                'Enhanced Security',
-            ],
-            isBestValue: false,
-        },
-        {
-            title: 'Turbo',
-            monthlyPrice: 500,
-            yearlyPrice: 5000,
-            specialTextMonth: 'Renews at LKR580/mo',
-            specialTextYear: 'Renews for LKR5800/yr',
-            features: [
-                'Unlimited Websites',
-                '20 GB Web Space',
-                '~100,000 Visits Monthly',
-                'Unmetered Traffic',
-            ],
-            wpfeatures: [
-                'WordPress Auto-Install',
-                'Free Automated Migrations',
-                'Fully Managed Updates',
-                'Speed Optimizer WP Plugin',
-                'WordPress Staging',
-            ],
-            hostfeatures: [
-                'Free SSL, Email',
-                'Unlimited Database',
-                'Daily Backup',
-                'Enhanced Security',
-                'On-Demand Backup Copies',
-            ],
-            isBestValue: true, // This plan will show the "Best Value" badge
-        },
-        {
-            title: 'Supersonic',
-            monthlyPrice: 700,
-            yearlyPrice: 7000,
-            specialTextMonth: 'Renews at LKR780/mo',
-            specialTextYear: 'Renews for LKR7800/yr',
-            features: [
-                'Unlimited Websites',
-                '40 GB Web Space',
-                '~400,000 Visits Monthly',
-                'Unmetered Traffic',
-            ],
-            wpfeatures: [
-                'WordPress Auto-Install',
-                'Free Automated Migrations',
-                'Fully Managed Updates',
-                'Speed Optimizer WP Plugin',
-                'WordPress Staging',
-                '30% Faster PHP',
-            ],
-            hostfeatures: [
-                'Free SSL, Email',
-                'Unlimited Database',
-                'Daily Backup',
-                'Enhanced Security',
-                'On-Demand Backup Copies',
-                'Free Private DNS',
-            ],
-            isBestValue: false,
-        },
-    ];
 
     const settings = {
         dots: false,

@@ -23,7 +23,7 @@ export default function ConsultantImage() {
   if (!showConsultantImage) return null;
 
   return (
-    <div className="fixed right-2 top-10/16 md:top-11/16 transform -translate-y-1/2 z-10">
+    <div className="fixed right-2 top-10/16 2xl:top-11/16 transform -translate-y-1/2 z-10">
       <Image
         src="/images/home/Personal-Consultant.webp"
         alt="Personal Consultant"

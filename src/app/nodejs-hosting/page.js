@@ -5,7 +5,7 @@ import OrderNow2 from "@/components/nodejs-hosting/OrderNow-2";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar2 from "@/components/shared/Navbar2";
-import PackagesPrices from "@/components/shared/PackagePrices";
+import PackagesPrices from "@/components/home/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";

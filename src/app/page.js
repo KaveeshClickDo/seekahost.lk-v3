@@ -1,5 +1,5 @@
 import Hero from "@/components/home/Hero";
-import PackagePrices from "@/components/shared/PackagePrices";
+import PackagePrices from "@/components/home/PackagePrices";
 import Solution from "@/components/shared/Solution";
 import Video from "@/components/shared/Video";
 import Reviews from "@/components/shared/Review";
@@ -10,7 +10,7 @@ import Footer from "@/components/shared/Footer";
 import WhySeekahost from "@/components/home/WhySeekahost";
 import Navbar2 from "@/components/shared/Navbar2";
 import Topbar from "@/components/shared/Topbar";
-import ConsultantImage from "@/components/shared/ConsultantImage";
+import ConsultantImage from "@/components/home/ConsultantImage";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PersonalConsultant from "@/components/home/PersonalConsultant";
 import CTA from "@/components/shared/CTA";
@@ -31,7 +31,7 @@ export default function Home() {
       <ConsultantImage />
       <Hero />
       <div id="package-prices-section">
-        <PackagePrices />
+        <PackagePrices/>
       </div>
       <Solution />
       <Video />

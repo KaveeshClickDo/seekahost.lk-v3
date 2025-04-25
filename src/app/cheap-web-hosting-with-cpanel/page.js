@@ -6,7 +6,7 @@ import OrderNow4 from "@/components/cheap-web-hosting-with-cpanel/OrderNow-4";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar2 from "@/components/shared/Navbar2";
-import PackagesPrices from "@/components/shared/PackagePrices";
+import PackagesPrices from "@/components/home/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
