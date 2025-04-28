@@ -50,14 +50,14 @@ export default function Topbar() {
                 {isOpen && (
                     <div className="absolute right-0 mt-1 w-50 rounded-md shadow-lg bg-white ring-1 ring-blue-600 ring-opacity-5 z-10">
                         <div className="py-1" role="menu" aria-orientation="vertical">
-                            <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem">
+                            <Link href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem">
                                 <span className="mr-2">
                                     <SlPeople className="w-5 h-5" />
                                 </span>
                                 Client Area
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
-                            </a>
-                            <a href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
+                            </Link>
+                            <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                                 <span className="mr-2">
                                     <Image
                                         src="/images/shared/uk-ico.svg"
@@ -68,15 +68,15 @@ export default function Topbar() {
                                 </span>
                                 Seekahost.co.uk
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
-                            </a>
-                            <a href="https://www.seekahost.com/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
+                            </Link>
+                            <Link href="https://www.seekahost.com/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                                 <span className="mr-2">
                                 <GoGlobe className="w-5 h-5" />
                                 </span>
                                 Seekahost.com
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
-                            </a>
-                            <a href="https://portal.seekahost.app/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
+                            </Link>
+                            <Link href="https://portal.seekahost.app/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                                 <span className="mr-2">
                                 <Image
                                         src="/images/shared/app-ico.svg"
@@ -87,7 +87,7 @@ export default function Topbar() {
                                 </span>
                                 Seekahost.app
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 )}
