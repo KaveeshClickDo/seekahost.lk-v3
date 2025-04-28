@@ -2,32 +2,9 @@
 
 import { useState } from 'react';
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { faqs } from '@/data/faqData';
 
 export default function FAQs() {
-
-    const faqs = [
-        {
-            question: 'Lorem ipsum sit amet ?',
-            answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        },
-        {
-            question: 'Lorem ipsum dolor sit amet adipiscing?',
-            answer:
-                'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        },
-        {
-            question: 'Lorem ipsum dolor sit amet elit?',
-            answer:
-                'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            question: 'Lorem ipsum dolor sit amet?',
-            answer:
-                'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        },
-    ];
-
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleFAQ = (index) => {

@@ -2,40 +2,9 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import { faqData } from '@/data/faqData';
 
 export default function FAQ() {
-  const faqData = [
-    {
-      id: "faq-1",
-      question: "Dolor sit et, contetur met, consectetur",
-      answer: "Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor"
-    },
-    {
-      id: "faq-2",
-      question: "Lorem ipsum dolor sit et, consectetur",
-      answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    {
-      id: "faq-3",
-      question: "Lorem ipsum dolor sit et, consectetur",
-      answer: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
-    },
-    {
-      id: "faq-4",
-      question: "Lorem ipsum dolor sit et, consectetur",
-      answer: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
-    },
-    {
-      id: "faq-5",
-      question: "Lorem ipsum dolor sit et, consectetur",
-      answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-    },
-    {
-      id: "faq-6",
-      question: "Lorem ipsum dolor sit et, consectetur",
-      answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-    }
-  ];
 
   const leftColumnFAQs = faqData.filter((_, index) => index % 2 === 0);
   const rightColumnFAQs = faqData.filter((_, index) => index % 2 === 1);
