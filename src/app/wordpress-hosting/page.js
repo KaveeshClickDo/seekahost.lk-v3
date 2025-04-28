@@ -12,7 +12,7 @@ import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import WpPackagesPrices from "@/components/wordpress-hosting/PackagePrice";
+import PackagesPrices from "@/components/wordpress-hosting/PackagePrice";
 
 export const metadata = {
     title: "WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
@@ -27,7 +27,7 @@ export default function WordpressHosting() {
             <Navbar2 />
             <Hero />
             <div id="wordpress-package-prices-section">
-                <WpPackagesPrices />
+                <PackagesPrices />
             </div>
             <PeopleCards />
             <OrderNow1 />

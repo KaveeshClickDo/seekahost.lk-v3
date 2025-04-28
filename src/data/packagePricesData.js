@@ -256,7 +256,7 @@ export const woocommercePkgPrices = [
                 ]
             },
             {
-                title: 'WooCommers Features',
+                title: 'WooCommerce Features',
                 features: [
                     'WordPress Auto-Install',
                     'Free Automated Migrations',
@@ -293,7 +293,7 @@ export const woocommercePkgPrices = [
                 ]
             },
             {
-                title: 'WooCommers Features',
+                title: 'WooCommerce Features',
                 features: [
                     'WordPress Auto-Install',
                     'Free Automated Migrations',
@@ -332,7 +332,7 @@ export const woocommercePkgPrices = [
                 ]
             },
             {
-                title: 'WooCommers Features',
+                title: 'WooCommerce Features',
                 features: [
                     'WordPress Auto-Install',
                     'Free Automated Migrations',

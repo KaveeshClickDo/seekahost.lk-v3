@@ -12,7 +12,7 @@ import OrderNow3 from "@/components/woocommerce-hosting/OrderNow-3";
 import PeopleCards from "@/components/woocommerce-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/woocommerce-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import WpPackagesPrices from "@/components/woocommerce-hosting/PackagePrice";
+import PackagesPrices from "@/components/woocommerce-hosting/PackagePrice";
 
 export const metadata = {
     title: "WooCommerce Hosting Sri Lanka: Best WordPress Web Hosting"
@@ -27,7 +27,7 @@ export default function WooCommerceHosting() {
             <Navbar2 />
             <Hero />
             <div id="woocommerce-package-prices-section">
-                <WpPackagesPrices />
+                <PackagesPrices />
             </div>
             <PeopleCards />
             <OrderNow1 />
