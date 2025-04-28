@@ -30,11 +30,11 @@ export default function HostingFeatures() {
                     <table className="w-full border-collapse">
                         <thead className="bg-white">
                             <tr className="border-b border-gray-500">
-                                <th className="sticky top-0 bg-white py-4 px-6 text-left font-semibold text-lg md:text-xl z-10 shadow-sm"></th>
+                                <th className="sticky top-0 bg-white py-4 px-6 text-left font-semibold text-lg md:text-xl z-8 shadow-sm"></th>
                                 {plans.map((plan, index) => (
                                     <th
                                         key={index}
-                                        className="sticky top-0 bg-white py-4 px-6 text-center font-semibold text-lg md:text-xl z-10 shadow-sm"
+                                        className="sticky top-0 bg-white py-4 px-6 text-center font-semibold text-lg md:text-xl z-8 shadow-sm"
                                     >
                                         {plan.name}
                                     </th>
