@@ -12,7 +12,7 @@ import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import WpPackagesPrices from "@/components/wordpress-hosting/WpPackagePrice";
+import WpPackagesPrices from "@/components/wordpress-hosting/PackagePrice";
 
 export const metadata = {
     title: "WordPress Hosting Sri Lanka: Best WordPress Web Hosting"

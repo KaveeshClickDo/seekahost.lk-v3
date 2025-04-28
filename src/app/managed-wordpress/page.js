@@ -12,7 +12,7 @@ import OrderNow3 from "@/components/managed-wordpress/OrderNow-3";
 import PeopleCards from "@/components/managed-wordpress/PeopleCards";
 import ScreenshotSlider from "@/components/managed-wordpress/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import WpPackagesPrices from "@/components/managed-wordpress/WpPackagePrice";
+import WpPackagesPrices from "@/components/managed-wordpress/PackagePrice";
 
 export const metadata = {
     title: "Managed WordPress Hosting Sri Lanka: Best WordPress Web Hosting"

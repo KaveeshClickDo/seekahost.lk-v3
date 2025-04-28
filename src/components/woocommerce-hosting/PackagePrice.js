@@ -6,101 +6,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import Link from 'next/link';
+import { woocommercePkgPrices } from '@/data/packagePricesData';
 
-export default function WpPackagesPrices() {
+export default function PackagesPrices() {
+    const pricing = woocommercePkgPrices;
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
     }, []);
-
-    const pricing = [
-        {
-            title: 'Starter',
-            monthlyPrice: 280,
-            yearlyPrice: 2000,
-            specialTextMonth: '30 days of Free Trial',
-            specialTextYear: 'Renews for LKR2800/yr',
-            features: [
-                '1 Website',
-                '10 GB Web Space',
-                '~10,000 Visits Monthly',
-                'Unmetered Traffic',
-            ],
-            wpfeatures: [
-                'WordPress Auto-Install',
-                'Free Automated Migrations',
-                'Fully Managed Updates',
-                'Speed Optimizer WP Plugin',
-            ],
-            hostfeatures: [
-                'Free SSL, Email',
-                'Unlimited Database',
-                'Daily Backup',
-                'Enhanced Security',
-            ],
-            isBestValue: false,
-        },
-        {
-            title: 'Turbo',
-            monthlyPrice: 500,
-            yearlyPrice: 5000,
-            specialTextMonth: 'Renews at LKR580/mo',
-            specialTextYear: 'Renews for LKR5800/yr',
-            features: [
-                'Unlimited Websites',
-                '20 GB Web Space',
-                '~100,000 Visits Monthly',
-                'Unmetered Traffic',
-            ],
-            wpfeatures: [
-                'WordPress Auto-Install',
-                'Free Automated Migrations',
-                'Fully Managed Updates',
-                'Speed Optimizer WP Plugin',
-                'WordPress Staging',
-            ],
-            hostfeatures: [
-                'Free SSL, Email',
-                'Unlimited Database',
-                'Daily Backup',
-                'Enhanced Security',
-                'On-Demand Backup Copies',
-            ],
-            isBestValue: true, // This plan will show the "Best Value" badge
-        },
-        {
-            title: 'Supersonic',
-            monthlyPrice: 700,
-            yearlyPrice: 7000,
-            specialTextMonth: 'Renews at LKR780/mo',
-            specialTextYear: 'Renews for LKR7800/yr',
-            features: [
-                'Unlimited Websites',
-                '40 GB Web Space',
-                '~400,000 Visits Monthly',
-                'Unmetered Traffic',
-            ],
-            wpfeatures: [
-                'WordPress Auto-Install',
-                'Free Automated Migrations',
-                'Fully Managed Updates',
-                'Speed Optimizer WP Plugin',
-                'WordPress Staging',
-                '30% Faster PHP',
-            ],
-            hostfeatures: [
-                'Free SSL, Email',
-                'Unlimited Database',
-                'Daily Backup',
-                'Enhanced Security',
-                'On-Demand Backup Copies',
-                'Free Private DNS',
-            ],
-            isBestValue: false,
-        },
-    ];
 
     const settings = {
         dots: false,
@@ -220,70 +135,39 @@ export default function WpPackagesPrices() {
                                             Get {plan.title}
                                         </button>
                                         <hr className="mb-4 text-gray-300" />
-                                        <ul className={`text-left mb-6 space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
-                                            {plan.features.map((feature, fIdx) => (
-                                                <li key={fIdx} className="flex items-center">
-                                                    <svg
-                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        viewBox="0 0 24 24"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="M5 13l4 4L19 7"
-                                                        />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                            <p className="font-semibold my-3">Managed WordPress Features</p>
-
-                                            {plan.wpfeatures.map((feature, fIdx) => (
-                                                <li key={fIdx} className="flex items-center">
-                                                    <svg
-                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        viewBox="0 0 24 24"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="M5 13l4 4L19 7"
-                                                        />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-
-                                            <p className="font-semibold my-3">Hosting Features</p>
-
-                                            {plan.hostfeatures.map((feature, fIdx) => (
-                                                <li key={fIdx} className="flex items-center">
-                                                    <svg
-                                                        className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                        fill="none"
-                                                        stroke="currentColor"
-                                                        strokeWidth="2"
-                                                        viewBox="0 0 24 24"
-                                                        aria-hidden="true"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="M5 13l4 4L19 7"
-                                                        />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
+                                        
+                                        {/* Dynamic Feature Sections */}
+                                        {plan.featureSections.map((section, sectionIdx) => (
+                                            <div key={sectionIdx} className="mb-6">
+                                                {/* Don't show section title for the first section (General Features) */}
+                                                {sectionIdx > 0 && (
+                                                    <h4 className={`font-semibold mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
+                                                        {section.title}
+                                                    </h4>
+                                                )}
+                                                <ul className={`text-left space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
+                                                    {section.features.map((feature, fIdx) => (
+                                                        <li key={fIdx} className="flex items-center">
+                                                            <svg
+                                                                className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
+                                                                fill="none"
+                                                                stroke="currentColor"
+                                                                strokeWidth="2"
+                                                                viewBox="0 0 24 24"
+                                                                aria-hidden="true"
+                                                            >
+                                                                <path
+                                                                    strokeLinecap="round"
+                                                                    strokeLinejoin="round"
+                                                                    d="M5 13l4 4L19 7"
+                                                                />
+                                                            </svg>
+                                                            {feature}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             ))}
