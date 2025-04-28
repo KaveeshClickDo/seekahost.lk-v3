@@ -378,14 +378,14 @@ export default function Navbar2() {
                 </button>
                 {signInDropdownOpen && (
                     <div className="pl-4">
-                        <Link href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem">
+                        <Link href="#" className="flex items-center px-4 py-2 text-lg font-medium hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem">
                             <span className="mr-2">
                                 <SlPeople className="w-5 h-5" />
                             </span>
                             Client Area
                             <FiExternalLink className="w-4 h-4 ml-auto" />
                         </Link>
-                        <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
+                        <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-lg font-medium hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                             <span className="mr-2">
                                 <Image
                                     src="/images/shared/uk-ico.svg"
@@ -397,14 +397,14 @@ export default function Navbar2() {
                             Seekahost.co.uk
                             <FiExternalLink className="w-4 h-4 ml-auto" />
                         </Link>
-                        <Link href="https://www.seekahost.com/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
+                        <Link href="https://www.seekahost.com/index.php/login" className="flex items-center px-4 py-2 text-lg font-medium hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                             <span className="mr-2">
                                 <GoGlobe className="w-5 h-5" />
                             </span>
                             Seekahost.com
                             <FiExternalLink className="w-4 h-4 ml-auto" />
                         </Link>
-                        <Link href="https://portal.seekahost.app/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
+                        <Link href="https://portal.seekahost.app/login" className="flex items-center px-4 py-2 text-lg font-medium hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                             <span className="mr-2">
                                 <Image
                                     src="/images/shared/app-ico.svg"
