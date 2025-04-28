@@ -3,148 +3,17 @@ import Navbar2 from "@/components/shared/Navbar2";
 import Topbar from "@/components/shared/Topbar";
 import { FaCheck, FaTimes } from 'react-icons/fa';
 import Link from "next/link";
+import { Fragment } from "react";
+import { plansData } from "@/data/comparePlansData";
 
 export const metadata = {
     title: "Compare Plans"
 }
 
 export default function HostingFeatures() {
-    // Plans data
-    const plans = [
-        { name: "Starter", price: 280, },
-        { name: "Turbo",  price: 500, },
-        { name: "Supersonic",  price: 700, }
-    ];
 
-    // Features data - each feature has a name and values for each plan
-    const features = [
-        {
-            name: "Websites",
-            values: ["25", "50", "100"]
-        },
-        {
-            name: "Managed hosting for WordPress",
-            values: [true, true, true]
-        },
-        {
-            name: "Visits monthly",
-            values: ["25 000", "100 000", "200 000"]
-        },
-        {
-            name: "SSD storage",
-            values: ["25 GB", "50 GB", "100 GB"]
-        },
-        {
-            name: "Files and directories (inodes)",
-            values: ["400 000", "600 000", "2 000 000"]
-        },
-        {
-            name: "Free pre-built templates",
-            values: [true, true, true]
-        },
-        {
-            name: "Free automatic website migration",
-            values: [true, true, true]
-        },
-        {
-            name: "Unlimited free SSL",
-            values: [true, true, true]
-        },
-        {
-            name: "Mailboxes - free for 1 year",
-            values: ["50", "100", "200"]
-        },
-        {
-            name: "Weekly backups",
-            values: [true, true, true]
-        }
-    ];
+    const { plans, featureCategories } = plansData;
 
-    const wpfeatures = [
-        {
-            name: "Websites",
-            values: ["25", "50", "100"]
-        },
-        {
-            name: "Managed hosting for WordPress",
-            values: [false, true, true]
-        },
-        {
-            name: "Visits monthly",
-            values: ["25 000", "100 000", "200 000"]
-        },
-        {
-            name: "SSD storage",
-            values: ["25 GB", "50 GB", "100 GB"]
-        },
-        {
-            name: "Files and directories (inodes)",
-            values: ["400 000", "600 000", "2 000 000"]
-        },
-        {
-            name: "Free pre-built templates",
-            values: [false, true, true]
-        },
-        {
-            name: "Free automatic website migration",
-            values: [false, true, true]
-        },
-        {
-            name: "Unlimited free SSL",
-            values: [false, true, true]
-        },
-        {
-            name: "Mailboxes - free for 1 year",
-            values: ["50", "100", "200"]
-        },
-        {
-            name: "Weekly backups",
-            values: [false, true, true]
-        }
-    ];
-
-    const hostfeatures = [
-        {
-            name: "Websites",
-            values: ["25", "50", "100"]
-        },
-        {
-            name: "Managed hosting for WordPress",
-            values: [false, false, true]
-        },
-        {
-            name: "Visits monthly",
-            values: ["25 000", "100 000", "200 000"]
-        },
-        {
-            name: "SSD storage",
-            values: ["25 GB", "50 GB", "100 GB"]
-        },
-        {
-            name: "Files and directories (inodes)",
-            values: ["400 000", "600 000", "2 000 000"]
-        },
-        {
-            name: "Free pre-built templates",
-            values: [false, false, true]
-        },
-        {
-            name: "Free automatic website migration",
-            values: [false, false, true]
-        },
-        {
-            name: "Unlimited free SSL",
-            values: [false, false, true]
-        },
-        {
-            name: "Mailboxes - free for 1 year",
-            values: ["50", "100", "200"]
-        },
-        {
-            name: "Weekly backups",
-            values: [false, false, true]
-        }
-    ];
     return (
         <>
             <div className="hidden lg:block">
@@ -157,7 +26,7 @@ export default function HostingFeatures() {
                 <h1 className="text-4xl font-bold text-center mb-2">Compare our plans</h1>
                 <p className="text-center text-gray-600 mb-8">See at a glance what each plan costs and what you get for your money.</p>
 
-                <div className="relative overflow-x-auto overflow-y-auto max-h-[70vh] border border-gray-200 rounded-lg shadow-sm">
+                <div className="relative overflow-x-auto overflow-y-auto border border-gray-200 rounded-lg shadow-sm">
                     <table className="w-full border-collapse">
                         <thead className="bg-white">
                             <tr className="border-b border-gray-500">
@@ -173,82 +42,50 @@ export default function HostingFeatures() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr className="border-b border-gray-500 bg-[#F5FAFF]">
-                                <td colSpan={4} className="py-4 px-6 font-semibold md:text-lg">
-                                    Top features
-                                </td>
-                            </tr>
-
-                            {features.map((feature, index) => (
-                                <tr key={index} className="border-b border-gray-300 hover:bg-gray-50">
-                                    <td className="py-4 px-6 text-gray-700 font-medium">
-                                        {feature.name}
-                                    </td>
-                                    {feature.values.map((value, valueIndex) => (
-                                        <td key={valueIndex} className="py-4 px-6 text-center">
-                                            {typeof value === 'boolean' ? (
-                                                value ?
-                                                    <FaCheck className="mx-auto text-green-500" size={20} /> :
-                                                    <FaTimes className="mx-auto text-red-500" size={20} />
-                                            ) : (
-                                                <span className="text-gray-800">{value}</span>
-                                            )}
+                            {featureCategories.map((category, categoryIndex) => (
+                                <Fragment key={categoryIndex}>
+                                    {/* Category Header */}
+                                    <tr className="border-b border-gray-500 bg-[#F5FAFF]">
+                                        <td colSpan={4} className="py-4 px-6 font-semibold md:text-lg">
+                                            {category.title}
                                         </td>
+                                    </tr>
+
+                                    {/* Features for this category */}
+                                    {category.features.map((feature, featureIndex) => (
+                                        <tr key={featureIndex} className="border-b border-gray-300 hover:bg-gray-50">
+                                            <td className="py-4 px-6 text-gray-700 font-medium">
+                                                {feature.name}
+                                            </td>
+                                            {feature.values.map((value, valueIndex) => (
+                                                <td key={valueIndex} className="py-4 px-6 text-center">
+                                                    {typeof value === 'boolean' ? (
+                                                        value ?
+                                                            <FaCheck className="mx-auto text-green-500" size={20} /> :
+                                                            <FaTimes className="mx-auto text-red-500" size={20} />
+                                                    ) : (
+                                                        <span className="text-gray-800">{value}</span>
+                                                    )}
+                                                </td>
+                                            ))}
+                                        </tr>
                                     ))}
-                                </tr>
+                                </Fragment>
                             ))}
 
-                            <tr className="border-b border-gray-500 bg-[#F5FAFF]">
-                                <td colSpan={4} className="py-4 px-6 font-semibold md:text-lg">
-                                    WordPress features
+                            {/* Pricing row */}
+                            <tr className="border-b border-gray-300 bg-gray-50">
+                                <td className="py-4 px-6 font-semibold md:text-lg">
+                                    Pricing
                                 </td>
-                            </tr>
-
-                            {wpfeatures.map((feature, index) => (
-                                <tr key={index} className="border-b border-gray-300 hover:bg-gray-50">
-                                    <td className="py-4 px-6 text-gray-700 font-medium">
-                                        {feature.name}
+                                {plans.map((plan, index) => (
+                                    <td key={index} className="py-4 px-6 text-center">
+                                        <p className="text-gray-800 font-bold md:text-xl">LKR{plan.monthlyPrice}/mo</p>
+                                        <p className="text-gray-500 text-sm">{plan.specialTextMonth}</p>
                                     </td>
-                                    {feature.values.map((value, valueIndex) => (
-                                        <td key={valueIndex} className="py-4 px-6 text-center">
-                                            {typeof value === 'boolean' ? (
-                                                value ?
-                                                    <FaCheck className="mx-auto text-green-500" size={20} /> :
-                                                    <FaTimes className="mx-auto text-red-500" size={20} />
-                                            ) : (
-                                                <span className="text-gray-800">{value}</span>
-                                            )}
-                                        </td>
-                                    ))}
-                                </tr>
-                            ))}
-
-                            <tr className="border-b border-gray-500 bg-[#F5FAFF]">
-                                <td colSpan={4} className="py-4 px-6 font-semibold md:text-lg">
-                                    Host features
-                                </td>
+                                ))}
                             </tr>
-
-                            {hostfeatures.map((feature, index) => (
-                                <tr key={index} className="border-b border-gray-300 hover:bg-gray-50">
-                                    <td className="py-4 px-6 text-gray-700 font-medium">
-                                        {feature.name}
-                                    </td>
-                                    {feature.values.map((value, valueIndex) => (
-                                        <td key={valueIndex} className="py-4 px-6 text-center">
-                                            {typeof value === 'boolean' ? (
-                                                value ?
-                                                    <FaCheck className="mx-auto text-green-500" size={20} /> :
-                                                    <FaTimes className="mx-auto text-red-500" size={20} />
-                                            ) : (
-                                                <span className="text-gray-800">{value}</span>
-                                            )}
-                                        </td>
-                                    ))}
-                                </tr>
-                            ))}
-
-                            {/* Add buttons at the bottom as well */}
+                            {/* Add buttons at the bottom */}
                             <tr className="border-b border-gray-300">
                                 <td className="py-4 px-6 font-semibold md:text-lg">
                                     Select plan
@@ -260,7 +97,6 @@ export default function HostingFeatures() {
                                         >
                                             Get {plan.name}
                                         </Link>
-                                        <p className="mb-4 text-gray-500 md:text-xl font-medium">LKR{plan.price}/mo</p>
                                     </td>
                                 ))}
                             </tr>
