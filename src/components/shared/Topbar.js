@@ -111,7 +111,7 @@ export default function Topbar() {
         <nav className="relative z-10 w-full bg-white shadow">
             <div className="container mx-auto flex items-center justify-between md:pl-5">
                 <Link href="/">
-                    <Image src="/images/shared/navbar-logo.webp" alt="SeekaHost" width={150} height={70} priority />
+                    <Image src="/images/shared/header-logo.webp" alt="SeekaHost" width={150} height={70} priority />
                 </Link>
                 <DesktopMenu />
             </div>
