@@ -17,7 +17,7 @@ export default function WhySeekahost() {
                 </div>
                 <div>
                   <h3 className="text-lg md:text-2xl font-semibold mb-2">Lifelong Learning</h3>
-                  <p className="text-gray-700 md:text-xl font-medium">
+                  <p className="text-gray-700 md:text-lg font-medium">
                     We champion continuous growth and exploration, inspiring our learners to embrace learning as a lifelong journey.
                   </p>
                 </div>
@@ -29,7 +29,7 @@ export default function WhySeekahost() {
                 </div>
                 <div>
                   <h3 className="text-lg md:text-2xl font-semibold mb-2">Quality Education</h3>
-                  <p className="text-gray-700 md:text-xl font-medium">
+                  <p className="text-gray-700 md:text-lg font-medium">
                     SkillNest delivers high-quality courses, curated by leading experts, ensuring an exceptional learning experience for all.
                   </p>
                 </div>
@@ -41,7 +41,7 @@ export default function WhySeekahost() {
                 </div>
                 <div>
                   <h3 className="text-lg md:text-2xl font-semibold mb-2">Inclusivity</h3>
-                  <p className="text-gray-700 md:text-xl font-medium">
+                  <p className="text-gray-700 md:text-lg font-medium">
                     We welcome learners of all backgrounds and skill levels, fostering an inclusive and supportive online community.
                   </p>
                 </div>
@@ -53,7 +53,7 @@ export default function WhySeekahost() {
                 </div>
                 <div>
                   <h3 className="text-lg md:text-2xl font-semibold mb-2">Empowerment</h3>
-                  <p className="text-gray-700 md:text-xl font-medium">
+                  <p className="text-gray-700 md:text-lg font-medium">
                     Our platform is designed to empower learners, giving them the tools and knowledge to thrive in their personal and professional endeavors.
                   </p>
                 </div>
@@ -92,7 +92,7 @@ export default function WhySeekahost() {
                 <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">between buyers &amp; sellers</span></span>
             </h2>
             <ul className="space-y-2">
-              <li className="flex items-start md:text-xl">
+              <li className="flex items-start md:text-lg">
                 <span className="mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
                     <circle cx="53" cy="48" r="40" fill="rgba(255, 255, 255, 0.2)" />
@@ -101,7 +101,7 @@ export default function WhySeekahost() {
                 </span>
                 Money can be exchanged very easily
               </li>
-              <li className="flex items-start md:text-xl">
+              <li className="flex items-start md:text-lg">
               <span className="mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
                     <circle cx="53" cy="48" r="40" fill="rgba(255, 255, 255, 0.2)" />
@@ -110,7 +110,7 @@ export default function WhySeekahost() {
                 </span>
                 Bills can be safely paid anywhere at any time
               </li>
-              <li className="flex items-start md:text-xl">
+              <li className="flex items-start md:text-lg">
               <span className="mr-1">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width={30} height={30}>
                     <circle cx="53" cy="48" r="40" fill="rgba(255, 255, 255, 0.2)" />

@@ -11,7 +11,7 @@ export default function CTA() {
                         <h2 className="text-2xl md:text-4xl font-bold mb-4">
                             Ready to make a secure future?
                         </h2>
-                        <p className="text-white/90 text-base md:text-xl mb-6 font-medium">
+                        <p className="text-white/90 text-base md:text-lg mb-6 font-medium">
                             Get your personalized insurance quote now and take the first step
                             toward a worry-free future. Your security matters.
                         </p>

@@ -9,7 +9,7 @@ export default function Hero() {
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                         Sri Lanka&rsquo;s Best Web Host <br /> For Entrepreneurs & Business Owners
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                         Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
                     </p>
                     <button className="bg-white text-[#0066CC] md:text-lg border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-medium">

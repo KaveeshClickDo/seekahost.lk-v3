@@ -9,10 +9,10 @@ export default function OrderNow3() {
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                         Multiple IP WordPress Hosting
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                         If you are looking for multiple IP hosting for WordPress blogs or websites you use for SEO, then SeekaHost offers the best solution.
                     </p>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                         As the leading PBN host for WordPress sites in the world, you get unbeatable prices via the blog hosting control penal.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer md:text-lg font-medium">

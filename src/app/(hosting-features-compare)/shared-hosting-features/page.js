@@ -24,7 +24,7 @@ export default function HostingFeatures() {
 
             <div className="max-w-7xl mx-auto px-4 py-8">
                 <h1 className="text-4xl font-bold text-center mb-2">Compare our plans</h1>
-                <p className="text-center text-gray-600 mb-8">See at a glance what each plan costs and what you get for your money.</p>
+                <p className="text-center text-gray-700 md:text-lg font-medium mb-8">See at a glance what each plan costs and what you get for your money.</p>
 
                 <div className="relative overflow-x-auto overflow-y-auto border border-gray-200 rounded-lg shadow-sm">
                     <table className="w-full border-collapse">

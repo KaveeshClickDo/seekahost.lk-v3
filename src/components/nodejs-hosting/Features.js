@@ -8,7 +8,7 @@ export default function Features() {
                 <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                     Node.js Hosting Features
                 </h2>
-                <p className="text-gray-700 font-medium md:text-xl max-w-2xl mx-auto">
+                <p className="text-gray-700 font-medium md:text-lg max-w-2xl mx-auto">
                     Enjoy high-performance, secure, and easy-to-manage Node.js hosting.
                     Explore our top features designed to help you scale and succeed.
                 </p>
@@ -24,10 +24,10 @@ export default function Features() {
                         width={75}
                         height={75}
                     />
-                    <h3 className="md:text-xl font-semibold mb-2">
+                    <h3 className="md:text-2xl font-semibold mb-2">
                         1-Click WP Installer
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-lg">
+                    <p className="text-sm text-gray-700 md:text-lg font-medium">
                         Easiest way to just 1-click install WordPress on your domain
                         and get online.
                     </p>
@@ -42,10 +42,10 @@ export default function Features() {
                         width={75}
                         height={75}
                     />
-                    <h3 className="md:text-xl font-semibold mb-2">
+                    <h3 className="md:text-2xl font-semibold mb-2">
                         Website Traffic/Data
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-lg">
+                    <p className="text-sm text-gray-700 md:text-lg font-medium">
                         Track your WordPress site traffic daily via cPanel & Google
                         analytics integrations.
                     </p>
@@ -59,10 +59,10 @@ export default function Features() {
                         width={75}
                         height={75}
                     />
-                    <h3 className="md:text-xl font-semibold mb-2">
+                    <h3 className="md:text-2xl font-semibold mb-2">
                         Domain Registration
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-lg">
+                    <p className="text-sm text-gray-700 md:text-lg font-medium">
                         You can easily register your ideal domain names inside the
                         control panel.
                     </p>
@@ -77,10 +77,10 @@ export default function Features() {
                         width={75}
                         height={75}
                     />
-                    <h3 className="md:text-xl font-semibold mb-2">
+                    <h3 className="md:text-2xl font-semibold mb-2">
                         WP Hosting Plans
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-lg">
+                    <p className="text-sm text-gray-700 md:text-lg font-medium">
                         4 best WordPress hosting packages suitable for bloggers
                         and business owners.
                     </p>
@@ -94,10 +94,10 @@ export default function Features() {
                         width={75}
                         height={75}
                     />
-                    <h3 className="md:text-xl font-semibold mb-2">
+                    <h3 className="md:text-2xl font-semibold mb-2">
                         1-Click WP Installer
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-lg">
+                    <p className="text-sm text-gray-700 md:text-lg font-medium">
                         Easiest way to just 1-click install WordPress on your domain
                         and get online.
                     </p>
@@ -112,10 +112,10 @@ export default function Features() {
                         width={75}
                         height={75}
                     />
-                    <h3 className="md:text-xl font-semibold mb-2">
+                    <h3 className="md:text-2xl font-semibold mb-2">
                         Website Traffic/Data
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-lg">
+                    <p className="text-sm text-gray-700 md:text-lg font-medium">
                         Track your WordPress site traffic daily via cPanel & Google
                         analytics integrations.
                     </p>

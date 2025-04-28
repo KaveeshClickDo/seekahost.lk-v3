@@ -10,7 +10,7 @@ export default function PersonalConsultant() {
                         <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
                             Personal Consultant
                         </h2>
-                        <p className="text-white mb-8 md:text-xl font-medium">
+                        <p className="text-white mb-8 md:text-lg font-medium">
                             Your dedicated point of contact for personalized guidance and support. We&apos;re here around the clock with 24/7 ticket assistance whenever you need us.
                         </p>
 
@@ -21,7 +21,7 @@ export default function PersonalConsultant() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg md:text-2xl font-semibold mb-2">With You at Every Stage</h3>
-                                    <p className="md:text-xl">
+                                    <p className="md:text-lg">
                                     From starting out to expanding online, your SeekaHost personal consultant is ready with expert tips and insights to help you succeed.
                                     </p>
                                 </div>
@@ -33,7 +33,7 @@ export default function PersonalConsultant() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg md:text-2xl font-semibold mb-2">Reach Us Your Way</h3>
-                                    <p className="md:text-xl">
+                                    <p className="md:text-lg">
                                     From starting out to expanding online, your SeekaHost personal consultant is ready with expert tips and insights to help you succeed.
                                     </p>
                                 </div>
@@ -45,7 +45,7 @@ export default function PersonalConsultant() {
                                 </div>
                                 <div>
                                     <h3 className="text-lg md:text-2xl font-semibold mb-2">Powered by Award-Winning Support</h3>
-                                    <p className="md:text-xl">
+                                    <p className="md:text-lg">
                                     From starting out to expanding online, your SeekaHost personal consultant is ready with expert tips and insights to help you succeed.
                                     </p>
                                 </div>

@@ -15,7 +15,7 @@ export default function Commitment() {
                             <h3 className="text-lg md:text-2xl font-semibold mb-3">
                                 Dedicated Expert Support
                             </h3>
-                            <p className="text-gray-700 md:text-xl font-medium">
+                            <p className="text-gray-700 md:text-lg font-medium">
                                 Your personal consultant is always available to help you make the most of IONOS products and services, answering any questions and resolving issues—at no extra cost.
                             </p>
                         </div>
@@ -29,7 +29,7 @@ export default function Commitment() {
                             <h3 className="text-lg md:text-2xl font-semibold mb-3">
                                 Comprehensive Online Solutions
                             </h3>
-                            <p className="text-gray-700 md:text-xl font-medium">
+                            <p className="text-gray-700 md:text-lg font-medium">
                                 From professional website creation to secure communication tools, we provide everything you need to establish a strong and credible online presence.
                             </p>
                         </div>
@@ -43,7 +43,7 @@ export default function Commitment() {
                             <h3 className="text-lg md:text-2xl font-semibold mb-3">
                                 Cutting-Edge Server Technology
                             </h3>
-                            <p className="text-gray-700 md:text-xl font-medium">
+                            <p className="text-gray-700 md:text-lg font-medium">
                                 Whether it&rsquo;s WordPress hosting or scalable cloud solutions, our advanced infrastructure ensures performance, security, and flexibility to support your business growth.
                             </p>
                         </div>
@@ -57,7 +57,7 @@ export default function Commitment() {
                             <h3 className="text-lg md:text-2xl font-semibold mb-3">
                                 Smart Tools for Digital Success
                             </h3>
-                            <p className="text-gray-700 md:text-xl font-medium">
+                            <p className="text-gray-700 md:text-lg font-medium">
                                 Leverage our SEO, online marketing, and visibility solutions to enhance your brand&rsquo;s reach, connect with customers, and stay ahead in the digital landscape.
                             </p>
                         </div>

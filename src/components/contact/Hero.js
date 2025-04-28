@@ -9,7 +9,7 @@ export default function Hero() {
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                         Enhanced support.<br />Less waiting time.
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                         Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
                     </p>
                     <div className="flex flex-col space-y-4 max-w-xs">

@@ -96,7 +96,7 @@ export default function PeopleCards() {
                 </div>
 
                 <div className="md:w-2/3 mt-6 md:mt-0 md:mb-20 px-5">
-                    <p className="text-white mb-4 text-xl md:text-3xl lg:text-4xl font-medium">
+                    <p className="text-white mb-4 text-xl md:text-3xl font-medium">
                         &apos;&apos;{people[currentSlide].comment}&apos;&apos;
                     </p>
                     <hr className="border-t-2 border-gray-300 m-4" />

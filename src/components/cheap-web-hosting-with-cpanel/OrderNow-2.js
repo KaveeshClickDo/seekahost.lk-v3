@@ -22,7 +22,7 @@ export default function OrderNow2() {
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                     What can SeekaHost cPanel Hosting do for you?
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                     The SeekaHost cPanel Hosting offers a variety of features that make website management a lot easier and faster such as MySQL, email managing tools, and data tracking as well as SEO optimization features. With SeekaHost&apos;s cPanel web hosting you will experience simple, straightforward web hosting that offers you everything you need for the best website performance.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer md:text-lg font-medium">

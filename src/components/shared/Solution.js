@@ -20,7 +20,7 @@ export default function Solution () {
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">DDOS Protected</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -41,7 +41,7 @@ export default function Solution () {
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Instant Setup</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -62,7 +62,7 @@ export default function Solution () {
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">24/7 Live Support</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function Solution () {
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Guaranteed Uptime</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function Solution () {
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Blog Management</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -125,7 +125,7 @@ export default function Solution () {
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Periodic Malware Scanner</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>

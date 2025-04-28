@@ -20,7 +20,7 @@ export default function Solution () {
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Security, spam and malware</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -41,7 +41,7 @@ export default function Solution () {
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Knowledge Base</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -62,7 +62,7 @@ export default function Solution () {
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">SeekaHost Academy</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function Solution () {
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-semibold mb-2">Tutorials</h3>
-                <p className="text-gray-700 md:text-xl font-medium">
+                <p className="text-gray-700 md:text-lg font-medium">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>

@@ -22,10 +22,10 @@ export default function OrderNow2() {
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
                     Hassle-free managed hosting for WordPress
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                         If you are looking for the best WordPress hosting solution for your business websites, SeekaHost offers a range of WP sevrices. From managed WP to easy to manage control panel as well as cPanels and Webmin or even Plesk control panel with support.
                     </p>
-                    <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                         However, we do recommend you using the SeekaHost control panel for the best user experience and WordPress site speeds.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer md:text-lg font-medium">

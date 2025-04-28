@@ -50,7 +50,7 @@ export default function FAQs() {
                             onClick={() => toggleFAQ(index)}
                             className="flex justify-between items-center w-full text-left cursor-pointer"
                         >
-                            <span className="text-lg md:text-2xl font-medium">
+                            <span className="text-lg md:text-xl font-medium">
                                 {item.question}
                             </span>
                             <span className="text-2xl font-bold">
@@ -62,7 +62,7 @@ export default function FAQs() {
                                 }`}
                         >
                             <hr className="border-gray-300 my-2" />
-                            <p className="text-gray-700 mt-2 md:text-xl font-medium">{item.answer}</p>
+                            <p className="text-gray-700 mt-2 md:text-lg font-medium">{item.answer}</p>
                         </div>
                     </div>
                 ))}

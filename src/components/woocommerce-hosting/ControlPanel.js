@@ -7,9 +7,9 @@ export default function ControlPanel() {
 
             <div className="md:w-1/2 mb-10 lg:mb-0 md:pr-10 px-4">
                 <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
-                Feature-rich WooCommerce hosting
+                    Control Panel Features
                 </h2>
-                <p className="text-[#1D216A] mb-4 md:text-xl font-medium">
+                <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
                     The WordPress hosting control panel provides many features and some
                     of them are domain registration, 1-Click WP hosting, free SSL
                     certificate with 1-click activation, daily backups to be taken at
@@ -33,10 +33,10 @@ export default function ControlPanel() {
                             width={75}
                             height={75}
                         />
-                        <h3 className="md:text-xl font-semibold mb-2">
+                        <h3 className="md:text-2xl font-semibold mb-2">
                             Domain Registration
                         </h3>
-                        <p className="text-sm text-gray-700 md:text-lg">
+                        <p className="text-sm text-gray-700 md:text-lg font-medium">
                             You can easily register your ideal domain names inside the
                             control panel.
                         </p>
@@ -51,10 +51,10 @@ export default function ControlPanel() {
                             width={75}
                             height={75}
                         />
-                        <h3 className="md:text-xl font-semibold mb-2">
+                        <h3 className="md:text-2xl font-semibold mb-2">
                             WP Hosting Plans
                         </h3>
-                        <p className="text-sm text-gray-700 md:text-lg">
+                        <p className="text-sm text-gray-700 md:text-lg font-medium">
                             4 best WordPress hosting packages suitable for bloggers
                             and business owners.
                         </p>
@@ -70,10 +70,10 @@ export default function ControlPanel() {
                             width={75}
                             height={75}
                         />
-                        <h3 className="md:text-xl font-semibold mb-2">
+                        <h3 className="md:text-2xl font-semibold mb-2">
                             1-Click WP Installer
                         </h3>
-                        <p className="text-sm text-gray-700 md:text-lg">
+                        <p className="text-sm text-gray-700 md:text-lg font-medium">
                             Easiest way to just 1-click install WordPress on your domain
                             and get online.
                         </p>
@@ -88,10 +88,10 @@ export default function ControlPanel() {
                             width={75}
                             height={75}
                         />
-                        <h3 className="md:text-xl font-semibold mb-2">
+                        <h3 className="md:text-2xl font-semibold mb-2">
                             Website Traffic/Data
                         </h3>
-                        <p className="text-sm text-gray-700 md:text-lg">
+                        <p className="text-sm text-gray-700 md:text-lg font-medium">
                             Track your WordPress site traffic daily via cPanel & Google
                             analytics integrations.
                         </p>

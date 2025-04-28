@@ -72,7 +72,7 @@ export default function Timeline () {
                                     <div className={`absolute top-0 -left-2 w-5 h-full bg-blue-500 rounded-l-2xl`}></div>
 
                                     <h3 className="text-2xl  md:text-3xl font-bold text-blue-900 mb-2">{item.year}</h3>
-                                    <p className="text-gray-700 md:text-xl font-medium">{item.description}</p>
+                                    <p className="text-gray-700 md:text-lg font-medium">{item.description}</p>
                                 </div>
                             </div>
                         </div>
