@@ -29,7 +29,7 @@ export default function Hero() {
                             id="searchDomain"
                             type="text"
                             placeholder="Search for a domain..."
-                            className="flex-grow outline-none text-black px-2"
+                            className="flex-grow outline-none text-black md:px-2"
                         />
                         <button className="bg-[#0081FF] text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition md:text-lg">
                             Search
