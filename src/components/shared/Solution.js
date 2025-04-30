@@ -7,7 +7,7 @@ export default function Solution () {
 
         <div className="text-center mb-12">
           <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1>
-          <h2 className="text-2xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4">
             SeekaHost – 1 Click Solution for Hosting
           </h2>
 

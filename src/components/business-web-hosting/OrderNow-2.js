@@ -19,7 +19,7 @@ export default function OrderNow2() {
 
                 <div className="md:w-1/2 mt-6 md:mt-0 px-5">
 
-                    <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
+                    <h2 className="text-2xl md:text-4xl font-semibold text-[#1D276A] mb-4">
                         Ideal For High Performing Business Websites
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-lg font-medium">

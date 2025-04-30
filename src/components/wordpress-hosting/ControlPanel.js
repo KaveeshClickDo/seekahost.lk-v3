@@ -6,7 +6,7 @@ export default function ControlPanel() {
 
 
             <div className="md:w-1/2 mb-10 lg:mb-0 md:pr-10 px-4">
-                <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
+                <h2 className="text-2xl md:text-4xl font-semibold text-[#1D276A] mb-4">
                     Control Panel Features
                 </h2>
                 <p className="text-[#1D216A] mb-4 md:text-lg font-medium">

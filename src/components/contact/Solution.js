@@ -7,7 +7,7 @@ export default function Solution () {
 
         <div className="text-center mb-12">
           <h1 className="inline-block bg-blue-100 text-blue-700 text-sm px-3 py-1 rounded-full mb-4">Our Solutions</h1>
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl md:text-4xl font-semibold text-gray-800 mb-4">
             How can we help?
           </h2>
 

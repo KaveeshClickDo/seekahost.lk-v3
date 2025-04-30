@@ -6,7 +6,7 @@ export default function OrderNow3() {
 
                 <div className="md:w-1/2 px-5 md:mr-15">
 
-                    <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
+                    <h2 className="text-2xl md:text-4xl font-semibold text-[#1D276A] mb-4">
                     WooCommerce in a few clicks
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-lg font-medium">

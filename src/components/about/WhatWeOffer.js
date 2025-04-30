@@ -15,7 +15,7 @@ export default function WhatWeOffer() {
 
                 <div className="md:w-1/2 px-5">
                     <h2 className="text-2xl  md:text-4xl font-semibold text-white mb-6">
-                        What we offer for <br /> <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65"> Sri Lankans</span>
+                        What we offer for <br /> <span className="relative font-semibold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65"> Sri Lankans</span>
                     </h2>
                     <p className="text-white md:text-lg mb-4  font-medium">
                         Whether you are a start-up company in Sri Lanka or one with an established business presence in the Sri Lankan market, your website is the first point of reference for your customers.

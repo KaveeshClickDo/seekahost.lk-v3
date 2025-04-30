@@ -5,7 +5,7 @@ export default function OrderNow1() {
             <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 md:my-10">
 
                 <div className="md:w-1/2 px-5 md:mr-15">
-                <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
+                <h2 className="text-2xl md:text-4xl font-semibold text-[#1D276A] mb-4">
                         Easy To Manage Via Web Hosting Control Panel
                     </h2>
                     <p className="text-[#1D216A] mb-4 md:text-lg font-medium">

@@ -6,7 +6,7 @@ export default function WhySeekahost() {
       <section className="py-16 bg-white md:my-10">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-15 justify-center">
           <div className="w-full md:w-1/2">
-            <h2 className="text-2xl md:text-4xl font-bold mb-8">
+            <h2 className="text-2xl md:text-4xl font-semibold mb-8">
               Why SeekaHost
             </h2>
 
@@ -89,7 +89,7 @@ export default function WhySeekahost() {
             <p className="text-sm md:text-2xl font-medium mb-2">Important For Transactions</p>
             <h2 className="text-2xl md:text-4xl mb-6 leading-snug">
               Useful for facilitating transactions<span className='font-semibold'><br />
-                <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">between buyers &amp; sellers</span></span>
+                <span className="relative font-semibold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">between buyers &amp; sellers</span></span>
             </h2>
             <ul className="space-y-2">
               <li className="flex items-start md:text-lg">

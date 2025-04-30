@@ -5,7 +5,7 @@ export default function Timeline () {
         <div className="py-16 bg-[#F5FAFF]">
             <div className="container mx-auto px-4  md:px-30 md:my-10">
                 <h2 className="text-2xl  md:text-4xl font-bold text-center mb-12 relative">
-                    <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Our Timeline</span>
+                    <span className="relative font-semibold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Our Timeline</span>
                 </h2>
 
                 <div className="relative">

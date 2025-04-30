@@ -7,7 +7,7 @@ export default function PersonalConsultant() {
 
                     <div className="md:w-1/2 px-5 md:mr-15 pt-16 md:py-16">
 
-                        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
+                        <h2 className="text-2xl md:text-4xl font-semibold text-white mb-4">
                             Personal Consultant
                         </h2>
                         <p className="text-white mb-8 md:text-lg font-medium">

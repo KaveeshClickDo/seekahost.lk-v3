@@ -19,7 +19,7 @@ export default function Reviews() {
                         <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">
                             Customer Reviews
                         </h2>
-                        <p className="mt-2 text-2xl leading-8 font-bold tracking-tight md:text-4xl">
+                        <p className="mt-2 text-2xl leading-8 font-semibold tracking-tight md:text-4xl">
                             Words of Trust
                         </p>
                         <p className="mt-4 max-w-md text-md md:text-lg text-gray-700 font-medium">

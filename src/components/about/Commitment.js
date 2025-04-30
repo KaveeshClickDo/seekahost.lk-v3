@@ -2,7 +2,7 @@ export default function Commitment() {
     return (
         <section className="bg-gradient-to-r from-[#09407A] to-[#136CC9] py-16 px-4">
             <div className="max-w-7xl mx-auto md:my-10">
-                <h2 className="text-white text-2xl md:text-4xl font-medium text-center mb-12">
+                <h2 className="text-white text-2xl md:text-4xl font-semibold text-center mb-12">
                     Our Commitment to Your Digital Success
                 </h2>
 

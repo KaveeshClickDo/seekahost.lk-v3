@@ -8,7 +8,7 @@ export default function CTA() {
 
 
                     <div className="text-white md:w-2/3 py-10 md:py-16">
-                        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+                        <h2 className="text-2xl md:text-4xl font-semibold mb-4">
                             Ready to make a secure future?
                         </h2>
                         <p className="text-white/90 text-base md:text-lg mb-6 font-medium">
