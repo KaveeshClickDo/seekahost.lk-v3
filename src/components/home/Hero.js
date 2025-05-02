@@ -5,7 +5,7 @@ import PopUpVideo from '../shared/PopUpVideo';
 export default function Hero() {
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[41%] lg:h-[70%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
+            <div className="absolute inset-0 w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[38%] lg:h-[65%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
             <div className="absolute inset-0 w-full h-full bg-[#0A437F] z-1"></div>
             {/* <Image
                 src="/images/home/home-hero-bg.svg"
@@ -16,11 +16,11 @@ export default function Hero() {
             /> */}
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
                 <div className="text-white w-full max-w-2xl z-3">
-                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold leading-10">
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
                     </h1>
 
-                    <p className="mt-4 text-md md:text-lg">
+                    <p className="mt-4">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -31,7 +31,7 @@ export default function Hero() {
                             placeholder="Search for a domain..."
                             className="flex-grow outline-none text-black md:px-2"
                         />
-                        <button className="bg-[#0081FF] text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition md:text-lg">
+                        <button className="bg-[#0081FF] text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition leading-4 font-bold">
                             Search
                         </button>
                     </div>
@@ -65,7 +65,7 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-lg font-semibold text-white">Web Hosting</h2>
+                            <h2 className="text-xl font-bold text-white">Web Hosting</h2>
                             <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
                             <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
@@ -81,7 +81,7 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-semibold text-white">Web Hosting</h2>
+                            <h2 className="text-xl font-bold text-white">Web Hosting</h2>
                             <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
                             <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
@@ -97,7 +97,7 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-semibold text-white">Web Hosting</h2>
+                            <h2 className="text-xl font-bold text-white">Web Hosting</h2>
                             <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
                             <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info

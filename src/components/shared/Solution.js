@@ -7,7 +7,7 @@ export default function Solution () {
 
         <div className="text-center mb-12">
           <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold mb-4">
             SeekaHost – 1 Click Solution for Hosting
           </h2>
 
@@ -19,8 +19,8 @@ export default function Solution () {
           <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-lg md:text-2xl font-semibold mb-2">DDOS Protected</h3>
-                <p className="text-gray-700 md:text-lg font-medium">
+                <h3 className="text-lg md:text-2xl font-bold mb-2">DDOS Protected</h3>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -40,8 +40,8 @@ export default function Solution () {
           <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-lg md:text-2xl font-semibold mb-2">Instant Setup</h3>
-                <p className="text-gray-700 md:text-lg font-medium">
+                <h3 className="text-lg md:text-2xl font-bold mb-2">Instant Setup</h3>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -61,8 +61,8 @@ export default function Solution () {
           <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-lg md:text-2xl font-semibold mb-2">24/7 Live Support</h3>
-                <p className="text-gray-700 md:text-lg font-medium">
+                <h3 className="text-lg md:text-2xl font-bold mb-2">24/7 Live Support</h3>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -82,8 +82,8 @@ export default function Solution () {
           <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-lg md:text-2xl font-semibold mb-2">Guaranteed Uptime</h3>
-                <p className="text-gray-700 md:text-lg font-medium">
+                <h3 className="text-lg md:text-2xl font-bold mb-2">Guaranteed Uptime</h3>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -103,8 +103,8 @@ export default function Solution () {
           <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-lg md:text-2xl font-semibold mb-2">Blog Management</h3>
-                <p className="text-gray-700 md:text-lg font-medium">
+                <h3 className="text-lg md:text-2xl font-bold mb-2">Blog Management</h3>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>
@@ -124,8 +124,8 @@ export default function Solution () {
           <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
-                <h3 className="text-lg md:text-2xl font-semibold mb-2">Periodic Malware Scanner</h3>
-                <p className="text-gray-700 md:text-lg font-medium">
+                <h3 className="text-lg md:text-2xl font-bold mb-2">Periodic Malware Scanner</h3>
+                <p className="text-gray-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
                 </p>
               </div>

@@ -1,15 +1,10 @@
-import { Montserrat, Figtree } from 'next/font/google';
+import { DM_Sans } from 'next/font/google';
 import './globals.css';
 import { siteSchema } from './schema';
 
-const montserrat = Montserrat({
+const dmSans = DM_Sans({
   subsets: ['latin'],
-  variable: '--font-montserrat',
-});
-
-const figtree = Figtree({
-  subsets: ['latin'],
-  variable: '--font-figtree',
+  variable: '--font-dm-sans',
 });
 
 export const metadata = {
@@ -32,7 +27,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
       </head>
-      <body suppressHydrationWarning className={`${montserrat.variable} ${figtree.variable} antialiased`}>
+      <body suppressHydrationWarning className={`${dmSans.variable} antialiased`}>
         {children}
       </body>
     </html>

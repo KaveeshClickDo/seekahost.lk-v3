@@ -8,10 +8,10 @@ export default function CTA() {
 
 
                     <div className="text-white md:w-2/3 py-10 md:py-16">
-                        <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-4">
                             Ready to make a secure future?
                         </h2>
-                        <p className="text-white/90 text-base md:text-lg mb-6 font-medium">
+                        <p className="text-white/90 mb-6">
                             Get your personalized insurance quote now and take the first step
                             toward a worry-free future. Your security matters.
                         </p>
@@ -23,7 +23,7 @@ export default function CTA() {
                                 placeholder="Email Address"
                                 className="flex-grow outline-none text-black"
                             />
-                            <button className="bg-[#1276DF] text-white font-medium px-4 lg:px-6 py-2 rounded-full hover:bg-blue-600 transition">
+                            <button className="bg-[#1276DF] text-white font-bold px-4 lg:px-6 py-2 rounded-full hover:bg-blue-600 transition">
                                 <span className="max-[400px]:hidden">Sign Up Free</span>
                                 <span className="hidden max-[400px]:inline">Sign Up</span>
                             </button>

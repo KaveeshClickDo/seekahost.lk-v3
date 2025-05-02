@@ -13,8 +13,8 @@ export default function FAQs() {
 
     return (
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center md:my-10">
-            <p className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4">Frequently Asked Question</p>
-            <h2 className="text-center text-2xl md:text-4xl font-semibold mb-8">
+            <p className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Frequently Asked Question</p>
+            <h2 className="text-center text-2xl md:text-4xl font-bold mb-8">
                 Questions about our services
             </h2>
             <div className="space-y-4">
@@ -27,7 +27,7 @@ export default function FAQs() {
                             onClick={() => toggleFAQ(index)}
                             className="flex justify-between items-center w-full text-left cursor-pointer"
                         >
-                            <span className="text-lg md:text-xl font-medium">
+                            <span className="text-lg md:text-xl font-bold">
                                 {item.question}
                             </span>
                             <span className="text-2xl font-bold">
@@ -39,7 +39,7 @@ export default function FAQs() {
                                 }`}
                         >
                             <hr className="border-gray-300 my-2" />
-                            <p className="text-gray-700 mt-2 md:text-lg font-medium">{item.answer}</p>
+                            <p className="text-gray-700 mt-2">{item.answer}</p>
                         </div>
                     </div>
                 ))}

@@ -7,10 +7,10 @@ export default function PersonalConsultant() {
 
                     <div className="md:w-1/2 px-5 md:mr-15 pt-16 md:py-16">
 
-                        <h2 className="text-2xl md:text-4xl font-semibold text-white mb-4">
+                        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">
                             Personal Consultant
                         </h2>
-                        <p className="text-white mb-8 md:text-lg font-medium">
+                        <p className="text-white mb-8">
                             Your dedicated point of contact for personalized guidance and support. We&apos;re here around the clock with 24/7 ticket assistance whenever you need us.
                         </p>
 
@@ -20,8 +20,8 @@ export default function PersonalConsultant() {
                                     <Image src="/images/home/help.svg" width={50} height={50} alt="help you succeed" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg md:text-2xl font-semibold mb-2">With You at Every Stage</h3>
-                                    <p className="md:text-lg">
+                                    <h3 className="text-lg md:text-2xl font-bold mb-2">With You at Every Stage</h3>
+                                    <p>
                                     From starting out to expanding online, your SeekaHost personal consultant is ready with expert tips and insights to help you succeed.
                                     </p>
                                 </div>
@@ -32,8 +32,8 @@ export default function PersonalConsultant() {
                                     <Image src="/images/home/reach.svg" width={50} height={50} alt="reach you" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg md:text-2xl font-semibold mb-2">Reach Us Your Way</h3>
-                                    <p className="md:text-lg">
+                                    <h3 className="text-lg md:text-2xl font-bold mb-2">Reach Us Your Way</h3>
+                                    <p>
                                     From starting out to expanding online, your SeekaHost personal consultant is ready with expert tips and insights to help you succeed.
                                     </p>
                                 </div>
@@ -44,8 +44,8 @@ export default function PersonalConsultant() {
                                     <Image src="/images/home/award.svg" width={50} height={50} alt="award winning support" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg md:text-2xl font-semibold mb-2">Powered by Award-Winning Support</h3>
-                                    <p className="md:text-lg">
+                                    <h3 className="text-lg md:text-2xl font-bold mb-2">Powered by Award-Winning Support</h3>
+                                    <p>
                                     From starting out to expanding online, your SeekaHost personal consultant is ready with expert tips and insights to help you succeed.
                                     </p>
                                 </div>

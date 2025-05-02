@@ -32,7 +32,7 @@ export default function Topbar() {
         return (
             <div className="relative inline-block text-left" ref={dropdownRef}>
                 <button
-                    className="flex items-center bg-[#0081FF] text-white px-5 py-2 rounded-full hover:bg-blue-600 transition md:text-lg"
+                    className="flex items-center bg-[#0081FF] text-white px-5 py-3 rounded-full hover:bg-blue-600 transition font-bold leading-4"
                     onClick={toggleDropdown}
                 >
                     Sign In
@@ -109,7 +109,7 @@ export default function Topbar() {
 
     return (
         <nav className="relative z-10 w-full bg-white shadow">
-            <div className="container mx-auto flex items-center justify-between md:pl-5">
+            <div className="container mx-auto flex items-center justify-between md:pl-10">
                 <Link href="/">
                     <Image src="/images/shared/header-logo.webp" alt="SeekaHost" width={150} height={70} priority />
                 </Link>
