@@ -19,16 +19,16 @@ export default function OrderNow2() {
 
                 <div className="md:w-1/2 mt-6 md:mt-0 px-5">
 
-                    <h2 className="text-2xl md:text-4xl font-semibold text-[#1D276A] mb-4">
+                    <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-7">
                         Ideal For High Performing Business Websites
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
+                    <p className="text-[#1D216A] mb-4">
                         Your business website is your online gateway to big business success in Sri Lanka.
                     </p>
-                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
+                    <p className="text-[#1D216A] mb-4">
                         You start as a small business with a limited budget, however, to grow big and become a successful large scale business, you have to think big from the start. And SeekaHost gives everything for small or big business thinkers to grow successfully.
                     </p>
-                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer md:text-lg font-medium">
+                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-7">
                         Order Now
                     </button>
                 </div>

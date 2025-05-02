@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Servers() {
     return (
-        <div className="absolute -left-135 w-3xl xl:w-5xl bg-white shadow-lg z-10">
+        <div className="absolute -left-126 w-3xl xl:w-5xl bg-white shadow-lg z-10">
             <div className="container mx-auto flex flex-wrap">
                 {/* Left side - Menu items with icons */}
                 <div className="w-full lg:w-2/3 p-4">

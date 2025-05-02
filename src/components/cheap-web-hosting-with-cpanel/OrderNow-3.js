@@ -6,13 +6,13 @@ export default function OrderNow3() {
 
                 <div className="md:w-1/2 px-5 md:mr-15">
 
-                    <h2 className="text-2xl md:text-4xl font-semibold text-[#1D276A] mb-4">
+                    <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-7">
                     Smooth & Flexible CMS Support
                     </h2>
-                    <p className="text-[#1D216A] mb-4 md:text-lg font-medium">
+                    <p className="text-[#1D216A] mb-4">
                     No matter whether you use WordPress, Joomla, or Drupal, with the SeekaHost cPanel Hosting you can easily and quickly install the most popular content management software to your account with a few clicks. Softaculous will support you with installing the software of your choice. Whether you&apos;re setting up a blog with WordPress or an eCommerece site with Magento, it&apos;s all covered.
                     </p>
-                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer md:text-lg font-medium">
+                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-7">
                         Order Now
                     </button>
                 </div>

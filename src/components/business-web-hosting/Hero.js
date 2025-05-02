@@ -20,12 +20,12 @@ export default function Hero() {
                         Lanka Business Web Hosting
                     </h1>
 
-                    <p className="mt-6 text-md md:text-lg font-medium">
+                    <p className="mt-6 font-medium">
                         High performance, secure, super-fast business website hosting services in Sri Lanka for Sri Lankan business owners with 24/7 support. Ideal for startups and big business owners that need powerful & reliable Lanka host.
                     </p>
 
-                    <ul className="space-y-2 mt-4">
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
+                    <ul className="space-y-5 mt-4">
+                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -34,7 +34,7 @@ export default function Hero() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
                         </li>
 
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-base font-medium text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -42,7 +42,7 @@ export default function Hero() {
                             </span>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
                         </li>
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-base font-medium text-gray-300 mt-4">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -52,7 +52,7 @@ export default function Hero() {
                         </li>
                     </ul>
 
-                    <button className="bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-6">
+                    <button className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7">
                         Get Started
                     </button>
 

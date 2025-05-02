@@ -8,7 +8,7 @@ export default function CTA() {
 
 
                     <div className="text-white md:w-2/3 py-10 md:py-16">
-                        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-6">
                             Ready to make a secure future?
                         </h2>
                         <p className="text-white/90 mb-6">
@@ -17,7 +17,7 @@ export default function CTA() {
                         </p>
 
 
-                        <div className="mt-6 flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-md font-medium">
+                        <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-md font-medium">
                             <input
                                 type="text"
                                 placeholder="Email Address"
