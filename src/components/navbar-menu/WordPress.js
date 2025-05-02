@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function WordPress() {
     return (
-        <div className="absolute -left-95 w-3xl xl:w-5xl bg-white shadow-lg z-10">
+        <div className="absolute -left-85.5 w-3xl xl:w-5xl bg-white shadow-lg z-10">
             <div className="container mx-auto flex flex-wrap">
                 {/* Left side - Menu items with icons */}
                 <div className="w-full lg:w-2/3 p-4">
-                    <h3 className="font-medium text-gray-700 mb-4 uppercase text-sm">HOST YOUR WORDPRESS</h3>
+                    <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">HOST YOUR WORDPRESS</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/wordpress-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -17,7 +17,7 @@ export default function WordPress() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">WordPress Web Hosting</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">WordPress Web Hosting</p>
                                 <p className="text-sm text-gray-600">Optimized for WordPress sites</p>
                             </div>
                         </Link>
@@ -29,7 +29,7 @@ export default function WordPress() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">Managed WordPress</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Managed WordPress</p>
                                 <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
                             </div>
                         </Link>
@@ -37,7 +37,7 @@ export default function WordPress() {
 
                     </div>
 
-                    <h3 className="font-medium text-gray-700 mt-6 mb-4 uppercase text-sm">WORDPRESS ECOMMERCE</h3>
+                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">WORDPRESS ECOMMERCE</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -47,7 +47,7 @@ export default function WordPress() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">WooCommerce Hosting</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">WooCommerce Hosting</p>
                                 <p className="text-sm text-gray-600">Affordable hosting solutions</p>
                             </div>
                         </Link>

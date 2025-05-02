@@ -92,7 +92,7 @@ export default function Navbar2() {
                 }`}>
                 <button
                     type="button"
-                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg p-4"
+                    className="flex items-center font-light transition-all duration-300 focus:outline-none cursor-pointer p-4"
                     onClick={() => {
                         setDesktopDomainsDropdownOpen(!desktopDomainsDropdownOpen)
                         setDesktopWebHostingDropdownOpen(false);
@@ -113,7 +113,7 @@ export default function Navbar2() {
                 }`}>
                 <button
                     type="button"
-                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg p-4"
+                    className="flex items-center font-light transition-all duration-300 focus:outline-none cursor-pointer p-4"
                     onClick={() => {
                         setDesktopWebHostingDropdownOpen(!desktopWebHostingDropdownOpen);
                         setDesktopWordPressDropdownOpen(false);
@@ -134,7 +134,7 @@ export default function Navbar2() {
                 }`}>
                 <button
                     type="button"
-                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg p-4"
+                    className="flex items-center font-light transition-all duration-300 focus:outline-none cursor-pointer p-4"
                     onClick={() => {
                         setDesktopEcommersDropdownOpen(!desktopEcommersDropdownOpen)
                         setDesktopWebHostingDropdownOpen(false);
@@ -156,7 +156,7 @@ export default function Navbar2() {
                 }`}>
                 <button
                     type="button"
-                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg p-4"
+                    className="flex items-center font-light transition-all duration-300 focus:outline-none cursor-pointer p-4"
                     onClick={() => {
                         setDesktopWordPressDropdownOpen(!desktopWordPressDropdownOpen);
                         setDesktopWebHostingDropdownOpen(false);
@@ -178,7 +178,7 @@ export default function Navbar2() {
                 }`}>
                 <button
                     type="button"
-                    className="flex items-center font-medium transition-all duration-300 focus:outline-none cursor-pointer text-lg p-4"
+                    className="flex items-center font-light transition-all duration-300 focus:outline-none cursor-pointer p-4"
                     onClick={() => {
                         setDesktopServersDropdownOpen(!desktopServersDropdownOpen);
                         setDesktopWordPressDropdownOpen(false);
@@ -196,7 +196,7 @@ export default function Navbar2() {
             </div>
             <Link
                 href="/blog"
-                className={`font-medium transition-all duration-300 text-lg p-4 ${isActive('/blog')
+                className={`font-light transition-all duration-300 p-4 ${isActive('/blog')
                     ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
                     : 'hover:bg-[#F5FAFF]'
                     }`}

@@ -7,7 +7,7 @@ export default function Domains() {
             <div className="container mx-auto flex flex-wrap">
                 {/* Left side - Menu items with icons */}
                 <div className="w-full lg:w-2/3 p-4">
-                    <h3 className="font-medium text-gray-700 mb-4 uppercase text-sm">ROOT SERVER</h3>
+                    <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">ROOT SERVER</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/register-domain" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -17,14 +17,14 @@ export default function Domains() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">Register Domain</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Register Domain</p>
                                 <p className="text-sm text-gray-600">Create your online address</p>
                             </div>
                         </Link>
 
                     </div>
 
-                    <h3 className="font-medium text-gray-700 mt-6 mb-4 uppercase text-sm">SERVICE</h3>
+                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">SERVICE</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -34,7 +34,7 @@ export default function Domains() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">Domain Transfer</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Domain Transfer</p>
                                 <p className="text-sm text-gray-600">Secure your server or cloud infrastructure</p>
                             </div>
                         </Link>

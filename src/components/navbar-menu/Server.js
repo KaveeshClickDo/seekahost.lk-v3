@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Servers() {
     return (
-        <div className="absolute -left-126 w-3xl xl:w-5xl bg-white shadow-lg z-10">
+        <div className="absolute -left-113.25 w-3xl xl:w-5xl bg-white shadow-lg z-10">
             <div className="container mx-auto flex flex-wrap">
                 {/* Left side - Menu items with icons */}
                 <div className="w-full lg:w-2/3 p-4">
-                    <h3 className="font-medium text-gray-700 mb-4 uppercase text-sm">ROOT SERVER</h3>
+                    <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">ROOT SERVER</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -17,7 +17,7 @@ export default function Servers() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">VPS Hosting</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">VPS Hosting</p>
                                 <p className="text-sm text-gray-600">Fully virtualized private servers</p>
                             </div>
                         </Link>
@@ -29,7 +29,7 @@ export default function Servers() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">Dedicated Servers</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Dedicated Servers</p>
                                 <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
                             </div>
                         </Link>
@@ -41,7 +41,7 @@ export default function Servers() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">Cloud Servers</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Cloud Servers</p>
                                 <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
                             </div>
                         </Link>
@@ -49,7 +49,7 @@ export default function Servers() {
 
                     </div>
 
-                    <h3 className="font-medium text-gray-700 mt-6 mb-4 uppercase text-sm">SERVERS TOOLS</h3>
+                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">SERVERS TOOLS</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -59,7 +59,7 @@ export default function Servers() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-medium text-gray-800 group-hover:text-blue-500">Cloud Backup</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Cloud Backup</p>
                                 <p className="text-sm text-gray-600">Secure your server or cloud infrastructure</p>
                             </div>
                         </Link>
