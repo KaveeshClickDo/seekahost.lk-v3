@@ -97,10 +97,10 @@ export default function Topbar() {
 
     const DesktopMenu = () => (
         <div className="hidden lg:flex items-center space-x-10 md:pr-15">
-            <Link href="/about" className="hover:underline font-medium transition-all duration-300 text-lg">
+            <Link href="/about" className="hover:underline font-light transition-all duration-300">
                 About
             </Link>
-            <Link href="/contact" className="hover:underline font-medium transition-all duration-300 text-lg">
+            <Link href="/contact" className="hover:underline font-light transition-all duration-300">
                 Contact Us
             </Link>
             <SignInDropdown />
