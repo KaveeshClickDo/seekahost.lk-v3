@@ -16,11 +16,11 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2 md:mb-10">
-                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold">
                         Register Domain Names
                     </h1>
 
-                    <p className="mt-4 text-md md:text-lg">
+                    <p className="mt-6">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -31,7 +31,7 @@ export default function Hero() {
                             placeholder="Search for a domain..."
                             className="flex-grow outline-none text-black px-2"
                         />
-                        <button className="bg-[#0081FF] text-white  md:text-lg px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition">
+                        <button className="bg-[#0081FF] text-white font-bold leading-4 px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition">
                             Search
                         </button>
                     </div>
@@ -39,19 +39,19 @@ export default function Hero() {
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.com</span>
-                            <span className="text-white font-medium">Rs1976</span>
+                            <span className="text-white">Rs1976</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.co.uk</span>
-                            <span className="text-white font-medium">Rs1511</span>
+                            <span className="text-white">Rs1511</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.net</span>
-                            <span className="text-white font-medium">Rs2441</span>
+                            <span className="text-white">Rs2441</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.org</span>
-                            <span className="text-white font-medium">Rs2209</span>
+                            <span className="text-white">Rs2209</span>
                         </div>
                     </div>
 

@@ -16,11 +16,11 @@ export default function Hero() {
             /> */}
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
                 <div className="text-white w-full max-w-2xl z-3">
-                    <h1 className="text-2xl md:text-4xl font-bold leading-10">
+                    <h1 className="text-2xl md:text-4xl font-bold">
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
                     </h1>
 
-                    <p className="mt-4">
+                    <p className="mt-6">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
