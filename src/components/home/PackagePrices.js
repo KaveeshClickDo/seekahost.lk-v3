@@ -138,10 +138,10 @@ export default function PackagesPrices() {
                                         
                                         {/* Dynamic Feature Sections */}
                                         {plan.featureSections.map((section, sectionIdx) => (
-                                            <div key={sectionIdx} className="mb-6">
+                                            <div key={sectionIdx} className="mb-4">
                                                 {/* Don't show section title for the first section (General Features) */}
                                                 {sectionIdx > 0 && (
-                                                    <h4 className={`font-semibold mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
+                                                    <h4 className={`font-bold text-lg mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
                                                         {section.title}
                                                     </h4>
                                                 )}
