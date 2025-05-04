@@ -22,7 +22,7 @@ export default function Reviews() {
                         <p className="mt-2 text-2xl leading-8 font-bold tracking-tight md:text-4xl">
                             Words of Trust
                         </p>
-                        <p className="mt-4 max-w-md text-gray-700">
+                        <p className="mt-6 max-w-md text-gray-700">
                             Over 18,000 companies of all sizes use Advantage to streamline their business marketing
                         </p>
                     </div>
