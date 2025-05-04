@@ -26,8 +26,8 @@ export default function Hero() {
                         Ultrafast, Managed, Simple to Use
                     </p>
 
-                    <ul className="space-y-2 mt-6">
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
+                    <ul className="mt-6">
+                        <li className="flex items-start text-sm md:text-base text-gray-300">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -36,7 +36,7 @@ export default function Hero() {
                             Automated setup, migration & updates
                         </li>
 
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-base text-gray-300">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -44,7 +44,7 @@ export default function Hero() {
                             </span>
                             Multi-level security for extra peace of mind
                         </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-base text-gray-300">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

@@ -18,16 +18,16 @@ export default function Hero() {
 
 
                 <div className="text-white w-full max-w-2xl z-2">
-                    <h1 className="text-2xl md:text-4xl font-bold leading-tight">
+                    <h1 className="text-2xl md:text-4xl font-bold">
                     WooCommerce Hosting
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl font-lg font-medium">
+                    <p className="mt-4 text-md md:text-xl font-lg font-bold">
                     Easy-to-Use Hosting for WooCommerce
                     </p>
 
-                    <ul className="space-y-2 mt-4">
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
+                    <ul className="mt-6">
+                        <li className="flex items-start text-sm md:text-base text-gray-300">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -36,7 +36,7 @@ export default function Hero() {
                             Smart, AI tools for any skill level make it easy
                         </li>
 
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-base text-gray-300">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -44,7 +44,7 @@ export default function Hero() {
                             </span>
                             Fast, WordPress platform with optimized databases
                         </li>
-                        <li className="flex items-start text-sm md:text-lg font-medium text-gray-300 mt-4">
+                        <li className="flex items-start text-sm md:text-base text-gray-300">
                             <span className="mr-3 w-5 flex-shrink-0">
                                 <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -63,8 +63,8 @@ export default function Hero() {
 
                     <div className="mt-4">
                         <div className="flex items-baseline">
-                            <span className="text-xl md:text-3xl font-bold">LKR200</span>
-                            <span className="text-sm ml-1">/month</span>
+                            <span className="text-xl md:text-5xl font-bold">LKR200</span>
+                            <span className="text-sm md:text-xl ml-1">/month</span>
                         </div>
                         <div className="text-sm">with a 1-year term</div>
                     </div>

@@ -64,7 +64,7 @@ export default function Navbar2() {
     };
 
     const isWordpressActive = () => {
-        const wordpressPaths = ['/wordpress-hosting'];
+        const wordpressPaths = ['/wordpress-hosting', '/managed-wordpress', '/woocommerce-hosting'];
         return wordpressPaths.some(path => pathname === path);
     };
 

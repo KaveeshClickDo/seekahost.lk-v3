@@ -11,7 +11,7 @@ export default function SeePlansButton() {
 
     return (
         <div
-            className="inline-block bg-white text-[#0066CC] md:text-lg font-medium border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-6"
+            className="inline-block bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
             onClick={scrollToWpPackagePrices}
         >
             See Plans
