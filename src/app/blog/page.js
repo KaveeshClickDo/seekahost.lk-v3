@@ -39,13 +39,13 @@ export default function Blog() {
                             </div>
 
                             <div className="md:w-1/2 p-6">
-                                <div className="text-base text-blue-600 font-semibold tracking-wide uppercase mb-2">FEATURED STORY</div>
+                                <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
                                 <h1 className="text-2xl font-bold mb-4">
                                     <Link href={`/${featuredArticle.url}`} className="hover:text-blue-700">
                                         {featuredArticle.title}
                                     </Link>
                                 </h1>
-                                <p className="md:text-xl text-gray-700 font-medium mb-6">{featuredArticle.excerpt}</p>
+                                <p className="md:text-lg text-gray-700 mb-6">{featuredArticle.excerpt}</p>
                                 <div className="flex items-center gap-3">
                                     <Image
                                         src={featuredArticle.authorImage}
@@ -66,7 +66,7 @@ export default function Blog() {
 
                 {/* Top Stories */}
                 <div className="mb-8">
-                    <h2 className="text-2xl md:text-4xl font-semibold mb-6">Top Stories</h2>
+                    <h2 className="text-2xl md:text-4xl font-bold mb-6">Top Stories</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {regularArticles.map((article) => (
                             <div key={article.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
@@ -89,13 +89,13 @@ export default function Blog() {
                                         <span>{article.readTime}</span> */}
                                     </div>
 
-                                    <h3 className="text-lg md:text-xl font-semibold mb-3">
+                                    <h3 className="text-lg md:text-xl font-bold mb-3">
                                         <Link href={`/${article.url}`} className="hover:text-blue-700">
                                             {article.title}
                                         </Link>
                                     </h3>
 
-                                    <p className="text-sm md:text-base text-gray-700 font-medium mb-4 line-clamp-3">{article.excerpt}</p>
+                                    <p className="text-sm md:text-base text-gray-700 mb-4 line-clamp-3">{article.excerpt}</p>
                                 </div>
                             </div>
                         ))}
@@ -104,7 +104,7 @@ export default function Blog() {
 
                 {/* Worldpress */}
                 <div className="mb-8">
-                    <h2 className="text-2xl md:text-4xl font-semibold mb-6">WordPress</h2>
+                    <h2 className="text-2xl md:text-4xl font-bold mb-6">WordPress</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {regularArticles.map((article) => (
                             <div key={article.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
@@ -127,13 +127,13 @@ export default function Blog() {
                                         <span>{article.readTime}</span> */}
                                     </div>
 
-                                    <h3 className="text-lg md:text-xl font-semibold mb-3">
+                                    <h3 className="text-lg md:text-xl font-bold mb-3">
                                         <Link href={`/${article.url}`} className="hover:text-blue-700">
                                             {article.title}
                                         </Link>
                                     </h3>
 
-                                    <p className="text-sm md:text-base text-gray-700 font-medium mb-4 line-clamp-3">{article.excerpt}</p>
+                                    <p className="text-sm md:text-base text-gray-700 mb-4 line-clamp-3">{article.excerpt}</p>
                                 </div>
                             </div>
                         ))}
