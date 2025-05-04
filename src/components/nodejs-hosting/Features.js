@@ -5,7 +5,7 @@ export default function Features() {
         <section className="max-w-5xl mx-auto py-12 px-4 md:px-0 md:my-10">
 
             <div className="text-center">
-                <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4">
+                <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-6">
                     Node.js Hosting Features
                 </h2>
                 <p className="text-gray-700 max-w-2xl mx-auto">
