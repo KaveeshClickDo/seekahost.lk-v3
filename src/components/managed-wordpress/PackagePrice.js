@@ -62,8 +62,8 @@ export default function PackagesPrices() {
                 priority
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
-                <h1 className="text-blue-600 md:text-xl">PBN Manager</h1>
-                <h2 className="text-2xl md:text-4xl mb-4 text-[#042552]">
+                <h1 className="text-blue-600 md:text-lg mb-1">PBN Manager</h1>
+                <h2 className="text-2xl md:text-4xl mb-6 text-[#042552]">
                     Best Plans & Cheapest Prices
                     <br className="hidden md:block" />
                     With{" "}
@@ -71,13 +71,13 @@ export default function PackagesPrices() {
                         SeekaHost
                     </span>
                 </h2>
-                <p className="text-gray-700 mb-8 max-w-2xl mx-auto md:text-lg font-medium">
+                <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
                     Protect your beloved with our comprehensive fulfillment and
                     credible insurance coverage you can rely on.
                 </p>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
-                        className={`cursor-pointer md:text-xl font-medium ${isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer md:text-lg ${isMonthly ? 'text-blue-600' : ''}`}
                         onClick={() => setIsMonthly(true)}
                     >
                         Monthly
@@ -101,7 +101,7 @@ export default function PackagesPrices() {
                         />
                     </div>
                     <span
-                        className={`cursor-pointer md:text-xl font-medium ${!isMonthly ? 'text-blue-600' : 'text-gray-500'}`}
+                        className={`cursor-pointer md:text-lg ${!isMonthly ? 'text-blue-600' : ''}`}
                         onClick={() => setIsMonthly(false)}
                     >
                         Yearly
@@ -119,18 +119,18 @@ export default function PackagesPrices() {
                                                 BEST VALUE
                                             </div>
                                         )}
-                                        <h3 className={`text-lg md:text-xl font-semibold mb-2 ${idx === 1 ? 'text-white' : ''}`}>{plan.title}</h3>
+                                        <h3 className={`text-lg md:text-xl font-bold mb-2 ${idx === 1 ? 'text-white' : ''}`}>{plan.title}</h3>
                                         <div className="flex items-baseline justify-center mt-4">
-                                            <span className={`text-4xl font-bold mr-1 ${idx === 1 ? 'text-white' : 'text-[#1276DF]'}`}>
+                                            <span className={`text-5xl font-bold mr-1 leading-14 ${idx === 1 ? 'text-white' : 'text-[#1276DF]'}`}>
                                                 LKR{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
                                             </span>
                                             <span className={`${idx === 1 ? 'text-white' : 'text-gray-500'} md:text-xl font-medium`}>
                                                 / {isMonthly ? 'mo' : 'yr'}
                                             </span>
                                         </div>
-                                        <p className={`mb-4 md:text-xl font-medium ${idx === 1 ? 'text-white' : 'text-gray-500'}`}>{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
+                                        <p className={`mb-4 ${idx === 1 ? 'text-white' : 'text-gray-500'}`}>{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
                                         <button
-                                            className={`w-full mb-4 py-2 rounded font-semibold transition md:text-xl ${idx === 1 ? 'bg-white text-blue-600' : 'bg-[#1276DF] text-white'}`}
+                                            className={`w-full mb-4 py-3 rounded font-bold transition ${idx === 1 ? 'bg-white text-blue-600' : 'bg-[#1276DF] text-white'}`}
                                         >
                                             Get {plan.title}
                                         </button>
@@ -138,14 +138,14 @@ export default function PackagesPrices() {
                                         
                                         {/* Dynamic Feature Sections */}
                                         {plan.featureSections.map((section, sectionIdx) => (
-                                            <div key={sectionIdx} className="mb-6">
+                                            <div key={sectionIdx} className="mb-4">
                                                 {/* Don't show section title for the first section (General Features) */}
                                                 {sectionIdx > 0 && (
-                                                    <h4 className={`font-semibold mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
+                                                    <h4 className={`font-bold text-lg mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
                                                         {section.title}
                                                     </h4>
                                                 )}
-                                                <ul className={`text-left space-y-2 md:text-lg font-medium ${idx === 1 ? 'text-white' : ''}`}>
+                                                <ul className={`text-left space-y-2 ${idx === 1 ? 'text-white' : ''}`}>
                                                     {section.features.map((feature, fIdx) => (
                                                         <li key={fIdx} className="flex items-center">
                                                             <svg
@@ -198,7 +198,7 @@ export default function PackagesPrices() {
                         </div>
                     )}
                 </div>
-                <Link href="/managed-wordpress-features" className="bg-white text-[#0066CC] md:text-lg border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-medium">
+                <Link href="/managed-wordpress-features" className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
                     Compare Packages
                 </Link>
             </div>
