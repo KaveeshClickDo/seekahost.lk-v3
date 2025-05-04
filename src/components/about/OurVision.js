@@ -13,7 +13,7 @@ export default function OurVision() {
             <div className="relative z-1 max-w-7xl mx-auto px-4 md:px-0 flex flex-col md:flex-row items-center md:my-10">
 
                 <div className="md:w-1/2 mb-8 md:mb-0 md:px-5 text-white">
-                    <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm md:text-lg font-medium px-3 py-2 rounded-full mb-4">Our Vision</h1>
+                    <h1 className="inline-block bg-[#CCE5FF] text-blue-700 text-sm md:text-lg font-medium px-3 py-1 rounded-full mb-4">Our Vision</h1>
                     <h2 className="mb-6 font-medium">
                         Our Vision is to be the best web hosting service in the world and go beyond our customer expectations with SMART web hosting services at affordable prices..
                     </h2>

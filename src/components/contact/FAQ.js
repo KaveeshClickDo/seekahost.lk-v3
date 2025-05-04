@@ -32,7 +32,7 @@ export default function FAQ() {
           className="flex justify-between items-center cursor-pointer"
           onClick={() => toggleFAQ(item.id)}
         >
-          <h4 className="font-medium md:text-xl">{item.question}</h4>
+          <h4 className="font-bold md:text-xl">{item.question}</h4>
           <button aria-label={isOpen ? "Collapse" : "Expand"} className={`text-blue-600 cursor-pointer flex items-center justify-center w-6 h-6 transition-transform duration-600 ${isOpen ? 'transform rotate-180 bg-blue-600 text-white rounded-md' : ''}`}>
             {isOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -55,7 +55,7 @@ export default function FAQ() {
           }}
           ref={contentRef}
         >
-          <div className="mt-2 text-gray-600 md:text-lg font-medium">
+          <div className="mt-2 text-gray-600">
             {item.answer}
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function FAQ() {
         <div className="text-center mb-8">
           <h2 className="text-white text-md md:text-xl font-medium">FAQ</h2>
           <div className="relative inline-block">
-            <h3 className="text-white text-2xl md:text-4xl font-semibold"><span className="relative font-semibold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Find out more</span></h3>
+            <h3 className="text-white text-2xl md:text-4xl"><span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Find out more</span></h3>
           </div>
         </div>
 
