@@ -7,7 +7,6 @@ import PopUpVideo from "../shared/PopUpVideo";
 import { people } from "@/data/peopleCardData";
 
 export default function PeopleCards() {
-
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -19,8 +18,7 @@ export default function PeopleCards() {
 
             return () => clearInterval(interval);
         }
-        return () => {};
-    }, [people.length, isVideoPlaying]);
+    }, [isVideoPlaying]);
 
     const handleVideoState = (isPlaying) => {
         setIsVideoPlaying(isPlaying);
@@ -48,17 +46,17 @@ export default function PeopleCards() {
                                             height={2792}
                                             className="w-full h-auto rounded-3xl shadow-2xl shadow-black md:ml-4"
                                         />
-                                       
-                                       <div className="absolute top-7/16 left-6/16 md:left-7/16">
+
+                                        <div className="absolute top-7/16 left-6/16 md:left-7/16">
                                             <PopUpVideo
-                                                videoId={person.videoUrl} 
+                                                videoId={person.videoUrl}
                                                 onVideoStateChange={handleVideoState}
                                             />
                                         </div>
                                     </div>
                                 </div>
                             ))}
-                            
+
                             <div className="relative invisible">
                                 <Image
                                     src={people[0].image}
@@ -80,7 +78,7 @@ export default function PeopleCards() {
                     <p className="mb-2 text-lg md:text-xl text-white font-semibold">{people[currentSlide].name}</p>
                     <p className="text-white">{people[currentSlide].company}</p>
 
-                    
+
                     <div className="flex justify-start space-x-2 mt-4">
                         {people.map((_, index) => (
                             <button
