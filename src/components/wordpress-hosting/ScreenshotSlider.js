@@ -6,16 +6,9 @@ import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { screenshots } from "@/data/screenshotSliderData";
 
 export default function ScreenshotSlider() {
-    
-    const screenshots = [
-        "/images/wordpress-hosting/screenshot-1.webp",
-        "/images/wordpress-hosting/screenshot-1.webp",
-        "/images/wordpress-hosting/screenshot-1.webp",
-        "/images/wordpress-hosting/screenshot-1.webp"
-    ];
-
     
     const [currentSlide, setCurrentSlide] = useState(0);
     
