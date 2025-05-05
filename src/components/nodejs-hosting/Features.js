@@ -16,7 +16,7 @@ export default function Features() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 relative mt-10 mx-4">
 
-                <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow-sm">
+                <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="1-Click WP Installer"
@@ -27,14 +27,14 @@ export default function Features() {
                     <h3 className="md:text-2xl font-bold mb-2">
                         1-Click WP Installer
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-base font-medium">
+                    <p className="text-sm text-gray-700 md:text-base">
                         Easiest way to just 1-click install WordPress on your domain
                         and get online.
                     </p>
                 </div>
 
 
-                <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow-sm">
+                <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="Website Traffic/Data"
@@ -45,13 +45,13 @@ export default function Features() {
                     <h3 className="md:text-2xl font-bold mb-2">
                         Website Traffic/Data
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-base font-medium">
+                    <p className="text-sm text-gray-700 md:text-base">
                         Track your WordPress site traffic daily via cPanel & Google
                         analytics integrations.
                     </p>
                 </div>
 
-                <div className="md:bg-[#F4F4F4] bg-[#DEF2FF] rounded-2xl p-4 text-center shadow-sm">
+                <div className="md:bg-[#F4F4F4] bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="Domain Registration"
@@ -62,14 +62,14 @@ export default function Features() {
                     <h3 className="md:text-2xl font-bold mb-2">
                         Domain Registration
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-base font-medium">
+                    <p className="text-sm text-gray-700 md:text-base">
                         You can easily register your ideal domain names inside the
                         control panel.
                     </p>
                 </div>
 
 
-                <div className="md:bg-[#DEF2FF] bg-[#F4F4F4] rounded-2xl p-4 text-center shadow-sm">
+                <div className="md:bg-[#DEF2FF] bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="WP Hosting Plans"
@@ -80,13 +80,13 @@ export default function Features() {
                     <h3 className="md:text-2xl font-bold mb-2">
                         WP Hosting Plans
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-base font-medium">
+                    <p className="text-sm text-gray-700 md:text-base">
                         4 best WordPress hosting packages suitable for bloggers
                         and business owners.
                     </p>
                 </div>
 
-                <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow-sm">
+                <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="1-Click WP Installer"
@@ -97,14 +97,14 @@ export default function Features() {
                     <h3 className="md:text-2xl font-bold mb-2">
                         1-Click WP Installer
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-base font-medium">
+                    <p className="text-sm text-gray-700 md:text-base">
                         Easiest way to just 1-click install WordPress on your domain
                         and get online.
                     </p>
                 </div>
 
 
-                <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow-sm">
+                <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="Website Traffic/Data"
@@ -115,7 +115,7 @@ export default function Features() {
                     <h3 className="md:text-2xl font-bold mb-2">
                         Website Traffic/Data
                     </h3>
-                    <p className="text-sm text-gray-700 md:text-base font-medium">
+                    <p className="text-sm text-gray-700 md:text-base">
                         Track your WordPress site traffic daily via cPanel & Google
                         analytics integrations.
                     </p>
