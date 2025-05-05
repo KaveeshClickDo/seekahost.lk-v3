@@ -7,7 +7,7 @@ import { Fragment } from "react";
 import { wordPressPlansData } from "@/data/comparePlansData";
 
 export const metadata = {
-    title: "Compare Plans"
+    title: "Compare Plans | WordPress Hosting"
 }
 
 export default function HostingFeatures() {

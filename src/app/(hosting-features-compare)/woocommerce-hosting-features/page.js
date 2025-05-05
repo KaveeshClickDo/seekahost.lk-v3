@@ -7,7 +7,7 @@ import { Fragment } from "react";
 import { woocommercePlansData } from "@/data/comparePlansData";
 
 export const metadata = {
-    title: "Compare Plans"
+    title: "Compare Plans | WooCommerce Hosting"
 }
 
 export default function HostingFeatures() {

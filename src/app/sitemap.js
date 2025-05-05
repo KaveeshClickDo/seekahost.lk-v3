@@ -49,6 +49,42 @@ export default function sitemap() {
         priority: 1,
       },
       {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/managed-wordpress`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/woocommerce-hosting`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/managed-wordpress-features`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/shared-hosting-features`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/woocommerce-hosting-features`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/wordpress-hosting-features`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
