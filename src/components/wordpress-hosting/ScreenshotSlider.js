@@ -9,14 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 import { screenshots } from "@/data/screenshotSliderData";
 
 export default function ScreenshotSlider() {
-    
+
     const [currentSlide, setCurrentSlide] = useState(0);
-    
+
     const [prevSlide, setPrevSlide] = useState(null);
-    
+
     const [isTransitioning, setIsTransitioning] = useState(false);
 
-    
+    const screenshotsLength = screenshots.length;
+
     const changeSlide = useCallback((index) => {
         if (isTransitioning) return;
 
@@ -24,29 +25,28 @@ export default function ScreenshotSlider() {
         setPrevSlide(currentSlide);
         setCurrentSlide(index);
 
-        
         setTimeout(() => {
             setIsTransitioning(false);
             setPrevSlide(null);
         }, 500);
     }, [currentSlide, isTransitioning]);
 
-    
+
     useEffect(() => {
         const interval = setInterval(() => {
-            const nextSlide = (currentSlide + 1) % screenshots.length;
+            const nextSlide = (currentSlide + 1) % screenshotsLength;
             changeSlide(nextSlide);
-        }, 5000); 
+        }, 5000);
 
         return () => clearInterval(interval);
-    }, [currentSlide, screenshots.length, changeSlide]);
+    }, [currentSlide, changeSlide, screenshotsLength]);
 
     return (
         <section className="bg-[#F5FAFF]">
             <div className="max-w-7xl container mx-auto flex flex-col md:flex-row">
                 <div className="md:w-3/5 w-full bg-gradient-to-t from-[#136CC9] to-[#09407A] flex justify-end items-right py-20 relative">
                     <div className="w-3/4 relative overflow-hidden">
-                        
+
                         <div className="relative" style={{ height: "auto" }}>
                             {screenshots.map((src, index) => (
                                 <div
@@ -73,7 +73,7 @@ export default function ScreenshotSlider() {
                             ))}
                         </div>
 
-                        
+
                         <div className="opacity-0 invisible">
                             <Image
                                 src={screenshots[0]}
@@ -84,7 +84,7 @@ export default function ScreenshotSlider() {
                             />
                         </div>
 
-                        
+
 
                     </div>
                     <div className="absolute bottom-8 right-8 flex justify-center space-x-2">

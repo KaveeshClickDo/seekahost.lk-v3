@@ -9,21 +9,21 @@ import "slick-carousel/slick/slick-theme.css";
 import { screenshots } from "@/data/screenshotSliderData";
 
 export default function ScreenshotSlider() {
- 
+    
     const [currentSlide, setCurrentSlide] = useState(0);
     
     const [prevSlide, setPrevSlide] = useState(null);
     
     const [isTransitioning, setIsTransitioning] = useState(false);
-
     
+    const screenshotsLength = screenshots.length;
+
     const changeSlide = useCallback((index) => {
         if (isTransitioning) return;
 
         setIsTransitioning(true);
         setPrevSlide(currentSlide);
         setCurrentSlide(index);
-
         
         setTimeout(() => {
             setIsTransitioning(false);
@@ -34,12 +34,12 @@ export default function ScreenshotSlider() {
     
     useEffect(() => {
         const interval = setInterval(() => {
-            const nextSlide = (currentSlide + 1) % screenshots.length;
+            const nextSlide = (currentSlide + 1) % screenshotsLength;
             changeSlide(nextSlide);
         }, 5000); 
 
         return () => clearInterval(interval);
-    }, [currentSlide, screenshots.length, changeSlide]);
+    }, [currentSlide, changeSlide, screenshotsLength]);
 
     return (
         <section className="bg-[#F5FAFF]">
