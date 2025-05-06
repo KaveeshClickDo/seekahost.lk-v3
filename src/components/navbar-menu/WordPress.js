@@ -37,7 +37,7 @@ export default function WordPress() {
 
                     </div>
 
-                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">WORDPRESS ECOMMERCE</h3>
+                    {/* <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">WORDPRESS ECOMMERCE</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -51,7 +51,7 @@ export default function WordPress() {
                                 <p className="text-sm text-gray-600">Affordable hosting solutions</p>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Right side - Promotional content */}

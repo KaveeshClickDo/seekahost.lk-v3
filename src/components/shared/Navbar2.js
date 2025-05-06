@@ -64,7 +64,7 @@ export default function Navbar2() {
     };
 
     const isWordpressActive = () => {
-        const wordpressPaths = ['/wordpress-hosting', '/managed-wordpress', '/woocommerce-hosting'];
+        const wordpressPaths = ['/wordpress-hosting', '/managed-wordpress'];
         return wordpressPaths.some(path => pathname === path);
     };
 
@@ -79,7 +79,7 @@ export default function Navbar2() {
     };
 
     const isEcommersActive = () => {
-        const ecommersPaths = ['/ecommers'];
+        const ecommersPaths = ['/woocommerce-hosting'];
         return ecommersPaths.some(path => pathname === path);
     };
 

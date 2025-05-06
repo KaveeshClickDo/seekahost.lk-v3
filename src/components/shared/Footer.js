@@ -149,7 +149,7 @@ export default function Footer() {
 
           <div className="mt-12 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
-              Copyright © 2025 Seekahost Uk Data Centers Ltd. All Rights Reserved. <br />
+              Copyright © 2025 SeekaHost Uk Data Centers Ltd. All Rights Reserved. <br />
               Company number 16026964. <br />
               <Link href="#" className="hover:text-white">Privacy Policy</Link>
               <span className="mx-2">|</span>
