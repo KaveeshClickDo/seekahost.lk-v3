@@ -100,10 +100,10 @@ export default function Footer() {
 
               <h3 className="md:text-lg font-medium mb-5 mt-8">Our Company</h3>
               <ul className="space-y-4">
-                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">About SeekaHost™</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">SeekaHost™ University</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">SeekaHost Blog</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">Contact Us</Link></li>
+                <li><Link href="/about" className="text-gray-300 hover:text-white font-medium">About SeekaHost™</Link></li>
+                <li><Link href="https://university.seekahost.com/" className="text-gray-300 hover:text-white font-medium">SeekaHost™ University</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-white font-medium">SeekaHost Blog</Link></li>
+                <li><Link href="/contact" className="text-gray-300 hover:text-white font-medium">Contact Us</Link></li>
               </ul>
             </div>
 

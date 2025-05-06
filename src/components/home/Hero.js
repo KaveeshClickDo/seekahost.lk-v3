@@ -106,7 +106,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-15 ml-auto mt-8 lg:mt-0">
+                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-3 ml-auto mt-8 lg:mt-0">
                     <Image
                         src="/images/home/hero-image.webp"
                         alt="Hero Image"

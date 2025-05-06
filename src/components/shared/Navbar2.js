@@ -194,7 +194,7 @@ export default function Navbar2() {
                     <Servers />
                 )}
             </div>
-            <Link
+            {/* <Link
                 href="/blog"
                 className={`font-light transition-all duration-300 p-4 ${isActive('/blog')
                     ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
@@ -202,6 +202,15 @@ export default function Navbar2() {
                     }`}
             >
                 Blog
+            </Link> */}
+            <Link
+                href="/pricing"
+                className={`font-light transition-all duration-300 p-4 ${isActive('/pricing')
+                    ? 'bg-[#F5FAFF] border-b-4 border-blue-500'
+                    : 'hover:bg-[#F5FAFF]'
+                    }`}
+            >
+                Pricing
             </Link>
         </div>
     );

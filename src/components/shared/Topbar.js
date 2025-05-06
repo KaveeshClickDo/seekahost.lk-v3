@@ -6,8 +6,26 @@ import { useState, useRef, useEffect } from 'react';
 import { FiExternalLink } from 'react-icons/fi';
 import { SlPeople } from "react-icons/sl";
 import { GoGlobe } from "react-icons/go";
+import Support from '../topbar-menu/Support';
 
 export default function Topbar() {
+    const [desktopSupportDropdownOpen, setDesktopSupportDropdownOpen] = useState(false);
+    const supportRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (supportRef.current && !supportRef.current.contains(event.target)) {
+                setDesktopSupportDropdownOpen(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     const SignInDropdown = () => {
         const [isOpen, setIsOpen] = useState(false);
         const dropdownRef = useRef(null);
@@ -71,14 +89,14 @@ export default function Topbar() {
                             </Link>
                             <Link href="https://www.seekahost.com/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                                 <span className="mr-2">
-                                <GoGlobe className="w-5 h-5" />
+                                    <GoGlobe className="w-5 h-5" />
                                 </span>
                                 Seekahost.com
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
                             </Link>
                             <Link href="https://portal.seekahost.app/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
                                 <span className="mr-2">
-                                <Image
+                                    <Image
                                         src="/images/shared/app-ico.svg"
                                         alt="Domain Registration"
                                         width={20}
@@ -100,9 +118,24 @@ export default function Topbar() {
             <Link href="/about" className="hover:underline font-light transition-all duration-300">
                 About
             </Link>
-            <Link href="/contact" className="hover:underline font-light transition-all duration-300">
+            {/* <Link href="/contact" className="hover:underline font-light transition-all duration-300">
                 Contact Us
-            </Link>
+            </Link> */}
+            <div className="relative" ref={supportRef}>
+                <button
+                    type="button"
+                    className="flex items-center font-light transition-all duration-300 focus:outline-none hover:underline cursor-pointer"
+                    onClick={() => {
+                        setDesktopSupportDropdownOpen(!desktopSupportDropdownOpen);
+                    }}
+
+                >
+                    Support
+                </button>
+                {desktopSupportDropdownOpen && (
+                    <Support />
+                )}
+            </div>
             <SignInDropdown />
         </div>
     );
