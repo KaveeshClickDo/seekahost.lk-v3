@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +14,23 @@ import {
 } from '@/data/packagePricesData';
 
 export default function PackagesPrices() {
+
+    const dropdownRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setShowPackageDropdown(false);
+            }
+        }
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     // Top level category (Web Hosting vs VPS Hosting)
     const [selectedCategory, setSelectedCategory] = useState('web');
 
@@ -53,17 +70,17 @@ export default function PackagesPrices() {
                 { id: 'nodeJS', label: 'NodeJS Hosting' },
                 { id: 'agency', label: 'Agency Hosting' },
             ];
-        } else if (selectedCategory === 'ecommers'){
+        } else if (selectedCategory === 'ecommers') {
             return [
                 { id: 'woocommerce', label: 'WooCommerce' },
             ];
-        } 
-        else if (selectedCategory === 'wordpress'){
+        }
+        else if (selectedCategory === 'wordpress') {
             return [
                 { id: 'wordpress', label: 'WordPress Hosting' },
-                { id: 'managedWP', label: 'Managed WordPress' },            
+                { id: 'managedWP', label: 'Managed WordPress' },
             ];
-        }else {
+        } else {
             return [
                 { id: 'vps', label: 'VPS Hosting' },
                 { id: 'n8n', label: 'n8n VPS Hosting' },
@@ -77,9 +94,9 @@ export default function PackagesPrices() {
     useEffect(() => {
         if (selectedCategory === 'web') {
             setSelectedPackageType('business');
-        } else if (selectedCategory === 'ecommers'){
+        } else if (selectedCategory === 'ecommers') {
             setSelectedPackageType('woocommerce');
-        } else if (selectedCategory === 'wordpress'){
+        } else if (selectedCategory === 'wordpress') {
             setSelectedPackageType('wordpress');
         } else {
             setSelectedPackageType('vps');
@@ -149,8 +166,8 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('web')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'web'
-                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
                             Web Hosting
@@ -159,8 +176,8 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('ecommers')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'ecommers'
-                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
                             eCommers
@@ -169,8 +186,8 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('wordpress')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'wordpress'
-                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
                             WordPress
@@ -179,8 +196,8 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('vps')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'vps'
-                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
                             VPS Hosting
@@ -190,20 +207,26 @@ export default function PackagesPrices() {
 
                 {/* Package Type Selector */}
                 <div className="flex justify-center mb-8">
-                    <div className="relative inline-block w-64">
+                    <div className="relative inline-block w-64" ref={dropdownRef}>
                         <button
                             onClick={() => setShowPackageDropdown(!showPackageDropdown)}
-                            className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm"
                         >
                             <span>{getCurrentPackageLabel()}</span>
-                            <svg className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                            </svg>
+                            {showPackageDropdown ? (
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                                </svg>
+                            ) : (
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            )}
                         </button>
 
                         {showPackageDropdown && (
                             <div
-                                className="absolute right-0 z-10 w-full mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                className="absolute right-0 z-10 w-full mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-blue-600 ring-opacity-5 focus:outline-none"
                             >
                                 <div className="py-1" role="menu" aria-orientation="vertical">
                                     {packageOptions.map((option) => (
