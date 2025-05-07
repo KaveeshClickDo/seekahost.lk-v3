@@ -6,12 +6,55 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import Link from 'next/link';
-import { homePkgPrices } from '@/data/packagePricesData';
+import { 
+    homePkgPrices, 
+    managedWPPkgPrices, 
+    woocommercePkgPrices, 
+    wordPressPkgPrices, 
+    agencyPkgPrices 
+} from '@/data/packagePricesData';
 
 export default function PackagesPrices() {
-    const pricing = homePkgPrices;
+    // Package type state and options
+    const [selectedPackageType, setSelectedPackageType] = useState('home');
+    const [showPackageDropdown, setShowPackageDropdown] = useState(false);
+    
+    // Original states
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
+
+    // Get the appropriate pricing data based on selection
+    const getPricingData = () => {
+        switch (selectedPackageType) {
+            case 'managedWP':
+                return managedWPPkgPrices;
+            case 'woocommerce':
+                return woocommercePkgPrices;
+            case 'wordpress':
+                return wordPressPkgPrices;
+            case 'agency':
+                return agencyPkgPrices;
+            case 'home':
+            default:
+                return homePkgPrices;
+        }
+    };
+
+    const pricing = getPricingData();
+
+    const packageOptions = [
+        { id: 'home', label: 'Web Hosting' },
+        { id: 'managedWP', label: 'Managed WordPress' },
+        { id: 'woocommerce', label: 'WooCommerce' },
+        { id: 'wordpress', label: 'WordPress' },
+        { id: 'agency', label: 'Agency Hosting' }
+    ];
+
+    // Get the current package label
+    const getCurrentPackageLabel = () => {
+        const option = packageOptions.find(opt => opt.id === selectedPackageType);
+        return option ? option.label : 'Web Hosting';
+    };
 
     useEffect(() => {
         setIsClient(true);
@@ -54,22 +97,55 @@ export default function PackagesPrices() {
 
     return (
         <section className="relative w-full py-12">
-            {/* <Image
-                src="/images/home/package-banner.svg"
-                alt="Background Image"
-                fill
-                className="object-cover z-0"
-                priority
-            /> */}
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
-                {/* <h1 className="text-blue-600 md:text-lg mb-1">PBN Manager</h1> */}
                 <h2 className="text-2xl md:text-[40px] font-bold mb-6 text-[#042552]">
-                Start Hosting – at an unbeatable price
+                    Start Hosting – at an unbeatable price
                 </h2>
-                <p className="text-gray-700 mb-20 max-w-2xl mx-auto">
+                <p className="text-gray-700 mb-10 max-w-2xl mx-auto">
                     Protect your beloved with our comprehensive fulfillment and
                     credible insurance coverage you can rely on.
                 </p>
+
+                {/* Package Type Selector */}
+                <div className="flex justify-center mb-8">
+                    <div className="relative inline-block w-64">
+                        <button 
+                            onClick={() => setShowPackageDropdown(!showPackageDropdown)}
+                            className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                            <span>{getCurrentPackageLabel()}</span>
+                            <svg className="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                        </button>
+
+                        {showPackageDropdown && (
+                            <div 
+                                className="absolute right-0 z-10 w-full mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                            >
+                                <div className="py-1" role="menu" aria-orientation="vertical">
+                                    {packageOptions.map((option) => (
+                                        <button
+                                            key={option.id}
+                                            onClick={() => {
+                                                setSelectedPackageType(option.id);
+                                                setShowPackageDropdown(false);
+                                            }}
+                                            className={`block w-full px-4 py-2 text-sm text-left ${
+                                                selectedPackageType === option.id ? 'bg-gray-100 text-blue-600' : 'text-gray-700'
+                                            } hover:bg-gray-100`}
+                                            role="menuitem"
+                                        >
+                                            {option.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                {/* Monthly/Yearly Toggle */}
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
                         className={`cursor-pointer md:text-lg ${isMonthly ? 'text-blue-600' : ''}`}
@@ -193,7 +269,7 @@ export default function PackagesPrices() {
                         </div>
                     )}
                 </div>
-                <Link href="/shared-hosting-features" className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
+                <Link href="/shared-hosting-features" className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold mt-6 inline-block">
                     Compare Packages
                 </Link>
             </div>
