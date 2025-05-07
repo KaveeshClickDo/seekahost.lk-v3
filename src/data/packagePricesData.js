@@ -1,6 +1,8 @@
 export const homePkgPrices = [
     {
         title: 'Starter',
+        buttonName: 'Get Starter',
+        link : '#',
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
@@ -38,6 +40,8 @@ export const homePkgPrices = [
     },
     {
         title: 'Turbo',
+        buttonName: 'Get Turbo',
+        link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
         specialTextMonth: 'Renews at LKR580/mo',
@@ -77,6 +81,8 @@ export const homePkgPrices = [
     },
     {
         title: 'Supersonic',
+        buttonName: 'Get Supersonic',
+        link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
         specialTextMonth: 'Renews at LKR780/mo',
@@ -121,6 +127,8 @@ export const homePkgPrices = [
 export const managedWPPkgPrices = [
     {
         title: 'Starter',
+        buttonName: 'Get Starter',
+        link : '#',
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
@@ -158,6 +166,8 @@ export const managedWPPkgPrices = [
     },
     {
         title: 'Turbo',
+        buttonName: 'Get Turbo',
+        link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
         specialTextMonth: 'Renews at LKR580/mo',
@@ -197,6 +207,8 @@ export const managedWPPkgPrices = [
     },
     {
         title: 'Supersonic',
+        buttonName: 'Get Supersonic',
+        link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
         specialTextMonth: 'Renews at LKR780/mo',
@@ -241,6 +253,8 @@ export const managedWPPkgPrices = [
 export const woocommercePkgPrices = [
     {
         title: 'Starter',
+        buttonName: 'Get Starter',
+        link : '#',
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
@@ -278,6 +292,8 @@ export const woocommercePkgPrices = [
     },
     {
         title: 'Turbo',
+        buttonName: 'Get Turbo',
+        link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
         specialTextMonth: 'Renews at LKR580/mo',
@@ -317,6 +333,8 @@ export const woocommercePkgPrices = [
     },
     {
         title: 'Supersonic',
+        buttonName: 'Get Supersonic',
+        link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
         specialTextMonth: 'Renews at LKR780/mo',
@@ -361,6 +379,8 @@ export const woocommercePkgPrices = [
 export const wordPressPkgPrices = [
     {
         title: 'Starter',
+        buttonName: 'Get Starter',
+        link : '#',
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
@@ -398,6 +418,8 @@ export const wordPressPkgPrices = [
     },
     {
         title: 'Turbo',
+        buttonName: 'Get Turbo',
+        link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
         specialTextMonth: 'Renews at LKR580/mo',
@@ -437,6 +459,8 @@ export const wordPressPkgPrices = [
     },
     {
         title: 'Supersonic',
+        buttonName: 'Get Supersonic',
+        link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
         specialTextMonth: 'Renews at LKR780/mo',

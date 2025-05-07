@@ -4,21 +4,23 @@ import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
 import Link from 'next/link';
-import { 
-    homePkgPrices, 
-    managedWPPkgPrices, 
-    woocommercePkgPrices, 
-    wordPressPkgPrices, 
-    agencyPkgPrices 
+import {
+    homePkgPrices,
+    managedWPPkgPrices,
+    woocommercePkgPrices,
+    wordPressPkgPrices,
+    agencyPkgPrices
 } from '@/data/packagePricesData';
 
 export default function PackagesPrices() {
+    // Top level category (Web Hosting vs VPS Hosting)
+    const [selectedCategory, setSelectedCategory] = useState('web');
+
     // Package type state and options
     const [selectedPackageType, setSelectedPackageType] = useState('home');
     const [showPackageDropdown, setShowPackageDropdown] = useState(false);
-    
+
     // Original states
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
@@ -42,13 +44,47 @@ export default function PackagesPrices() {
 
     const pricing = getPricingData();
 
-    const packageOptions = [
-        { id: 'home', label: 'Web Hosting' },
-        { id: 'managedWP', label: 'Managed WordPress' },
-        { id: 'woocommerce', label: 'WooCommerce' },
-        { id: 'wordpress', label: 'WordPress' },
-        { id: 'agency', label: 'Agency Hosting' }
-    ];
+    // Define package options based on selected category
+    const getPackageOptions = () => {
+        if (selectedCategory === 'web') {
+            return [
+                { id: 'business', label: 'Business Hosting' },
+                { id: 'cPanel', label: 'cPanel Hosting' },
+                { id: 'nodeJS', label: 'NodeJS Hosting' },
+                { id: 'agency', label: 'Agency Hosting' },
+            ];
+        } else if (selectedCategory === 'ecommers'){
+            return [
+                { id: 'woocommerce', label: 'WooCommerce' },
+            ];
+        } 
+        else if (selectedCategory === 'wordpress'){
+            return [
+                { id: 'wordpress', label: 'WordPress Hosting' },
+                { id: 'managedWP', label: 'Managed WordPress' },            
+            ];
+        }else {
+            return [
+                { id: 'vps', label: 'VPS Hosting' },
+                { id: 'n8n', label: 'n8n VPS Hosting' },
+            ];
+        }
+    };
+
+    const packageOptions = getPackageOptions();
+
+    // Update selected package type when category changes
+    useEffect(() => {
+        if (selectedCategory === 'web') {
+            setSelectedPackageType('business');
+        } else if (selectedCategory === 'ecommers'){
+            setSelectedPackageType('woocommerce');
+        } else if (selectedCategory === 'wordpress'){
+            setSelectedPackageType('wordpress');
+        } else {
+            setSelectedPackageType('vps');
+        }
+    }, [selectedCategory]);
 
     // Get the current package label
     const getCurrentPackageLabel = () => {
@@ -106,10 +142,56 @@ export default function PackagesPrices() {
                     credible insurance coverage you can rely on.
                 </p>
 
+                {/* Main Category Selector Buttons */}
+                <div className="flex justify-center mb-8">
+                    <div className="inline-flex rounded-md shadow-sm" role="group">
+                        <button
+                            type="button"
+                            onClick={() => setSelectedCategory('web')}
+                            className={`px-6 py-2 text-sm font-medium rounded-l-lg ${selectedCategory === 'web'
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                }`}
+                        >
+                            Web Hosting
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setSelectedCategory('ecommers')}
+                            className={`px-6 py-2 text-sm font-medium rounded-l-lg ${selectedCategory === 'ecommers'
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                }`}
+                        >
+                            eCommers
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setSelectedCategory('wordpress')}
+                            className={`px-6 py-2 text-sm font-medium rounded-l-lg ${selectedCategory === 'wordpress'
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                }`}
+                        >
+                            WordPress
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setSelectedCategory('vps')}
+                            className={`px-6 py-2 text-sm font-medium rounded-r-lg ${selectedCategory === 'vps'
+                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
+                                }`}
+                        >
+                            VPS Hosting
+                        </button>
+                    </div>
+                </div>
+
                 {/* Package Type Selector */}
                 <div className="flex justify-center mb-8">
                     <div className="relative inline-block w-64">
-                        <button 
+                        <button
                             onClick={() => setShowPackageDropdown(!showPackageDropdown)}
                             className="flex items-center justify-between w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                         >
@@ -120,7 +202,7 @@ export default function PackagesPrices() {
                         </button>
 
                         {showPackageDropdown && (
-                            <div 
+                            <div
                                 className="absolute right-0 z-10 w-full mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                             >
                                 <div className="py-1" role="menu" aria-orientation="vertical">
@@ -131,9 +213,8 @@ export default function PackagesPrices() {
                                                 setSelectedPackageType(option.id);
                                                 setShowPackageDropdown(false);
                                             }}
-                                            className={`block w-full px-4 py-2 text-sm text-left ${
-                                                selectedPackageType === option.id ? 'bg-gray-100 text-blue-600' : 'text-gray-700'
-                                            } hover:bg-gray-100`}
+                                            className={`block w-full px-4 py-2 text-sm text-left ${selectedPackageType === option.id ? 'bg-gray-100 text-blue-600' : 'text-gray-700'
+                                                } hover:bg-gray-100`}
                                             role="menuitem"
                                         >
                                             {option.label}
@@ -200,13 +281,15 @@ export default function PackagesPrices() {
                                             </span>
                                         </div>
                                         <p className={`mb-4 ${idx === 1 ? 'text-white' : 'text-gray-500'}`}>{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
-                                        <button
-                                            className={`w-full mb-4 py-3 rounded font-bold transition ${idx === 1 ? 'bg-white text-blue-600' : 'bg-[#1276DF] text-white'}`}
-                                        >
-                                            Get {plan.title}
-                                        </button>
+                                        <Link href={plan.link} className="w-full">
+                                            <button
+                                                className={`w-full mb-4 py-3 rounded font-bold transition cursor-pointer ${idx === 1 ? 'bg-white text-blue-600 hover:bg-gray-100' : 'bg-[#1276DF] text-white hover:bg-blue-900'}`}
+                                            >
+                                                {plan.buttonName}
+                                            </button>
+                                        </Link>
                                         <hr className="mb-4 text-gray-300" />
-                                        
+
                                         {/* Dynamic Feature Sections */}
                                         {plan.featureSections.map((section, sectionIdx) => (
                                             <div key={sectionIdx} className="mb-4">
