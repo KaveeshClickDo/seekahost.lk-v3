@@ -8,7 +8,7 @@ export default function Solution () {
         <div className="text-center mb-12">
           <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            SeekaHost – 1 Click Solution for Hosting
+            SeekaHost – <span className="font-normal">1 Click Solution for Hosting</span>
           </h2>
 
         </div>
@@ -16,7 +16,7 @@ export default function Solution () {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#E8F3FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">DDOS Protected</h3>
@@ -79,7 +79,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#E8F3FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Guaranteed Uptime</h3>
@@ -100,7 +100,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#E8F3FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-8">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Blog Management</h3>

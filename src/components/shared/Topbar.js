@@ -115,7 +115,7 @@ export default function Topbar() {
 
     const DesktopMenu = () => (
         <div className="hidden lg:flex items-center space-x-10 md:pr-15">
-            <Link href="/about" className="hover:underline font-light transition-all duration-300">
+            <Link href="/about" className="hover:underline transition-all duration-300">
                 About
             </Link>
             {/* <Link href="/contact" className="hover:underline font-light transition-all duration-300">
@@ -124,7 +124,7 @@ export default function Topbar() {
             <div className="relative" ref={supportRef}>
                 <button
                     type="button"
-                    className="flex items-center font-light transition-all duration-300 focus:outline-none hover:underline cursor-pointer"
+                    className="flex items-center transition-all duration-300 focus:outline-none hover:underline cursor-pointer"
                     onClick={() => {
                         setDesktopSupportDropdownOpen(!desktopSupportDropdownOpen);
                     }}

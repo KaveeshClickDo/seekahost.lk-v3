@@ -135,7 +135,7 @@ export default function PackagesPrices() {
         <section className="relative w-full py-12">
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h2 className="text-2xl md:text-[40px] font-bold mb-6 text-[#042552]">
-                    Start Hosting – at an unbeatable price
+                    Start Hosting at an unbeatable price
                 </h2>
                 <p className="text-gray-700 mb-10 max-w-2xl mx-auto">
                     Protect your beloved with our comprehensive fulfillment and
@@ -144,11 +144,11 @@ export default function PackagesPrices() {
 
                 {/* Main Category Selector Buttons */}
                 <div className="flex justify-center mb-8">
-                    <div className="inline-flex rounded-md shadow-sm" role="group">
+                    <div className="inline-flex rounded-md gap-5" role="group">
                         <button
                             type="button"
                             onClick={() => setSelectedCategory('web')}
-                            className={`px-6 py-2 text-sm font-medium rounded-l-lg ${selectedCategory === 'web'
+                            className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'web'
                                     ? 'bg-blue-600 text-white hover:bg-blue-700'
                                     : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
@@ -158,7 +158,7 @@ export default function PackagesPrices() {
                         <button
                             type="button"
                             onClick={() => setSelectedCategory('ecommers')}
-                            className={`px-6 py-2 text-sm font-medium rounded-l-lg ${selectedCategory === 'ecommers'
+                            className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'ecommers'
                                     ? 'bg-blue-600 text-white hover:bg-blue-700'
                                     : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
@@ -168,7 +168,7 @@ export default function PackagesPrices() {
                         <button
                             type="button"
                             onClick={() => setSelectedCategory('wordpress')}
-                            className={`px-6 py-2 text-sm font-medium rounded-l-lg ${selectedCategory === 'wordpress'
+                            className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'wordpress'
                                     ? 'bg-blue-600 text-white hover:bg-blue-700'
                                     : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
@@ -178,7 +178,7 @@ export default function PackagesPrices() {
                         <button
                             type="button"
                             onClick={() => setSelectedCategory('vps')}
-                            className={`px-6 py-2 text-sm font-medium rounded-r-lg ${selectedCategory === 'vps'
+                            className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'vps'
                                     ? 'bg-blue-600 text-white hover:bg-blue-700'
                                     : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}

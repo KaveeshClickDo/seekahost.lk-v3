@@ -62,7 +62,7 @@ export default function PackagesPrices() {
                 priority
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
-                <h1 className="text-blue-600 md:text-lg mb-1">PBN Manager</h1>
+                <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">PBN Manager</h1>
                 <h2 className="text-2xl md:text-4xl mb-6 text-[#042552]">
                     Best Plans & Cheapest Prices
                     <br className="hidden md:block" />

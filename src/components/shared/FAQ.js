@@ -39,7 +39,7 @@ export default function FAQs() {
                                 }`}
                         >
                             <hr className="border-gray-300 my-2" />
-                            <p className="text-gray-700 mt-2">{item.answer}</p>
+                            <p className="text-gray-700 mt-2 text-left">{item.answer}</p>
                         </div>
                     </div>
                 ))}

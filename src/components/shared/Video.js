@@ -21,7 +21,7 @@ export default function Video() {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-white md:mb-6">
             <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">
-              Why SeekaHost
+              <span className="font-normal">Why</span> SeekaHost
             </span>
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto">

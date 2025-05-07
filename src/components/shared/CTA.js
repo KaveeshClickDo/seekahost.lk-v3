@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function CTA() {
     return (
         <section className="w-full">
-            <div className="flex justify-center items-center py-10">
+            <div className="flex justify-center items-center pb-20">
                 <div className="relative bg-[#1276DF] rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
 
 
@@ -37,7 +37,7 @@ export default function CTA() {
                             alt="Phone Mockup"
                             width={1167}
                             height={1476}
-                            className="w-60 h-auto drop-shadow-lg md:mt-[38%]"
+                            className="w-60 h-auto drop-shadow-lg md:mt-[30%]"
                         />
                     </div>
                 </div>
