@@ -1,4 +1,5 @@
 import PackagesPrices from "@/components/pricing/PackagesPrices";
+import BacktoTop from "@/components/shared/BacktoTop";
 import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Navbar2 from "@/components/shared/Navbar2";
@@ -18,6 +19,7 @@ export default function Pricing() {
             <Reviews />
             <PeopleCards />
             <FAQs />
+            <BacktoTop />
             <Footer />
         </>
     );

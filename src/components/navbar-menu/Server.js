@@ -10,17 +10,7 @@ export default function Servers() {
                     <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">ROOT SERVER</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p className="font-bold text-gray-800 group-hover:text-blue-500">VPS Hosting</p>
-                                <p className="text-sm text-gray-600">Fully virtualized private servers</p>
-                            </div>
-                        </Link>
+                        
 
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
@@ -49,9 +39,23 @@ export default function Servers() {
 
                     </div>
 
-                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">SERVERS TOOLS</h3>
+                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">VPS</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        
+
+                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                            <div className="mr-3 text-blue-500 mt-1">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">VPS Hosting</p>
+                                <p className="text-sm text-gray-600">Fully virtualized private servers</p>
+                            </div>
+                        </Link>
+
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -59,8 +63,8 @@ export default function Servers() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Cloud Backup</p>
-                                <p className="text-sm text-gray-600">Secure your server or cloud infrastructure</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">n8n VPS hosting</p>
+                                <p className="text-sm text-gray-600">automate any worflow</p>
                             </div>
                         </Link>
                     </div>

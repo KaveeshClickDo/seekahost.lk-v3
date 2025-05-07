@@ -59,7 +59,7 @@ export default function Hosting() {
                             </div>
                         </Link>
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/agency-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -72,7 +72,7 @@ export default function Hosting() {
                         </Link>
                     </div>
 
-                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">ONLINE MARKETING</h3>
+                    {/* <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">ONLINE MARKETING</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -98,7 +98,7 @@ export default function Hosting() {
                                 <p className="text-sm text-gray-600">Create effective email campaigns</p>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Right side - Promotional content */}

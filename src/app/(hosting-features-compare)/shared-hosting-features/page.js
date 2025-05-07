@@ -5,6 +5,7 @@ import { FaCheck, FaTimes } from 'react-icons/fa';
 import Link from "next/link";
 import { Fragment } from "react";
 import { plansData } from "@/data/comparePlansData";
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "Compare Plans"
@@ -104,7 +105,7 @@ export default function HostingFeatures() {
                     </table>
                 </div>
             </div>
-
+            <BacktoTop />
             <Footer />
         </>
     );

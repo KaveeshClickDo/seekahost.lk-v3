@@ -5,6 +5,7 @@ import { FaCheck, FaTimes } from 'react-icons/fa';
 import Link from "next/link";
 import { Fragment } from "react";
 import { managedWPPlansData } from "@/data/comparePlansData";
+import BacktoTop from "@/components/shared/BacktoTop";
 
 export const metadata = {
     title: "Compare Plans | Managed WordPress"
@@ -105,6 +106,7 @@ export default function HostingFeatures() {
                 </div>
             </div>
 
+            <BacktoTop />
             <Footer />
         </>
     );

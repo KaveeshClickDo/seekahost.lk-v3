@@ -24,7 +24,7 @@ export default function Ecommers() {
 
                     </div>
 
-                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">CREATE YOUR ONLINE STORE</h3>
+                    {/* <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">CREATE YOUR ONLINE STORE</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -38,7 +38,7 @@ export default function Ecommers() {
                                 <p className="text-sm text-gray-600">Get your online store built by experts</p>
                             </div>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Right side - Promotional content */}
