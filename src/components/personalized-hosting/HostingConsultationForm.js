@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { countries } from "@/data/countriesData";
 
 export default function HostingConsultationForm() {
   const [formData, setFormData] = useState({
@@ -35,26 +36,26 @@ export default function HostingConsultationForm() {
       {/* Left Column - Text Content */}
       <div className="w-full md:w-5/12 p-8 bg-white">
         <h2 className="text-2xl md:text-4xl font-bold text-blue-900 mb-4">
-        Unlock Your Perfect Hosting Experience with a Customized Session!
+          Unlock Your Perfect Hosting Experience with a Customized Session!
         </h2>
 
         <p className="text-sm md:text-base text-gray-700 mb-4">
-        Welcome to SeekaHost&apos;s Exclusive Sales Call Experience!
+          Welcome to SeekaHost&apos;s Exclusive Sales Call Experience!
           <br />
           Our dedicated sales team specialists are here to help you discover the perfect hosting plan tailored precisely to your needs. Through a personalized session, we ensure you receive expert guidance, empowering you to make informed decisions with confidence. At SeekaHost, your journey to seamless hosting begins with the right advice.
         </p>
 
         <p className="text-sm md:text-base  text-gray-700 mb-4">
-        Share your hosting requirements, technical background, and preferences, and let our experts navigate the options for you. Whether you&apos;re launching a new project or scaling an existing platform, we provide custom recommendations that fit your goals. With SeekaHost, finding the right solution is simple, effective, and stress-free.
+          Share your hosting requirements, technical background, and preferences, and let our experts navigate the options for you. Whether you&apos;re launching a new project or scaling an existing platform, we provide custom recommendations that fit your goals. With SeekaHost, finding the right solution is simple, effective, and stress-free.
         </p>
 
         <p className="text-sm md:text-base  text-gray-700 mb-4">
-        Begin your path to hosting excellence with us. Together, we&apos;ll craft a solution that matches your ambitions and powers your online success. Thank you for choosing SeekaHost—we&apos;re excited to support you every step of the way!
+          Begin your path to hosting excellence with us. Together, we&apos;ll craft a solution that matches your ambitions and powers your online success. Thank you for choosing SeekaHost—we&apos;re excited to support you every step of the way!
         </p>
 
         <p className="text-sm text-gray-700">
           You can check our Privacy Policy:{" "}
-          <a 
+          <a
             href="#"
             className="text-blue-500 hover:underline"
           >
@@ -81,11 +82,11 @@ export default function HostingConsultationForm() {
                 className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500"
               >
                 <option value="">Select...</option>
-                <option value="us">Sri Lanka</option>
-                <option value="uk">United Kingdom</option>
-                <option value="ca">Canada</option>
-                <option value="au">Australia</option>
-                {/* Add more countries as needed */}
+                {countries.map((country) => (
+                  <option key={country.code} value={country.code}>
+                    {country.name}
+                  </option>
+                ))}
               </select>
               <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
