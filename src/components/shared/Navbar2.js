@@ -59,7 +59,7 @@ export default function Navbar2() {
     };
 
     const isWebHostingActive = () => {
-        const webHostingPaths = ['/business-web-hosting', '/cheap-web-hosting-with-cpanel', '/nodejs-hosting'];
+        const webHostingPaths = ['/business-web-hosting', '/cheap-web-hosting-with-cpanel', '/nodejs-hosting', '/agency-hosting'];
         return webHostingPaths.some(path => pathname === path);
     };
 

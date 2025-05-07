@@ -7,6 +7,10 @@ import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 
+export const metadata = {
+    title: "Pricing"
+}
+
 export default function Pricing() {
     return (
         <>

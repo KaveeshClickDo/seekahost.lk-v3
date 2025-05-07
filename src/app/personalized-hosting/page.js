@@ -4,6 +4,10 @@ import Footer from "@/components/shared/Footer";
 import Navbar2 from "@/components/shared/Navbar2";
 import Topbar from "@/components/shared/Topbar";
 
+export const metadata = {
+    title: "Personalized Hosting"
+}
+
 export default function PersonalizedHosting() {
     return (
         <>

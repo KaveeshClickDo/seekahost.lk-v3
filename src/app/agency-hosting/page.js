@@ -11,6 +11,10 @@ import Topbar from "@/components/shared/Topbar";
 import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/shared/FAQ";
 
+export const metadata = {
+    title: "Agency Web Hosting"
+}
+
 export default function Agency() {
 
     return (

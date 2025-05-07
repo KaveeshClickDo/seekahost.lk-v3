@@ -85,6 +85,24 @@ export default function sitemap() {
         priority: 1,
       },
       {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/agency-hosting`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/pricing`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/personalized-hosting`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 1,
+      },
+      {
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
