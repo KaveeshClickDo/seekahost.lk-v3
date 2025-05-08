@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import PopUpVideo from '../shared/PopUpVideo';
+import { domainPrices } from '@/data/homeHeroExtnPrices';
 
 export default function Hero() {
     return (
@@ -37,23 +38,16 @@ export default function Hero() {
                     </div>
 
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.com</span>
-                            <span className="text-white">Rs1976</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.co.uk</span>
-                            <span className="text-white">Rs1511</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.net</span>
-                            <span className="text-white">Rs2441</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.org</span>
-                            <span className="text-white">Rs2209</span>
-                        </div>
+                        {domainPrices.map(({ extension, price }) => (
+                            <div key={extension} className="flex items-center space-x-2">
+                                <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">
+                                    {extension}
+                                </span>
+                                <span className="text-white">{price}</span>
+                            </div>
+                        ))}
                     </div>
+
 
                     <div className="mt-10 xl:mt-30 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
                         <div className="rounded-md flex flex-col items-center">
