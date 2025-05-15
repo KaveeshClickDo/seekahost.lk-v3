@@ -18,7 +18,7 @@ export default function TalkSpecialist() {
                             Learn how to migrate seamlessly with minimal downtime and maximum reliability. We ensure your transition is smooth and hassle-free.
                         </p>
                         <p className="text-white mb-8">
-                            Find the perfect solution tailored to your needs. Whether you're starting fresh or expanding, we guide you every step of the way.
+                            Find the perfect solution tailored to your needs. Whether you&rsquo;re starting fresh or expanding, we guide you every step of the way.
                         </p>
 
                         <Link
