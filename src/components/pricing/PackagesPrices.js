@@ -161,7 +161,7 @@ export default function PackagesPrices() {
 
                 {/* Main Category Selector Buttons */}
                 <div className="flex justify-center mb-8">
-                    <div className="inline-flex rounded-md gap-5" role="group">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-5" role="group">
                         <button
                             type="button"
                             onClick={() => setSelectedCategory('web')}
