@@ -19,6 +19,7 @@ export default function Navbar2() {
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
     const [domainsDropdownOpen, setDomainsDropdownOpen] = useState(false);
     const [wordPressDropdownOpen, setWordPressDropdownOpen] = useState(false);
+    const [eCommersDropdownOpen, setECommersDropdownOpen] = useState(false);
     const [signInDropdownOpen, setSignInDropdownOpen] = useState(false);
 
     const [desktopWebHostingDropdownOpen, setDesktopWebHostingDropdownOpen] = useState(false);
@@ -302,12 +303,51 @@ export default function Navbar2() {
                                     Node JS Hosting
                                 </div>
                             </Link>
+                            <Link href="/agency-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Agency Hosting
+                                </div>
+                            </Link>
                         </div>
                     )}
                 </div>
-                <Link href="#" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                    eCommers
-                </Link>
+                <div>
+                    <button
+                        onClick={() => setECommersDropdownOpen(!eCommersDropdownOpen)}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium"
+                        aria-expanded={eCommersDropdownOpen}
+                    >
+                        eCommers
+                        {eCommersDropdownOpen ? (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        )}
+                    </button>
+                    {eCommersDropdownOpen && (
+                        <div className="pl-4">
+                            <Link href="/woocommerce-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    WooCommerce Hosting
+                                </div>
+                            </Link>
+                        </div>
+                    )}
+                </div>
                 <div>
                     <button
                         onClick={() => setWordPressDropdownOpen(!wordPressDropdownOpen)}
@@ -347,21 +387,11 @@ export default function Navbar2() {
                                     Managed WordPress
                                 </div>
                             </Link>
-                            <Link href="/woocommerce-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
-                                </div>
-                                <div>
-                                    WooCommerce Hosting
-                                </div>
-                            </Link>
                         </div>
                     )}
                 </div>
-                <Link href="/blog" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                    Blog
+                <Link href="/pricing" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                    Pricing
                 </Link>
                 <Link href="/about" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     About
