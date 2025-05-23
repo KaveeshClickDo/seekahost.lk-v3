@@ -152,7 +152,7 @@ export default function PackagesPrices() {
         <section className="relative w-full py-12">
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h2 className="text-2xl md:text-[40px] font-bold mb-6 text-[#042552]">
-                    Start Hosting at an unbeatable price
+                    Start Hosting at an unbeatable prices
                 </h2>
                 <p className="text-gray-700 mb-10 max-w-2xl mx-auto">
                     Protect your beloved with our comprehensive fulfillment and
