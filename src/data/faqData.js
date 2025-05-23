@@ -50,32 +50,32 @@ export const faqs = [
 export const faqData = [
     {
       id: "faq-1",
-      question: "Dolor sit et, contetur met, consectetur",
+      question: "Do you offer a free trial or money-back guarantee?",
       answer: "Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat aute irure dolor"
     },
     {
       id: "faq-2",
-      question: "Lorem ipsum dolor sit et, consectetur",
+      question: "What kind of support can I expect?",
       answer: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
       id: "faq-3",
-      question: "Lorem ipsum dolor sit et, consectetur",
+      question: "Can I upgrade or downgrade my hosting plan later?",
       answer: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
     },
     {
       id: "faq-4",
-      question: "Lorem ipsum dolor sit et, consectetur",
+      question: "Is email hosting included with my plan?",
       answer: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
     },
     {
       id: "faq-5",
-      question: "Lorem ipsum dolor sit et, consectetur",
+      question: "How secure is my website on your servers?",
       answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
     },
     {
       id: "faq-6",
-      question: "Lorem ipsum dolor sit et, consectetur",
+      question: "What is your uptime guarantee?",
       answer: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
     }
   ];
