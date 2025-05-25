@@ -1,0 +1,49 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - .env
+    environment:
+      NEXT_PUBLIC_STRAPI_API_URL: http://localhost:1337
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ../seekahost.lk-cms
+      dockerfile: Dockerfile
+    ports:
+      - "1337:1337"
+    volumes:
+      - ../seekahost.lk-cms:/app
+      - /app/node_modules
+      - ../seekahost.lk-cms/public/uploads:/app/public/uploads
+    env_file:
+      - ../seekahost.lk-cms/.env
+    environment:
+      DATABASE_HOST: postgres
+      DATABASE_PORT: 5432
+      NODE_ENV: development
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:17.5
+    ports:
+      - "5431:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - strapi_pg_data:/var/lib/postgresql/data
+
+volumes:
+  strapi_pg_data:

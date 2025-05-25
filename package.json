@@ -1,5 +1,5 @@
 {
-  "name": "seekahost-lk-v2",
+  "name": "seekahost.lk-v3",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,7 +15,6 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-slick": "^0.30.3",
-    "seekahost-lk-v2": "file:",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
