@@ -39,3 +39,18 @@ body {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl font-medium;
+  }
+
+}

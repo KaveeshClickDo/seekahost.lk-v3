@@ -44,7 +44,7 @@ const BlogPost = async (props) => {
                                         </span>
                                         <span>{post.updatedAt?.substring(0, 10)}</span>
                                     </div>
-                                    <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+                                    <h1 className="text-2xl lg:text-4xl font-bold mb-4">
                                         {post.title}
                                     </h1>
                                     {/* Author Section */}
