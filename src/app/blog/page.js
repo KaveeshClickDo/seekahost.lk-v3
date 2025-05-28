@@ -5,36 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BacktoTop from "@/components/shared/BacktoTop";
 import config from '@/config';
+import fetchBlogs from '@/data/fetchBlogs';
 
 export const metadata = {
     title: "Blog"
 }
 
-const fetchBlogs = async (params) => {
-    try {
-        const reqOptions = {
-            headers: {
-                Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
-            }
-        };
-
-        const request = await fetch(`${config.api}/api/blogs?populate=*&${params}`, reqOptions);
-
-        if (!request.ok) {
-            throw new Error(`API request failed with status ${request.status}`);
-        }
-
-        const response = await request.json();
-        return response;
-    } catch (error) {
-        console.error("Error fetching blogs:", error);
-        return { data: [] };
-    }
-}
-
 const Blog = async () => {
-
-
 
     try {
         const [featuredBlogs, topBlogs] = await Promise.all([
