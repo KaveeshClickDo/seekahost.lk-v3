@@ -28,7 +28,6 @@ export default function HostingConsultationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add your form submission logic here
   };
 
   return (

@@ -35,7 +35,7 @@ const Blog = async () => {
                 <Navbar2 />
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
                 <section className="container mx-auto px-4 py-8 max-w-7xl">
-                    {/* Featured Story */}
+
                     {featuredBlogs.data?.length > 0 ? (
                         featuredBlogs.data.map((featuredBlog) => (
                             <div key={featuredBlog.id} className="mb-12">
@@ -83,7 +83,7 @@ const Blog = async () => {
                         </div>
                     )}
 
-                    {/* Top Stories */}
+ 
                     <div className="mb-8">
                         <h2 className="text-2xl md:text-4xl font-bold mb-6">Top Stories</h2>
                         {firstThreeTopBlogs.length > 0 ? (
@@ -126,7 +126,7 @@ const Blog = async () => {
                         )}
                     </div>
 
-                    {/*Category Sections*/}
+        
                     {uniqueCategories.length > 0 ? (
                         uniqueCategories.map(category => (
                             <div key={category} className="mb-8">

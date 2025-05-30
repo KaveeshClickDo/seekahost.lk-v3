@@ -45,14 +45,14 @@ export default function HostingFeatures() {
                         <tbody>
                             {featureCategories.map((category, categoryIndex) => (
                                 <Fragment key={categoryIndex}>
-                                    {/* Category Header */}
+  
                                     <tr className="border-b border-gray-500 bg-[#F5FAFF]">
                                         <td colSpan={4} className="py-4 px-6 font-bold md:text-lg">
                                             {category.title}
                                         </td>
                                     </tr>
 
-                                    {/* Features for this category */}
+         
                                     {category.features.map((feature, featureIndex) => (
                                         <tr key={featureIndex} className="border-b border-gray-300 hover:bg-gray-50">
                                             <td className="py-4 px-6 text-gray-700">
@@ -74,7 +74,7 @@ export default function HostingFeatures() {
                                 </Fragment>
                             ))}
 
-                            {/* Pricing row */}
+    
                             <tr className="border-b border-gray-300 bg-[#F5FAFF]">
                                 <td className="py-4 px-6 font-bold md:text-lg">
                                     Pricing
@@ -86,7 +86,7 @@ export default function HostingFeatures() {
                                     </td>
                                 ))}
                             </tr>
-                            {/* Add buttons at the bottom */}
+      
                             <tr className="border-b border-gray-300">
                                 <td className="py-4 px-6 font-bold md:text-lg">
                                     Select plan

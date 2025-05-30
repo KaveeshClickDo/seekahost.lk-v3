@@ -18,7 +18,6 @@ const fetchBlogs = async (params) => {
     return response;
   } catch (error) {
     console.error("Error fetching blogs:", error);
-    // Return fallback data to prevent UI from breaking
     return { data: [] };
   }
 }

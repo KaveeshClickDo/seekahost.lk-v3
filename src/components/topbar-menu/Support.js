@@ -5,7 +5,7 @@ export default function Support() {
     return (
         <div className="absolute -right-5 w-xl bg-white shadow-lg rounded-2xl mt-2 ring-1 ring-blue-600 ring-opacity-5">
             <div className="container mx-auto flex flex-wrap">
-                {/* Left side - Menu items with icons */}
+            
                 <div className="w-2xs p-4">
                     <div className="grid grid-cols-1 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -48,7 +48,7 @@ export default function Support() {
                     </div>
                 </div>
 
-                {/* Right side - Promotional content */}
+        
                 <div className="w-2xs bg-gray-50 p-6 flex flex-col justify-center rounded-2xl">
                     <div className="mb-2">
                         <Image

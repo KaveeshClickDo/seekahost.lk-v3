@@ -31,18 +31,18 @@ export default function PackagesPrices() {
         };
     }, []);
 
-    // Top level category (Web Hosting vs VPS Hosting)
+ 
     const [selectedCategory, setSelectedCategory] = useState('web');
 
-    // Package type state and options
+
     const [selectedPackageType, setSelectedPackageType] = useState('home');
     const [showPackageDropdown, setShowPackageDropdown] = useState(false);
 
-    // Original states
+
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
 
-    // Get the appropriate pricing data based on selection
+
     const getPricingData = () => {
         switch (selectedPackageType) {
             case 'managedWP':
@@ -61,7 +61,7 @@ export default function PackagesPrices() {
 
     const pricing = getPricingData();
 
-    // Define package options based on selected category
+
     const getPackageOptions = () => {
         if (selectedCategory === 'web') {
             return [
@@ -90,7 +90,7 @@ export default function PackagesPrices() {
 
     const packageOptions = getPackageOptions();
 
-    // Update selected package type when category changes
+
     useEffect(() => {
         if (selectedCategory === 'web') {
             setSelectedPackageType('business');
@@ -103,7 +103,7 @@ export default function PackagesPrices() {
         }
     }, [selectedCategory]);
 
-    // Get the current package label
+
     const getCurrentPackageLabel = () => {
         const option = packageOptions.find(opt => opt.id === selectedPackageType);
         return option ? option.label : 'Web Hosting';
@@ -159,7 +159,7 @@ export default function PackagesPrices() {
                     credible insurance coverage you can rely on.
                 </p>
 
-                {/* Main Category Selector Buttons */}
+
                 <div className="flex justify-center mb-8">
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-5" role="group">
                         <button
@@ -205,7 +205,7 @@ export default function PackagesPrices() {
                     </div>
                 </div>
 
-                {/* Package Type Selector */}
+
                 <div className="flex justify-center mb-8">
                     <div className="relative inline-block w-64" ref={dropdownRef}>
                         <button
@@ -249,7 +249,7 @@ export default function PackagesPrices() {
                     </div>
                 </div>
 
-                {/* Monthly/Yearly Toggle */}
+
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
                         className={`cursor-pointer md:text-lg ${isMonthly ? 'text-blue-600' : ''}`}
@@ -313,10 +313,10 @@ export default function PackagesPrices() {
                                         </Link>
                                         <hr className="mb-4 text-gray-300" />
 
-                                        {/* Dynamic Feature Sections */}
+
                                         {plan.featureSections.map((section, sectionIdx) => (
                                             <div key={sectionIdx} className="mb-4">
-                                                {/* Don't show section title for the first section (General Features) */}
+        
                                                 {sectionIdx > 0 && (
                                                     <h4 className={`font-bold text-lg mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
                                                         {section.title}
