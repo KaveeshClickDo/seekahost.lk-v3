@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import config from "@/config";
 import fetchBlogs from "@/data/fetchBlogs";
-import { BlocksRenderer } from "@strapi/blocks-react-renderer";
+import BlocksRendererClient from "@/components/blogs/BlocksRendererClient";
 import Topbar from "@/components/shared/Topbar";
 import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
@@ -98,7 +98,7 @@ const BlogPost = async (props) => {
                                         <div className="relative">
                         
                                             <div>
-                                                <BlocksRenderer content={post.content} />
+                                                <BlocksRendererClient content={post.content} />
                                             </div>
 
                            
