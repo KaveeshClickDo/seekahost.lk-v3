@@ -6,6 +6,7 @@ import Link from 'next/link';
 import BacktoTop from "@/components/shared/BacktoTop";
 import config from '@/config';
 import fetchBlogs from '@/data/fetchBlogs';
+import FeaturedSlider from '@/components/blogs/FeatureSlider';
 
 export const metadata = {
     title: "Blog"
@@ -36,54 +37,11 @@ const Blog = async () => {
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
                 <section className="container mx-auto px-4 py-8 max-w-7xl">
 
-                    {featuredBlogs.data?.length > 0 ? (
-                        featuredBlogs.data.map((featuredBlog) => (
-                            <div key={featuredBlog.id} className="mb-12">
-                                <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF]">
-                                    <div className="relative w-full md:w-1/2 aspect-[611/343]">
-                                        <Image
-                                            src={`${config.api}${featuredBlog.thumbnail?.url || '/fallback-image.jpg'}`}
-                                            alt={featuredBlog.title || 'Featured blog'}
-                                            layout="fill"
-                                            objectFit="cover"
-                                            className="rounded-xl"
-                                            priority
-                                        />
-                                    </div>
+                    <FeaturedSlider
+                        featuredBlogs={featuredBlogs.data || []}
+                        config={config}
+                    />
 
-                                    <div className="md:w-1/2 p-6">
-                                        <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
-                                        <h1 className="text-2xl font-bold mb-4">
-                                            <Link href={`/${featuredBlog.slug || '#'}`} className="hover:text-blue-700">
-                                                {featuredBlog.title || 'Blog post title'}
-                                            </Link>
-                                        </h1>
-                                        <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.excerpt || 'No description available'}</p>
-                                        <div className="flex items-center gap-3">
-                                            <Image
-                                                src={`${config.api}${featuredBlog.authorImage?.url || '/fallback-author.jpg'}`}
-                                                alt={featuredBlog.author || 'Author'}
-                                                width={40}
-                                                height={40}
-                                                className="rounded-full"
-                                            />
-                                            <div>
-                                                <div className="font-semibold text-sm">{featuredBlog.author || 'Unknown Author'}</div>
-                                                <div className="text-xs text-gray-500">{featuredBlog.publishedAt?.substring(0, 10) || 'No date'}</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    ) : (
-                        <div className="p-8 bg-gray-50 rounded-lg text-center">
-                            <h2 className="text-xl font-semibold text-gray-700">Featured stories currently unavailable</h2>
-                            <p className="text-gray-600 mt-2">Please check back later.</p>
-                        </div>
-                    )}
-
- 
                     <div className="mb-8">
                         <h2 className="text-2xl md:text-4xl font-bold mb-6">Top Stories</h2>
                         {firstThreeTopBlogs.length > 0 ? (
@@ -126,7 +84,7 @@ const Blog = async () => {
                         )}
                     </div>
 
-        
+
                     {uniqueCategories.length > 0 ? (
                         uniqueCategories.map(category => (
                             <div key={category} className="mb-8">
@@ -180,7 +138,7 @@ const Blog = async () => {
     } catch (error) {
         console.error("Error rendering blog page:", error);
 
-        
+
         return (
             <div className="container mx-auto px-4 py-16 text-center">
                 <h1 className="text-3xl font-bold mb-4">Unable to load blog content</h1>
