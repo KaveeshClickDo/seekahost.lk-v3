@@ -7,6 +7,7 @@ import BacktoTop from "@/components/shared/BacktoTop";
 import config from '@/config';
 import fetchBlogs from '@/data/fetchBlogs';
 import FeaturedSlider from '@/components/blogs/FeatureSlider';
+import { MdArrowForward } from "react-icons/md";
 
 export const metadata = {
     title: "Blog"
@@ -15,18 +16,21 @@ export const metadata = {
 const Blog = async () => {
 
     try {
-        const [featuredBlogs, topBlogs] = await Promise.all([
-            fetchBlogs('filters[isFeatured][$eq]=true'),
-            fetchBlogs(),
-        ]);
 
-        const firstThreeTopBlogs = topBlogs.data?.slice(0, 3) || [];
+        const featuredBlogs = await fetchBlogs('filters[isFeatured][$eq]=true&sort[0]=publishedAt:desc');
 
+        const topStoriesBlogs = await fetchBlogs('pagination[limit]=3&sort[0]=publishedAt:desc');
+
+        const categoriesResponse = await fetchBlogs('fields[0]=category');
         const uniqueCategories = [...new Set(
-            topBlogs.data?.map(blog => blog.category).filter(Boolean) || []
+            categoriesResponse.data?.map(blog => blog.category).filter(Boolean) || []
         )];
 
-        console.log(uniqueCategories);
+        const categoryBlogs = {};
+        for (const category of uniqueCategories) {
+            const categoryPosts = await fetchBlogs(`filters[category][$eq]=${encodeURIComponent(category)}&pagination[limit]=3&sort[0]=publishedAt:desc`);
+            categoryBlogs[category] = categoryPosts.data || [];
+        }
 
         return (
             <>
@@ -44,9 +48,9 @@ const Blog = async () => {
 
                     <div className="mb-8">
                         <h2 className="text-2xl md:text-4xl font-bold mb-6">Top Stories</h2>
-                        {firstThreeTopBlogs.length > 0 ? (
+                        {topStoriesBlogs.data && topStoriesBlogs.data.length > 0 ? (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {firstThreeTopBlogs.map((topBlog) => (
+                                {topStoriesBlogs.data.map((topBlog) => (
                                     <div key={topBlog.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
                                         <div className="relative aspect-video">
                                             <Image
@@ -84,15 +88,13 @@ const Blog = async () => {
                         )}
                     </div>
 
-
                     {uniqueCategories.length > 0 ? (
                         uniqueCategories.map(category => (
                             <div key={category} className="mb-8">
                                 <h2 className="text-2xl md:text-4xl font-bold mb-6">{category}</h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    {topBlogs.data
-                                        .filter(blog => blog.category === category)
-                                        .map((blog) => (
+                                {categoryBlogs[category] && categoryBlogs[category].length > 0 ? (
+                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        {categoryBlogs[category].map((blog) => (
                                             <div key={blog.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
                                                 <div className="relative aspect-video">
                                                     <Image
@@ -121,7 +123,19 @@ const Blog = async () => {
                                                 </div>
                                             </div>
                                         ))}
-                                </div>
+                                    </div>
+                                ) : (
+                                    <div className="p-8 bg-gray-50 rounded-lg text-center">
+                                        <h2 className="text-xl font-semibold text-gray-700">No posts available in {category}</h2>
+                                        <p className="text-gray-600 mt-2">Please check back later.</p>
+                                    </div>
+                                )}
+                                <Link
+                                    href={`/blog/${category ? category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : '#'}`}
+                                    className="flex items-center font-bold text-lg hover:text-blue-600 transition-colors gap-1 sm:gap-2 py-6 ml-2"
+                                >
+                                    Read More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
+                                </Link>
                             </div>
                         ))
                     ) : (
@@ -138,7 +152,6 @@ const Blog = async () => {
     } catch (error) {
         console.error("Error rendering blog page:", error);
 
-
         return (
             <div className="container mx-auto px-4 py-16 text-center">
                 <h1 className="text-3xl font-bold mb-4">Unable to load blog content</h1>
@@ -149,8 +162,6 @@ const Blog = async () => {
             </div>
         );
     }
-
-
 }
 
 export default Blog;

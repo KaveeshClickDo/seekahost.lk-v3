@@ -184,7 +184,6 @@ const BlogPost = async (props) => {
         );
 
     } catch (error) {
-        console.error('Error in BlogPost component:', error);
         notFound();
     }
 };
