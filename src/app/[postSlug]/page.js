@@ -9,6 +9,58 @@ import BacktoTop from "@/components/shared/BacktoTop";
 import Footer from "@/components/shared/Footer";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+    try {
+        const resolvedParams = await params;
+        const blog = await fetchPosts(`filters[postMetadata][slug][$eq]=${resolvedParams.postSlug}`);
+
+        if (!blog.data || blog.data.length === 0) {
+            return {
+                title: 'Blog Post Not Found',
+                description: 'The requested blog post could not be found.'
+            };
+        }
+
+        const post = blog.data[0];
+
+        const title = post.title || 'Blog Post';
+        const description = post.postMetadata?.metaDescription || post.title || 'Read our latest blog post';
+        const featuredImageUrl = post.postPrimary?.featuredImage?.url
+            ? `${config.api}${post.postPrimary.featuredImage.url}`
+            : null;
+
+        return {
+            title,
+            description,
+            openGraph: {
+                title,
+                description,
+                type: 'article',
+                ...(featuredImageUrl && { images: [featuredImageUrl] }),
+                publishedTime: post.createdAt,
+                modifiedTime: post.updatedAt,
+                authors: post.authorDetails?.authorName ? [post.authorDetails.authorName] : undefined,
+                section: post.postPrimary?.category || undefined,
+            },
+            twitter: {
+                card: 'summary_large_image',
+                title,
+                description,
+                ...(featuredImageUrl && { images: [featuredImageUrl] }),
+            },
+            alternates: {
+                canonical: `/${resolvedParams.postSlug}`,
+            },
+        };
+    } catch (error) {
+        console.error('Error generating metadata:', error);
+        return {
+            title: 'Blog Post',
+            description: 'Read our latest blog post'
+        };
+    }
+}
+
 const BlogPost = async (props) => {
     try {
         const params = await props.params;
