@@ -151,7 +151,7 @@ const BlogPost = async (props) => {
 
                                         <div className="relative">
 
-                                            <div>
+                                            <div className="prose mx-auto">
                                                 <BlocksRendererClient content={post.content} />
                                             </div>
 
