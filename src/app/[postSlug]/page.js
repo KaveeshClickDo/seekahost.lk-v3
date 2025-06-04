@@ -12,8 +12,8 @@ import { notFound } from "next/navigation";
 const BlogPost = async (props) => {
     try {
         const params = await props.params;
-        
-  
+
+
         const blog = await fetchPosts(`filters[postMetadata][slug][$eq]=${params.postSlug}`);
 
         if (!blog.data || blog.data.length === 0) {
@@ -24,16 +24,16 @@ const BlogPost = async (props) => {
         let recentPosts = [];
         try {
             const recentBlogsResponse = await fetchPosts(`sort[0]=updatedAt:desc&pagination[limit]=6`);
-            
+
             if (recentBlogsResponse.data && recentBlogsResponse.data.length > 0) {
-   
+
                 recentPosts = recentBlogsResponse.data
-                    .filter(post => post.postMetadata?.slug !== `${params.postSlug}`) 
-                    .slice(0, 5); 
+                    .filter(post => post.postMetadata?.slug !== `${params.postSlug}`)
+                    .slice(0, 5);
             }
         } catch (recentPostsError) {
             console.error('Error fetching recent posts:', recentPostsError);
-       
+
         }
 
         return (
@@ -45,15 +45,15 @@ const BlogPost = async (props) => {
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
                 <article className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
-     
+
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                            
-                  
+
+
                             <div className="lg:col-span-3">
                                 {blog.data.map((post) => (
                                     <div key={post.id} className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 relative overflow-hidden">
-                             
+
                                         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-purple-100 to-transparent rounded-full opacity-50 -translate-y-32 translate-x-32"></div>
 
                                         <div className="flex flex-wrap items-center gap-4 text-sm mb-4">
@@ -65,21 +65,23 @@ const BlogPost = async (props) => {
                                         <h1 className="text-2xl lg:text-4xl font-bold mb-4">
                                             {post.title}
                                         </h1>
-                   
+
                                         <div className="mb-4 pb-5 border-b border-gray-200">
-                                            <div className="flex items-center space-x-4">
-                                                <Image
-                                                    src={`${config.api}${post.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
-                                                    alt={post.authorDetails?.authorName || 'Author'}
-                                                    width={40}
-                                                    height={40}
-                                                    className="rounded-full"
-                                                />
-                                                <div>
-                                                    <h3 className="text-lg font-semibold text-gray-900">Written by {post.authorDetails?.authorName}</h3>
-                                                    <p className="text-gray-600">{post.authorDetails?.authorRole}</p>
+                                            {post.postPrimary?.isDisplayAuthor && (
+                                                <div className="flex items-center space-x-4">
+                                                    <Image
+                                                        src={`${config.api}${post.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
+                                                        alt={post.authorDetails?.authorName || 'Author'}
+                                                        width={40}
+                                                        height={40}
+                                                        className="rounded-full"
+                                                    />
+                                                    <div>
+                                                        <h3 className="text-lg font-semibold text-gray-900">Written by {post.authorDetails?.authorName}</h3>
+                                                        <p className="text-gray-600">{post.authorDetails?.authorRole}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            )}
                                         </div>
 
                                         <div className="relative mb-8">
@@ -96,12 +98,39 @@ const BlogPost = async (props) => {
                                         </div>
 
                                         <div className="relative">
-                        
+
                                             <div>
                                                 <BlocksRendererClient content={post.content} />
                                             </div>
 
-                           
+                                            {post.postPrimary?.isDisplayAuthor && (
+                                                <div className="mt-12 p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                                                    <h3 className="text-xl font-bold mb-6 pb-5 border-b border-gray-200">Author Profile</h3>
+
+                                                    <div className="flex items-start space-x-4">
+                                                        <div className="flex-shrink-0">
+                                                            <Image
+                                                                src={`${config.api}${post.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
+                                                                alt={post.authorDetails?.authorName || 'Author'}
+                                                                width={100}
+                                                                height={100}
+                                                                className="rounded-full object-cover"
+                                                            />
+                                                        </div>
+
+                                                        <div className="flex-1 ml-3">
+                                                            <h4 className="text-lg font-bold mb-2">
+                                                                {post.authorDetails?.authorName}
+                                                            </h4>
+                                                            <p className="text-gray-700 text-sm leading-relaxed">
+                                                                {post.authorDetails?.authorDescription}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )}
+
+
                                             <div className="mt-8 pt-6 border-t border-gray-200">
                                                 <div className="flex items-center justify-between">
                                                     <span className="text-sm text-gray-500">Share this article</span>
@@ -129,10 +158,10 @@ const BlogPost = async (props) => {
                                 ))}
                             </div>
 
-            
+
                             <div className="lg:col-span-1">
-                                
-                 
+
+
                                 <div className="text-center mb-6">
                                     <div className="mb-4">
                                         <h3 className="text-2xl font-bold my-2">Free SSL Certificates</h3>
@@ -143,16 +172,16 @@ const BlogPost = async (props) => {
                                     </Link>
                                 </div>
 
-              
+
                                 <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
                                     <h3 className="text-xl font-bold text-gray-900 mb-6">Recent Posts</h3>
-                                    
+
                                     <div className="space-y-4">
                                         {recentPosts.length > 0 ? (
                                             recentPosts.map((post) => (
-                                                <Link 
-                                                    key={post.id} 
-                                                    href={`/${post.postMetadata?.slug}`} 
+                                                <Link
+                                                    key={post.id}
+                                                    href={`/${post.postMetadata?.slug}`}
                                                     className="block group"
                                                 >
                                                     <h4 className="text-blue-600 group-hover:text-blue-800 font-medium leading-snug transition-colors duration-200">
@@ -168,7 +197,7 @@ const BlogPost = async (props) => {
                                     </div>
                                 </div>
 
-                   
+
                                 <div className="text-center mb-6 sticky top-4">
                                     <Image src="/images/blog/blogAds.webp" alt="SeekaHost" className="mx-auto" width={266} height={124} />
                                 </div>

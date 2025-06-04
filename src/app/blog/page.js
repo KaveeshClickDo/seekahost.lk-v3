@@ -54,7 +54,7 @@ const Blog = async () => {
                         {topStoriesPosts.data && topStoriesPosts.data.length > 0 ? (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {topStoriesPosts.data.map((topBlog) => (
-                                    <div key={topBlog.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
+                                    <div key={topBlog.id} className="rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition-shadow">
                                         <div className="relative aspect-video">
                                             <Image
                                                 src={`${config.api}${topBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
@@ -70,6 +70,8 @@ const Blog = async () => {
                                                 <span>{topBlog.publishedAt?.substring(0, 10) || 'No date'}</span>
                                                 <span className="mx-2">•</span>
                                                 <span>{topBlog.postPrimary?.category || 'Uncategorized'}</span>
+                                                <span className="mx-2">•</span>
+                                                <span>{`${topBlog.postPrimary?.readTime} min` || '10 min'}</span>
                                             </div>
 
                                             <h3 className="text-lg md:text-xl font-bold mb-3">
@@ -98,7 +100,7 @@ const Blog = async () => {
                                 {categoryPosts[category] && categoryPosts[category].length > 0 ? (
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                         {categoryPosts[category].map((blog) => (
-                                            <div key={blog.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
+                                            <div key={blog.id} className="rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition-shadow">
                                                 <div className="relative aspect-video">
                                                     <Image
                                                         src={`${config.api}${blog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
@@ -114,6 +116,8 @@ const Blog = async () => {
                                                         <span>{blog.publishedAt?.substring(0, 10) || 'No date'}</span>
                                                         <span className="mx-2">•</span>
                                                         <span>{blog.postPrimary?.category || 'Uncategorized'}</span>
+                                                        <span className="mx-2">•</span>
+                                                        <span>{`${blog.postPrimary?.readTime} min` || '10 min'}</span>
                                                     </div>
 
                                                     <h3 className="text-lg md:text-xl font-bold mb-3">
