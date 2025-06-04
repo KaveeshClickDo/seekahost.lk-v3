@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import config from "@/config";
-import fetchBlogs from "@/data/fetchBlogs";
+import fetchPosts from "@/data/fetchPosts";
 import BlocksRendererClient from "@/components/blogs/BlocksRendererClient";
 import Topbar from "@/components/shared/Topbar";
 import Navbar2 from "@/components/shared/Navbar2";
@@ -14,7 +14,7 @@ const BlogPost = async (props) => {
         const params = await props.params;
         
   
-        const blog = await fetchBlogs(`filters[slug][$eq]=${params.postSlug}`);
+        const blog = await fetchPosts(`filters[postMetadata][slug][$eq]=${params.postSlug}`);
 
         if (!blog.data || blog.data.length === 0) {
             notFound();
@@ -23,12 +23,12 @@ const BlogPost = async (props) => {
 
         let recentPosts = [];
         try {
-            const recentBlogsResponse = await fetchBlogs(`sort[0]=updatedAt:desc&pagination[limit]=6`);
+            const recentBlogsResponse = await fetchPosts(`sort[0]=updatedAt:desc&pagination[limit]=6`);
             
             if (recentBlogsResponse.data && recentBlogsResponse.data.length > 0) {
    
                 recentPosts = recentBlogsResponse.data
-                    .filter(post => post.slug !== `${params.postSlug}`) 
+                    .filter(post => post.postMetadata?.slug !== `${params.postSlug}`) 
                     .slice(0, 5); 
             }
         } catch (recentPostsError) {
@@ -58,7 +58,7 @@ const BlogPost = async (props) => {
 
                                         <div className="flex flex-wrap items-center gap-4 text-sm mb-4">
                                             <span className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/20 backdrop-blur-sm font-medium border border-blue-600/30">
-                                                {post.category}
+                                                {post.postPrimary?.category}
                                             </span>
                                             <span>{post.updatedAt?.substring(0, 10)}</span>
                                         </div>
@@ -69,15 +69,15 @@ const BlogPost = async (props) => {
                                         <div className="mb-4 pb-5 border-b border-gray-200">
                                             <div className="flex items-center space-x-4">
                                                 <Image
-                                                    src={`${config.api}${post.authorImage?.url || '/fallback-author.jpg'}`}
-                                                    alt={post.author || 'Author'}
+                                                    src={`${config.api}${post.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
+                                                    alt={post.authorDetails?.authorName || 'Author'}
                                                     width={40}
                                                     height={40}
                                                     className="rounded-full"
                                                 />
                                                 <div>
-                                                    <h3 className="text-lg font-semibold text-gray-900">Written by {post.author}</h3>
-                                                    <p className="text-gray-600">{post.authorRole}</p>
+                                                    <h3 className="text-lg font-semibold text-gray-900">Written by {post.authorDetails?.authorName}</h3>
+                                                    <p className="text-gray-600">{post.authorDetails?.authorRole}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -85,7 +85,7 @@ const BlogPost = async (props) => {
                                         <div className="relative mb-8">
                                             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-101 transition-transform duration-300">
                                                 <Image
-                                                    src={`${config.api}${post.thumbnail?.url || '/fallback-image.jpg'}`}
+                                                    src={`${config.api}${post.postPrimary?.featuredImage?.url || '/fallback-image.jpg'}`}
                                                     alt={post.title || 'Featured blog'}
                                                     width={600}
                                                     height={400}
@@ -152,7 +152,7 @@ const BlogPost = async (props) => {
                                             recentPosts.map((post) => (
                                                 <Link 
                                                     key={post.id} 
-                                                    href={`/${post.slug}`} 
+                                                    href={`/${post.postMetadata?.slug}`} 
                                                     className="block group"
                                                 >
                                                     <h4 className="text-blue-600 group-hover:text-blue-800 font-medium leading-snug transition-colors duration-200">

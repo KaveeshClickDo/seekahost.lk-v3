@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BacktoTop from "@/components/shared/BacktoTop";
 import config from '@/config';
-import fetchBlogs from '@/data/fetchBlogs';
+import fetchPosts from '@/data/fetchPosts';
 import FeaturedSlider from '@/components/blogs/FeatureSlider';
 import { MdArrowForward } from "react-icons/md";
 
@@ -17,20 +17,23 @@ const Blog = async () => {
 
     try {
 
-        const featuredBlogs = await fetchBlogs('filters[isFeatured][$eq]=true&sort[0]=publishedAt:desc');
+        const featuredPosts = await fetchPosts('filters[postMetadata][isFeatured][$eq]=true&sort[0]=publishedAt:desc');
 
-        const topStoriesBlogs = await fetchBlogs('pagination[limit]=3&sort[0]=publishedAt:desc');
+        const topStoriesPosts = await fetchPosts('pagination[limit]=3&sort[0]=publishedAt:desc');
 
-        const categoriesResponse = await fetchBlogs('fields[0]=category');
+        const categoriesResponse = await fetchPosts();
         const uniqueCategories = [...new Set(
-            categoriesResponse.data?.map(blog => blog.category).filter(Boolean) || []
+            categoriesResponse.data?.map(post => post.postPrimary?.category).filter(Boolean) || []
         )];
 
-        const categoryBlogs = {};
+        const categoryPosts = {};
         for (const category of uniqueCategories) {
-            const categoryPosts = await fetchBlogs(`filters[category][$eq]=${encodeURIComponent(category)}&pagination[limit]=3&sort[0]=publishedAt:desc`);
-            categoryBlogs[category] = categoryPosts.data || [];
+            const categoryPostsData = await fetchPosts(`filters[postPrimary][category][$eq]=${encodeURIComponent(category)}&pagination[limit]=3&sort[0]=publishedAt:desc`);
+            categoryPosts[category] = categoryPostsData.data || [];
         }
+
+        console.log(topStoriesPosts.data);
+
 
         return (
             <>
@@ -42,19 +45,19 @@ const Blog = async () => {
                 <section className="container mx-auto px-4 py-8 max-w-7xl">
 
                     <FeaturedSlider
-                        featuredBlogs={featuredBlogs.data || []}
+                        featuredBlogs={featuredPosts.data || []}
                         config={config}
                     />
 
                     <div className="mb-8">
                         <h2 className="text-2xl md:text-4xl font-bold mb-6">Top Stories</h2>
-                        {topStoriesBlogs.data && topStoriesBlogs.data.length > 0 ? (
+                        {topStoriesPosts.data && topStoriesPosts.data.length > 0 ? (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {topStoriesBlogs.data.map((topBlog) => (
+                                {topStoriesPosts.data.map((topBlog) => (
                                     <div key={topBlog.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
                                         <div className="relative aspect-video">
                                             <Image
-                                                src={`${config.api}${topBlog.thumbnail?.url || '/fallback-image.jpg'}`}
+                                                src={`${config.api}${topBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
                                                 alt={topBlog.title || 'Blog post'}
                                                 width={400}
                                                 height={225}
@@ -66,16 +69,16 @@ const Blog = async () => {
                                             <div className="flex items-center text-xs md:text-sm text-gray-500 font-medium mb-2">
                                                 <span>{topBlog.publishedAt?.substring(0, 10) || 'No date'}</span>
                                                 <span className="mx-2">•</span>
-                                                <span>{topBlog.category || 'Uncategorized'}</span>
+                                                <span>{topBlog.postPrimary?.category || 'Uncategorized'}</span>
                                             </div>
 
                                             <h3 className="text-lg md:text-xl font-bold mb-3">
-                                                <Link href={`/${topBlog.slug || '#'}`} className="hover:text-blue-700">
+                                                <Link href={`/${topBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
                                                     {topBlog.title || 'Blog post title'}
                                                 </Link>
                                             </h3>
 
-                                            <p className="text-sm md:text-base text-gray-700 mb-4 line-clamp-3">{topBlog.excerpt || 'No description available'}</p>
+                                            <p className="text-sm md:text-base text-gray-700 mb-4 line-clamp-3">{topBlog.postPrimary?.excerpt || 'No description available'}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -92,13 +95,13 @@ const Blog = async () => {
                         uniqueCategories.map(category => (
                             <div key={category} className="mb-8">
                                 <h2 className="text-2xl md:text-4xl font-bold mb-6">{category}</h2>
-                                {categoryBlogs[category] && categoryBlogs[category].length > 0 ? (
+                                {categoryPosts[category] && categoryPosts[category].length > 0 ? (
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                        {categoryBlogs[category].map((blog) => (
+                                        {categoryPosts[category].map((blog) => (
                                             <div key={blog.id} className="rounded-lg overflow-hidden shadow-sm bg-white">
                                                 <div className="relative aspect-video">
                                                     <Image
-                                                        src={`${config.api}${blog.thumbnail?.url || '/fallback-image.jpg'}`}
+                                                        src={`${config.api}${blog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
                                                         alt={blog.title || 'Blog post'}
                                                         width={400}
                                                         height={225}
@@ -110,16 +113,16 @@ const Blog = async () => {
                                                     <div className="flex items-center text-xs md:text-sm text-gray-500 font-medium mb-2">
                                                         <span>{blog.publishedAt?.substring(0, 10) || 'No date'}</span>
                                                         <span className="mx-2">•</span>
-                                                        <span>{blog.category || 'Uncategorized'}</span>
+                                                        <span>{blog.postPrimary?.category || 'Uncategorized'}</span>
                                                     </div>
 
                                                     <h3 className="text-lg md:text-xl font-bold mb-3">
-                                                        <Link href={`/${blog.slug || '#'}`} className="hover:text-blue-700">
+                                                        <Link href={`/${blog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
                                                             {blog.title || 'Blog post title'}
                                                         </Link>
                                                     </h3>
 
-                                                    <p className="text-sm md:text-base text-gray-700 mb-4 line-clamp-3">{blog.excerpt || 'No description available'}</p>
+                                                    <p className="text-sm md:text-base text-gray-700 mb-4 line-clamp-3">{blog.postPrimary?.excerpt || 'No description available'}</p>
                                                 </div>
                                             </div>
                                         ))}

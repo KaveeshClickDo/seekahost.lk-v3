@@ -47,7 +47,7 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
         <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF] overflow-hidden">
           <div className="relative w-full md:w-1/2 aspect-[611/343]">
             <Image
-              src={`${config.api}${featuredBlog.thumbnail?.url || '/fallback-image.jpg'}`}
+              src={`${config.api}${featuredBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
               alt={featuredBlog.title || 'Featured blog'}
               fill
               className="object-cover rounded-xl"
@@ -57,21 +57,21 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
           <div className="md:w-1/2 p-6">
             <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
             <h1 className="text-2xl font-bold mb-4">
-              <Link href={`/${featuredBlog.slug || '#'}`} className="hover:text-blue-700">
+              <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
                 {featuredBlog.title || 'Blog post title'}
               </Link>
             </h1>
-            <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.excerpt || 'No description available'}</p>
+            <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.postPrimary?.excerpt || 'No description available'}</p>
             <div className="flex items-center gap-3">
               <Image
-                src={`${config.api}${featuredBlog.authorImage?.url || '/fallback-author.jpg'}`}
-                alt={featuredBlog.author || 'Author'}
+                src={`${config.api}${featuredBlog.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
+                alt={featuredBlog.authorDetails?.authorName || 'Author'}
                 width={40}
                 height={40}
                 className="rounded-full"
               />
               <div>
-                <div className="font-semibold text-sm">{featuredBlog.author || 'Unknown Author'}</div>
+                <div className="font-semibold text-sm">{featuredBlog.authorDetails?.authorName || 'Unknown Author'}</div>
                 <div className="text-xs text-gray-500">{featuredBlog.publishedAt?.substring(0, 10) || 'No date'}</div>
               </div>
             </div>
@@ -93,7 +93,7 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
               <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF]">
                 <div className="relative w-full md:w-1/2 aspect-[611/343]">
                   <Image
-                    src={`${config.api}${featuredBlog.thumbnail?.url || '/fallback-image.jpg'}`}
+                    src={`${config.api}${featuredBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
                     alt={featuredBlog.title || 'Featured blog'}
                     fill
                     className="object-cover rounded-xl"
@@ -103,21 +103,21 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
                 <div className="md:w-1/2 p-6">
                   <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
                   <h1 className="text-2xl font-bold mb-4">
-                    <Link href={`/${featuredBlog.slug || '#'}`} className="hover:text-blue-700">
+                    <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
                       {featuredBlog.title || 'Blog post title'}
                     </Link>
                   </h1>
-                  <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.excerpt || 'No description available'}</p>
+                  <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.postPrimary?.excerpt || 'No description available'}</p>
                   <div className="flex items-center gap-3">
                     <Image
-                      src={`${config.api}${featuredBlog.authorImage?.url || '/fallback-author.jpg'}`}
-                      alt={featuredBlog.author || 'Author'}
+                      src={`${config.api}${featuredBlog.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
+                      alt={featuredBlog.authorDetails?.authorName || 'Author'}
                       width={40}
                       height={40}
                       className="rounded-full"
                     />
                     <div>
-                      <div className="font-semibold text-sm">{featuredBlog.author || 'Unknown Author'}</div>
+                      <div className="font-semibold text-sm">{featuredBlog.authorDetails?.authorName || 'Unknown Author'}</div>
                       <div className="text-xs text-gray-500">{featuredBlog.publishedAt?.substring(0, 10) || 'No date'}</div>
                     </div>
                   </div>
