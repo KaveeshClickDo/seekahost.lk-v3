@@ -5,14 +5,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
     env_file:
       - .env
     environment:
-      NEXT_PUBLIC_STRAPI_API_URL: http://backend:1337
-      NODE_ENV: production
+      NEXT_PUBLIC_STRAPI_API_URL: http://localhost:1337
     depends_on:
       - backend
-    restart: unless-stopped
 
   backend:
     build:
@@ -21,20 +22,17 @@ services:
     ports:
       - "1337:1337"
     volumes:
+      - ../seekahost.lk-cms:/app
+      - /app/node_modules
       - ../seekahost.lk-cms/public/uploads:/app/public/uploads
     env_file:
       - ../seekahost.lk-cms/.env
     environment:
       DATABASE_HOST: postgres
       DATABASE_PORT: 5432
-      DATABASE_NAME: ${POSTGRES_DB}
-      DATABASE_USERNAME: ${POSTGRES_USER}
-      DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
-      NODE_ENV: production
+      NODE_ENV: development
     depends_on:
-      postgres:
-        condition: service_healthy
-    restart: unless-stopped
+      - postgres
 
   postgres:
     image: postgres:17.5
@@ -46,12 +44,6 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - strapi_pg_data:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-    restart: unless-stopped
 
 volumes:
   strapi_pg_data:
