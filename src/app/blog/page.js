@@ -55,23 +55,29 @@ const Blog = async () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                 {topStoriesPosts.data.map((topBlog) => (
                                     <div key={topBlog.id} className="rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition-shadow">
-                                        <div className="relative aspect-video">
-                                            <Image
-                                                src={`${config.api}${topBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
-                                                alt={topBlog.title || 'Blog post'}
-                                                width={400}
-                                                height={225}
-                                                className="object-cover w-full h-full"
-                                            />
-                                        </div>
+                                        {topBlog.postMetadata?.thumbnail?.url && (
+                                            <div className="relative aspect-video">
+                                                <Image
+                                                    src={`${config.api}${topBlog.postMetadata.thumbnail.url}`}
+                                                    alt={topBlog.title || 'Blog post'}
+                                                    width={400}
+                                                    height={225}
+                                                    className="object-cover w-full h-full"
+                                                />
+                                            </div>
+                                        )}
 
                                         <div className="p-4">
                                             <div className="flex items-center text-xs md:text-sm text-gray-500 font-medium mb-2">
                                                 <span>{topBlog.publishedAt?.substring(0, 10) || 'No date'}</span>
                                                 <span className="mx-2">•</span>
                                                 <span>{topBlog.postPrimary?.category || 'Uncategorized'}</span>
-                                                <span className="mx-2">•</span>
-                                                <span>{`${topBlog.postPrimary?.readTime} min` || '10 min'}</span>
+                                                {topBlog.postPrimary?.readTime && (
+                                                    <>
+                                                        <span className="mx-2">•</span>
+                                                        <span>{`${topBlog.postPrimary?.readTime} min` || '10 min'}</span>
+                                                    </>
+                                                )}
                                             </div>
 
                                             <h3 className="text-lg md:text-xl font-bold mb-3">
@@ -101,23 +107,29 @@ const Blog = async () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                                         {categoryPosts[category].map((blog) => (
                                             <div key={blog.id} className="rounded-lg overflow-hidden shadow-sm bg-white hover:shadow-md transition-shadow">
-                                                <div className="relative aspect-video">
-                                                    <Image
-                                                        src={`${config.api}${blog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
-                                                        alt={blog.title || 'Blog post'}
-                                                        width={400}
-                                                        height={225}
-                                                        className="object-cover w-full h-full"
-                                                    />
-                                                </div>
+                                                {blog.postMetadata?.thumbnail?.url && (
+                                                    <div className="relative aspect-video">
+                                                        <Image
+                                                            src={`${config.api}${blog.postMetadata.thumbnail.url}`}
+                                                            alt={blog.title || 'Blog post'}
+                                                            width={400}
+                                                            height={225}
+                                                            className="object-cover w-full h-full"
+                                                        />
+                                                    </div>
+                                                )}
 
                                                 <div className="p-4">
                                                     <div className="flex items-center text-xs md:text-sm text-gray-500 font-medium mb-2">
                                                         <span>{blog.publishedAt?.substring(0, 10) || 'No date'}</span>
                                                         <span className="mx-2">•</span>
                                                         <span>{blog.postPrimary?.category || 'Uncategorized'}</span>
-                                                        <span className="mx-2">•</span>
-                                                        <span>{`${blog.postPrimary?.readTime} min` || '10 min'}</span>
+                                                        {blog.postPrimary?.readTime && (
+                                                            <>
+                                                                <span className="mx-2">•</span>
+                                                                <span>{`${blog.postPrimary?.readTime} min` || '10 min'}</span>
+                                                            </>
+                                                        )}
                                                     </div>
 
                                                     <h3 className="text-lg md:text-xl font-bold mb-3">

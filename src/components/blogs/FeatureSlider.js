@@ -30,6 +30,43 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
   };
 
+  const getAuthorInitials = (name) => {
+    if (!name) return '';
+    return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+  };
+
+  const renderAuthorSection = (featuredBlog) => {
+    const shouldDisplayAuthor = featuredBlog.postPrimary?.isDisplayAuthor !== false;
+    const authorName = featuredBlog.authorDetails?.authorName;
+    const authorImage = featuredBlog.authorDetails?.authorImage?.url;
+    
+    if (!shouldDisplayAuthor || !authorName) {
+      return null;
+    }
+
+    return (
+      <div className="flex items-center gap-3">
+        {authorImage ? (
+          <Image
+            src={`${config.api}${authorImage}`}
+            alt={authorName}
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+        ) : (
+          <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold text-sm">
+            {getAuthorInitials(authorName)}
+          </div>
+        )}
+        <div>
+          <div className="font-semibold text-sm">{authorName}</div>
+          <div className="text-xs text-gray-500">{featuredBlog.publishedAt?.substring(0, 10) || 'No date'}</div>
+        </div>
+      </div>
+    );
+  };
+
   if (totalSlides === 0) {
     return (
       <div className="p-8 bg-gray-50 rounded-lg text-center mb-12">
@@ -40,21 +77,24 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
   }
 
   if (totalSlides === 1) {
-
     const featuredBlog = featuredBlogs[0];
+    const hasImage = featuredBlog.postMetadata?.thumbnail?.url;
+    
     return (
       <div className="mb-12">
-        <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF] overflow-hidden">
-          <div className="relative w-full md:w-1/2 aspect-[611/343]">
-            <Image
-              src={`${config.api}${featuredBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
-              alt={featuredBlog.title || 'Featured blog'}
-              fill
-              className="object-cover rounded-xl"
-              priority
-            />
-          </div>
-          <div className="md:w-1/2 p-6">
+        <div className={`flex flex-col ${hasImage ? 'md:flex-row' : ''} gap-6 items-center bg-[#F5FAFF] overflow-hidden`}>
+          {hasImage && (
+            <div className="relative w-full md:w-1/2 aspect-[611/343]">
+              <Image
+                src={`${config.api}${featuredBlog.postMetadata.thumbnail.url}`}
+                alt={featuredBlog.title || 'Featured blog'}
+                fill
+                className="object-cover rounded-xl"
+                priority
+              />
+            </div>
+          )}
+          <div className={`${hasImage ? 'md:w-1/2' : 'w-full'} p-6`}>
             <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
             <h1 className="text-2xl font-bold mb-4">
               <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
@@ -62,19 +102,7 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
               </Link>
             </h1>
             <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.postPrimary?.excerpt || 'No description available'}</p>
-            <div className="flex items-center gap-3">
-              <Image
-                src={`${config.api}${featuredBlog.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
-                alt={featuredBlog.authorDetails?.authorName || 'Author'}
-                width={40}
-                height={40}
-                className="rounded-full"
-              />
-              <div>
-                <div className="font-semibold text-sm">{featuredBlog.authorDetails?.authorName || 'Unknown Author'}</div>
-                <div className="text-xs text-gray-500">{featuredBlog.publishedAt?.substring(0, 10) || 'No date'}</div>
-              </div>
-            </div>
+            {renderAuthorSection(featuredBlog)}
           </div>
         </div>
       </div>
@@ -88,46 +116,39 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
-          {featuredBlogs.map((featuredBlog, index) => (
-            <div key={featuredBlog.id} className="w-full flex-shrink-0">
-              <div className="flex flex-col md:flex-row gap-6 items-center bg-[#F5FAFF]">
-                <div className="relative w-full md:w-1/2 aspect-[611/343]">
-                  <Image
-                    src={`${config.api}${featuredBlog.postMetadata?.thumbnail?.url || '/fallback-image.jpg'}`}
-                    alt={featuredBlog.title || 'Featured blog'}
-                    fill
-                    className="object-cover rounded-xl"
-                    priority={index === 0}
-                  />
-                </div>
-                <div className="md:w-1/2 p-6">
-                  <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
-                  <h1 className="text-2xl font-bold mb-4">
-                    <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
-                      {featuredBlog.title || 'Blog post title'}
-                    </Link>
-                  </h1>
-                  <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.postPrimary?.excerpt || 'No description available'}</p>
-                  <div className="flex items-center gap-3">
-                    <Image
-                      src={`${config.api}${featuredBlog.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
-                      alt={featuredBlog.authorDetails?.authorName || 'Author'}
-                      width={40}
-                      height={40}
-                      className="rounded-full"
-                    />
-                    <div>
-                      <div className="font-semibold text-sm">{featuredBlog.authorDetails?.authorName || 'Unknown Author'}</div>
-                      <div className="text-xs text-gray-500">{featuredBlog.publishedAt?.substring(0, 10) || 'No date'}</div>
+          {featuredBlogs.map((featuredBlog, index) => {
+            const hasImage = featuredBlog.postMetadata?.thumbnail?.url;
+            
+            return (
+              <div key={featuredBlog.id} className="w-full flex-shrink-0">
+                <div className={`flex flex-col ${hasImage ? 'md:flex-row' : ''} gap-6 items-center bg-[#F5FAFF]`}>
+                  {hasImage && (
+                    <div className="relative w-full md:w-1/2 aspect-[611/343]">
+                      <Image
+                        src={`${config.api}${featuredBlog.postMetadata.thumbnail.url}`}
+                        alt={featuredBlog.title || 'Featured blog'}
+                        fill
+                        className="object-cover rounded-xl"
+                        priority={index === 0}
+                      />
                     </div>
+                  )}
+                  <div className={`${hasImage ? 'md:w-1/2' : 'w-full'} p-6`}>
+                    <div className="text-base text-blue-600 font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
+                    <h1 className="text-2xl font-bold mb-4">
+                      <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
+                        {featuredBlog.title || 'Blog post title'}
+                      </Link>
+                    </h1>
+                    <p className="md:text-lg text-gray-700 mb-6">{featuredBlog.postPrimary?.excerpt || 'No description available'}</p>
+                    {renderAuthorSection(featuredBlog)}
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
-
 
       <button
         onClick={goToPrevious}
@@ -148,7 +169,6 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
-
 
       <div className="flex justify-center mt-4 space-x-2">
         {featuredBlogs.map((_, index) => (

@@ -65,28 +65,53 @@ const BlogPost = async (props) => {
     try {
         const params = await props.params;
 
-
         const blog = await fetchPosts(`filters[postMetadata][slug][$eq]=${params.postSlug}`);
 
         if (!blog.data || blog.data.length === 0) {
             notFound();
         }
 
-
         let recentPosts = [];
         try {
             const recentBlogsResponse = await fetchPosts(`sort[0]=updatedAt:desc&pagination[limit]=6`);
 
             if (recentBlogsResponse.data && recentBlogsResponse.data.length > 0) {
-
                 recentPosts = recentBlogsResponse.data
                     .filter(post => post.postMetadata?.slug !== `${params.postSlug}`)
                     .slice(0, 5);
             }
         } catch (recentPostsError) {
             console.error('Error fetching recent posts:', recentPostsError);
-
         }
+
+        const getAuthorInitials = (name) => {
+            if (!name) return '';
+            return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
+        };
+
+        const renderAuthorAvatar = (authorImage, authorName, size = 40) => {
+            if (authorImage?.url) {
+                return (
+                    <Image
+                        src={`${config.api}${authorImage.url}`}
+                        alt={authorName || 'Author'}
+                        width={size}
+                        height={size}
+                        className="rounded-full object-cover"
+                    />
+                );
+            } else if (authorName) {
+                return (
+                    <div 
+                        className={`rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold`}
+                        style={{ width: size, height: size, fontSize: size * 0.4 }}
+                    >
+                        {getAuthorInitials(authorName)}
+                    </div>
+                );
+            }
+            return null;
+        };
 
         return (
             <>
@@ -97,15 +122,11 @@ const BlogPost = async (props) => {
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
                 <article className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
-
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-
-
                             <div className="lg:col-span-3">
                                 {blog.data.map((post) => (
                                     <div key={post.id} className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 relative overflow-hidden">
-
                                         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-purple-100 to-transparent rounded-full opacity-50 -translate-y-32 translate-x-32"></div>
 
                                         <div className="flex flex-wrap items-center gap-4 text-sm mb-4">
@@ -114,6 +135,7 @@ const BlogPost = async (props) => {
                                             </span>
                                             <span>{post.updatedAt?.substring(0, 10)}</span>
                                         </div>
+                                        
                                         <h1 className="text-2xl lg:text-4xl font-bold mb-4">
                                             {post.title}
                                         </h1>
@@ -121,36 +143,35 @@ const BlogPost = async (props) => {
                                         <div className="mb-4 pb-5 border-b border-gray-200">
                                             {post.postPrimary?.isDisplayAuthor && (
                                                 <div className="flex items-center space-x-4">
-                                                    <Image
-                                                        src={`${config.api}${post.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
-                                                        alt={post.authorDetails?.authorName || 'Author'}
-                                                        width={40}
-                                                        height={40}
-                                                        className="rounded-full"
-                                                    />
+                                                    {renderAuthorAvatar(post.authorDetails?.authorImage, post.authorDetails?.authorName)}
                                                     <div>
-                                                        <h3 className="text-lg font-semibold text-gray-900">Written by {post.authorDetails?.authorName}</h3>
-                                                        <p className="text-gray-600">{post.authorDetails?.authorRole}</p>
+                                                        <h3 className="text-lg font-semibold text-gray-900">
+                                                            Written by {post.authorDetails?.authorName || 'Unknown'}
+                                                        </h3>
+                                                        <p className="text-gray-600">
+                                                            {post.authorDetails?.authorRole || 'No role available'}
+                                                        </p>
                                                     </div>
                                                 </div>
                                             )}
                                         </div>
 
-                                        <div className="relative mb-8">
-                                            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-101 transition-transform duration-300">
-                                                <Image
-                                                    src={`${config.api}${post.postPrimary?.featuredImage?.url || '/fallback-image.jpg'}`}
-                                                    alt={post.title || 'Featured blog'}
-                                                    width={600}
-                                                    height={400}
-                                                    className="w-full object-cover"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                        {post.postPrimary?.featuredImage?.url && (
+                                            <div className="relative mb-8">
+                                                <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-101 transition-transform duration-300">
+                                                    <Image
+                                                        src={`${config.api}${post.postPrimary.featuredImage.url}`}
+                                                        alt={post.title || 'Featured blog'}
+                                                        width={600}
+                                                        height={400}
+                                                        className="w-full object-cover"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        )}
 
                                         <div className="relative">
-
                                             <div className="prose mx-auto">
                                                 <BlocksRendererClient content={post.content} />
                                             </div>
@@ -161,27 +182,20 @@ const BlogPost = async (props) => {
 
                                                     <div className="flex items-start space-x-4">
                                                         <div className="flex-shrink-0">
-                                                            <Image
-                                                                src={`${config.api}${post.authorDetails?.authorImage?.url || '/fallback-author.jpg'}`}
-                                                                alt={post.authorDetails?.authorName || 'Author'}
-                                                                width={100}
-                                                                height={100}
-                                                                className="rounded-full object-cover"
-                                                            />
+                                                            {renderAuthorAvatar(post.authorDetails?.authorImage, post.authorDetails?.authorName, 100)}
                                                         </div>
 
                                                         <div className="flex-1 ml-3">
                                                             <h4 className="text-lg font-bold mb-2">
-                                                                {post.authorDetails?.authorName}
+                                                                {post.authorDetails?.authorName || 'Unknown'}
                                                             </h4>
                                                             <p className="text-gray-700 text-sm leading-relaxed">
-                                                                {post.authorDetails?.authorDescription}
+                                                                {post.authorDetails?.authorDescription || 'No Description Available'}
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             )}
-
 
                                             <div className="mt-8 pt-6 border-t border-gray-200">
                                                 <div className="flex items-center justify-between">
@@ -210,10 +224,7 @@ const BlogPost = async (props) => {
                                 ))}
                             </div>
 
-
                             <div className="lg:col-span-1">
-
-
                                 <div className="text-center mb-6">
                                     <div className="mb-4">
                                         <h3 className="text-2xl font-bold my-2">Free SSL Certificates</h3>
@@ -223,7 +234,6 @@ const BlogPost = async (props) => {
                                         Get Started Free
                                     </Link>
                                 </div>
-
 
                                 <div className="bg-white rounded-2xl shadow-lg p-6 mb-6">
                                     <h3 className="text-xl font-bold text-gray-900 mb-6">Recent Posts</h3>
@@ -249,11 +259,9 @@ const BlogPost = async (props) => {
                                     </div>
                                 </div>
 
-
                                 <div className="text-center mb-6 sticky top-4">
                                     <Image src="/images/blog/blogAds.webp" alt="SeekaHost" className="mx-auto" width={266} height={124} />
                                 </div>
-
                             </div>
                         </div>
                     </div>
