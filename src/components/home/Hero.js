@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import PopUpVideo from '../shared/PopUpVideo';
 import { domainPrices } from '@/data/homeHeroExtnPrices';
 
 export default function Hero() {
     return (
-        <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[38%] lg:h-[65%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
-            <div className="absolute inset-0 w-full h-full bg-[#0A437F] z-1"></div>
+        <section className="relative lg:h-[800px] w-full flex items-center overflow-hidden pb-20 lg:pb-40">
+
+            
+
+            {/* <div className="absolute inset-0 w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[38%] lg:h-[65%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
+            <div className="absolute inset-0 w-full h-full bg-[#0A437F] z-1"></div> */}
             {/* <Image
                 src="/images/home/home-hero-bg.svg"
                 alt="Background Image"
@@ -15,6 +17,48 @@ export default function Hero() {
                 className="object-cover z-0 hidden lg:block"
                 priority
             /> */}
+            <svg
+                className="absolute inset-0 w-full h-full lg:hidden"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0,0 L100,0 L100,95 L70,100 L0,95 Z"
+                    fill="#0A488A"
+                />
+            </svg>
+            <svg
+                className="absolute inset-0 w-full h-full hidden lg:block"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0,0 L100,0 L100,85 L80,100 L0,85 Z"
+                    fill="#0A488A"
+                />
+            </svg>
+
+            <div className="absolute left-0 bottom-40 opacity-15 hidden md:block">
+                <Image
+                    src="/images/home/Home-hero-bottem.svg"
+                    alt="Decorative design"
+                    width={200}
+                    height={200}
+                    className="object-contain z-3"
+                />
+            </div>
+
+            <div className="absolute right-0 top-10 opacity-15 hidden md:block">
+                <Image
+                    src="/images/home/Home-hero-top.svg"
+                    alt="Decorative design"
+                    width={200}
+                    height={200}
+                    className="object-contain z-3"
+                />
+            </div>
+
+
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
                 <div className="text-white w-full max-w-2xl z-3">
                     <h1 className="text-2xl md:text-4xl font-bold">
@@ -104,17 +148,11 @@ export default function Hero() {
                     <Image
                         src="/images/home/hero-image.webp"
                         alt="Hero Image"
-                        width={3144}
-                        height={2580}
-                        className="w-full h-auto rounded-lg shadow-lg rounded-tl-[100px]"
+                        width={1659}
+                        height={1464}
+                        className="w-full h-auto rounded-lg rounded-tl-[100px]"
                         priority
                     />
-                    <div className="absolute bottom-6 left-6">
-                        <PopUpVideo
-                            videoId="hx2W4fmqw_w"
-                            onVideoStateChange={null}
-                        />
-                    </div>
                 </div>
             </div>
         </section>
