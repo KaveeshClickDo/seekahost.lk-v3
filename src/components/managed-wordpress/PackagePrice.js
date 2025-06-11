@@ -113,53 +113,54 @@ export default function PackagesPrices() {
                         <Slider {...settings}>
                             {pricing.map((plan, idx) => (
                                 <div key={idx} className="p-4">
-                                    <div className={`relative border rounded-2xl p-6 h-full transition duration-400 shadow-md hover:shadow-lg bg-white border-none ${idx === 1 ? 'bg-gradient-to-t from-[#136CC9] to-[#09407A] shadow-[#09407A]' : ''}`}>
+                                    <div className="relative border rounded-2xl p-6 h-full transition-all duration-400 shadow-md hover:shadow-lg bg-white border-gray-200 hover:bg-[#2072CC] hover:border-none group">
                                         {plan.isBestValue && (
                                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
                                             </div>
                                         )}
-                                        <h3 className={`text-lg md:text-xl font-bold mb-2 ${idx === 1 ? 'text-white' : ''}`}>{plan.title}</h3>
-                                        <div className="flex items-baseline justify-center mt-4">
-                                            <span className={`text-5xl font-bold mr-1 leading-14 ${idx === 1 ? 'text-white' : 'text-[#1276DF]'}`}>
+                                        <div className="flex-shrink-0 pb-5">
+                                            <Image src="/images/shared/package-price-icon.svg" width={50} height={50} alt="Package Icon" />
+                                        </div>
+                                        <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
+                                        <div className="flex items-baseline justify-start mt-4">
+                                            <span className="text-5xl font-bold mr-1 leading-14 group-hover:text-white transition-colors duration-400">
                                                 LKR{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
                                             </span>
-                                            <span className={`${idx === 1 ? 'text-white' : 'text-gray-500'} md:text-xl font-medium`}>
+                                            <span className="text-gray-500 group-hover:text-white md:text-xl font-medium transition-colors duration-400">
                                                 / {isMonthly ? 'mo' : 'yr'}
                                             </span>
                                         </div>
-                                        <p className={`mb-4 ${idx === 1 ? 'text-white' : 'text-gray-500'}`}>{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
-                                        <button
-                                            className={`w-full mb-4 py-3 rounded font-bold transition ${idx === 1 ? 'bg-white text-blue-600' : 'bg-[#1276DF] text-white'}`}
-                                        >
-                                            Get {plan.title}
-                                        </button>
-                                        <hr className="mb-4 text-gray-300" />
-                                        
-                                  
+                                        <p className="mb-4 text-gray-500 group-hover:text-white transition-colors duration-400 text-left">{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
+                                        <Link href={plan.link} className="w-full">
+                                            <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-blue-600 group-hover:bg-white group-hover:text-[#2072CC]">
+                                                {plan.buttonName}
+                                            </button>
+                                        </Link>
+                                        <hr className="mb-4 border-gray-300 group-hover:border-white/30 transition-colors duration-400" />
+
                                         {plan.featureSections.map((section, sectionIdx) => (
                                             <div key={sectionIdx} className="mb-4">
-                                         
                                                 {sectionIdx > 0 && (
-                                                    <h4 className={`font-bold text-lg mb-3 text-left ${idx === 1 ? 'text-white' : ''}`}>
+                                                    <h4 className="font-bold text-lg mb-3 text-left text-gray-800 group-hover:text-white transition-colors duration-400">
                                                         {section.title}
                                                     </h4>
                                                 )}
-                                                <ul className={`text-left space-y-2 ${idx === 1 ? 'text-white' : ''}`}>
+                                                <ul className="text-left space-y-2 text-gray-700 group-hover:text-white transition-colors duration-400">
                                                     {section.features.map((feature, fIdx) => (
                                                         <li key={fIdx} className="flex items-center">
                                                             <svg
-                                                                className={`w-5 h-5 mr-2 ${idx === 1 ? 'text-white' : 'text-blue-600'}`}
-                                                                fill="none"
-                                                                stroke="currentColor"
-                                                                strokeWidth="2"
+                                                                className="w-5 h-5 mr-3 transition-colors duration-400 flex-shrink-0"
                                                                 viewBox="0 0 24 24"
-                                                                aria-hidden="true"
+                                                                fill="none"
                                                             >
-                                                                <path
-                                                                    strokeLinecap="round"
-                                                                    strokeLinejoin="round"
-                                                                    d="M5 13l4 4L19 7"
+                                                                <path  
+                                                                    d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z" 
+                                                                    className="fill-gray-100 group-hover:fill-white transition-colors duration-400"
+                                                                />
+                                                                <path 
+                                                                    d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z" 
+                                                                    className="fill-black group-hover:fill-blue-600 transition-colors duration-400"
                                                                 />
                                                             </svg>
                                                             {feature}
@@ -176,7 +177,7 @@ export default function PackagesPrices() {
                         <div className="flex justify-center gap-4">
                             {pricing.slice(0, 3).map((plan, idx) => (
                                 <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
-                                    <div className={`relative border rounded-lg p-6 h-full ${idx === 1 ? 'bg-gradient-to-t from-[#136CC9] to-[#09407A] border-none' : 'bg-white border-blue-500'}`}>
+                                    <div className="relative border rounded-lg p-6 h-full bg-white border-blue-500 hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A] hover:border-none transition-all duration-400">
                                         {plan.isBestValue && (
                                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
@@ -187,7 +188,7 @@ export default function PackagesPrices() {
                                 </div>
                             ))}
                             <div className="w-full md:hidden">
-                                <div className="relative border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm">
+                                <div className="relative border rounded-lg p-6 h-64 bg-white border-blue-500 mx-auto max-w-sm hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A] hover:border-none transition-all duration-400">
                                     {pricing[0].isBestValue && (
                                         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                             BEST VALUE
