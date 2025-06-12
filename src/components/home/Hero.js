@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { domainPrices } from '@/data/homeHeroExtnPrices';
+import TestimonialSlider from './Testimonials';
 
 export default function Hero() {
     return (
         <section className="relative lg:h-[800px] w-full flex items-center overflow-hidden pb-20 lg:pb-40">
 
-            
+
 
             {/* <div className="absolute inset-0 w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[38%] lg:h-[65%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
             <div className="absolute inset-0 w-full h-full bg-[#0A437F] z-1"></div> */}
@@ -92,8 +93,11 @@ export default function Hero() {
                         ))}
                     </div>
 
+                    <div className="mt-8">
+                        <TestimonialSlider />
+                    </div>
 
-                    <div className="mt-10 xl:mt-30 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
+                    <div className="mt-10 xl:mt-22 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
                         <div className="rounded-md flex flex-col items-center">
                             <Image
                                 src="/images/home/server-security.svg"
