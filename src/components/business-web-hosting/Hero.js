@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Hero() {
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-[#09407A] to-[#136CC9] z-1"></div>
+            <div className="absolute inset-0 w-full h-full bg-[#0A488A] z-1"></div>
             {/* <Image
                 src="/images/home/home-hero-bg.svg"
                 alt="Background Image"
