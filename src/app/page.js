@@ -14,6 +14,7 @@ import ConsultantImage from "@/components/home/ConsultantImage";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PersonalConsultant from "@/components/home/PersonalConsultant";
 import CTA from "@/components/shared/CTA";
+import Header from "@/components/shared/Header";
 
 export default function Home() {
   return (
@@ -24,10 +25,11 @@ export default function Home() {
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
       /> */}
-      <div className="hidden lg:block">
+      {/* <div className="hidden lg:block">
         <Topbar />
       </div>
-      <Navbar2 />
+      <Navbar2 /> */}
+      <Header />
       <ConsultantImage />
       <Hero />
       <div id="package-prices-section">

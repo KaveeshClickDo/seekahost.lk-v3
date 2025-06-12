@@ -11,6 +11,7 @@ import Topbar from "@/components/shared/Topbar";
 import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/shared/FAQ";
 import TalkSpecialist from "@/components/agency-hosting/TalkSpecialist";
+import Header from "@/components/shared/Header";
 
 export const metadata = {
     title: "Agency Web Hosting"
@@ -20,10 +21,11 @@ export default function Agency() {
 
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <Hero />
             <div id="agency-package-prices-section">
                 <PackagesPrices />

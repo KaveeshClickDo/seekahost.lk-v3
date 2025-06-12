@@ -13,6 +13,7 @@ import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PackagesPrices from "@/components/wordpress-hosting/PackagePrice";
+import Header from "@/components/shared/Header";
 
 export const metadata = {
     title: "WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
@@ -21,10 +22,11 @@ export const metadata = {
 export default function WordpressHosting() {
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <Hero />
             <div id="wordpress-package-prices-section">
                 <PackagesPrices />

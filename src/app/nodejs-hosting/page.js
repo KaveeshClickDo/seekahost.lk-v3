@@ -11,6 +11,7 @@ import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
+import Header from "@/components/shared/Header";
 
 export const metadata = {
     title: "NodeJS Hosting Sri Lanka: Best NodeJs Hosting"
@@ -20,10 +21,11 @@ export const metadata = {
 export default function NodeJSHosting() {
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <Hero />
             <PackagesPrices />
             <ScreenshotSlider />

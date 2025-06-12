@@ -9,6 +9,7 @@ import Topbar from "@/components/shared/Topbar";
 import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
 import CTA from "@/components/shared/CTA";
+import Header from "@/components/shared/Header";
 
 export const metadata = {
     title: "About Us"
@@ -17,10 +18,11 @@ export const metadata = {
 export default function about() {
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <Hero />
             <WhatWeOffer />
             <Timeline />

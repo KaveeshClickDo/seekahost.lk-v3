@@ -8,6 +8,7 @@ import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Footer from "@/components/shared/Footer";
 import { notFound } from "next/navigation";
+import Header from "@/components/shared/Header";
 
 export async function generateMetadata({ params }) {
     try {
@@ -115,10 +116,11 @@ const BlogPost = async (props) => {
 
         return (
             <>
-                <div className="hidden lg:block">
+                {/* <div className="hidden lg:block">
                     <Topbar />
                 </div>
-                <Navbar2 />
+                <Navbar2 /> */}
+                <Header />
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
                 <article className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">

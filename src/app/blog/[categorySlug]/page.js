@@ -7,6 +7,7 @@ import Link from 'next/link';
 import config from '@/config';
 import fetchPosts from '@/data/fetchPosts';
 import { notFound } from 'next/navigation';
+import Header from "@/components/shared/Header";
 
 const slugToCategory = (slug) => {
     return slug
@@ -59,10 +60,11 @@ const CategoryPage = async (props) => {
 
         return (
             <>
-                <div className="hidden lg:block">
+                {/* <div className="hidden lg:block">
                     <Topbar />
                 </div>
-                <Navbar2 />
+                <Navbar2 /> */}
+                <Header />
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
                 <section className="container mx-auto px-4 py-8 max-w-7xl">
@@ -164,10 +166,11 @@ const CategoryPage = async (props) => {
 
         return (
             <>
-                <div className="hidden lg:block">
+                {/* <div className="hidden lg:block">
                     <Topbar />
                 </div>
-                <Navbar2 />
+                <Navbar2 /> */}
+                <Header />
                 <div className="container mx-auto px-4 py-16 text-center">
                     <h1 className="text-3xl font-bold mb-4">Unable to load category posts</h1>
                     <p className="text-lg text-gray-700 mb-8">

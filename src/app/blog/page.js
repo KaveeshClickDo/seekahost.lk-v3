@@ -8,6 +8,7 @@ import config from '@/config';
 import fetchPosts from '@/data/fetchPosts';
 import FeaturedSlider from '@/components/blogs/FeatureSlider';
 import { MdArrowForward } from "react-icons/md";
+import Header from '@/components/shared/Header';
 
 export const metadata = {
     title: "Blog"
@@ -37,10 +38,11 @@ const Blog = async () => {
 
         return (
             <>
-                <div className="hidden lg:block">
+                {/* <div className="hidden lg:block">
                     <Topbar />
                 </div>
-                <Navbar2 />
+                <Navbar2 /> */}
+                <Header />
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
                 <section className="container mx-auto px-4 py-8 max-w-7xl">
 

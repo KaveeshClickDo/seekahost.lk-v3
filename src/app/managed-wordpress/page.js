@@ -13,6 +13,7 @@ import PeopleCards from "@/components/managed-wordpress/PeopleCards";
 import ScreenshotSlider from "@/components/managed-wordpress/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PackagesPrices from "@/components/managed-wordpress/PackagePrice";
+import Header from "@/components/shared/Header";
 
 export const metadata = {
     title: "Managed WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
@@ -21,10 +22,11 @@ export const metadata = {
 export default function ManagedWordPress() {
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <Hero />
             <div id="managed-wordpress-package-prices-section">
                 <PackagesPrices />

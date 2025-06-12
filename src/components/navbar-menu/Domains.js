@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Domains() {
     return (
-        <div className="absolute left-0 w-3xl xl:w-5xl bg-white shadow-lg z-20">
+        <div className="absolute -left-50 w-3xl xl:w-5xl rounded-xl bg-white shadow-lg z-20">
             <div className="container mx-auto flex flex-wrap">
                 {/* Left side - Menu items with icons */}
                 <div className="w-full lg:w-2/3 p-4">
@@ -42,7 +42,7 @@ export default function Domains() {
                 </div>
 
                 {/* Right side - Promotional content */}
-                <div className="w-full lg:w-1/3 bg-gray-50 p-6 flex flex-col justify-center">
+                <div className="w-full lg:w-1/3 rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
                     <h3 className="font-bold text-blue-600 text-lg mb-2">Domain Platforms</h3>
                     <p className="text-gray-600 mb-4">Find the right way to build your website.</p>
 

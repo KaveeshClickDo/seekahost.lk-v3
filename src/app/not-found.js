@@ -1,4 +1,5 @@
 import Footer from '@/components/shared/Footer';
+import Header from '@/components/shared/Header';
 import Navbar2 from '@/components/shared/Navbar2';
 import Topbar from '@/components/shared/Topbar';
 import Link from 'next/link';
@@ -15,10 +16,11 @@ const BACKGROUND_CIRCLES = [
 export default function NotFound() {
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
             <div className="bg-white flex items-center justify-center px-4 py-12 relative overflow-hidden">
 

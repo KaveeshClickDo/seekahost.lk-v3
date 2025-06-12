@@ -13,6 +13,7 @@ import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
+import Header from "@/components/shared/Header";
 
 export const metadata = {
     title: "Cheap Web Hosting With cPanel - Sri lanka's Best Host"
@@ -22,10 +23,11 @@ export const metadata = {
 export default function CheapWebHostingWithcPanel() {
     return (
         <>
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
                 <Topbar />
             </div>
-            <Navbar2 />
+            <Navbar2 /> */}
+            <Header />
             <Hero />
             <PackagesPrices />
             <PeopleCards />
