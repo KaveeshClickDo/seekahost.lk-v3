@@ -63,11 +63,11 @@ export default function PackagesPrices() {
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">PBN Manager</h1>
-                <h2 className="text-2xl md:text-4xl mb-6 text-[#042552]">
+                <h2 className="text-2xl md:text-4xl mb-6">
                     Best Plans & Cheapest Prices
                     <br className="hidden md:block" />
                     With{" "}
-                    <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">
+                    <span className="font-bold">
                         SeekaHost
                     </span>
                 </h2>
@@ -115,12 +115,12 @@ export default function PackagesPrices() {
                                 <div key={idx} className="p-4">
                                     <div className="relative border rounded-2xl p-6 h-full transition-all duration-400 shadow-md hover:shadow-lg bg-white border-gray-200 hover:bg-[#2072CC] hover:border-none group">
                                         {plan.isBestValue && (
-                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#2072CC] text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
                                             </div>
                                         )}
-                                        <div className="flex-shrink-0 pb-5">
-                                            <Image src="/images/shared/package-price-icon.svg" width={50} height={50} alt="Package Icon" />
+                                        <div className="flex-shrink-0 pb-2">
+                                            <Image src="/images/shared/package-price-icon.svg" width={75} height={75} alt="Package Icon" />
                                         </div>
                                         <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
                                         <div className="flex items-baseline justify-start mt-4">
@@ -179,7 +179,7 @@ export default function PackagesPrices() {
                                 <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
                                     <div className="relative border rounded-lg p-6 h-full bg-white border-blue-500 hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A] hover:border-none transition-all duration-400">
                                         {plan.isBestValue && (
-                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#2072CC] text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
                                             </div>
                                         )}

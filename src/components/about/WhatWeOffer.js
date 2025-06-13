@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function WhatWeOffer() {
     return (
-        <section className="relative w-full py-16 bg-gradient-to-b from-[#09407A] to-[#136CC9]">
+        <section className="relative w-full py-16 bg-[#0A488A]">
             {/* <Image
                 src="/images/shared/middle-banner.png"
                 alt="Background Image"
@@ -15,7 +15,7 @@ export default function WhatWeOffer() {
 
                 <div className="md:w-1/2 mb-8 md:mb-0 md:px-5 text-white">
                     <h2 className="text-2xl  md:text-4xl font-bold text-white mb-6">
-                        What we offer for <br /> <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65"> Sri Lankans</span>
+                        What we offer for <br /> <span className="font-bold"> Sri Lankans</span>
                     </h2>
                     <p className="mb-4">
                         Whether you are a start-up company in Sri Lanka or one with an established business presence in the Sri Lankan market, your website is the first point of reference for your customers.

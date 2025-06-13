@@ -26,7 +26,7 @@ export default function PeopleCards() {
 
     return (
         <section className="relative min-h-[600px]">
-            <div className="absolute top-0 left-0 w-full h-full md:h-3/4 bg-gradient-to-b from-[#09407A] to-[#136CC9]" />
+            <div className="absolute top-0 left-0 w-full h-full md:h-3/4 bg-[#0A488A]" />
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 h-full">
                 <div className="md:w-1/3 md:mr-15">
                     <div className="w-full relative">

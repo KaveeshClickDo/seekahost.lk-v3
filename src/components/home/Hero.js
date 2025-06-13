@@ -107,9 +107,9 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-bold text-white">Web Hosting</h2>
+                            <h2 className="text-xl font-bold text-white">WordPress Hosting</h2>
                             <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
-                            <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                            <Link href="/wordpress-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
                         </div>
@@ -123,9 +123,9 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-bold text-white">Web Hosting</h2>
+                            <h2 className="text-xl font-bold text-white">WooCommerce Hosting</h2>
                             <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
-                            <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                            <Link href="/woocommerce-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
                         </div>
@@ -139,9 +139,9 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-bold text-white">Web Hosting</h2>
+                            <h2 className="text-xl font-bold text-white">Agency Hosting</h2>
                             <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
-                            <Link href="#" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                            <Link href="/agency-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
                         </div>

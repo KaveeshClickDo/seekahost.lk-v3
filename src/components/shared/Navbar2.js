@@ -145,7 +145,7 @@ export default function Navbar2() {
                     }}
 
                 >
-                    eCommers
+                    eCommerce
                 </button>
                 {desktopEcommersDropdownOpen && (
                     <Ecommers />
@@ -322,7 +322,7 @@ export default function Navbar2() {
                         className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium"
                         aria-expanded={eCommersDropdownOpen}
                     >
-                        eCommers
+                        eCommerce
                         {eCommersDropdownOpen ? (
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />

@@ -75,7 +75,7 @@ export default function WhySeekahost() {
         </div>
       </section>
 
-      <section className="relative w-full py-16 bg-gradient-to-b from-[#09407A] to-[#136CC9]">
+      <section className="relative w-full py-16 bg-[#0A488A]">
         {/* <Image
           src="/images/shared/middle-banner.png"
           alt="Background Image"
@@ -89,7 +89,7 @@ export default function WhySeekahost() {
             <p className="text-sm md:text-xl font-bold mb-2">Important For Transactions</p>
             <h2 className="text-2xl md:text-4xl mb-10">
               Useful for facilitating transactions<span className='font-semibold'><br />
-                <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">between buyers &amp; sellers</span></span>
+                <span className="font-bold">between buyers &amp; sellers</span></span>
             </h2>
             <ul className="space-y-5">
               <li className="flex items-start">

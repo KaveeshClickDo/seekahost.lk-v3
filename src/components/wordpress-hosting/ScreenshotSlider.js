@@ -44,7 +44,7 @@ export default function ScreenshotSlider() {
     return (
         <section className="bg-[#F5FAFF]">
             <div className="max-w-7xl container mx-auto flex flex-col md:flex-row">
-                <div className="md:w-3/5 w-full bg-gradient-to-t from-[#136CC9] to-[#09407A] flex justify-end items-right py-20 relative">
+                <div className="md:w-3/5 w-full bg-[#0A488A] flex justify-end items-right py-20 relative">
                     <div className="w-3/4 relative overflow-hidden">
 
                         <div className="relative" style={{ height: "auto" }}>

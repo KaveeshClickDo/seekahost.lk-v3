@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function TalkSpecialist() {
     return (
         <>
-            <section className="relative w-full bg-gradient-to-b from-[#09407A] to-[#136CC9]">
+            <section className="relative w-full bg-[#0A488A]">
                 <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4 md:px-0">
 
                     <div className="md:w-1/2 px-5 md:mr-15 pt-16 md:py-16">

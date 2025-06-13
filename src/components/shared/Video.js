@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -8,19 +7,19 @@ export default function Video() {
   const youtubeVideoId = 'hx2W4fmqw_w'; // YouTube video ID
 
   return (
-    <section className="py-12 relative">
-      <Image
-        src="/images/shared/bg.svg"
-        alt="Background"
-        fill
-        priority
-        className="object-cover z-0"
-        sizes="100vw"
+    <section className="py-12 relative overflow-hidden">
+      {/* Two-tone background: top 75% blue, bottom 25% white */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          background: `linear-gradient(to bottom, #0A488A 75%, white 75%)`
+        }}
       />
-      <div className="relative z-1 max-w-7xl mx-auto px-4">
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-white md:mb-6">
-            <span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">
+            <span className="font-bold">
               <span className="font-normal">Why</span> SeekaHost
             </span>
           </h2>
@@ -30,7 +29,7 @@ export default function Video() {
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto rounded-4xl overflow-hidden shadow-4xl border-8 border-white">
+        <div className="relative max-w-5xl mx-auto rounded-4xl overflow-hidden shadow-xl shadow-[#687596] border-8 border-white">
           {!showVideo ? (
             <>
               <Image

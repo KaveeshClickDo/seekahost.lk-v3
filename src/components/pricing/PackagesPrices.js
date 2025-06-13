@@ -181,7 +181,7 @@ export default function PackagesPrices() {
                                 : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
-                            eCommers
+                            eCommerce
                         </button>
                         <button
                             type="button"
@@ -291,12 +291,12 @@ export default function PackagesPrices() {
                                 <div key={idx} className="p-4">
                                     <div className="relative border rounded-2xl p-6 h-full transition-all duration-400 shadow-md hover:shadow-lg bg-white border-gray-200 hover:bg-[#2072CC] hover:border-none group">
                                         {plan.isBestValue && (
-                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#2072CC] text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
                                             </div>
                                         )}
-                                        <div className="flex-shrink-0 pb-5">
-                                            <Image src="/images/shared/package-price-icon.svg" width={50} height={50} alt="Package Icon" />
+                                        <div className="flex-shrink-0 pb-2">
+                                            <Image src="/images/shared/package-price-icon.svg" width={75} height={75} alt="Package Icon" />
                                         </div>
                                         <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
                                         <div className="flex items-baseline justify-start mt-4">
@@ -355,7 +355,7 @@ export default function PackagesPrices() {
                                 <div key={idx} className="w-1/3 max-w-xs px-2 hidden md:block">
                                     <div className="relative border rounded-lg p-6 h-full bg-white border-blue-500 hover:bg-gradient-to-t hover:from-[#136CC9] hover:to-[#09407A] hover:border-none transition-all duration-400">
                                         {plan.isBestValue && (
-                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-3 py-1 rounded-md text-sm font-bold z-10">
+                                            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#2072CC] text-white px-3 py-1 rounded-md text-sm font-bold z-10">
                                                 BEST VALUE
                                             </div>
                                         )}

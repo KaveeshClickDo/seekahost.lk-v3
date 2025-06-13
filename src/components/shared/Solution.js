@@ -16,110 +16,110 @@ export default function Solution() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
 
-          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow shadow-none hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
                   src="/images/shared/ddos-protected.svg"
                   alt="DDOS Protected"
-                  width={100}
-                  height={100}
-                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+                  width={75}
+                  height={75}
+                  className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2">DDOS Protected</h3>
-              <p className="text-gray-700">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">DDOS Protected</h3>
+              <p className="text-[#2E4360]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               </p>
             </div>
           </div>
 
 
-          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow shadow-none hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
                   src="/images/shared/instant-setup.svg"
                   alt="Instant Setup"
-                  width={100}
-                  height={100}
-                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+                  width={75}
+                  height={75}
+                  className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2">Instant Setup</h3>
-              <p className="text-gray-700">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Instant Setup</h3>
+              <p className="text-[#2E4360]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               </p>
             </div>
           </div>
 
-          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow shadow-none hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
                   src="/images/shared/24-7-live-support.svg"
                   alt="24/7 Live Support"
-                  width={100}
-                  height={100}
-                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+                  width={75}
+                  height={75}
+                  className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2">24/7 Live Support</h3>
-              <p className="text-gray-700">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">24/7 Live Support</h3>
+              <p className="text-[#2E4360]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               </p>
             </div>
           </div>
 
-          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow shadow-none hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
                   src="/images/shared/guaranteed-uptime.svg"
                   alt="Guaranteed Uptime"
-                  width={100}
-                  height={100}
-                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+                  width={75}
+                  height={75}
+                  className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2">Guaranteed Uptime</h3>
-              <p className="text-gray-700">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Guaranteed Uptime</h3>
+              <p className="text-[#2E4360]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               </p>
             </div>
           </div>
 
-          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow shadow-none hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
                   src="/images/shared/blog-management.svg"
                   alt="Blog Management"
-                  width={100}
-                  height={100}
-                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+                  width={75}
+                  height={75}
+                  className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2">Blog Management</h3>
-              <p className="text-gray-700">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Blog Management</h3>
+              <p className="text-[#2E4360]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               </p>
             </div>
           </div>
 
-          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow shadow-none hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
                   src="/images/shared/periodic-malware-scanner.svg"
                   alt="Periodic Malware Scanner"
-                  width={100}
-                  height={100}
-                  className="w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+                  width={75}
+                  height={75}
+                  className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2">Periodic Malware Scanner</h3>
-              <p className="text-gray-700">
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Periodic Malware Scanner</h3>
+              <p className="text-[#2E4360]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               </p>
             </div>

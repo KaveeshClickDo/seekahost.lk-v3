@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function OurVision() {
     return (
-        <section className="relative w-full py-16 bg-gradient-to-b from-[#09407A] to-[#136CC9]">
+        <section className="relative w-full py-16 bg-[#0A488A]">
                 {/* <Image
                   src="/images/shared/middle-banner.png"
                   alt="Background Image"

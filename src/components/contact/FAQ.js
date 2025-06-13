@@ -77,7 +77,7 @@ export default function FAQ() {
         <div className="text-center mb-8">
           <h2 className="text-white text-md md:text-xl font-medium">FAQ</h2>
           <div className="relative inline-block">
-            <h3 className="text-white text-2xl md:text-4xl"><span className="relative font-bold after:content-[''] after:absolute after:left-0 after:bottom-[-3px] after:w-full after:h-[4px] after:bg-[#FDB927] after:transform after:skew-x-65">Find out more</span></h3>
+            <h3 className="text-white text-2xl md:text-4xl"><span className="font-bold">Find out more</span></h3>
           </div>
         </div>
 
