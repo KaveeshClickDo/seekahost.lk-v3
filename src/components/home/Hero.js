@@ -61,7 +61,7 @@ export default function Hero() {
 
 
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
-                <div className="text-white w-full max-w-2xl z-3">
+                <div className="text-white w-full max-w-xl z-3">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
                     </h1>
@@ -70,7 +70,7 @@ export default function Hero() {
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
-                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full max-w-lg">
+                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full">
                         <input
                             id="searchDomain"
                             type="text"
