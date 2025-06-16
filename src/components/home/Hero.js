@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { domainPrices } from '@/data/homeHeroExtnPrices';
 import TestimonialSlider from './Testimonials';
+import { IoSearch } from 'react-icons/io5';
 
 export default function Hero() {
     return (
@@ -61,12 +62,12 @@ export default function Hero() {
 
 
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
-                <div className="text-white w-full max-w-xl z-3">
+                <div className="text-white w-full max-w-lg z-3">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        World&rsquo;s Best Multiple IP <br /> PBN Hosting Manager
+                        World&rsquo;s Best Multiple IP PBN<br /> Hosting Manager
                     </h1>
 
-                    <p className="mt-6">
+                    <p className="mt-2">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
 
@@ -77,7 +78,8 @@ export default function Hero() {
                             placeholder="Search for a domain..."
                             className="flex-grow outline-none text-black md:px-2"
                         />
-                        <button className="bg-[#0081FF] text-white px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition leading-4 font-bold">
+                        <button className="bg-[#0081FF] text-white px-5 md:px-7 py-4 rounded-full hover:bg-blue-600 transition leading-4 font-bold flex items-center gap-2">
+                            <IoSearch className="w-5 h-5" />
                             Search
                         </button>
                     </div>
@@ -97,7 +99,7 @@ export default function Hero() {
                         <TestimonialSlider />
                     </div>
 
-                    <div className="mt-10 xl:mt-22 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
+                    <div className="mt-8 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
                         <div className="rounded-md flex flex-col items-center">
                             <Image
                                 src="/images/home/server-security.svg"
@@ -107,8 +109,8 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-bold text-white">WordPress Hosting</h2>
-                            <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
+                            <h2 className="text-lg font-bold text-white">WordPress Hosting</h2>
+                            <p className="text-white mt-1 text-sm xl:text-base">Starting at £1/month</p>
                             <Link href="/wordpress-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
@@ -123,8 +125,8 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-bold text-white">WooCommerce Hosting</h2>
-                            <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
+                            <h2 className="text-lg font-bold text-white">WooCommerce Hosting</h2>
+                            <p className="text-white mt-1 text-sm xl:text-base">Starting at £1/month</p>
                             <Link href="/woocommerce-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
@@ -139,8 +141,8 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-xl font-bold text-white">Agency Hosting</h2>
-                            <p className="text-white mt-1 text-sm xl:text-base">Starting at $1/month</p>
+                            <h2 className="text-lg font-bold text-white">Agency Hosting</h2>
+                            <p className="text-white mt-1 text-sm xl:text-base">Starting at £1/month</p>
                             <Link href="/agency-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
@@ -148,7 +150,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-3 ml-auto mt-8 lg:mt-0">
+                <div className="relative w-full max-w-xl 2xl:max-w-3xl z-3 ml-auto mt-8 lg:mt-0">
                     <Image
                         src="/images/home/hero-image.webp"
                         alt="Hero Image"

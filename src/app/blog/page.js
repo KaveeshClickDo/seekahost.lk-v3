@@ -153,7 +153,7 @@ const Blog = async () => {
                                 )}
                                 <Link
                                     href={`/blog/${category ? category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : '#'}`}
-                                    className="flex items-center font-bold text-lg hover:text-blue-600 transition-colors gap-1 sm:gap-2 py-6 ml-2"
+                                    className="flex items-center font-bold text-lg hover:text-[#2072CC] transition-colors gap-1 sm:gap-2 py-6 ml-2"
                                 >
                                     Read More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                                 </Link>

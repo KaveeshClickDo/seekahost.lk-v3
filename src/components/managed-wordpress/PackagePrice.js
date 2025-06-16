@@ -64,9 +64,7 @@ export default function PackagesPrices() {
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">PBN Manager</h1>
                 <h2 className="text-2xl md:text-4xl mb-6">
-                    Best Plans & Cheapest Prices
-                    <br className="hidden md:block" />
-                    With{" "}
+                    Best Plans & Cheapest Prices With{" "}
                     <span className="font-bold">
                         SeekaHost
                     </span>
@@ -77,7 +75,7 @@ export default function PackagesPrices() {
                 </p>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
-                        className={`cursor-pointer md:text-lg ${isMonthly ? 'text-blue-600' : ''}`}
+                        className={`cursor-pointer md:text-lg ${isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(true)}
                     >
                         Monthly
@@ -101,7 +99,7 @@ export default function PackagesPrices() {
                         />
                     </div>
                     <span
-                        className={`cursor-pointer md:text-lg ${!isMonthly ? 'text-blue-600' : ''}`}
+                        className={`cursor-pointer md:text-lg ${!isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(false)}
                     >
                         Yearly
@@ -133,7 +131,7 @@ export default function PackagesPrices() {
                                         </div>
                                         <p className="mb-4 text-gray-500 group-hover:text-white transition-colors duration-400 text-left">{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
                                         <Link href={plan.link} className="w-full">
-                                            <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-blue-600 group-hover:bg-white group-hover:text-[#2072CC]">
+                                            <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-[#2072CC] group-hover:bg-white group-hover:text-[#2072CC]">
                                                 {plan.buttonName}
                                             </button>
                                         </Link>

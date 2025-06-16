@@ -71,9 +71,9 @@ const CategoryPage = async (props) => {
 
                     <div className="mb-8">
                         <nav className="text-sm text-gray-500 mb-4">
-                            <Link href="/" className="hover:text-blue-600">Home</Link>
+                            <Link href="/" className="hover:text-[#2072CC]">Home</Link>
                             <span className="mx-2">›</span>
-                            <Link href="/blog" className="hover:text-blue-600">Blog</Link>
+                            <Link href="/blog" className="hover:text-[#2072CC]">Blog</Link>
                             <span className="mx-2">›</span>
                             <span className="text-gray-700">{validCategory}</span>
                         </nav>
@@ -150,7 +150,7 @@ const CategoryPage = async (props) => {
                     <div className="mt-12 text-center">
                         <Link
                             href="/blog"
-                            className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                            className="inline-flex items-center text-[#2072CC] hover:text-blue-700 font-medium transition-colors"
                         >
                             ← Back to All Posts
                         </Link>

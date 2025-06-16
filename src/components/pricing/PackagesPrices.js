@@ -167,7 +167,7 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('web')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'web'
-                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                ? 'bg-[#2072CC] text-white hover:bg-blue-700'
                                 : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
@@ -177,7 +177,7 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('ecommers')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'ecommers'
-                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                ? 'bg-[#2072CC] text-white hover:bg-blue-700'
                                 : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
@@ -187,7 +187,7 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('wordpress')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'wordpress'
-                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                ? 'bg-[#2072CC] text-white hover:bg-blue-700'
                                 : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
@@ -197,7 +197,7 @@ export default function PackagesPrices() {
                             type="button"
                             onClick={() => setSelectedCategory('vps')}
                             className={`px-6 py-2 text-sm font-medium rounded-lg ${selectedCategory === 'vps'
-                                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                ? 'bg-[#2072CC] text-white hover:bg-blue-700'
                                 : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-300'
                                 }`}
                         >
@@ -227,7 +227,7 @@ export default function PackagesPrices() {
 
                         {showPackageDropdown && (
                             <div
-                                className="absolute right-0 z-10 w-full mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-blue-600 ring-opacity-5 focus:outline-none"
+                                className="absolute right-0 z-10 w-full mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-[#2072CC] ring-opacity-5 focus:outline-none"
                             >
                                 <div className="py-1" role="menu" aria-orientation="vertical">
                                     {packageOptions.map((option) => (
@@ -237,7 +237,7 @@ export default function PackagesPrices() {
                                                 setSelectedPackageType(option.id);
                                                 setShowPackageDropdown(false);
                                             }}
-                                            className={`block w-full px-4 py-2 text-sm text-left ${selectedPackageType === option.id ? 'bg-gray-100 text-blue-600' : 'text-gray-700'
+                                            className={`block w-full px-4 py-2 text-sm text-left ${selectedPackageType === option.id ? 'bg-gray-100 text-[#2072CC]' : 'text-gray-700'
                                                 } hover:bg-gray-100`}
                                             role="menuitem"
                                         >
@@ -253,7 +253,7 @@ export default function PackagesPrices() {
 
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
-                        className={`cursor-pointer md:text-lg ${isMonthly ? 'text-blue-600' : ''}`}
+                        className={`cursor-pointer md:text-lg ${isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(true)}
                     >
                         Monthly
@@ -277,7 +277,7 @@ export default function PackagesPrices() {
                         />
                     </div>
                     <span
-                        className={`cursor-pointer md:text-lg ${!isMonthly ? 'text-blue-600' : ''}`}
+                        className={`cursor-pointer md:text-lg ${!isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(false)}
                     >
                         Yearly
@@ -309,7 +309,7 @@ export default function PackagesPrices() {
                                         </div>
                                         <p className="mb-4 text-gray-500 group-hover:text-white transition-colors duration-400 text-left">{isMonthly ? plan.specialTextMonth : plan.specialTextYear}</p>
                                         <Link href={plan.link} className="w-full">
-                                            <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-blue-600 group-hover:bg-white group-hover:text-[#2072CC]">
+                                            <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-[#2072CC] group-hover:bg-white group-hover:text-[#2072CC]">
                                                 {plan.buttonName}
                                             </button>
                                         </Link>

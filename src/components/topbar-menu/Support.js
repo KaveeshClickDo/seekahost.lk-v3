@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Support() {
     return (
-        <div className="absolute -right-5 w-xl bg-white shadow-lg rounded-2xl mt-2 ring-1 ring-blue-600 ring-opacity-5">
+        <div className="absolute -right-5 w-xl bg-white shadow-lg rounded-2xl mt-2">
             <div className="container mx-auto flex flex-wrap">
             
                 <div className="w-2xs p-4">
@@ -59,7 +59,7 @@ export default function Support() {
                             className="rounded-md shadow-sm"
                         />
                     </div>
-                    <h3 className="font-bold text-blue-600 text-lg mt-2">Learn About CMS</h3>
+                    <h3 className="font-bold text-[#2072CC] text-lg mt-2">Learn About CMS</h3>
                     <p className="text-gray-600 mb-2">Find the right way to build your website.</p>
                 </div>
             </div>

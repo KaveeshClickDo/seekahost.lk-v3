@@ -137,7 +137,7 @@ export default function ScreenshotSlider() {
                         </button>
                         <Link
                             href="#"
-                            className="flex items-center justify-center text-black text-base font-bold hover:text-blue-600 transition-colors gap-1 sm:gap-2 py-2"
+                            className="flex items-center justify-center text-black text-base font-bold hover:text-[#2072CC] transition-colors gap-1 sm:gap-2 py-2"
                         >
                             Learn More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                         </Link>

@@ -168,7 +168,9 @@ export default function Header() {
                     Domains & SSL
                 </button>
                 {desktopDomainsDropdownOpen && (
-                    <Domains />
+                    <div className="absolute 2xl:-left-90 -left-50">
+                        <Domains />
+                    </div>
                 )}
             </div>
             <div className="relative hover:underline">
@@ -187,7 +189,9 @@ export default function Header() {
                     Hosting
                 </button>
                 {desktopWebHostingDropdownOpen && (
-                    <Hosting />
+                    <div className="absolute 2xl:-left-126 -left-86">
+                        <Hosting />
+                    </div>
                 )}
             </div>
             <div className="relative hover:underline">
@@ -207,7 +211,9 @@ export default function Header() {
                     eCommerce
                 </button>
                 {desktopEcommersDropdownOpen && (
-                    <Ecommers />
+                    <div className="absolute 2xl:-left-148 -left-108">
+                        <Ecommers />
+                    </div>
                 )}
             </div>
             <div className="relative hover:underline">
@@ -227,7 +233,9 @@ export default function Header() {
                     WordPress
                 </button>
                 {desktopWordPressDropdownOpen && (
-                    <WordPress />
+                    <div className="absolute 2xl:-left-178.75 -left-138.75">
+                        <WordPress />
+                    </div>
                 )}
             </div>
             <div className="relative hover:underline">
@@ -247,7 +255,9 @@ export default function Header() {
                     Servers
                 </button>
                 {desktopServersDropdownOpen && (
-                    <Servers />
+                    <div className="absolute 2xl:-left-206.75 -left-166.75">
+                        <Servers />
+                    </div>
                 )}
             </div>
             {/* <Link
@@ -266,12 +276,12 @@ export default function Header() {
                 Pricing
             </Link>
 
-            <Link
+            {/* <Link
                 href="/about"
                 className="relative p-4 hover:underline"
             >
                 About
-            </Link>
+            </Link> */}
             {/* <Link href="/contact" className="hover:underline font-light transition-all duration-300">
                 Contact Us
             </Link> */}
@@ -296,9 +306,9 @@ export default function Header() {
                 )}
             </div>
             <div className="relative p-1">
-                <SignInDropdown />
+                <LanguageSelector />
             </div>
-            <LanguageSelector />
+            <SignInDropdown />
 
         </div>
     );

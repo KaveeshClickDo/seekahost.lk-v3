@@ -40,12 +40,12 @@ export default function GetStarted() {
                         </li>
                     </ul>
                     <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-                        <button className="bg-blue-600 text-white font-bold w-full sm:w-auto border border-blue-600 px-4 sm:px-5 md:px-6 py-3 md:py-4 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-300">
+                        <button className="bg-blue-600 text-white font-bold w-full sm:w-auto border border-blue-600 px-4 sm:px-5 md:px-6 py-3 md:py-4 rounded-full hover:bg-white hover:text-[#2072CC] transition-colors duration-300">
                             Get Started
                         </button>
                         <Link
                             href="#"
-                            className="flex items-center justify-center font-bold hover:text-blue-600 transition-colors gap-1 sm:gap-2 py-2"
+                            className="flex items-center justify-center font-bold hover:text-[#2072CC] transition-colors gap-1 sm:gap-2 py-2"
                         >
                             Learn More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                         </Link>

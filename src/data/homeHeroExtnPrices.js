@@ -1,7 +1,7 @@
 export const domainPrices = [
-    { extension: '.com', price: 'Rs1976' },
-    { extension: '.co.uk', price: 'Rs1511' },
-    { extension: '.net', price: 'Rs2441' },
-    { extension: '.org', price: 'Rs2209' },
-  ];
+  { extension: '.com', price: '£4.74' },
+  { extension: '.co.uk', price: '£3.63' },
+  { extension: '.net', price: '£5.86' },
+  { extension: '.org', price: '£5.30' },
+];
   

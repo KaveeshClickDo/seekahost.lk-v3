@@ -248,7 +248,7 @@ const BlogPost = async (props) => {
                                                     href={`/${post.postMetadata?.slug}`}
                                                     className="block group"
                                                 >
-                                                    <h4 className="text-blue-600 group-hover:text-blue-800 font-medium leading-snug transition-colors duration-200">
+                                                    <h4 className="text-[#2072CC] group-hover:text-blue-800 font-medium leading-snug transition-colors duration-200">
                                                         {post.title}
                                                     </h4>
                                                 </Link>

@@ -29,7 +29,7 @@ export default function Video() {
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto rounded-4xl overflow-hidden shadow-xl shadow-[#687596] border-8 border-white">
+        <div className="relative max-w-5xl mx-auto rounded-4xl overflow-hidden shadow-xl shadow-[#687596]/70 border-8 border-white">
           {!showVideo ? (
             <>
               <Image
