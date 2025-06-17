@@ -1,7 +1,5 @@
 'use client';
 import { useEffect, useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image"
 import PopUpVideo from "../shared/PopUpVideo";
 import { people } from "@/data/peopleCardData";

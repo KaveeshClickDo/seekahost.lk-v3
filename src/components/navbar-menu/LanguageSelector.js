@@ -158,7 +158,7 @@ const LanguageSelector = () => {
               
               {filteredCountries.length === 0 && (
                 <div className="text-center py-8 text-gray-500">
-                  No countries found matching "{searchTerm}"
+                  No countries found matching &quot;{searchTerm}&quot;
                 </div>
               )}
             </div>
