@@ -1,7 +1,5 @@
 import { DM_Sans } from 'next/font/google';
 import './globals.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { siteSchema } from './schema';
 
 const dmSans = DM_Sans({
@@ -24,6 +22,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Add slick-carousel CSS via CDN */}
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
