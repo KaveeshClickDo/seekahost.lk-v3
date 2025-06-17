@@ -29,7 +29,7 @@ export default function Solution() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">DDOS Protected</h3>
               <p className="text-[#2E4360]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                With real-time traffic filtering and intelligent threat detection, we ensure your site remains accessible and performs optimally under all conditions.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Solution() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Instant Setup</h3>
               <p className="text-[#2E4360]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                Experience immediate access to your hosting environment, allowing you to start developing and deploying your website or application right away.
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function Solution() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">24/7 Live Support</h3>
               <p className="text-[#2E4360]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                Our expert support team is available around the clock to assist you with any hosting issues, ensuring your website runs smoothly at all times.
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Solution() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Guaranteed Uptime</h3>
               <p className="text-[#2E4360]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                Benefit from our reliable hosting service with a 99.9% uptime guarantee, ensuring your website remains accessible and performs optimally.
               </p>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function Solution() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Blog Management</h3>
               <p className="text-[#2E4360]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                Streamline your blogging experience with optimized hosting solutions that offer seamless content creation, robust performance.
               </p>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Solution() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Periodic Malware Scanner</h3>
               <p className="text-[#2E4360]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim iamLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                Regular malware scans identify and eliminate threats before they compromise your website, ensuring consistent protection and peace of mind.
               </p>
             </div>
           </div>
