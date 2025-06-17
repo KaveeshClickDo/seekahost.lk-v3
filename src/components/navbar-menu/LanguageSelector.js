@@ -48,6 +48,7 @@ const LanguageSelector = () => {
     { name: 'Portugal', language: 'Português', flag: '/images/flags/Portugal.svg' },
     { name: 'România', language: 'Română', flag: '/images/flags/Romania.svg' },
     { name: 'Sri Lanka', language: 'සිංහල', flag: '/images/flags/Sri-lanka.svg' },
+    { name: 'Sri Lanka', language: 'தமிழ்', flag: '/images/flags/Sri-lanka.svg' },
     { name: 'Slovensko', language: 'Slovenčina', flag: '/images/flags/Slovakia.svg' },
     { name: 'Suomi', language: 'Suomi', flag: '/images/flags/Finland.svg' },
     { name: 'Sverige', language: 'Svenska', flag: '/images/flags/Sweden.svg' },

@@ -7,7 +7,7 @@ export default function Video() {
   const youtubeVideoId = 'hx2W4fmqw_w'; // YouTube video ID
 
   return (
-    <section className="py-12 relative overflow-hidden">
+    <section className="py-22 relative overflow-hidden">
       {/* Two-tone background: top 75% blue, bottom 25% white */}
       <div 
         className="absolute inset-0 z-0"
