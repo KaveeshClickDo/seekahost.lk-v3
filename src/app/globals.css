@@ -21,7 +21,7 @@ body {
   font-family: var(--font-dm-sans);
 }
 
-.slick-next::before {
+/* .slick-next::before {
   color: #155dfc !important;
   font-size: 30px;
 }
@@ -29,7 +29,7 @@ body {
 .slick-prev::before {
   color: #155dfc !important;
   font-size: 30px;
-}
+} */
 
 /* .slick-list {
   overflow: hidden !important;
