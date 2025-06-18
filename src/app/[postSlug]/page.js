@@ -103,7 +103,7 @@ const BlogPost = async (props) => {
                 );
             } else if (authorName) {
                 return (
-                    <div 
+                    <div
                         className={`rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold`}
                         style={{ width: size, height: size, fontSize: size * 0.4 }}
                     >
@@ -124,6 +124,55 @@ const BlogPost = async (props) => {
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
                 <article className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50">
+
+                    {/* Add JSON-LD structured data */}
+                    {blog.data.map((post) => {
+                        const jsonLd = {
+                            '@context': 'https://schema.org',
+                            '@type': 'Article',
+                            headline: post.title,
+                            description: post.postMetadata?.metaDescription || post.title,
+                            image: post.postPrimary?.featuredImage?.url
+                                ? `${config.api}${post.postPrimary.featuredImage.url}`
+                                : undefined,
+                            datePublished: post.createdAt,
+                            dateModified: post.updatedAt,
+                            author: {
+                                '@type': 'Person',
+                                name: post.authorDetails?.authorName || 'Unknown Author',
+                                ...(post.authorDetails?.authorImage?.url && {
+                                    image: `${config.api}${post.authorDetails.authorImage.url}`
+                                }),
+                                ...(post.authorDetails?.authorDescription && {
+                                    description: post.authorDetails.authorDescription
+                                })
+                            },
+                            publisher: {
+                                '@type': 'Organization',
+                                name: 'SeekaHost',
+                                logo: {
+                                    '@type': 'ImageObject',
+                                    url: `${typeof window !== 'undefined' ? window.location.origin : ''}/images/shared/header-logo.webp`
+                                }
+                            },
+                            mainEntityOfPage: {
+                                '@type': 'WebPage',
+                                '@id': `${typeof window !== 'undefined' ? window.location.href : ''}`
+                            },
+                            ...(post.postPrimary?.category && {
+                                articleSection: post.postPrimary.category
+                            })
+                        };
+
+                        return (
+                            <script
+                                key={`jsonld-${post.id}`}
+                                type="application/ld+json"
+                                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                            />
+                        );
+                    })}
+
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                             <div className="lg:col-span-3">
@@ -137,7 +186,7 @@ const BlogPost = async (props) => {
                                             </span>
                                             <span>{post.updatedAt?.substring(0, 10)}</span>
                                         </div>
-                                        
+
                                         <h1 className="text-2xl lg:text-4xl font-bold mb-4">
                                             {post.title}
                                         </h1>
