@@ -12,35 +12,28 @@ const LargeImageSlider = ({ slides = [] }) => {
 
   // Default slides data if none provided
   const defaultSlides = [
-    {
-      id: 1,
-      image: '/images/home/1.webp',
-      title: 'Get Your Website Online',
-      subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna Lorem ipsum dolor sit amet.',
-      overlayText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
-    },
-    {
-      id: 2,
-      image: '/images/home/2.webp',
-      title: 'Build Your Digital Presence',
-      subtitle: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-      overlayText: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
-    },
-    {
-      id: 3,
-      image: '/images/home/3.webp',
-      title: 'Grow Your Business Online',
-      subtitle: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      overlayText: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.'
-    },
-    {
-      id: 4,
-      image: '/images/home/4.webp',
-      title: 'Scale Your Success',
-      subtitle: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-      overlayText: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.'
-    }
-  ]
+  {
+    id: 1,
+    image: '/images/home/1.webp',
+    overlayText: 'Get your website online in minutes with fast, secure, and reliable hosting services built for success.'
+  },
+  {
+    id: 2,
+    image: '/images/home/2.webp',
+    overlayText: 'Launch your online presence today with easy-to-use tools, expert support, and high-performance servers.'
+  },
+  {
+    id: 3,
+    image: '/images/home/3.webp',
+    overlayText: 'Start building your website now—no tech skills needed. Just fast, seamless setup and powerful features.'
+  },
+  {
+    id: 4,
+    image: '/images/home/4.webp',
+    overlayText: 'From idea to launch, we make getting online simple. Everything you need to create and grow your site.'
+  }
+];
+
 
   const slidesData = slides.length > 0 ? slides : defaultSlides
 
@@ -140,10 +133,10 @@ const LargeImageSlider = ({ slides = [] }) => {
         {/* Header Text */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 transition-all duration-300">
-            {slidesData[currentIndex].title}
+            Get Your Website Online
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto transition-all duration-300">
-            {slidesData[currentIndex].subtitle}
+            Launch your website quickly and easily with our reliable hosting solutions and expert setup support.
           </p>
         </div>
 

@@ -26,8 +26,7 @@ export default function Video() {
             </span>
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod tempor
-            incididunt ut labore et dolore magna aliqua.
+            Seamlessly transfer your website to a new host or platform with zero downtime and full data integrity.
           </p>
         </div>
 

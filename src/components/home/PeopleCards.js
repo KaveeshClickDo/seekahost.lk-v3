@@ -12,7 +12,7 @@ export default function PeopleCards() {
         if (!isVideoPlaying) {
             const interval = setInterval(() => {
                 setCurrentSlide((prev) => (prev + 1) % people.length);
-            }, 3000);
+            }, 5000);
 
             return () => clearInterval(interval);
         }
