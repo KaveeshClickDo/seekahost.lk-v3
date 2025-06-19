@@ -1,6 +1,7 @@
 import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
 import { reviewers } from '@/data/reviewersData';
+import Link from 'next/link';
 
 export default function Reviews() {
 
@@ -25,6 +26,12 @@ export default function Reviews() {
                         <p className="mt-6 max-w-md text-gray-700">
                             Over 18,000 companies of all sizes use Advantage to streamline their business marketing
                         </p>
+                        <Link
+                            href="#"
+                            className="inline-block bg-[#0A488B] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold mt-6 md:mt-8 text-center w-fit"
+                        >
+                            Get Started
+                        </Link>
                     </div>
 
                     <div className="md:w-1/2 flex flex-col space-y-6">

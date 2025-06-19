@@ -2,14 +2,14 @@ import Image from 'next/image';
 
 export default function Solution() {
   return (
-    <section className="py-12 md:my-10">
+    <section className="py-12 md:mt-10 md:mb-20">
       <div className="max-w-7xl mx-auto px-4 md:px-0">
 
         <div className="text-center mb-12">
-          <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1>
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            SeekaHost – <span className="font-normal">1 Click Solution for Hosting</span>
+            SeekaHost – 1 Click Solution for Hosting
           </h2>
+          <p className="text-gray-700 mb-8 mx-auto">Protecting your beloved with our comprehensive full and credible insurance coverage you can</p>
 
         </div>
 
@@ -20,16 +20,16 @@ export default function Solution() {
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
-                  src="/images/shared/ddos-protected.svg"
-                  alt="DDOS Protected"
+                  src="/images/shared/high-speed-performance.svg"
+                  alt="High-Speed Performance"
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">DDOS Protected</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">High-Speed Performance</h3>
               <p className="text-[#2E4360]">
-                With real-time traffic filtering and intelligent threat detection, we ensure your site remains accessible and performs optimally under all conditions.
+                Powered by high-performance CPUs for fast load times and smooth handling of high traffic.
               </p>
             </div>
           </div>
@@ -39,16 +39,16 @@ export default function Solution() {
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
-                  src="/images/shared/instant-setup.svg"
-                  alt="Instant Setup"
+                  src="/images/shared/24-7-expert-support.svg"
+                  alt="24/7 Expert Support"
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Instant Setup</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">24/7 Expert Support</h3>
               <p className="text-[#2E4360]">
-                Experience immediate access to your hosting environment, allowing you to start developing and deploying your website or application right away.
+                Round-the-clock technical support from UK hosting specialists.
               </p>
             </div>
           </div>
@@ -57,16 +57,16 @@ export default function Solution() {
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
-                  src="/images/shared/24-7-live-support.svg"
-                  alt="24/7 Live Support"
+                  src="/images/shared/unlimited-ssd-storage.svg"
+                  alt="Unlimited SSD Storage"
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">24/7 Live Support</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Unlimited SSD Storage</h3>
               <p className="text-[#2E4360]">
-                Our expert support team is available around the clock to assist you with any hosting issues, ensuring your website runs smoothly at all times.
+                Fast, reliable SSD storage with no limits for optimal site performance.
               </p>
             </div>
           </div>
@@ -75,16 +75,16 @@ export default function Solution() {
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
-                  src="/images/shared/guaranteed-uptime.svg"
-                  alt="Guaranteed Uptime"
+                  src="/images/shared/uk-based-servers.svg"
+                  alt="UK-Based Servers"
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Guaranteed Uptime</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">UK-Based Servers</h3>
               <p className="text-[#2E4360]">
-                Benefit from our reliable hosting service with a 99.9% uptime guarantee, ensuring your website remains accessible and performs optimally.
+                Local UK servers ensure top speed and seamless user experience for UK audiences.
               </p>
             </div>
           </div>
@@ -93,16 +93,16 @@ export default function Solution() {
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
-                  src="/images/shared/blog-management.svg"
-                  alt="Blog Management"
+                  src="/images/shared/simple-n-scalable-interface.svg"
+                  alt="Simple & Scalable Interface"
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Blog Management</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Simple & Scalable Interface</h3>
               <p className="text-[#2E4360]">
-                Streamline your blogging experience with optimized hosting solutions that offer seamless content creation, robust performance.
+                Clean, user-friendly dashboard with flexible hosting options.
               </p>
             </div>
           </div>
@@ -111,16 +111,16 @@ export default function Solution() {
             <div className="flex flex-col items-start p-8 text-left">
               <div className="mb-4">
                 <Image
-                  src="/images/shared/periodic-malware-scanner.svg"
-                  alt="Periodic Malware Scanner"
+                  src="/images/shared/built-in-ddos-protection.svg"
+                  alt="Built-In DDoS Protection"
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px]"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Periodic Malware Scanner</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561]">Built-In DDoS Protection</h3>
               <p className="text-[#2E4360]">
-                Regular malware scans identify and eliminate threats before they compromise your website, ensuring consistent protection and peace of mind.
+                Advanced security to keep your site safe from malicious traffic attacks.
               </p>
             </div>
           </div>

@@ -60,17 +60,10 @@ export default function PackagesPrices() {
                 priority
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:my-10">
-                <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">PBN Manager</h1>
-                <h2 className="text-2xl md:text-4xl mb-6">
-                    Best Plans & Cheapest Prices With{" "}
-                    <span className="font-bold">
-                        SeekaHost
-                    </span>
+                <h1 className="inline-block text-[#1276DF] text-sm md:text-lg mb-4 font-semibold">Price Plans</h1>
+                <h2 className="text-2xl md:text-4xl font-bold mb-8">
+                    Best Plans & Cheapest Prices With SeekaHost
                 </h2>
-                <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-                    Protect your beloved with our comprehensive fulfillment and
-                    credible insurance coverage you can rely on.
-                </p>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
                         className={`cursor-pointer md:text-lg ${isMonthly ? 'text-[#2072CC]' : ''}`}
@@ -121,7 +114,7 @@ export default function PackagesPrices() {
                                         <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
                                         <div className="flex items-baseline justify-start mt-4">
                                             <span className="text-5xl font-bold mr-1 leading-14 group-hover:text-white transition-colors duration-400">
-                                                LKR{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
+                                                £{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
                                             </span>
                                             <span className="text-gray-500 group-hover:text-white md:text-xl font-medium transition-colors duration-400">
                                                 / {isMonthly ? 'mo' : 'yr'}

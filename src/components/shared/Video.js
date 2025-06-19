@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
+import ProcessSteps from '../home/ProcessSteps';
 
 export default function Video() {
   const [showVideo, setShowVideo] = useState(false);
@@ -12,7 +14,7 @@ export default function Video() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          background: `linear-gradient(to bottom, #0A488A 75%, white 75%)`
+          background: `linear-gradient(to bottom, #0A488B 75%, white 75%)`
         }}
       />
       
@@ -20,7 +22,7 @@ export default function Video() {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-white md:mb-6">
             <span className="font-bold">
-              <span className="font-normal">Why</span> SeekaHost
+              Website Migration
             </span>
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto">
@@ -29,7 +31,9 @@ export default function Video() {
           </p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto rounded-4xl overflow-hidden shadow-xl shadow-[#687596]/70 border-8 border-white">
+        <ProcessSteps />
+
+        <div className="relative max-w-5xl mx-auto rounded-4xl overflow-hidden shadow-xl shadow-[#687596]/70 border-8 border-white mb-8">
           {!showVideo ? (
             <>
               <Image
@@ -73,6 +77,16 @@ export default function Video() {
               />
             </div>
           )}
+        </div>
+
+        {/* Get Started Button */}
+        <div className="text-center">
+          <Link
+            href="#"
+            className="inline-block bg-[#0A488B] text-white border border-[#0066CC] px-15 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8"
+          >
+            Get Started
+          </Link>
         </div>
       </div>
     </section>

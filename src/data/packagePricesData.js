@@ -1,12 +1,12 @@
 export const homePkgPrices = [
     {
-        title: 'Starter',
-        buttonName: 'Get Starter',
+        title: 'Plus',
+        buttonName: 'Get Plus',
         link : '#',
-        monthlyPrice: 280,
-        yearlyPrice: 2000,
+        monthlyPrice: 29,
+        yearlyPrice: 290,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for LKR2800/yr',
+        specialTextYear: 'Renews for £300/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -39,13 +39,13 @@ export const homePkgPrices = [
         isBestValue: false,
     },
     {
-        title: 'Turbo',
-        buttonName: 'Get Turbo',
+        title: 'Pro',
+        buttonName: 'Get Pro',
         link : '#',
-        monthlyPrice: 500,
-        yearlyPrice: 5000,
-        specialTextMonth: 'Renews at LKR580/mo',
-        specialTextYear: 'Renews for LKR5800/yr',
+        monthlyPrice: 59,
+        yearlyPrice: 590,
+        specialTextMonth: 'Renews at £60/mo',
+        specialTextYear: 'Renews for £600/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -80,13 +80,13 @@ export const homePkgPrices = [
         isBestValue: true,
     },
     {
-        title: 'Supersonic',
-        buttonName: 'Get Supersonic',
-        link : '#',
-        monthlyPrice: 700,
-        yearlyPrice: 7000,
-        specialTextMonth: 'Renews at LKR780/mo',
-        specialTextYear: 'Renews for LKR7800/yr',
+        title: 'Enterprise',
+        buttonName: 'Talk to Sales',
+        link : '/personalized-hosting',
+        monthlyPrice: 119,
+        yearlyPrice: 1190,
+        specialTextMonth: 'Renews at £120/mo',
+        specialTextYear: 'Renews for £1200/yr',
         featureSections: [
             {
                 title: 'General Features',

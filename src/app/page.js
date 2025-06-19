@@ -15,6 +15,10 @@ import BacktoTop from "@/components/shared/BacktoTop";
 import PersonalConsultant from "@/components/home/PersonalConsultant";
 import CTA from "@/components/shared/CTA";
 import Header from "@/components/shared/Header";
+import ScreenshotSlider from "@/components/home/ScreenshotSlider";
+import PeopleCards from "@/components/home/PeopleCards";
+import GetStarted from "@/components/home/GetStarted";
+import LargeImageSlider from "@/components/home/LargeImageSlider";
 
 export default function Home() {
   return (
@@ -36,11 +40,14 @@ export default function Home() {
         <PackagePrices/>
       </div>
       <Solution />
+      <ScreenshotSlider />
       <Video />
-      <WhySeekahost />
+      <GetStarted />
+      <PeopleCards />
       <Reviews />
+      <WhySeekahost />
       <div id="personal-consultant-section">
-      <PersonalConsultant />
+      <LargeImageSlider />
       </div>
       <FAQs />
       <BacktoTop />

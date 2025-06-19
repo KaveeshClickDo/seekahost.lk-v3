@@ -83,7 +83,7 @@ export default function HostingFeatures() {
                                 </td>
                                 {plans.map((plan, index) => (
                                     <td key={index} className="py-4 px-6 text-center">
-                                        <p className="text-gray-800 font-bold md:text-xl">LKR{plan.monthlyPrice}/mo</p>
+                                        <p className="text-gray-800 font-bold md:text-xl">£{plan.monthlyPrice}/mo</p>
                                         <p className="text-gray-500 text-sm">{plan.specialTextMonth}</p>
                                     </td>
                                 ))}
@@ -95,10 +95,10 @@ export default function HostingFeatures() {
                                 </td>
                                 {plans.map((plan, index) => (
                                     <td key={index} className="py-4 px-6 text-center">
-                                        <Link href="#"
+                                        <Link href={plan.link}
                                             className="py-2 px-4 rounded text-white font-bold transition bg-[#1276DF] hover:bg-blue-700 inline-block"
                                         >
-                                            Get {plan.name}
+                                            {plan.buttonName}
                                         </Link>
                                     </td>
                                 ))}

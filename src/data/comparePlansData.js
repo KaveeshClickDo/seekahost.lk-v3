@@ -1,8 +1,8 @@
 export const plansData = {
     plans: [
-        { name: "Starter", monthlyPrice: 280, specialTextMonth: "30 days of Free Trial"},
-        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at LKR580/mo"},
-        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at LKR780/mo"}
+        { name: "Plus", monthlyPrice: 29, specialTextMonth: "30 days of Free Trial", buttonName: 'Get Plus', link : '#'},
+        { name: "Pro", monthlyPrice: 59, specialTextMonth: "Renews at £60/mo", buttonName: 'Get Pro', link : '#'},
+        { name: "Enterprise", monthlyPrice: 119, specialTextMonth: "Renews at £120/mo", buttonName: 'Talk to Sales', link : '/personalized-hosting'}
     ],
     featureCategories: [
         {
