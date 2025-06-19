@@ -5,6 +5,8 @@ export const homePkgPrices = [
         link : '#',
         monthlyPrice: 29,
         yearlyPrice: 290,
+        discountYear: 0,
+        discountMonth: 10,
         specialTextMonth: '30 days of Free Trial',
         specialTextYear: 'Renews for £300/yr',
         featureSections: [
@@ -44,6 +46,8 @@ export const homePkgPrices = [
         link : '#',
         monthlyPrice: 59,
         yearlyPrice: 590,
+        discountYear: 15,
+        discountMonth: 15,
         specialTextMonth: 'Renews at £60/mo',
         specialTextYear: 'Renews for £600/yr',
         featureSections: [
@@ -85,6 +89,8 @@ export const homePkgPrices = [
         link : '/personalized-hosting',
         monthlyPrice: 119,
         yearlyPrice: 1190,
+        discountYear: 0,
+        discountMonth: 0,
         specialTextMonth: 'Renews at £120/mo',
         specialTextYear: 'Renews for £1200/yr',
         featureSections: [
