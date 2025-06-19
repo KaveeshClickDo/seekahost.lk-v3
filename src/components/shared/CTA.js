@@ -4,7 +4,7 @@ export default function CTA() {
     return (
         <section className="w-full">
             <div className="flex justify-center items-center pb-20">
-                <div className="relative bg-[#1276DF] rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
+                <div className="relative bg-[#0A488A] rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
 
 
                     <div className="text-white md:w-2/3 py-10 md:py-16">
@@ -23,7 +23,7 @@ export default function CTA() {
                                 placeholder="Email Address"
                                 className="flex-grow outline-none text-black"
                             />
-                            <button className="bg-[#1276DF] text-white font-bold px-4 lg:px-6 py-2 rounded-full hover:bg-blue-600 transition">
+                            <button className="bg-[#0A488A] text-white font-bold px-4 lg:px-6 py-2 rounded-full hover:bg-blue-600 transition">
                                 <span className="max-[400px]:hidden">Sign Up Free</span>
                                 <span className="hidden max-[400px]:inline">Sign Up</span>
                             </button>

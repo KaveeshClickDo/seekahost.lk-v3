@@ -4,7 +4,7 @@ import { MdArrowForward } from "react-icons/md";
 export default function GetStarted() {
     return (
         <>
-            <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 md:my-10">
+            <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 md:mb-10">
 
                 <div className="md:w-1/2 px-5 md:mr-15">
                     <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1>

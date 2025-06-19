@@ -37,7 +37,7 @@ export default function Home() {
       <ConsultantImage />
       <Hero />
       <div id="package-prices-section">
-        <PackagePrices/>
+        <PackagePrices />
       </div>
       <Solution />
       <ScreenshotSlider />
@@ -46,12 +46,12 @@ export default function Home() {
       <PeopleCards />
       <Reviews />
       <WhySeekahost />
-      <div id="personal-consultant-section">
       <LargeImageSlider />
-      </div>
       <FAQs />
       <BacktoTop />
-      <CTA />
+      <div id="personal-consultant-section">
+        <CTA />
+      </div>
       <Footer />
     </>
   );
