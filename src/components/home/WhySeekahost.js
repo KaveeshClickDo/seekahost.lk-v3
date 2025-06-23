@@ -67,7 +67,7 @@ export default function WhySeekahost() {
               alt="Get Started Image"
               width={1363}
               height={1430}
-              className="w-1/2 h-1/2 md:w-full md:h-full"
+              className="w-full h-full"
             />
           </div>
         </div>

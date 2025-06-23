@@ -11,13 +11,13 @@ export default function Video() {
   return (
     <section className="py-22 relative overflow-hidden">
       {/* Two-tone background: top 75% blue, bottom 25% white */}
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{
           background: `linear-gradient(to bottom, #0A488B 75%, white 75%)`
         }}
       />
-      
+
       <div className="relative z-10 max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-white md:mb-6">
@@ -82,7 +82,7 @@ export default function Video() {
         <div className="text-center">
           <Link
             href="#"
-            className="inline-block bg-[#0A488B] text-white border border-[#0066CC] px-15 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8"
+            className="inline-block bg-gradient-to-r from-[#0A488B] via-[#083D78] to-[#063265] hover:bg-gradient-to-r hover:from-[#063265] hover:via-[#083D78] hover:to-[#0A488B] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 text-white border border-[#0066CC] px-15 py-2 rounded-full transition-all duration-300 cursor-pointer font-bold md:mt-8"
           >
             Get Started
           </Link>

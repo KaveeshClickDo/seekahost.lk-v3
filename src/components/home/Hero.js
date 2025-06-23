@@ -78,7 +78,7 @@ export default function Hero() {
                             placeholder="Search for a domain..."
                             className="flex-grow outline-none text-black md:px-2"
                         />
-                        <button className="bg-[#0081FF] text-white px-5 md:px-7 py-4 rounded-full hover:bg-blue-600 transition leading-4 font-bold flex items-center gap-2">
+                        <button className="bg-gradient-to-r from-[#0081FF] via-[#0070E0] to-[#005FC7] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 text-white px-5 md:px-7 py-4 rounded-full transition leading-4 font-bold flex items-center gap-2">
                             <IoSearch className="w-5 h-5" />
                             Search
                         </button>
