@@ -19,7 +19,7 @@ export default function Hero() {
 
                 <div className="md:w-1/2 mt-6 md:mt-0 gap-4 grid">
 
-                    <div className="w-full relative">
+                    {/* <div className="w-full relative">
                         <Image
                             src="/images/about/about-hero1.webp"
                             alt="People collaborating around a table"
@@ -52,7 +52,15 @@ export default function Hero() {
                                 priority
                             />
                         </div>
-                    </div>
+                    </div> */}
+                    <Image
+                            src="/images/about/about-hero-image.webp"
+                            alt="About Hero Image"
+                            width={1102}
+                            height={1172}
+                            className="w-full h-auto"
+                            priority
+                        />
                 </div>
             </section>
         </>

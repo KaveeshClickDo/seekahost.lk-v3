@@ -16,7 +16,7 @@ export default function Features() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 relative mt-10 mx-4">
 
-                <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
+                <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="1-Click WP Installer"
@@ -34,7 +34,7 @@ export default function Features() {
                 </div>
 
 
-                <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
+                <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="Website Traffic/Data"
@@ -51,7 +51,7 @@ export default function Features() {
                     </p>
                 </div>
 
-                <div className="md:bg-[#F4F4F4] bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
+                <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="Domain Registration"
@@ -69,7 +69,7 @@ export default function Features() {
                 </div>
 
 
-                <div className="md:bg-[#DEF2FF] bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
+                <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="WP Hosting Plans"
@@ -86,7 +86,7 @@ export default function Features() {
                     </p>
                 </div>
 
-                <div className="bg-[#F4F4F4] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
+                <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="1-Click WP Installer"
@@ -104,7 +104,7 @@ export default function Features() {
                 </div>
 
 
-                <div className="bg-[#DEF2FF] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
+                <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                     <Image
                         src="/images/shared/ddos-protected.svg"
                         alt="Website Traffic/Data"

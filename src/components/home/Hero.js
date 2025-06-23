@@ -152,11 +152,11 @@ export default function Hero() {
 
                 <div className="relative w-full max-w-xl 2xl:max-w-3xl z-3 ml-auto mt-8 lg:mt-0">
                     <Image
-                        src="/images/home/hero.webp"
+                        src="/images/home/home-hero-image.webp"
                         alt="Hero Image"
-                        width={1659}
-                        height={1464}
-                        className="w-full h-auto rounded-lg rounded-tl-[100px]"
+                        width={1642}
+                        height={1224}
+                        className="w-full h-auto"
                         priority
                     />
                 </div>

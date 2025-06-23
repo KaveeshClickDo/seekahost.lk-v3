@@ -60,11 +60,11 @@ export default function Hero() {
 
                 <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto mt-8 lg:mt-0">
                     <Image
-                        src="/images/cheap-web-hosting-with-cpanel/cpanel-hero.webp"
+                        src="/images/cheap-web-hosting-with-cpanel/cheap-web-hosting-with-cPanel-hero-image.webp"
                         alt="Hero Image"
-                        width={3144}
-                        height={2580}
-                        className="w-full rounded-lg shadow-lg rounded-tl-[100px]"
+                        width={1287}
+                        height={1141}
+                        className="w-full"
                         priority
                     />
                 </div>

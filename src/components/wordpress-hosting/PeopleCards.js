@@ -42,7 +42,7 @@ export default function PeopleCards() {
                                             alt={`${person.name} Image`}
                                             width={1840}
                                             height={2792}
-                                            className="w-full h-auto rounded-3xl shadow-2xl shadow-black md:ml-4"
+                                            className="w-full h-auto rounded-3xl shadow-2xl shadow-black/50 md:ml-4"
                                         />
 
                                         <div className="absolute top-7/16 left-6/16 md:left-7/16">
@@ -61,7 +61,7 @@ export default function PeopleCards() {
                                     alt="People Card Image placeholder"
                                     width={406}
                                     height={616}
-                                    className="rounded-3xl w-full h-auto shadow-2xl shadow-black md:ml-4"
+                                    className="rounded-3xl w-full h-auto shadow-2xl shadow-black/50 md:ml-4"
                                 />
                             </div>
                         </div>

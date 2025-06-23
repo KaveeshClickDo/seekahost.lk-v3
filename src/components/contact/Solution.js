@@ -16,7 +16,7 @@ export default function Solution () {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-items-center">
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Security, spam and malware</h3>
@@ -37,7 +37,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Knowledge Base</h3>
@@ -58,7 +58,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#F4F4F4] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">SeekaHost Academy</h3>
@@ -79,7 +79,7 @@ export default function Solution () {
           </div>
 
 
-          <div className="bg-[#DEF2FF] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
+          <div className="bg-[#F4F7FA] rounded-lg shadow hover:shadow-lg transition-shadow max-w-lg md:max-w-xl w-full">
             <div className="flex items-center p-6">
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Tutorials</h3>

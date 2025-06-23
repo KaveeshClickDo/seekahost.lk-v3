@@ -26,11 +26,11 @@ export default function Hero() {
 
                     <div className="w-full relative">
                         <Image
-                            src="/images/contact/contact-hero.webp"
-                            alt="Call centre girl"
-                            width={2900}
-                            height={2312}
-                            className="rounded-3xl w-full h-auto"
+                            src="/images/contact/contact-hero-image.webp"
+                            alt="Contact Hero Image"
+                            width={1178}
+                            height={1118}
+                            className="w-full h-auto"
                             priority
                         />
                     </div>
