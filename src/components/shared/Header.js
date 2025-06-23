@@ -32,6 +32,7 @@ export default function Header() {
 
     const pathname = usePathname();
 
+    const [isScrolled, setIsScrolled] = useState(false);
     const navbarRef = useRef(null);
 
     const closeAllDropdowns = () => {
@@ -57,6 +58,16 @@ export default function Header() {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         };
+    }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            setIsScrolled(scrollTop > 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const SignInDropdown = () => {
@@ -577,15 +588,29 @@ export default function Header() {
     );
 
     return (
-        <nav ref={navbarRef} className="relative z-10 w-full bg-[#0A488A] text-white p-4 lg:p-0">
-            <div className="container mx-auto flex items-center justify-between md:pl-10 lg:py-5">
-                <Link href="/">
-                    <Image src="/images/shared/header-logo-white.webp" alt="SeekaHost" width={133} height={62} priority />
-                </Link>
-                <DesktopMenu />
-                <MobileHamburger />
-            </div>
-            <MobileMenu />
-        </nav>
+        <>
+            <nav
+                ref={navbarRef}
+                className={`fixed top-0 left-0 right-0 z-50 w-full bg-[#0A488A] text-white p-4 lg:p-0 transition-shadow duration-300 ${isScrolled ? 'shadow-lg' : ''
+                    }`}
+            >
+                <div className="container mx-auto flex items-center justify-between md:pl-10 lg:py-5">
+                    <Link href="/">
+                        <Image
+                            src="/images/shared/header-logo-white.webp"
+                            alt="SeekaHost"
+                            width={133}
+                            height={62}
+                            priority
+                        />
+                    </Link>
+                    <DesktopMenu />
+                    <MobileHamburger />
+                </div>
+                <MobileMenu />
+            </nav>
+            {/* Spacer to push content down */}
+            <div className="h-20 xl:h-24"></div>
+        </>
     );
 }
