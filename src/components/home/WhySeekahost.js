@@ -63,10 +63,10 @@ export default function WhySeekahost() {
         <div className="w-full md:w-1/2">
           <div className="flex justify-center md:justify-end">
             <Image
-              src="/images/home/get-started.webp"
-              alt="Get Started Image"
-              width={1363}
-              height={1430}
+              src="/images/home/why-seekahost.webp"
+              alt="Why SeekaHost"
+              width={1176}
+              height={1150}
               className="w-full h-full"
             />
           </div>

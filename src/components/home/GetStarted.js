@@ -34,11 +34,11 @@ export default function GetStarted() {
                 <div className="md:w-1/2 mt-6 md:mt-0">
                     <div className="w-full relative">
                         <Image
-                            src="/images/home/get-started.webp"
-                            alt="Get Started Image"
-                            width={1363}
-                            height={1430}
-                            className="w-full h-auto"
+                            src="/images/home/build-nodejs-in-minutes.webp"
+                            alt="Build NodeJS in minutes"
+                            width={972}
+                            height={1180}
+                            className="mx-auto w-3/4"
                         />
                     </div>
 
