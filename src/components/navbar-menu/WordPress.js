@@ -38,28 +38,33 @@ export default function WordPress() {
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Managed WordPress</p>
-                                <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
+                                <p className="text-sm text-gray-600">Hassle-free, optimized WordPress hosting service</p>
                             </div>
                         </Link>
 
 
                     </div>
 
-                    {/* <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">WORDPRESS ECOMMERCE</h3>
+                    <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">ECOMMERCE HOSTING</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+                            <Image
+                                    src="/images/shared/wooCommerce-hosting.svg"
+                                    alt="WooCommerce Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">WooCommerce Hosting</p>
-                                <p className="text-sm text-gray-600">Affordable hosting solutions</p>
+                                <p className="text-sm text-gray-600">Optimized hosting for your online store</p>
                             </div>
                         </Link>
-                    </div> */}
+
+                    </div>
                 </div>
 
           

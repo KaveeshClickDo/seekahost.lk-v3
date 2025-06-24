@@ -57,7 +57,7 @@ export default function Hero() {
                     <p className="mt-2">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
-                    
+
                     <DomainSearchHomeHero />
 
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
@@ -78,16 +78,32 @@ export default function Hero() {
                     <div className="mt-8 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
                         <div className="rounded-md flex flex-col items-center">
                             <Image
-                                src="/images/home/server-security.svg"
+                                src="/images/home/wordpress-hosting.svg"
                                 alt="Server Security Icon"
                                 width={27}
                                 height={27}
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-lg font-bold text-white">WordPress Hosting</h2>
-                            <p className="text-white mt-1 text-sm xl:text-base">Starting at £1/month</p>
-                            <Link href="/wordpress-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                            <h2 className="text-lg font-bold text-white leading-none">WordPress<br />Hosting</h2>
+                            <p className="text-white mt-2 text-sm xl:text-base">Starting at £1/month</p>
+                            <Link href="/wordpress-hosting" className="text-white font-semibold underline hover:text-gray-100">
+                                More Info
+                            </Link>
+                        </div>
+
+                        <div className="rounded-md flex flex-col items-center">
+                            <Image
+                                src="/images/home/business-web-hosting.svg"
+                                alt="Server Security Icon"
+                                width={27}
+                                height={27}
+                                className="mb-4"
+                                priority
+                            />
+                            <h2 className="text-lg font-bold text-white leading-none">Business<br />Hosting</h2>
+                            <p className="text-white mt-2 text-sm xl:text-base">Starting at £1/month</p>
+                            <Link href="/business-web-hosting" className="text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
                         </div>
@@ -101,25 +117,9 @@ export default function Hero() {
                                 className="mb-4"
                                 priority
                             />
-                            <h2 className="text-lg font-bold text-white">WooCommerce Hosting</h2>
-                            <p className="text-white mt-1 text-sm xl:text-base">Starting at £1/month</p>
-                            <Link href="/woocommerce-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
-                                More Info
-                            </Link>
-                        </div>
-
-                        <div className="rounded-md flex flex-col items-center">
-                            <Image
-                                src="/images/home/server-security.svg"
-                                alt="Server Security Icon"
-                                width={27}
-                                height={27}
-                                className="mb-4"
-                                priority
-                            />
-                            <h2 className="text-lg font-bold text-white">Agency Hosting</h2>
-                            <p className="text-white mt-1 text-sm xl:text-base">Starting at £1/month</p>
-                            <Link href="/agency-hosting" className="mt-1 text-white font-semibold underline hover:text-gray-100">
+                            <h2 className="text-lg font-bold text-white leading-none">Agency<br />Hosting</h2>
+                            <p className="text-white mt-2 text-sm xl:text-base">Starting at £1/month</p>
+                            <Link href="/agency-hosting" className="text-white font-semibold underline hover:text-gray-100">
                                 More Info
                             </Link>
                         </div>

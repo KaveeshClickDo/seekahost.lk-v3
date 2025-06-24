@@ -27,10 +27,10 @@ export default function Reviews() {
                             Over 18,000 companies of all sizes use Advantage to streamline their business marketing
                         </p>
                         <Link
-                            href="#"
+                            href="https://uk.trustpilot.com/review/www.seekahost.co.uk"
                             className="inline-block bg-[#0A488B] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold mt-6 md:mt-8 text-center w-fit"
                         >
-                            Get Started
+                            Read More Stories
                         </Link>
                     </div>
 

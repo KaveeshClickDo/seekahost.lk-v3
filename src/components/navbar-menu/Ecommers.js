@@ -7,7 +7,7 @@ export default function Ecommers() {
             <div className="container mx-auto flex flex-wrap">
      
                 <div className="w-full lg:w-2/3 p-4">
-                    <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">ECOMMERCE HOSTING</h3>
+                    <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">LEARN MARKETING</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
@@ -21,8 +21,56 @@ export default function Ecommers() {
                                 />
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 group-hover:text-blue-500">WooCommerce Hosting</p>
-                                <p className="text-sm text-gray-600">Secure your server or cloud infrastructure</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Google Advertising</p>
+                                <p className="text-sm text-gray-600">Boost visibility with targeted Google ads</p>
+                            </div>
+                        </Link>
+
+                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                            <div className="mr-3 text-blue-500 mt-1">
+                            <Image
+                                    src="/images/shared/wooCommerce-hosting.svg"
+                                    alt="WooCommerce Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Business Listing</p>
+                                <p className="text-sm text-gray-600">Get found easily on online directories</p>
+                            </div>
+                        </Link>
+
+                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                            <div className="mr-3 text-blue-500 mt-1">
+                            <Image
+                                    src="/images/shared/wooCommerce-hosting.svg"
+                                    alt="WooCommerce Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">SEO Consultancy</p>
+                                <p className="text-sm text-gray-600">Expert guidance to improve search rankings</p>
+                            </div>
+                        </Link>
+
+                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                            <div className="mr-3 text-blue-500 mt-1">
+                            <Image
+                                    src="/images/shared/wooCommerce-hosting.svg"
+                                    alt="WooCommerce Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
+                            </div>
+                            <div>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Marketing Courses</p>
+                                <p className="text-sm text-gray-600">Learn proven strategies to grow online</p>
                             </div>
                         </Link>
 
@@ -47,7 +95,7 @@ export default function Ecommers() {
 
             
                 <div className="w-full lg:w-1/3 rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
-                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">E-Commers Platforms</h3>
+                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">Marketing Platforms</h3>
                     <p className="text-gray-600 mb-4">Find the right way to build your website.</p>
 
                     <ul className="space-y-2 text-gray-700">

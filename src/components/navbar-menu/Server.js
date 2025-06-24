@@ -24,7 +24,7 @@ export default function Servers() {
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Dedicated Servers</p>
-                                <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
+                                <p className="text-sm text-gray-600">Full control with powerful, private hosting</p>
                             </div>
                         </Link>
 
@@ -40,7 +40,7 @@ export default function Servers() {
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Cloud Servers</p>
-                                <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
+                                <p className="text-sm text-gray-600">Scalable, reliable hosting in the cloud</p>
                             </div>
                         </Link>
 
@@ -80,7 +80,7 @@ export default function Servers() {
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">n8n VPS hosting</p>
-                                <p className="text-sm text-gray-600">automate any worflow</p>
+                                <p className="text-sm text-gray-600">Automate workflows on a dedicated VPS</p>
                             </div>
                         </Link>
                     </div>
