@@ -2,23 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { domainPrices } from '@/data/homeHeroExtnPrices';
 import TestimonialSlider from './Testimonials';
-import { IoSearch } from 'react-icons/io5';
+import DomainSearchHomeHero from './DomainSearchHomeHero';
 
 export default function Hero() {
     return (
         <section className="relative lg:h-[800px] w-full flex items-center overflow-hidden pb-20 lg:pb-40">
-
-
-
-            {/* <div className="absolute inset-0 w-full h-[47%] min-[352px]:h-[46%] min-[389px]:h-[42%] min-[500px]:h-[39%] md:h-[38%] lg:h-[65%] bg-gradient-to-r from-[#09407A] to-[#136CC9] z-2"></div>
-            <div className="absolute inset-0 w-full h-full bg-[#0A437F] z-1"></div> */}
-            {/* <Image
-                src="/images/home/home-hero-bg.svg"
-                alt="Background Image"
-                fill
-                className="object-cover z-0 hidden lg:block"
-                priority
-            /> */}
             <svg
                 className="absolute inset-0 w-full h-full lg:hidden"
                 viewBox="0 0 100 100"
@@ -60,29 +48,17 @@ export default function Hero() {
                 />
             </div>
 
-
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
                 <div className="text-white w-full max-w-lg z-3">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        World&rsquo;s Best Multiple IP PBN<br /> Hosting Manager
+                        Create Your Own WordPress<br /> Website & Get Online!
                     </h1>
 
                     <p className="mt-2">
                         All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
                     </p>
-
-                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full">
-                        <input
-                            id="searchDomain"
-                            type="text"
-                            placeholder="Search for a domain..."
-                            className="flex-grow outline-none text-black md:px-2"
-                        />
-                        <button className="bg-gradient-to-r from-[#0081FF] via-[#0070E0] to-[#005FC7] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 text-white px-5 md:px-7 py-4 rounded-full transition leading-4 font-bold flex items-center gap-2">
-                            <IoSearch className="w-5 h-5" />
-                            Search
-                        </button>
-                    </div>
+                    
+                    <DomainSearchHomeHero />
 
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
                         {domainPrices.map(({ extension, price }) => (

@@ -14,9 +14,13 @@ export default function Servers() {
 
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/dedicated-servers.svg"
+                                    alt="Dedicated Servers"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Dedicated Servers</p>
@@ -26,9 +30,13 @@ export default function Servers() {
 
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/cloud-servers.svg"
+                                    alt="Cloud Servers"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Cloud Servers</p>
@@ -46,9 +54,13 @@ export default function Servers() {
 
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/vps-hostings.svg"
+                                    alt="VPS Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">VPS Hosting</p>
@@ -58,9 +70,13 @@ export default function Servers() {
 
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/vps-hostings.svg"
+                                    alt="n8n VPS hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div>
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">n8n VPS hosting</p>

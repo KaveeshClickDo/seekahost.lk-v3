@@ -17,7 +17,7 @@ export default function Hero() {
 
                 <div className="text-white w-full max-w-2xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Business Web Hosting
+                        Small Business Hosting
                     </h1>
 
                     <p className="mt-6 font-medium">
@@ -60,10 +60,10 @@ export default function Hero() {
 
                 <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto mt-8 lg:mt-0">
                     <Image
-                        src="/images/business-web-hosting/business-web-hosting-hero-image.webp"
+                        src="/images/small-business-hosting/small-business-hosting-hero-image.webp"
                         alt="Hero Image"
-                        width={1338}
-                        height={1142}
+                        width={1292}
+                        height={1294}
                         className="w-full"
                         priority
                     />
