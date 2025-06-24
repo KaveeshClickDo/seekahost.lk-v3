@@ -10,7 +10,7 @@ export default function Ecommers() {
                     <h3 className="font-bold text-gray-700 mb-4 uppercase text-sm">LEARN MARKETING</h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                             <Image
                                     src="/images/shared/wooCommerce-hosting.svg"
@@ -26,7 +26,7 @@ export default function Ecommers() {
                             </div>
                         </Link>
 
-                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                             <Image
                                     src="/images/shared/wooCommerce-hosting.svg"
@@ -42,7 +42,7 @@ export default function Ecommers() {
                             </div>
                         </Link>
 
-                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                             <Image
                                     src="/images/shared/wooCommerce-hosting.svg"
@@ -58,7 +58,7 @@ export default function Ecommers() {
                             </div>
                         </Link>
 
-                        <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                             <Image
                                     src="/images/shared/wooCommerce-hosting.svg"
