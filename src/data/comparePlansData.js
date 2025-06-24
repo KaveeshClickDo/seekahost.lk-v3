@@ -146,8 +146,8 @@ export const plansData = {
 export const wordPressPlansData = {
     plans: [
         { name: "Starter", monthlyPrice: 280, specialTextMonth: "30 days of Free Trial"},
-        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at LKR580/mo"},
-        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at LKR780/mo"}
+        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at £580/mo"},
+        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at £780/mo"}
     ],
     featureCategories: [
         {
@@ -291,8 +291,8 @@ export const wordPressPlansData = {
 export const woocommercePlansData = {
     plans: [
         { name: "Starter", monthlyPrice: 280, specialTextMonth: "30 days of Free Trial"},
-        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at LKR580/mo"},
-        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at LKR780/mo"}
+        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at £580/mo"},
+        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at £780/mo"}
     ],
     featureCategories: [
         {
@@ -436,8 +436,8 @@ export const woocommercePlansData = {
 export const managedWPPlansData = {
     plans: [
         { name: "Starter", monthlyPrice: 280, specialTextMonth: "30 days of Free Trial"},
-        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at LKR580/mo"},
-        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at LKR780/mo"}
+        { name: "Turbo", monthlyPrice: 500, specialTextMonth: "Renews at £580/mo"},
+        { name: "Supersonic", monthlyPrice: 700, specialTextMonth: "Renews at £780/mo"}
     ],
     featureCategories: [
         {

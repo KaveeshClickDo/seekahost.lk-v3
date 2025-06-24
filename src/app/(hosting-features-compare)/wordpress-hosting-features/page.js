@@ -83,7 +83,7 @@ export default function HostingFeatures() {
                                 </td>
                                 {plans.map((plan, index) => (
                                     <td key={index} className="py-4 px-6 text-center">
-                                        <p className="text-gray-800 font-bold md:text-xl">LKR{plan.monthlyPrice}/mo</p>
+                                        <p className="text-gray-800 font-bold md:text-xl">£{plan.monthlyPrice}/mo</p>
                                         <p className="text-gray-500 text-sm">{plan.specialTextMonth}</p>
                                     </td>
                                 ))}

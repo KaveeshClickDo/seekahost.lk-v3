@@ -138,7 +138,7 @@ export const managedWPPkgPrices = [
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for LKR2800/yr',
+        specialTextYear: 'Renews for £2800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -176,8 +176,8 @@ export const managedWPPkgPrices = [
         link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
-        specialTextMonth: 'Renews at LKR580/mo',
-        specialTextYear: 'Renews for LKR5800/yr',
+        specialTextMonth: 'Renews at £580/mo',
+        specialTextYear: 'Renews for £5800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -217,8 +217,8 @@ export const managedWPPkgPrices = [
         link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
-        specialTextMonth: 'Renews at LKR780/mo',
-        specialTextYear: 'Renews for LKR7800/yr',
+        specialTextMonth: 'Renews at £780/mo',
+        specialTextYear: 'Renews for £7800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -264,7 +264,7 @@ export const woocommercePkgPrices = [
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for LKR2800/yr',
+        specialTextYear: 'Renews for £2800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -302,8 +302,8 @@ export const woocommercePkgPrices = [
         link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
-        specialTextMonth: 'Renews at LKR580/mo',
-        specialTextYear: 'Renews for LKR5800/yr',
+        specialTextMonth: 'Renews at £580/mo',
+        specialTextYear: 'Renews for £5800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -343,8 +343,8 @@ export const woocommercePkgPrices = [
         link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
-        specialTextMonth: 'Renews at LKR780/mo',
-        specialTextYear: 'Renews for LKR7800/yr',
+        specialTextMonth: 'Renews at £780/mo',
+        specialTextYear: 'Renews for £7800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -390,7 +390,7 @@ export const wordPressPkgPrices = [
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for LKR2800/yr',
+        specialTextYear: 'Renews for £2800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -428,8 +428,8 @@ export const wordPressPkgPrices = [
         link : '#',
         monthlyPrice: 500,
         yearlyPrice: 5000,
-        specialTextMonth: 'Renews at LKR580/mo',
-        specialTextYear: 'Renews for LKR5800/yr',
+        specialTextMonth: 'Renews at £580/mo',
+        specialTextYear: 'Renews for £5800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -469,8 +469,8 @@ export const wordPressPkgPrices = [
         link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
-        specialTextMonth: 'Renews at LKR780/mo',
-        specialTextYear: 'Renews for LKR7800/yr',
+        specialTextMonth: 'Renews at £780/mo',
+        specialTextYear: 'Renews for £7800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -516,7 +516,7 @@ export const agencyPkgPrices = [
         monthlyPrice: 280,
         yearlyPrice: 2000,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for LKR2800/yr',
+        specialTextYear: 'Renews for £2800/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -569,8 +569,8 @@ export const agencyPkgPrices = [
         link : '#',
         monthlyPrice: 700,
         yearlyPrice: 7000,
-        specialTextMonth: 'Renews at LKR780/mo',
-        specialTextYear: 'Renews for LKR7800/yr',
+        specialTextMonth: 'Renews at £780/mo',
+        specialTextYear: 'Renews for £7800/yr',
         featureSections: [
             {
                 title: 'General Features',

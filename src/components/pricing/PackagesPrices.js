@@ -299,7 +299,7 @@ export default function PackagesPrices() {
                                         <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
                                         <div className="flex items-baseline justify-start mt-4">
                                             <span className="text-5xl font-bold mr-1 leading-14 group-hover:text-white transition-colors duration-400">
-                                                LKR{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
+                                                £{isMonthly ? plan.monthlyPrice.toFixed(0) : plan.yearlyPrice.toFixed(0)}
                                             </span>
                                             <span className="text-gray-500 group-hover:text-white md:text-xl font-medium transition-colors duration-400">
                                                 / {isMonthly ? 'mo' : 'yr'}

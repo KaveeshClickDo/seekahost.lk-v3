@@ -15,7 +15,7 @@ export default function Hero() {
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
 
 
-                <div className="text-white w-full max-w-2xl z-2 md:mb-10">
+                <div className="text-white w-full max-w-lg z-2 md:mb-10">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         Cheap Domain Name Registration Pricing
                     </h1>
@@ -39,25 +39,25 @@ export default function Hero() {
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.com</span>
-                            <span className="text-white">Rs1976</span>
+                            <span className="text-white">£1976</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.co.uk</span>
-                            <span className="text-white">Rs1511</span>
+                            <span className="text-white">£1511</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.net</span>
-                            <span className="text-white">Rs2441</span>
+                            <span className="text-white">£2441</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.org</span>
-                            <span className="text-white">Rs2209</span>
+                            <span className="text-white">£2209</span>
                         </div>
                     </div>
 
                 </div>
 
-                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto mt-8 lg:mt-0">
+                <div className="relative w-full max-w-xl 2xl:max-w-3xl z-1 ml-auto mt-8 lg:mt-0">
                     <Image
                         src="/images/register-domain/register-domain-hero-image.webp"
                         alt="Hero Image"
