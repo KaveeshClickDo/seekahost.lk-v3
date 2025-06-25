@@ -23,7 +23,7 @@ export default function OrderNow2() {
                         Ideal For High Performing Business Websites
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                        Your business website is your online gateway to big business success in Sri Lanka.
+                        Your business website is your online gateway to big business success in UK.
                     </p>
                     <p className="text-[#1D216A] mb-4">
                         You start as a small business with a limited budget, however, to grow big and become a successful large scale business, you have to think big from the start. And SeekaHost gives everything for small or big business thinkers to grow successfully.

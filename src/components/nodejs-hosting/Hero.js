@@ -17,7 +17,7 @@ export default function Hero() {
 
                 <div className="text-white w-full max-w-2xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Node.js Hosting Sri Lanka
+                        Node.js Hosting UK
                     </h1>
 
                     <p className="mt-6 font-medium">

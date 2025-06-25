@@ -11,7 +11,7 @@ import Header from "@/components/shared/Header"
 
 export const metadata = {
     title: "Contact Us",
-    description: "Contact Now Sri Lanka Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support Lanka Host!",
+    description: "Contact Now UK Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support UK Host!",
 }
 
 // export async function generateMetadata({ params }){

@@ -16,7 +16,7 @@ import PackagesPrices from "@/components/managed-wordpress/PackagePrice";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
-    title: "Managed WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
+    title: "Managed WordPress Hosting UK: Best WordPress Web Hosting"
 }
 
 export default function ManagedWordPress() {

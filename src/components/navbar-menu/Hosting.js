@@ -85,7 +85,7 @@ export default function Hosting() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/london-server-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <Image
                                     src="/images/shared/dedicated-servers.svg"
@@ -108,7 +108,7 @@ export default function Hosting() {
                                 </svg>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Migration Hosting</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Hosting Migration</p>
                                 <p className="text-sm text-gray-600">Seamless transfer of your website to new servers</p>
                             </div>
                         </Link>

@@ -16,7 +16,7 @@ import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
-    title: "Business Web Hosting Sri Lanka: Best Business Web Hosting"
+    title: "Business Web Hosting UK: Best Business Web Hosting"
 }
 
 

@@ -19,7 +19,7 @@ export default function OrderNow1() {
 
                 <div className="md:w-1/2 mt-6 md:mt-0 px-5">
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] md-4 md:mb-8">
-                        #1 Sri Lankans Business Web Hosting Choice
+                        #1 UK Business Web Hosting Choice
                     </h2>
                     <p className="text-[#1D216A] mb-4">
                         Your business website is your gateway to your customers and eventual success of your business. SeekaHost Business Web Hosting packages are for you to build a thriving brand online.

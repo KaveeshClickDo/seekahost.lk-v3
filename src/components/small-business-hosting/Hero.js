@@ -21,7 +21,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-6 font-medium">
-                        High performance, secure, super-fast business website hosting services in Sri Lanka for Sri Lankan business owners with 24/7 support. Ideal for startups and big business owners that need powerful & reliable Lanka host.
+                        High performance, secure, super-fast business website hosting services in UK for UK business owners with 24/7 support. Ideal for startups and big business owners that need powerful & reliable UK host.
                     </p>
 
                     <ul className="space-y-5 mt-4">

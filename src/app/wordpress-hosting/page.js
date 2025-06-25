@@ -16,7 +16,7 @@ import PackagesPrices from "@/components/wordpress-hosting/PackagePrice";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
-    title: "WordPress Hosting Sri Lanka: Best WordPress Web Hosting"
+    title: "WordPress Hosting UK: Best WordPress Web Hosting"
 }
 
 export default function WordpressHosting() {

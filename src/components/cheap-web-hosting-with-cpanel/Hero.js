@@ -21,7 +21,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-6 font-medium">
-                        Get the cheapest cPanel hosting services in Sri Lanka with all the support you need to create websites and blogs. Everything you need to get online with simple clicks.
+                        Get the cheapest cPanel hosting services in UK with all the support you need to create websites and blogs. Everything you need to get online with simple clicks.
                     </p>
 
                     <ul className="space-y-5 mt-4">

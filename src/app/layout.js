@@ -12,10 +12,10 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
   // metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://dev.seekahost.lk'),
   title: {
-    default: 'Web Hosting Sri Lanka: Best Website Hosting Services | SeekaHost',
-    template: '%s | SeekaHost Sri Lanka'
+    default: 'Web Hosting UK: Best Website Hosting Services | SeekaHost',
+    template: '%s | SeekaHost UK'
   },
-  description: 'Sri Lanka Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support Lanka Host!',
+  description: 'UK Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support UK Host!',
 };
 
 export default function RootLayout({ children }) {

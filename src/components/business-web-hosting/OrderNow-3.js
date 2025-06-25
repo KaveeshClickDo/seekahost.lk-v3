@@ -10,10 +10,10 @@ export default function OrderNow3() {
                         Reliable Business Host
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                        Your business website is your online gateway to big business success in Sri Lanka. You start as a small business with a limited budget, however, to grow big and become a successful large scale business, you have to think big from the start. And SeekaHost gives everything for small or big business thinkers to grow successfully.
+                        Your business website is your online gateway to big business success in UK. You start as a small business with a limited budget, however, to grow big and become a successful large scale business, you have to think big from the start. And SeekaHost gives everything for small or big business thinkers to grow successfully.
                     </p>
                     <p className="text-[#1D216A] mb-4">
-                        We have several hosting options that will suit your business website hosting requirements and you can see on our listed packages and pick. With that being said, if you are a Sri Lanka based business and that&apos;s planning to thrive in Ceylon Island and cater for the internal markets, you can ask about hosting international server locations. We are here to support your business to grow online with the best hosting services.
+                        We have several hosting options that will suit your business website hosting requirements and you can see on our listed packages and pick. With that being said, if you are a UK based business and that&apos;s planning to thrive in Ceylon Island and cater for the internal markets, you can ask about hosting international server locations. We are here to support your business to grow online with the best hosting services.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now

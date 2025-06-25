@@ -58,7 +58,7 @@ export default function HostingConsultationForm() {
             href="#"
             className="text-blue-500 hover:underline"
           >
-            https://www.seekahost.lk/privacy-policy
+            https://www.seekahost.co.uk/privacy-policy
           </a>
           . <br />Any consent given can be withdrawn anytime.
         </p>

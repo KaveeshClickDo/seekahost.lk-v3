@@ -1,7 +1,7 @@
 import Solution from "@/components/shared/Solution";
 import Video from "@/components/shared/Video";
 import Hero from "@/components/domain-pricing/Hero";
-import OrderNow from "@/components/register-domain/OrderNow";
+import OrderNow from "@/components/domain-pricing/OrderNow";
 import PackagesPrices from "@/components/home/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/shared/FAQ";
@@ -14,7 +14,7 @@ import Header from "@/components/shared/Header";
 import TLDPriceTable from "@/components/domain-pricing/TLDPriceTable";
 
 export const metadata = {
-    title: "Register Domain"
+    title: "Domain Pricing : Best Hosting Prices in UK"
 }
 
 export default function registerDomain() {
@@ -28,8 +28,8 @@ export default function registerDomain() {
             <Header />
             <Hero />
             <TLDPriceTable />
-            <OrderNow />
             <Solution />
+            <OrderNow />
             <Reviews />
             <FAQs />
             <BacktoTop />

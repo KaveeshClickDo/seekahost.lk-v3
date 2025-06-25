@@ -37,8 +37,8 @@ const TLDPriceTable = () => {
       <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-blue-100">
         {/* Header */}
         <div className="bg-[#0A488A] px-6 py-4">
-          <h2 className="text-2xl font-bold text-white">Domain Pricing</h2>
-          <p className="text-blue-100 mt-1">Choose the perfect domain for your project</p>
+          <h2 className="text-2xl font-bold text-white">Find out the price of your domain</h2>
+          <p className="text-blue-100 mt-1">Use our domain list to choose the perfect domain for your project</p>
         </div>
 
         {/* Table */}

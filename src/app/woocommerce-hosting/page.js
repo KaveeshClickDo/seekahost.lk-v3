@@ -16,7 +16,7 @@ import PackagesPrices from "@/components/woocommerce-hosting/PackagePrice";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
-    title: "WooCommerce Hosting Sri Lanka: Best WordPress Web Hosting"
+    title: "WooCommerce Hosting UK: Best WordPress Web Hosting"
 }
 
 export default function WooCommerceHosting() {

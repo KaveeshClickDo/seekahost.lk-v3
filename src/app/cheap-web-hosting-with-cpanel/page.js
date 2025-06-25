@@ -16,7 +16,7 @@ import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
-    title: "Cheap Web Hosting With cPanel - Sri lanka's Best Host"
+    title: "Cheap Web Hosting With cPanel - UK's Best Host"
 }
 
 

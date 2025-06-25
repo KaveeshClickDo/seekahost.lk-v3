@@ -3,11 +3,11 @@ export const siteSchema = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.seekahost.lk/#breadcrumblist",
+      "@id": "https://www.seekahost.co.uk/#breadcrumblist",
       "itemListElement": [
         {
           "@type": "ListItem",
-          "@id": "https://www.seekahost.lk/#listItem",
+          "@id": "https://www.seekahost.co.uk/#listItem",
           "position": 1,
           "name": "Home"
         }
@@ -15,21 +15,21 @@ export const siteSchema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://www.seekahost.lk/#organization",
+      "@id": "https://www.seekahost.co.uk/#organization",
       "name": "SeekaHost Ltd",
       "description": "Web Hosting Services",
-      "url": "https://www.seekahost.lk/",
+      "url": "https://www.seekahost.co.uk/",
       "telephone": "+94774745512",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.seekahost.com/wp-content/uploads/2019/09/SeekaHost.jpg",
-        "@id": "https://www.seekahost.lk/#organizationLogo",
+        "@id": "https://www.seekahost.co.uk/#organizationLogo",
         "width": 768,
         "height": 319,
         "caption": "SeekaHost"
       },
       "image": {
-        "@id": "https://www.seekahost.lk/#organizationLogo"
+        "@id": "https://www.seekahost.co.uk/#organizationLogo"
       },
       "sameAs": [
         "https://www.instagram.com/seekahost/",
@@ -39,38 +39,38 @@ export const siteSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://www.seekahost.lk/#webpage",
-      "url": "https://www.seekahost.lk/",
-      "name": "Web Hosting Sri Lanka: Best Website Hosting Services | SeekaHost",
-      "description": "Sri Lanka Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support Lanka Host!",
+      "@id": "https://www.seekahost.co.uk/#webpage",
+      "url": "https://www.seekahost.co.uk/",
+      "name": "Web Hosting UK: Best Website Hosting Services | SeekaHost",
+      "description": "UK Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support UK Host!",
       "inLanguage": "en-US",
-      "isPartOf": { "@id": "https://www.seekahost.lk/#website" },
-      "breadcrumb": { "@id": "https://www.seekahost.lk/#breadcrumblist" },
+      "isPartOf": { "@id": "https://www.seekahost.co.uk/#website" },
+      "breadcrumb": { "@id": "https://www.seekahost.co.uk/#breadcrumblist" },
       "image": {
         "@type": "ImageObject",
         "url": "https://www.seekahost.com/wp-content/uploads/2019/09/SeekaHost.jpg",
-        "@id": "https://www.seekahost.lk/#mainImage",
+        "@id": "https://www.seekahost.co.uk/#mainImage",
         "width": 768,
         "height": 319,
         "caption": "SeekaHost"
       },
-      "primaryImageOfPage": { "@id": "https://www.seekahost.lk/#mainImage" },
+      "primaryImageOfPage": { "@id": "https://www.seekahost.co.uk/#mainImage" },
       "datePublished": "2019-06-06T10:18:26+01:00",
       "dateModified": "2024-12-23T17:37:42+00:00"
     },
     {
       "@type": "WebSite",
-      "@id": "https://www.seekahost.lk/#website",
-      "url": "https://www.seekahost.lk/",
+      "@id": "https://www.seekahost.co.uk/#website",
+      "url": "https://www.seekahost.co.uk/",
       "name": "SeekaHost™",
       "description": "Web Hosting Services",
       "inLanguage": "en-US",
-      "publisher": { "@id": "https://www.seekahost.lk/#organization" },
+      "publisher": { "@id": "https://www.seekahost.co.uk/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://www.seekahost.lk/?s={search_term_string}"
+          "urlTemplate": "https://www.seekahost.co.uk/?s={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }

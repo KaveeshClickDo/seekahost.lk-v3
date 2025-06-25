@@ -1,74 +1,49 @@
-import Image from 'next/image';
+import DomainSearchHomeHero from "../home/DomainSearchHomeHero";
 
 export default function Hero() {
     return (
-        <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
-            <div className="absolute inset-0 w-full h-full bg-[#0A488A] z-1"></div>
-            {/* <Image
-                src="/images/home/home-hero-bg.svg"
-                alt="Background Image"
-                fill
-                className="object-cover z-0 hidden lg:block"
-                priority
-            /> */}
-
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
-
-
-                <div className="text-white w-full max-w-lg z-2 md:mb-10">
-                    <h1 className="text-2xl md:text-4xl font-bold">
+        <section className="relative min-h-[600px] w-full flex items-center bg-[#0A488A] overflow-hidden">
+            <div className="container mx-auto px-6 xl:px-20 py-16">
+                {/* Centered Content */}
+                <div className="text-center text-white max-w-4xl mx-auto">
+                    {/* Main Heading */}
+                    <h1 className="text-2xl md:text-4xl font-bold mb-6">
                         Cheap Domain Name Registration Pricing
                     </h1>
 
-                    <p className="mt-6">
-                        A list of domain names price with all TLDs across the globe including the top-selling domain extensions at the affordable price. Seek, Save, and Serve!
+                    {/* Subtitle */}
+                    <p className="mt-2">
+                        All-In-One Click WordPress Blog hosting control panel to secured host private blog networks on unique multiple IP addresses.
                     </p>
 
-                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full max-w-lg">
-                        <input
-                            id="searchDomain"
-                            type="text"
-                            placeholder="Search for a domain..."
-                            className="flex-grow outline-none text-black px-2"
-                        />
-                        <button className="bg-[#0081FF] text-white font-bold leading-4 px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition">
-                            Search
-                        </button>
+                    {/* Search Bar */}
+                    <div className="max-w-lg mx-auto my-10">
+                        <DomainSearchHomeHero />
                     </div>
 
-                    <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.com</span>
-                            <span className="text-white">£1976</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.co.uk</span>
-                            <span className="text-white">£1511</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.net</span>
-                            <span className="text-white">£2441</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.org</span>
-                            <span className="text-white">£2209</span>
-                        </div>
+                    {/* Domain Extension Cards */}
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
+                        {[
+                            { extension: '.com', price: '£7.34' },    // 9.99 USD × 0.7344
+                            { extension: '.net', price: '£6.60' },    // 8.99 USD × 0.7344
+                            { extension: '.org', price: '£5.86' },    // 7.99 USD × 0.7344
+                            { extension: '.co.uk', price: '£4.85' },  // 6.99 USD × 0.7344
+                            { extension: '.io', price: '£22.01' },    // 29.99 USD × 0.7344
+                        ].map((domain, index) => (
+                            <div
+                                key={index}
+                                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center hover:bg-white/20 transition-all duration-200 border border-white/20"
+                            >
+                                <div className="text-2xl font-bold mb-2">
+                                    {domain.extension}
+                                </div>
+                                <div className="text-xl font-semibold text-blue-200">
+                                    {domain.price}
+                                </div>
+                            </div>
+                        ))}
                     </div>
-
                 </div>
-
-                <div className="relative w-full max-w-xl 2xl:max-w-3xl z-1 ml-auto mt-8 lg:mt-0">
-                    <Image
-                        src="/images/register-domain/register-domain-hero-image.webp"
-                        alt="Hero Image"
-                        width={1254}
-                        height={1038}
-                        className="w-full"
-                        priority
-                    />
-                </div>
-
-
             </div>
         </section>
     );

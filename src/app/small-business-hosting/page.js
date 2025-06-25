@@ -14,7 +14,7 @@ import Solution from "@/components/shared/Solution";
 import CTA from "@/components/shared/CTA";
 
 export const metadata = {
-    title: "Small Business Web Hosting Sri Lanka: Best Business Web Hosting"
+    title: "Small Business Web Hosting UK: Best Business Web Hosting"
 }
 
 

@@ -14,7 +14,7 @@ import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
-    title: "NodeJS Hosting Sri Lanka: Best NodeJs Hosting"
+    title: "NodeJS Hosting UK: Best NodeJs Hosting"
 }
 
 

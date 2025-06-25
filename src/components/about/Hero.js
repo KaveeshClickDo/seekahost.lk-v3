@@ -7,7 +7,7 @@ export default function Hero() {
 
                 <div className="md:w-1/2 px-5 md:mr-15">
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-6">
-                        Sri Lanka&rsquo;s Best Web Host <br /> For Entrepreneurs & Business Owners
+                        UK&rsquo;s Best Web Host <br /> For Entrepreneurs & Business Owners
                     </h2>
                     <p className="text-[#1D216A] mb-7">
                         Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.

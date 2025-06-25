@@ -15,10 +15,10 @@ export default function WhatWeOffer() {
 
                 <div className="md:w-1/2 mb-8 md:mb-0 md:px-5 text-white">
                     <h2 className="text-2xl  md:text-4xl font-bold text-white mb-6">
-                        What we offer for <br /> <span className="font-bold"> Sri Lankans</span>
+                        What we offer for <br /> <span className="font-bold"> UK</span>
                     </h2>
                     <p className="mb-4">
-                        Whether you are a start-up company in Sri Lanka or one with an established business presence in the Sri Lankan market, your website is the first point of reference for your customers.
+                        Whether you are a start-up company in UK or one with an established business presence in the UK market, your website is the first point of reference for your customers.
                         As millions of people use search engines to find your services or products, the web is the first place they will encounter your enterprise.
                     </p>
                     <p className="mb-4">
