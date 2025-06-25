@@ -12,7 +12,7 @@ export default function Servers() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/dedicated-servers" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <Image
                                     src="/images/shared/dedicated-servers.svg"
@@ -28,7 +28,7 @@ export default function Servers() {
                             </div>
                         </Link>
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/cloud-servers" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <Image
                                     src="/images/shared/cloud-servers.svg"
@@ -52,7 +52,7 @@ export default function Servers() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/vps-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <Image
                                     src="/images/shared/vps-hostings.svg"
@@ -68,7 +68,7 @@ export default function Servers() {
                             </div>
                         </Link>
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/n8n-vps-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1">
                                 <Image
                                     src="/images/shared/vps-hostings.svg"
