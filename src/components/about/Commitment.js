@@ -1,6 +1,6 @@
 export default function Commitment() {
     return (
-        <section className="bg-[#0A488A] py-16 px-4 md:my-10">
+        <section className="bg-[#0A488A] py-16 px-4 my-10">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-white text-2xl md:text-4xl font-bold text-center mb-12">
                     Our Commitment to Your Digital Success

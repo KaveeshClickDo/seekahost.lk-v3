@@ -57,7 +57,7 @@ export default function Hero() {
 
                 </div>
 
-                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto mt-8 lg:mt-0">
+                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto my-8 lg:my-0">
                     <Image
                         src="/images/domain-transfer/domain-transfer-hero-image.webp"
                         alt="Hero Image"
