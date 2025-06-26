@@ -74,10 +74,10 @@ export default function Hero() {
 
                 <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto mt-8 lg:mt-0">
                     <Image
-                        src="/images/wordpress-hosting/wordpress-hosting-hero-image.webp"
+                        src="/images/cloud-servers/cloud-servers-hero-image.webp"
                         alt="Hero Image"
-                        width={1518}
-                        height={900}
+                        width={1186}
+                        height={1136}
                         className="w-full"
                         priority
                     />

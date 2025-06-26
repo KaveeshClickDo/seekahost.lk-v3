@@ -1,0 +1,96 @@
+import Image from 'next/image';
+
+const PopularDomains = () => {
+  const domains = [
+    {
+      extension: '.com',
+      logo: '/images/register-domain/com.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.co.uk',
+      logo: '/images/register-domain/couk.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.uk',
+      logo: '/images/register-domain/uk.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.org',
+      logo: '/images/register-domain/org.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.store',
+      logo: '/images/register-domain/store.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.blog',
+      logo: '/images/register-domain/blog.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.online',
+      logo: '/images/register-domain/online.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    },
+    {
+      extension: '.org.uk',
+      logo: '/images/register-domain/orguk.svg',
+      description: 'Round-the-clock technical support from UK hosting specialists.',
+      price: '£4.99'
+    }
+  ];
+
+  return (
+    <div className="max-w-6xl mx-auto p-6 mb-10">
+      <h1 className="text-4xl font-bold text-center my-8">
+        Finding a Popular Domain
+      </h1>
+      
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+        {domains.map((domain, index) => (
+          <div
+            key={index}
+            className="bg-[#2072CC] rounded-t-4xl rounded-b-lg p-3 text-white text-center shadow-lg"
+          >
+            <div className="flex justify-center mb-4">
+              <div className="w-full h-15 bg-white rounded-full flex items-center justify-center px-4">
+                <Image
+                  src={domain.logo}
+                  alt={`${domain.extension} logo`}
+                  width={90}
+                  height={20}
+                  className="object-contain"
+                />
+              </div>
+            </div>            
+            <p className="text-sm text-blue-100 mb-4 leading-relaxed">
+              {domain.description}
+            </p>
+            
+            <div className="text-4xl font-bold mb-8">
+              {domain.price}
+            </div>
+            
+            <button className="w-full bg-[#2072CC] border rounded-xl hover:bg-blue-500 text-white font-medium py-2 px-4 rounded transition-colors">
+              Get It Now
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default PopularDomains;

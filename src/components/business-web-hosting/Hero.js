@@ -15,7 +15,7 @@ export default function Hero() {
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
 
 
-                <div className="text-white w-full max-w-2xl z-2">
+                <div className="text-white w-full max-w-xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         Business Web Hosting
                     </h1>

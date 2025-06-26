@@ -11,6 +11,8 @@ import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
 import CTA from "@/components/shared/CTA";
 import Header from "@/components/shared/Header";
+import PeopleCards from "@/components/home/PeopleCards";
+import PopularDomains from "@/components/register-domain/PopularDomains";
 
 export const metadata = {
     title: "Register Domain"
@@ -26,10 +28,11 @@ export default function registerDomain() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <OrderNow />
-            <Solution />
+            <PopularDomains />
             <Video />
-            <PackagesPrices />
+            <OrderNow />
+            <Solution />  
+            <PeopleCards />          
             <Reviews />
             <FAQs />
             <BacktoTop />

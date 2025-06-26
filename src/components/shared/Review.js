@@ -24,7 +24,7 @@ export default function Reviews() {
                             Words of Trust
                         </p>
                         <p className="mt-6 max-w-md text-gray-700">
-                            Over 18,000 companies of all sizes use Advantage to streamline their business marketing
+                            We’re proud to serve customers who value quality and support. Read their stories and discover what makes us different.
                         </p>
                         <Link
                             href="https://uk.trustpilot.com/review/www.seekahost.co.uk"

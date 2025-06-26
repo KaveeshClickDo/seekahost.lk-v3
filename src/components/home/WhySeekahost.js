@@ -5,66 +5,68 @@ export default function WhySeekahost() {
     <section className="py-16 bg-white md:my-10">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-18 justify-center">
         <div className="w-full md:w-1/2">
-          <h2 className="text-2xl md:text-4xl font-bold mb-8">
-            Why SeekaHost
+          <div className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">
+            SeekaHost
+          </div>
+          
+          <h2 className="text-2xl md:text-4xl font-bold mb-6">
+            Make The Switch To SeekaHost
           </h2>
-
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <Image src="/images/home/learning.svg" width={50} height={50} alt="Lifelong Learning" />
-              </div>
+          
+          <p className="text-gray-600 mb-8 text-lg">
+            Get immediate account activation or express transfer service to SeekaHost UK hosting servers.
+          </p>
+          
+          <ul className="space-y-4 mb-10">
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
               <div>
-                <h3 className="text-lg md:text-2xl font-bold mb-2">Lifelong Learning</h3>
-                <p className="text-gray-700">
-                  We champion continuous growth and exploration, inspiring our learners to embrace learning as a lifelong journey.
-                </p>
+                <span className="font-semibold text-gray-900">People-powered site transfer</span>
+                <span className="text-gray-600"> - No messy automation get it done by experts</span>
               </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <Image src="/images/home/education.svg" width={50} height={50} alt="Quality Education" />
-              </div>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
               <div>
-                <h3 className="text-lg md:text-2xl font-bold mb-2">Quality Education</h3>
-                <p className="text-gray-700">
-                  SkillNest delivers high-quality courses, curated by leading experts, ensuring an exceptional learning experience for all.
-                </p>
+                <span className="font-semibold text-gray-900">No downtime, Fast & Painless</span>
+                <span className="text-gray-600"> - Express Transfer service included in all plans</span>
               </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <Image src="/images/home/inclusivity.svg" width={50} height={50} alt="Inclusivity" />
-              </div>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
               <div>
-                <h3 className="text-lg md:text-2xl font-bold mb-2">Inclusivity</h3>
-                <p className="text-gray-700">
-                  We welcome learners of all backgrounds and skill levels, fostering an inclusive and supportive online community.
-                </p>
+                <span className="font-semibold text-gray-900">Free Domain Transfer</span>
+                <span className="text-gray-600"> - Free one-year domain renewal after transfer</span>
               </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <Image src="/images/home/empowerment.svg" width={50} height={50} alt="Empowerment" />
-              </div>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-gray-400 rounded-full mt-3 mr-4 flex-shrink-0"></span>
               <div>
-                <h3 className="text-lg md:text-2xl font-bold mb-2">Empowerment</h3>
-                <p className="text-gray-700">
-                  Our platform is designed to empower learners, giving them the tools and knowledge to thrive in their personal and professional endeavors.
-                </p>
+                <span className="font-semibold text-gray-900">24/7 Priority Support</span>
+                <span className="text-gray-600"> - Always-free in-house technical support</span>
               </div>
-            </div>
+            </li>
+          </ul>
+          
+          <div className="flex items-center gap-6">
+            <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold">
+              Get Started
+            </button>
+            <button className="flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-900 transition-colors">
+              Learn More
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
 
-        <div className="w-full md:w-1/2">
-          <div className="flex justify-center md:justify-end">
+        {/* Right Content - Hero Image */}
+        <div className="w-full lg:w-1/2">
+          <div className="flex justify-center lg:justify-end">
             <Image
               src="/images/home/why-seekahost.webp"
-              alt="Why SeekaHost"
+              alt="Make The Switch To SeekaHost"
               width={1176}
               height={1150}
               className="w-full h-full"

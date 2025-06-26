@@ -26,7 +26,7 @@ export default function Video() {
             </span>
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto">
-            Seamlessly transfer your website to a new host or platform with zero downtime and full data integrity.
+            Migrating your website doesn’t have to be complicated. With the right tools and support, you can move everything smoothly and securely.
           </p>
         </div>
 

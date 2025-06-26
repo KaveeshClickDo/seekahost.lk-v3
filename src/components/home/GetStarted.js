@@ -9,13 +9,16 @@ export default function GetStarted() {
                 <div className="md:w-1/2 px-5 md:mr-15">
                     <h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1>
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-8">
-                        Build a Node.js App in Minutes
+                        Super Fast UK Server Hosting
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                        SeekaHost offers the best and easy to use WordPress hosting control panel. The custom-built web hosting control panel for WordPress gives you a 1-click WordPress hosting solution with free SSL certificates and 1-clicka activation.
+                        At SeekaHost we provide 24/7 customer support and a live chat to help you. Our web hosting services support staff are based on 4 continents and they work around the clock.
+                    </p>
+                    <p className="text-[#1D216A] mb-4">
+                        That’s how we ensure you get the best support from the SeekaHost team. You can also open support tickets in the SeekaHost client area to get any questions answered about your UK website or hosting services.
                     </p>
                     <p className="text-[#1D216A] mb-8">
-                        You can find, register domain names, host the domain and create WordPress websites with blogs faster than ever. Bloggers top choice for WP hosting and the managed WordPress is the business owners best WP partner.
+                        All our technical staff have undergone extensive training for dealing with web hosting services, UK servers and data centres, so they can help you with all your questions.
                     </p>
                     <div className="flex items-center space-x-4">
                         <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold">
