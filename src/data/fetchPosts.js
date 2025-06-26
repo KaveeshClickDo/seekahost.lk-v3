@@ -5,7 +5,8 @@ const fetchPosts = async (params) => {
     const reqOptions = {
       headers: {
         Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
-      }
+      },
+      cache: 'no-store'
     };
     
     const populateParams = [
@@ -15,6 +16,7 @@ const fetchPosts = async (params) => {
     ].join('&');
     
     const request = await fetch(`${config.api}/api/posts?${populateParams}&${params}`, reqOptions);
+
     
     if (!request.ok) {
       throw new Error(`API request failed with status ${request.status}`);
