@@ -25,10 +25,10 @@ export default function PeopleCards() {
     return (
         <section className="relative min-h-[600px]">
             <div className="absolute top-0 left-0 w-full h-full md:h-3/4 bg-[#0A488A]" />
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 h-full">
-                <div className="md:w-1/3 md:mr-15">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 h-full">
+                <div className="w-full max-w-xs md:max-w-none md:w-1/3 md:mr-15 flex justify-center md:justify-start">
                     <div className="w-full relative">
-                        <div className="w-1/2 md:w-full relative min-w-50">
+                        <div className="w-full relative">
                             {people.map((person, index) => (
                                 <div
                                     key={index}
@@ -68,7 +68,7 @@ export default function PeopleCards() {
                     </div>
                 </div>
 
-                <div className="md:w-2/3 mt-6 md:mt-0 md:mb-20 px-5">
+                <div className="w-full md:w-2/3 mt-6 md:mt-0 md:mb-20 px-5 text-center md:text-left">
                     <p className="text-white mb-4 text-xl md:text-4xl">
                         &apos;&apos;{people[currentSlide].comment}&apos;&apos;
                     </p>
@@ -76,8 +76,7 @@ export default function PeopleCards() {
                     <p className="mb-2 text-lg md:text-xl text-white font-semibold">{people[currentSlide].name}</p>
                     <p className="text-white">{people[currentSlide].company}</p>
 
-
-                    <div className="flex justify-start space-x-2 mt-4">
+                    <div className="flex justify-center md:justify-start space-x-2 mt-4">
                         {people.map((_, index) => (
                             <button
                                 key={index}

@@ -19,6 +19,7 @@ export default function Header() {
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
     const [domainsDropdownOpen, setDomainsDropdownOpen] = useState(false);
     const [wordPressDropdownOpen, setWordPressDropdownOpen] = useState(false);
+    const [serversDropdownOpen, setServersDropdownOpen] = useState(false);
     const [eCommersDropdownOpen, setECommersDropdownOpen] = useState(false);
     const [signInDropdownOpen, setSignInDropdownOpen] = useState(false);
 
@@ -327,10 +328,12 @@ export default function Header() {
 
     const MobileMenu = () => (
         <div
-            className={`xl:hidden overflow-hidden transition-all duration-300 ${mobileMenuOpen ? 'max-h-none opacity-100' : 'max-h-0 opacity-0'
+            className={`xl:hidden overflow-y-auto transition-all duration-300 ${mobileMenuOpen
+                ? 'h-screen max-h-screen opacity-100'
+                : 'h-0 max-h-0 opacity-0'
                 }`}
         >
-            <div className="pt-2 pb-3 space-y-1">
+            <div className="pt-8 pb-3 space-y-1">
                 <div>
                     <button
                         onClick={() => setDomainsDropdownOpen(!domainsDropdownOpen)}
@@ -358,6 +361,26 @@ export default function Header() {
                                 </div>
                                 <div>
                                     Register Domain
+                                </div>
+                            </Link>
+                            <Link href="/domain-pricing" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Domain Pricing
+                                </div>
+                            </Link>
+                            <Link href="/domain-transfer" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Domain Transfer
                                 </div>
                             </Link>
                         </div>
@@ -412,6 +435,16 @@ export default function Header() {
                                     Node JS Hosting
                                 </div>
                             </Link>
+                            <Link href="/small-business-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Small Business Hosting
+                                </div>
+                            </Link>
                             <Link href="/agency-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 <div className="mr-3 text-blue-500">
                                     <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -422,36 +455,24 @@ export default function Header() {
                                     Agency Hosting
                                 </div>
                             </Link>
-                        </div>
-                    )}
-                </div>
-                <div>
-                    <button
-                        onClick={() => setECommersDropdownOpen(!eCommersDropdownOpen)}
-                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium"
-                        aria-expanded={eCommersDropdownOpen}
-                    >
-                        eCommerce
-                        {eCommersDropdownOpen ? (
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
-                            </svg>
-                        ) : (
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        )}
-                    </button>
-                    {eCommersDropdownOpen && (
-                        <div className="pl-4">
-                            <Link href="/woocommerce-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="/london-server-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 <div className="mr-3 text-blue-500">
                                     <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                 </div>
                                 <div>
-                                    WooCommerce Hosting
+                                    London Server Hosting
+                                </div>
+                            </Link>
+                            <Link href="#" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Hosting Migration
                                 </div>
                             </Link>
                         </div>
@@ -496,9 +517,144 @@ export default function Header() {
                                     Managed WordPress
                                 </div>
                             </Link>
+                            <Link href="/woocommerce-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    WooCommerce Hosting
+                                </div>
+                            </Link>
                         </div>
                     )}
                 </div>
+                <div>
+                    <button
+                        onClick={() => setServersDropdownOpen(!serversDropdownOpen)}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium"
+                        aria-expanded={serversDropdownOpen}
+                    >
+                        Servers
+                        {eCommersDropdownOpen ? (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        )}
+                    </button>
+                    {serversDropdownOpen && (
+                        <div className="pl-4">
+                            <Link href="/dedicated-servers" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Dedicated Servers
+                                </div>
+                            </Link>
+                            <Link href="/cloud-servers" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Cloud Servers
+                                </div>
+                            </Link>
+                            <Link href="/vps-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    VPS Hosting
+                                </div>
+                            </Link>
+                            <Link href="/n8n-vps-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    n8n VPS Hosting
+                                </div>
+                            </Link>
+                        </div>
+                    )}
+                </div>
+                <div>
+                    <button
+                        onClick={() => setECommersDropdownOpen(!eCommersDropdownOpen)}
+                        className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium"
+                        aria-expanded={eCommersDropdownOpen}
+                    >
+                        Marketing
+                        {eCommersDropdownOpen ? (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                            </svg>
+                        ) : (
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        )}
+                    </button>
+                    {eCommersDropdownOpen && (
+                        <div className="pl-4">
+                            <Link href="/google-advertising-campaigns" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Google Advertising
+                                </div>
+                            </Link>
+                            <Link href="/free-business-listing" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Business Listing
+                                </div>
+                            </Link>
+                            <Link href="/seo-consultancy" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    SEO Consultancy
+                                </div>
+                            </Link>
+                            <Link href="/online-marketing-courses" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500">
+                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Marketing Courses
+                                </div>
+                            </Link>
+                        </div>
+                    )}
+                </div>
+
                 <Link href="/pricing" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Pricing
                 </Link>
@@ -510,7 +666,7 @@ export default function Header() {
                 </Link>
                 <button
                     onClick={() => setSignInDropdownOpen(!signInDropdownOpen)}
-                    className="flex items-center border bg-transparent text-white px-4 py-2 rounded-full text-lg font-medium"
+                    className="w-full flex items-center justify-center border bg-transparent text-white px-4 py-2 rounded-full text-lg font-medium"
                     aria-expanded={signInDropdownOpen}
                 >
                     Sign In

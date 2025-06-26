@@ -14,9 +14,9 @@ export default function Reviews() {
                 className="object-cover z-0"
                 priority
             />
-            <div className="relative z-1 max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:my-10">
-                <div className="md:flex md:items-center md:space-x-8">
-                    <div className="md:w-1/2 flex flex-col justify-center mb-8 md:mb-0">
+            <div className="relative z-1 max-w-6xl mx-auto px-4 flex flex-col items-center md:my-10">
+                <div className="w-full flex flex-col md:flex-row md:items-center md:space-x-8">
+                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left mb-8 md:mb-0">
                         <h2 className="text-base text-[#2072CC] font-semibold tracking-wide uppercase">
                             Customer Reviews
                         </h2>
@@ -24,7 +24,7 @@ export default function Reviews() {
                             Words of Trust
                         </p>
                         <p className="mt-6 max-w-md text-gray-700">
-                            We’re proud to serve customers who value quality and support. Read their stories and discover what makes us different.
+                            We&apos;re proud to serve customers who value quality and support. Read their stories and discover what makes us different.
                         </p>
                         <Link
                             href="https://uk.trustpilot.com/review/www.seekahost.co.uk"
@@ -34,7 +34,7 @@ export default function Reviews() {
                         </Link>
                     </div>
 
-                    <div className="md:w-1/2 flex flex-col space-y-6">
+                    <div className="w-full md:w-1/2 flex flex-col space-y-6">
                         {reviewers.map((reviewer) => (
                             <div key={reviewer.id} className="bg-white shadow-lg hover:shadow-xl transition-shadow rounded-lg p-6">
                                 <div className="flex items-center justify-between mb-4">
