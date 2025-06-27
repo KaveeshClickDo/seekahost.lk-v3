@@ -12,68 +12,68 @@ export default function Hosting() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                         <Link href="/business-web-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/business-web-hosting.svg"
-                                    alt="Register Domain"
+                                    alt="Business Web Hosting"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Business Web Hosting</p>
                                 <p className="text-sm text-gray-600">Fast and reliable for businesses</p>
                             </div>
                         </Link>
 
                         <Link href="/cheap-web-hosting-with-cpanel" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/cheap-cpanel-hosting.svg"
-                                    alt="Register Domain"
+                                    alt="Cheap cPanel Hosting"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Cheap cPanel Hosting</p>
                                 <p className="text-sm text-gray-600">Affordable hosting solutions</p>
                             </div>
                         </Link>
 
                         <Link href="/nodejs-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Node JS Hosting</p>
                                 <p className="text-sm text-gray-600">Specialized for Node.js apps</p>
                             </div>
                         </Link>
 
                         <Link href="/small-business-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Small Business Hosting</p>
                                 <p className="text-sm text-gray-600"> Affordable Hosting for Small Businesses</p>
                             </div>
                         </Link>
 
                         <Link href="/agency-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Agency Hosting</p>
                                 <p className="text-sm text-gray-600">Designed for professionals and agencies</p>
                             </div>
@@ -86,7 +86,7 @@ export default function Hosting() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                         <Link href="/london-server-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/dedicated-servers.svg"
                                     alt="Dedicated Servers"
@@ -95,19 +95,19 @@ export default function Hosting() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">London Server Hosting</p>
                                 <p className="text-sm text-gray-600">Full control with powerful, private hosting</p>
                             </div>
                         </Link>
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                        <Link href="/hosting-migration" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Hosting Migration</p>
                                 <p className="text-sm text-gray-600">Seamless transfer of your website to new servers</p>
                             </div>
@@ -118,24 +118,24 @@ export default function Hosting() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Search Engine Optimization</p>
                                 <p className="text-sm text-gray-600">Improve your SEO with ranking tools</p>
                             </div>
                         </Link>
 
                         <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Email Marketing</p>
                                 <p className="text-sm text-gray-600">Create effective email campaigns</p>
                             </div>

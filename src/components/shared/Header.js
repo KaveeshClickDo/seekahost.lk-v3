@@ -354,32 +354,46 @@ export default function Header() {
                     {domainsDropdownOpen && (
                         <div className="pl-4">
                             <Link href="/register-domain" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/register-domain-white.svg"
+                                        alt="Register Domain"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Register Domain
                                 </div>
                             </Link>
+
                             <Link href="/domain-pricing" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/domain-pricing-white.svg"
+                                        alt="Domain Pricing"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Domain Pricing
                                 </div>
                             </Link>
+
                             <Link href="/domain-transfer" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/transfer-domain-white.svg"
+                                        alt="Transfer Domain"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Domain Transfer
                                 </div>
                             </Link>
@@ -406,72 +420,86 @@ export default function Header() {
                     {webHostingDropdownOpen && (
                         <div className="pl-4">
                             <Link href="/business-web-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/business-web-hosting-white.svg"
+                                        alt="Business Web Hosting"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Business Web Hosting
                                 </div>
                             </Link>
+
                             <Link href="/cheap-web-hosting-with-cpanel" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/cheap-cpanel-hosting-white.svg"
+                                        alt="Cheap cPanel Hosting"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Cheap cPanel Hosting
                                 </div>
                             </Link>
+
                             <Link href="/nodejs-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                                     </svg>
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Node JS Hosting
                                 </div>
                             </Link>
+
                             <Link href="/small-business-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Small Business Hosting
                                 </div>
                             </Link>
+
                             <Link href="/agency-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Agency Hosting
                                 </div>
                             </Link>
+
                             <Link href="/london-server-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
                                     </svg>
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     London Server Hosting
                                 </div>
                             </Link>
-                            <Link href="#" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+
+                            <Link href="/hosting-migration" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Hosting Migration
                                 </div>
                             </Link>
@@ -498,32 +526,44 @@ export default function Header() {
                     {wordPressDropdownOpen && (
                         <div className="pl-4">
                             <Link href="/wordpress-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/wordpress-hosting-white.svg"
+                                        alt="WordPress Web Hosting"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     WordPress Web Hosting
                                 </div>
                             </Link>
                             <Link href="/managed-wordpress" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/wordpress-hosting-white.svg"
+                                        alt="Managed WordPress"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Managed WordPress
                                 </div>
                             </Link>
                             <Link href="/woocommerce-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/wooCommerce-hosting-white.svg"
+                                        alt="WooCommerce Hosting"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     WooCommerce Hosting
                                 </div>
                             </Link>
@@ -550,42 +590,58 @@ export default function Header() {
                     {serversDropdownOpen && (
                         <div className="pl-4">
                             <Link href="/dedicated-servers" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/dedicated-servers-white.svg"
+                                        alt="Dedicated Servers"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Dedicated Servers
                                 </div>
                             </Link>
                             <Link href="/cloud-servers" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/cloud-servers-white.svg"
+                                        alt="Cloud Servers"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     Cloud Servers
                                 </div>
                             </Link>
                             <Link href="/vps-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/vps-hostings-white.svg"
+                                        alt="VPS Hosting"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     VPS Hosting
                                 </div>
                             </Link>
                             <Link href="/n8n-vps-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
-                                <div className="mr-3 text-blue-500">
-                                    <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <div className="mr-3 text-blue-500 flex-shrink-0">
+                                    <Image
+                                        src="/images/shared/vps-hostings-white.svg"
+                                        alt="n8n VPS Hosting"
+                                        width={20}
+                                        height={20}
+                                        className="w-5 h-5"
+                                    />
                                 </div>
-                                <div>
+                                <div className="flex-1">
                                     n8n VPS Hosting
                                 </div>
                             </Link>

@@ -11,7 +11,7 @@ export default function Domains() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/register-domain" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/register-domain.svg"
                                     alt="Register Domain"
@@ -20,25 +20,25 @@ export default function Domains() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Register Domain</p>
                                 <p className="text-sm text-gray-600">Create your online address</p>
                             </div>
                         </Link>
 
                         <Link href="/domain-pricing" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
-                                    src="/images/shared/register-domain.svg"
-                                    alt="Register Domain"
+                                    src="/images/shared/domain-pricing.svg"
+                                    alt="Domain Pricing"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Domain Pricing</p>
-                                <p className="text-sm text-gray-600">Transparent rates for domain registration and renewal</p>
+                                <p className="text-sm text-gray-600">Transparent rates for domain</p>
                             </div>
                         </Link>
                     </div>
@@ -47,7 +47,7 @@ export default function Domains() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/domain-transfer" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/transfer-domain.svg"
                                     alt="Transfer Domain"
@@ -56,7 +56,7 @@ export default function Domains() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Domain Transfer</p>
                                 <p className="text-sm text-gray-600">Secure your server or cloud infrastructure</p>
                             </div>

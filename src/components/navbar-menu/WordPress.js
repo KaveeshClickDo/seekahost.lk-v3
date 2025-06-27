@@ -11,7 +11,7 @@ export default function WordPress() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/wordpress-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/wordpress-hosting.svg"
                                     alt="WordPress Hosting"
@@ -20,14 +20,14 @@ export default function WordPress() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">WordPress Web Hosting</p>
                                 <p className="text-sm text-gray-600">Optimized for WordPress sites</p>
                             </div>
                         </Link>
 
                         <Link href="/managed-wordpress" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/wordpress-hosting.svg"
                                     alt="Managed Hosting"
@@ -36,7 +36,7 @@ export default function WordPress() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Managed WordPress</p>
                                 <p className="text-sm text-gray-600">Hassle-free, optimized WordPress hosting service</p>
                             </div>
@@ -49,7 +49,7 @@ export default function WordPress() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/woocommerce-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                             <Image
                                     src="/images/shared/wooCommerce-hosting.svg"
                                     alt="WooCommerce Hosting"
@@ -58,7 +58,7 @@ export default function WordPress() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">WooCommerce Hosting</p>
                                 <p className="text-sm text-gray-600">Optimized hosting for your online store</p>
                             </div>

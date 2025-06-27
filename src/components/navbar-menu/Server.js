@@ -13,7 +13,7 @@ export default function Servers() {
                         
 
                         <Link href="/dedicated-servers" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/dedicated-servers.svg"
                                     alt="Dedicated Servers"
@@ -22,14 +22,14 @@ export default function Servers() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Dedicated Servers</p>
                                 <p className="text-sm text-gray-600">Full control with powerful, private hosting</p>
                             </div>
                         </Link>
 
                         <Link href="/cloud-servers" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/cloud-servers.svg"
                                     alt="Cloud Servers"
@@ -38,7 +38,7 @@ export default function Servers() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Cloud Servers</p>
                                 <p className="text-sm text-gray-600">Scalable, reliable hosting in the cloud</p>
                             </div>
@@ -53,7 +53,7 @@ export default function Servers() {
                         
 
                         <Link href="/vps-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/vps-hostings.svg"
                                     alt="VPS Hosting"
@@ -62,14 +62,14 @@ export default function Servers() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">VPS Hosting</p>
                                 <p className="text-sm text-gray-600">Fully virtualized private servers</p>
                             </div>
                         </Link>
 
                         <Link href="/n8n-vps-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/vps-hostings.svg"
                                     alt="n8n VPS hosting"
@@ -78,7 +78,7 @@ export default function Servers() {
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">n8n VPS hosting</p>
                                 <p className="text-sm text-gray-600">Automate workflows on a dedicated VPS</p>
                             </div>
