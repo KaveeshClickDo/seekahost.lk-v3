@@ -739,7 +739,7 @@ export default function Header() {
                     </button>
                     {signInDropdownOpen && (
                         <div className="pl-4">
-                            <Link href="#" className="flex items-center px-4 py-2 text-lg font-medium" role="menuitem">
+                            <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-lg font-medium" role="menuitem">
                                 <span className="mr-2">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fillRule="evenodd" clipRule="evenodd" d="M12 1.67442C6.29734 1.67442 1.67442 6.29734 1.67442 12C1.67442 17.7026 6.29734 22.3256 12 22.3256C12.3491 22.3256 12.6939 22.3083 13.0336 22.2746C13.4937 22.2289 13.9037 22.5648 13.9494 23.0249C13.9951 23.4851 13.6591 23.8951 13.199 23.9408C12.8044 23.98 12.4044 24 12 24C5.37258 24 0 18.6275 0 12C0 5.37258 5.37258 0 12 0C18.6275 0 24 5.37258 24 12C24 12.4044 23.98 12.8044 23.9408 13.199C23.8951 13.6591 23.4851 13.9951 23.0249 13.9494C22.5648 13.9037 22.2289 13.4937 22.2746 13.0336C22.3083 12.6939 22.3256 12.3491 22.3256 12C22.3256 6.29734 17.7026 1.67442 12 1.67442Z" fill="currentColor" />
@@ -749,7 +749,7 @@ export default function Header() {
                                 Client Area
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
                             </Link>
-                            <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-lg font-medium" role="menuitem" target="_blank">
+                            {/* <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-lg font-medium" role="menuitem" target="_blank">
                                 <span className="mr-2">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fillRule="evenodd" clipRule="evenodd" d="M12 1.67442C6.29734 1.67442 1.67442 6.29734 1.67442 12C1.67442 17.7026 6.29734 22.3256 12 22.3256C12.3491 22.3256 12.6939 22.3083 13.0336 22.2746C13.4937 22.2289 13.9037 22.5648 13.9494 23.0249C13.9951 23.4851 13.6591 23.8951 13.199 23.9408C12.8044 23.98 12.4044 24 12 24C5.37258 24 0 18.6275 0 12C0 5.37258 5.37258 0 12 0C18.6275 0 24 5.37258 24 12C24 12.4044 23.98 12.8044 23.9408 13.199C23.8951 13.6591 23.4851 13.9951 23.0249 13.9494C22.5648 13.9037 22.2289 13.4937 22.2746 13.0336C22.3083 12.6939 22.3256 12.3491 22.3256 12C22.3256 6.29734 17.7026 1.67442 12 1.67442Z" fill="currentColor" />
@@ -758,7 +758,7 @@ export default function Header() {
                                 </span>
                                 Seekahost.co.uk
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
-                            </Link>
+                            </Link> */}
                             <Link href="https://www.seekahost.com/index.php/login" className="flex items-center px-4 py-2 text-lg font-medium" role="menuitem" target="_blank">
                                 <span className="mr-2">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
