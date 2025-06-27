@@ -1,14 +1,10 @@
 'use client';
-
 import { useState, useRef, useEffect } from 'react';
-import Image from 'next/image';
 import { faqData } from '@/data/faqData';
 
 export default function FAQ() {
-
   const leftColumnFAQs = faqData.filter((_, index) => index % 2 === 0);
   const rightColumnFAQs = faqData.filter((_, index) => index % 2 === 1);
-
   const [openItemId, setOpenItemId] = useState(null);
 
   const toggleFAQ = (id) => {
@@ -33,7 +29,10 @@ export default function FAQ() {
           onClick={() => toggleFAQ(item.id)}
         >
           <h4 className="font-bold md:text-xl">{item.question}</h4>
-          <button aria-label={isOpen ? "Collapse" : "Expand"} className={`text-[#2072CC] cursor-pointer flex items-center justify-center w-6 h-6 transition-transform duration-600 ${isOpen ? 'transform rotate-180 bg-blue-600 text-white rounded-md' : ''}`}>
+          <button 
+            aria-label={isOpen ? "Collapse" : "Expand"} 
+            className={`text-[#2072CC] cursor-pointer flex items-center justify-center w-6 h-6 transition-transform duration-600 ${isOpen ? 'transform rotate-180 bg-blue-600 text-white rounded-md' : ''}`}
+          >
             {isOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 12H6" />
@@ -45,7 +44,6 @@ export default function FAQ() {
             )}
           </button>
         </div>
-
         <div
           className="overflow-hidden transition-all duration-600 ease-in-out"
           style={{
@@ -63,31 +61,21 @@ export default function FAQ() {
     );
   };
 
-
   return (
-    <section className="relative py-12 px-4">
-      <Image
-        src="/images/contact/contact-faq-bg.svg"
-        alt="Background"
-        fill
-        priority
-        className="absolute inset-0 object-cover z-0"
-      />
-      <div className="relative z-1 md:my-10">
+    <section className="py-12 px-4 bg-[#0A488A]">
+      <div className="md:my-10">
         <div className="text-center mb-8">
           <h2 className="text-white text-md md:text-xl font-medium">FAQ</h2>
           <div className="relative inline-block">
             <h3 className="text-white text-2xl md:text-4xl"><span className="font-bold">Find out more</span></h3>
           </div>
         </div>
-
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:gap-4 px-6 md:px-10">
           <div className="md:w-1/2 flex flex-col">
             {leftColumnFAQs.map(faq => (
               <FAQItem key={faq.id} item={faq} />
             ))}
           </div>
-
           <div className="md:w-1/2 flex flex-col">
             {rightColumnFAQs.map(faq => (
               <FAQItem key={faq.id} item={faq} />

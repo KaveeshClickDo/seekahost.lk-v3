@@ -21,7 +21,7 @@ export default function Timeline () {
                                 }`}
                         >
 
-                            <div className="absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 left-6 w-6 h-6 rounded-full bg-blue-500 border-4 border-gray-200 z-10"></div>
+                            <div className="absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 left-6 w-6 h-6 rounded-full bg-[#0A488A] border-4 border-gray-200 z-10"></div>
 
 
                             <div
@@ -32,7 +32,7 @@ export default function Timeline () {
                             >
                                 <div className="relative bg-white p-6 rounded-lg shadow-md border border-gray-200">
 
-                                    <div className={`absolute top-0 -left-2 w-5 h-full bg-blue-500 rounded-l-2xl`}></div>
+                                    <div className={`absolute top-0 -left-2 w-5 h-full bg-[#0A488A] rounded-l-2xl`}></div>
 
                                     <h3 className="text-2xl  md:text-3xl font-bold text-blue-900 mb-2">{item.year}</h3>
                                     <p className="text-gray-700">{item.description}</p>
