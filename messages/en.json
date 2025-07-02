@@ -1,4 +1,10 @@
 {
+  "Header": {
+    "Pricing": "Pricing",
+    "Support": "Support",
+    "SignIn": "Sign In",
+    "ClientArea": "Client Area"
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Create Your Own WordPress",
@@ -60,6 +66,285 @@
           "subtext": "Easy, effective, and well worth it."
         }
       ]
+    },
+    "PackagePrices": {
+      "title1": "Price Plans",
+      "title2": "Best Plans & Cheapest Prices With SeekaHost",
+      "toggleLeft": "Monthly",
+      "toggleRight": "Yearly",
+      "buttonText": "Compare Packages"
+    },
+    "Solutions": {
+      "title": "SeekaHost – 1 Click Solution for Hosting",
+      "description": "Protecting your beloved with our comprehensive full and credible insurance coverage you can",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "High-Speed Performance",
+          "title": "High-Speed Performance",
+          "description": "Powered by high-performance CPUs for fast load times and smooth handling of high traffic."
+        },
+        "expertSupport": {
+          "iconAlt": "24/7 Expert Support",
+          "title": "24/7 Expert Support",
+          "description": "Round-the-clock technical support from UK hosting specialists."
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "Unlimited SSD Storage",
+          "title": "Unlimited SSD Storage",
+          "description": "Fast, reliable SSD storage with no limits for optimal site performance."
+        },
+        "ukBasedServers": {
+          "iconAlt": "UK-Based Servers",
+          "title": "UK-Based Servers",
+          "description": "Local UK servers ensure top speed and seamless user experience for UK audiences."
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "Simple & Scalable Interface",
+          "title": "Simple & Scalable Interface",
+          "description": "Clean, user-friendly dashboard with flexible hosting options."
+        },
+        "ddosProtection": {
+          "iconAlt": "Built-In DDoS Protection",
+          "title": "Built-In DDoS Protection",
+          "description": "Advanced security to keep your site safe from malicious traffic attacks."
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "Our Solutions",
+          "title": "Build a Node.js App in Minutes",
+          "description": "SeekaHost offers the best and easy to use WordPress hosting control panel. The custom-built web hosting control panel for WordPress gives you a 1-click WordPress hosting solution with free SSL certificates and 1-click activation.",
+          "additionalText": "You can find, register domain names, host the domain and create WordPress websites with blogs faster than ever. Bloggers top choice for WP hosting and the managed WordPress is the business owners best WP partner."
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "UK's Best WordPress Host",
+          "description": "WordPress is the most used CMS when it comes to building websites in the UK. And web hosting for WordPress websites must be reliable and optimised for performance. At SeekaHost we help anyone get online with the best domain names and WordPress web hosting packages that are fully managed. You can buy the desired hosting packages after your test with a 7 days free trail.",
+          "additionalText": "Create an account and get started hosting your WordPress websites and blogs with everything you need to succeed online. You can get free access to SeekaHost University to learn digital marketing and blogging skills taught by Fernando Raymond and his team of experts in web dynamics. So get started hosting your WordPress sites today."
+        },
+        {
+          "id": 3,
+          "badge": "Blogging",
+          "title": "Everything Bloggers Need to Get Online",
+          "description": "SeekaHost understands what the best web hosting should look like and therefore offers several key advantages. These include scalable tariffs with no minimum term, providing high flexibility for users. Customers also benefit from free SSL and migration services, as well as automatic and regular updates and backups of all website content to ensure security and reliability.",
+          "additionalText": "In addition, SeekaHost provides expert support through live chat and a responsive email ticket system. Users can register domains easily and create WordPress websites within minutes. The unique hosting management panel offered by SeekaHost includes many exclusive features not available with any other web hosting provider, making website management seamless and efficient."
+        }
+      ],
+      "buttons": {
+        "getStarted": "Get Started",
+        "learnMore": "Learn More"
+      }
+    },
+    "Video": {
+      "title": "Website Migration",
+      "description": "Migrating your website doesn’t have to be complicated. With the right tools and support, you can move everything smoothly and securely.",
+      "button": "Get Started",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "Backup Your Website",
+          "description": "Secure your current website data"
+        },
+        {
+          "number": "02",
+          "title": "Transfer to SeekaHost",
+          "description": "Move your site effortlessly to us"
+        },
+        {
+          "number": "03",
+          "title": "Update DNS Settings",
+          "description": "We'll configure it all for you"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "Our Solutions",
+      "title": "Super Fast UK Server Hosting",
+      "paragraphs": [
+        "At SeekaHost we provide 24/7 customer support and a live chat to help you. Our web hosting services support staff are based on 4 continents and they work around the clock.",
+        "That's how we ensure you get the best support from the SeekaHost team. You can also open support tickets in the SeekaHost client area to get any questions answered about your UK website or hosting services.",
+        "All our technical staff have undergone extensive training for dealing with web hosting services, UK servers and data centres, so they can help you with all your questions."
+      ],
+      "buttons": {
+        "getStarted": "Get Started",
+        "learnMore": "Learn More"
+      },
+      "image": {
+        "alt": "Build NodeJS in minutes"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "Business Owner",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "Switching to this hosting service was a great decision. My website runs faster, and support is always quick to respond. I feel more confident about my business being online now.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Business Manager",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "I’ve worked with several hosting providers, and this one stands out. It’s reliable, easy to use, and their customer support is super friendly. I definitely recommend them to anyone managing websites.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Business Handler",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "The setup was fast, the dashboard is intuitive, and I haven’t had any downtime since moving over. It’s been a smooth experience from day one. Totally worth every penny.",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "Customer Reviews",
+      "title2": "Words of Trust",
+      "description": "We're proud to serve customers who value quality and support. Read their stories and discover what makes us different.",
+      "buttonText": "Read More Stories",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "Advantage's unified platform has boosted our sales and marketing performance remarkably."
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "The automated features have saved us countless hours. A real game changer."
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "We scaled our start-up significantly, all thanks to Advantage's robust tools."
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "Make The Switch To SeekaHost",
+      "description": "Get immediate account activation or express transfer service to SeekaHost UK hosting servers.",
+      "items": [
+        {
+          "id": 1,
+          "title": "People-powered site transfer",
+          "description": " - No messy automation get it done by experts"
+        },
+        {
+          "id": 2,
+          "title": "No downtime, Fast & Painless",
+          "description": " - Express Transfer service included in all plans"
+        },
+        {
+          "id": 3,
+          "title": "Free Domain Transfer",
+          "description": " - Free one-year domain renewal after transfera"
+        },
+        {
+          "id": 4,
+          "title": "24/7 Priority Support",
+          "description": " - Always-free in-house technical support"
+        }
+      ],
+      "buttons": {
+        "getStarted": "Get Started",
+        "learnMore": "Learn More"
+      },
+      "image": {
+        "alt": "Make The Switch To SeekaHost"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "Get Your Website Online",
+      "description": "Launch your website quickly and easily with our reliable hosting solutions and expert setup support.",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "Get your website online in minutes with fast, secure, and reliable hosting services built for success."
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "Launch your online presence today with easy-to-use tools, expert support, and high-performance servers."
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "Start building your website now—no tech skills needed. Just fast, seamless setup and powerful features."
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "From idea to launch, we make getting online simple. Everything you need to create and grow your site."
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "Frequently Asked Question",
+      "title": "Questions about our services",
+      "faqs": [
+        {
+          "question": "Do you offer a free trial or money-back guarantee?",
+          "answer": "Yes, we offer a 30-day money-back guarantee. If you are not satisfied with our hosting services within the first 30 days, you can request a full refund. Please note that domain registration fees are non-refundable."
+        },
+        {
+          "question": "What kind of support can I expect?",
+          "answer": "We provide 24/7 customer support through live chat, email, and phone. Our support team is here to assist you with any issues or questions you may have regarding your hosting account."
+        },
+        {
+          "question": "Can I upgrade or downgrade my hosting plan later?",
+          "answer": "Absolutely. You can upgrade or downgrade your hosting plan at any time through your account dashboard. Our support team can also assist you with the process to ensure a smooth transition."
+        },
+        {
+          "question": "Is email hosting included with my plan?",
+          "answer": "Yes, all our hosting plans include email hosting. You can create professional email addresses using your domain name (e.g., yourname@yourdomain.com) through our control panel."
+        },
+        {
+          "question": "How secure is my website on your servers?",
+          "answer": "We prioritize security by implementing firewalls, regular malware scans, and free SSL certificates for all hosted websites. Additionally, we perform regular backups to safeguard your data."
+        },
+        {
+          "question": "What is your uptime guarantee?",
+          "answer": "We guarantee a 99.9% uptime for all our hosting services. Our infrastructure is designed to ensure your website remains accessible and performs optimally at all times."
+        },
+        {
+          "question": "Do you support WordPress and other CMS platforms?",
+          "answer": "Yes, our hosting environment is optimized for popular CMS platforms like WordPress, Joomla, and Drupal. We also offer one-click installations to make setup quick and easy."
+        },
+        {
+          "question": "Are there any hidden fees?",
+          "answer": "No, we believe in transparent pricing. All costs are clearly outlined during the signup process, and there are no hidden fees associated with our hosting plans."
+        },
+        {
+          "question": "Can I host multiple websites on one account?",
+          "answer": "Yes, our higher-tier hosting plans allow you to host multiple websites under a single account. Please refer to our plan details to choose the one that best fits your needs."
+        }
+      ]
+    },
+    "CTA": {
+      "title": "Ready to make a secure future?",
+      "description": "Get your personalized insurance quote now and take the first step toward a worry-free future. Your security matters.",
+      "image": {
+        "alt": "Phone Mockup"
+      },
+      "signIn": {
+        "placeHolder": "Email Address",
+        "buttonName1": "Sign Up Free",
+        "buttonName2": "Sign Up"
+      }
     }
   }
 }

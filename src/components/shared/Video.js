@@ -1,10 +1,12 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
 import ProcessSteps from '../home/ProcessSteps';
 
 export default function Video() {
+  const t = useTranslations('HomePage.Video');
   const [showVideo, setShowVideo] = useState(false);
   const youtubeVideoId = 'hx2W4fmqw_w'; // YouTube video ID
 
@@ -22,11 +24,11 @@ export default function Video() {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-white md:mb-6">
             <span className="font-bold">
-              Website Migration
+              {t('title')}
             </span>
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto">
-            Migrating your website doesn’t have to be complicated. With the right tools and support, you can move everything smoothly and securely.
+            {t('description')}
           </p>
         </div>
 
@@ -84,7 +86,7 @@ export default function Video() {
             href="#"
             className="inline-block bg-gradient-to-r from-[#0A488B] via-[#083D78] to-[#063265] hover:bg-gradient-to-r hover:from-[#063265] hover:via-[#083D78] hover:to-[#0A488B] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 text-white border border-[#0066CC] px-15 py-2 rounded-full transition-all duration-300 cursor-pointer font-bold md:mt-8"
           >
-            Get Started
+            {t('button')}
           </Link>
         </div>
       </div>

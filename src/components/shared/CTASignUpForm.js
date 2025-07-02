@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function CTASignUpForm() {
+    const t = useTranslations('HomePage.CTA.signIn');
     const [email, setEmail] = useState('');
 
     const handleSignup = () => {
@@ -29,7 +31,7 @@ export default function CTASignUpForm() {
         <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-md w-full max-w-md font-medium">
             <input
                 type="text"
-                placeholder="Email Address"
+                placeholder={t('placeHolder')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 onKeyDown={handleKeyDown}
@@ -39,8 +41,8 @@ export default function CTASignUpForm() {
                 onClick={handleSignup}
                 className="bg-[#0A488A] text-white font-bold px-4 lg:px-6 py-2 rounded-full hover:bg-blue-600 transition"
             >
-                <span className="max-[400px]:hidden">Sign Up Free</span>
-                <span className="hidden max-[400px]:inline">Sign Up</span>
+                <span className="max-[400px]:hidden">{t('buttonName1')}</span>
+                <span className="hidden max-[400px]:inline">{t('buttonName2')}</span>
             </button>
         </div>
     );

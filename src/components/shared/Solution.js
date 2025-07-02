@@ -1,15 +1,17 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function Solution() {
+  const t = useTranslations('HomePage.Solutions');
   return (
     <section className="py-12 md:mt-10 md:mb-20">
       <div className="max-w-7xl mx-auto px-4 md:px-0">
 
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
-            SeekaHost – 1 Click Solution for Hosting
+            {t('title')}
           </h2>
-          <p className="text-gray-700 mb-8 mx-auto">Protecting your beloved with our comprehensive full and credible insurance coverage you can</p>
+          <p className="text-gray-700 mb-8 mx-auto">{t('description')}</p>
 
         </div>
 
@@ -21,15 +23,15 @@ export default function Solution() {
               <div className="mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <Image
                   src="/images/shared/high-speed-performance.svg"
-                  alt="High-Speed Performance"
+                  alt={t('features.highSpeedPerformance.iconAlt')}
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px] drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">High-Speed Performance</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">{t('features.highSpeedPerformance.title')}</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Powered by high-performance CPUs for fast load times and smooth handling of high traffic.
+                {t('features.highSpeedPerformance.description')}
               </p>
             </div>
           </div>
@@ -40,15 +42,15 @@ export default function Solution() {
               <div className="mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <Image
                   src="/images/shared/24-7-expert-support.svg"
-                  alt="24/7 Expert Support"
+                  alt={t('features.expertSupport.iconAlt')}
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px] drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">24/7 Expert Support</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">{t('features.expertSupport.title')}</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Round-the-clock technical support from UK hosting specialists.
+                {t('features.expertSupport.description')}
               </p>
             </div>
           </div>
@@ -58,15 +60,15 @@ export default function Solution() {
               <div className="mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <Image
                   src="/images/shared/unlimited-ssd-storage.svg"
-                  alt="Unlimited SSD Storage"
+                  alt={t('features.unlimitedSsdStorage.iconAlt')}
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px] drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">Unlimited SSD Storage</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">{t('features.unlimitedSsdStorage.title')}</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Fast, reliable SSD storage with no limits for optimal site performance.
+                {t('features.unlimitedSsdStorage.description')}
               </p>
             </div>
           </div>
@@ -76,15 +78,15 @@ export default function Solution() {
               <div className="mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <Image
                   src="/images/shared/uk-based-servers.svg"
-                  alt="UK-Based Servers"
+                  alt={t('features.ukBasedServers.iconAlt')}
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px] drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">UK-Based Servers</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">{t('features.ukBasedServers.title')}</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Local UK servers ensure top speed and seamless user experience for UK audiences.
+                {t('features.ukBasedServers.description')}
               </p>
             </div>
           </div>
@@ -94,15 +96,15 @@ export default function Solution() {
               <div className="mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <Image
                   src="/images/shared/simple-n-scalable-interface.svg"
-                  alt="Simple & Scalable Interface"
+                  alt={t('features.simpleScalableInterface.iconAlt')}
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px] drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">Simple & Scalable Interface</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">{t('features.simpleScalableInterface.title')}</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Clean, user-friendly dashboard with flexible hosting options.
+                {t('features.simpleScalableInterface.description')}
               </p>
             </div>
           </div>
@@ -112,15 +114,15 @@ export default function Solution() {
               <div className="mb-4 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                 <Image
                   src="/images/shared/built-in-ddos-protection.svg"
-                  alt="Built-In DDoS Protection"
+                  alt={t('features.ddosProtection.iconAlt')}
                   width={75}
                   height={75}
                   className="w-[70px] h-[70px] md:w-[75px] md:h-[75px] drop-shadow-sm group-hover:drop-shadow-lg transition-all duration-300"
                 />
               </div>
-              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">Built-In DDoS Protection</h3>
+              <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">{t('features.ddosProtection.title')}</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Advanced security to keep your site safe from malicious traffic attacks.
+                {t('features.ddosProtection.description')}
               </p>
             </div>
           </div>

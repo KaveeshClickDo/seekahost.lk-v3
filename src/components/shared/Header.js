@@ -1,6 +1,7 @@
 'use client';
 
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
@@ -14,6 +15,7 @@ import Support from '../topbar-menu/Support';
 import LanguageSelector from '../navbar-menu/LanguageSelector';
 
 export default function Header() {
+    const t = useTranslations('Header');
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const [webHostingDropdownOpen, setWebHostingDropdownOpen] = useState(false);
@@ -98,7 +100,7 @@ export default function Header() {
                     className="flex items-center bg-transparent cursor-pointer border text-white px-5 py-3 rounded-full font-bold leading-4"
                     onClick={toggleDropdown}
                 >
-                    Sign In
+                    {t('SignIn')}
                     {isOpen ? (
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
@@ -120,7 +122,7 @@ export default function Header() {
                                         <path d="M12.5 5C11.638 5 10.8114 5.34241 10.2019 5.9519C9.59241 6.5614 9.25 7.38805 9.25 8.25C9.25 9.11195 9.59241 9.9386 10.2019 10.5481C10.8114 11.1576 11.638 11.5 12.5 11.5C13.362 11.5 14.1886 11.1576 14.7981 10.5481C15.4076 9.9386 15.75 9.11195 15.75 8.25C15.75 7.38805 15.4076 6.5614 14.7981 5.9519C14.1886 5.34241 13.362 5 12.5 5ZM12.5 6.54375C13.4425 6.54375 14.2063 7.3075 14.2063 8.25C14.2063 9.1925 13.4425 9.95625 12.5 9.95625C12.0475 9.95625 11.6135 9.77648 11.2935 9.4565C10.9735 9.13652 10.7937 8.70253 10.7937 8.25C10.7937 7.79747 10.9735 7.36348 11.2935 7.0435C11.6135 6.72352 12.0475 6.54375 12.5 6.54375ZM12.5 12.3125C10.3306 12.3125 6 13.3931 6 15.5625V18H19V15.5625C19 13.3931 14.6694 12.3125 12.5 12.3125ZM12.5 13.8562C14.9131 13.8562 17.4563 15.0425 17.4563 15.5625V16.4563H7.54375V15.5625C7.54375 15.0425 10.0625 13.8562 12.5 13.8562Z" fill="currentColor" />
                                     </svg>
                                 </span>
-                                Client Area
+                                {t('ClientArea')}
                                 <FiExternalLink className="w-4 h-4 ml-auto" />
                             </Link>
                             {/* <Link href="https://portal.seekahost.co.uk/index.php/login" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-[#F5FAFF] hover:text-[#0081FF]" role="menuitem" target="_blank">
@@ -286,7 +288,7 @@ export default function Header() {
                 href="/pricing"
                 className="relative p-4 hover:underline"
             >
-                Pricing
+                {t('Pricing')}
             </Link>
 
             {/* <Link
@@ -312,7 +314,7 @@ export default function Header() {
                     }}
 
                 >
-                    Support
+                    {t('Support')}
                 </button>
                 {desktopSupportDropdownOpen && (
                     <Support />

@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { homePkgPrices } from '@/data/packagePricesData';
 
 export default function PackagesPrices() {
+    const t = useTranslations('HomePage.PackagePrices');
     const pricing = homePkgPrices;
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
@@ -60,16 +62,16 @@ export default function PackagesPrices() {
                 priority
             />
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:my-10">
-                <h1 className="inline-block text-[#1276DF] text-sm md:text-lg mb-4 font-semibold">Price Plans</h1>
+                <h1 className="inline-block text-[#1276DF] text-sm md:text-lg mb-4 font-semibold">{t('title1')}</h1>
                 <h2 className="text-2xl md:text-4xl font-bold mb-8">
-                    Best Plans & Cheapest Prices With SeekaHost
+                    {t('title2')}
                 </h2>
                 <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
                         className={`cursor-pointer md:text-lg ${isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(true)}
                     >
-                        Monthly
+                        {t('toggleLeft')}
                     </span>
                     <div className="relative inline-block w-12 select-none">
                         <input
@@ -93,7 +95,7 @@ export default function PackagesPrices() {
                         className={`cursor-pointer md:text-lg ${!isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(false)}
                     >
-                        Yearly
+                        {t('toggleRight')}
                     </span>
                 </div>
 
@@ -204,7 +206,7 @@ export default function PackagesPrices() {
                     )}
                 </div>
                 <Link href="/shared-hosting-features" className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
-                    Compare Packages
+                    {t('buttonText')}
                 </Link>
             </div>
         </section>

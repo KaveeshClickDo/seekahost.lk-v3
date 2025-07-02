@@ -1,10 +1,11 @@
 import { FaStar } from 'react-icons/fa';
 import Image from 'next/image';
-import { reviewers } from '@/data/reviewersData';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 export default function Reviews() {
-
+    const t = useTranslations('HomePage.Review');
+    const reviewers = t.raw('reviewers');
     return (
         <section className="relative w-full py-12">
             <Image
@@ -18,19 +19,19 @@ export default function Reviews() {
                 <div className="w-full flex flex-col md:flex-row md:items-center md:space-x-8">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left mb-8 md:mb-0">
                         <h2 className="text-base text-[#2072CC] font-semibold tracking-wide uppercase">
-                            Customer Reviews
+                            {t('title1')}
                         </h2>
                         <p className="mt-2 text-2xl leading-8 font-bold tracking-tight md:text-4xl">
-                            Words of Trust
+                            {t('title2')}
                         </p>
                         <p className="mt-6 max-w-md text-gray-700">
-                            We&apos;re proud to serve customers who value quality and support. Read their stories and discover what makes us different.
+                            {t('description')}
                         </p>
                         <Link
                             href="https://uk.trustpilot.com/review/www.seekahost.co.uk"
                             className="inline-block bg-[#0A488B] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold mt-6 md:mt-8 text-center w-fit"
                         >
-                            Read More Stories
+                            {t('buttonText')}
                         </Link>
                     </div>
 

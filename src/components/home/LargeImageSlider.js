@@ -2,38 +2,16 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl';
 
 const LargeImageSlider = ({ slides = [] }) => {
+  const t = useTranslations('HomePage.LargeImageSlider');
+  const defaultSlides = t.raw('defaultSlides');
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const [startX, setStartX] = useState(0)
   const [dragOffset, setDragOffset] = useState(0)
   const sliderRef = useRef(null)
-
-  // Default slides data if none provided
-  const defaultSlides = [
-  {
-    id: 1,
-    image: '/images/home/1.webp',
-    overlayText: 'Get your website online in minutes with fast, secure, and reliable hosting services built for success.'
-  },
-  {
-    id: 2,
-    image: '/images/home/2.webp',
-    overlayText: 'Launch your online presence today with easy-to-use tools, expert support, and high-performance servers.'
-  },
-  {
-    id: 3,
-    image: '/images/home/3.webp',
-    overlayText: 'Start building your website now—no tech skills needed. Just fast, seamless setup and powerful features.'
-  },
-  {
-    id: 4,
-    image: '/images/home/4.webp',
-    overlayText: 'From idea to launch, we make getting online simple. Everything you need to create and grow your site.'
-  }
-];
-
 
   const slidesData = slides.length > 0 ? slides : defaultSlides
 
@@ -133,10 +111,10 @@ const LargeImageSlider = ({ slides = [] }) => {
         {/* Header Text */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 transition-all duration-300">
-            Get Your Website Online
+            {t('title')}
           </h2>
           <p className="mt-4 text-white max-w-xl mx-auto transition-all duration-300">
-            Launch your website quickly and easily with our reliable hosting solutions and expert setup support.
+            {t('description')}
           </p>
         </div>
 

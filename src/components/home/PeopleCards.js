@@ -2,9 +2,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image"
 import PopUpVideo from "../shared/PopUpVideo";
-import { people } from "@/data/peopleCardData";
+import { useTranslations } from 'next-intl';
 
 export default function PeopleCards() {
+    const t = useTranslations('HomePage');
+    const people = t.raw('PeopleCards');
+    
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -16,7 +19,7 @@ export default function PeopleCards() {
 
             return () => clearInterval(interval);
         }
-    }, [isVideoPlaying]);
+    }, [isVideoPlaying, people.length]);
 
     const handleVideoState = (isPlaying) => {
         setIsVideoPlaying(isPlaying);

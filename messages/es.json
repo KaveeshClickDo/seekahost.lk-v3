@@ -1,4 +1,10 @@
 {
+  "Header": {
+    "Pricing": "Precios",
+    "Support": "Soporte",
+    "SignIn": "Iniciar sesión",
+    "ClientArea": "Área de clientes"
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Crea tu propio WordPress",
@@ -60,6 +66,285 @@
           "subtext": "Fácil, eficaz y muy recomendable."
         }
       ]
+    },
+    "PackagePrices": {
+      "title1": "Planes de precios",
+      "title2": "Mejores planes y precios más baratos con SeekaHost",
+      "toggleLeft": "Mensual",
+      "toggleRight": "Anual",
+      "buttonText": "Comparar paquetes"
+    },
+    "Solutions": {
+      "title": "SeekaHost – Solución de 1 clic para hosting",
+      "description": "Protege a los tuyos con nuestra cobertura integral y confiable para que puedas",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "Alto rendimiento",
+          "title": "Alto rendimiento",
+          "description": "Impulsado por CPUs de alto rendimiento para tiempos de carga rápidos y manejo eficiente del tráfico elevado."
+        },
+        "expertSupport": {
+          "iconAlt": "Soporte experto 24/7",
+          "title": "Soporte experto 24/7",
+          "description": "Atención técnica continua de especialistas en hosting en Reino Unido."
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "Almacenamiento SSD ilimitado",
+          "title": "Almacenamiento SSD ilimitado",
+          "description": "Almacenamiento SSD rápido y fiable sin límites para un rendimiento óptimo del sitio."
+        },
+        "ukBasedServers": {
+          "iconAlt": "Servidores ubicados en Reino Unido",
+          "title": "Servidores en Reino Unido",
+          "description": "Servidores locales en Reino Unido que garantizan velocidad máxima y experiencia fluida para el público británico."
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "Interfaz simple y escalable",
+          "title": "Interfaz simple y escalable",
+          "description": "Panel limpio y fácil de usar con opciones de hosting flexibles."
+        },
+        "ddosProtection": {
+          "iconAlt": "Protección DDoS integrada",
+          "title": "Protección DDoS integrada",
+          "description": "Seguridad avanzada para mantener tu sitio protegido contra ataques de tráfico malicioso."
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "Nuestras soluciones",
+          "title": "Crea una app de Node.js en minutos",
+          "description": "SeekaHost ofrece el mejor y más fácil panel de control de hosting WordPress. El panel personalizado de hosting web para WordPress te brinda una solución de hosting de WordPress con 1 clic, certificados SSL gratuitos y activación con 1 clic.",
+          "additionalText": "Puedes buscar y registrar nombres de dominio, alojarlos y crear sitios WordPress con blogs más rápido que nunca. La elección preferida de los blogueros para hosting WP y el WordPress gestionado es el mejor aliado de los dueños de negocios."
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "El mejor hosting WordPress del Reino Unido",
+          "description": "WordPress es el CMS más utilizado para crear sitios web en el Reino Unido. Y el hosting para sitios WordPress debe ser fiable y optimizado para el rendimiento. En SeekaHost ayudamos a cualquiera a conectarse en línea con los mejores nombres de dominio y paquetes de hosting WordPress totalmente gestionados. Puedes comprar los paquetes deseados tras probar con una prueba gratuita de 7 días.",
+          "additionalText": "Crea una cuenta y comienza a alojar tus sitios web y blogs WordPress con todo lo que necesitas para triunfar online. Puedes acceder gratis a SeekaHost University para aprender marketing digital y blogging con Fernando Raymond y su equipo de expertos en dinámica web. Así que empieza a alojar tus sitios WordPress hoy mismo."
+        },
+        {
+          "id": 3,
+          "badge": "Blogging",
+          "title": "Todo lo que los blogueros necesitan para estar en línea",
+          "description": "SeekaHost entiende cómo debe ser el mejor hosting web y por eso ofrece varias ventajas clave. Estas incluyen tarifas escalables sin plazo mínimo, brindando alta flexibilidad para los usuarios. Además, los clientes se benefician de SSL gratuito y servicios de migración, así como actualizaciones y copias de seguridad automáticas y regulares de todo el contenido del sitio para garantizar seguridad y fiabilidad.",
+          "additionalText": "Además, SeekaHost ofrece soporte experto a través de chat en vivo y un sistema de tickets por email eficaz. Los usuarios pueden registrar dominios fácilmente y crear sitios WordPress en cuestión de minutos. El panel de gestión de hosting único que ofrece SeekaHost incluye muchas funciones exclusivas no disponibles en otros proveedores, haciendo la gestión de sitios sencilla y eficiente."
+        }
+      ],
+      "buttons": {
+        "getStarted": "Comenzar",
+        "learnMore": "Saber más"
+      }
+    },
+    "Video": {
+      "title": "Migración de sitio web",
+      "description": "Migrar tu sitio web no tiene que ser complicado. Con las herramientas y el soporte adecuados, puedes hacerlo de forma fluida y segura.",
+      "button": "Comenzar",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "Haz una copia de seguridad de tu sitio",
+          "description": "Resguarda los datos actuales de tu sitio web"
+        },
+        {
+          "number": "02",
+          "title": "Transfiérelo a SeekaHost",
+          "description": "Mueve tu sitio sin esfuerzo hacia nosotros"
+        },
+        {
+          "number": "03",
+          "title": "Actualiza la configuración DNS",
+          "description": "Nosotros lo configuramos todo por ti"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "Nuestras soluciones",
+      "title": "Hosting ultrarrápido en servidores del Reino Unido",
+      "paragraphs": [
+        "En SeekaHost ofrecemos atención al cliente 24/7 y chat en vivo para ayudarte.",
+        "Así garantizamos que recibas el mejor soporte del equipo de SeekaHost. También puedes abrir tickets en el área de clientes para resolver cualquier duda sobre tu sitio o servicios de hosting.",
+        "Todo nuestro personal técnico ha recibido formación avanzada en servicios de hosting web, servidores del Reino Unido y centros de datos, para ayudarte con cualquier consulta."
+      ],
+      "buttons": {
+        "getStarted": "Comenzar",
+        "learnMore": "Saber más"
+      },
+      "image": {
+        "alt": "Crear una app NodeJS en minutos"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "Business Owner",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "Cambiar a este servicio de alojamiento fue una gran decisión. Mi sitio web funciona más rápido y el soporte siempre responde con rapidez. Ahora me siento más seguro con mi negocio en línea.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Business Manager",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "He trabajado con varios proveedores de hosting, y este destaca. Es fiable, fácil de usar y su atención al cliente es muy amable. Definitivamente lo recomiendo a cualquiera que gestione sitios web.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Business Handler",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "La configuración fue rápida, el panel es intuitivo y no he tenido ninguna interrupción desde que me cambié. Ha sido una experiencia fluida desde el primer día. Totalmente vale cada centavo.",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "Opiniones de clientes",
+      "title2": "Palabras de confianza",
+      "description": "Nos enorgullece atender a clientes que valoran la calidad y el apoyo. Lee sus historias y descubre qué nos hace diferentes.",
+      "buttonText": "Leer más historias",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "La plataforma unificada de Advantage ha impulsado notablemente nuestras ventas y rendimiento en marketing."
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "Las funciones automatizadas nos han ahorrado innumerables horas. Un auténtico cambio de juego."
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "Escalamos nuestra startup significativamente, todo gracias a las herramientas robustas de Advantage."
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "Haz el cambio a SeekaHost",
+      "description": "Obtén activación inmediata de cuenta o servicio de transferencia exprés a servidores de hosting en el Reino Unido de SeekaHost.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Transferencia de sitio gestionada por personas",
+          "description": " - Sin automatismos complicados, lo hacen expertos"
+        },
+        {
+          "id": 2,
+          "title": "Sin tiempo de inactividad, rápido y sin dolor",
+          "description": " - Servicio de transferencia exprés incluido en todos los planes"
+        },
+        {
+          "id": 3,
+          "title": "Transferencia de dominio gratuita",
+          "description": " - Un año de renovación gratuita tras la transferencia"
+        },
+        {
+          "id": 4,
+          "title": "Soporte prioritario 24/7",
+          "description": " - Soporte técnico interno siempre gratuito"
+        }
+      ],
+      "buttons": {
+        "getStarted": "Comenzar",
+        "learnMore": "Saber más"
+      },
+      "image": {
+        "alt": "Haz el cambio a SeekaHost"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "Pon tu sitio web en línea",
+      "description": "Lanza tu sitio web rápida y fácilmente con nuestras soluciones de hosting fiables y soporte experto en configuración.",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "Pon tu sitio web en línea en minutos con servicios de hosting rápidos, seguros y fiables diseñados para el éxito."
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "Empieza tu presencia online hoy con herramientas fáciles de usar, soporte experto y servidores de alto rendimiento."
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "Comienza a construir tu sitio ahora: no necesitas conocimientos técnicos. Solo una configuración rápida, fluida y funciones potentes."
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "De la idea al lanzamiento, hacemos que estar en línea sea sencillo. Todo lo que necesitas para crear y hacer crecer tu sitio."
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "Preguntas frecuentes",
+      "title": "Preguntas sobre nuestros servicios",
+      "faqs": [
+        {
+          "question": "¿Ofrecen prueba gratuita o garantía de devolución de dinero?",
+          "answer": "Sí, ofrecemos una garantía de devolución del 30 días. Si no está satisfecho con nuestros servicios de hosting dentro de los primeros 30 días, puede solicitar un reembolso completo. Tenga en cuenta que las tarifas de registro de dominio no son reembolsables."
+        },
+        {
+          "question": "¿Qué tipo de soporte puedo esperar?",
+          "answer": "Proporcionamos atención al cliente 24/7 mediante chat en vivo, correo electrónico y teléfono. Nuestro equipo de soporte está disponible para ayudarte con cualquier problema o consulta relacionada con tu cuenta de hosting."
+        },
+        {
+          "question": "¿Puedo actualizar o degradar mi plan de hosting más adelante?",
+          "answer": "Por supuesto. Puedes actualizar o degradar tu plan de hosting en cualquier momento desde el panel de control de tu cuenta. Nuestro equipo de soporte también puede ayudarte en el proceso para garantizar una transición sin problemas."
+        },
+        {
+          "question": "¿El plan incluye hosting de correo electrónico?",
+          "answer": "Sí, todos nuestros planes de hosting incluyen hosting de correo electrónico. Puedes crear direcciones profesionales usando tu nombre de dominio (por ejemplo, tu_nombre@tu_dominio.com) a través de nuestro panel de control."
+        },
+        {
+          "question": "¿Qué tan seguro está mi sitio web en sus servidores?",
+          "answer": "Priorizamos la seguridad implementando cortafuegos, escaneos regulares de malware y certificados SSL gratuitos para todos los sitios. Además, realizamos copias de seguridad periódicas para proteger tus datos."
+        },
+        {
+          "question": "¿Cuál es su garantía de tiempo de actividad?",
+          "answer": "Garantizamos un tiempo de actividad del 99,9 % en todos nuestros servicios de hosting :contentReference[oaicite:1]{index=1}."
+        },
+        {
+          "question": "¿Soportan WordPress y otras plataformas CMS?",
+          "answer": "Sí, nuestro entorno de hosting está optimizado para CMS populares como WordPress, Joomla y Drupal. También ofrecemos instalaciones con un solo clic para facilitar la configuración."
+        },
+        {
+          "question": "¿Existen tarifas ocultas?",
+          "answer": "No, creemos en una política de precios transparente. Todos los costos se presentan claramente durante el registro y no hay tarifas ocultas asociadas a nuestros planes."
+        },
+        {
+          "question": "¿Puedo alojar varios sitios web en una sola cuenta?",
+          "answer": "Sí, nuestros planes de nivel superior permiten alojar múltiples sitios web con una sola cuenta. Consulta los detalles de cada plan para elegir el que mejor se adapte a tus necesidades."
+        }
+      ]
+    },
+    "CTA": {
+      "title": "¿Listo para asegurar tu futuro?",
+      "description": "Obtén tu cotización de seguro personalizada ahora y da el primer paso hacia un futuro sin preocupaciones. Tu seguridad importa.",
+      "image": {
+        "alt": "Mockup de teléfono"
+      },
+      "signIn": {
+        "placeHolder": "Dirección de correo electrónico",
+        "buttonName1": "Regístrate",
+        "buttonName2": "Regístrate"
+      }
     }
   }
 }

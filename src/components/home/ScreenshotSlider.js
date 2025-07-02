@@ -2,37 +2,19 @@
 
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
-import Link from "next/link";
 import { useEffect, useState, useCallback } from "react";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 import { screenshots2 } from "@/data/screenshotSliderData";
 
-// Sample slide data - replace with your actual content
-const slideData = [
-    {
-        badge: "Our Solutions",
-        title: "Build a Node.js App in Minutes",
-        description: "SeekaHost offers the best and easy to use WordPress hosting control panel. The custom-built web hosting control panel for WordPress gives you a 1-click WordPress hosting solution with free SSL certificates and 1-click activation.",
-        additionalText: "You can find, register domain names, host the domain and create WordPress websites with blogs faster than ever. Bloggers top choice for WP hosting and the managed WordPress is the business owners best WP partner."
-    },
-    {
-        badge: "WordPress",
-        title: "UK's Best WordPress Host",
-        description: "WordPress is the most used CMS when it comes to building websites in the UK. And web hosting for WordPress websites must be reliable and optimised for performance. At SeekaHost we help anyone get online with the best domain names and WordPress web hosting packages that are fully managed. You can buy the desired hosting packages after your test with a 7 days free trail.",
-        additionalText: "Create an account and get started hosting your WordPress websites and blogs with everything you need to succeed online. You can get free access to SeekaHost University to learn digital marketing and blogging skills taught by Fernando Raymond and his team of experts in web dynamics. So get started hosting your WordPress sites today."
-    },
-    {
-        badge: "Blogging",
-        title: "Everything Bloggers Need to Get Online",
-        description: "SeekaHost understands what the best web hosting should look like and therefore offers several key advantages. These include scalable tariffs with no minimum term, providing high flexibility for users. Customers also benefit from free SSL and migration services, as well as automatic and regular updates and backups of all website content to ensure security and reliability.",
-        additionalText: "In addition, SeekaHost provides expert support through live chat and a responsive email ticket system. Users can register domains easily and create WordPress websites within minutes. The unique hosting management panel offered by SeekaHost includes many exclusive features not available with any other web hosting provider, making website management seamless and efficient."
-    }
-];
-
 export default function ScreenshotSlider() {
+    const t = useTranslations('HomePage.ScreenshotSlider');
     const [currentSlide, setCurrentSlide] = useState(0);
     const [prevSlide, setPrevSlide] = useState(null);
     const [isTransitioning, setIsTransitioning] = useState(false);
 
+    // Get slides from translations
+    const slideData = t.raw('slides');
     const screenshotsLength = screenshots2.length;
 
     const changeSlide = useCallback((index) => {
@@ -135,13 +117,13 @@ export default function ScreenshotSlider() {
                             {/* Mobile-first button layout */}
                             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
                                 <button className="w-full sm:w-auto bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-700 active:bg-blue-800 transition-colors font-bold">
-                                    Get Started
+                                    {t('buttons.getStarted')}
                                 </button>
                                 <Link
                                     href="#"
                                     className="flex items-center text-[#1D216A] text-base sm:text-lg font-bold hover:text-[#0066CC] active:text-[#004499] transition-colors gap-2"
                                 >
-                                    Learn More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5" />
+                                    {t('buttons.learnMore')} <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5" />
                                 </Link>
                             </div>
                         </div>

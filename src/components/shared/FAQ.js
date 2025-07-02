@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import { FiPlus, FiMinus } from "react-icons/fi";
-import { faqs } from '@/data/faqData';
+import { useTranslations } from 'next-intl';
 
 export default function FAQs() {
+    const t = useTranslations('HomePage.FAQs');
+    const faqs = t.raw('faqs');
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleFAQ = (index) => {
@@ -13,9 +15,9 @@ export default function FAQs() {
 
     return (
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center md:my-10">
-            <p className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Frequently Asked Question</p>
+            <p className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">{t('badge')}</p>
             <h2 className="text-center text-2xl md:text-4xl font-bold mb-8">
-                Questions about our services
+                {t('title')}
             </h2>
             <div className="space-y-4">
                 {faqs.map((item, index) => (
