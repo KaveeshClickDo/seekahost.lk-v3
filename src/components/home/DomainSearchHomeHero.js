@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import { IoSearch } from 'react-icons/io5';
+import { useTranslations } from 'next-intl';
 
 export default function DomainSearchHomeHero() {
+    const t = useTranslations('HomePage.Hero');
     const [domain, setDomain] = useState('');
 
     const handleSearch = () => {
@@ -29,7 +31,7 @@ export default function DomainSearchHomeHero() {
         <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full">
             <input
                 type="text"
-                placeholder="Search for a domain..."
+                placeholder={t('searchBar.placeHolder')}
                 value={domain}
                 onChange={(e) => setDomain(e.target.value)}
                 onKeyDown={handleKeyDown}
@@ -40,7 +42,7 @@ export default function DomainSearchHomeHero() {
                 className="bg-gradient-to-r from-[#0081FF] via-[#0070E0] to-[#005FC7] hover:bg-gradient-to-br text-white px-5 md:px-7 py-4 rounded-full transition leading-4 font-bold flex items-center gap-2"
             >
                 <IoSearch className="w-5 h-5" />
-                Search
+                {t('searchBar.buttonName')}
             </button>
         </div>
     );

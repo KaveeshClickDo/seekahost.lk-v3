@@ -2,38 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-const testimonials = [
-    {
-        id: 1,
-        text: "Truly life-changing service!",
-        subtext: "I can’t recommend them enough."
-    },
-    {
-        id: 2,
-        text: "Exceeded all expectations.",
-        subtext: "Fast, friendly, and reliable."
-    },
-    {
-        id: 3,
-        text: "Quality that speaks volumes.",
-        subtext: "Every detail was spot on."
-    },
-    {
-        id: 4,
-        text: "I felt genuinely supported.",
-        subtext: "They really go the extra mile."
-    },
-    {
-        id: 5,
-        text: "A game‑changer for me.",
-        subtext: "Easy, effective, and well worth it."
-    }
-];
-
+import { useTranslations } from 'next-intl';
 
 export default function TestimonialSlider() {
+    const t = useTranslations('HomePage.Hero');
     const [currentIndex, setCurrentIndex] = useState(0);
+    
+    // Get testimonials from translations
+    const testimonials = t.raw('testimonials');
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -43,7 +19,7 @@ export default function TestimonialSlider() {
         }, 5000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [testimonials.length]);
 
     return (
         <div className="bg-[#295E96] rounded-full flex items-center space-x-3 max-w-md">

@@ -1,0 +1,65 @@
+{
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "Create Your Own WordPress",
+      "titleLine2": "Website & Get Online!",
+      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "decorativeImageAlt": "Decorative design",
+      "heroImageAlt": "Hero Image",
+      "services": {
+        "wordpress": {
+          "titleLine1": "WordPress",
+          "titleLine2": "Hosting",
+          "price": "Starting at £1/month",
+          "linkText": "More Info",
+          "iconAlt": "WordPress Hosting Icon"
+        },
+        "business": {
+          "titleLine1": "Business",
+          "titleLine2": "Hosting",
+          "price": "Starting at £1/month",
+          "linkText": "More Info",
+          "iconAlt": "Business Hosting Icon"
+        },
+        "agency": {
+          "titleLine1": "Agency",
+          "titleLine2": "Hosting",
+          "price": "Starting at £1/month",
+          "linkText": "More Info",
+          "iconAlt": "Agency Hosting Icon"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "Search for a domain...",
+        "buttonName": "Search"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "Truly life-changing service!",
+          "subtext": "I can't recommend them enough."
+        },
+        {
+          "id": 2,
+          "text": "Exceeded all expectations.",
+          "subtext": "Fast, friendly, and reliable."
+        },
+        {
+          "id": 3,
+          "text": "Quality that speaks volumes.",
+          "subtext": "Every detail was spot on."
+        },
+        {
+          "id": 4,
+          "text": "I felt genuinely supported.",
+          "subtext": "They really go the extra mile."
+        },
+        {
+          "id": 5,
+          "text": "A game‑changer for me.",
+          "subtext": "Easy, effective, and well worth it."
+        }
+      ]
+    }
+  }
+}

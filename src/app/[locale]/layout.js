@@ -1,4 +1,7 @@
 import { DM_Sans } from 'next/font/google';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 import './globals.css';
 import { siteSchema } from './schema';
 
@@ -18,9 +21,20 @@ export const metadata = {
   description: 'UK Web hosting services company offering domains and WordPress hosting packages with cheap monthly pay plans to get online. Best 24/7 support UK Host!',
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ 
+  children, 
+  params 
+}) {
+  // Handle i18n locale validation
+  const { locale } = await params;
+  
+  // Ensure that the incoming `locale` is valid
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         {/* Add slick-carousel CSS via CDN */}
         <link 
@@ -43,7 +57,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body suppressHydrationWarning className={`${dmSans.variable} antialiased`}>
-        {children}
+        <NextIntlClientProvider>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

@@ -34,6 +34,7 @@ export default function Home() {
       </div>
       <Navbar2 /> */}
       <Header />
+
       <ConsultantImage />
       <Hero />
       <div id="package-prices-section">

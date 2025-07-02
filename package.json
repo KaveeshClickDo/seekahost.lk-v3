@@ -12,6 +12,7 @@
     "@accessible360/accessible-slick": "^1.0.1",
     "@strapi/blocks-react-renderer": "^1.0.2",
     "next": "15.2.2",
+    "next-intl": "^4.3.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",

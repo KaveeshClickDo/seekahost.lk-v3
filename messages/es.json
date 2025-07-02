@@ -1,0 +1,65 @@
+{
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "Crea tu propio WordPress",
+      "titleLine2": "sitio web y conéctate en línea",
+      "description": "Panel de control de hosting todo-en-uno para blogs WordPress con un solo clic, para alojar de forma segura redes privadas de blogs en múltiples direcciones IP únicas.",
+      "decorativeImageAlt": "Diseño decorativo",
+      "heroImageAlt": "Imagen principal",
+      "services": {
+        "wordpress": {
+          "titleLine1": "WordPress",
+          "titleLine2": "Hosting",
+          "price": "Desde £1/mes",
+          "linkText": "Más información",
+          "iconAlt": "Icono de hosting WordPress"
+        },
+        "business": {
+          "titleLine1": "Hosting",
+          "titleLine2": "Empresarial",
+          "price": "Desde £1/mes",
+          "linkText": "Más información",
+          "iconAlt": "Icono de hosting empresarial"
+        },
+        "agency": {
+          "titleLine1": "Hosting",
+          "titleLine2": "Agencia",
+          "price": "Desde £1/mes",
+          "linkText": "Más información",
+          "iconAlt": "Icono de hosting para agencias"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "Buscar un dominio…",
+        "buttonName": "Buscar"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "¡Un servicio realmente transformador!",
+          "subtext": "No puedo recomendarlos lo suficiente."
+        },
+        {
+          "id": 2,
+          "text": "Superó todas las expectativas.",
+          "subtext": "Rápidos, amables y confiables."
+        },
+        {
+          "id": 3,
+          "text": "Calidad que lo dice todo.",
+          "subtext": "Cada detalle fue impecable."
+        },
+        {
+          "id": 4,
+          "text": "Me sentí realmente apoyado.",
+          "subtext": "Se esfuerzan al máximo por ti."
+        },
+        {
+          "id": 5,
+          "text": "Un cambio de juego para mí.",
+          "subtext": "Fácil, eficaz y muy recomendable."
+        }
+      ]
+    }
+  }
+}

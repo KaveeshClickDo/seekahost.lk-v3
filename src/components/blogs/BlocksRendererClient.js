@@ -1,6 +1,6 @@
 'use client';
 
-import NotFound from '@/app/not-found';
+import NotFound from '@/app/[locale]/not-found';
 import React from 'react';
 
 let BlocksRenderer = null;
