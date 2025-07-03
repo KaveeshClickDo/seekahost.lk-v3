@@ -1,0 +1,350 @@
+{
+  "Header": {
+    "Pricing": "価格",
+    "Support": "サポート",
+    "SignIn": "サインイン",
+    "ClientArea": "クライアントエリア"
+  },
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "あなたの WordPress を作成",
+      "titleLine2": "ウェブサイトをオンラインに！",
+      "description": "ワンクリックで WordPress ブログを安全に複数のユニークIPでホスティングできるオールインワンコントロールパネル。",
+      "decorativeImageAlt": "装飾画像",
+      "heroImageAlt": "ヒーロー画像",
+      "services": {
+        "wordpress": {
+          "titleLine1": "WordPress",
+          "titleLine2": "ホスティング",
+          "price": "月額 £1 から",
+          "linkText": "詳しくはこちら",
+          "iconAlt": "WordPress ホスティングアイコン"
+        },
+        "business": {
+          "titleLine1": "ビジネス",
+          "titleLine2": "ホスティング",
+          "price": "月額 £1 から",
+          "linkText": "詳しくはこちら",
+          "iconAlt": "ビジネスホスティングアイコン"
+        },
+        "agency": {
+          "titleLine1": "エージェンシー",
+          "titleLine2": "ホスティング",
+          "price": "月額 £1 から",
+          "linkText": "詳しくはこちら",
+          "iconAlt": "エージェンシーホスティングアイコン"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "ドメインを検索…",
+        "buttonName": "検索"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "本当に人生が変わるサービス！",
+          "subtext": "強くおすすめします。"
+        },
+        {
+          "id": 2,
+          "text": "すべての期待を超えました。",
+          "subtext": "迅速、親切、信頼できる。"
+        },
+        {
+          "id": 3,
+          "text": "品質が物語っています。",
+          "subtext": "細部に至るまで完璧。"
+        },
+        {
+          "id": 4,
+          "text": "本当に支えられていると感じました。",
+          "subtext": "本当に一歩上を行ってくれます。"
+        },
+        {
+          "id": 5,
+          "text": "私にとってゲームチェンジャーです。",
+          "subtext": "簡単、効果的、価値がある。"
+        }
+      ]
+    },
+    "PackagePrices": {
+      "title1": "料金プラン",
+      "title2": "SeekaHost の最適プラン & 最安価格",
+      "toggleLeft": "月額",
+      "toggleRight": "年額",
+      "buttonText": "プラン比較"
+    },
+    "Solutions": {
+      "title": "SeekaHost – ワンクリックホスティングソリューション",
+      "description": "大切な人を守る信頼のホスティングカバレッジ",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "高速パフォーマンス",
+          "title": "高速パフォーマンス",
+          "description": "高速なロード時間と高トラフィック対応の高性能 CPU を搭載。"
+        },
+        "expertSupport": {
+          "iconAlt": "24/7 エキスパートサポート",
+          "title": "24/7 エキスパートサポート",
+          "description": "英国ホスティング専門家による24時間技術サポート。"
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "無制限 SSD ストレージ",
+          "title": "無制限 SSD ストレージ",
+          "description": "高速かつ信頼性のある SSD ストレージ。容量制限なしで最高のパフォーマンス。"
+        },
+        "ukBasedServers": {
+          "iconAlt": "英国サーバー",
+          "title": "英国サーバー",
+          "description": "英国にあるローカルサーバーで、高速で快適な体験。"
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "シンプルでスケーラブルなインターフェース",
+          "title": "シンプルでスケーラブルなインターフェース",
+          "description": "使いやすいダッシュボードと柔軟なホスティングオプション。"
+        },
+        "ddosProtection": {
+          "iconAlt": "DDoS 保護内蔵",
+          "title": "DDoS 保護内蔵",
+          "description": "悪意あるトラフィック攻撃からサイトを守る高度なセキュリティ。"
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "ソリューション",
+          "title": "数分で Node.js アプリを構築",
+          "description": "SeekaHost は使いやすい WordPress ホスティングコントロールパネルを提供。",
+          "additionalText": "ドメイン検索、登録、ホスティング、WordPress サイト作成が以前より迅速に。ブロガーの第一選択。"
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "英国最高の WordPress ホスト",
+          "description": "英国で最も使われている CMS、WordPress 用の最適で信頼できるホスティング。7日間無料トライアルあり。",
+          "additionalText": "アカウントを作成し、すぐにサイトとブログのホスティングを開始。SeekaHost University も無料アクセス。"
+        },
+        {
+          "id": 3,
+          "badge": "ブログ",
+          "title": "ブロガーに必要なすべて",
+          "description": "柔軟なプラン、無料 SSL、移行、自動バックアップなど、安心の機能。",
+          "additionalText": "専門サポート、ライブチャット、ドメイン登録、独自コントロールパネルも完備。"
+        }
+      ],
+      "buttons": {
+        "getStarted": "始める",
+        "learnMore": "もっと詳しく"
+      }
+    },
+    "Video": {
+      "title": "Webサイト移行",
+      "description": "適切なツールとサポートで、安全かつスムーズにサイトを移行できます。",
+      "button": "始める",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "サイトをバックアップ",
+          "description": "現在のデータを保護"
+        },
+        {
+          "number": "02",
+          "title": "SeekaHost に転送",
+          "description": "簡単にサイトを移行"
+        },
+        {
+          "number": "03",
+          "title": "DNS 設定を更新",
+          "description": "すべて私たちが設定します"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "ソリューション",
+      "title": "英国サーバーによる超高速ホスティング",
+      "paragraphs": [
+        "SeekaHost は24時間365日のサポートとライブチャットを提供。4大陸にまたがるチームが常時サポート。",
+        "最高品質のサポートを保証します。クライアントエリアからチケット提出も可能。",
+        "すべての技術スタッフは英国のサーバーとデータセンターに関する専門トレーニングを受けています。どんな質問にも対応できます。"
+      ],
+      "buttons": {
+        "getStarted": "始める",
+        "learnMore": "もっと詳しく"
+      },
+      "image": {
+        "alt": "数分で NodeJS 構築"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "事業主",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "このホスティングサービスに切り替えて正解でした。サイトが速くなり、サポートの対応も迅速で、ビジネスに自信が持てます。",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "ビジネスマネージャー",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "複数のホスティング会社を使った経験がありますが、この会社が際立っています。安心で使いやすく、サポートもとてもフレンドリー。ウェブサイト管理者におすすめです。",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "ビジネスハンドラー",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "セットアップが早く、ダッシュボードが直感的で、移行後にダウンタイムもありませんでした。最初の日からスムーズで、費用対効果抜群です。",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "お客様の声",
+      "title2": "信頼の言葉",
+      "description": "品質とサポートを重視するお客様に誇りを持っています。お客様のストーリーを読んで私たちの違いをご確認ください。",
+      "buttonText": "もっと読む",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "Advantage の統一プラットフォームは、販売とマーケティングのパフォーマンスを著しく向上させました。"
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "自動化機能で何時間も節約できました。本当にゲームチェンジャーです。"
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "強力なツールのおかげで、スタートアップを大きく成長させることができました。"
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "SeekaHost に乗り換え",
+      "description": "今すぐアカウントを有効化、または英国サーバーへの高速移行サービスを受けられます。",
+      "items": [
+        {
+          "id": 1,
+          "title": "専門スタッフによるサイト移行",
+          "description": "― 複雑な自動化なし、専門家が対応"
+        },
+        {
+          "id": 2,
+          "title": "ダウンタイムなし、高速＆スムーズ",
+          "description": "― すべてのプランに高速移行が含まれます"
+        },
+        {
+          "id": 3,
+          "title": "無料ドメイン移行",
+          "description": "― 移行後1年間無料更新"
+        },
+        {
+          "id": 4,
+          "title": "24/7 優先サポート",
+          "description": "― いつでも無料の社内技術サポート"
+        }
+      ],
+      "buttons": {
+        "getStarted": "始める",
+        "learnMore": "もっと詳しく"
+      },
+      "image": {
+        "alt": "SeekaHost に乗り換え"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "あなたのサイトをオンラインに",
+      "description": "信頼性の高いホスティングと専門サポートで、簡単かつ迅速にサイトを公開。",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "数分でサイト公開—成功のための高速、安全、信頼のホスティング。"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "今日からオンラインプレゼンスをスタート。使いやすいツール、専門サポート、高性能サーバー。"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "今すぐサイト構築—技術知識不要。迅速セットアップ、強力機能。"
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "アイデアから公開まで。必要なものすべてで、成長をサポート。"
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "よくある質問",
+      "title": "サービスに関する質問",
+      "faqs": [
+        {
+          "question": "無料トライアルや返金保証はありますか？",
+          "answer": "はい、30日間返金保証があります。最初の30日以内にご満足いただけない場合は全額返金いたします。ドメイン登録費用は返金対象外です。"
+        },
+        {
+          "question": "どのようなサポートが受けられますか？",
+          "answer": "24/7 ライブチャット、メール、電話でサポートを提供しています。ホスティングに関するどんな問題でもご対応可能です。"
+        },
+        {
+          "question": "プランのアップグレード・ダウングレードはできますか？",
+          "answer": "はい、ダッシュボードからいつでも変更可能です。円滑な移行をサポートチームが支援します。"
+        },
+        {
+          "question": "メールホスティングは含まれていますか？",
+          "answer": "はい、全プランにメールホスティングが含まれます。ドメイン付きのプロフェッショナルなメールアドレスを作成できます（例： name@yourdomain.com）。"
+        },
+        {
+          "question": "サーバーのセキュリティはどうですか？",
+          "answer": "ファイアウォール、定期的なマルウェアスキャン、無料 SSL を導入し、バックアップも定期的に実施しています。"
+        },
+        {
+          "question": "稼働率の保証はありますか？",
+          "answer": "稼働率99.9％を保証します。インフラ構成により常にサイトを安定稼働させます。"
+        },
+        {
+          "question": "WordPress や他の CMS に対応していますか？",
+          "answer": "はい、WordPress、Joomla、Drupal に対応し、ワンクリックインストール機能があります。"
+        },
+        {
+          "question": "追加料金はありますか？",
+          "answer": "いいえ。すべての料金は登録時に明確に表示され、隠れた追加費用はありません。"
+        },
+        {
+          "question": "1 アカウントで複数のウェブサイトをホストできますか？",
+          "answer": "はい、上位プランでは複数サイトのホストが可能です。プラン詳細をご確認ください。"
+        }
+      ]
+    },
+    "CTA": {
+      "title": "安心できる未来の準備はできていますか？",
+      "description": "今すぐあなただけの見積もりを取得し、安心の未来へ第一歩を踏み出しましょう。あなたの安全を大切にします。",
+      "image": {
+        "alt": "スマホモックアップ"
+      },
+      "signIn": {
+        "placeHolder": "メールアドレス",
+        "buttonName1": "無料登録",
+        "buttonName2": "登録"
+      }
+    }
+  }
+}

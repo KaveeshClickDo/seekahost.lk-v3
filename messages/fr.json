@@ -1,0 +1,350 @@
+{
+  "Header": {
+    "Pricing": "Tarifs",
+    "Support": "Assistance",
+    "SignIn": "Connexion",
+    "ClientArea": "Espace Client"
+  },
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "Créez Votre Propre Site WordPress",
+      "titleLine2": "et Lancez-vous en Ligne !",
+      "description": "Panneau de contrôle tout-en-un pour héberger en toute sécurité des réseaux de blogs privés sur des adresses IP multiples uniques.",
+      "decorativeImageAlt": "Élément graphique décoratif",
+      "heroImageAlt": "Image principale",
+      "services": {
+        "wordpress": {
+          "titleLine1": "Hébergement",
+          "titleLine2": "WordPress",
+          "price": "À partir de 1£/mois",
+          "linkText": "Plus d'infos",
+          "iconAlt": "Icône Hébergement WordPress"
+        },
+        "business": {
+          "titleLine1": "Hébergement",
+          "titleLine2": "Professionnel",
+          "price": "À partir de 1£/mois",
+          "linkText": "Plus d'infos",
+          "iconAlt": "Icône Hébergement Professionnel"
+        },
+        "agency": {
+          "titleLine1": "Hébergement",
+          "titleLine2": "Agence",
+          "price": "À partir de 1£/mois",
+          "linkText": "Plus d'infos",
+          "iconAlt": "Icône Hébergement Agence"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "Rechercher un domaine...",
+        "buttonName": "Rechercher"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "Service qui change vraiment la vie !",
+          "subtext": "Je ne peux que les recommander."
+        },
+        {
+          "id": 2,
+          "text": "Dépasse toutes les attentes.",
+          "subtext": "Rapide, convivial et fiable."
+        },
+        {
+          "id": 3,
+          "text": "Une qualité qui parle d'elle-même.",
+          "subtext": "Chaque détail était parfait."
+        },
+        {
+          "id": 4,
+          "text": "Un soutien personnalisé exceptionnel.",
+          "subtext": "Ils font vraiment des efforts supplémentaires."
+        },
+        {
+          "id": 5,
+          "text": "Un tournant décisif pour moi.",
+          "subtext": "Simple, efficace et qui en vaut la peine."
+        }
+      ]
+    },
+    "PackagePrices": {
+      "title1": "Formules Tarifaires",
+      "title2": "Les Meilleurs Plans aux Prix les Plus Bas avec SeekaHost",
+      "toggleLeft": "Mensuel",
+      "toggleRight": "Annuel",
+      "buttonText": "Comparer les Formules"
+    },
+    "Solutions": {
+      "title": "SeekaHost – Solution d'Hébergement en 1 Clic",
+      "description": "Protégez vos projets avec notre couverture d'hébergement complète et fiable",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "Performances Haut Débit",
+          "title": "Performances Haut Débit",
+          "description": "Propulsé par des processeurs hautes performances pour des temps de chargement rapides."
+        },
+        "expertSupport": {
+          "iconAlt": "Support Expert 24/7",
+          "title": "Support Expert 24h/24",
+          "description": "Assistance technique permanente par des spécialistes basés au Royaume-Uni."
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "Stockage SSD Illimité",
+          "title": "Stockage SSD Illimité",
+          "description": "Stockage SSD rapide et fiable sans limites pour des performances optimales."
+        },
+        "ukBasedServers": {
+          "iconAlt": "Serveurs au Royaume-Uni",
+          "title": "Serveurs au Royaume-Uni",
+          "description": "Des serveurs locaux pour une vitesse maximale et une expérience utilisateur fluide."
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "Interface Simple et Évolutive",
+          "title": "Interface Simple et Évolutive",
+          "description": "Tableau de bord intuitif avec des options d'hébergement flexibles."
+        },
+        "ddosProtection": {
+          "iconAlt": "Protection DDoS Intégrée",
+          "title": "Protection DDoS Intégrée",
+          "description": "Sécurité avancée contre les attaques de trafic malveillant."
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "Nos Solutions",
+          "title": "Créez une App Node.js en Quelques Minutes",
+          "description": "Panneau de contrôle WordPress intuitif avec installation en 1 clic, certificats SSL gratuits et activation immédiate.",
+          "additionalText": "Trouvez, enregistrez des noms de domaine, hébergez et créez des sites WordPress plus rapidement que jamais. La solution préférée des blogueurs et propriétaires d'entreprise."
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "Le Meilleur Hébergeur WordPress au Royaume-Uni",
+          "description": "Hébergement WordPress fiable et optimisé pour les sites britanniques. Essayez gratuitement pendant 7 jours avant d'acheter.",
+          "additionalText": "Créez un compte et lancez-vous avec tout ce dont vous avez besoin pour réussir en ligne. Accès gratuit à l'Université SeekaHost pour maîtriser le marketing digital et le blogging."
+        },
+        {
+          "id": 3,
+          "badge": "Blogging",
+          "title": "Tout pour les Blogueurs en Ligne",
+          "description": "Tarifs flexibles sans engagement, migrations gratuites, mises à jour automatiques et sauvegardes régulières.",
+          "additionalText": "Bénéficiez d'un support expert via chat et système de tickets. Enregistrez des domaines et créez des sites WordPress en quelques minutes avec des fonctionnalités exclusives."
+        }
+      ],
+      "buttons": {
+        "getStarted": "Commencer",
+        "learnMore": "En Savoir Plus"
+      }
+    },
+    "Video": {
+      "title": "Migration de Site Web",
+      "description": "Migrez votre site simplement et en toute sécurité avec nos outils et notre assistance.",
+      "button": "Commencer",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "Sauvegardez Votre Site",
+          "description": "Sécurisez vos données actuelles"
+        },
+        {
+          "number": "02",
+          "title": "Transférez vers SeekaHost",
+          "description": "Migration sans effort"
+        },
+        {
+          "number": "03",
+          "title": "Mettez à Jour les DNS",
+          "description": "Configuration assurée par nos soins"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "Nos Solutions",
+      "title": "Hébergement sur Serveurs Britanniques Ultra-Rapides",
+      "paragraphs": [
+        "Assistance 24h/24 et chat en direct par notre équipe présente sur 4 continents.",
+        "Ouvrez des tickets dans votre espace client pour toute question technique.",
+        "Notre personnel qualifié maîtrise parfaitement les services d'hébergement et les centres de données britanniques."
+      ],
+      "buttons": {
+        "getStarted": "Commencer",
+        "learnMore": "En Savoir Plus"
+      },
+      "image": {
+        "alt": "Créez NodeJS en quelques minutes"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "Chef d'entreprise",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "Ce changement d'hébergeur fut une excellente décision. Mon site est plus rapide et le support réactif. J'ai confiance en ma présence en ligne.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Responsable commerciale",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "Ce fournisseur se démarque par sa fiabilité, sa simplicité et son support client. Je le recommande vivement.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Michael Brown",
+        "company": "Gestionnaire",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "Installation rapide, tableau de bord intuitif et zéro interruption. Une expérience fluide dès le départ qui vaut chaque centime.",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "Avis Clients",
+      "title2": "Témoignages de Confiance",
+      "description": "Découvrez pourquoi nos clients apprécient notre qualité et notre support exceptionnel.",
+      "buttonText": "Lire Plus de Témoignages",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "La plateforme unifiée a considérablement boosté nos performances commerciales."
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "Les fonctionnalités automatisées nous font gagner un temps précieux. Une révolution."
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "Nous avons pu développer notre start-up grâce aux outils robustes d'Advantage."
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "Passez à SeekaHost",
+      "description": "Activation immédiate ou transfert express vers nos serveurs britanniques.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Migration gérée par des experts",
+          "description": " - Pas d'automatisation hasardeuse"
+        },
+        {
+          "id": 2,
+          "title": "Aucune interruption, Rapide et Simple",
+          "description": " - Service de transfert express inclus"
+        },
+        {
+          "id": 3,
+          "title": "Transfert de domaine gratuit",
+          "description": " - Renouvellement gratuit d'un an après transfert"
+        },
+        {
+          "id": 4,
+          "title": "Support prioritaire 24/7",
+          "description": " - Assistance technique gratuite et interne"
+        }
+      ],
+      "buttons": {
+        "getStarted": "Commencer",
+        "learnMore": "En Savoir Plus"
+      },
+      "image": {
+        "alt": "Passez à SeekaHost"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "Mettez Votre Site en Ligne",
+      "description": "Lancez votre site facilement avec nos solutions d'hébergement fiables et notre assistance experte.",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "Mettez votre site en ligne en quelques minutes avec un hébergement rapide, sécurisé et fiable."
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "Démarrez votre présence en ligne dès aujourd'hui avec des outils simples et un support expert."
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "Créez votre site sans compétences techniques - configuration rapide et fonctionnalités puissantes."
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "De l'idée au lancement, nous rendons la mise en ligne simple. Tout pour créer et développer votre site."
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "Questions Fréquentes",
+      "title": "Questions sur nos services",
+      "faqs": [
+        {
+          "question": "Proposez-vous un essai gratuit ou une garantie de remboursement ?",
+          "answer": "Oui, garantie satisfait ou remboursé sous 30 jours (hors frais d'enregistrement de domaine)."
+        },
+        {
+          "question": "Quel type de support proposez-vous ?",
+          "answer": "Assistance 24h/24 via chat, email et téléphone pour toute question technique."
+        },
+        {
+          "question": "Puis-je changer de formule ultérieurement ?",
+          "answer": "Oui, vous pouvez modifier votre formule à tout moment via votre tableau de bord."
+        },
+        {
+          "question": "L'hébergement email est-il inclus ?",
+          "answer": "Oui, toutes nos formules incluent la création d'adresses professionnelles (ex: contact@votredomaine.com)."
+        },
+        {
+          "question": "Quelles mesures de sécurité ?",
+          "answer": "Pare-feux, analyses anti-malware, certificats SSL gratuits et sauvegardes régulières."
+        },
+        {
+          "question": "Quelle garantie de disponibilité ?",
+          "answer": "Garantie de 99.9% de disponibilité grâce à notre infrastructure optimisée."
+        },
+        {
+          "question": "Prenez-vous en charge WordPress ?",
+          "answer": "Oui, environnement optimisé pour WordPress, Joomla et Drupal avec installation en 1 clic."
+        },
+        {
+          "question": "Y a-t-il des frais cachés ?",
+          "answer": "Non, notre tarification est transparente sans coûts supplémentaires."
+        },
+        {
+          "question": "Puis-je héberger plusieurs sites ?",
+          "answer": "Oui, nos formules supérieures permettent d'héberger plusieurs sites sur un seul compte."
+        }
+      ]
+    },
+    "CTA": {
+      "title": "Prêt à sécuriser votre avenir numérique ?",
+      "description": "Obtenez votre hébergement personnalisé et avancez sereinement. Votre sécurité en ligne compte.",
+      "image": {
+        "alt": "Appareil mobile"
+      },
+      "signIn": {
+        "placeHolder": "Adresse Email",
+        "buttonName1": "Inscription Gratuite",
+        "buttonName2": "S'inscrire"
+      }
+    }
+  }
+}

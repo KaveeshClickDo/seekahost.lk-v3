@@ -1,0 +1,350 @@
+{
+  "Header": {
+    "Pricing": "Preise",
+    "Support": "Support",
+    "SignIn": "Anmelden",
+    "ClientArea": "Kundenbereich"
+  },
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "Erstellen Sie Ihr eigenes WordPress",
+      "titleLine2": "Website & gehen Sie online!",
+      "description": "All‑in‑One WordPress-Blog-Hosting mit einem Klick – sicher auf mehreren einzigartigen IP‑Adressen.",
+      "decorativeImageAlt": "Dekoratives Bild",
+      "heroImageAlt": "Hauptbild",
+      "services": {
+        "wordpress": {
+          "titleLine1": "WordPress",
+          "titleLine2": "Hosting",
+          "price": "Ab £1/Monat",
+          "linkText": "Mehr Info",
+          "iconAlt": "WordPress Hosting Icon"
+        },
+        "business": {
+          "titleLine1": "Business",
+          "titleLine2": "Hosting",
+          "price": "Ab £1/Monat",
+          "linkText": "Mehr Info",
+          "iconAlt": "Business Hosting Icon"
+        },
+        "agency": {
+          "titleLine1": "Agentur",
+          "titleLine2": "Hosting",
+          "price": "Ab £1/Monat",
+          "linkText": "Mehr Info",
+          "iconAlt": "Agentur Hosting Icon"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "Domain suchen...",
+        "buttonName": "Suchen"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "Wirklich lebensverändernder Service!",
+          "subtext": "Ich kann es kaum empfehlen."
+        },
+        {
+          "id": 2,
+          "text": "Übertraf alle Erwartungen.",
+          "subtext": "Schnell, freundlich und zuverlässig."
+        },
+        {
+          "id": 3,
+          "text": "Qualität, die für sich spricht.",
+          "subtext": "Jedes Detail war perfekt."
+        },
+        {
+          "id": 4,
+          "text": "Ich fühlte mich wirklich unterstützt.",
+          "subtext": "Sie geben wirklich alles."
+        },
+        {
+          "id": 5,
+          "text": "Für mich ein Game-Changer.",
+          "subtext": "Einfach, effektiv und jeden Pfund wert."
+        }
+      ]
+    },
+    "PackagePrices": {
+      "title1": "Preispläne",
+      "title2": "Beste SeekaHost-Pläne & günstige Preise",
+      "toggleLeft": "Monatlich",
+      "toggleRight": "Jährlich",
+      "buttonText": "Pakete vergleichen"
+    },
+    "Solutions": {
+      "title": "SeekaHost – 1-Klick Hosting-Lösung",
+      "description": "Schützen Sie Ihre Liebsten mit umfassender und zuverlässiger Hosting-Abdeckung",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "High-Speed Leistung",
+          "title": "High-Speed Leistung",
+          "description": "Leistungsstarke CPUs für schnelle Ladezeiten und reibungslosen Traffic."
+        },
+        "expertSupport": {
+          "iconAlt": "24/7 Experten‑Support",
+          "title": "24/7 Experten‑Support",
+          "description": "Rund‑um‑die‑Uhr-Technik‑Support durch britische Hosting-Profis."
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "Unbegrenzter SSD‑Speicher",
+          "title": "Unbegrenzter SSD‑Speicher",
+          "description": "Schneller, zuverlässiger SSD‑Speicher ohne Limits für beste Performance."
+        },
+        "ukBasedServers": {
+          "iconAlt": "Server in UK",
+          "title": "Server in UK",
+          "description": "Lokale UK‑Server sorgen für hohe Geschwindigkeit und reibungsloses Erlebnis."
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "Einfaches & skalierbares Interface",
+          "title": "Einfaches & skalierbares Interface",
+          "description": "Sauberes, benutzerfreundliches Dashboard mit flexiblen Hosting‑Optionen."
+        },
+        "ddosProtection": {
+          "iconAlt": "Integrierter DDoS‑Schutz",
+          "title": "Integrierter DDoS‑Schutz",
+          "description": "Fortschrittliche Sicherheit gegen bösartigen Traffic‑Angriffe."
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "Unsere Lösungen",
+          "title": "Node.js App in Minuten erstellen",
+          "description": "SeekaHost bietet das beste und einfachste WordPress-Hosting‑Kontrollpanel.",
+          "additionalText": "Domains finden, registrieren, hosten und WordPress‑Sites schneller erstellen – die Top‑Wahl für Blogger."
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "Beste WP‑Hosts im UK",
+          "description": "WordPress ist das meistgenutzte CMS im UK – Hosting muss zuverlässig und optimiert sein. 7 Tage Testzugang.",
+          "additionalText": "Account erstellen, mit Hosting starten und SeekaHost University gratis nutzen."
+        },
+        {
+          "id": 3,
+          "badge": "Blogging",
+          "title": "Alles, was Blogger benötigen",
+          "description": "SeekaHost bietet flexible Tarife, kostenloses SSL, Migration, regelmäßige Backups und Updates.",
+          "additionalText": "Dazu live Chat, Domainregistrierung und exklusives Hosting‑Panel."
+        }
+      ],
+      "buttons": {
+        "getStarted": "Loslegen",
+        "learnMore": "Mehr erfahren"
+      }
+    },
+    "Video": {
+      "title": "Website‑Migration",
+      "description": "Mit den richtigen Tools und Support funktioniert die Migration reibungslos und sicher.",
+      "button": "Loslegen",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "Website sichern",
+          "description": "Sichern Sie Ihre aktuellen Daten"
+        },
+        {
+          "number": "02",
+          "title": "Auf SeekaHost übertragen",
+          "description": "Übertragen Sie Ihre Seite mühelos"
+        },
+        {
+          "number": "03",
+          "title": "DNS‑Einstellungen aktualisieren",
+          "description": "Wir konfigurieren alles für Sie"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "Unsere Lösungen",
+      "title": "Superschnelles Hosting auf UK‑Servern",
+      "paragraphs": [
+        "SeekaHost bietet 24/7 Support und Live‑Chat. Unser Team ist auf vier Kontinenten aktiv und rund um die Uhr erreichbar.",
+        "So garantieren wir Ihnen bestmögliche Unterstützung. Über den Kundenbereich können Sie Tickets eröffnen.",
+        "Alle Techniker sind umfassend geschult in UK‑Servern und Rechenzentren und unterstützen Sie bei jedem Anliegen."
+      ],
+      "buttons": {
+        "getStarted": "Loslegen",
+        "learnMore": "Mehr erfahren"
+      },
+      "image": {
+        "alt": "NodeJS in Minuten erstellen"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "Geschäftsinhaber",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "Der Wechsel zu diesem Hosting‑Service war eine großartige Entscheidung. Meine Seite ist schneller und der Support antwortet immer schnell. Ich fühle mich sicherer im Online‑Business.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Business Manager",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "Ich habe mit mehreren Anbietern gearbeitet, aber dieser ist herausragend. Zuverlässig, einfach und der Support ist sehr freundlich. Ich empfehle ihn jedem Website‑Manager.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Projektverantwortliche",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "Die Einrichtung war schnell, das Dashboard intuitiv, und seit der Migration gab es keine Ausfälle. Ein reibungsloses Erlebnis vom ersten Tag. Absolut den Preis wert.",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "Kundenbewertungen",
+      "title2": "Worte des Vertrauens",
+      "description": "Wir sind stolz auf Kunden, die Qualität und Support schätzen. Lesen Sie ihre Geschichten und entdecken Sie, was uns anders macht.",
+      "buttonText": "Mehr Geschichten lesen",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "Die einheitliche Plattform von Advantage steigerte deutlich unsere Vertriebs‑ und Marketingleistung."
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "Automatisierte Funktionen haben uns unzählige Stunden erspart. Ein echter Game‑Changer."
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "Wir konnten unser Start‑up dank der robusten Tools von Advantage deutlich skalieren."
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "Wechseln Sie zu SeekaHost",
+      "description": "Erhalten Sie sofortige Kontoaktivierung oder Express‑Transfer zu unseren UK‑Servern.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Menschlicher Website‑Transfer",
+          "description": "- Kein automatischer Kram – alles von Profis"
+        },
+        {
+          "id": 2,
+          "title": "Kein Ausfall, schnell & reibungslos",
+          "description": "- Express‑Transfer-Service in allen Plänen enthalten"
+        },
+        {
+          "id": 3,
+          "title": "Kostenloser Domaintransfer",
+          "description": "- Inklusive einjähriger Domainsverlängerung nach Transfer"
+        },
+        {
+          "id": 4,
+          "title": "24/7 Prioritäts‑Support",
+          "description": "- Immer kostenloser In‑House‑Tech‑Support"
+        }
+      ],
+      "buttons": {
+        "getStarted": "Loslegen",
+        "learnMore": "Mehr erfahren"
+      },
+      "image": {
+        "alt": "Wechseln Sie zu SeekaHost"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "Ihre Website online bringen",
+      "description": "Starten Sie schnell und einfach mit unseren zuverlässigen Hosting‑Lösungen und Experten‑Support.",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "Bringen Sie Ihre Website in Minuten online – mit schnellem, sicherem und zuverlässigem Hosting für Ihren Erfolg."
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "Starten Sie noch heute Ihre Online‑Präsenz, mit benutzerfreundlichen Tools, Experten‑Support und leistungsstarken Servern."
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "Beginnen Sie jetzt Ihre Website – keine Technikkenntnisse erforderlich. Schnelle Einrichtung und starke Funktionen."
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "Von der Idee bis zum Start – wir machen es Ihnen einfach. Alles, was Sie zum Erstellen und Wachsen brauchen."
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "Häufig gestellte Fragen",
+      "title": "Fragen zu unseren Dienstleistungen",
+      "faqs": [
+        {
+          "question": "Bieten Sie eine kostenlose Testphase oder Geld-zurück-Garantie?",
+          "answer": "Ja, wir bieten eine 30‑Tage‑Geld-zurück-Garantie. Wenn Sie in den ersten 30 Tagen nicht zufrieden sind, erhalten Sie eine vollständige Rückerstattung. Domain-Registrierungsgebühren sind ausgeschlossen."
+        },
+        {
+          "question": "Welchen Support erhalte ich?",
+          "answer": "Wir bieten 24/7 Support via Live‑Chat, E‑Mail und Telefon. Unser Team steht bereit, um Ihnen bei allen Hosting‑Fragen zu helfen."
+        },
+        {
+          "question": "Kann ich meinen Plan später upgraden oder downgraden?",
+          "answer": "Absolut. Sie können jederzeit über das Dashboard upgraden oder downgraden. Unser Support hilft bei reibungslosem Wechsel."
+        },
+        {
+          "question": "Ist E‑Mail‑Hosting enthalten?",
+          "answer": "Ja, alle Pläne enthalten E‑Mail‑Hosting. Sie können professionelle E‑Mail‑Adressen mit Ihrer Domain erstellen (z. B. name@yourdomain.com)."
+        },
+        {
+          "question": "Wie sicher ist meine Website auf Ihren Servern?",
+          "answer": "Wir setzen Firewalls, regelmäßige Malware‑Scans und kostenlose SSL‑Zertifikate ein. Außerdem sichern wir Daten regelmäßig."
+        },
+        {
+          "question": "Welche Verfügbarkeitsgarantie bieten Sie?",
+          "answer": "Wir garantieren 99,9 % Uptime. Unser Setup sorgt jederzeit für zuverlässige Erreichbarkeit und Leistung."
+        },
+        {
+          "question": "Unterstützen Sie WordPress und andere CMS?",
+          "answer": "Ja, unser Hosting ist für WordPress, Joomla und Drupal optimiert – mit Ein-Klicken-Installation."
+        },
+        {
+          "question": "Gibt es versteckte Gebühren?",
+          "answer": "Nein, unsere Preise sind transparent. Alle Kosten werden bei der Registrierung klar aufgeführt, ohne versteckte Gebühren."
+        },
+        {
+          "question": "Kann ich mehrere Websites in einem Account hosten?",
+          "answer": "Ja, höhere Pläne ermöglichen das Hosting mehrerer Websites in einem einzigen Account. Details finden Sie in den Plan@–Infos."
+        }
+      ]
+    },
+    "CTA": {
+      "title": "Bereit für eine sorgenfreie Zukunft?",
+      "description": "Erhalten Sie jetzt Ihr persönliches Angebot und gehen Sie den ersten Schritt in eine sichere Zukunft. Ihre Sicherheit zählt.",
+      "image": {
+        "alt": "Handymockup"
+      },
+      "signIn": {
+        "placeHolder": "E‑Mail‑Adresse",
+        "buttonName1": "Kostenlos anmelden",
+        "buttonName2": "Anmelden"
+      }
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "Header": {
+    "Pricing": "价格",
+    "Support": "支持",
+    "SignIn": "登录",
+    "ClientArea": "客户区"
+  },
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "创建你的 WordPress",
+      "titleLine2": "网站并上线！",
+      "description": "一键式 WordPress 博客托管控制面板，安全托管在多个独立 IP 上。",
+      "decorativeImageAlt": "装饰图",
+      "heroImageAlt": "主视觉图",
+      "services": {
+        "wordpress": {
+          "titleLine1": "WordPress",
+          "titleLine2": "托管",
+          "price": "起价 £1/月",
+          "linkText": "了解更多",
+          "iconAlt": "WordPress 托管图标"
+        },
+        "business": {
+          "titleLine1": "商务",
+          "titleLine2": "托管",
+          "price": "起价 £1/月",
+          "linkText": "了解更多",
+          "iconAlt": "商务托管图标"
+        },
+        "agency": {
+          "titleLine1": "代理",
+          "titleLine2": "托管",
+          "price": "起价 £1/月",
+          "linkText": "了解更多",
+          "iconAlt": "代理托管图标"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "搜索域名...",
+        "buttonName": "搜索"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "真的改变了我的生活服务！",
+          "subtext": "我强烈推荐。"
+        },
+        {
+          "id": 2,
+          "text": "超出所有预期。",
+          "subtext": "快速、友好且可靠。"
+        },
+        {
+          "id": 3,
+          "text": "品质值得信赖。",
+          "subtext": "每个细节都很完美。"
+        },
+        {
+          "id": 4,
+          "text": "我感到真正被支持。",
+          "subtext": "他们真的非常尽心。"
+        },
+        {
+          "id": 5,
+          "text": "对我来说是一个改变游戏的人。",
+          "subtext": "简单、高效，非常值得。"
+        }
+      ]
+    },
+    "PackagePrices": {
+      "title1": "价格计划",
+      "title2": "SeekaHost 最优计划与最低价格",
+      "toggleLeft": "每月",
+      "toggleRight": "每年",
+      "buttonText": "比较套餐"
+    },
+    "Solutions": {
+      "title": "SeekaHost – 一键托管解决方案",
+      "description": "为您所爱的人提供全面可靠的托管服务",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "高速性能",
+          "title": "高速性能",
+          "description": "高性能 CPU 驱动，加载快速，应对高流量顺畅无阻。"
+        },
+        "expertSupport": {
+          "iconAlt": "24/7 专家支持",
+          "title": "24/7 专家支持",
+          "description": "全天候英国托管专家技术支持。"
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "无限 SSD 存储",
+          "title": "无限 SSD 存储",
+          "description": "快速、可靠的 SSD 存储，无限使用，确保最佳表现。"
+        },
+        "ukBasedServers": {
+          "iconAlt": "英国服务器",
+          "title": "英国服务器",
+          "description": "本地 UK 服务器确保快速访问，提供流畅体验。"
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "简单可扩展界面",
+          "title": "简单可扩展界面",
+          "description": "干净、易用的控制面板，支持灵活托管选项。"
+        },
+        "ddosProtection": {
+          "iconAlt": "内置 DDoS 保护",
+          "title": "内置 DDoS 保护",
+          "description": "高级安全阻挡恶意流量攻击，保障网站安全。"
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "我们的解决方案",
+          "title": "几分钟构建 Node.js 应用",
+          "description": "SeekaHost 提供简易 WordPress 托管面板，一键激活 WordPress 和免费 SSL。",
+          "additionalText": "更快注册域名、托管域名、创建 WordPress 博客，是博客作者首选。"
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "英国最佳 WordPress 主机",
+          "description": "WordPress 是英国最常用 CMS，托管必须可靠且性能优越。7 天免费试用。",
+          "additionalText": "注册帐号即可托管网站及博客，免费访问 SeekaHost University。"
+        },
+        {
+          "id": 3,
+          "badge": "博客",
+          "title": "满足博主需求的一切",
+          "description": "SeekaHost 提供弹性套餐、免费 SSL、迁移、安全备份等多项优势。",
+          "additionalText": "还有专家支持、在线聊天、域名注册和独家托管面板。"
+        }
+      ],
+      "buttons": {
+        "getStarted": "开始使用",
+        "learnMore": "了解更多"
+      }
+    },
+    "Video": {
+      "title": "网站迁移",
+      "description": "使用合适工具和支持，迁移过程可平稳、安全。",
+      "button": "开始",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "备份您的网站",
+          "description": "保护当前数据"
+        },
+        {
+          "number": "02",
+          "title": "迁移至 SeekaHost",
+          "description": "轻松转移您的网站"
+        },
+        {
+          "number": "03",
+          "title": "更新 DNS 设置",
+          "description": "我们帮您配置完成"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "我们的解决方案",
+      "title": "超级快速英国服务器托管",
+      "paragraphs": [
+        "SeekaHost 提供 24/7 客服和在线聊天，团队覆盖全球 4 大洲，全天候支持。",
+        "我们保证您获得最佳支持。您也可以通过客户区提交工单，解决所有托管问题。",
+        "所有技术人员均接受英国服务器与数据中心培训，可协助解答您的任何疑问。"
+      ],
+      "buttons": {
+        "getStarted": "开始使用",
+        "learnMore": "了解更多"
+      },
+      "image": {
+        "alt": "几分钟构建 NodeJS"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "企业主",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "切换到这个托管服务是绝佳决定。网站速度更快，支持响应迅速，让我更放心经营在线业务。",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "业务经理",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "我合作过多个托管商，这家最出色。可靠、易用，客服非常友好。强烈推荐！",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "业务处理员",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "设置快速，面板直观，迁移后从未停机。首日体验顺畅，绝对超值。",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "客户评价",
+      "title2": "信赖之言",
+      "description": "我们以服务注重质量与支持而自豪。阅读客户故事，了解我们的不同之处。",
+      "buttonText": "阅读更多案例",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "Advantage 的统一平台显著提升了我们的销售与营销表现。"
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "自动化功能为我们节省了无数时间。真正改变游戏规则。"
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "我们显著扩大了初创业务，这都得益于 Advantage 强大的工具。"
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "切换到 SeekaHost",
+      "description": "即时激活账户或快速迁移到我们的英国服务器。",
+      "items": [
+        {
+          "id": 1,
+          "title": "专家人工迁移",
+          "description": "— 无复杂自动过程，由专家操作"
+        },
+        {
+          "id": 2,
+          "title": "零宕机，快速无痛",
+          "description": "— 所有套餐都含快速迁移服务"
+        },
+        {
+          "id": 3,
+          "title": "免费域名转移",
+          "description": "— 转移后免费续费一年"
+        },
+        {
+          "id": 4,
+          "title": "24/7 优先支持",
+          "description": "— 免费内部技术支持"
+        }
+      ],
+      "buttons": {
+        "getStarted": "开始使用",
+        "learnMore": "了解更多"
+      },
+      "image": {
+        "alt": "切换到 SeekaHost"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "让您的网站上线",
+      "description": "使用我们可靠托管方案与专业支持，快速轻松上线您的网站。",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "几分钟上线，快速、安全、可靠托管，为您成功加速。"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "今天启动您的在线形象，使用易用工具、专家支持与高性能服务器。"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "即刻开始建站——无需技术基础。快速设置，强大功能。"
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "从构想到上线，我们让建站变简单。您需要的一切，助力成长。"
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "常见问题",
+      "title": "关于我们服务的问题",
+      "faqs": [
+        {
+          "question": "你们提供免费试用或退款保证吗？",
+          "answer": "是的，我们提供30天退款保证。如果您在首30天内不满意，可申请全额退款。域名注册费不予退还。"
+        },
+        {
+          "question": "我可以获得什么支持？",
+          "answer": "我们提供全天候在线聊天、邮件和电话支持。我们的团队随时准备帮助解决托管问题。"
+        },
+        {
+          "question": "我可以以后升级或者降级计划吗？",
+          "answer": "当然。您可随时通过控制面板升级或降级，亦可由我们的团队协助您无缝切换。"
+        },
+        {
+          "question": "计划包括邮箱托管吗？",
+          "answer": "包括。所有计划内含邮箱托管，您可以使用域名创建专业邮箱（如 name@yourdomain.com）。"
+        },
+        {
+          "question": "我的网站在你们服务器安全吗？",
+          "answer": "我们重视安全，采用防火墙、定期扫描恶意软件，并为所有网站提供免费 SSL。我们也执行自动备份。"
+        },
+        {
+          "question": "你们的正常运行保证是多少？",
+          "answer": "我们保证 99.9% 的正常运行率。我们的基础设施确保您的网站始终可访问和性能优异。"
+        },
+        {
+          "question": "你们支持 WordPress 和其他 CMS 吗？",
+          "answer": "支持。我们的托管环境已优化 WordPress、Joomla 和 Drupal，并提供一键安装功能。"
+        },
+        {
+          "question": "有隐藏费用吗？",
+          "answer": "没有。我们价格透明，所有费用在注册过程中清晰显示，无任何隐藏支出。"
+        },
+        {
+          "question": "我可以在一个账户中托管多个网站吗？",
+          "answer": "可以。高级套餐支持在单一账户中托管多个网站。请查看套餐详情以选择最合适的方案。"
+        }
+      ]
+    },
+    "CTA": {
+      "title": "准备好迈向稳定未来了吗？",
+      "description": "立即获取您的定制报价，迈出迈向无忧未来的第一步。您的安全，我们重视。",
+      "image": {
+        "alt": "手机示意图"
+      },
+      "signIn": {
+        "placeHolder": "邮箱地址",
+        "buttonName1": "免费注册",
+        "buttonName2": "注册"
+      }
+    }
+  }
+}

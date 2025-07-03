@@ -1,0 +1,350 @@
+{
+  "Header": {
+    "Pricing": "Harga",
+    "Support": "Dukungan",
+    "SignIn": "Masuk",
+    "ClientArea": "Area Klien"
+  },
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "Buat Website WordPress Anda Sendiri",
+      "titleLine2": "dan Mulai Online!",
+      "description": "Panel kontrol hosting blog WordPress serba satu klik untuk menghosting jaringan blog pribadi dengan aman di berbagai alamat IP unik.",
+      "decorativeImageAlt": "Desain dekoratif",
+      "heroImageAlt": "Gambar Utama",
+      "services": {
+        "wordpress": {
+          "titleLine1": "Hosting",
+          "titleLine2": "WordPress",
+          "price": "Mulai dari £1/bulan",
+          "linkText": "Info Selengkapnya",
+          "iconAlt": "Ikon Hosting WordPress"
+        },
+        "business": {
+          "titleLine1": "Hosting",
+          "titleLine2": "Bisnis",
+          "price": "Mulai dari £1/bulan",
+          "linkText": "Info Selengkapnya",
+          "iconAlt": "Ikon Hosting Bisnis"
+        },
+        "agency": {
+          "titleLine1": "Hosting",
+          "titleLine2": "Agen",
+          "price": "Mulai dari £1/bulan",
+          "linkText": "Info Selengkapnya",
+          "iconAlt": "Ikon Hosting Agen"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "Cari domain...",
+        "buttonName": "Cari"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "Layanan yang benar-benar mengubah hidup!",
+          "subtext": "Sangat direkomendasikan"
+        },
+        {
+          "id": 2,
+          "text": "Melampaui semua ekspektasi",
+          "subtext": "Cepat, ramah, dan andal"
+        },
+        {
+          "id": 3,
+          "text": "Kualitas yang berbicara sendiri",
+          "subtext": "Setiap detail sempurna"
+        },
+        {
+          "id": 4,
+          "text": "Dukungan yang sangat personal",
+          "subtext": "Benar-benar melayani dengan maksimal"
+        },
+        {
+          "id": 5,
+          "text": "Game-changer untuk saya",
+          "subtext": "Mudah, efektif, dan sangat berharga"
+        }
+      ]
+    },
+    "PackagePrices": {
+      "title1": "Paket Harga",
+      "title2": "Paket Terbaik & Harga Termurah dari SeekaHost",
+      "toggleLeft": "Bulanan",
+      "toggleRight": "Tahunan",
+      "buttonText": "Bandingkan Paket"
+    },
+    "Solutions": {
+      "title": "SeekaHost – Solusi 1 Klik untuk Hosting",
+      "description": "Melindungi proyek Anda dengan layanan hosting komprehensif dan terpercaya",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "Kinerja Kecepatan Tinggi",
+          "title": "Kinerja Kecepatan Tinggi",
+          "description": "Didukung CPU berkinerja tinggi untuk waktu muat cepat dan penanganan traffic tinggi"
+        },
+        "expertSupport": {
+          "iconAlt": "Dukungan Ahli 24/7",
+          "title": "Dukungan Ahli 24/7",
+          "description": "Dukungan teknonis sepanjang waktu dari spesialis hosting"
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "Penyimpanan SSD Tak Terbatas",
+          "title": "Penyimpanan SSD Tak Terbatas",
+          "description": "Penyimpanan SSD cepat dan andal tanpa batas untuk kinerja optimal"
+        },
+        "ukBasedServers": {
+          "iconAlt": "Server Berbasis di Inggris",
+          "title": "Server Berbasis di Inggris",
+          "description": "Server lokal untuk kecepatan maksimal dan pengalaman pengguna mulus"
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "Antarmuka Sederhana & Skalabel",
+          "title": "Antarmuka Sederhana & Skalabel",
+          "description": "Dashboard intuitif dengan opsi hosting fleksibel"
+        },
+        "ddosProtection": {
+          "iconAlt": "Proteksi DDoS Terintegrasi",
+          "title": "Proteksi DDoS Terintegrasi",
+          "description": "Keamanan canggih melindungi dari serangan traffic berbahaya"
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "Solusi Kami",
+          "title": "Buat Aplikasi Node.js dalam Menit",
+          "description": "Panel kontrol WordPress intuitif dengan instalasi 1 klik, sertifikat SSL gratis, dan aktivasi instan.",
+          "additionalText": "Temukan, daftarkan domain, hosting, dan buat situs WordPress lebih cepat dari sebelumnya. Pilihan utama blogger dan mitra terbaik pemilik bisnis."
+        },
+        {
+          "id": 2,
+          "badge": "WordPress",
+          "title": "Hosting WordPress Terbaik di Inggris",
+          "description": "Hosting WordPress andal dan dioptimalkan untuk situs Indonesia. Uji gratis 7 hari sebelum membeli.",
+          "additionalText": "Buat akun dan mulai hosting situs WordPress Anda dengan semua yang dibutuhkan untuk sukses online. Akses gratis ke SeekaHost University untuk belajar pemasaran digital dan blogging."
+        },
+        {
+          "id": 3,
+          "badge": "Blogging",
+          "title": "Semua yang Blogger Butuhkan untuk Online",
+          "description": "Paket fleksibel tanpa kontrak minimal, migrasi gratis, update otomatis, dan backup reguler.",
+          "additionalText": "Dukungan ahli via chat dan tiket email. Daftar domain dan buat situs WordPress dalam menit dengan fitur eksklusif."
+        }
+      ],
+      "buttons": {
+        "getStarted": "Mulai Sekarang",
+        "learnMore": "Pelajari Lebih Lanjut"
+      }
+    },
+    "Video": {
+      "title": "Migrasi Website",
+      "description": "Migrasi website tak perlu rumit. Dengan alat dan dukungan tepat, Anda bisa pindahkan semuanya dengan lancar dan aman.",
+      "button": "Mulai Sekarang",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "Backup Website Anda",
+          "description": "Amankan data website saat ini"
+        },
+        {
+          "number": "02",
+          "title": "Transfer ke SeekaHost",
+          "description": "Pindahkan situs dengan mudah"
+        },
+        {
+          "number": "03",
+          "title": "Perbarui Pengaturan DNS",
+          "description": "Kami konfigurasikan semuanya"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "Solusi Kami",
+      "title": "Hosting Server Inggris Super Cepat",
+      "paragraphs": [
+        "Dukungan 24/7 dan live chat oleh tim di 4 benua.",
+        "Buka tiket di area klien untuk pertanyaan teknis apa pun.",
+        "Staf ahli kami terlatih untuk layanan hosting dan pusat data Inggris."
+      ],
+      "buttons": {
+        "getStarted": "Mulai Sekarang",
+        "learnMore": "Pelajari Lebih Lanjut"
+      },
+      "image": {
+        "alt": "Buat NodeJS dalam menit"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "David King",
+        "company": "Pemilik Bisnis",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "Pindah ke layanan ini keputusan tepat. Website lebih cepat, dukungan responsif. Saya lebih percaya diri dengan bisnis online.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Sarah Juli",
+        "company": "Manajer Bisnis",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "Penyedia hosting terbaik yang pernah saya gunakan. Andal, mudah, dan dukungan pelanggan super ramah. Sangat direkomendasikan!",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "Michael Brown",
+        "company": "Pengelola Bisnis",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "Setup cepat, dashboard intuitif, nol downtime sejak pindah. Pengalaman mulus dari hari pertama. Sangat worth it.",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "Ulasan Pelanggan",
+      "title2": "Kata-Kata Kepercayaan",
+      "description": "Kami bangga melayani pelanggan yang menghargai kualitas dan dukungan. Baca kisah mereka.",
+      "buttonText": "Baca Lebih Banyak Kisah",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "Karen Smith",
+          "company": "Steel Corporation",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "Platform terpadu meningkatkan performa penjualan dan pemasaran secara signifikan."
+        },
+        {
+          "id": 2,
+          "name": "Damian Doe",
+          "company": "Doe Industries",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "Fitur otomatis menghemat banyak waktu kami. Game-changer sejati."
+        },
+        {
+          "id": 3,
+          "name": "Alice Johnson",
+          "company": "Alphabet Co",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "Kembangkan startup kami berkat alat canggih Advantage."
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "Beralih ke SeekaHost",
+      "description": "Aktivasi instan atau layanan transfer ekspres ke server hosting Inggris kami.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Transfer oleh ahli",
+          "description": " - Tanpa otomatisasi berantakan"
+        },
+        {
+          "id": 2,
+          "title": "Tanpa downtime, Cepat & Mudah",
+          "description": " - Layanan transfer ekspres gratis"
+        },
+        {
+          "id": 3,
+          "title": "Transfer Domain Gratis",
+          "description": " - Perpanjangan domain 1 tahun gratis"
+        },
+        {
+          "id": 4,
+          "title": "Dukungan Prioritas 24/7",
+          "description": " - Dukungan teknis internal gratis"
+        }
+      ],
+      "buttons": {
+        "getStarted": "Mulai Sekarang",
+        "learnMore": "Pelajari Lebih Lanjut"
+      },
+      "image": {
+        "alt": "Beralih ke SeekaHost"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "Onlinekan Website Anda",
+      "description": "Luncurkan website dengan mudah menggunakan solusi hosting andal dan dukungan setup ahli.",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "Onlinekan website dalam menit dengan hosting cepat, aman, dan andal untuk kesuksesan Anda."
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "Mulai kehadiran online hari ini dengan alat mudah, dukungan ahli, dan server berkinerja tinggi."
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "Bangun website Anda sekarang—tanpa keahlian teknis. Setup cepat dengan fitur canggih."
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "Dari ide hingga peluncuran, kami buat online jadi sederhana. Semua yang Anda butuhkan untuk membuat dan mengembangkan situs."
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "Pertanyaan Umum",
+      "title": "Pertanyaan tentang layanan kami",
+      "faqs": [
+        {
+          "question": "Apakah ada uji coba gratis atau garansi uang kembali?",
+          "answer": "Ya, garansi uang kembali 30 hari (kecuali biaya pendaftaran domain)."
+        },
+        {
+          "question": "Dukungan apa yang disediakan?",
+          "answer": "Bantuan 24/7 via chat, email, dan telepon untuk semua pertanyaan teknis."
+        },
+        {
+          "question": "Bisakah saya ubah paket nanti?",
+          "answer": "Ya, ubah paket kapan saja melalui dashboard akun."
+        },
+        {
+          "question": "Apakah hosting email termasuk?",
+          "answer": "Ya, semua paket termasuk pembuatan email profesional (contoh: info@domainanda.com)."
+        },
+        {
+          "question": "Apa langkah keamanannya?",
+          "answer": "Firewall, pemindaian malware, SSL gratis, dan backup reguler."
+        },
+        {
+          "question": "Apa garansi uptime?",
+          "answer": "Garansi 99.9% uptime dengan infrastruktur teroptimasi."
+        },
+        {
+          "question": "Apakah mendukung WordPress?",
+          "answer": "Ya, lingkungan hosting dioptimalkan untuk WordPress, Joomla, Drupal dengan instalasi 1 klik."
+        },
+        {
+          "question": "Ada biaya tersembunyi?",
+          "answer": "Tidak, harga transparan tanpa biaya tambahan."
+        },
+        {
+          "question": "Bisa hosting beberapa website?",
+          "answer": "Ya, paket level tinggi mendukung multi-website dalam satu akun."
+        }
+      ]
+    },
+    "CTA": {
+      "title": "Siap mengamankan masa depan digital Anda?",
+      "description": "Dapatkan hosting khusus Anda sekarang dan melangkah maju dengan percaya diri. Keamanan online Anda penting.",
+      "image": {
+        "alt": "Perangkat Mobile"
+      },
+      "signIn": {
+        "placeHolder": "Alamat Email",
+        "buttonName1": "Daftar Gratis",
+        "buttonName2": "Daftar"
+      }
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "Header": {
+    "Pricing": "가격",
+    "Support": "지원",
+    "SignIn": "로그인",
+    "ClientArea": "고객센터"
+  },
+  "HomePage": {
+    "Hero": {
+      "titleLine1": "나만의 워드프레스",
+      "titleLine2": "웹사이트 제작 및 온라인 시작!",
+      "description": "고유한 다중 IP 주소로 프라이빗 블로그 네트워크를 안전하게 호스팅하는 올인원 클릭 워드프레스 블로그 호스팅 제어판.",
+      "decorativeImageAlt": "장식용 디자인",
+      "heroImageAlt": "메인 이미지",
+      "services": {
+        "wordpress": {
+          "titleLine1": "워드프레스",
+          "titleLine2": "호스팅",
+          "price": "월 £1부터 시작",
+          "linkText": "자세히 보기",
+          "iconAlt": "워드프레스 호스팅 아이콘"
+        },
+        "business": {
+          "titleLine1": "비즈니스",
+          "titleLine2": "호스팅",
+          "price": "월 £1부터 시작",
+          "linkText": "자세히 보기",
+          "iconAlt": "비즈니스 호스팅 아이콘"
+        },
+        "agency": {
+          "titleLine1": "에이전시",
+          "titleLine2": "호스팅",
+          "price": "월 £1부터 시작",
+          "linkText": "자세히 보기",
+          "iconAlt": "에이전시 호스팅 아이콘"
+        }
+      },
+      "searchBar": {
+        "placeHolder": "도메인 검색...",
+        "buttonName": "검색"
+      },
+      "testimonials": [
+        {
+          "id": 1,
+          "text": "인생을 바꾸는 서비스!",
+          "subtext": "강력 추천합니다."
+        },
+        {
+          "id": 2,
+          "text": "기대를 뛰어넘는 성능.",
+          "subtext": "빠르고 친절하며 안정적입니다."
+        },
+        {
+          "id": 3,
+          "text": "품질이 말해주는 가치.",
+          "subtext": "모든 디테일이 완벽했습니다."
+        },
+        {
+          "id": 4,
+          "text": "진정한 고객 지원.",
+          "subtext": "추가로 더 해주는 서비스."
+        },
+        {
+          "id": 5,
+          "text": "게임 체인저가 되었습니다.",
+          "subtext": "쉽고 효과적이며 가치 있습니다."
+        }
+      ]
+    },
+    "PackagePrices": {
+      "title1": "가격 플랜",
+      "title2": "SeekaHost의 최상의 플랜과 최저가",
+      "toggleLeft": "월간",
+      "toggleRight": "연간",
+      "buttonText": "패키지 비교"
+    },
+    "Solutions": {
+      "title": "SeekaHost – 1클릭 호스팅 솔루션",
+      "description": "신뢰할 수 있는 종합 호스팅 서비스로 프로젝트를 보호하세요",
+      "features": {
+        "highSpeedPerformance": {
+          "iconAlt": "고속 성능",
+          "title": "고속 성능",
+          "description": "고성능 CPU로 빠른 로딩 시간과 대용량 트래픽 처리를 보장합니다."
+        },
+        "expertSupport": {
+          "iconAlt": "24/7 전문가 지원",
+          "title": "24/7 전문가 지원",
+          "description": "호스팅 전문가의 연중무휴 기술 지원"
+        },
+        "unlimitedSsdStorage": {
+          "iconAlt": "무제한 SSD 저장공간",
+          "title": "무제한 SSD 저장공간",
+          "description": "최적의 성능을 위한 빠르고 안정적인 무제한 SSD 저장공간"
+        },
+        "ukBasedServers": {
+          "iconAlt": "영국 기반 서버",
+          "title": "영국 기반 서버",
+          "description": "현지 서버로 한국 사용자에게 최고의 속도와 원활한 경험 제공"
+        },
+        "simpleScalableInterface": {
+          "iconAlt": "간편하고 확장 가능한 인터페이스",
+          "title": "간편하고 확장 가능한 인터페이스",
+          "description": "유연한 호스팅 옵션을 제공하는 직관적인 대시보드"
+        },
+        "ddosProtection": {
+          "iconAlt": "내장형 DDoS 보호",
+          "title": "내장형 DDoS 보호",
+          "description": "악성 트래픽 공격으로부터 사이트를 보호하는 고급 보안"
+        }
+      }
+    },
+    "ScreenshotSlider": {
+      "slides": [
+        {
+          "id": 1,
+          "badge": "우리 솔루션",
+          "title": "몇 분 만에 Node.js 앱 구축",
+          "description": "1클릭 설치, 무료 SSL 인증서 및 즉시 활성화가 가능한 직관적인 워드프레스 호스팅 제어판.",
+          "additionalText": "도메인 찾기, 등록, 호스팅 및 워드프레스 웹사이트 제작을 이전보다 빠르게 진행하세요. 블로거 최고 선택의 WP 호스팅, 비즈니스 소유자를 위한 최고의 파트너."
+        },
+        {
+          "id": 2,
+          "badge": "워드프레스",
+          "title": "영국 최고의 워드프레스 호스트",
+          "description": "7일 무료 체험 후 원하는 호스팅 패키지를 구매하세요. 온라인 성공에 필요한 모든 것을 제공합니다.",
+          "additionalText": "디지털 마케팅 및 블로깅 기술을 배울 수 있는 SeekaHost University 무료 접근권 제공. 지금 바로 워드프레스 사이트 호스팅을 시작하세요."
+        },
+        {
+          "id": 3,
+          "badge": "블로깅",
+          "title": "온라인 시작에 필요한 모든 것",
+          "description": "최소 계약 기간 없는 유연한 요금제, 무료 마이그레이션, 자동 업데이트 및 정기 백업.",
+          "additionalText": "실시간 채팅 및 이메일 티켓 시스템을 통한 전문가 지원. 독점 기능을 갖춘 호스팅 관리 패널로 웹사이트 관리를 간편하고 효율적으로."
+        }
+      ],
+      "buttons": {
+        "getStarted": "시작하기",
+        "learnMore": "더 알아보기"
+      }
+    },
+    "Video": {
+      "title": "웹사이트 마이그레이션",
+      "description": "복잡할 필요 없는 웹사이트 이전. 올바른 도구와 지원으로 모든 것을 원활하고 안전하게 이동하세요.",
+      "button": "시작하기",
+      "ProcessSteps": [
+        {
+          "number": "01",
+          "title": "웹사이트 백업",
+          "description": "현재 웹사이트 데이터 보안"
+        },
+        {
+          "number": "02",
+          "title": "SeekaHost로 전송",
+          "description": "손쉬운 사이트 이동"
+        },
+        {
+          "number": "03",
+          "title": "DNS 설정 업데이트",
+          "description": "모든 설정을 대신 구성해드립니다"
+        }
+      ]
+    },
+    "GetStarted": {
+      "badge": "우리 솔루션",
+      "title": "초고속 영국 서버 호스팅",
+      "paragraphs": [
+        "4대륙에 기반을 둔 24/7 고객 지원 및 실시간 채팅 제공.",
+        "SeekaHost 고객 센터에서 지원 티켓을 열어 기술 문의 해결.",
+        "모든 기술 직원은 웹 호스팅 서비스, 영국 서버 및 데이터 센터에 대한 심층 교육을 이수했습니다."
+      ],
+      "buttons": {
+        "getStarted": "시작하기",
+        "learnMore": "더 알아보기"
+      },
+      "image": {
+        "alt": "몇 분 만에 NodeJS 구축"
+      }
+    },
+    "PeopleCards": [
+      {
+        "name": "데이비드 킹",
+        "company": "사업주",
+        "image": "/images/wordpress-hosting/people-card-1.webp",
+        "comment": "이 호스팅 서비스로 전환한 것이 최고의 결정이었습니다. 웹사이트가 더 빨라졌고 지원도 빠릅니다. 온라인 비즈니스에 대한 자신감이 생겼습니다.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "사라 줄리",
+        "company": "비즈니스 매니저",
+        "image": "/images/wordpress-hosting/people-card-2.webp",
+        "comment": "여러 호스팅 제공업체와 작업했지만 여기가 최고입니다. 안정적이고 사용하기 쉬우며 고객 지원이 매우 친절합니다. 웹사이트 관리자에게 강력 추천합니다.",
+        "videoUrl": "hx2W4fmqw_w"
+      },
+      {
+        "name": "마이클 브라운",
+        "company": "비즈니스 핸들러",
+        "image": "/images/wordpress-hosting/people-card-3.webp",
+        "comment": "설정이 빠르고 대시보드는 직관적이며 전환 후 다운타임이 없었습니다. 첫날부터 매끄러운 경험입니다. 가치 있는 투자입니다.",
+        "videoUrl": "hx2W4fmqw_w"
+      }
+    ],
+    "Review": {
+      "title1": "고객 리뷰",
+      "title2": "신뢰의 증언",
+      "description": "품질과 지원을 소중히 여기는 고객을 위해 봉사하게 되어 자랑스럽습니다. 그들의 이야기를 읽고 우리의 차이점을 발견하세요.",
+      "buttonText": "더 많은 이야기 보기",
+      "reviewers": [
+        {
+          "id": 1,
+          "name": "카렌 스미스",
+          "company": "스틸 코퍼레이션",
+          "image": "/images/shared/profile1.webp",
+          "rating": 5,
+          "comment": "통합 플랫폼이 영업 및 마케팅 성과를 눈에 띄게 향상시켰습니다."
+        },
+        {
+          "id": 2,
+          "name": "데미안 도우",
+          "company": "도우 인더스트리즈",
+          "image": "/images/shared/profile2.webp",
+          "rating": 5,
+          "comment": "자동화 기능으로 수많은 시간을 절약했습니다. 진정한 게임 체인저입니다."
+        },
+        {
+          "id": 3,
+          "name": "앨리스 존슨",
+          "company": "알파벳 코",
+          "image": "/images/shared/profile3.webp",
+          "rating": 5,
+          "comment": "Advantage의 강력한 도구 덕분에 스타트업을 크게 확장할 수 있었습니다."
+        }
+      ]
+    },
+    "WhySeekahost": {
+      "badge": "SeekaHost",
+      "title": "SeekaHost로 전환하세요",
+      "description": "즉시 계정 활성화 또는 영국 호스팅 서버로의 빠른 전환 서비스.",
+      "items": [
+        {
+          "id": 1,
+          "title": "전문가 직접 사이트 이전",
+          "description": " - 지저분한 자동화 없음"
+        },
+        {
+          "id": 2,
+          "title": "다운타임 없음, 빠르고 간편",
+          "description": " - 모든 플랜에 익스프레스 전환 서비스 포함"
+        },
+        {
+          "id": 3,
+          "title": "무료 도메인 이전",
+          "description": " - 이전 후 1년 무료 도메인 갱신"
+        },
+        {
+          "id": 4,
+          "title": "24/7 우선 지원",
+          "description": " - 항상 무료 내부 기술 지원"
+        }
+      ],
+      "buttons": {
+        "getStarted": "시작하기",
+        "learnMore": "더 알아보기"
+      },
+      "image": {
+        "alt": "SeekaHost로 전환"
+      }
+    },
+    "LargeImageSlider": {
+      "title": "웹사이트 온라인 시작",
+      "description": "믿을 수 있는 호스팅 솔루션과 전문 설치 지원으로 빠르고 쉽게 웹사이트를 시작하세요.",
+      "defaultSlides": [
+        {
+          "id": 1,
+          "image": "/images/home/1.webp",
+          "overlayText": "빠르고 안전하며 신뢰할 수 있는 호스팅 서비스로 몇 분 만에 웹사이트 온라인 시작"
+        },
+        {
+          "id": 2,
+          "image": "/images/home/2.webp",
+          "overlayText": "쉬운 도구, 전문가 지원 및 고성능 서버로 오늘 온라인 입지 시작"
+        },
+        {
+          "id": 3,
+          "image": "/images/home/3.webp",
+          "overlayText": "기술적 기술 없이 지금 바로 웹사이트 구축 시작 - 강력한 기능과 빠른 설정"
+        },
+        {
+          "id": 4,
+          "image": "/images/home/4.webp",
+          "overlayText": "아이디어부터 런칭까지, 온라인 시작을 간단하게 만듭니다. 사이트 생성 및 성장에 필요한 모든 것"
+        }
+      ]
+    },
+    "FAQs": {
+      "badge": "자주 묻는 질문",
+      "title": "서비스 관련 질문",
+      "faqs": [
+        {
+          "question": "무료 체험 또는 환불 보장이 있나요?",
+          "answer": "네, 30일 환불 보장을 제공합니다. 도메인 등록 수수료는 환불되지 않습니다."
+        },
+        {
+          "question": "어떤 지원을 받을 수 있나요?",
+          "answer": "실시간 채팅, 이메일 및 전화로 24/7 고객 지원을 제공합니다."
+        },
+        {
+          "question": "호스팅 플랜을 변경할 수 있나요?",
+          "answer": "계정 대시보드를 통해 언제든지 플랜을 업그레이드 또는 다운그레이드할 수 있습니다."
+        },
+        {
+          "question": "이메일 호스팅이 포함되어 있나요?",
+          "answer": "모든 호스팅 플랜에 이메일 호스팅이 포함되어 있습니다."
+        },
+        {
+          "question": "웹사이트 보안 수준은 어떻게 되나요?",
+          "answer": "방화벽, 정기적인 악성코드 검사, 무료 SSL 인증서를 통해 보안을 우선시합니다."
+        },
+        {
+          "question": "가동 시간 보장은 어떻게 되나요?",
+          "answer": "모든 호스팅 서비스에 대해 99.9% 가동 시간을 보장합니다."
+        },
+        {
+          "question": "워드프레스 및 기타 CMS를 지원하나요?",
+          "answer": "워드프레스, 줌라, 드루팔 등 인기 CMS 플랫폼에 최적화된 호스팅 환경을 제공합니다."
+        },
+        {
+          "question": "숨겨진 비용이 있나요?",
+          "answer": "아니요, 투명한 가격 정책을 믿습니다."
+        },
+        {
+          "question": "하나의 계정으로 여러 웹사이트를 호스팅할 수 있나요?",
+          "answer": "상위 티어 호스팅 플랜에서는 단일 계정으로 여러 웹사이트를 호스팅할 수 있습니다."
+        }
+      ]
+    },
+    "CTA": {
+      "title": "안전한 온라인 미래를 준비하셨나요?",
+      "description": "지금 맞춤형 호스팅 견적을 받고 걱정 없는 미래로 나아가는 첫 걸음을 내딛으세요. 여러분의 온라인 안전이 중요합니다.",
+      "image": {
+        "alt": "핸드폰 목업"
+      },
+      "signIn": {
+        "placeHolder": "이메일 주소",
+        "buttonName1": "무료 가입",
+        "buttonName2": "가입하기"
+      }
+    }
+  }
+}
