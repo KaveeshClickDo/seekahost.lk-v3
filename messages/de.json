@@ -69,10 +69,141 @@
     },
     "PackagePrices": {
       "title1": "Preispläne",
-      "title2": "Beste SeekaHost-Pläne & günstige Preise",
+      "title2": "Beste Pläne & Günstigste Preise bei SeekaHost",
       "toggleLeft": "Monatlich",
       "toggleRight": "Jährlich",
-      "buttonText": "Pakete vergleichen"
+      "buttonText": "Pakete vergleichen",
+      "homePkgPrices": [
+        {
+          "title": "Plus",
+          "buttonName": "Plus erhalten",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "30 Tage kostenlose Testversion",
+          "specialTextYear": "Verlängerung: £300/Jahr",
+          "featureSections": [
+            {
+              "title": "Allgemeine Funktionen",
+              "features": [
+                "1 Website",
+                "10 GB Webspace",
+                "~10.000 Besuche monatlich",
+                "Unbegrenzter Traffic"
+              ]
+            },
+            {
+              "title": "Exklusive Funktionen",
+              "features": [
+                "WordPress-Auto-Install",
+                "Kostenlose automatisierte Migrationen",
+                "Vollständig verwaltete Updates",
+                "Speed Optimizer WP-Plugin"
+              ]
+            },
+            {
+              "title": "Hosting-Funktionen",
+              "features": [
+                "Kostenloses SSL, E-Mail",
+                "Unbegrenzte Datenbanken",
+                "Tägliches Backup",
+                "Erweiterte Sicherheit"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "Pro",
+          "buttonName": "Pro erhalten",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "Verlängerung: £60/Monat",
+          "specialTextYear": "Verlängerung: £600/Jahr",
+          "featureSections": [
+            {
+              "title": "Allgemeine Funktionen",
+              "features": [
+                "Unbegrenzte Websites",
+                "20 GB Webspace",
+                "~100.000 Besuche monatlich",
+                "Unbegrenzter Traffic"
+              ]
+            },
+            {
+              "title": "Exklusive Funktionen",
+              "features": [
+                "WordPress-Auto-Install",
+                "Kostenlose automatisierte Migrationen",
+                "Vollständig verwaltete Updates",
+                "Speed Optimizer WP-Plugin",
+                "WordPress-Staging"
+              ]
+            },
+            {
+              "title": "Hosting-Funktionen",
+              "features": [
+                "Kostenloses SSL, E-Mail",
+                "Unbegrenzte Datenbanken",
+                "Tägliches Backup",
+                "Erweiterte Sicherheit",
+                "Backup-Kopien auf Abruf"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "Enterprise",
+          "buttonName": "Verkauf kontaktieren",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "Verlängerung: £120/Monat",
+          "specialTextYear": "Verlängerung: £1200/Jahr",
+          "featureSections": [
+            {
+              "title": "Allgemeine Funktionen",
+              "features": [
+                "Unbegrenzte Websites",
+                "40 GB Webspace",
+                "~400.000 Besuche monatlich",
+                "Unbegrenzter Traffic"
+              ]
+            },
+            {
+              "title": "Exklusive Funktionen",
+              "features": [
+                "WordPress-Auto-Install",
+                "Kostenlose automatisierte Migrationen",
+                "Vollständig verwaltete Updates",
+                "Speed Optimizer WP-Plugin",
+                "WordPress-Staging",
+                "30% schnelleres PHP"
+              ]
+            },
+            {
+              "title": "Hosting-Funktionen",
+              "features": [
+                "Kostenloses SSL, E-Mail",
+                "Unbegrenzte Datenbanken",
+                "Tägliches Backup",
+                "Erweiterte Sicherheit",
+                "Backup-Kopien auf Abruf",
+                "Kostenloses privates DNS"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – 1-Klick Hosting-Lösung",

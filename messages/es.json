@@ -68,11 +68,142 @@
       ]
     },
     "PackagePrices": {
-      "title1": "Planes de precios",
-      "title2": "Mejores planes y precios más baratos con SeekaHost",
+      "title1": "Planes de Precios",
+      "title2": "Mejores Planes y Precios Más Económicos con SeekaHost",
       "toggleLeft": "Mensual",
       "toggleRight": "Anual",
-      "buttonText": "Comparar paquetes"
+      "buttonText": "Comparar Paquetes",
+      "homePkgPrices": [
+        {
+          "title": "Plus",
+          "buttonName": "Obtener Plus",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "30 días de prueba gratuita",
+          "specialTextYear": "Renovación: £300/año",
+          "featureSections": [
+            {
+              "title": "Características Generales",
+              "features": [
+                "1 Sitio web",
+                "10 GB de espacio web",
+                "~10,000 visitas mensuales",
+                "Tráfico ilimitado"
+              ]
+            },
+            {
+              "title": "Características Exclusivas",
+              "features": [
+                "Autoinstalación de WordPress",
+                "Migraciones automáticas gratuitas",
+                "Actualizaciones totalmente gestionadas",
+                "Plugin de optimización de velocidad para WP"
+              ]
+            },
+            {
+              "title": "Características de Alojamiento",
+              "features": [
+                "SSL y correo electrónico gratuitos",
+                "Base de datos ilimitada",
+                "Copia de seguridad diaria",
+                "Seguridad mejorada"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "Pro",
+          "buttonName": "Obtener Pro",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "Renovación: £60/mes",
+          "specialTextYear": "Renovación: £600/año",
+          "featureSections": [
+            {
+              "title": "Características Generales",
+              "features": [
+                "Sitios web ilimitados",
+                "20 GB de espacio web",
+                "~100,000 visitas mensuales",
+                "Tráfico ilimitado"
+              ]
+            },
+            {
+              "title": "Características Exclusivas",
+              "features": [
+                "Autoinstalación de WordPress",
+                "Migraciones automáticas gratuitas",
+                "Actualizaciones totalmente gestionadas",
+                "Plugin de optimización de velocidad para WP",
+                "Entorno de pruebas para WordPress"
+              ]
+            },
+            {
+              "title": "Características de Alojamiento",
+              "features": [
+                "SSL y correo electrónico gratuitos",
+                "Base de datos ilimitada",
+                "Copia de seguridad diaria",
+                "Seguridad mejorada",
+                "Copias de seguridad bajo demanda"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "Empresa",
+          "buttonName": "Hablar con Ventas",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "Renovación: £120/mes",
+          "specialTextYear": "Renovación: £1200/año",
+          "featureSections": [
+            {
+              "title": "Características Generales",
+              "features": [
+                "Sitios web ilimitados",
+                "40 GB de espacio web",
+                "~400,000 visitas mensuales",
+                "Tráfico ilimitado"
+              ]
+            },
+            {
+              "title": "Características Exclusivas",
+              "features": [
+                "Autoinstalación de WordPress",
+                "Migraciones automáticas gratuitas",
+                "Actualizaciones totalmente gestionadas",
+                "Plugin de optimización de velocidad para WP",
+                "Entorno de pruebas para WordPress",
+                "PHP 30% más rápido"
+              ]
+            },
+            {
+              "title": "Características de Alojamiento",
+              "features": [
+                "SSL y correo electrónico gratuitos",
+                "Base de datos ilimitada",
+                "Copia de seguridad diaria",
+                "Seguridad mejorada",
+                "Copias de seguridad bajo demanda",
+                "DNS privado gratuito"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – Solución de 1 clic para hosting",

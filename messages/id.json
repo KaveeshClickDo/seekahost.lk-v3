@@ -69,10 +69,141 @@
     },
     "PackagePrices": {
       "title1": "Paket Harga",
-      "title2": "Paket Terbaik & Harga Termurah dari SeekaHost",
+      "title2": "Paket Terbaik & Harga Termurah dengan SeekaHost",
       "toggleLeft": "Bulanan",
       "toggleRight": "Tahunan",
-      "buttonText": "Bandingkan Paket"
+      "buttonText": "Bandingkan Paket",
+      "homePkgPrices": [
+        {
+          "title": "Plus",
+          "buttonName": "Dapatkan Plus",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "Uji Coba Gratis 30 Hari",
+          "specialTextYear": "Perpanjangan: £300/tahun",
+          "featureSections": [
+            {
+              "title": "Fitur Umum",
+              "features": [
+                "1 Website",
+                "Ruang Web 10 GB",
+                "~10.000 Kunjungan Bulanan",
+                "Traffic Tak Terbatas"
+              ]
+            },
+            {
+              "title": "Fitur Eksklusif",
+              "features": [
+                "Instal WordPress Otomatis",
+                "Migrasi Otomatis Gratis",
+                "Pembaruan Sepenuhnya Terkelola",
+                "Plugin Pengoptimal Kecepatan WP"
+              ]
+            },
+            {
+              "title": "Fitur Hosting",
+              "features": [
+                "SSL & Email Gratis",
+                "Basis Data Tak Terbatas",
+                "Cadangan Harian",
+                "Keamanan Ditingkatkan"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "Pro",
+          "buttonName": "Dapatkan Pro",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "Perpanjangan: £60/bulan",
+          "specialTextYear": "Perpanjangan: £600/tahun",
+          "featureSections": [
+            {
+              "title": "Fitur Umum",
+              "features": [
+                "Website Tak Terbatas",
+                "Ruang Web 20 GB",
+                "~100.000 Kunjungan Bulanan",
+                "Traffic Tak Terbatas"
+              ]
+            },
+            {
+              "title": "Fitur Eksklusif",
+              "features": [
+                "Instal WordPress Otomatis",
+                "Migrasi Otomatis Gratis",
+                "Pembaruan Sepenuhnya Terkelola",
+                "Plugin Pengoptimal Kecepatan WP",
+                "Staging WordPress"
+              ]
+            },
+            {
+              "title": "Fitur Hosting",
+              "features": [
+                "SSL & Email Gratis",
+                "Basis Data Tak Terbatas",
+                "Cadangan Harian",
+                "Keamanan Ditingkatkan",
+                "Salinan Cadangan Sesuai Permintaan"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "Enterprise",
+          "buttonName": "Hubungi Penjualan",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "Perpanjangan: £120/bulan",
+          "specialTextYear": "Perpanjangan: £1200/tahun",
+          "featureSections": [
+            {
+              "title": "Fitur Umum",
+              "features": [
+                "Website Tak Terbatas",
+                "Ruang Web 40 GB",
+                "~400.000 Kunjungan Bulanan",
+                "Traffic Tak Terbatas"
+              ]
+            },
+            {
+              "title": "Fitur Eksklusif",
+              "features": [
+                "Instal WordPress Otomatis",
+                "Migrasi Otomatis Gratis",
+                "Pembaruan Sepenuhnya Terkelola",
+                "Plugin Pengoptimal Kecepatan WP",
+                "Staging WordPress",
+                "PHP 30% Lebih Cepat"
+              ]
+            },
+            {
+              "title": "Fitur Hosting",
+              "features": [
+                "SSL & Email Gratis",
+                "Basis Data Tak Terbatas",
+                "Cadangan Harian",
+                "Keamanan Ditingkatkan",
+                "Salinan Cadangan Sesuai Permintaan",
+                "DNS Pribadi Gratis"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – Solusi 1 Klik untuk Hosting",

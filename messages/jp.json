@@ -69,10 +69,141 @@
     },
     "PackagePrices": {
       "title1": "料金プラン",
-      "title2": "SeekaHost の最適プラン & 最安価格",
+      "title2": "SeekaHostで最高のプランと最安値",
       "toggleLeft": "月額",
       "toggleRight": "年額",
-      "buttonText": "プラン比較"
+      "buttonText": "パッケージ比較",
+      "homePkgPrices": [
+        {
+          "title": "プラス",
+          "buttonName": "プラスを取得",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "30日間無料トライアル",
+          "specialTextYear": "更新 £300/年",
+          "featureSections": [
+            {
+              "title": "一般機能",
+              "features": [
+                "1ウェブサイト",
+                "10 GB ウェブスペース",
+                "月間約10,000ビジット",
+                "無制限トラフィック"
+              ]
+            },
+            {
+              "title": "限定機能",
+              "features": [
+                "WordPress自動インストール",
+                "無料自動移行",
+                "完全管理更新",
+                "スピード最適化WPプラグイン"
+              ]
+            },
+            {
+              "title": "ホスティング機能",
+              "features": [
+                "無料SSL、メール",
+                "無制限データベース",
+                "毎日バックアップ",
+                "強化セキュリティ"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "プロ",
+          "buttonName": "プロを取得",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "更新 £60/月",
+          "specialTextYear": "更新 £600/年",
+          "featureSections": [
+            {
+              "title": "一般機能",
+              "features": [
+                "無制限ウェブサイト",
+                "20 GB ウェブスペース",
+                "月間約100,000ビジット",
+                "無制限トラフィック"
+              ]
+            },
+            {
+              "title": "限定機能",
+              "features": [
+                "WordPress自動インストール",
+                "無料自動移行",
+                "完全管理更新",
+                "スピード最適化WPプラグイン",
+                "WordPressステージング"
+              ]
+            },
+            {
+              "title": "ホスティング機能",
+              "features": [
+                "無料SSL、メール",
+                "無制限データベース",
+                "毎日バックアップ",
+                "強化セキュリティ",
+                "オンデマンドバックアップ"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "エンタープライズ",
+          "buttonName": "セールスに相談",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "更新 £120/月",
+          "specialTextYear": "更新 £1200/年",
+          "featureSections": [
+            {
+              "title": "一般機能",
+              "features": [
+                "無制限ウェブサイト",
+                "40 GB ウェブスペース",
+                "月間約400,000ビジット",
+                "無制限トラフィック"
+              ]
+            },
+            {
+              "title": "限定機能",
+              "features": [
+                "WordPress自動インストール",
+                "無料自動移行",
+                "完全管理更新",
+                "スピード最適化WPプラグイン",
+                "WordPressステージング",
+                "PHP 30%高速化"
+              ]
+            },
+            {
+              "title": "ホスティング機能",
+              "features": [
+                "無料SSL、メール",
+                "無制限データベース",
+                "毎日バックアップ",
+                "強化セキュリティ",
+                "オンデマンドバックアップ",
+                "無料プライベートDNS"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – ワンクリックホスティングソリューション",

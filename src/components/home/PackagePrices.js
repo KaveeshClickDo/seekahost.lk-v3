@@ -9,7 +9,8 @@ import { homePkgPrices } from '@/data/packagePricesData';
 
 export default function PackagesPrices() {
     const t = useTranslations('HomePage.PackagePrices');
-    const pricing = homePkgPrices;
+    const pricing = t.raw('homePkgPrices');
+    // const pricing = homePkgPrices;
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
 

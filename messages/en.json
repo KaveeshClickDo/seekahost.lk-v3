@@ -72,7 +72,138 @@
       "title2": "Best Plans & Cheapest Prices With SeekaHost",
       "toggleLeft": "Monthly",
       "toggleRight": "Yearly",
-      "buttonText": "Compare Packages"
+      "buttonText": "Compare Packages",
+      "homePkgPrices": [
+        {
+          "title": "Plus",
+          "buttonName": "Get Plus",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "30 days of Free Trial",
+          "specialTextYear": "Renews for £300/yr",
+          "featureSections": [
+            {
+              "title": "General Features",
+              "features": [
+                "1 Website",
+                "10 GB Web Space",
+                "~10,000 Visits Monthly",
+                "Unmetered Traffic"
+              ]
+            },
+            {
+              "title": "Exclusive Features",
+              "features": [
+                "WordPress Auto-Install",
+                "Free Automated Migrations",
+                "Fully Managed Updates",
+                "Speed Optimizer WP Plugin"
+              ]
+            },
+            {
+              "title": "Hosting Features",
+              "features": [
+                "Free SSL, Email",
+                "Unlimited Database",
+                "Daily Backup",
+                "Enhanced Security"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "Pro",
+          "buttonName": "Get Pro",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "Renews at £60/mo",
+          "specialTextYear": "Renews for £600/yr",
+          "featureSections": [
+            {
+              "title": "General Features",
+              "features": [
+                "Unlimited Websites",
+                "20 GB Web Space",
+                "~100,000 Visits Monthly",
+                "Unmetered Traffic"
+              ]
+            },
+            {
+              "title": "Exclusive Features",
+              "features": [
+                "WordPress Auto-Install",
+                "Free Automated Migrations",
+                "Fully Managed Updates",
+                "Speed Optimizer WP Plugin",
+                "WordPress Staging"
+              ]
+            },
+            {
+              "title": "Hosting Features",
+              "features": [
+                "Free SSL, Email",
+                "Unlimited Database",
+                "Daily Backup",
+                "Enhanced Security",
+                "On-Demand Backup Copies"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "Enterprise",
+          "buttonName": "Talk to Sales",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "Renews at £120/mo",
+          "specialTextYear": "Renews for £1200/yr",
+          "featureSections": [
+            {
+              "title": "General Features",
+              "features": [
+                "Unlimited Websites",
+                "40 GB Web Space",
+                "~400,000 Visits Monthly",
+                "Unmetered Traffic"
+              ]
+            },
+            {
+              "title": "Exclusive Features",
+              "features": [
+                "WordPress Auto-Install",
+                "Free Automated Migrations",
+                "Fully Managed Updates",
+                "Speed Optimizer WP Plugin",
+                "WordPress Staging",
+                "30% Faster PHP"
+              ]
+            },
+            {
+              "title": "Hosting Features",
+              "features": [
+                "Free SSL, Email",
+                "Unlimited Database",
+                "Daily Backup",
+                "Enhanced Security",
+                "On-Demand Backup Copies",
+                "Free Private DNS"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – 1 Click Solution for Hosting",

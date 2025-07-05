@@ -69,10 +69,141 @@
     },
     "PackagePrices": {
       "title1": "가격 플랜",
-      "title2": "SeekaHost의 최상의 플랜과 최저가",
+      "title2": "SeekaHost의 최고의 플랜과 최저가",
       "toggleLeft": "월간",
       "toggleRight": "연간",
-      "buttonText": "패키지 비교"
+      "buttonText": "패키지 비교",
+      "homePkgPrices": [
+        {
+          "title": "플러스",
+          "buttonName": "플러스 구매",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "30일 무료 체험",
+          "specialTextYear": "갱신: £300/년",
+          "featureSections": [
+            {
+              "title": "일반 기능",
+              "features": [
+                "웹사이트 1개",
+                "웹 공간 10GB",
+                "월간 방문자 약 10,000명",
+                "무제한 트래픽"
+              ]
+            },
+            {
+              "title": "독점 기능",
+              "features": [
+                "워드프레스 자동 설치",
+                "무료 자동 마이그레이션",
+                "완전 관리형 업데이트",
+                "워드프레스 속도 최적화 플러그인"
+              ]
+            },
+            {
+              "title": "호스팅 기능",
+              "features": [
+                "무료 SSL, 이메일",
+                "무제한 데이터베이스",
+                "매일 백업",
+                "강화된 보안"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "프로",
+          "buttonName": "프로 구매",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "갱신: £60/월",
+          "specialTextYear": "갱신: £600/년",
+          "featureSections": [
+            {
+              "title": "일반 기능",
+              "features": [
+                "무제한 웹사이트",
+                "웹 공간 20GB",
+                "월간 방문자 약 100,000명",
+                "무제한 트래픽"
+              ]
+            },
+            {
+              "title": "독점 기능",
+              "features": [
+                "워드프레스 자동 설치",
+                "무료 자동 마이그레이션",
+                "완전 관리형 업데이트",
+                "워드프레스 속도 최적화 플러그인",
+                "워드프레스 스테이징"
+              ]
+            },
+            {
+              "title": "호스팅 기능",
+              "features": [
+                "무료 SSL, 이메일",
+                "무제한 데이터베이스",
+                "매일 백업",
+                "강화된 보안",
+                "주문형 백업 복사본"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "엔터프라이즈",
+          "buttonName": "영업팀 문의",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "갱신: £120/월",
+          "specialTextYear": "갱신: £1200/년",
+          "featureSections": [
+            {
+              "title": "일반 기능",
+              "features": [
+                "무제한 웹사이트",
+                "웹 공간 40GB",
+                "월간 방문자 약 400,000명",
+                "무제한 트래픽"
+              ]
+            },
+            {
+              "title": "독점 기능",
+              "features": [
+                "워드프레스 자동 설치",
+                "무료 자동 마이그레이션",
+                "완전 관리형 업데이트",
+                "워드프레스 속도 최적화 플러그인",
+                "워드프레스 스테이징",
+                "PHP 30% 더 빠름"
+              ]
+            },
+            {
+              "title": "호스팅 기능",
+              "features": [
+                "무료 SSL, 이메일",
+                "무제한 데이터베이스",
+                "매일 백업",
+                "강화된 보안",
+                "주문형 백업 복사본",
+                "무료 개인 DNS"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – 1클릭 호스팅 솔루션",

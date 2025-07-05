@@ -68,11 +68,142 @@
       ]
     },
     "PackagePrices": {
-      "title1": "价格计划",
-      "title2": "SeekaHost 最优计划与最低价格",
-      "toggleLeft": "每月",
-      "toggleRight": "每年",
-      "buttonText": "比较套餐"
+      "title1": "价格套餐",
+      "title2": "SeekaHost 提供最优惠的价格方案",
+      "toggleLeft": "月度",
+      "toggleRight": "年度",
+      "buttonText": "比较套餐",
+      "homePkgPrices": [
+        {
+          "title": "增强版",
+          "buttonName": "获取增强版",
+          "link": "#",
+          "monthlyPrice": 29,
+          "yearlyPrice": 290,
+          "discountYear": 0,
+          "discountMonth": 10,
+          "specialTextMonth": "30 天免费试用",
+          "specialTextYear": "续费 £300/年",
+          "featureSections": [
+            {
+              "title": "基础功能",
+              "features": [
+                "1 个网站",
+                "10 GB 网页空间",
+                "每月约 10,000 次访问",
+                "不限流量"
+              ]
+            },
+            {
+              "title": "专属功能",
+              "features": [
+                "WordPress 自动安装",
+                "免费自动迁移",
+                "全托管更新",
+                "WordPress 速度优化插件"
+              ]
+            },
+            {
+              "title": "托管功能",
+              "features": [
+                "免费 SSL 和邮箱",
+                "无限数据库",
+                "每日备份",
+                "增强安全性"
+              ]
+            }
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "专业版",
+          "buttonName": "获取专业版",
+          "link": "#",
+          "monthlyPrice": 59,
+          "yearlyPrice": 590,
+          "discountYear": 15,
+          "discountMonth": 15,
+          "specialTextMonth": "续费 £60/月",
+          "specialTextYear": "续费 £600/年",
+          "featureSections": [
+            {
+              "title": "基础功能",
+              "features": [
+                "无限网站",
+                "20 GB 网页空间",
+                "每月约 100,000 次访问",
+                "不限流量"
+              ]
+            },
+            {
+              "title": "专属功能",
+              "features": [
+                "WordPress 自动安装",
+                "免费自动迁移",
+                "全托管更新",
+                "WordPress 速度优化插件",
+                "WordPress 测试环境"
+              ]
+            },
+            {
+              "title": "托管功能",
+              "features": [
+                "免费 SSL 和邮箱",
+                "无限数据库",
+                "每日备份",
+                "增强安全性",
+                "按需备份副本"
+              ]
+            }
+          ],
+          "isBestValue": true
+        },
+        {
+          "title": "企业版",
+          "buttonName": "联系销售",
+          "link": "/personalized-hosting",
+          "monthlyPrice": 119,
+          "yearlyPrice": 1190,
+          "discountYear": 0,
+          "discountMonth": 0,
+          "specialTextMonth": "续费 £120/月",
+          "specialTextYear": "续费 £1200/年",
+          "featureSections": [
+            {
+              "title": "基础功能",
+              "features": [
+                "无限网站",
+                "40 GB 网页空间",
+                "每月约 400,000 次访问",
+                "不限流量"
+              ]
+            },
+            {
+              "title": "专属功能",
+              "features": [
+                "WordPress 自动安装",
+                "免费自动迁移",
+                "全托管更新",
+                "WordPress 速度优化插件",
+                "WordPress 测试环境",
+                "PHP 速度快 30%"
+              ]
+            },
+            {
+              "title": "托管功能",
+              "features": [
+                "免费 SSL 和邮箱",
+                "无限数据库",
+                "每日备份",
+                "增强安全性",
+                "按需备份副本",
+                "免费私有 DNS"
+              ]
+            }
+          ],
+          "isBestValue": false
+        }
+      ]
     },
     "Solutions": {
       "title": "SeekaHost – 一键托管解决方案",
