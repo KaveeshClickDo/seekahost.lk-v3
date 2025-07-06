@@ -5,6 +5,81 @@
     "SignIn": "Masuk",
     "ClientArea": "Area Klien"
   },
+  "Footer": {
+    "About": {
+      "title": "Tentang",
+      "description": "Perusahaan Web Hosting"
+    },
+    "HostingServices": {
+      "title": "Layanan Hosting",
+      "links": {
+        "businessWebHosting": "Hosting Web Bisnis",
+        "cheapCpanelHosting": "Hosting cPanel Murah",
+        "nodejsHosting": "Hosting Node.js",
+        "agencyHosting": "Hosting Agen",
+        "hostingMigration": "Migrasi Hosting"
+      }
+    },
+    "OurCompany": {
+      "title": "Perusahaan Kami",
+      "links": {
+        "aboutSeekaHost": "Tentang SeekaHost™",
+        "seekaHostUniversity": "Universitas SeekaHost™",
+        "seekaHostBlog": "Blog SeekaHost",
+        "contactUs": "Hubungi Kami"
+      }
+    },
+    "DomainRegistration": {
+      "title": "Pendaftaran Domain",
+      "links": {
+        "registerDomain": "Daftarkan Domain",
+        "domainPricing": "Harga Domain",
+        "domainTransfer": "Transfer Domain",
+        "premiumDomain": "Domain Premium",
+        "sslCertificates": "Sertifikat SSL"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "Hosting Web WordPress",
+        "managedWordpress": "WordPress Terkelola",
+        "woocommerceHosting": "Hosting WooCommerce",
+        "wordpressTechnicalSupport": "Dukungan Teknis WordPress"
+      }
+    },
+    "Marketing": {
+      "title": "Pemasaran",
+      "links": {
+        "googleAdvertising": "Iklan Google",
+        "businessListing": "Daftar Bisnis",
+        "seoConsultancy": "Konsultasi SEO",
+        "marketingCourses": "Kursus Pemasaran",
+        "personalizedHosting": "Hosting Terspesialisasi"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS & Server",
+      "links": {
+        "dedicatedServers": "Server Khusus",
+        "cloudServers": "Server Cloud",
+        "vpsHosting": "Hosting VPS",
+        "n8nVpsHosting": "Hosting VPS n8n"
+      }
+    },
+    "Copyright": {
+      "text": "Hak Cipta © 2025 SeekaHost Uk Data Centers Ltd. Hak Cipta Dilindungi.",
+      "companyNumber": "Nomor perusahaan 16026964.",
+      "links": {
+        "privacyPolicy": "Kebijakan Privasi",
+        "termsCondition": "Syarat & Ketentuan",
+        "refundPolicy": "Kebijakan Pengembalian Dana"
+      }
+    },
+    "PaymentSection": {
+      "title": "Bayar dengan percaya diri & aman"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Buat Website WordPress Anda Sendiri",

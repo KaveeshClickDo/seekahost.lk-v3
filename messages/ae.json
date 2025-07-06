@@ -5,6 +5,81 @@
     "SignIn": "تسجيل الدخول",
     "ClientArea": "منطقة العميل"
   },
+  "Footer": {
+    "About": {
+      "title": "معلومات عنا",
+      "description": "شركة استضافة مواقع"
+    },
+    "HostingServices": {
+      "title": "خدمات الاستضافة",
+      "links": {
+        "businessWebHosting": "استضافة مواقع الأعمال",
+        "cheapCpanelHosting": "استضافة cPanel رخيصة",
+        "nodejsHosting": "استضافة Node.js",
+        "agencyHosting": "استضافة الوكالات",
+        "hostingMigration": "ترحيل الاستضافة"
+      }
+    },
+    "OurCompany": {
+      "title": "شركتنا",
+      "links": {
+        "aboutSeekaHost": "عن SeekaHost™",
+        "seekaHostUniversity": "جامعة SeekaHost™",
+        "seekaHostBlog": "مدونة SeekaHost",
+        "contactUs": "اتصل بنا"
+      }
+    },
+    "DomainRegistration": {
+      "title": "تسجيل النطاق",
+      "links": {
+        "registerDomain": "تسجيل نطاق",
+        "domainPricing": "أسعار النطاقات",
+        "domainTransfer": "نقل النطاق",
+        "premiumDomain": "نطاق مميز",
+        "sslCertificates": "شهادات SSL"
+      }
+    },
+    "WordPress": {
+      "title": "ووردبريس",
+      "links": {
+        "wordpressWebHosting": "استضافة مواقع ووردبريس",
+        "managedWordpress": "ووردبريس مُدار",
+        "woocommerceHosting": "استضافة WooCommerce",
+        "wordpressTechnicalSupport": "دعم فني لووردبريس"
+      }
+    },
+    "Marketing": {
+      "title": "التسويق",
+      "links": {
+        "googleAdvertising": "الإعلان على جوجل",
+        "businessListing": "قائمة الأعمال",
+        "seoConsultancy": "استشارات SEO",
+        "marketingCourses": "دورات التسويق",
+        "personalizedHosting": "استضافة مخصصة"
+      }
+    },
+    "VpsServers": {
+      "title": "خوادم VPS",
+      "links": {
+        "dedicatedServers": "خوادم مخصصة",
+        "cloudServers": "خوادم سحابية",
+        "vpsHosting": "استضافة VPS",
+        "n8nVpsHosting": "استضافة n8n VPS"
+      }
+    },
+    "Copyright": {
+      "text": "حقوق النشر © 2025 SeekaHost Uk Data Centers Ltd. جميع الحقوق محفوظة.",
+      "companyNumber": "رقم الشركة 16026964.",
+      "links": {
+        "privacyPolicy": "سياسة الخصوصية",
+        "termsCondition": "الشروط والأحكام",
+        "refundPolicy": "سياسة الاسترداد"
+      }
+    },
+    "PaymentSection": {
+      "title": "ادفع بثقة وأمان"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "أنشئ موقع ووردبريس خاص بك",

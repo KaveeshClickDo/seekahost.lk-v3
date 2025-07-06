@@ -50,7 +50,7 @@ export default function Hosting() {
                                 </svg>
                             </div>
                             <div className="flex-1">
-                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Node JS Hosting</p>
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Node.js Hosting</p>
                                 <p className="text-sm text-gray-600">Specialized for Node.js apps</p>
                             </div>
                         </Link>

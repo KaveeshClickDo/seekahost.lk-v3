@@ -5,6 +5,81 @@
     "SignIn": "登录",
     "ClientArea": "客户区"
   },
+  "Footer": {
+    "About": {
+      "title": "关于我们",
+      "description": "网络托管公司"
+    },
+    "HostingServices": {
+      "title": "托管服务",
+      "links": {
+        "businessWebHosting": "企业网站托管",
+        "cheapCpanelHosting": "廉价 cPanel 托管",
+        "nodejsHosting": "Node.js 托管",
+        "agencyHosting": "代理商托管",
+        "hostingMigration": "托管迁移"
+      }
+    },
+    "OurCompany": {
+      "title": "我们的公司",
+      "links": {
+        "aboutSeekaHost": "关于 SeekaHost™",
+        "seekaHostUniversity": "SeekaHost™ 大学",
+        "seekaHostBlog": "SeekaHost 博客",
+        "contactUs": "联系我们"
+      }
+    },
+    "DomainRegistration": {
+      "title": "域名注册",
+      "links": {
+        "registerDomain": "注册域名",
+        "domainPricing": "域名定价",
+        "domainTransfer": "域名转移",
+        "premiumDomain": "高级域名",
+        "sslCertificates": "SSL 证书"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "WordPress 网站托管",
+        "managedWordpress": "托管式 WordPress",
+        "woocommerceHosting": "WooCommerce 托管",
+        "wordpressTechnicalSupport": "WordPress 技术支持"
+      }
+    },
+    "Marketing": {
+      "title": "营销",
+      "links": {
+        "googleAdvertising": "谷歌广告",
+        "businessListing": "企业列表",
+        "seoConsultancy": "SEO 咨询",
+        "marketingCourses": "营销课程",
+        "personalizedHosting": "个性化托管"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS 和服务器",
+      "links": {
+        "dedicatedServers": "专用服务器",
+        "cloudServers": "云服务器",
+        "vpsHosting": "VPS 托管",
+        "n8nVpsHosting": "n8n VPS 托管"
+      }
+    },
+    "Copyright": {
+      "text": "版权所有 © 2025 SeekaHost Uk Data Centers Ltd。保留所有权利。",
+      "companyNumber": "公司编号 16026964。",
+      "links": {
+        "privacyPolicy": "隐私政策",
+        "termsCondition": "条款和条件",
+        "refundPolicy": "退款政策"
+      }
+    },
+    "PaymentSection": {
+      "title": "安全可靠地支付"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "创建你的 WordPress",

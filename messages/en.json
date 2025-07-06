@@ -5,6 +5,81 @@
     "SignIn": "Sign In",
     "ClientArea": "Client Area"
   },
+  "Footer": {
+    "About": {
+      "title": "About",
+      "description": "Web Hosting Company"
+    },
+    "HostingServices": {
+      "title": "Hosting Services",
+      "links": {
+        "businessWebHosting": "Business Web Hosting",
+        "cheapCpanelHosting": "Cheap cPanel Hosting",
+        "nodejsHosting": "Node.js Hosting",
+        "agencyHosting": "Agency Hosting",
+        "hostingMigration": "Hosting Migration"
+      }
+    },
+    "OurCompany": {
+      "title": "Our Company",
+      "links": {
+        "aboutSeekaHost": "About SeekaHost™",
+        "seekaHostUniversity": "SeekaHost™ University",
+        "seekaHostBlog": "SeekaHost Blog",
+        "contactUs": "Contact Us"
+      }
+    },
+    "DomainRegistration": {
+      "title": "Domain Registration",
+      "links": {
+        "registerDomain": "Register Domain",
+        "domainPricing": "Domain Pricing",
+        "domainTransfer": "Domain Transfer",
+        "premiumDomain": "Premium Domain",
+        "sslCertificates": "SSL Certificates"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "WordPress Web Hosting",
+        "managedWordpress": "Managed WordPress",
+        "woocommerceHosting": "WooCommerce Hosting",
+        "wordpressTechnicalSupport": "WordPress Technical Support"
+      }
+    },
+    "Marketing": {
+      "title": "Marketing",
+      "links": {
+        "googleAdvertising": "Google Advertising",
+        "businessListing": "Business Listing",
+        "seoConsultancy": "SEO Consultancy",
+        "marketingCourses": "Marketing Courses",
+        "personalizedHosting": "Personalized Hosting"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS & Servers",
+      "links": {
+        "dedicatedServers": "Dedicated Servers",
+        "cloudServers": "Cloud Servers",
+        "vpsHosting": "VPS Hosting",
+        "n8nVpsHosting": "n8n VPS Hosting"
+      }
+    },
+    "Copyright": {
+      "text": "Copyright © 2025 SeekaHost Uk Data Centers Ltd. All Rights Reserved.",
+      "companyNumber": "Company number 16026964.",
+      "links": {
+        "privacyPolicy": "Privacy Policy",
+        "termsCondition": "Terms & Condition",
+        "refundPolicy": "Refund Policy"
+      }
+    },
+    "PaymentSection": {
+      "title": "Pay with confidence & security"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Create Your Own WordPress",

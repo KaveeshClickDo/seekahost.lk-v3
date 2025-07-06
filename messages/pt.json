@@ -5,6 +5,81 @@
     "SignIn": "Entrar",
     "ClientArea": "Área do Cliente"
   },
+  "Footer": {
+    "About": {
+      "title": "Sobre",
+      "description": "Empresa de Hospedagem Web"
+    },
+    "HostingServices": {
+      "title": "Serviços de Hospedagem",
+      "links": {
+        "businessWebHosting": "Hospedagem Web Empresarial",
+        "cheapCpanelHosting": "Hospedagem cPanel Econômica",
+        "nodejsHosting": "Hospedagem Node.js",
+        "agencyHosting": "Hospedagem para Agências",
+        "hostingMigration": "Migração de Hospedagem"
+      }
+    },
+    "OurCompany": {
+      "title": "Nossa Empresa",
+      "links": {
+        "aboutSeekaHost": "Sobre a SeekaHost™",
+        "seekaHostUniversity": "Universidade SeekaHost™",
+        "seekaHostBlog": "Blog da SeekaHost",
+        "contactUs": "Contate-nos"
+      }
+    },
+    "DomainRegistration": {
+      "title": "Registro de Domínio",
+      "links": {
+        "registerDomain": "Registrar Domínio",
+        "domainPricing": "Preços de Domínios",
+        "domainTransfer": "Transferência de Domínio",
+        "premiumDomain": "Domínio Premium",
+        "sslCertificates": "Certificados SSL"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "Hospedagem Web WordPress",
+        "managedWordpress": "WordPress Gerenciado",
+        "woocommerceHosting": "Hospedagem WooCommerce",
+        "wordpressTechnicalSupport": "Suporte Técnico WordPress"
+      }
+    },
+    "Marketing": {
+      "title": "Marketing",
+      "links": {
+        "googleAdvertising": "Publicidade no Google",
+        "businessListing": "Listagem de Empresas",
+        "seoConsultancy": "Consultoria SEO",
+        "marketingCourses": "Cursos de Marketing",
+        "personalizedHosting": "Hospedagem Personalizada"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS e Servidores",
+      "links": {
+        "dedicatedServers": "Servidores Dedicados",
+        "cloudServers": "Servidores em Nuvem",
+        "vpsHosting": "Hospedagem VPS",
+        "n8nVpsHosting": "Hospedagem VPS n8n"
+      }
+    },
+    "Copyright": {
+      "text": "Direitos autorais © 2025 SeekaHost Uk Data Centers Ltd. Todos os direitos reservados.",
+      "companyNumber": "Número da empresa 16026964.",
+      "links": {
+        "privacyPolicy": "Política de Privacidade",
+        "termsCondition": "Termos e Condições",
+        "refundPolicy": "Política de Reembolso"
+      }
+    },
+    "PaymentSection": {
+      "title": "Pague com segurança e confiança"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Crie Seu Próprio WordPress",

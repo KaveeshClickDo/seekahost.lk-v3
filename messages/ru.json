@@ -5,6 +5,81 @@
     "SignIn": "Войти",
     "ClientArea": "Личный кабинет"
   },
+  "Footer": {
+    "About": {
+      "title": "О нас",
+      "description": "Веб-хостинг компания"
+    },
+    "HostingServices": {
+      "title": "Хостинг-услуги",
+      "links": {
+        "businessWebHosting": "Корпоративный веб-хостинг",
+        "cheapCpanelHosting": "Дешевый cPanel-хостинг",
+        "nodejsHosting": "Хостинг Node.js",
+        "agencyHosting": "Хостинг для агентств",
+        "hostingMigration": "Миграция хостинга"
+      }
+    },
+    "OurCompany": {
+      "title": "Наша компания",
+      "links": {
+        "aboutSeekaHost": "О SeekaHost™",
+        "seekaHostUniversity": "Университет SeekaHost™",
+        "seekaHostBlog": "Блог SeekaHost",
+        "contactUs": "Связаться с нами"
+      }
+    },
+    "DomainRegistration": {
+      "title": "Регистрация домена",
+      "links": {
+        "registerDomain": "Зарегистрировать домен",
+        "domainPricing": "Цены на домены",
+        "domainTransfer": "Трансфер домена",
+        "premiumDomain": "Премиум-домен",
+        "sslCertificates": "SSL-сертификаты"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "Веб-хостинг для WordPress",
+        "managedWordpress": "Управляемый WordPress",
+        "woocommerceHosting": "Хостинг WooCommerce",
+        "wordpressTechnicalSupport": "Техподдержка WordPress"
+      }
+    },
+    "Marketing": {
+      "title": "Маркетинг",
+      "links": {
+        "googleAdvertising": "Реклама в Google",
+        "businessListing": "Каталог предприятий",
+        "seoConsultancy": "SEO-консалтинг",
+        "marketingCourses": "Курсы маркетинга",
+        "personalizedHosting": "Персонализированный хостинг"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS и серверы",
+      "links": {
+        "dedicatedServers": "Выделенные серверы",
+        "cloudServers": "Облачные серверы",
+        "vpsHosting": "VPS-хостинг",
+        "n8nVpsHosting": "n8n VPS-хостинг"
+      }
+    },
+    "Copyright": {
+      "text": "Авторское право © 2025 SeekaHost Uk Data Centers Ltd. Все права защищены.",
+      "companyNumber": "Регистрационный номер компании 16026964.",
+      "links": {
+        "privacyPolicy": "Политика конфиденциальности",
+        "termsCondition": "Условия использования",
+        "refundPolicy": "Политика возврата"
+      }
+    },
+    "PaymentSection": {
+      "title": "Оплачивайте безопасно и надежно"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Создайте свой WordPress",

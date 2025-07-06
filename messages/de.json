@@ -5,6 +5,81 @@
     "SignIn": "Anmelden",
     "ClientArea": "Kundenbereich"
   },
+  "Footer": {
+    "About": {
+      "title": "Über uns",
+      "description": "Webhosting-Unternehmen"
+    },
+    "HostingServices": {
+      "title": "Hosting-Dienste",
+      "links": {
+        "businessWebHosting": "Business-Webhosting",
+        "cheapCpanelHosting": "Günstiges cPanel-Hosting",
+        "nodejsHosting": "Node.js-Hosting",
+        "agencyHosting": "Agentur-Hosting",
+        "hostingMigration": "Hosting-Migration"
+      }
+    },
+    "OurCompany": {
+      "title": "Unser Unternehmen",
+      "links": {
+        "aboutSeekaHost": "Über SeekaHost™",
+        "seekaHostUniversity": "SeekaHost™ Universität",
+        "seekaHostBlog": "SeekaHost Blog",
+        "contactUs": "Kontaktieren Sie uns"
+      }
+    },
+    "DomainRegistration": {
+      "title": "Domain-Registrierung",
+      "links": {
+        "registerDomain": "Domain registrieren",
+        "domainPricing": "Domain-Preise",
+        "domainTransfer": "Domain-Transfer",
+        "premiumDomain": "Premium-Domain",
+        "sslCertificates": "SSL-Zertifikate"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "WordPress-Webhosting",
+        "managedWordpress": "Managed WordPress",
+        "woocommerceHosting": "WooCommerce-Hosting",
+        "wordpressTechnicalSupport": "WordPress-Technischer Support"
+      }
+    },
+    "Marketing": {
+      "title": "Marketing",
+      "links": {
+        "googleAdvertising": "Google-Werbung",
+        "businessListing": "Unternehmenseintrag",
+        "seoConsultancy": "SEO-Beratung",
+        "marketingCourses": "Marketingkurse",
+        "personalizedHosting": "Personalisiertes Hosting"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS & Server",
+      "links": {
+        "dedicatedServers": "Dedizierte Server",
+        "cloudServers": "Cloud-Server",
+        "vpsHosting": "VPS-Hosting",
+        "n8nVpsHosting": "n8n VPS-Hosting"
+      }
+    },
+    "Copyright": {
+      "text": "Urheberrecht © 2025 SeekaHost Uk Data Centers Ltd. Alle Rechte vorbehalten.",
+      "companyNumber": "Firmennummer 16026964.",
+      "links": {
+        "privacyPolicy": "Datenschutzrichtlinie",
+        "termsCondition": "Geschäftsbedingungen",
+        "refundPolicy": "Rückgaberecht"
+      }
+    },
+    "PaymentSection": {
+      "title": "Sicher und zuverlässig bezahlen"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "Erstellen Sie Ihr eigenes WordPress",

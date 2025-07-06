@@ -5,6 +5,81 @@
     "SignIn": "サインイン",
     "ClientArea": "クライアントエリア"
   },
+  "Footer": {
+    "About": {
+      "title": "会社概要",
+      "description": "ウェブホスティング会社"
+    },
+    "HostingServices": {
+      "title": "ホスティングサービス",
+      "links": {
+        "businessWebHosting": "ビジネス向けウェブホスティング",
+        "cheapCpanelHosting": "低価格cPanelホスティング",
+        "nodejsHosting": "Node.jsホスティング",
+        "agencyHosting": "代理店向けホスティング",
+        "hostingMigration": "ホスティング移行"
+      }
+    },
+    "OurCompany": {
+      "title": "当社について",
+      "links": {
+        "aboutSeekaHost": "SeekaHost™について",
+        "seekaHostUniversity": "SeekaHost™大学",
+        "seekaHostBlog": "SeekaHostブログ",
+        "contactUs": "お問い合わせ"
+      }
+    },
+    "DomainRegistration": {
+      "title": "ドメイン登録",
+      "links": {
+        "registerDomain": "ドメイン登録",
+        "domainPricing": "ドメイン価格",
+        "domainTransfer": "ドメイン移管",
+        "premiumDomain": "プレミアムドメイン",
+        "sslCertificates": "SSL証明書"
+      }
+    },
+    "WordPress": {
+      "title": "WordPress",
+      "links": {
+        "wordpressWebHosting": "WordPressウェブホスティング",
+        "managedWordpress": "マネージドWordPress",
+        "woocommerceHosting": "WooCommerceホスティング",
+        "wordpressTechnicalSupport": "WordPressテクニカルサポート"
+      }
+    },
+    "Marketing": {
+      "title": "マーケティング",
+      "links": {
+        "googleAdvertising": "Google広告",
+        "businessListing": "ビジネスリスト",
+        "seoConsultancy": "SEOコンサルティング",
+        "marketingCourses": "マーケティングコース",
+        "personalizedHosting": "カスタマイズホスティング"
+      }
+    },
+    "VpsServers": {
+      "title": "VPSとサーバー",
+      "links": {
+        "dedicatedServers": "専用サーバー",
+        "cloudServers": "クラウドサーバー",
+        "vpsHosting": "VPSホスティング",
+        "n8nVpsHosting": "n8n VPSホスティング"
+      }
+    },
+    "Copyright": {
+      "text": "著作権 © 2025 SeekaHost Uk Data Centers Ltd。全著作権所有。",
+      "companyNumber": "会社番号 16026964。",
+      "links": {
+        "privacyPolicy": "プライバシーポリシー",
+        "termsCondition": "利用規約",
+        "refundPolicy": "返金ポリシー"
+      }
+    },
+    "PaymentSection": {
+      "title": "安全・安心なお支払い"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "あなたの WordPress を作成",

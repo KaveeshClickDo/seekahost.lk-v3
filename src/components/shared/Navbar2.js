@@ -300,7 +300,7 @@ export default function Navbar2() {
                                     </svg>
                                 </div>
                                 <div>
-                                    Node JS Hosting
+                                    Node.js Hosting
                                 </div>
                             </Link>
                             <Link href="/agency-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>

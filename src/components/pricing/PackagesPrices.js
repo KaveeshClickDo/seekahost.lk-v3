@@ -66,7 +66,7 @@ export default function PackagesPrices() {
             return [
                 { id: 'business', label: 'Business Hosting' },
                 { id: 'cPanel', label: 'cPanel Hosting' },
-                { id: 'nodeJS', label: 'NodeJS Hosting' },
+                { id: 'nodeJS', label: 'Node.js Hosting' },
                 { id: 'agency', label: 'Agency Hosting' },
             ];
         } else if (selectedCategory === 'ecommers') {

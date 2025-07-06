@@ -458,7 +458,7 @@ export default function Header() {
                                     </svg>
                                 </div>
                                 <div className="flex-1">
-                                    Node JS Hosting
+                                    Node.js Hosting
                                 </div>
                             </Link>
 

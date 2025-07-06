@@ -5,6 +5,81 @@
     "SignIn": "로그인",
     "ClientArea": "고객센터"
   },
+  "Footer": {
+    "About": {
+      "title": "회사 소개",
+      "description": "웹 호스팅 회사"
+    },
+    "HostingServices": {
+      "title": "호스팅 서비스",
+      "links": {
+        "businessWebHosting": "비즈니스 웹 호스팅",
+        "cheapCpanelHosting": "저렴한 cPanel 호스팅",
+        "nodejsHosting": "Node.js 호스팅",
+        "agencyHosting": "에이전시 호스팅",
+        "hostingMigration": "호스팅 마이그레이션"
+      }
+    },
+    "OurCompany": {
+      "title": "회사 정보",
+      "links": {
+        "aboutSeekaHost": "SeekaHost™ 소개",
+        "seekaHostUniversity": "SeekaHost™ 대학교",
+        "seekaHostBlog": "SeekaHost 블로그",
+        "contactUs": "문의하기"
+      }
+    },
+    "DomainRegistration": {
+      "title": "도메인 등록",
+      "links": {
+        "registerDomain": "도메인 등록",
+        "domainPricing": "도메인 가격",
+        "domainTransfer": "도메인 이전",
+        "premiumDomain": "프리미엄 도메인",
+        "sslCertificates": "SSL 인증서"
+      }
+    },
+    "WordPress": {
+      "title": "워드프레스",
+      "links": {
+        "wordpressWebHosting": "워드프레스 웹 호스팅",
+        "managedWordpress": "관리형 워드프레스",
+        "woocommerceHosting": "우커머스 호스팅",
+        "wordpressTechnicalSupport": "워드프레스 기술 지원"
+      }
+    },
+    "Marketing": {
+      "title": "마케팅",
+      "links": {
+        "googleAdvertising": "구글 광고",
+        "businessListing": "비즈니스 목록",
+        "seoConsultancy": "SEO 컨설팅",
+        "marketingCourses": "마케팅 과정",
+        "personalizedHosting": "맞춤형 호스팅"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS 및 서버",
+      "links": {
+        "dedicatedServers": "전용 서버",
+        "cloudServers": "클라우드 서버",
+        "vpsHosting": "VPS 호스팅",
+        "n8nVpsHosting": "n8n VPS 호스팅"
+      }
+    },
+    "Copyright": {
+      "text": "저작권 © 2025 SeekaHost Uk Data Centers Ltd. 판권 소유.",
+      "companyNumber": "사업자 등록번호 16026964.",
+      "links": {
+        "privacyPolicy": "개인정보 처리방침",
+        "termsCondition": "이용 약관",
+        "refundPolicy": "환불 정책"
+      }
+    },
+    "PaymentSection": {
+      "title": "안전하고 신뢰할 수 있는 결제"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "나만의 워드프레스",

@@ -5,6 +5,81 @@
     "SignIn": "साइन इन",
     "ClientArea": "क्लाइंट क्षेत्र"
   },
+  "Footer": {
+    "About": {
+      "title": "हमारे बारे में",
+      "description": "वेब होस्टिंग कंपनी"
+    },
+    "HostingServices": {
+      "title": "होस्टिंग सेवाएँ",
+      "links": {
+        "businessWebHosting": "व्यावसायिक वेब होस्टिंग",
+        "cheapCpanelHosting": "सस्ती cPanel होस्टिंग",
+        "nodejsHosting": "Node.js होस्टिंग",
+        "agencyHosting": "एजेंसी होस्टिंग",
+        "hostingMigration": "होस्टिंग माइग्रेशन"
+      }
+    },
+    "OurCompany": {
+      "title": "हमारी कंपनी",
+      "links": {
+        "aboutSeekaHost": "SeekaHost™ के बारे में",
+        "seekaHostUniversity": "SeekaHost™ यूनिवर्सिटी",
+        "seekaHostBlog": "SeekaHost ब्लॉग",
+        "contactUs": "संपर्क करें"
+      }
+    },
+    "DomainRegistration": {
+      "title": "डोमेन पंजीकरण",
+      "links": {
+        "registerDomain": "डोमेन पंजीकृत करें",
+        "domainPricing": "डोमेन मूल्य निर्धारण",
+        "domainTransfer": "डोमेन ट्रांसफर",
+        "premiumDomain": "प्रीमियम डोमेन",
+        "sslCertificates": "एसएसएल प्रमाणपत्र"
+      }
+    },
+    "WordPress": {
+      "title": "वर्डप्रेस",
+      "links": {
+        "wordpressWebHosting": "वर्डप्रेस वेब होस्टिंग",
+        "managedWordpress": "प्रबंधित वर्डप्रेस",
+        "woocommerceHosting": "वूकॉमर्स होस्टिंग",
+        "wordpressTechnicalSupport": "वर्डप्रेस तकनीकी सहायता"
+      }
+    },
+    "Marketing": {
+      "title": "मार्केटिंग",
+      "links": {
+        "googleAdvertising": "गूगल विज्ञापन",
+        "businessListing": "व्यवसाय सूची",
+        "seoConsultancy": "एसईओ परामर्श",
+        "marketingCourses": "मार्केटिंग पाठ्यक्रम",
+        "personalizedHosting": "व्यक्तिगत होस्टिंग"
+      }
+    },
+    "VpsServers": {
+      "title": "VPS और सर्वर",
+      "links": {
+        "dedicatedServers": "समर्पित सर्वर",
+        "cloudServers": "क्लाउड सर्वर",
+        "vpsHosting": "VPS होस्टिंग",
+        "n8nVpsHosting": "n8n VPS होस्टिंग"
+      }
+    },
+    "Copyright": {
+      "text": "कॉपीराइट © 2025 SeekaHost Uk Data Centers Ltd। सर्वाधिकार सुरक्षित।",
+      "companyNumber": "कंपनी नंबर 16026964।",
+      "links": {
+        "privacyPolicy": "गोपनीयता नीति",
+        "termsCondition": "नियम और शर्तें",
+        "refundPolicy": "धनवापसी नीति"
+      }
+    },
+    "PaymentSection": {
+      "title": "विश्वास और सुरक्षा के साथ भुगतान करें"
+    }
+  },
   "HomePage": {
     "Hero": {
       "titleLine1": "अपना WordPress बनाएं",
