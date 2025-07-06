@@ -1,5 +1,7 @@
 import Image from "next/image"
+import { useTranslations } from 'next-intl';
 export default function WhatWeOffer() {
+    const t = useTranslations('AboutPage.WhatWeOffer');
     return (
         <section className="relative w-full py-16 bg-[#0A488A]">
             {/* <Image
@@ -15,20 +17,19 @@ export default function WhatWeOffer() {
 
                 <div className="md:w-1/2 mb-8 md:mb-0 md:px-5 text-white">
                     <h2 className="text-2xl  md:text-4xl font-bold text-white mb-6">
-                        What we offer for <br /> <span className="font-bold"> UK</span>
+                        {t('title')}
                     </h2>
                     <p className="mb-4">
-                        Whether you are a start-up company in UK or one with an established business presence in the UK market, your website is the first point of reference for your customers.
-                        As millions of people use search engines to find your services or products, the web is the first place they will encounter your enterprise.
+                        {t('paragraph1')}
                     </p>
                     <p className="mb-4">
-                        We have strong partnerships with the best web service providers in the world to assist you with the latest technological advances and guarantee 99.9% uptime for your website. Because we believe in our promise, we offer a full 45-day money-back guarantee to all our customers.
+                        {t('paragraph2')}
                     </p>
                     <p className="mb-4">
-                        If you&rsquo;re new to web hosting and running an online presence, we will be there for you 24/7 with our technical support. We use Sofaculous, which gives you instant access to the most popular applications for website management, blogging, e-commerce, and more. You will find the set-up and management of your domain very smooth and easy and your shiny new website will be live in no time.
+                        {t('paragraph3')}
                     </p>
                     <p>
-                        For website migration transfers, we have the latest tools and expertise to assist you to manage and optimize your online presence.
+                        {t('paragraph4')}
                     </p>
                 </div>
 
@@ -36,7 +37,7 @@ export default function WhatWeOffer() {
                 <div className="md:w-1/2 relative flex justify-center items-center">
                     <Image
                         src="/images/about/what-we-offer.webp"
-                        alt="Persons using laptop"
+                        alt={t('ImageAlt')}
                         width={2572}
                         height={2046}
                         className="rounded-md"

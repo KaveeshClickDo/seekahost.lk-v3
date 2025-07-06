@@ -552,5 +552,85 @@
         "buttonName2": "注册"
       }
     }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title1": "英国最佳虚拟主机",
+      "title2": "专为企业家和商业主打造",
+      "description": "我们的客户成功团队全年365天、全天候通过在线聊天在几分钟内解答您的问题。经验证明，此方法比电话支持更高效。",
+      "buttonName": "联系销售团队",
+      "aboutImageAlt": "关于页面主图"
+    },
+    "WhatWeOffer": {
+      "title": "我们为英国提供的服务",
+      "paragraph1": "无论您是英国初创公司还是市场成熟企业，网站都是客户的第一接触点。数百万人通过搜索引擎寻找您的服务或产品，网络是他们了解贵企业的首要途径。",
+      "paragraph2": "我们与全球顶级服务商合作，助您获取前沿技术并保障99.9%运行时间。基于承诺信心，我们提供45天全额退款保证。",
+      "paragraph3": "若您是虚拟主机新手，我们的24/7技术支持随时待命。通过Sofaculous，您可即时访问网站管理、博客、电商等热门应用。域名设置管理轻松便捷，新网站即刻上线。",
+      "paragraph4": "网站迁移方面，我们拥有先进工具和专业经验，助您管理与优化线上业务。",
+      "ImageAlt": "使用笔记本电脑的人员"
+    },
+    "Timeline": {
+      "title": "发展历程",
+      "timelineData": [
+        {
+          "year": "2023",
+          "description": "SeekaHost在利物浦新建数据中心，通过SeekaPanel扩展英国IP托管系统。"
+        },
+        {
+          "year": "2022",
+          "description": "SeekaPanel：推出WordPress主机服务及简易域名托管平台。"
+        },
+        {
+          "year": "2021",
+          "description": "SeekaHost应用上线，支持多IP解决方案的WordPress一键托管。"
+        },
+        {
+          "year": "2020",
+          "description": "SeekaHost为在线游戏行业推出顶级游戏服务器。"
+        },
+        {
+          "year": "2018",
+          "description": "SeekaHost Ltd正式注册为独立运营实体。"
+        },
+        {
+          "year": "2017",
+          "description": "SeekaHost于ClickDo Ltd伦敦办事处设立分部。"
+        },
+        {
+          "year": "2016",
+          "description": "作为领先SEO主机商，SeekaHost开始提供SEO行业测试服务。"
+        },
+        {
+          "year": "2015",
+          "description": "ClickDo Ltd收购SeekaHost并启动美国业务HSeekaHost.com。"
+        },
+        {
+          "year": "2000",
+          "description": "SeekaHost.com注册成立，开始提供虚拟主机服务。"
+        }
+      ]
+    },
+    "OurVision": {
+      "title": "企业愿景",
+      "description": "我们致力于成为全球最佳主机服务商，以经济实惠的SMART服务超越客户期望。",
+      "point1": "高质量准时兑现承诺。",
+      "point2": "提供前沿主机技术、资源与创新功能。",
+      "point3": "保障不间断服务、运行时间与高级安全性。",
+      "point4": "专属客服团队24/7为您服务。",
+      "point5": "套餐价格透明有竞争力，无隐藏费用。",
+      "point6": "确保网站最佳可见性，助您超越竞争对手。",
+      "imageAlt": "使用笔记本电脑的人员"
+    },
+    "Commitment": {
+      "title": "数字成功承诺",
+      "topic1": "专属专家支持",
+      "description1": "您的个人顾问随时解答疑问并解决问题，助您最大化利用IONOS产品与服务（无额外费用）。",
+      "topic2": "全面在线解决方案",
+      "description2": "从专业建站到安全通讯工具，我们提供建立强大可信在线形象所需的一切。",
+      "topic3": "尖端服务器技术",
+      "description3": "无论是WordPress主机还是可扩展云解决方案，先进基础设施均确保性能、安全性与灵活性，助力业务增长。",
+      "topic4": "智能数字成功工具",
+      "description4": "运用SEO、在线营销与知名度解决方案，提升品牌影响力、连接客户并保持数字领域领先地位。"
+    }
   }
 }

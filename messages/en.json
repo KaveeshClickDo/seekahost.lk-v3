@@ -552,5 +552,85 @@
         "buttonName2": "Sign Up"
       }
     }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title1": "UK's Best Web Host",
+      "title2": "For Entrepreneurs & Business Owners",
+      "description": "Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.",
+      "buttonName": "Talk With our Sales Team",
+      "aboutImageAlt": "About Hero Image"
+    },
+    "WhatWeOffer": {
+      "title": "What we offer for UK",
+      "paragraph1": "Whether you are a start-up company in UK or one with an established business presence in the UK market, your website is the first point of reference for your customers. As millions of people use search engines to find your services or products, the web is the first place they will encounter your enterprise.",
+      "paragraph2": "We have strong partnerships with the best web service providers in the world to assist you with the latest technological advances and guarantee 99.9% uptime for your website. Because we believe in our promise, we offer a full 45-day money-back guarantee to all our customers.",
+      "paragraph3": "If you're new to web hosting and running an online presence, we will be there for you 24/7 with our technical support. We use Sofaculous, which gives you instant access to the most popular applications for website management, blogging, e-commerce, and more. You will find the set-up and management of your domain very smooth and easy and your shiny new website will be live in no time.",
+      "paragraph4": "For website migration transfers, we have the latest tools and expertise to assist you to manage and optimize your online presence.",
+      "ImageAlt": "Persons using laptop"
+    },
+    "Timeline": {
+      "title": "Our Timeline",
+      "timelineData": [
+        {
+          "year": "2023",
+          "description": "SeekaHost opened a new data center in Liverpool to scale out UK IP hosting system with SeekaPanel"
+        },
+        {
+          "year": "2022",
+          "description": "SeekaPanel - Started offering WordPress Hosting with easy domain hosting platform."
+        },
+        {
+          "year": "2021",
+          "description": "SeekaHost app web application launch for easy WordPress site hosting with multiple IP address solution"
+        },
+        {
+          "year": "2020",
+          "description": "SeekaHost launches the best Game Servers for online gaming industry"
+        },
+        {
+          "year": "2018",
+          "description": "SeekaHost Ltd was registered and started operating as a separate business entity"
+        },
+        {
+          "year": "2017",
+          "description": "SeekaHost opened a office in London at ClickDo Ltd"
+        },
+        {
+          "year": "2016",
+          "description": "SeekaHost started offering testing services for SEO industry as leading SEO hosting company"
+        },
+        {
+          "year": "2015",
+          "description": "ClickDo Ltd Bought SeekaHost started operating in the US HSeekaHost.com"
+        },
+        {
+          "year": "2000",
+          "description": "SeekaHost.com was registered and started offering web hosting services"
+        }
+      ]
+    },
+    "OurVision": {
+      "title": "Our Vision",
+      "description": "Our Vision is to be the best web hosting service in the world and go beyond our customer expectations with SMART web hosting services at affordable prices..",
+      "point1": "We deliver what we promise with quality and on-time service.",
+      "point2": "We provide the latest hosting technology, resources, features and innovations.",
+      "point3": "We provide uninterrupted service, uptime guarantee and high level of security.",
+      "point4": "Our dedicated customer services staff works 24/7 for you.",
+      "point5": "Our packages are competitive, transparent and comes with no hidden costs.",
+      "point6": "We guarantee the best visibility for your site to get ahead of your competitors.",
+      "imageAlt": "Persons using laptop"
+    },
+    "Commitment": {
+      "title": "Our Commitment to Your Digital Success",
+      "topic1": "Dedicated Expert Support",
+      "description1": "Your personal consultant is always available to help you make the most of IONOS products and services, answering any questions and resolving issues—at no extra cost.",
+      "topic2": "Comprehensive Online Solutions",
+      "description2": "From professional website creation to secure communication tools, we provide everything you need to establish a strong and credible online presence.",
+      "topic3": "Cutting-Edge Server Technology",
+      "description3": "Whether it's WordPress hosting or scalable cloud solutions, our advanced infrastructure ensures performance, security, and flexibility to support your business growth.",
+      "topic4": "Smart Tools for Digital Success",
+      "description4": "Leverage our SEO, online marketing, and visibility solutions to enhance your brand's reach, connect with customers, and stay ahead in the digital landscape."
+    }
   }
 }

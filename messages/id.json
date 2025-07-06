@@ -552,5 +552,85 @@
         "buttonName2": "Daftar"
       }
     }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title1": "Hosting Web Terbaik di Inggris",
+      "title2": "Untuk Pengusaha & Pemilik Bisnis",
+      "description": "Dapatkan jawaban atas pertanyaan Anda dalam hitungan menit, kapan saja siang atau malam, 365 hari setahun, dari Tim Kesuksesan Pelanggan kami melalui live chat. Pengalaman kami menunjukkan metode ini jauh lebih efektif dan efisien daripada dukungan telepon.",
+      "buttonName": "Bicaralah dengan Tim Penjualan Kami",
+      "aboutImageAlt": "Gambar Hero Halaman Tentang"
+    },
+    "WhatWeOffer": {
+      "title": "Apa yang Kami Tawarkan untuk Inggris",
+      "paragraph1": "Baik Anda perusahaan rintisan di Inggris atau yang sudah mapan di pasar Inggris, situs web Anda adalah titik referensi pertama bagi pelanggan. Karena jutaan orang menggunakan mesin pencari untuk menemukan layanan atau produk Anda, web adalah tempat pertama mereka akan menemukan perusahaan Anda.",
+      "paragraph2": "Kami memiliki kemitraan kuat dengan penyedia layanan web terbaik di dunia untuk membantu Anda dengan kemajuan teknologi terkini dan menjamin waktu aktif 99.9% untuk situs web Anda. Karena kami percaya pada janji kami, kami menawarkan jaminan uang kembali 45 hari penuh kepada semua pelanggan kami.",
+      "paragraph3": "Jika Anda baru dalam hosting web dan menjalankan kehadiran online, kami akan siap membantu 24/7 dengan dukungan teknis kami. Kami menggunakan Sofaculous, yang memberi Anda akses instan ke aplikasi paling populer untuk manajemen situs web, blogging, e-commerce, dan lainnya. Anda akan menemukan pengaturan dan pengelolaan domain Anda sangat lancar dan mudah dan situs web baru Anda yang bersinar akan segera online.",
+      "paragraph4": "Untuk transfer migrasi situs web, kami memiliki alat dan keahlian terkini untuk membantu Anda mengelola dan mengoptimalkan kehadiran online Anda.",
+      "ImageAlt": "Orang menggunakan laptop"
+    },
+    "Timeline": {
+      "title": "Linimasa Kami",
+      "timelineData": [
+        {
+          "year": "2023",
+          "description": "SeekaHost membuka pusat data baru di Liverpool untuk memperluas sistem hosting IP Inggris dengan SeekaPanel."
+        },
+        {
+          "year": "2022",
+          "description": "SeekaPanel - Mulai menawarkan Hosting WordPress dengan platform hosting domain yang mudah."
+        },
+        {
+          "year": "2021",
+          "description": "Peluncuran aplikasi web SeekaHost untuk hosting situs WordPress mudah dengan solusi multi alamat IP."
+        },
+        {
+          "year": "2020",
+          "description": "SeekaHost meluncurkan Server Game terbaik untuk industri game online."
+        },
+        {
+          "year": "2018",
+          "description": "SeekaHost Ltd terdaftar dan mulai beroperasi sebagai entitas bisnis terpisah."
+        },
+        {
+          "year": "2017",
+          "description": "SeekaHost membuka kantor di London di ClickDo Ltd."
+        },
+        {
+          "year": "2016",
+          "description": "SeekaHost mulai menawarkan layanan pengujian untuk industri SEO sebagai perusahaan hosting SEO terkemuka."
+        },
+        {
+          "year": "2015",
+          "description": "ClickDo Ltd Membeli SeekaHost mulai beroperasi di AS HSeekaHost.com."
+        },
+        {
+          "year": "2000",
+          "description": "SeekaHost.com terdaftar dan mulai menawarkan layanan hosting web."
+        }
+      ]
+    },
+    "OurVision": {
+      "title": "Visi Kami",
+      "description": "Visi Kami adalah menjadi layanan hosting web terbaik di dunia dan melampaui harapan pelanggan dengan layanan hosting web SMART dengan harga terjangkau..",
+      "point1": "Kami memberikan apa yang kami janjikan dengan kualitas dan layanan tepat waktu.",
+      "point2": "Kami menyediakan teknologi hosting, sumber daya, fitur, dan inovasi terbaru.",
+      "point3": "Kami menyediakan layanan tanpa gangguan, jaminan uptime, dan tingkat keamanan yang tinggi.",
+      "point4": "Staf layanan pelanggan khusus kami bekerja 24/7 untuk Anda.",
+      "point5": "Paket kami kompetitif, transparan, dan tanpa biaya tersembunyi.",
+      "point6": "Kami menjamin visibilitas terbaik untuk situs Anda agar unggul dari pesaing.",
+      "imageAlt": "Orang menggunakan laptop"
+    },
+    "Commitment": {
+      "title": "Komitmen Kami untuk Kesuksesan Digital Anda",
+      "topic1": "Dukungan Ahli Khusus",
+      "description1": "Konsultan pribadi Anda selalu tersedia untuk membantu Anda memaksimalkan produk dan layanan IONOS, menjawab pertanyaan apa pun, dan menyelesaikan masalah—tanpa biaya tambahan.",
+      "topic2": "Solusi Online Komprehensif",
+      "description2": "Dari pembuatan situs web profesional hingga alat komunikasi yang aman, kami menyediakan semua yang Anda butuhkan untuk membangun kehadiran online yang kuat dan kredibel.",
+      "topic3": "Teknologi Server Mutakhir",
+      "description3": "Baik itu hosting WordPress atau solusi cloud yang dapat diskalakan, infrastruktur canggih kami memastikan kinerja, keamanan, dan fleksibilitas untuk mendukung pertumbuhan bisnis Anda.",
+      "topic4": "Alat Cerdas untuk Sukses Digital",
+      "description4": "Manfaatkan solusi SEO, pemasaran online, dan visibilitas kami untuk meningkatkan jangkauan merek Anda, terhubung dengan pelanggan, dan tetap unggul dalam lanskap digital."
+    }
   }
 }

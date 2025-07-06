@@ -1,11 +1,13 @@
-import { timelineData } from "@/data/timelineData";
+import { useTranslations } from 'next-intl';
 
 export default function Timeline () {
+    const t = useTranslations('AboutPage.Timeline');
+    const timelineData = t.raw('timelineData');
     return (
         <div className="py-16 bg-[#F5FAFF]">
             <div className="container mx-auto px-4  md:px-30 md:my-10">
                 <h2 className="text-2xl  md:text-4xl font-bold text-center mb-12 relative">
-                    <span className="font-bold">Our Timeline</span>
+                    <span className="font-bold">{t('title')}</span>
                 </h2>
 
                 <div className="relative">

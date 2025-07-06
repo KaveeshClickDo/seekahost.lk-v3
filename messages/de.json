@@ -552,5 +552,85 @@
         "buttonName2": "Anmelden"
       }
     }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title1": "Großbritanniens bester Webhost",
+      "title2": "Für Unternehmer & Geschäftsinhaber",
+      "description": "Erhalten Sie Antworten auf Ihre Fragen innerhalb weniger Minuten, rund um die Uhr, 365 Tage im Jahr, von unserem Kundenerfolgsteam per Live-Chat. Unsere Erfahrung zeigt, dass diese Methode deutlich effektiver und effizienter ist als Telefonsupport.",
+      "buttonName": "Sprechen Sie mit unserem Vertriebsteam",
+      "aboutImageAlt": "Hero-Bild der \"Über uns\"-Seite"
+    },
+    "WhatWeOffer": {
+      "title": "Unser Angebot für Großbritannien",
+      "paragraph1": "Ob Sie ein Startup in Großbritannien sind oder ein etabliertes Unternehmen im britischen Markt – Ihre Website ist der erste Anlaufpunkt für Ihre Kunden. Da Millionen von Menschen Suchmaschinen nutzen, um Ihre Dienstleistungen oder Produkte zu finden, ist das Web der erste Ort, an dem sie auf Ihr Unternehmen stoßen.",
+      "paragraph2": "Wir haben starke Partnerschaften mit den weltweit besten Webdienstleistern, um Sie mit neuesten Technologien zu unterstützen und eine Betriebszeit von 99,9 % für Ihre Website zu garantieren. Weil wir an unser Versprechen glauben, bieten wir allen Kunden eine volle 45-tägige Geld-zurück-Garantie.",
+      "paragraph3": "Wenn Sie neu im Webhosting sind, steht Ihnen unser technischer Support 24/7 zur Seite. Wir nutzen Sofaculous, das Ihnen sofortigen Zugriff auf beliebte Anwendungen für Website-Management, Blogs, E-Commerce und mehr bietet. Die Einrichtung und Verwaltung Ihrer Domain wird reibungslos und einfach sein, und Ihre neue Website ist im Handumdrehen online.",
+      "paragraph4": "Für Website-Migrationen verfügen wir über modernste Tools und Expertise, um Ihnen beim Management und der Optimierung Ihrer Online-Präsenz zu helfen.",
+      "ImageAlt": "Personen, die einen Laptop nutzen"
+    },
+    "Timeline": {
+      "title": "Unsere Meilensteine",
+      "timelineData": [
+        {
+          "year": "2023",
+          "description": "SeekaHost eröffnete ein neues Rechenzentrum in Liverpool, um das UK-IP-Hostingsystem mit SeekaPanel auszubauen."
+        },
+        {
+          "year": "2022",
+          "description": "SeekaPanel: Start von WordPress-Hosting mit benutzerfreundlicher Domain-Hosting-Plattform."
+        },
+        {
+          "year": "2021",
+          "description": "Start der SeekaHost-Webanwendung für einfaches WordPress-Hosting mit Multi-IP-Lösung."
+        },
+        {
+          "year": "2020",
+          "description": "SeekaHost startet die besten Gameserver für die Online-Gaming-Branche."
+        },
+        {
+          "year": "2018",
+          "description": "SeekaHost Ltd wurde registriert und begann als eigenständiges Unternehmen zu operieren."
+        },
+        {
+          "year": "2017",
+          "description": "SeekaHost eröffnete ein Büro in London bei ClickDo Ltd."
+        },
+        {
+          "year": "2016",
+          "description": "SeekaHost begann, Testdienste für die SEO-Branche als führender SEO-Host anzubieten."
+        },
+        {
+          "year": "2015",
+          "description": "ClickDo Ltd kaufte SeekaHost und startete den Betrieb in den USA auf HSeekaHost.com."
+        },
+        {
+          "year": "2000",
+          "description": "SeekaHost.com wurde registriert und begann mit der Bereitstellung von Webhosting-Diensten."
+        }
+      ]
+    },
+    "OurVision": {
+      "title": "Unsere Vision",
+      "description": "Unsere Vision ist es, der beste Webhosting-Anbieter der Welt zu sein und mit SMART-Hosting zu erschwinglichen Preisen die Erwartungen unserer Kunden zu übertreffen.",
+      "point1": "Wir liefern Qualität und halten Termine ein.",
+      "point2": "Wir bieten neueste Hosting-Technologien, Ressourcen, Features und Innovationen.",
+      "point3": "Wir garantieren unterbrechungsfreien Service, Betriebszeit und hohe Sicherheit.",
+      "point4": "Unser dedizierter Kundenservice arbeitet 24/7 für Sie.",
+      "point5": "Unsere Pakete sind wettbewerbsfähig, transparent und ohne versteckte Kosten.",
+      "point6": "Wir garantieren beste Sichtbarkeit für Ihre Website, um der Konkurrenz voraus zu sein.",
+      "imageAlt": "Personen, die einen Laptop nutzen"
+    },
+    "Commitment": {
+      "title": "Unser Engagement für Ihren digitalen Erfolg",
+      "topic1": "Dedizierter Experten-Support",
+      "description1": "Ihr persönlicher Berater hilft Ihnen jederzeit, IONOS-Produkte optimal zu nutzen – beantwortet Fragen und löst Probleme ohne Extrakosten.",
+      "topic2": "Umfassende Online-Lösungen",
+      "description2": "Von professioneller Website-Erstellung bis zu sicheren Kommunikationstools: Wir bieten alles für eine starke Online-Präsenz.",
+      "topic3": "Hochmoderne Servertechnologie",
+      "description3": "Ob WordPress-Hosting oder skalierbare Cloud-Lösungen: Unsere Infrastruktur gewährleistet Leistung, Sicherheit und Flexibilität für Ihr Wachstum.",
+      "topic4": "Intelligente Tools für digitalen Erfolg",
+      "description4": "Nutzen Sie unsere SEO-, Online-Marketing- und Sichtbarkeitslösungen, um Ihre Reichweite zu steigern, Kunden zu binden und im digitalen Raum vorne zu bleiben."
+    }
   }
 }

@@ -552,5 +552,85 @@
         "buttonName2": "Cadastrar"
       }
     }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title1": "Melhor Hospedagem Web do Reino Unido",
+      "title2": "Para Empreendedores e Donos de Negócios",
+      "description": "Obtenha respostas em minutos, a qualquer hora do dia ou noite, 365 dias por ano, da nossa Equipe de Sucesso do Cliente via chat ao vivo. Nossa experiência mostra que este método é muito mais eficiente que suporte telefônico.",
+      "buttonName": "Fale com nossa Equipe de Vendas",
+      "aboutImageAlt": "Imagem principal da página 'Sobre'"
+    },
+    "WhatWeOffer": {
+      "title": "O que oferecemos para o Reino Unido",
+      "paragraph1": "Seja uma startup ou empresa consolidada no mercado britânico, seu site é o primeiro ponto de contato para clientes. Milhões usam buscadores para encontrar seus serviços/produtos; a web é onde conhecerão sua empresa.",
+      "paragraph2": "Parcerias com os melhores provedores globais garantem tecnologia de ponta e 99.9% de uptime. Confiamos em nossa promessa: oferecemos garantia de reembolso de 45 dias.",
+      "paragraph3": "Se é novo em hospedagem, nosso suporte técnico 24/7 está disponível. Usamos Sofaculous para acesso instantâneo a aplicativos populares de gestão de sites, blogs, e-commerce etc. Configuração de domínio é fácil, e seu novo site estará online rapidamente.",
+      "paragraph4": "Para migração de sites, temos ferramentas e expertise para gerenciar e otimizar sua presença online.",
+      "ImageAlt": "Pessoas usando laptop"
+    },
+    "Timeline": {
+      "title": "Nossa Linha do Tempo",
+      "timelineData": [
+        {
+          "year": "2023",
+          "description": "SeekaHost abriu novo data center em Liverpool para expandir hospedagem IP UK com SeekaPanel."
+        },
+        {
+          "year": "2022",
+          "description": "SeekaPanel: início da hospedagem WordPress com plataforma de domínio simplificada."
+        },
+        {
+          "year": "2021",
+          "description": "Lançamento do app web SeekaHost para hospedagem fácil de sites WordPress com múltiplos IPs."
+        },
+        {
+          "year": "2020",
+          "description": "SeekaHost lança melhores servidores de jogos para indústria de gaming online."
+        },
+        {
+          "year": "2018",
+          "description": "SeekaHost Ltd registrada como entidade empresarial independente."
+        },
+        {
+          "year": "2017",
+          "description": "SeekaHost abriu escritório em Londres na ClickDo Ltd."
+        },
+        {
+          "year": "2016",
+          "description": "SeekaHost começou a oferecer testes para indústria SEO como líder em hospedagem SEO."
+        },
+        {
+          "year": "2015",
+          "description": "ClickDo Ltd comprou SeekaHost e iniciou operações nos EUA em HSeekaHost.com."
+        },
+        {
+          "year": "2000",
+          "description": "SeekaHost.com registrado, iniciando serviços de hospedagem web."
+        }
+      ]
+    },
+    "OurVision": {
+      "title": "Nossa Visão",
+      "description": "Ser a melhor hospedagem web do mundo, superando expectativas com serviços SMART a preços acessíveis.",
+      "point1": "Entregamos promessas com qualidade e pontualidade.",
+      "point2": "Oferecemos tecnologia, recursos e inovações de ponta.",
+      "point3": "Garantimos serviço ininterrupto, uptime e alta segurança.",
+      "point4": "Suporte ao cliente dedicado disponível 24/7.",
+      "point5": "Pacotes competitivos, transparentes e sem custos ocultos.",
+      "point6": "Garantimos melhor visibilidade para seu site superar concorrentes.",
+      "imageAlt": "Pessoas usando laptop"
+    },
+    "Commitment": {
+      "title": "Compromisso com seu Sucesso Digital",
+      "topic1": "Suporte Especializado Dedicado",
+      "description1": "Seu consultor pessoal ajuda a maximizar produtos IONOS sem custo extra: responde dúvidas e resolve problemas.",
+      "topic2": "Soluções Online Abrangentes",
+      "description2": "Da criação profissional de sites a ferramentas seguras de comunicação, fornecemos tudo para uma presença online forte.",
+      "topic3": "Tecnologia de Servidor de Ponta",
+      "description3": "Hospedagem WordPress ou soluções em nuvem escaláveis: nossa infraestrutura avançada garante desempenho, segurança e flexibilidade.",
+      "topic4": "Ferramentas Inteligentes para Sucesso Digital",
+      "description4": "Use nossas soluções de SEO, marketing online e visibilidade para ampliar alcance, conectar-se a clientes e liderar no cenário digital."
+    }
   }
 }

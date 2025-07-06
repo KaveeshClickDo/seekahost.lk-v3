@@ -552,5 +552,85 @@
         "buttonName2": "S'inscrire"
       }
     }
+  },
+  "AboutPage": {
+    "Hero": {
+      "title1": "Meilleur hébergeur web du Royaume-Uni",
+      "title2": "Pour entrepreneurs et propriétaires d'entreprise",
+      "description": "Obtenez des réponses en quelques minutes, 24h/24 et 365 jours par an, via le chat en direct de notre équipe Service Client. Notre expérience prouve que cette méthode est plus efficace que le support téléphonique.",
+      "buttonName": "Parler à notre équipe commerciale",
+      "aboutImageAlt": "Image bannière de la page \"À propos\""
+    },
+    "WhatWeOffer": {
+      "title": "Notre offre pour le Royaume-Uni",
+      "paragraph1": "Que vous soyez une startup ou une entreprise établie au Royaume-Uni, votre site web est le premier point de contact pour vos clients. Des millions utilisent les moteurs de recherche pour trouver vos services/produits ; le web est leur première rencontre avec votre entreprise.",
+      "paragraph2": "Partenariats avec les meilleurs fournisseurs mondiaux pour une technologie de pointe et 99.9% de disponibilité. Fidèles à notre promesse, nous offrons une garantie de remboursement de 45 jours.",
+      "paragraph3": "Débutant en hébergement ? Notre support technique 24/7 vous accompagne. Sofaculous vous donne un accès instantané aux applications populaires pour la gestion de site, blogs, e-commerce, etc. La configuration de domaine est simple, et votre site sera en ligne rapidement.",
+      "paragraph4": "Pour les migrations de site, nous disposons d'outils et d'expertise pour optimiser votre présence en ligne.",
+      "ImageAlt": "Personnes utilisant un ordinateur portable"
+    },
+    "Timeline": {
+      "title": "Notre chronologie",
+      "timelineData": [
+        {
+          "year": "2023",
+          "description": "SeekaHost a ouvert un nouveau centre de données à Liverpool pour étendre l'hébergement IP UK avec SeekaPanel."
+        },
+        {
+          "year": "2022",
+          "description": "SeekaPanel : lancement de l'hébergement WordPress avec plateforme de domaine simplifiée."
+        },
+        {
+          "year": "2021",
+          "description": "Lancement de l'application web SeekaHost pour un hébergement WordPress facile avec solution multi-IP."
+        },
+        {
+          "year": "2020",
+          "description": "SeekaHost lance les meilleurs serveurs de jeux pour l'industrie du gaming en ligne."
+        },
+        {
+          "year": "2018",
+          "description": "Enregistrement de SeekaHost Ltd en tant qu'entité commerciale indépendante."
+        },
+        {
+          "year": "2017",
+          "description": "Ouverture d'un bureau à Londres chez ClickDo Ltd."
+        },
+        {
+          "year": "2016",
+          "description": "SeekaHost commence à proposer des services de test pour l'industrie SEO en tant qu'hébergeur leader."
+        },
+        {
+          "year": "2015",
+          "description": "ClickDo Ltd rachète SeekaHost et démarre ses opérations aux États-Unis via HSeekaHost.com."
+        },
+        {
+          "year": "2000",
+          "description": "Enregistrement de SeekaHost.com ; début des services d'hébergement web."
+        }
+      ]
+    },
+    "OurVision": {
+      "title": "Notre vision",
+      "description": "Devenir le meilleur hébergeur web au monde, dépassant les attentes avec des services SMART à prix abordables.",
+      "point1": "Nous tenons nos promesses avec qualité et ponctualité.",
+      "point2": "Nous fournissons les dernières technologies, ressources et innovations.",
+      "point3": "Nous garantissons un service ininterrompu, une disponibilité et une haute sécurité.",
+      "point4": "Notre service client dédié travaille 24h/24 pour vous.",
+      "point5": "Nos forfaits sont compétitifs, transparents et sans frais cachés.",
+      "point6": "Nous garantissons la meilleure visibilité pour devancer vos concurrents.",
+      "imageAlt": "Personnes utilisant un ordinateur portable"
+    },
+    "Commitment": {
+      "title": "Notre engagement pour votre réussite numérique",
+      "topic1": "Support expert dédié",
+      "description1": "Votre consultant personnel vous aide à exploiter les produits IONOS sans frais supplémentaires : réponses et résolution de problèmes.",
+      "topic2": "Solutions en ligne complètes",
+      "description2": "De la création de site professionnelle aux outils de communication sécurisés : tout pour une présence en ligne crédible.",
+      "topic3": "Technologie serveur de pointe",
+      "description3": "Hébergement WordPress ou solutions cloud évolutives : notre infrastructure assure performance, sécurité et flexibilité.",
+      "topic4": "Outils intelligents pour la réussite numérique",
+      "description4": "Utilisez nos solutions SEO, marketing en ligne et visibilité pour étendre votre portée, connecter avec les clients et mener dans l'espace numérique."
+    }
   }
 }
