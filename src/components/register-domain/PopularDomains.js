@@ -1,61 +1,14 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const PopularDomains = () => {
-  const domains = [
-    {
-      extension: '.com',
-      logo: '/images/register-domain/com.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.co.uk',
-      logo: '/images/register-domain/couk.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.uk',
-      logo: '/images/register-domain/uk.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.org',
-      logo: '/images/register-domain/org.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.store',
-      logo: '/images/register-domain/store.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.blog',
-      logo: '/images/register-domain/blog.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.online',
-      logo: '/images/register-domain/online.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    },
-    {
-      extension: '.org.uk',
-      logo: '/images/register-domain/orguk.svg',
-      description: 'Round-the-clock technical support from UK hosting specialists.',
-      price: '£4.99'
-    }
-  ];
+  const t = useTranslations('RegisterDomainPage.PopularDomain');
+  const domains = t.raw('PopularDomains');
 
   return (
     <div className="max-w-6xl mx-auto p-6 mb-15">
       <h1 className="text-4xl font-bold text-center my-8">
-        Finding a Popular Domain
+        {t('title')}
       </h1>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -84,7 +37,7 @@ const PopularDomains = () => {
             </div>
             
             <button className="w-full bg-[#2072CC] border rounded-xl hover:bg-blue-500 text-white font-medium py-2 px-4 rounded transition-colors">
-              Get It Now
+              {t('buttonName')}
             </button>
           </div>
         ))}

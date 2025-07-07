@@ -632,5 +632,187 @@
       "topic4": "Ferramentas Inteligentes para Sucesso Digital",
       "description4": "Use nossas soluções de SEO, marketing online e visibilidade para ampliar alcance, conectar-se a clientes e liderar no cenário digital."
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "Registar Nomes de Domínio",
+      "description": "Painel de controlo de alojamento de blogues WordPress Tudo-em-Um para hospedar com segurança redes de blogues privadas em endereços IP múltiplos únicos.",
+      "buttonName": "Pesquisar",
+      "registerDomainImageAlt": "Imagem Hero"
+    },
+    "PopularDomain": {
+      "title": "Encontrar um Domínio Popular",
+      "buttonName": "Obtenha Agora",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "Suporte técnico 24 horas por dia, 7 dias por semana, de especialistas em alojamento do Reino Unido.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "Imagem Encomendar Agora",
+      "title": "Registar um Nome de Domínio",
+      "paragraph1": "Escolha o seu nome de domínio perfeito e registe-o na SeekaHost. Será o primeiro passo para colocar o seu website online com o nosso serviço de alojamento web acessível. Pode registar domínios TLD (Domínios de Topo) como .in, .co.in, .com, .co.uk, .org, .blog e muitos mais.",
+      "paragraph2": "Selecione o seu domínio no nosso sistema de Registo de Nomes de Domínio, claro, intuitivo e fácil de memorizar. Registar um nome de domínio autoexplicativo é decisivo para o seu negócio. Mesmo sem ter um nome completo definido, o nosso sistema sugerirá opções disponíveis com base na sua pesquisa.",
+      "buttonName": "Encomendar Agora"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "Alojamento Web Barato com cPanel",
+      "description": "Obtenha os serviços de alojamento cPanel mais baratos no Reino Unido com todo o suporte necessário para criar websites e blogues. Tudo o que precisa para ficar online com cliques simples.",
+      "buttonName": "Comece Agora",
+      "cheapHostingImageAlt": "Imagem Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "O Poder do Alojamento cPanel com a SeekaHost",
+      "description": "O alojamento web premium não tem de ser caro ou complicado. Com o Alojamento cPanel da SeekaHost, irá comprová-lo. Lançado em 1996, o cPanel revolucionou o alojamento web com ferramentas de automação inovadoras para gerir websites de forma mais fácil e rápida. Mantém-se líder de mercado entre os painéis de controlo disponíveis, sendo uma marca confiável e consolidada que evoluiu ao longo dos anos.",
+      "buttonName": "Encomendar Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    },
+    "OrderNow2": {
+      "titleLine": "O que pode o Alojamento cPanel da SeekaHost fazer por si?",
+      "description": "Oferecemos funcionalidades que simplificam e aceleram a gestão de websites: MySQL, ferramentas de email, rastreio de dados e otimização SEO. Com o alojamento web cPanel da SeekaHost, terá uma experiência simples e direta com tudo o que precisa para o máximo desempenho do seu website.",
+      "buttonName": "Encomendar Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    },
+    "OrderNow3": {
+      "titleLine": "Suporte CMS Fluído e Flexível",
+      "description": "Quer use WordPress, Joomla ou Drupal, com o Alojamento cPanel da SeekaHost instala rapidamente os sistemas de gestão de conteúdos mais populares com poucos cliques. O Softaculous apoia a instalação do software escolhido. Desde blogs com WordPress a lojas online com Magento, tudo está coberto.",
+      "buttonName": "Encomendar Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    },
+    "OrderNow4": {
+      "titleLine": "Desempenho Máximo de Website com Software cPanel",
+      "description": "A sua conta SeekaHost inclui software para maximizar o desempenho: use o CloudFlare para melhorar a cache de conteúdo (reduzindo latência) e segurança contra ataques DDoS. Aceda a definições de compressão para sites mais rápidos, faça cópias de segurança instantâneas com DropMySite ou escolha a versão/extensão PHP preferida. Uma solução completa para a melhor experiência de alojamento.",
+      "buttonName": "Encomendar Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "Campanhas de Publicidade Google",
+      "description": "Painel de controlo de alojamento de blogues WordPress Tudo-em-Um para hospedar com segurança redes de blogues privadas em endereços IP múltiplos únicos.",
+      "googleAdImageAlt": "Imagem Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Por que deve começar com o Google Ads para um website de negócio totalmente novo?",
+      "paragraph1": "Imagine que regista um novo domínio e alojamento connosco. Inicialmente, a sua marca precisa de maior alcance online para captar clientes. Pode obter esse alcance através de estratégias como SEO e Google Ads. O SEO é um processo a longo prazo para posicionar o website organicamente. Mas se desejar obter leads desde o primeiro dia, opte pelo Google Ads.",
+      "paragraph2": "Os especialistas em marketing online da SeekaHost ajudarão a criar e gerir a campanha Google Ads desde o início. Selecionamos as melhores palavras-chave para maximizar o ROI. Também ajudamos na criação da conta Google Ads, configuração da campanha e monitorização contínua para garantir mais leads para o seu negócio.",
+      "buttonName": "Comece Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    },
+    "OrderNow2": {
+      "titleLine": "Como os Especialistas em Marketing Online da SeekaHost podem ajudar?",
+      "paragraph1": "A nossa equipa ajuda a planear campanhas de marketing pago de sucesso (Google Ads, Facebook Ads, Remarketing) adaptadas ao seu modelo de negócio. Com experiência global em diversos setores, planearemos a melhor estratégia de marketing para si.",
+      "paragraph2": "Pode contratar a nossa equipa para atividades regulares de marketing online ou agendar uma consulta pontual para esclarecer estratégias de publicidade. A via mais rápida para o sucesso do seu negócio é a publicidade Google. A SeekaHost emprega os melhores especialistas Google AdWords formados pela ClickDo™.",
+      "paragraph3": "Ligue-nos para campanhas Google AdWords: 020 8638 5857.",
+      "imageAlt": "Imagem Encomendar Agora"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "Listagem de Negócios Gratuita em Diretórios do Reino Unido",
+      "description": "Painel de controlo de alojamento de blogues WordPress Tudo-em-Um para hospedar com segurança redes de blogues privadas em endereços IP múltiplos únicos.",
+      "businessListImageAlt": "Imagem Hero"
+    },
+    "OrderNow": {
+      "titleLine": "As listagens gratuitas de negócios são uma excelente forma de impulsionar o SEO",
+      "paragraph1": "Junte-se ao alojamento web empresarial da SeekaHost e obtenha listagens gratuitas no UK Business List e nos 100 melhores diretórios de negócios do Reino Unido.",
+      "paragraph2": "As listagens em diretórios locais são uma das melhores formas de divulgar o seu website a milhares de pessoas.",
+      "paragraph3": "Temos uma lista de mais de 100 diretórios de negócios do Reino Unido onde listamos os nossos clientes. Todos os clientes de alojamento anual em servidores londrinos ou serviços web empresariais recebem listagens gratuitas nestes diretórios.",
+      "buttonName": "Comece Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "Serviços de Consultoria SEO para Empresas do Reino Unido",
+      "description": "Painel de controlo de alojamento de blogues WordPress Tudo-em-Um para hospedar com segurança redes de blogues privadas em endereços IP múltiplos únicos.",
+      "seoImageAlt": "Imagem Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Como obter consultoria SEO connosco?",
+      "paragraph1": "Precisa de ser cliente dos nossos serviços de alojamento web empresarial para receber consultoria SEO gratuita e suporte em SEO on-page. Todos os clientes empresariais recebem suporte VIP para os seus websites.",
+      "paragraph2": "Oferecemos campanhas Google AdWords a preços acessíveis e listagens gratuitas nos melhores diretórios de negócios do Reino Unido. A listagem gratuita em mais de 100 diretórios britânicos ajudará significativamente o posicionamento do seu website nos motores de busca.",
+      "buttonName": "Comece Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    },
+    "OrderNow2": {
+      "titleLine": "Qual é o nosso processo de consultoria SEO?",
+      "paragraph1": "Assim ajudamos qualquer empresa no Reino Unido com serviços SEO:",
+      "paragraph2": "Ao aderir aos nossos planos de alojamento empresarial, faremos uma auditoria SEO ao seu website (mediante pedido). Aconselharemos as correções necessárias, que pode realizar com a sua equipa ou podemos fazê-las por uma taxa simbólica.",
+      "paragraph3": "Após corrigir o SEO on-page, listaremos o domínio (URL) do negócio nos 100 melhores diretórios empresariais.",
+      "paragraph4": "Posteriormente, criaremos um plano SEO personalizado para o seu website, incluindo estratégias de off-site SEO, obtenção de backlinks e utilização de serviços de guest posting. Mantenha-se atualizado com as novas tecnologias.",
+      "paragraph5": "Se precisar de comprar backlinks, existem pacotes disponíveis na ClickDo.",
+      "imageAlt": "Imagem Encomendar Agora"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "Aprenda Competências de Marketing Digital Online Gratuitamente!",
+      "description": "Painel de controlo de alojamento de blogues WordPress Tudo-em-Um para hospedar com segurança redes de blogues privadas em endereços IP múltiplos únicos.",
+      "MarketingImageAlt": "Imagem Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Cursos de Marketing Online:",
+      "paragraph1": "As competências de marketing online são altamente valorizadas. Agora, qualquer empresário pode frequentar os nossos cursos e aprender marketing digital gratuitamente.",
+      "paragraph2": "Temos diversos cursos e o objetivo é ajudar todos a dominar o marketing digital e crescer online.",
+      "paragraph3": "Aprender marketing online beneficia o seu negócio de múltiplas formas. Como principal fornecedor de serviços de alojamento web empresarial no Reino Unido, disponibilizamos cursos gratuitos aos nossos clientes.",
+      "buttonName": "Comece Agora",
+      "imageAlt": "Imagem Encomendar Agora"
+    },
+    "OrderNow2": {
+      "titleLine": "Como obter cursos de marketing online gratuitos?",
+      "paragraph1": "Todos os clientes de alojamento empresarial com plano anual recebem acesso completo a 7 cursos. Se procura alojamento pessoal ou acesso a um curso específico, contacte-nos para acesso gratuito.",
+      "paragraph2": "Existem muitos cursos baratos online, mas nós oferecemos algo melhor: grátis! Se procura cursos de marketing gratuitos para crescer rapidamente online, é hora de começar a aprender.",
+      "paragraph3": "A SeekaHost criou os melhores cursos de marketing digital online gratuitos para si. Comece hoje a construir o seu negócio online de sucesso.",
+      "imageAlt": "Imagem Encomendar Agora"
+    }
   }
 }

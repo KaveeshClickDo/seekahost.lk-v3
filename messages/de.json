@@ -632,5 +632,187 @@
       "topic4": "Intelligente Tools für digitalen Erfolg",
       "description4": "Nutzen Sie unsere SEO-, Online-Marketing- und Sichtbarkeitslösungen, um Ihre Reichweite zu steigern, Kunden zu binden und im digitalen Raum vorne zu bleiben."
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "Domainnamen registrieren",
+      "description": "All-in-One WordPress-Blog-Hosting-Control-Panel mit einem Klick zur sicheren Hosting privater Blog-Netzwerke auf einzigartigen mehrfachen IP-Adressen.",
+      "buttonName": "Suchen",
+      "registerDomainImageAlt": "Hero-Bild"
+    },
+    "PopularDomain": {
+      "title": "Beliebte Domain finden",
+      "buttonName": "Jetzt holen",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "Rund-um-die-Uhr-Technischer Support von UK-Hosting-Spezialisten.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "Jetzt bestellen-Bild",
+      "title": "Domainnamen registrieren",
+      "paragraph1": "Wählen Sie Ihren perfekten Domainnamen und registrieren Sie ihn bei SeekaHost. Es wird der erste Schritt sein, Ihre Website mit unserem kostengünstigen Webhosting-Service online zu bringen. Sie können Domains mit TLDs (Top-Level-Domains) wie .in, .co.in, .com, .co.uk, .org, .blog und vielen mehr registrieren.",
+      "paragraph2": "Wählen Sie Ihre Domain über unser Domainnamen-Registrierungssystem, das klar, benutzerfreundlich und einfach zu merken ist. Einen Domainnamen zu registrieren, der sich selbst erklärt, ist ein abschließender Moment für Ihr Geschäft. Selbst wenn Sie keinen vollständigen Namen haben, schlägt Ihnen unser System basierend auf Ihren Suchbegriffen verfügbare Möglichkeiten vor.",
+      "buttonName": "Jetzt bestellen"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "Günstiges Webhosting mit cPanel",
+      "description": "Erhalten Sie die günstigsten cPanel-Hosting-Dienste in Großbritannien mit dem gesamten Support, den Sie zum Erstellen von Websites und Blogs benötigen. Alles, was Sie brauchen, um mit einfachen Klicks online zu gehen.",
+      "buttonName": "Jetzt starten",
+      "cheapHostingImageAlt": "Hero-Bild"
+    },
+    "OrderNow1": {
+      "titleLine": "Die Leistung von cPanel-Hosting mit SeekaHost",
+      "description": "Premium-Webhosting muss nicht teuer oder kompliziert sein. Wenn Sie SeekaHost cPanel-Hosting wählen, werden Sie dies feststellen. cPanel wurde 1996 eingeführt und revolutionierte das Webhosting mit innovativen Automatisierungstools für einfacheres und schnelleres Website-Management. Es bleibt Marktführer unter den verfügbaren Control Panels als vertrauenswürdige und etablierte Marke, die sich über die Jahre entwickelt hat.",
+      "buttonName": "Jetzt bestellen",
+      "imageAlt": "Jetzt bestellen-Bild"
+    },
+    "OrderNow2": {
+      "titleLine": "Was kann SeekaHost cPanel-Hosting für Sie tun?",
+      "description": "SeekaHost cPanel-Hosting bietet zahlreiche Funktionen, die das Website-Management erheblich vereinfachen und beschleunigen, wie MySQL, E-Mail-Verwaltungstools, Datenverfolgung und SEO-Optimierungsfunktionen. Mit SeekaHosts cPanel-Webhosting erleben Sie einfaches, unkompliziertes Hosting mit allem für die beste Website-Performance.",
+      "buttonName": "Jetzt bestellen",
+      "imageAlt": "Jetzt bestellen-Bild"
+    },
+    "OrderNow3": {
+      "titleLine": "Reibungslose & flexible CMS-Unterstützung",
+      "description": "Egal ob WordPress, Joomla oder Drupal – mit SeekaHost cPanel-Hosting installieren Sie beliebte Content-Management-Software mit wenigen Klicks. Softaculous unterstützt Sie bei der Installation. Ob Sie einen Blog mit WordPress einrichten oder eine E-Commerce-Seite mit Magento – alles ist abgedeckt.",
+      "buttonName": "Jetzt bestellen",
+      "imageAlt": "Jetzt bestellen-Bild"
+    },
+    "OrderNow4": {
+      "titleLine": "Ultimative Website-Performance mit cPanel-Software",
+      "description": "Ihr SeekaHost cPanel-Hosting-Konto ist mit Software zur Leistungsmaximierung ausgestattet. Nutzen Sie CloudFlare für besseres Content-Caching zur Reduzierung von Latenz und erhöhter Sicherheit gegen DDoS-Angriffe. Greifen Sie auf Inhaltskomprimierungseinstellungen zu, laden Sie sofort Backups mit DropMySite herunter oder wählen Sie Ihre bevorzugte PHP-Version und -Erweiterung. Ein Kraftpaket für das beste Webhosting-Erlebnis.",
+      "buttonName": "Jetzt bestellen",
+      "imageAlt": "Jetzt bestellen-Bild"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "Google-Werbekampagnen",
+      "description": "All-in-One WordPress-Blog-Hosting-Control-Panel mit einem Klick zur sicheren Hosting privater Blog-Netzwerke auf einzigartigen mehrfachen IP-Adressen.",
+      "googleAdImageAlt": "Hero-Bild"
+    },
+    "OrderNow1": {
+      "titleLine": "Warum Sie mit Google Ads für eine neue Geschäftswebsite starten sollten",
+      "paragraph1": "Angenommen, Sie registrieren eine neue Domain und Hosting bei uns. Anfangs benötigt Ihre Marke mehr Online-Reichweite, um Kundenaufmerksamkeit zu gewinnen. Diese Reichweite erreichen Sie durch Strategien wie SEO & Google Ads. SEO ist langfristig angelegt, um Websites organisch zu ranken. Wenn Sie jedoch sofort Leads möchten, ist Google Ads die Lösung.",
+      "paragraph2": "Online-Marketingexperten von SeekaHost helfen bei der Erstellung und Durchführung von Google Ads-Kampagnen von Grund auf. Wir helfen bei der Auswahl profitabler Keywords und unterstützen bei Kontoerstellung, Kampagnenmanagement und regelmäßigen Optimierungen für mehr Geschäftsleads.",
+      "buttonName": "Jetzt starten",
+      "imageAlt": "Jetzt bestellen-Bild"
+    },
+    "OrderNow2": {
+      "titleLine": "Wie SeekaHost Online-Marketingexperten Ihnen helfen können",
+      "paragraph1": "Unser Online-Marketingteam unterstützt Sie bei der Planung erfolgreicher Paid-Marketing-Kampagnen wie Google Ads, Facebook Ads und Remarketing basierend auf Ihrem Geschäftsmodell. Mit globaler Erfahrung in verschiedenen Geschäftsmodellen entwickeln wir die beste Marketingstrategie für Sie.",
+      "paragraph2": "Sie können unser Team für regelmäßiges Marketingmanagement buchen oder eine Einzelberatung vereinbaren. Google-Werbung ist der schnellste Weg zum Geschäftserfolg. SeekaHost beschäftigt die besten von ClickDo™ geschulten Google AdWords-Experten.",
+      "paragraph3": "Rufen Sie uns an unter 020 8638 5857 für Google AdWords-Kampagnen.",
+      "imageAlt": "Jetzt bestellen-Bild"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "Kostenlose Unternehmenseinträge in UK-Branchenverzeichnissen",
+      "description": "All-in-One WordPress-Blog-Hosting-Control-Panel mit einem Klick zur sicheren Hosting privater Blog-Netzwerke auf einzigartigen mehrfachen IP-Adressen.",
+      "businessListImageAlt": "Hero-Bild"
+    },
+    "OrderNow": {
+      "titleLine": "Kostenlose Unternehmenseinträge sind ideal für SEO-Verbesserungen",
+      "paragraph1": "Nutzen Sie SeekaHost Business-Webhosting und erhalten Sie kostenlose Einträge im UK Business List und Top 100 UK-Branchenverzeichnissen.",
+      "paragraph2": "Lokale Branchenverzeichnisse sind eine der besten Möglichkeiten, Ihre Unternehmenswebsite Tausenden von Menschen zu präsentieren.",
+      "paragraph3": "Wir listen Kunden in über 100 Top-UK-Branchenverzeichnissen. Jeder Geschäftsinhaber mit unserem London-Server-Hosting oder UK-Webhosting-Jahresplan erhält kostenlose 'Branchenverzeichnis-Einträge' in allen Top 100 UK-Verzeichnissen.",
+      "buttonName": "Jetzt starten",
+      "imageAlt": "Jetzt bestellen-Bild"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "SEO-Beratungsdienste für UK-Unternehmen",
+      "description": "All-in-One WordPress-Blog-Hosting-Control-Panel mit einem Klick zur sicheren Hosting privater Blog-Netzwerke auf einzigartigen mehrfachen IP-Adressen.",
+      "seoImageAlt": "Hero-Bild"
+    },
+    "OrderNow1": {
+      "titleLine": "Wie Sie SEO-Beratung von uns erhalten",
+      "paragraph1": "Sie müssen Business-Webhosting-Kunde sein, um kostenlose SEO-Beratung und On-Page-SEO-Support zu erhalten. Alle Business-Hosting-Kunden erhalten VIP-Support für ihre Unternehmenswebsites.",
+      "paragraph2": "Wir bieten Google AdWords-Kampagnen zu günstigen Preisen sowie kostenlose Einträge in Top-UK-Branchenverzeichnissen. Kostenlose Einträge in über 100 UK-Verzeichnissen verbessern das Ranking Ihrer Unternehmenswebsites in Google.",
+      "buttonName": "Jetzt starten",
+      "imageAlt": "Jetzt bestellen-Bild"
+    },
+    "OrderNow2": {
+      "titleLine": "Unser SEO-Beratungsprozess",
+      "paragraph1": "So unterstützen wir UK-Unternehmen mit SEO-Diensten:",
+      "paragraph2": "Nach Anmeldung für SeekaHost Business-Hosting (auf Anfrage) führen wir ein SEO-Audit Ihrer Website durch. Wir empfehlen notwendige Anpassungen, die Sie selbst vornehmen oder von uns gegen Gebühr umsetzen lassen können.",
+      "paragraph3": "Nach On-Page-SEO-Optimierung listen wir Ihre Domain (URL) in Top 100 Branchenverzeichnissen.",
+      "paragraph4": "Anschließend erstellen wir einen maßgeschneiderten SEO-Plan für Off-Page-SEO, Backlink-Beschaffung und Gastbeitragsnutzung. Bleiben Sie technologisch auf dem neuesten Stand.",
+      "paragraph5": "Falls benötigt, bietet ClickDo Backlink-Pakete an.",
+      "imageAlt": "Jetzt bestellen-Bild"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "Lernen Sie kostenlos Online-Marketing-Fähigkeiten!",
+      "description": "All-in-One WordPress-Blog-Hosting-Control-Panel mit einem Klick zur sicheren Hosting privater Blog-Netzwerke auf einzigartigen mehrfachen IP-Adressen.",
+      "MarketingImageAlt": "Hero-Bild"
+    },
+    "OrderNow1": {
+      "titleLine": "Online-Marketing-Kurse:",
+      "paragraph1": "Online-Marketing-Fähigkeiten sind stark nachgefragt. Jeder Unternehmer kann jetzt unsere kostenlosen Kurse nutzen, um digitales Marketing zu lernen.",
+      "paragraph2": "Wir bieten zahlreiche Marketing-Kurse an und helfen jedem, Online-Marketing-Fähigkeiten zu entwickeln und im Internet zu wachsen.",
+      "paragraph3": "Als führender Business-Hosting-Anbieter in Großbritannien bieten wir Kunden kostenlose Online-Marketing-Kurse an.",
+      "buttonName": "Jetzt starten",
+      "imageAlt": "Jetzt bestellen-Bild"
+    },
+    "OrderNow2": {
+      "titleLine": "Wie Sie kostenlose Online-Marketing-Kurse erhalten",
+      "paragraph1": "Alle Business-Hosting-Kunden mit Jahresvertrag erhalten vollen Zugriff auf alle 7 Marketing-Kurse. Bei privatem Hosting oder Einzelkurs-Interesse gewähren wir auf Anfrage kostenlosen Zugang.",
+      "paragraph2": "Es gibt viele günstige Marketing-Kurse online – wir bieten Ihnen kostenlose, hochwertige Alternativen! Wenn Sie schnell lernen und online erfolgreich sein möchten, beginnen Sie jetzt mit unseren Internet-Marketing-Kursen.",
+      "paragraph3": "SeekaHost bietet den besten kostenlosen Online-Digitalmarketing-Kurs – starten Sie noch heute Ihren Online-Erfolg!",
+      "imageAlt": "Jetzt bestellen-Bild"
+    }
   }
 }

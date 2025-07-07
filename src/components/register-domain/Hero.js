@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import DomainSearchHomeHero from '../home/DomainSearchHomeHero';
 
 export default function Hero() {
+    const t = useTranslations('RegisterDomainPage.Hero');
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
             <div className="absolute inset-0 w-full h-full bg-[#0A488A] z-1"></div>
@@ -17,24 +20,14 @@ export default function Hero() {
 
                 <div className="text-white w-full max-w-lg z-2 md:mb-10">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Register Domain Names
+                        {t('titleLine')}
                     </h1>
 
                     <p className="mt-6">
-                        All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.
+                        {t('description')}
                     </p>
 
-                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full max-w-lg">
-                        <input
-                            id="searchDomain"
-                            type="text"
-                            placeholder="Search for a domain..."
-                            className="flex-grow outline-none text-black px-2"
-                        />
-                        <button className="bg-[#0081FF] text-white font-bold leading-4 px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition">
-                            Search
-                        </button>
-                    </div>
+                    <DomainSearchHomeHero />
 
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
                         <div className="flex items-center space-x-2">
@@ -60,7 +53,7 @@ export default function Hero() {
                 <div className="relative w-full max-w-xl 2xl:max-w-3xl z-1 ml-auto my-8 lg:my-0">
                     <Image
                         src="/images/register-domain/register-domain-hero-image.webp"
-                        alt="Hero Image"
+                        alt={t('registerDomainImageAlt')}
                         width={1254}
                         height={1038}
                         className="w-full"

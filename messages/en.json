@@ -632,5 +632,187 @@
       "topic4": "Smart Tools for Digital Success",
       "description4": "Leverage our SEO, online marketing, and visibility solutions to enhance your brand's reach, connect with customers, and stay ahead in the digital landscape."
     }
-  }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "Register Domain Names",
+      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "buttonName": "Search",
+      "registerDomainImageAlt": "Hero Image"
+    },
+    "PopularDomain": {
+      "title": "Finding a Popular Domain",
+      "buttonName": "Get It Now",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "Round-the-clock technical support from UK hosting specialists.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "Order now Image",
+      "title": "Register A Domain Name",
+      "paragraph1": "Choose your perfect domain name and register at SeekaHost. It will be the first step to get your website online with our affordable web hosting service. You can register a domain of TLDs (Top-Level Domains) like .in, .co.in, .com, .co.uk, .org, .blog and much more.",
+      "paragraph2": "Pick your domain from our Domain Name Registration system, which looks clear, user-friendly, and easy for anyone to remember. Registering a domain name that explains by itself is a seal-a-deal moment for your business. Even, if you’re not clear with a complete name, our system will suggest you with possibilities available by taking your inputs in search.",
+      "buttonName": "Order Now"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "Cheap Web Hosting With cPanel",
+      "description": " Get the cheapest cPanel hosting services in UK with all the support you need to create websites and blogs. Everything you need to get online with simple clicks.",
+      "buttonName": "Get Started",
+      "cheapHostingImageAlt": "Hero Image"
+    },
+    "OrderNow1": {
+      "titleLine": "The Power of cPanel Hosting with SeekaHost",
+      "description": "Premium web hosting does not have to be expensive or complicated. If you choose the SeekaHost cPanel Hosting, you will realise this. cPanel was launched in 1996 and changed web hosting for its users significantly with its innovative automation tools to manage website hosting more easily and quickly. It remains the market leader among the control panels available in the market as it is a trusted and established brand that has evolved over the years.",
+      "buttonName": "Order Now",
+      "imageAlt": "Order now Image"
+    },
+    "OrderNow2": {
+      "titleLine": "What can SeekaHost cPanel Hosting do for you?",
+      "description": "The SeekaHost cPanel Hosting offers a variety of features that make website management a lot easier and faster such as MySQL, email managing tools, and data tracking as well as SEO optimization features. With SeekaHost&apos;s cPanel web hosting you will experience simple, straightforward web hosting that offers you everything you need for the best website performance.",
+      "buttonName": "Order Now",
+      "imageAlt": "Order now Image"
+    },
+    "OrderNow3": {
+      "titleLine": "Smooth & Flexible CMS Support",
+      "description": "No matter whether you use WordPress, Joomla, or Drupal, with the SeekaHost cPanel Hosting you can easily and quickly install the most popular content management software to your account with a few clicks. Softaculous will support you with installing the software of your choice. Whether you&apos;re setting up a blog with WordPress or an eCommerece site with Magento, it's all covered.",
+      "buttonName": "Order Now",
+      "imageAlt": "Order now Image"
+    },
+    "OrderNow4": {
+      "titleLine": "Ultimate Website Performance with cPanel Software",
+      "description": "Your SeekaHost cPanel Hosting account is loaded with software to maximize your website&apos;s performance. You can use CloudFlare to improve your site&apos;s content caching to decrease latency and enhance security against DDoS attacks. Access content compression settings for a faster loading site and instantly download backups to restore your website with DropMySute or choose your preferred PHP version and PHP extension. It&apos;s a powerhouse for the best web hosting experience.",
+      "buttonName": "Order Now",
+      "imageAlt": "Order now Image"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "Google Advertising Campaigns",
+      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "googleAdImageAlt": "Hero Image"
+    },
+    "OrderNow1": {
+      "titleLine": "Why you should start with Google Ads for a brand new business website?",
+      "paragraph1": "Say if you are registering a new domain and hosting with us. Initially your brand needs more online reach to grab the customer’s attention. You can get the online reach for your business by using the strategies like SEO & Google Ads. SEO is a long term task by using which you can rank the business website on top organically. But if you would like to get the leads from the first day, then you can just opt for Google Ads.",
+      "paragraph2": "Online marketing experts at SeekaHost will help you in creating & running the Google Ads campaign starting from the scratch. We help you pick the best keywords which will bring you more ROI. Also, our Google Ads experts will help you in creating the Google Ad Account, Creating the campaign, monitoring & regularly updating the campaign to ensure that your business gets more leads.",
+      "buttonName": "Get Started Now",
+      "imageAlt": "Order now Image"
+    },
+    "OrderNow2": {
+      "titleLine": "How SeekaHost Online Marketing Experts can help you?",
+      "paragraph1": "We at SeekaHost has online marketing team who can help you and guide to plan for a successful paid marketing campaign like Google Ads, Facebook Ads and Remarketing based on your business model. Our online marketing team has experience in working with different business models across the globe. Hence we will help you in planning the best marketing strategy for your business.",
+      "paragraph2": "Even you can hire our team for the regular online marketing activities or just schedule a one-time consultation call to make it clear with the online advertising strategies. The fastest way to get your business success if by doing Google adverting. SeekaHost employs the best Google AdWords experts trained by ClickDo™",
+      "paragraph3": "Give us a call on 020 8638 5857 for Google AdWords campaigns.",
+      "imageAlt": "Order now Image"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "Free Business Listing on UK Business Directories",
+      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "businessListImageAlt": "Hero Image"
+    },
+    "OrderNow": {
+      "titleLine": "The free business listings are a great way to get the SEO boost",
+      "paragraph1": "Join SeekaHost business web hosting and get free business listings on the UK business List and top 100 UK Business directories.",
+      "paragraph2": "Local business directory listings are one of the best ways to put your business website in front of thousands of people.",
+      "paragraph3": "We have a list of over top 100 UK business directories that we use to list our clients. Every business owner who joins our London server hosting, UK business websites services annual plan gets complimentary “business directory listing” on all the top 100 UK business directories for free.",
+      "buttonName": "Get Started Now",
+      "imageAlt": "Order now Image"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "SEO Consultancy Services for UK Business",
+      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "seoImageAlt": "Hero Image"
+    },
+    "OrderNow1": {
+      "titleLine": "How to get SEO Consultancy from us?",
+      "paragraph1": "You must be one of our business web hosting services customers to get free SEO consultancy advice and on page SEO support. All our business web hosting services customers gets a VIP support for their business websites.",
+      "paragraph2": "We do offer Google AdWords Campaigns at an affordable fee for our business customers and also free business listing on top UK business directories. The free listing on top 100 plus UK business directories will greatly help your UK business websites to rank higher on Google search engine.",
+      "buttonName": "Get Started Now",
+      "imageAlt": "Order now Image"
+    },
+    "OrderNow2": {
+      "titleLine": "Our SEO Consultancy process?",
+      "paragraph1": "This is how we can help any business in the UK with SEO services.",
+      "paragraph2": "Once you join SeekaHost business website hosting plans we will have a SEO audit on your website (You must request). And we will advice what needs to be fixed and that you can get your web masters to fix or else we can do that for you for a nominal fee.",
+      "paragraph3": "After the On-Page SEO is fixed and ready to go on Google search, we have the UK business listing to list the business domain name (URL) on the top 100 business directories.",
+      "paragraph4": "And then after we will write a custom SEO blueprint for your business websites which will show how to do off site SEO, where to get backlinks and how to utilize guest posting services. Keep learning new technologies and keep up with the times.",
+      "paragraph5": "If you need to buy backlinks, there are backlinks packages at ClickDo.",
+      "imageAlt": "Order now Image"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "Learn Digital Marketing Skills Online for Free!",
+      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "MarketingImageAlt": "Hero Image"
+    },
+    "OrderNow1": {
+      "titleLine": "Online Marketing Courses:",
+      "paragraph1": "Online marketing skills are highly in demand and any business owner can now take our online marketing courses and learn the digital marketing skills free.",
+      "paragraph2": "We have many online marketing courses and our goal is to help anyone learn internet marketing skills and grow online.",
+      "paragraph3": "Learning online marketing can help your business in many ways. As the leading business website hosting services provider in the United Kingdom we have taken initiative to provide free online marketing courses for our customers.",
+      "buttonName": "Get Started Now",
+      "imageAlt": "Order now Image"
+    },
+    "OrderNow2": {
+      "titleLine": "How to get online marketing courses free?",
+      "paragraph1": "All our business hosting customers gets the full access to all the 7 online marketing courses when they sign up for an annual business hosting package. If you are looking buy personal hosting or just want to get access to one of our courses, let us know and we will give you free access to the online courses.",
+      "paragraph2": "There are many cheap online marketing courses all over the web, so we want to give you better than cheap and it’s free! So, if you are looking for free marketing courses to learn fast and thrive online, it’s time to take an internet marketing course or get all the courses and start learning today.",
+      "paragraph3": "SeekaHost have created the best digital marketing course online free access for you, so get online and start building your successful business online.",
+      "imageAlt": "Order now Image"
+    }
+  } 
 }

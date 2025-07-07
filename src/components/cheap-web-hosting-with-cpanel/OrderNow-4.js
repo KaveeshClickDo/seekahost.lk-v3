@@ -1,5 +1,8 @@
 import Image from "next/image"
+import { useTranslations } from 'next-intl';
+
 export default function OrderNow4() {
+    const t = useTranslations('CheapHostingPage.OrderNow4');
     return (
         <>
             <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 md:my-10">
@@ -8,7 +11,7 @@ export default function OrderNow4() {
                     <div className="w-full relative">
                         <Image
                             src="/images/cheap-web-hosting-with-cpanel/order-now-4.webp"
-                            alt="Order now Image"
+                            alt={t('imageAlt')}
                             width={2900}
                             height={2312}
                             className="rounded-3xl w-full h-auto"
@@ -20,13 +23,13 @@ export default function OrderNow4() {
                 <div className="md:w-1/2 mt-6 md:mt-0 px-5">
 
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-8">
-                    Ultimate Website Performance with cPanel Software
+                    {t('titleLine')}
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                    Your SeekaHost cPanel Hosting account is loaded with software to maximize your website&apos;s performance. You can use CloudFlare to improve your site&apos;s content caching to decrease latency and enhance security against DDoS attacks. Access content compression settings for a faster loading site and instantly download backups to restore your website with DropMySute or choose your preferred PHP version and PHP extension. It&apos;s a powerhouse for the best web hosting experience.
+                    {t('description')}
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
-                        Order Now
+                        {t('buttonName')}
                     </button>
                 </div>
             </section>

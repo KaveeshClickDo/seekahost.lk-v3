@@ -632,5 +632,187 @@
       "topic4": "Outils intelligents pour la réussite numérique",
       "description4": "Utilisez nos solutions SEO, marketing en ligne et visibilité pour étendre votre portée, connecter avec les clients et mener dans l'espace numérique."
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "Enregistrement de Noms de Domaine",
+      "description": "Panneau de contrôle tout-en-un pour l'hébergement de blogs WordPress. Hébergez des réseaux de blogs privés sur des adresses IP multiples uniques.",
+      "buttonName": "Rechercher",
+      "registerDomainImageAlt": "Image principale"
+    },
+    "PopularDomain": {
+      "title": "Trouver un Domaine Populaire",
+      "buttonName": "Obtenir maintenant",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "Support technique 24/7 par des spécialistes d'hébergement au Royaume-Uni.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "Image Commander maintenant",
+      "title": "Enregistrer un Nom de Domaine",
+      "paragraph1": "Choisissez votre nom de domaine parfait et enregistrez-le chez SeekaHost. C'est la première étape pour mettre votre site en ligne avec notre service d'hébergement web abordable. Vous pouvez enregistrer des domaines de TLD (domaines de premier niveau) comme .in, .co.in, .com, .co.uk, .org, .blog et bien plus encore.",
+      "paragraph2": "Sélectionnez votre domaine via notre système d'enregistrement de noms de domaine, clair, convivial et facile à retenir. Choisir un nom de domaine explicite est un atout décisif pour votre entreprise. Même si vous n'avez pas d'idée précise, notre système vous suggérera des possibilités disponibles en fonction de votre recherche.",
+      "buttonName": "Commander maintenant"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "Hébergement Web Économique avec cPanel",
+      "description": "Bénéficiez des services d'hébergement cPanel les moins chers au Royaume-Uni avec tout le soutien nécessaire pour créer sites et blogs. Tout ce dont vous avez besoin pour être en ligne en quelques clics.",
+      "buttonName": "Commencer",
+      "cheapHostingImageAlt": "Image principale"
+    },
+    "OrderNow1": {
+      "titleLine": "La Puissance de l'Hébergement cPanel avec SeekaHost",
+      "description": "Un hébergement web premium n'a pas besoin d'être cher ou compliqué. En choisissant l'hébergement cPanel de SeekaHost, vous le constaterez. Lancé en 1996, cPanel a révolutionné l'hébergement web grâce à ses outils automatisés innovants pour gérer plus facilement et rapidement les sites. Il reste le leader du marché parmi les panneaux de contrôle disponibles.",
+      "buttonName": "Commander maintenant",
+      "imageAlt": "Image Commander maintenant"
+    },
+    "OrderNow2": {
+      "titleLine": "Que peut faire l'Hébergement cPanel de SeekaHost pour vous ?",
+      "description": "L'hébergement cPanel de SeekaHost offre des fonctionnalités variées simplifiant la gestion des sites : MySQL, outils de gestion d'emails, suivi des données et optimisation SEO. Avec SeekaHost, découvrez un hébergement simple et performant pour une expérience optimale.",
+      "buttonName": "Commander maintenant",
+      "imageAlt": "Image Commander maintenant"
+    },
+    "OrderNow3": {
+      "titleLine": "Support CMS Fluide et Flexible",
+      "description": "Que vous utilisiez WordPress, Joomla ou Drupal, l'hébergement cPanel de SeekaHost vous permet d'installer rapidement les logiciels de gestion de contenu populaires en quelques clics. Softaculous facilite l'installation. Que ce soit pour un blog WordPress ou un site e-commerce Magento, tout est pris en charge.",
+      "buttonName": "Commander maintenant",
+      "imageAlt": "Image Commander maintenant"
+    },
+    "OrderNow4": {
+      "titleLine": "Performance Ultime avec le Logiciel cPanel",
+      "description": "Votre compte cPanel SeekaHost intègre des logiciels pour maximiser les performances : CloudFlare améliore le caching et la sécurité contre les attaques DDoS, les paramètres de compression accélèrent le chargement, et les sauvegardes instantanées avec DropMySite permettent une restauration rapide. Choisissez votre version PHP pour une expérience d'hébergement haut de gamme.",
+      "buttonName": "Commander maintenant",
+      "imageAlt": "Image Commander maintenant"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "Campagnes Publicitaires Google",
+      "description": "Panneau de contrôle tout-en-un pour l'hébergement de blogs WordPress. Hébergez des réseaux de blogs privés sur des adresses IP multiples uniques.",
+      "googleAdImageAlt": "Image principale"
+    },
+    "OrderNow1": {
+      "titleLine": "Pourquoi démarrer avec Google Ads pour un nouveau site commercial ?",
+      "paragraph1": "Lorsque vous enregistrez un nouveau domaine et hébergement, votre marque a besoin de visibilité en ligne. Atteignez votre audience via le SEO et Google Ads. Le SEO est une stratégie à long terme, tandis que Google Ads génère des prospects dès le premier jour.",
+      "paragraph2": "Les experts en marketing de SeekaHost créent et gèrent vos campagnes Google Ads : sélection de mots-clés rentables, création de compte, suivi et optimisations régulières pour maximiser votre retour sur investissement.",
+      "buttonName": "Commencer maintenant",
+      "imageAlt": "Image Commander maintenant"
+    },
+    "OrderNow2": {
+      "titleLine": "Comment nos Experts en Marketing Digital Vous Aident",
+      "paragraph1": "Notre équipe vous guide dans la planification de campagnes payantes performantes (Google Ads, Facebook Ads, Remarketing) adaptées à votre secteur. Forte d'une expérience internationale, elle élabore la stratégie optimale.",
+      "paragraph2": "Engagez-nous pour une gestion continue ou une consultation ponctuelle. La publicité Google est le moyen le plus rapide de réussir en ligne. Nos experts Google Ads sont certifiés par ClickDo™.",
+      "paragraph3": "Appelez-nous au 020 8638 5857 pour vos campagnes Google Ads.",
+      "imageAlt": "Image Commander maintenant"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "Inscription Gratuite aux Annuaires d'Entreprises UK",
+      "description": "Panneau de contrôle tout-en-un pour l'hébergement de blogs WordPress. Hébergez des réseaux de blogs privés sur des adresses IP multiples uniques.",
+      "businessListImageAlt": "Image principale"
+    },
+    "OrderNow": {
+      "titleLine": "Les inscriptions gratuites boostent votre référencement",
+      "paragraph1": "Choisissez l'hébergement professionnel SeekaHost et obtenez des inscriptions gratuites sur UK Business List et les 100 meilleurs annuaires britanniques.",
+      "paragraph2": "Les inscriptions locales exposent votre site à des milliers de clients potentiels.",
+      "paragraph3": "Nous inscrivons nos clients sur plus de 100 annuaires. Tout propriétaire souscrivant à notre offre d'hébergement annuel bénéficie gratuitement de cette inscription.",
+      "buttonName": "Commencer maintenant",
+      "imageAlt": "Image Commander maintenant"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "Services de Conseil SEO pour les Entreprises UK",
+      "description": "Panneau de contrôle tout-en-un pour l'hébergement de blogs WordPress. Hébergez des réseaux de blogs privés sur des adresses IP multiples uniques.",
+      "seoImageAlt": "Image principale"
+    },
+    "OrderNow1": {
+      "titleLine": "Comment bénéficier de notre conseil SEO ?",
+      "paragraph1": "Devenez client de notre hébergement professionnel pour obtenir des conseils SEO gratuits et un support technique. Nos clients professionnels bénéficient d'une assistance VIP.",
+      "paragraph2": "Nous proposons également des campagnes Google Ads à tarif préférentiel et des inscriptions gratuites sur les principaux annuaires britanniques pour améliorer votre classement dans les moteurs de recherche.",
+      "buttonName": "Commencer maintenant",
+      "imageAlt": "Image Commander maintenant"
+    },
+    "OrderNow2": {
+      "titleLine": "Notre Processus de Conseil SEO",
+      "paragraph1": "Voici comment nous aidons les entreprises britanniques :",
+      "paragraph2": "Après souscription à l'hébergement professionnel (sur demande), nous auditons votre site et recommandons des corrections à faire réaliser par vos webmasters ou par nos soins (frais modiques).",
+      "paragraph3": "Une fois le SEO technique optimisé, nous inscrivons votre URL sur les 100 meilleurs annuaires professionnels UK.",
+      "paragraph4": "Nous élaborons ensuite un plan SEO personnalisé pour votre référencement hors-site : stratégie de backlinks, guest posting, et veille technologique.",
+      "paragraph5": "Besoin d'acheter des backlinks ? Des forfaits sont disponibles chez ClickDo.",
+      "imageAlt": "Image Commander maintenant"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "Apprenez le Marketing Digital Gratuitement en Ligne !",
+      "description": "Panneau de contrôle tout-en-un pour l'hébergement de blogs WordPress. Hébergez des réseaux de blogs privés sur des adresses IP multiples uniques.",
+      "MarketingImageAlt": "Image principale"
+    },
+    "OrderNow1": {
+      "titleLine": "Formations en Marketing Digital :",
+      "paragraph1": "Les compétences en marketing digital sont très demandées. Tout entrepreneur peut désormais suivre nos cours en ligne gratuitement.",
+      "paragraph2": "Nous proposons de nombreux cours pour vous aider à maîtriser le marketing digital et développer votre activité en ligne.",
+      "paragraph3": "Apprendre le marketing digital offre des avantages multiples. En tant qu'hébergeur leader au Royaume-Uni, nous proposons gratuitement ces formations à nos clients.",
+      "buttonName": "Commencer maintenant",
+      "imageAlt": "Image Commander maintenant"
+    },
+    "OrderNow2": {
+      "titleLine": "Comment accéder gratuitement aux formations ?",
+      "paragraph1": "Nos clients en hébergement professionnel annuel obtiennent un accès complet aux 7 formations. Si vous souhaitez un hébergement personnel ou un cours spécifique, contactez-nous pour un accès gratuit.",
+      "paragraph2": "Oubliez les formations payantes bas de gamme : nos cours sont gratuits et de qualité. Pour apprendre rapidement et réussir en ligne, commencez dès aujourd'hui.",
+      "paragraph3": "SeekaHost a créé les meilleures formations en marketing digital gratuites : lancez-vous et construisez votre succès en ligne.",
+      "imageAlt": "Image Commander maintenant"
+    }
   }
 }

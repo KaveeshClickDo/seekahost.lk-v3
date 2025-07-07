@@ -632,5 +632,187 @@
       "topic4": "디지털 성공을 위한 스마트 도구",
       "description4": "SEO, 온라인 마케팅, 가시성 솔루션으로 브랜드 인지도 확대, 고객 연결, 디지털 환경에서의 선도적 위치 유지."
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "도메인 이름 등록",
+      "description": "고유한 다중 IP 주소에서 프라이빗 블로그 네트워크를 안전하게 호스팅할 수 있는 올인원 클릭 WordPress 블로그 호스팅 제어판.",
+      "buttonName": "검색",
+      "registerDomainImageAlt": "메인 이미지"
+    },
+    "PopularDomain": {
+      "title": "인기 도메인 찾기",
+      "buttonName": "지금 구매하기",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "영국 호스팅 전문가의 연중무휴 기술 지원.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "주문하기 이미지",
+      "title": "도메인 이름 등록",
+      "paragraph1": "SeekaHost에서 완벽한 도메인 이름을 선택하고 등록하세요. 합리적인 가격의 웹 호스팅 서비스로 웹사이트를 온라인에 올리는 첫걸음이 될 것입니다. .in, .co.in, .com, .co.uk, .org, .blog 등 다양한 TLD(최상위 도메인)를 등록할 수 있습니다.",
+      "paragraph2": "명확하고 사용자 친화적이며 기억하기 쉬운 도메인 이름 등록 시스템에서 도메인을 선택하세요. 사업을 성공으로 이끌 수 있는 설명력 있는 도메인 이름을 등록하세요. 완전한 이름이 정해지지 않았다면 검색창에 입력하면 가능한 옵션을 추천해 드립니다.",
+      "buttonName": "지금 주문하기"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "cPanel 저가형 웹 호스팅",
+      "description": "웹사이트와 블로그를 만들기 위한 모든 지원을 제공하는 영국 최저가 cPanel 호스팅 서비스를 이용하세요. 간단한 클릭만으로 온라인에 진출할 수 있습니다.",
+      "buttonName": "시작하기",
+      "cheapHostingImageAlt": "메인 이미지"
+    },
+    "OrderNow1": {
+      "titleLine": "SeekaHost cPanel 호스팅의 힘",
+      "description": "프리미엄 웹 호스팅이 반드시 비싸거나 복잡할 필요는 없습니다. SeekaHost cPanel 호스팅을 선택하면 이를 실감하실 수 있습니다. cPanel은 1996년 출시되어 혁신적인 자동화 도구로 웹사이트 호스팅 관리를 쉽고 빠르게 바꾸었습니다. 시장에서 신뢰받는 확립된 브랜드로 진화하며 현재까지도 시장을 선도하고 있습니다.",
+      "buttonName": "지금 주문하기",
+      "imageAlt": "주문하기 이미지"
+    },
+    "OrderNow2": {
+      "titleLine": "SeekaHost cPanel 호스팅이 제공하는 혜택",
+      "description": "SeekaHost cPanel 호스팅은 MySQL, 이메일 관리 도구, 데이터 추적 및 SEO 최적화 기능 등 웹사이트 관리를 훨씬 쉽고 빠르게 만들어주는 다양한 기능을 제공합니다. SeekaHost의 cPanel 웹 호스팅으로 최고의 웹사이트 성능을 위한 모든 것을 제공하는 간결하고 직관적인 호스팅을 경험하세요.",
+      "buttonName": "지금 주문하기",
+      "imageAlt": "주문하기 이미지"
+    },
+    "OrderNow3": {
+      "titleLine": "원활하고 유연한 CMS 지원",
+      "description": "WordPress, Joomla 또는 Drupal을 사용하든 SeekaHost cPanel 호스팅으로 가장 인기 있는 콘텐츠 관리 소프트웨어를 몇 번의 클릭만으로 계정에 쉽고 빠르게 설치할 수 있습니다. Softaculous가 원하는 소프트웨어 설치를 지원합니다. WordPress로 블로그를 설정하거나 Magento로 전자상거래 사이트를 구축하는 것까지 모두 가능합니다.",
+      "buttonName": "지금 주문하기",
+      "imageAlt": "주문하기 이미지"
+    },
+    "OrderNow4": {
+      "titleLine": "cPanel 소프트웨어의 최고 웹사이트 성능",
+      "description": "SeekaHost cPanel 호스팅 계정은 웹사이트 성능을 극대화하기 위한 소프트웨어로 구성되어 있습니다. CloudFlare를 사용하여 콘텐츠 캐싱을 개선하고 DDoS 공격에 대한 보안을 강화할 수 있습니다. 더 빠른 로딩을 위한 콘텐츠 압축 설정을 활용하고 DropMySite로 즉시 백업을 다운로드하여 웹사이트를 복원하거나 원하는 PHP 버전과 확장 기능을 선택하세요. 최고의 웹 호스팅 경험을 위한 파워하우스입니다.",
+      "buttonName": "지금 주문하기",
+      "imageAlt": "주문하기 이미지"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "구글 광고 캠페인",
+      "description": "고유한 다중 IP 주소에서 프라이빗 블로그 네트워크를 안전하게 호스팅할 수 있는 올인원 클릭 WordPress 블로그 호스팅 제어판.",
+      "googleAdImageAlt": "메인 이미지"
+    },
+    "OrderNow1": {
+      "titleLine": "왜 새로운 비즈니스 웹사이트에 구글 광고를 시작해야 할까요?",
+      "paragraph1": "새 도메인을 등록하고 저희와 호스팅을 시작하는 경우를 가정해 보겠습니다. 초기에는 브랜드가 고객의 관심을 끌기 위해 더 많은 온라인 도달이 필요합니다. SEO 및 구글 광고와 같은 전략을 통해 비즈니스의 온라인 도달을 높일 수 있습니다. SEO는 웹사이트를 자연스럽게 상위에 노출시키는 장기적인 작업입니다. 하지만 첫날부터 리드를 확보하려면 구글 광고를 선택할 수 있습니다.",
+      "paragraph2": "SeekaHost의 온라인 마케팅 전문가가 구글 광고 캠페인을 처음부터 제작하고 운영하는 데 도움을 드립니다. 더 높은 ROI를 가져다 줄 최적의 키워드를 선정하고, 구글 광고 계정 생성, 캠페인 제작, 모니터링 및 정기적인 업데이트를 지원하여 비즈니스가 더 많은 리드를 확보할 수 있도록 합니다.",
+      "buttonName": "지금 시작하기",
+      "imageAlt": "주문하기 이미지"
+    },
+    "OrderNow2": {
+      "titleLine": "SeekaHost 온라인 마케팅 전문가가 어떻게 도울 수 있나요?",
+      "paragraph1": "SeekaHost에는 구글 광고, 페이스북 광고, 리마케팅과 같은 성공적인 유료 마케팅 캠페인을 기획하도록 돕는 온라인 마케팅 팀이 있습니다. 저희 팀은 전 세계 다양한 비즈니스 모델과 협력한 경험이 있습니다. 따라서 귀사의 비즈니스에 가장 적합한 마케팅 전략을 기획하는 데 도움을 드립니다.",
+      "paragraph2": "정기적인 온라인 마케팅 활동을 저희 팀에 맡기거나 온라인 광고 전략에 대한 일회성 상담 예약도 가능합니다. 비즈니스 성공을 위한 가장 빠른 길은 구글 광고입니다. SeekaHost는 ClickDo™가 양성한 최고의 구글 애즈 전문가를 고용하고 있습니다.",
+      "paragraph3": "구글 애즈 캠페인 관련 문의: 020 8638 5857",
+      "imageAlt": "주문하기 이미지"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "영국 비즈니스 디렉토리 무료 등록",
+      "description": "고유한 다중 IP 주소에서 프라이빗 블로그 네트워크를 안전하게 호스팅할 수 있는 올인원 클릭 WordPress 블로그 호스팅 제어판.",
+      "businessListImageAlt": "메인 이미지"
+    },
+    "OrderNow": {
+      "titleLine": "무료 비즈니스 등록은 SEO 강화의 훌륭한 방법",
+      "paragraph1": "SeekaHost 비즈니스 웹 호스팅에 가입하고 영국 비즈니스 리스트 및 상위 100개 영국 비즈니스 디렉토리에 무료로 등록하세요.",
+      "paragraph2": "로컬 비즈니스 디렉토리 등록은 비즈니스 웹사이트를 수천 명의 사람들에게 노출시키는 가장 좋은 방법 중 하나입니다.",
+      "paragraph3": "저희는 100개가 넘는 영국 비즈니스 디렉토리 목록을 보유하고 있습니다. 연간 플랜으로 런던 서버 호스팅 및 영국 비즈니스 웹사이트 서비스에 가입하는 모든 사업주는 상위 100개 영국 비즈니스 디렉토리에 무료로 '비즈니스 디렉토리 등록' 서비스를 제공받습니다.",
+      "buttonName": "지금 시작하기",
+      "imageAlt": "주문하기 이미지"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "영국 비즈니스를 위한 SEO 컨설팅 서비스",
+      "description": "고유한 다중 IP 주소에서 프라이빗 블로그 네트워크를 안전하게 호스팅할 수 있는 올인원 클릭 WordPress 블로그 호스팅 제어판.",
+      "seoImageAlt": "메인 이미지"
+    },
+    "OrderNow1": {
+      "titleLine": "저희의 SEO 컨설팅을 받는 방법",
+      "paragraph1": "무료 SEO 컨설팅 조언 및 온페이지 SEO 지원을 받으려면 비즈니스 웹 호스팅 서비스 고객이어야 합니다. 모든 비즈니스 웹 호스팅 고객은 비즈니스 웹사이트에 대한 VIP 지원을 받습니다.",
+      "paragraph2": "저희는 비즈니스 고객을 위해 합리적인 가격으로 구글 애즈 캠페인을 제공하며 상위 영국 비즈니스 디렉토리에 무료로 등록해 드립니다. 100개가 넘는 영국 비즈니스 디렉토리에 무료 등록하면 영국 비즈니스 웹사이트가 구글 검색 엔진에서 더 높은 순위를 차지하는 데 크게 도움이 됩니다.",
+      "buttonName": "지금 시작하기",
+      "imageAlt": "주문하기 이미지"
+    },
+    "OrderNow2": {
+      "titleLine": "저희 SEO 컨설팅 프로세스",
+      "paragraph1": "영국의 모든 비즈니스에 SEO 서비스를 제공하는 방법입니다.",
+      "paragraph2": "SeekaHost 비즈니스 웹사이트 호스팅 플랜에 가입하면(요청 시) 웹사이트 SEO 감사를 실시합니다. 수정이 필요한 부분을 조언해 드리며, 웹마스터가 수정하도록 하거나 소정의 수수료를 받고 저희가 처리할 수 있습니다.",
+      "paragraph3": "온페이지 SEO가 수정되어 구글 검색에 적합해지면, 상위 100개 비즈니스 디렉토리에 비즈니스 도메인 이름(URL)을 등록합니다.",
+      "paragraph4": "그런 다음 비즈니스 웹사이트에 맞춤형 SEO 청사진을 작성해 드립니다. 여기에는 오프사이트 SEO 수행 방법, 백링크 획득처, 게스트 포스팅 서비스 활용 방법이 포함됩니다. 새로운 기술을 배우고 시대에 발맞추세요.",
+      "paragraph5": "백링크 구매가 필요하시면 ClickDo에서 백링크 패키지를 이용할 수 있습니다.",
+      "imageAlt": "주문하기 이미지"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "온라인에서 무료로 디지털 마케팅 기술을 배우세요!",
+      "description": "고유한 다중 IP 주소에서 프라이빗 블로그 네트워크를 안전하게 호스팅할 수 있는 올인원 클릭 WordPress 블로그 호스팅 제어판.",
+      "MarketingImageAlt": "메인 이미지"
+    },
+    "OrderNow1": {
+      "titleLine": "온라인 마케팅 과정:",
+      "paragraph1": "온라인 마케팅 기술은 매우 수요가 많으며 모든 사업주는 이제 저희의 온라인 마케팅 과정을 수강하고 디지털 마케팅 기술을 무료로 배울 수 있습니다.",
+      "paragraph2": "저희는 많은 온라인 마케팅 과정을 보유하고 있으며 목표는 누구나 인터넷 마케팅 기술을 배우고 온라인에서 성장할 수 있도록 돕는 것입니다.",
+      "paragraph3": "온라인 마케팅을 배우면 비즈니스에 다양한 방법으로 도움이 됩니다. 영국 선도 비즈니스 웹사이트 호스팅 서비스 제공업체로서 고객에게 무료 온라인 마케팅 과정을 제공하기로 결정했습니다.",
+      "buttonName": "지금 시작하기",
+      "imageAlt": "주문하기 이미지"
+    },
+    "OrderNow2": {
+      "titleLine": "무료 온라인 마케팅 과정을 받는 방법",
+      "paragraph1": "연간 비즈니스 호스팅 패키지를 신청하는 모든 비즈니스 호스팅 고객은 7가지 온라인 마케팅 과정 전체에 대한 전체 액세스 권한을 얻습니다. 개인 호스팅을 구매하거나 특정 과정에만 액세스하려는 경우 알려주시면 온라인 과정에 대한 무료 액세스를 제공해 드립니다.",
+      "paragraph2": "웹에는 많은 저렴한 온라인 마케팅 과정이 있지만, 저희는 저렴함보다 더 나은 무료 과정을 제공하고자 합니다! 빠르게 배우고 온라인에서 성공하기 위한 무료 마케팅 과정을 찾고 있다면 지금 인터넷 마케팅 과정을 수강하거나 모든 과정을 시작하세요.",
+      "paragraph3": "SeekaHost는 최고의 무료 디지털 마케팅 과정을 만들었습니다. 지금 온라인에 접속하여 성공적인 비즈니스를 구축하세요.",
+      "imageAlt": "주문하기 이미지"
+    }
   }
 }

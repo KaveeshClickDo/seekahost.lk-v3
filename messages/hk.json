@@ -632,5 +632,187 @@
       "topic4": "智能数字成功工具",
       "description4": "运用SEO、在线营销与知名度解决方案，提升品牌影响力、连接客户并保持数字领域领先地位。"
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "注册域名",
+      "description": "一体化WordPress博客托管控制面板，可在独立多IP地址上安全托管私有博客网络",
+      "buttonName": "搜索",
+      "registerDomainImageAlt": "主视觉图"
+    },
+    "PopularDomain": {
+      "title": "寻找热门域名",
+      "buttonName": "立即获取",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "英国托管专家提供全天候技术支持",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "立即订购图片",
+      "title": "注册域名",
+      "paragraph1": "在SeekaHost选择并注册您的完美域名。这是通过我们经济实惠的网络托管服务让网站上线的第一步。您可以注册顶级域名（TLD），如.in、.co.in、.com、.co.uk、.org、.blog等多种后缀。",
+      "paragraph2": "通过我们清晰、用户友好且易于记忆的域名注册系统挑选域名。注册一个能自我诠释的域名是您业务的成交时刻。即使您不确定完整名称，我们的系统也会根据您的搜索输入推荐可用选项。",
+      "buttonName": "立即订购"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "cPanel经济型虚拟主机",
+      "description": "获取英国最实惠的cPanel托管服务，获得创建网站和博客所需的全方位支持。一键操作即可实现线上部署。",
+      "buttonName": "开始使用",
+      "cheapHostingImageAlt": "主视觉图"
+    },
+    "OrderNow1": {
+      "titleLine": "SeekaHost cPanel托管的强大功能",
+      "description": "高级网络托管不必昂贵或复杂。选择SeekaHost cPanel托管服务，您将亲身体验这一点。cPanel于1996年推出，凭借创新的自动化工具显著改变了用户管理网站托管的方式。作为经过多年发展的可信赖成熟品牌，它至今仍是市场领先的控制面板。",
+      "buttonName": "立即订购",
+      "imageAlt": "立即订购图片"
+    },
+    "OrderNow2": {
+      "titleLine": "SeekaHost cPanel托管能为您做什么？",
+      "description": "提供MySQL数据库、邮件管理工具、数据跟踪及SEO优化等多样化功能，大幅简化网站管理流程。SeekaHost cPanel网络托管为您带来简单直观的托管体验，满足最佳网站性能的所有需求。",
+      "buttonName": "立即订购",
+      "imageAlt": "立即订购图片"
+    },
+    "OrderNow3": {
+      "titleLine": "流畅灵活的CMS支持",
+      "description": "无论使用WordPress、Joomla还是Drupal，通过SeekaHost cPanel托管，您只需点击几下即可快速安装主流内容管理系统。Softaculous将协助您安装所选软件——从搭建WordPress博客到创建Magento电商网站，全面覆盖。",
+      "buttonName": "立即订购",
+      "imageAlt": "立即订购图片"
+    },
+    "OrderNow4": {
+      "titleLine": "cPanel软件实现终极网站性能",
+      "description": "您的SeekaHost cPanel托管账户配备全方位性能优化工具：使用CloudFlare增强内容缓存减少延迟，提升DDoS攻击防护；通过内容压缩设置加速加载；利用DropMySite即时备份恢复；自由选择PHP版本及扩展。为您打造强大的顶级托管体验。",
+      "buttonName": "立即订购",
+      "imageAlt": "立即订购图片"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "谷歌广告推广活动",
+      "description": "一体化WordPress博客托管控制面板，可在独立多IP地址上安全托管私有博客网络",
+      "googleAdImageAlt": "主视觉图"
+    },
+    "OrderNow1": {
+      "titleLine": "全新商业网站为何首选谷歌广告？",
+      "paragraph1": "假设您正在我们平台注册新域名和托管服务。初期您的品牌需要更多网络曝光来吸引客户关注。可通过SEO和谷歌广告等策略实现——SEO是长期提升网站自然排名的方案，但若希望首日即获客源，谷歌广告是理想选择。",
+      "paragraph2": "SeekaHost网络营销专家将协助您从零创建并运营谷歌广告活动。我们帮您筛选带来高投资回报率的关键词，并由谷歌广告专家全程支持：创建账户、策划活动、监控数据并定期优化，确保为您的业务持续引流。",
+      "buttonName": "立即开始",
+      "imageAlt": "立即订购图片"
+    },
+    "OrderNow2": {
+      "titleLine": "SeekaHost营销专家如何助力？",
+      "paragraph1": "我们的网络营销团队将根据您的商业模式，协助规划谷歌广告、Facebook广告及再营销等付费推广策略。团队拥有服务全球多元商业模型的丰富经验，为您量身定制最佳营销方案。",
+      "paragraph2": "您可长期雇佣团队执行日常营销，或预约单次咨询厘清推广策略。谷歌广告是实现业务增长的最快途径——SeekaHost聘有经ClickDo™专业培训的顶尖谷歌广告专家。",
+      "paragraph3": "谷歌广告活动咨询电话：020 8638 5857",
+      "imageAlt": "立即订购图片"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "免费入驻英国商业目录",
+      "description": "一体化WordPress博客托管控制面板，可在独立多IP地址上安全托管私有博客网络",
+      "businessListImageAlt": "主视觉图"
+    },
+    "OrderNow": {
+      "titleLine": "免费商业入驻是提升SEO的有效途径",
+      "paragraph1": "加入SeekaHost商业托管服务，免费入驻UK Business List及英国百强商业目录。",
+      "paragraph2": "本地商业目录入驻是将企业网站展示给数千用户的最佳渠道之一。",
+      "paragraph3": "我们拥有覆盖英国百强商业目录的入驻资源。选择我们伦敦服务器托管或英国网站服务的年度套餐客户，可免费享受所有百强目录的入驻服务。",
+      "buttonName": "立即开始",
+      "imageAlt": "立即订购图片"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "英国企业SEO咨询服务",
+      "description": "一体化WordPress博客托管控制面板，可在独立多IP地址上安全托管私有博客网络",
+      "seoImageAlt": "主视觉图"
+    },
+    "OrderNow1": {
+      "titleLine": "如何获取我们的SEO咨询？",
+      "paragraph1": "您需成为我们的商业托管客户，方可享受免费SEO咨询和站内SEO支持。所有商业托管客户均获得企业网站VIP服务。",
+      "paragraph2": "我们为商业客户提供高性价比的谷歌广告活动服务，并支持免费入驻英国顶级商业目录。百强目录入驻将显著提升您的网站在谷歌搜索中的排名。",
+      "buttonName": "立即开始",
+      "imageAlt": "立即订购图片"
+    },
+    "OrderNow2": {
+      "titleLine": "我们的SEO咨询流程",
+      "paragraph1": "我们通过以下方式为英国企业提供SEO支持：",
+      "paragraph2": "加入SeekaHost商业托管计划后（需申请），我们将进行网站SEO审计并提供修复建议。您可自行安排技术人员修复，或支付合理费用由我们处理。",
+      "paragraph3": "完成站内SEO优化后，我们将企业域名（URL）提交至百强商业目录。",
+      "paragraph4": "随后定制专属SEO方案，指导您开展站外SEO、获取外链及利用客座博客服务。持续学习新技术并保持与时俱进。",
+      "paragraph5": "如需购买外链，ClickDo提供多种外链套餐。",
+      "imageAlt": "立即订购图片"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "免费在线学习数字营销技能！",
+      "description": "一体化WordPress博客托管控制面板，可在独立多IP地址上安全托管私有博客网络",
+      "MarketingImageAlt": "主视觉图"
+    },
+    "OrderNow1": {
+      "titleLine": "网络营销课程",
+      "paragraph1": "网络营销技能需求旺盛，企业主现可免费学习我们的在线课程掌握数字营销技能。",
+      "paragraph2": "我们提供多门网络营销课程，目标是帮助学员掌握互联网营销技能并实现线上增长。",
+      "paragraph3": "学习网络营销能为企业带来多重价值。作为英国领先的商业网站托管服务商，我们主动为客户提供免费在线营销课程。",
+      "buttonName": "立即开始",
+      "imageAlt": "立即订购图片"
+    },
+    "OrderNow2": {
+      "titleLine": "如何免费获取网络营销课程？",
+      "paragraph1": "所有商业托管客户订购年度套餐后，可免费访问全部7门在线课程。若您仅需个人托管或单门课程访问权限，请联系我们开通免费学习通道。",
+      "paragraph2": "网络虽有大量低价课程，但我们提供更优选择——完全免费！若您寻求快速成长的高效营销课程，现在正是学习在线营销的最佳时机。",
+      "paragraph3": "SeekaHost精心打造顶级数字营销课程并免费开放，立即上线开启您的商业成功之路！",
+      "imageAlt": "立即订购图片"
+    }
   }
 }

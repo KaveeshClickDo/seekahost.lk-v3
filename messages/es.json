@@ -632,5 +632,187 @@
       "topic4": "Herramientas Inteligentes para el Éxito Digital",
       "description4": "Potencie su alcance con nuestras soluciones de SEO, marketing online y visibilidad para conectar con clientes y liderar en el entorno digital."
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "Registrar Nombres de Dominio",
+      "description": "Panel de control todo en uno para alojar redes de blogs WordPress con un clic, de forma segura en múltiples direcciones IP únicas.",
+      "buttonName": "Buscar",
+      "registerDomainImageAlt": "Imagen Principal"
+    },
+    "PopularDomain": {
+      "title": "Encontrar un Dominio Popular",
+      "buttonName": "Obtener Ahora",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "Soporte técnico 24/7 de especialistas en hosting del Reino Unido.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "Imagen Pedir Ahora",
+      "title": "Registrar un Nombre de Dominio",
+      "paragraph1": "Elija su nombre de dominio perfecto y regístrelo en SeekaHost. Será el primer paso para poner su sitio web en línea con nuestro servicio de hosting web asequible. Puede registrar dominios de TLD (dominios de primer nivel) como .in, .co.in, .com, .co.uk, .org, .blog y muchos más.",
+      "paragraph2": "Seleccione su dominio desde nuestro sistema de Registro de Nombres de Dominio, claro, fácil de usar y fácil de recordar. Registrar un nombre de dominio que se explique por sí mismo es un momento decisivo para su negocio. Incluso si no tiene claro un nombre completo, nuestro sistema le sugerirá posibilidades disponibles según lo que busque.",
+      "buttonName": "Pedir Ahora"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "Hosting Web Barato con cPanel",
+      "description": "Obtenga los servicios de hosting con cPanel más baratos del Reino Unido con todo el soporte que necesita para crear sitios web y blogs. Todo lo necesario para estar en línea con simples clics.",
+      "buttonName": "Comenzar",
+      "cheapHostingImageAlt": "Imagen Principal"
+    },
+    "OrderNow1": {
+      "titleLine": "El Poder del Hosting con cPanel de SeekaHost",
+      "description": "El hosting web premium no tiene por qué ser caro o complicado. Si elige el Hosting cPanel de SeekaHost, lo comprobará. cPanel se lanzó en 1996 y revolucionó significativamente el hosting web con sus herramientas de automatización innovadoras para gestionar el alojamiento de sitios web de forma más fácil y rápida. Sigue siendo líder en el mercado entre los paneles de control disponibles, ya que es una marca confiable y consolidada que ha evolucionado a lo largo de los años.",
+      "buttonName": "Pedir Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    },
+    "OrderNow2": {
+      "titleLine": "¿Qué puede hacer por usted el Hosting cPanel de SeekaHost?",
+      "description": "El Hosting cPanel de SeekaHost ofrece múltiples funciones que facilitan y agilizan la gestión de sitios web, como MySQL, herramientas de gestión de correo electrónico, seguimiento de datos y funciones de optimización SEO. Con el hosting web cPanel de SeekaHost experimentará un hosting simple y directo que le ofrece todo lo necesario para el mejor rendimiento de su sitio web.",
+      "buttonName": "Pedir Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    },
+    "OrderNow3": {
+      "titleLine": "Soporte CMS Fluido y Flexible",
+      "description": "Ya sea que utilice WordPress, Joomla o Drupal, con el Hosting cPanel de SeekaHost puede instalar fácil y rápidamente el software de gestión de contenido más popular en su cuenta con unos pocos clics. Softaculous le ayudará a instalar el software que elija. Ya sea que esté configurando un blog con WordPress o un sitio de comercio electrónico con Magento, todo está cubierto.",
+      "buttonName": "Pedir Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    },
+    "OrderNow4": {
+      "titleLine": "Rendimiento Definitivo con Software cPanel",
+      "description": "Su cuenta de Hosting cPanel de SeekaHost está cargada con software para maximizar el rendimiento de su sitio web. Puede usar CloudFlare para mejorar el almacenamiento en caché del contenido de su sitio, reducir la latencia y aumentar la seguridad contra ataques DDoS. Acceda a configuraciones de compresión de contenido para un sitio de carga más rápida y descargue copias de seguridad instantáneas para restaurar su sitio con DropMySite o elija su versión de PHP y extensión PHP preferidas. Es una herramienta poderosa para la mejor experiencia de hosting web.",
+      "buttonName": "Pedir Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "Campañas de Publicidad en Google",
+      "description": "Panel de control todo en uno para alojar redes de blogs WordPress con un clic, de forma segura en múltiples direcciones IP únicas.",
+      "googleAdImageAlt": "Imagen Principal"
+    },
+    "OrderNow1": {
+      "titleLine": "¿Por qué debería empezar con Google Ads para un sitio web empresarial nuevo?",
+      "paragraph1": "Supongamos que registra un nuevo dominio y hosting con nosotros. Inicialmente, su marca necesita más alcance online para captar la atención del cliente. Puede obtener este alcance mediante estrategias como SEO y Google Ads. El SEO es una tarea a largo plazo que permite posicionar el sitio web empresarial en lo más alto de forma orgánica. Pero si desea obtener clientes potenciales desde el primer día, puede optar por Google Ads.",
+      "paragraph2": "Los expertos en marketing online de SeekaHost le ayudarán a crear y ejecutar campañas de Google Ads desde cero. Le ayudamos a elegir las mejores palabras clave que generarán mayor ROI (retorno de inversión). Además, nuestros expertos en Google Ads le asistirán en la creación de la cuenta de Google Ads, la configuración de la campaña, su monitoreo y actualización periódica para garantizar que su negocio obtenga más clientes potenciales.",
+      "buttonName": "Comenzar Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    },
+    "OrderNow2": {
+      "titleLine": "¿Cómo pueden ayudarle los Expertos en Marketing Online de SeekaHost?",
+      "paragraph1": "En SeekaHost contamos con un equipo de marketing online que puede ayudarle y guiarle para planificar campañas de marketing de pago exitosas como Google Ads, Facebook Ads y Remarketing según su modelo de negocio. Nuestro equipo tiene experiencia trabajando con diferentes modelos de negocio en todo el mundo. Por lo tanto, le ayudaremos a planificar la mejor estrategia de marketing para su empresa.",
+      "paragraph2": "Incluso puede contratar a nuestro equipo para actividades regulares de marketing online o simplemente programar una consulta única para aclarar estrategias de publicidad online. La forma más rápida de lograr el éxito de su negocio es mediante la publicidad en Google. SeekaHost emplea a los mejores expertos en Google AdWords formados por ClickDo™.",
+      "paragraph3": "Llame al 020 8638 5857 para campañas de Google AdWords.",
+      "imageAlt": "Imagen Pedir Ahora"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "Listado Gratuito de Empresas en Directorios del Reino Unido",
+      "description": "Panel de control todo en uno para alojar redes de blogs WordPress con un clic, de forma segura en múltiples direcciones IP únicas.",
+      "businessListImageAlt": "Imagen Principal"
+    },
+    "OrderNow": {
+      "titleLine": "Los listados gratuitos de empresas son una excelente manera de mejorar el SEO",
+      "paragraph1": "Únase al hosting web empresarial de SeekaHost y obtenga listados gratuitos en UK Business List y los 100 mejores directorios empresariales del Reino Unido.",
+      "paragraph2": "Los listados en directorios locales son una de las mejores formas de exponer su sitio web empresarial a miles de personas.",
+      "paragraph3": "Tenemos una lista de más de 100 directorios empresariales del Reino Unido donde listamos a nuestros clientes. Cada propietario de empresa que contrate nuestro plan anual de hosting en servidores de Londres o servicios de sitios web empresariales del Reino Unido, obtiene de forma complementaria un 'listado en directorios empresariales' en los 100 mejores directorios del Reino Unido de forma gratuita.",
+      "buttonName": "Comenzar Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "Servicios de Consultoría SEO para Empresas del Reino Unido",
+      "description": "Panel de control todo en uno para alojar redes de blogs WordPress con un clic, de forma segura en múltiples direcciones IP únicas.",
+      "seoImageAlt": "Imagen Principal"
+    },
+    "OrderNow1": {
+      "titleLine": "¿Cómo obtener consultoría SEO de nosotros?",
+      "paragraph1": "Debe ser cliente de nuestros servicios de hosting web empresarial para recibir asesoramiento gratuito de consultoría SEO y soporte de SEO on page. Todos nuestros clientes de hosting empresarial reciben soporte VIP para sus sitios web empresariales.",
+      "paragraph2": "Ofrecemos campañas de Google AdWords a un precio asequible para nuestros clientes empresariales, además de listados gratuitos en los principales directorios empresariales del Reino Unido. El listado gratuito en más de 100 directorios empresariales del Reino Unido ayudará enormemente a sus sitios web empresariales a posicionarse mejor en el motor de búsqueda de Google.",
+      "buttonName": "Comenzar Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    },
+    "OrderNow2": {
+      "titleLine": "Nuestro proceso de consultoría SEO",
+      "paragraph1": "Así es como podemos ayudar a cualquier empresa del Reino Unido con servicios SEO:",
+      "paragraph2": "Una vez que se una a los planes de hosting web empresarial de SeekaHost (debe solicitarlo), realizaremos una auditoría SEO de su sitio web y le aconsejaremos qué debe corregirse. Puede encargar estas correcciones a sus webmasters o nosotros podemos hacerlo por una tarifa nominal.",
+      "paragraph3": "Después de corregir el SEO on page y preparar el sitio para aparecer en Google, realizamos el listado empresarial para incluir el nombre de dominio (URL) en los 100 mejores directorios empresariales.",
+      "paragraph4": "Posteriormente, crearemos un plan SEO personalizado para sus sitios web que mostrará cómo hacer SEO off site, dónde obtener backlinks y cómo utilizar servicios de guest posting. Manténgase aprendiendo nuevas tecnologías y actualizado.",
+      "paragraph5": "Si necesita comprar backlinks, hay paquetes disponibles en ClickDo.",
+      "imageAlt": "Imagen Pedir Ahora"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "¡Aprende Habilidades de Marketing Digital Online Gratis!",
+      "description": "Panel de control todo en uno para alojar redes de blogs WordPress con un clic, de forma segura en múltiples direcciones IP únicas.",
+      "MarketingImageAlt": "Imagen Principal"
+    },
+    "OrderNow1": {
+      "titleLine": "Cursos de Marketing Online:",
+      "paragraph1": "Las habilidades de marketing online están muy demandadas y cualquier propietario de negocio puede ahora tomar nuestros cursos y aprender marketing digital gratis.",
+      "paragraph2": "Tenemos muchos cursos de marketing online y nuestro objetivo es ayudar a cualquiera a aprender habilidades de marketing en internet y crecer online.",
+      "paragraph3": "Aprender marketing online puede ayudar a su negocio de muchas maneras. Como proveedor líder de servicios de hosting web empresarial en el Reino Unido, hemos tomado la iniciativa de ofrecer cursos gratuitos de marketing online para nuestros clientes.",
+      "buttonName": "Comenzar Ahora",
+      "imageAlt": "Imagen Pedir Ahora"
+    },
+    "OrderNow2": {
+      "titleLine": "¿Cómo obtener cursos de marketing online gratis?",
+      "paragraph1": "Todos nuestros clientes de hosting empresarial obtienen acceso completo a los 7 cursos de marketing online al contratar un paquete anual de hosting empresarial. Si busca hosting personal o solo desea acceder a uno de nuestros cursos, infórmenos y le daremos acceso gratuito.",
+      "paragraph2": "Hay muchos cursos de marketing online baratos en la web, ¡pero nosotros queremos ofrecerle algo mejor que barato: gratis! Así que si busca cursos de marketing gratuitos para aprender rápido y prosperar online, es hora de tomar un curso de marketing en internet o conseguir todos los cursos y comenzar hoy mismo.",
+      "paragraph3": "SeekaHost ha creado el mejor curso de marketing digital online con acceso gratuito para usted, ¡conéctese y comience a construir su negocio exitoso en línea!",
+      "imageAlt": "Imagen Pedir Ahora"
+    }
   }
 }

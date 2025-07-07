@@ -10,7 +10,7 @@ import PackagesPrices from "@/components/home/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
-import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
+import PeopleCards from "@/components/home/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";

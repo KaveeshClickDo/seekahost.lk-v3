@@ -632,5 +632,187 @@
       "topic4": "Alat Cerdas untuk Sukses Digital",
       "description4": "Manfaatkan solusi SEO, pemasaran online, dan visibilitas kami untuk meningkatkan jangkauan merek Anda, terhubung dengan pelanggan, dan tetap unggul dalam lanskap digital."
     }
+  },
+  "RegisterDomainPage": {
+    "Hero": {
+      "titleLine": "Daftarkan Nama Domain",
+      "description": "Panel kontrol hosting blog WordPress All-in-One Click untuk menghosting jaringan blog pribadi dengan aman di beberapa alamat IP unik.",
+      "buttonName": "Cari",
+      "registerDomainImageAlt": "Gambar Hero"
+    },
+    "PopularDomain": {
+      "title": "Mencari Domain Populer",
+      "buttonName": "Dapatkan Sekarang",
+      "PopularDomains": [
+        {
+          "extension": ".com",
+          "logo": "/images/register-domain/com.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".co.uk",
+          "logo": "/images/register-domain/couk.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".uk",
+          "logo": "/images/register-domain/uk.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org",
+          "logo": "/images/register-domain/org.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".store",
+          "logo": "/images/register-domain/store.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".blog",
+          "logo": "/images/register-domain/blog.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".online",
+          "logo": "/images/register-domain/online.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        },
+        {
+          "extension": ".org.uk",
+          "logo": "/images/register-domain/orguk.svg",
+          "description": "Dukungan teknis 24/7 dari spesialis hosting Inggris.",
+          "price": "£4.99"
+        }
+      ]
+    },
+    "OrderNow": {
+      "imageAlt": "Gambar Pesan Sekarang",
+      "title": "Daftarkan Nama Domain",
+      "paragraph1": "Pilih nama domain sempurna Anda dan daftarkan di SeekaHost. Ini akan menjadi langkah pertama untuk membuat situs web Anda online dengan layanan web hosting terjangkau kami. Anda dapat mendaftarkan domain TLD (Top-Level Domain) seperti .in, .co.in, .com, .co.uk, .org, .blog dan banyak lagi.",
+      "paragraph2": "Pilih domain dari sistem Pendaftaran Nama Domain kami yang jelas, ramah pengguna, dan mudah diingat. Mendaftarkan nama domain yang menjelaskan diri sendiri adalah momen penentu untuk bisnis Anda. Bahkan jika Anda tidak yakin dengan nama lengkapnya, sistem kami akan menyarankan opsi yang tersedia berdasarkan masukan pencarian Anda.",
+      "buttonName": "Pesan Sekarang"
+    }
+  },
+  "CheapHostingPage": {
+    "Hero": {
+      "titleLine": "Hosting Web Murah dengan cPanel",
+      "description": "Dapatkan layanan hosting cPanel termurah di Inggris dengan semua dukungan yang Anda butuhkan untuk membuat situs web dan blog. Semua yang Anda butuhkan untuk online dengan klik sederhana.",
+      "buttonName": "Mulai",
+      "cheapHostingImageAlt": "Gambar Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Kekuatan Hosting cPanel dengan SeekaHost",
+      "description": "Hosting web premium tidak harus mahal atau rumit. Dengan Hosting cPanel SeekaHost, Anda akan menyadarinya. cPanel diluncurkan tahun 1996 dan mengubah cara hosting web dengan alat otomatisasi inovatif untuk mengelola hosting situs web lebih mudah dan cepat. Tetap menjadi pemimpin pasar di antara panel kontrol yang tersedia karena merek tepercaya yang terus berkembang.",
+      "buttonName": "Pesan Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    },
+    "OrderNow2": {
+      "titleLine": "Apa yang Hosting cPanel SeekaHost Bisa Lakukan untuk Anda?",
+      "description": "Hosting cPanel SeekaHost menawarkan berbagai fitur yang membuat manajemen situs web lebih mudah dan cepat seperti MySQL, alat manajemen email, pelacakan data, dan fitur optimasi SEO. Dengan hosting web cPanel SeekaHost, Anda akan mengalami hosting web sederhana dan langsung yang menawarkan semua yang Anda butuhkan untuk kinerja situs web terbaik.",
+      "buttonName": "Pesan Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    },
+    "OrderNow3": {
+      "titleLine": "Dukungan CMS yang Lancar & Fleksibel",
+      "description": "Tidak peduli apakah Anda menggunakan WordPress, Joomla, atau Drupal, dengan Hosting cPanel SeekaHost Anda dapat dengan mudah menginstal perangkat lunak manajemen konten paling populer ke akun Anda hanya dengan beberapa klik. Softaculous akan membantu Anda menginstal perangkat lunak pilihan Anda. Baik membuat blog dengan WordPress atau situs eCommerce dengan Magento, semuanya tercakup.",
+      "buttonName": "Pesan Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    },
+    "OrderNow4": {
+      "titleLine": "Kinerja Situs Web Terbaik dengan Perangkat Lunak cPanel",
+      "description": "Akun Hosting cPanel SeekaHost Anda dilengkapi perangkat lunak untuk memaksimalkan kinerja situs web. Gunakan CloudFlare untuk meningkatkan caching konten situs, mengurangi latensi, dan meningkatkan keamanan dari serangan DDoS. Akses pengaturan kompresi konten untuk situs yang lebih cepat, unduh cadangan instan dengan DropMySite, atau pilih versi dan ekstensi PHP pilihan Anda. Solusi lengkap untuk pengalaman hosting web terbaik.",
+      "buttonName": "Pesan Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    }
+  },
+  "GoogleAdPage": {
+    "Hero": {
+      "titleLine": "Kampanye Iklan Google",
+      "description": "Panel kontrol hosting blog WordPress All-in-One Click untuk menghosting jaringan blog pribadi dengan aman di beberapa alamat IP unik.",
+      "googleAdImageAlt": "Gambar Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Mengapa Memulai dengan Google Ads untuk Situs Web Bisnis Baru?",
+      "paragraph1": "Misalkan Anda mendaftarkan domain baru dan hosting dengan kami. Awalnya, merek Anda membutuhkan lebih banyak jangkauan online untuk menarik perhatian pelanggan. Anda bisa mendapatkan jangkauan online untuk bisnis Anda menggunakan strategi seperti SEO & Google Ads. SEO adalah tugas jangka panjang untuk menempatkan situs web bisnis di peringkat teratas secara organik. Tetapi jika Anda ingin mendapatkan prospek sejak hari pertama, pilih Google Ads.",
+      "paragraph2": "Ahli pemasaran online di SeekaHost akan membantu Anda membuat dan menjalankan kampanye Google Ads dari awal. Kami membantu memilih kata kunci terbaik yang memberikan ROI lebih tinggi. Ahli Google Ads kami juga akan membantu membuat Akun Google Ad, membuat kampanye, memantau & memperbarui kampanye secara teratur untuk memastikan bisnis Anda mendapatkan lebih banyak prospek.",
+      "buttonName": "Mulai Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    },
+    "OrderNow2": {
+      "titleLine": "Bagaimana Ahli Pemasaran Online SeekaHost Dapat Membantu Anda?",
+      "paragraph1": "Tim pemasaran online SeekaHost dapat membantu Anda merencanakan kampanye pemasaran berbayar yang sukses seperti Google Ads, Facebook Ads, dan Remarketing sesuai model bisnis Anda. Tim kami memiliki pengalaman bekerja dengan berbagai model bisnis global. Kami akan membantu merencanakan strategi pemasaran terbaik untuk bisnis Anda.",
+      "paragraph2": "Anda bisa menyewa tim kami untuk aktivitas pemasaran online rutin atau menjadwalkan konsultasi satu kali untuk memperjelas strategi periklanan online. Cara tercepat untuk kesuksesan bisnis adalah melalui periklanan Google. SeekaHost mempekerjakan ahli Google AdWords terbaik yang dilatih oleh ClickDo™",
+      "paragraph3": "Hubungi kami di 020 8638 5857 untuk kampanye Google AdWords.",
+      "imageAlt": "Gambar Pesan Sekarang"
+    }
+  },
+  "BusinessListpage": {
+    "Hero": {
+      "titleLine": "Daftar Bisnis Gratis di Direktori Bisnis Inggris",
+      "description": "Panel kontrol hosting blog WordPress All-in-One Click untuk menghosting jaringan blog pribadi dengan aman di beberapa alamat IP unik.",
+      "businessListImageAlt": "Gambar Hero"
+    },
+    "OrderNow": {
+      "titleLine": "Daftar bisnis gratis adalah cara bagus untuk meningkatkan SEO",
+      "paragraph1": "Bergabunglah dengan hosting web bisnis SeekaHost dan dapatkan daftar bisnis gratis di UK Business List dan 100 direktori bisnis teratas Inggris.",
+      "paragraph2": "Daftar direktori bisnis lokal adalah salah satu cara terbaik untuk menampilkan situs web bisnis Anda ke ribuan orang.",
+      "paragraph3": "Kami memiliki daftar lebih dari 100 direktori bisnis teratas Inggris untuk mendaftarkan klien kami. Setiap pemilik bisnis yang bergabung dengan hosting server London atau layanan situs web bisnis Inggris paket tahunan mendapatkan 'daftar direktori bisnis' gratis di semua direktori bisnis teratas Inggris.",
+      "buttonName": "Mulai Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    }
+  },
+  "SEOPage": {
+    "Hero": {
+      "titleLine": "Layanan Konsultasi SEO untuk Bisnis Inggris",
+      "description": "Panel kontrol hosting blog WordPress All-in-One Click untuk menghosting jaringan blog pribadi dengan aman di beberapa alamat IP unik.",
+      "seoImageAlt": "Gambar Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Bagaimana Mendapatkan Konsultasi SEO dari Kami?",
+      "paragraph1": "Anda harus menjadi pelanggan layanan hosting web bisnis kami untuk mendapatkan saran konsultasi SEO gratis dan dukungan SEO on-page. Semua pelanggan hosting web bisnis kami mendapat dukungan VIP untuk situs web bisnis mereka.",
+      "paragraph2": "Kami menawarkan Kampanye Google AdWords dengan biaya terjangkau untuk pelanggan bisnis dan daftar bisnis gratis di direktori bisnis teratas Inggris. Daftar gratis di lebih dari 100 direktori bisnis Inggris akan sangat membantu situs web bisnis Inggris Anda meraih peringkat lebih tinggi di mesin pencari Google.",
+      "buttonName": "Mulai Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    },
+    "OrderNow2": {
+      "titleLine": "Proses Konsultasi SEO Kami?",
+      "paragraph1": "Beginilah cara kami membantu bisnis apa pun di Inggris dengan layanan SEO:",
+      "paragraph2": "Setelah bergabung dengan paket hosting situs web bisnis SeekaHost, kami akan melakukan audit SEO di situs web Anda (atas permintaan). Kami akan menyarankan perbaikan yang bisa dilakukan oleh web master Anda, atau kami bisa melakukannya dengan biaya nominal.",
+      "paragraph3": "Setelah SEO On-Page diperbaiki dan siap untuk mesin pencari Google, kami akan mendaftarkan nama domain (URL) bisnis di 100 direktori bisnis teratas.",
+      "paragraph4": "Kemudian kami akan membuat cetak biru SEO khusus untuk situs web bisnis Anda yang menunjukkan cara melakukan off-site SEO, tempat mendapatkan backlink, dan cara memanfaatkan layanan guest posting. Terus pelajari teknologi baru dan ikuti perkembangan zaman.",
+      "paragraph5": "Jika perlu membeli backlink, tersedia paket backlink di ClickDo.",
+      "imageAlt": "Gambar Pesan Sekarang"
+    }
+  },
+  "MarketingCoursesPage": {
+    "Hero": {
+      "titleLine": "Pelajari Keterampilan Pemasaran Digital Online Gratis!",
+      "description": "Panel kontrol hosting blog WordPress All-in-One Click untuk menghosting jaringan blog pribadi dengan aman di beberapa alamat IP unik.",
+      "MarketingImageAlt": "Gambar Hero"
+    },
+    "OrderNow1": {
+      "titleLine": "Kursus Pemasaran Online:",
+      "paragraph1": "Keterampilan pemasaran online sangat diminati. Pemilik bisnis apa pun sekarang bisa mengambil kursus pemasaran online kami dan mempelajari keterampilan pemasaran digital secara gratis.",
+      "paragraph2": "Kami memiliki banyak kursus pemasaran online dengan tujuan membantu siapa pun mempelajari pemasaran internet dan berkembang online.",
+      "paragraph3": "Mempelajari pemasaran online dapat membantu bisnis Anda dalam banyak hal. Sebagai penyedia layanan hosting situs web bisnis terkemuka di Inggris, kami berinisiatif menyediakan kursus pemasaran online gratis untuk pelanggan kami.",
+      "buttonName": "Mulai Sekarang",
+      "imageAlt": "Gambar Pesan Sekarang"
+    },
+    "OrderNow2": {
+      "titleLine": "Bagaimana Mendapatkan Kursus Pemasaran Online Gratis?",
+      "paragraph1": "Semua pelanggan hosting bisnis mendapatkan akses penuh ke 7 kursus pemasaran online saat mendaftar paket hosting bisnis tahunan. Jika Anda mencari hosting pribadi atau ingin mengakses salah satu kursus kami, beri tahu kami dan kami akan berikan akses gratis.",
+      "paragraph2": "Banyak kursus pemasaran online murah di internet, tapi kami menawarkan yang lebih baik: gratis! Jika Anda mencari kursus pemasaran gratis untuk belajar cepat dan sukses online, saatnya mengambil kursus pemasaran internet.",
+      "paragraph3": "SeekaHost telah membuat kursus pemasaran digital online terbaik dengan akses gratis untuk Anda, jadi mulailah membangun bisnis online sukses Anda.",
+      "imageAlt": "Gambar Pesan Sekarang"
+    }
   }
 }
