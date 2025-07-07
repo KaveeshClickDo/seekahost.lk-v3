@@ -45,9 +45,13 @@ export default function Hosting() {
 
                         <Link href="/nodejs-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/nodejs-hosting.svg"
+                                    alt="Node.js Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Node.js Hosting</p>
@@ -57,9 +61,13 @@ export default function Hosting() {
 
                         <Link href="/small-business-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/small-business-hosting.svg"
+                                    alt="Small Business Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Small Business Hosting</p>
@@ -69,9 +77,13 @@ export default function Hosting() {
 
                         <Link href="/agency-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/agency-hosting.svg"
+                                    alt="Agency Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Agency Hosting</p>
@@ -88,8 +100,8 @@ export default function Hosting() {
                         <Link href="/london-server-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
-                                    src="/images/shared/dedicated-servers.svg"
-                                    alt="Dedicated Servers"
+                                    src="/images/shared/london-server-hosting.svg"
+                                    alt="London Server Hosting"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
@@ -103,9 +115,13 @@ export default function Hosting() {
 
                         <Link href="/hosting-migration" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
-                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                </svg>
+                                <Image
+                                    src="/images/shared/hosting-migration.svg"
+                                    alt="Hosting Migration"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
                             </div>
                             <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Hosting Migration</p>

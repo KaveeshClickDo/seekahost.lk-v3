@@ -11,64 +11,64 @@ export default function Ecommers() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Link href="/google-advertising-campaigns" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                             <Image
-                                    src="/images/shared/wooCommerce-hosting.svg"
-                                    alt="WooCommerce Hosting"
+                                    src="/images/shared/google-advertising.svg"
+                                    alt="Google Advertising"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Google Advertising</p>
                                 <p className="text-sm text-gray-600">Boost visibility with targeted Google ads</p>
                             </div>
                         </Link>
 
                         <Link href="/free-business-listing" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                             <Image
-                                    src="/images/shared/wooCommerce-hosting.svg"
-                                    alt="WooCommerce Hosting"
+                                    src="/images/shared/business-listing.svg"
+                                    alt="Business Listing"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Business Listing</p>
                                 <p className="text-sm text-gray-600">Get found easily on online directories</p>
                             </div>
                         </Link>
 
                         <Link href="/seo-consultancy" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                             <Image
-                                    src="/images/shared/wooCommerce-hosting.svg"
-                                    alt="WooCommerce Hosting"
+                                    src="/images/shared/seo-consultancy.svg"
+                                    alt="SEO Consultancy"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">SEO Consultancy</p>
                                 <p className="text-sm text-gray-600">Expert guidance to improve search rankings</p>
                             </div>
                         </Link>
 
                         <Link href="/online-marketing-courses" className="flex items-start p-3 hover:bg-gray-50 rounded group">
-                            <div className="mr-3 text-blue-500 mt-1">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                             <Image
-                                    src="/images/shared/wooCommerce-hosting.svg"
-                                    alt="WooCommerce Hosting"
+                                    src="/images/shared/marketing-courses.svg"
+                                    alt="Marketing Courses"
                                     width={24}
                                     height={24}
                                     className="w-6 h-6"
                                 />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Marketing Courses</p>
                                 <p className="text-sm text-gray-600">Learn proven strategies to grow online</p>
                             </div>

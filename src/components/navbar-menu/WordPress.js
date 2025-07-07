@@ -29,7 +29,7 @@ export default function WordPress() {
                         <Link href="/managed-wordpress" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
-                                    src="/images/shared/wordpress-hosting.svg"
+                                    src="/images/shared/managed-wordpress.svg"
                                     alt="Managed Hosting"
                                     width={24}
                                     height={24}
