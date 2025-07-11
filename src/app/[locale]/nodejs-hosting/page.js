@@ -1,4 +1,5 @@
 import Features from "@/components/nodejs-hosting/Features";
+import Solution from "@/components/nodejs-hosting/Solution";
 import Hero from "@/components/nodejs-hosting/Hero";
 import OrderNow1 from "@/components/nodejs-hosting/OrderNow-1";
 import OrderNow2 from "@/components/nodejs-hosting/OrderNow-2";
@@ -9,7 +10,7 @@ import PackagesPrices from "@/components/home/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
-import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
+import ScreenshotSlider from "@/components/nodejs-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
 
@@ -29,7 +30,8 @@ export default function NodeJSHosting() {
             <Hero />
             <PackagesPrices />
             <ScreenshotSlider />
-            <Features />
+            {/* <Features /> */}
+            <Solution />
             <OrderNow1 />
             <Video />
             <OrderNow2 />

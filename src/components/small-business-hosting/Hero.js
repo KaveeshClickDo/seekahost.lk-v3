@@ -17,40 +17,12 @@ export default function Hero() {
 
                 <div className="text-white w-full max-w-xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Small Business Hosting
+                        Powerful Hosting Built for Small Businesses
                     </h1>
 
                     <p className="mt-6 font-medium">
-                        High performance, secure, super-fast business website hosting services in UK for UK business owners with 24/7 support. Ideal for startups and big business owners that need powerful & reliable UK host.
+                        Launch, grow, and manage your business website with confidence. Our hosting plans are tailored for small businesses that need speed, security, and reliability—without the hefty price tag. Get everything you need to succeed online, from free SSL to expert support.
                     </p>
-
-                    <ul className="space-y-5 mt-4">
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
-
-                        <li className="flex items-start text-sm md:text-base font-medium text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
-                        <li className="flex items-start text-sm md:text-base font-medium text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
-                    </ul>
 
                     <button className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7">
                         Get Started

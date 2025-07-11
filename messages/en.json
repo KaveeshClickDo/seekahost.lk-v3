@@ -636,7 +636,7 @@
   "RegisterDomainPage": {
     "Hero": {
       "titleLine": "Register Domain Names",
-      "description": "All-in-One Click WordPress Blog hosting control panel to securely host private blog networks on unique multiple IP addresses.",
+      "description": "Start Your Search to find the Perfect Domain Name with SeekaHost Domain Name Checker. Powerful Domain Name Search tool designed to give you the customer friendly listing and TLD suggestions.",
       "buttonName": "Search",
       "registerDomainImageAlt": "Hero Image"
     },
@@ -710,20 +710,20 @@
       "cheapHostingImageAlt": "Hero Image"
     },
     "OrderNow1": {
-      "titleLine": "The Power of cPanel Hosting with SeekaHost",
-      "description": "Premium web hosting does not have to be expensive or complicated. If you choose the SeekaHost cPanel Hosting, you will realise this. cPanel was launched in 1996 and changed web hosting for its users significantly with its innovative automation tools to manage website hosting more easily and quickly. It remains the market leader among the control panels available in the market as it is a trusted and established brand that has evolved over the years.",
+      "titleLine": "Fast, Reliable Performance",
+      "description": "Speed matters. Our servers are optimized for fast load times and high uptime, backed by real NVMe SSD storage—not the misleading kind. We don’t oversell our resources, so you always get the performance you paid for. Whether you're launching a business site or running a content-heavy blog, we give you the solid foundation you need to grow.",
       "buttonName": "Order Now",
       "imageAlt": "Order now Image"
     },
     "OrderNow2": {
-      "titleLine": "What can SeekaHost cPanel Hosting do for you?",
-      "description": "The SeekaHost cPanel Hosting offers a variety of features that make website management a lot easier and faster such as MySQL, email managing tools, and data tracking as well as SEO optimization features. With SeekaHost&apos;s cPanel web hosting you will experience simple, straightforward web hosting that offers you everything you need for the best website performance.",
+      "titleLine": "Fair & Predictable Renewals",
+      "description": "We hate pricing games as much as you do. While other hosts lure you in with low introductory rates only to triple your renewal price later, we keep it honest. With SeekaHost, you’ll always know what to expect at renewal time. No hidden fees. No sudden jumps. Just stable pricing that respects your budget, year after year.",
       "buttonName": "Order Now",
       "imageAlt": "Order now Image"
     },
     "OrderNow3": {
-      "titleLine": "Smooth & Flexible CMS Support",
-      "description": "No matter whether you use WordPress, Joomla, or Drupal, with the SeekaHost cPanel Hosting you can easily and quickly install the most popular content management software to your account with a few clicks. Softaculous will support you with installing the software of your choice. Whether you&apos;re setting up a blog with WordPress or an eCommerece site with Magento, it's all covered.",
+      "titleLine": "Free SSL for Every Domain",
+      "description": "SSL certificates are essential for website security and SEO, but some hosts still charge you for them. With SeekaHost, every domain you host with us gets free SSL protection—automatically. Whether you're running one site or twenty, you can keep your visitors safe and your Google rankings strong—without spending extra",
       "buttonName": "Order Now",
       "imageAlt": "Order now Image"
     },

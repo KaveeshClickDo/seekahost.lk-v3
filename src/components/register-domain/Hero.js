@@ -32,19 +32,19 @@ export default function Hero() {
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.com</span>
-                            <span className="text-white">£1976</span>
+                            <span className="text-white">£5.99</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.co.uk</span>
-                            <span className="text-white">£1511</span>
+                            <span className="text-white">£5.99</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.net</span>
-                            <span className="text-white">£2441</span>
+                            <span className="text-white">£5.99</span>
                         </div>
                         <div className="flex items-center space-x-2">
                             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full font-bold">.org</span>
-                            <span className="text-white">£2209</span>
+                            <span className="text-white">£5.99</span>
                         </div>
                     </div>
 

@@ -3,6 +3,30 @@ import { useTranslations } from 'next-intl';
 
 export default function Hero() {
     const t = useTranslations('CheapHostingPage.Hero');
+    
+    const features = [
+        {
+            icon: '💰',
+            title: 'Why Pay for What You Don\'t Use?',
+            description: 'Most hosts charge extra for "unlimited" features you might never use. At SeekaHost, we keep it simple and cost-effective.'
+        },
+        {
+            icon: '📈',
+            title: 'No Price Hikes',
+            description: 'Enjoy honest, consistent renewal rates—no surprise 300% increases.'
+        },
+        {
+            icon: '🆓',
+            title: 'Free Website Migration',
+            description: 'We\'ll move your sites from another cPanel® host at no cost.'
+        },
+        {
+            icon: '🔒',
+            title: 'Free SSL Certificates',
+            description: 'Get free SSL for every domain—no hidden fees, big savings.'
+        }
+    ];
+
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
             <div className="absolute inset-0 w-full h-full bg-[#0A488A] z-1"></div>
@@ -16,42 +40,23 @@ export default function Hero() {
 
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
 
-
                 <div className="text-white w-full max-w-xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         {t('titleLine')}
                     </h1>
 
-                    <p className="mt-6 font-medium">
-                       {t('description')}
-                    </p>
-
                     <ul className="space-y-5 mt-4">
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
-
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-                        </li>
+                        {features.map((feature, index) => (
+                            <li key={index} className="flex items-start text-sm md:text-base text-gray-300 mt-4">
+                                <div className="flex-shrink-0 mr-3">
+                                    <span className="text-lg">{feature.icon}</span>
+                                </div>
+                                <div>
+                                    <h2 className="font-semibold text-white mb-1">{feature.title}</h2>
+                                    <p className="text-gray-300 text-sm leading-relaxed">{feature.description}</p>
+                                </div>
+                            </li>
+                        ))}
                     </ul>
 
                     <button className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7">
@@ -70,7 +75,6 @@ export default function Hero() {
                         priority
                     />
                 </div>
-
 
             </div>
         </section>

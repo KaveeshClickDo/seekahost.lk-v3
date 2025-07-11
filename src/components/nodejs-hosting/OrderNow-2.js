@@ -7,13 +7,13 @@ export default function OrderNow2() {
                 <div className="md:w-1/2 px-5 md:mr-15">
 
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-8">
-                    Multiple IP WordPress Hosting
+                    Seamless Deployment & Git Integration
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                    If you are looking for multiple IP hosting for WordPress blogs or websites you use for SEO, then SeekaHost offers the best solution. 
+                    <span className="font-bold">Deploy updates with ease using Git or CLI tools</span> <br /> Push code straight from your Git repo and automate deployments with post-receive hooks. Whether you're managing staging and production environments or working in a CI/CD workflow, our setup makes it simple to stay in sync.
                     </p>
                     <p className="text-[#1D216A] mb-4">
-                    As the leading PBN host for WordPress sites in the world, you get unbeatable prices via the blog hosting control penal.
+                    Less time deploying, more time building.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now

@@ -1,5 +1,5 @@
-import Solution from "@/components/shared/Solution";
-import Video from "@/components/shared/Video";
+import Solution from "@/components/domain-transfer/Solution";
+import Video from "@/components/domain-transfer/Video";
 import Hero from "@/components/domain-transfer/Hero";
 import Reviews from "@/components/shared/Review";
 import FAQs from "@/components/shared/FAQ";
@@ -9,7 +9,7 @@ import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
 import CTA from "@/components/shared/CTA";
 import Header from "@/components/shared/Header";
-import OrderNow1 from "@/components/wordpress-hosting/OrderNow-1";
+import OrderNow1 from "@/components/domain-transfer/OrderNow-1";
 
 export const metadata = {
     title: "Domain Transfer"

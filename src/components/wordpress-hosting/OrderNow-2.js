@@ -20,13 +20,14 @@ export default function OrderNow2() {
                 <div className="md:w-1/2 mt-6 md:mt-0 px-5">
 
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-8">
-                        Ideal For Business Websites
+                        UK-Based, WordPress-Savvy Support
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                        If you are looking for the best WordPress hosting solution for your business websites, SeekaHost offers a range of WP sevrices. From managed WP to easy to manage control panel as well as cPanels and Webmin or even Plesk control panel with support.
+                        <span className="font-bold">Real experts who speak your language</span><br />
+                        Need help? Our support team is available 24/7, based in the UK, and trained specifically in WordPress.
                     </p>
                     <p className="text-[#1D216A] mb-4">
-                        However, we do recommend you using the SeekaHost control panel for the best user experience and WordPress site speeds.
+                        From plugin issues to performance tweaks, we’re here to help you every step of the way—by email, live chat, or support ticket.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now

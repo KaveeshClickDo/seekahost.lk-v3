@@ -101,13 +101,10 @@ export default function ScreenshotSlider() {
                 <div className="md:w-2/5 w-full md:pl-12 mt-10 md:mt-0 flex flex-col justify-center px-4 md:px-0">
                     <div><h1 className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">Our Solutions</h1></div>
                     <h2 className="mt-2 text-2xl md:text-4xl font-bold">
-                        Simplified WordPress Management
+                        Full Developer Control — SSH, npm & Custom Versions
                     </h2>
                     <p className="mb-10 my-8">
-                        <span className="font-bold">One-click install, auto-updates, zero hassle</span><br />
-                        Launching your WordPress site has never been easier. With one-click WordPress installation, automatic core updates, and an intuitive control panel, you can build and manage your site without touching a line of code.<br /><br />
-
-                        Ideal for bloggers, freelancers, and businesses who want to focus on content—not configurations.
+                        With SeekaHost’s Node.js hosting, developers get full access to the tools they need. Use SSH to connect directly to your server, manage packages via npm, and run your apps with any Node.js version you prefer.<br /> Whether you're deploying a simple API or a full-stack app, we give you the flexibility and control to build your way.
                     </p>
                     <div className="flex items-center space-x-4">
                         <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold">

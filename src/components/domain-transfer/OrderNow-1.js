@@ -6,16 +6,16 @@ export default function OrderNow1() {
 
                 <div className="md:w-1/2 px-5 md:mr-15">
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-8">
-                        Hosted in the UK for Maximum Speed
+                        Fast & Hassle-Free Transfers
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                        <span className="font-bold">Fast, local, and built for UK websites</span><br />
-                        Our WordPress hosting is powered by high-speed NVMe SSD servers located right here in the UK. That means your site loads faster for your local visitors, improves SEO, and delivers a smoother browsing experience.
+                        <span className="font-bold">Move your domain in minutes—not days</span><br />
+                        We’ve simplified the domain transfer process so you can switch with zero headaches. 
 
                         
                     </p>
                     <p className="text-[#1D216A] mb-4">
-                        Whether you're serving customers in London, Manchester, or across Europe, your website performs at peak speed—every time.
+                        Whether you’re moving one domain or hundreds, our system guides you step-by-step to ensure a smooth, fast transition—with no downtime and no disruption to your website or email.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now

@@ -14,49 +14,54 @@ export default function Hero() {
 
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
 
-
                 <div className="text-white w-full max-w-xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Node.js Hosting UK
+                        Blazing-Fast Node.js Hosting for Modern Web Apps
                     </h1>
 
                     <p className="mt-6 font-medium">
-                        High performance, secure, super fast WP hosting services for bloggers and business owners with world class web support.
+                        Run, Scale & Deploy Node.js Apps with Ease
                     </p>
 
-                    <ul className="space-y-5 mt-4">
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <p className="mt-4 text-sm text-gray-300">
+                        Build dynamic, high-performance apps with our optimized Node.js hosting. Enjoy full control, lightning-fast servers, and seamless deployment—backed by expert support.
+                    </p>
+
+                    <ul className="flex flex-wrap gap-x-6 gap-y-2 mt-6">
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            <span className="mr-2 w-5 flex-shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            SSH Access
                         </li>
 
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            <span className="mr-2 w-5 flex-shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            npm Support
                         </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            <span className="mr-2 w-5 flex-shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            Free SSL
                         </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300 mt-4">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            <span className="mr-2 w-5 flex-shrink-0">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+                            Git Integration
                         </li>
                     </ul>
 
@@ -76,7 +81,6 @@ export default function Hero() {
                         priority
                     />
                 </div>
-
 
             </div>
         </section>

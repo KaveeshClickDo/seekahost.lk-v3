@@ -7,13 +7,14 @@ export default function OrderNow3() {
                 <div className="md:w-1/2 px-5 md:mr-15">
 
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-8">
-                        Multiple IP WordPress Hosting
+                        Robust Security & Automatic Backups
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                        If you are looking for multiple IP hosting for WordPress blogs or websites you use for SEO, then SeekaHost offers the best solution.
+                        <span className="font-bold">Your website is protected 24/7</span><br />
+                        We take your website’s safety seriously. Enjoy free SSL certificates for every domain, daily automated backups, malware scanning, and firewalls—all included at no extra cost.
                     </p>
                     <p className="text-[#1D216A] mb-4">
-                        As the leading PBN host for WordPress sites in the world, you get unbeatable prices via the blog hosting control penal.
+                        If anything goes wrong, restore your site in just one click. It’s enterprise-level security without the enterprise price tag.
                     </p>
                     <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now

@@ -7,13 +7,10 @@ export default function ControlPanel() {
 
             <div className="md:w-1/2 mb-10 lg:mb-0 md:pr-10 px-4">
                 <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-7">
-                    Perfect for WooCommerce & Business Sites
+                    Free cPanel® Website Migration
                 </h2>
                 <p className="text-[#1D216A] mb-4">
-                    <span className="font-bold">Built to handle online stores and growing traffic</span><br />
-                    Running a WooCommerce store or a high-traffic blog? Our hosting is optimized for heavy WordPress workloads.<br /><br />
-
-                    With high resource limits, caching tools, and scalable infrastructure, you’ll never have to worry about slowdowns—even during peak hours or flash sales.
+                    Migrating your website shouldn't be a hassle—or a cost. We offer free website migration from any existing cPanel® hosting provider. Our expert team will handle everything for you—files, databases, emails—so there’s no downtime or stress. You get a smooth switch without lifting a finger.
                 </p>
                 <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-7">
                     Get Started
@@ -22,7 +19,7 @@ export default function ControlPanel() {
 
 
             <div className="md:w-1/2 grid grid-cols-2 gap-6 relative md:my-10">
-
+                
                 <div className="grid gap-6 mb-10">
                     <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
