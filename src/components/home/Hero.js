@@ -81,7 +81,7 @@ export default function Hero() {
                     <div className="mt-8 w-full max-w-5xl mx-auto grid grid-cols-3 gap-6 text-center z-2  divide-x divide-[#1276DF]">
                         <div className="rounded-md flex flex-col items-center">
                             <Image
-                                src="/images/home/wordpress-hosting.svg"
+                                src="/images/shared/wordpress-hosting-white.svg"
                                 alt={t('services.wordpress.iconAlt')}
                                 width={27}
                                 height={27}
@@ -100,7 +100,7 @@ export default function Hero() {
 
                         <div className="rounded-md flex flex-col items-center">
                             <Image
-                                src="/images/home/business-web-hosting.svg"
+                                src="/images/shared/business-web-hosting-white.svg"
                                 alt={t('services.business.iconAlt')}
                                 width={27}
                                 height={27}
@@ -119,7 +119,7 @@ export default function Hero() {
 
                         <div className="rounded-md flex flex-col items-center">
                             <Image
-                                src="/images/home/server-security.svg"
+                                src="/images/shared/agency-hosting-white.svg"
                                 alt={t('services.agency.iconAlt')}
                                 width={27}
                                 height={27}
