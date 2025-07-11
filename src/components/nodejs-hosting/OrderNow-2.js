@@ -10,7 +10,7 @@ export default function OrderNow2() {
                     Seamless Deployment & Git Integration
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                    <span className="font-bold">Deploy updates with ease using Git or CLI tools</span> <br /> Push code straight from your Git repo and automate deployments with post-receive hooks. Whether you're managing staging and production environments or working in a CI/CD workflow, our setup makes it simple to stay in sync.
+                    <span className="font-bold">Deploy updates with ease using Git or CLI tools</span> <br /> Push code straight from your Git repo and automate deployments with post-receive hooks. Whether you&apos;re managing staging and production environments or working in a CI/CD workflow, our setup makes it simple to stay in sync.
                     </p>
                     <p className="text-[#1D216A] mb-4">
                     Less time deploying, more time building.

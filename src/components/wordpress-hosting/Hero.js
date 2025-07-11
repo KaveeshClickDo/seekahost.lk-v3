@@ -23,7 +23,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-4 text-md md:text-base font-sm">
-                        with UK-based servers, expert support, and all the features you need—whether you're launching your first blog or running a high-traffic business site. Built for speed, security, and simplicity.
+                        with UK-based servers, expert support, and all the features you need—whether you&apos;re launching your first blog or running a high-traffic business site. Built for speed, security, and simplicity.
                     </p>
 
                     <ul className="mt-6">

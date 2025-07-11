@@ -104,7 +104,7 @@ export default function ScreenshotSlider() {
                         Smart Pricing — Pay Only for What You Need
                     </h2>
                     <p className="mb-10 my-8">
-                        Tired of overpaying for “unlimited” features you never use? Many hosting providers include flashy extras like fake NVMe SSDs or unlimited domains just to justify higher costs. At SeekaHost, we believe in transparent pricing. Our plans are designed to match your actual needs—whether you're running a single blog or managing multiple client websites. No fluff, no bloat—just reliable hosting that saves you money.
+                        Tired of overpaying for “unlimited” features you never use? Many hosting providers include flashy extras like fake NVMe SSDs or unlimited domains just to justify higher costs. At SeekaHost, we believe in transparent pricing. Our plans are designed to match your actual needs—whether you&apos;re running a single blog or managing multiple client websites. No fluff, no bloat—just reliable hosting that saves you money.
                     </p>
                     <div className="flex items-center space-x-4">
                         <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold">

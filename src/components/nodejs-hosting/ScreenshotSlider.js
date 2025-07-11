@@ -104,7 +104,7 @@ export default function ScreenshotSlider() {
                         Full Developer Control — SSH, npm & Custom Versions
                     </h2>
                     <p className="mb-10 my-8">
-                        With SeekaHost’s Node.js hosting, developers get full access to the tools they need. Use SSH to connect directly to your server, manage packages via npm, and run your apps with any Node.js version you prefer.<br /> Whether you're deploying a simple API or a full-stack app, we give you the flexibility and control to build your way.
+                        With SeekaHost’s Node.js hosting, developers get full access to the tools they need. Use SSH to connect directly to your server, manage packages via npm, and run your apps with any Node.js version you prefer.<br /> Whether you&apos;re deploying a simple API or a full-stack app, we give you the flexibility and control to build your way.
                     </p>
                     <div className="flex items-center space-x-4">
                         <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold">
