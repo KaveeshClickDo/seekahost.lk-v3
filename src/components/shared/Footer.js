@@ -153,11 +153,11 @@ export default function Footer() {
             <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
               {t('Copyright.text')} <br />
               {t('Copyright.companyNumber')} <br />
-              <Link href="#" className="hover:text-white">{t('Copyright.links.privacyPolicy')}</Link>
+              <Link href="/privacy-policy" className="hover:text-white">{t('Copyright.links.privacyPolicy')}</Link>
               <span className="mx-2">|</span>
               <Link href="#" className="hover:text-white">{t('Copyright.links.termsCondition')}</Link>
               <span className="mx-2">|</span>
-              <Link href="#" className="hover:text-white">{t('Copyright.links.refundPolicy')}</Link>
+              <Link href="/refund-policy" className="hover:text-white">{t('Copyright.links.refundPolicy')}</Link>
             </div>
             <div className="text-gray-300 text-sm font-medium mt-2">
               {t('PaymentSection.title')} <br />
