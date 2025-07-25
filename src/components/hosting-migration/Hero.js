@@ -22,7 +22,7 @@ export default function Hero() {
                         Hosting Migration
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl font-lg font-bold">
+                    <p className="mt-4 text-md md:text-xl   font-bold">
                         Ultrafast, Managed, Simple to Use
                     </p>
 

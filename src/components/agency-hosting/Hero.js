@@ -22,7 +22,7 @@ export default function Hero() {
                     Agency Web Hosting
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl font-lg font-bold">
+                    <p className="mt-4 text-md md:text-xl   font-bold">
                     Professional, Steady & Safe.
                     </p>
 

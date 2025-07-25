@@ -12,8 +12,10 @@ import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import PackagesPrices from "@/components/wordpress-hosting/PackagePrice";
+import PackagesPrices from "@/components/dedicated-servers/PackagePrice";
 import Header from "@/components/shared/Header";
+import Solution from "@/components/dedicated-servers/Solution";
+import WhySeekahost from "@/components/dedicated-servers/WhySeekahost";
 
 export const metadata = {
     title: "Dedicated Servers"
@@ -28,16 +30,10 @@ export default function DedicatedServers() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <div id="wordpress-package-prices-section">
-                <PackagesPrices />
-            </div>
+            <PackagesPrices />
             <PeopleCards />
-            <OrderNow1 />
-            <ScreenshotSlider />
-            <ControlPanel />
-            <OrderNow2 />
-            <Video />
-            <OrderNow3 />
+            <Solution />
+            <WhySeekahost />
             <Reviews />
             <FAQs />
             <BacktoTop />

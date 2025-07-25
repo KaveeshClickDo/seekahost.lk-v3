@@ -22,7 +22,7 @@ export default function Hero() {
                     WooCommerce Hosting
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl font-lg font-bold">
+                    <p className="mt-4 text-md md:text-xl   font-bold">
                     Easy-to-Use Hosting for WooCommerce
                     </p>
 

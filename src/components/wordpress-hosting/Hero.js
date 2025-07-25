@@ -22,7 +22,7 @@ export default function Hero() {
                         Reliable, lightning-fast WordPress hosting
                     </h1>
 
-                    <p className="mt-4 text-md md:text-base font-sm">
+                    <p className="mt-4 text-md md:text-base  ">
                         with UK-based servers, expert support, and all the features you need—whether you&apos;re launching your first blog or running a high-traffic business site. Built for speed, security, and simplicity.
                     </p>
 

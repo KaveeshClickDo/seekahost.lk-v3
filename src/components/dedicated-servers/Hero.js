@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import SeePlansButton from '../wordpress-hosting/SeePlansButton';
+import TestimonialSlider from '../home/Testimonials';
 
 export default function Hero() {
 
@@ -19,42 +20,18 @@ export default function Hero() {
 
                 <div className="text-white w-full max-w-2xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Dedicated Servers
+                        Blazing-Fast Dedicated Server Hosting
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl font-lg font-bold">
-                        Ultrafast, Managed, Simple to Use
+                    <p className="mt-4 text-md md:text-lg font-bold">
+                        Full Control. Maximum Power. No Limits.
                     </p>
 
-                    <ul className="mt-6">
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Automated setup, migration & updates
-                        </li>
+                    <p className="text-sm md:text-base text-gray-300 max-w-xl">
+                        Get unparalleled performance with our high-speed dedicated servers — perfect for resource-heavy applications, large-scale websites, or enterprise-level projects. Enjoy full root access, customizable configurations, and rock-solid security.
+                    </p>
 
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Multi-level security for extra peace of mind
-                        </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Top-rated 24/7 expert support
-                        </li>
-                    </ul>
-
-                    <div className="mt-6">
+                    {/* <div className="mt-6">
                         <div className="bg-yellow-500 text-blue-950 text-xs font-semibold inline-block px-2 py-1 rounded">
                             Save 90%
                         </div>
@@ -68,7 +45,24 @@ export default function Hero() {
                         </div>
                         <div className="text-sm">with a 1-year term</div>
                     </div>
-                    <SeePlansButton />
+                    <SeePlansButton /> */}
+                    <div className="mt-8">
+                        <TestimonialSlider />
+                    </div>
+
+                    <ul className="flex flex-wrap gap-x-6 gap-y-2 mt-6">
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            ✅ 99.99% Uptime
+                        </li>
+
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            ✅ Enterprise-Grade Hardware
+                        </li>
+
+                        <li className="flex items-center text-sm md:text-base text-white">
+                            ✅ 24/7 Expert Support
+                        </li>
+                    </ul>
 
                 </div>
 
