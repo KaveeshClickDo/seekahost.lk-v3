@@ -83,10 +83,10 @@ export default function PrivacyPolicy() {
                             <h3 className="text-xl font-semibold text-slate-700 mb-4">DISCLAIMER</h3>
                             <div className="bg-red-50 p-6 rounded-lg">
                                 <p className="text-gray-700 leading-relaxed">
-                                    The information on this website is provided on an "as is" basis. To the fullest extent permitted by law,
+                                    The information on this website is provided on an &quot;as is&quot; basis. To the fullest extent permitted by law,
                                     SEEKAHOST: excludes all representations and warranties relating to this website and its contents or which
                                     is a may be provided by any affiliates or any other third party, including in relation to any inaccuracies
-                                    or omissions in this website and/or the Company's literature; and excludes all liability for damages arising
+                                    or omissions in this website and/or the Company&apos;s literature; and excludes all liability for damages arising
                                     out of or in connection with your use of this website. This includes, without limitation, direct loss, loss
                                     of business or profits (whether or not the loss of such profits was foreseeable, arose in the normal course
                                     of things or you have advised this Company of the possibility of such potential loss), damage caused to your
@@ -136,7 +136,7 @@ export default function PrivacyPolicy() {
                                 <div>
                                     <h4 className="font-semibold text-slate-600 mb-2">Links from this website:</h4>
                                     <p className="text-gray-700">
-                                        We do not monitor or review the content of other party's websites which are linked to from this website.
+                                        We do not monitor or review the content of other party&apos;s websites which are linked to from this website.
                                         Opinions expressed or material appearing on such websites are not necessarily shared or endorsed by us
                                         and should not be regarded as the publisher of such opinions or material. You should evaluate the security
                                         and trustworthiness of any other website connected to this website and read their privacy policy and terms
@@ -208,7 +208,7 @@ export default function PrivacyPolicy() {
                         </h2>
                         <div className="bg-blue-50 p-6 rounded-lg">
                             <p className="text-gray-700 leading-relaxed">
-                                If you have any questions regarding these terms of use please contact us using the details in the 'contact us' section.
+                                If you have any questions regarding these terms of use please contact us using the details in the &apos;contact us&apos; section.
                             </p>
                         </div>
                     </section>
@@ -239,7 +239,7 @@ export default function PrivacyPolicy() {
                             <div className="flex items-start">
                                 <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                                 <p className="text-gray-700">
-                                    Even after your "Request to Delete Data", we may still store your past emails / message correspondence
+                                    Even after your &quot;Request to Delete Data&quot;, we may still store your past emails / message correspondence
                                     for our internal reference & taxation.
                                 </p>
                             </div>
@@ -297,7 +297,7 @@ export default function PrivacyPolicy() {
                         <div className="bg-red-50 p-6 rounded-lg">
                             <p className="text-gray-700 leading-relaxed">
                                 If your Invoices were in overdue for more than a month, then it will be considered as an Acceptance for any
-                                action taken by SEEKAHOST. Even after termination of your Domains, your Information's provided during the
+                                action taken by SEEKAHOST. Even after termination of your Domains, your Information&apos;s provided during the
                                 Account creation will remain in Our Database. No Proper Response for the tickets and Unpaid Invoices will
                                 be considered as the Acceptance for Termination.
                             </p>
@@ -312,7 +312,7 @@ export default function PrivacyPolicy() {
                         <div className="space-y-6">
                             <p className="text-gray-700 leading-relaxed">
                                 We use cookies to keep track of how our visitors are using our website. Cookies are little files that are
-                                stored on your computer's hard-drive and contain information about your interaction with our website. They
+                                stored on your computer&apos;s hard-drive and contain information about your interaction with our website. They
                                 make your running of our website smoother, but they also provide us with traffic information, letting us know
                                 how many people are visiting different parts of the site. Though cookies give us information on the visitors
                                 to our website, they can in no way be used to identify those visitors. We make absolutely no attempt to
@@ -369,8 +369,8 @@ export default function PrivacyPolicy() {
                             <h3 className="text-lg font-semibold text-slate-700 mb-4">Email Newsletters</h3>
                             <p className="text-gray-700 leading-relaxed">
                                 You may, from time to time, receive information from us about new features, new services and special offers
-                                we think you'll find valuable. You can always opt-out using the "unsubscribe" link on the email. You can
-                                also use the above "Request" form to delete your information.
+                                we think you&apos;ll find valuable. You can always opt-out using the &quot;unsubscribe&quot; link on the email. You can
+                                also use the above &quot;Request&quot; form to delete your information.
                             </p>
                         </div>
                     </section>
@@ -394,7 +394,7 @@ export default function PrivacyPolicy() {
                                         Payments are upfront for Domain Name, Web Hosting, SSL Certificate, Support, Maintenance and other services
                                         of SeekaHost. The client is responsible for all payments/invoices, which are due upon receipt. If an invoice
                                         is on due and crossed the next one/more billing cycle as well, then the customer has to pay all the remaining
-                                        invoice left between till their current billing cycle to active the package/domains. If the client doesn't
+                                        invoice left between till their current billing cycle to active the package/domains. If the client doesn&apos;t
                                         make all payments within 5 days, SeekaHost will hold the right to charge a late fee of 10% per month or $2
                                         (whichever is greater) for any late or absent payments not met within 5 days from the due date. Invoices that
                                         are not paid in full by the next billing cycle will incur a 10% late charge or $2 late fee, whichever is
@@ -442,14 +442,14 @@ export default function PrivacyPolicy() {
                                     <div className="flex items-start">
                                         <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                                         <p className="text-gray-700">
-                                            If the client doesn't respond for the suspension tickets that caused due to Phishing Content, Malware
+                                            If the client doesn&apos;t respond for the suspension tickets that caused due to Phishing Content, Malware
                                             Issues, Spam Mails or other related issues.
                                         </p>
                                     </div>
                                     <div className="flex items-start">
                                         <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                                         <p className="text-gray-700">
-                                            We don't encourage copyrights owned by any person's content/any files to be used in your website, which
+                                            We don&apos;t encourage copyrights owned by any person&apos;s content/any files to be used in your website, which
                                             is apparently hosted with us. If we recieve complaints on copyrights of your website(s), we will
                                             suspend/terminate the domains.
                                         </p>
@@ -457,7 +457,7 @@ export default function PrivacyPolicy() {
                                 </div>
                                 <div className="bg-yellow-50 p-4 rounded-lg mt-4">
                                     <p className="text-gray-700 text-sm">
-                                        As a part of this context, SeekaHost emphasize that we serves as a medium that deliver's customers website
+                                        As a part of this context, SeekaHost emphasize that we serves as a medium that deliver&apos;s customers website
                                         content over online, whereas the legal copyrights claim by Complaining Party over any kind of files in the
                                         website(s) hosted with us has no interference with SeekaHost.
                                     </p>
