@@ -58,10 +58,22 @@ export default async function sitemap() {
   
   routing.locales.forEach(locale => {
     routes.forEach(route => {
-      sitemapEntries.push({
-        url: route.path === '' 
+      let url;
+      
+      if (locale === routing.defaultLocale) {
+        // For default locale (en), don't include locale prefix
+        url = route.path === '' 
+          ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
+          : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
+      } else {
+        // For non-default locales, include locale prefix
+        url = route.path === '' 
           ? `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`
-          : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`,
+          : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`;
+      }
+        
+      sitemapEntries.push({
+        url,
         lastModified: new Date(),
         changeFrequency: route.changeFrequency,
         priority: route.priority,
