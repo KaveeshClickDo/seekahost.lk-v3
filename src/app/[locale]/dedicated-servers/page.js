@@ -16,6 +16,7 @@ import PackagesPrices from "@/components/dedicated-servers/PackagePrice";
 import Header from "@/components/shared/Header";
 import Solution from "@/components/dedicated-servers/Solution";
 import WhySeekahost from "@/components/dedicated-servers/WhySeekahost";
+import CTA from "@/components/shared/CTA";
 
 export const metadata = {
     title: "Dedicated Servers"
@@ -36,6 +37,7 @@ export default function DedicatedServers() {
             <WhySeekahost />
             <Reviews />
             <FAQs />
+            <CTA />
             <BacktoTop />
             <Footer />
         </>

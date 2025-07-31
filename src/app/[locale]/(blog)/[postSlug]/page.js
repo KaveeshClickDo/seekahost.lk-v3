@@ -3,17 +3,17 @@ import Link from "next/link";
 import config from "@/config";
 import fetchPosts from "@/data/fetchPosts";
 import BlocksRendererClient from "@/components/blogs/BlocksRendererClient";
-import Topbar from "@/components/shared/Topbar";
-import Navbar2 from "@/components/shared/Navbar2";
+import HTMLRendererClient from "@/components/blogs/HTMLRendererClient";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Footer from "@/components/shared/Footer";
+import ShareButtons from "@/components/blogs/ShareButtons";
 import { notFound } from "next/navigation";
 import Header from "@/components/shared/Header";
 
 export async function generateMetadata({ params }) {
     try {
         const resolvedParams = await params;
-        const blog = await fetchPosts(`filters[postMetadata][slug][$eq]=${resolvedParams.postSlug}`);
+        const blog = await fetchPosts(`filters[postSlug][$eq]=${resolvedParams.postSlug}`);
 
         if (!blog.data || blog.data.length === 0) {
             return {
@@ -23,31 +23,67 @@ export async function generateMetadata({ params }) {
         }
 
         const post = blog.data[0];
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://dev.seekahost.co.uk';
 
-        const title = post.title || 'Blog Post';
-        const description = post.postMetadata?.metaDescription || post.title || 'Read our latest blog post';
-        const featuredImageUrl = post.postPrimary?.featuredImage?.url
-            ? `${config.api}${post.postPrimary.featuredImage.url}`
-            : null;
+        const siteName = 'SeekaHost UK';
+        const fullTitle = post.postMetadata?.postTitle || post.title || 'Blog Post';
+
+        const description = post.postMetadata?.metaDescription || post.postPrimary?.excerpt || post.title || 'Read our latest blog post about web hosting, domains, and technology solutions.';
+
+        const openGraphImageUrl = post.postMetadata?.thumbnail?.url
+            ? `${config.externalApi}${post.postMetadata?.thumbnail?.url}`
+            : `${baseUrl}/images/blog/default-blog-image.jpg`;
+
+        const keywords = [
+            post.postPrimary?.category,
+            ...(post.postPrimary?.tags || []),
+            'blogs',
+            'domains',
+            'web hosting',
+            'technology'
+        ].filter(Boolean).join(', ');
 
         return {
-            title,
+            title: fullTitle,
             description,
+            keywords,
+            authors: post.authorDetails?.authorName ? [
+                {
+                    name: post.authorDetails.authorName,
+                    url: post.authorDetails.authorImage?.url
+                        ? `${config.externalApi}${post.authorDetails.authorImage.url}`
+                        : undefined
+                }
+            ] : [{ name: siteName }],
+            publisher: siteName,
+            category: post.postPrimary?.category,
+            robots: {
+                index: true,
+                follow: true,
+                googleBot: {
+                    index: true,
+                    follow: true,
+                    'max-video-preview': -1,
+                    'max-image-preview': 'large',
+                    'max-snippet': -1,
+                },
+            },
             openGraph: {
-                title,
+                title: fullTitle,
                 description,
                 type: 'article',
-                ...(featuredImageUrl && { images: [featuredImageUrl] }),
+                ...(openGraphImageUrl && { images: [openGraphImageUrl] }),
                 publishedTime: post.createdAt,
                 modifiedTime: post.updatedAt,
                 authors: post.authorDetails?.authorName ? [post.authorDetails.authorName] : undefined,
                 section: post.postPrimary?.category || undefined,
+                tags: post.postPrimary?.tags || undefined,
             },
             twitter: {
                 card: 'summary_large_image',
-                title,
+                title: fullTitle,
                 description,
-                ...(featuredImageUrl && { images: [featuredImageUrl] }),
+                ...(openGraphImageUrl && { images: [openGraphImageUrl] }),
             },
             alternates: {
                 canonical: `/${resolvedParams.postSlug}`,
@@ -56,8 +92,12 @@ export async function generateMetadata({ params }) {
     } catch (error) {
         console.error('Error generating metadata:', error);
         return {
-            title: 'Blog Post',
-            description: 'Read our latest blog post'
+            title: 'Blog Post | SeekaHost UK',
+            description: 'Read our latest blog post about web hosting, domains, and technology solutions.',
+            robots: {
+                index: false,
+                follow: true,
+            }
         };
     }
 }
@@ -66,7 +106,7 @@ const BlogPost = async (props) => {
     try {
         const params = await props.params;
 
-        const blog = await fetchPosts(`filters[postMetadata][slug][$eq]=${params.postSlug}`);
+        const blog = await fetchPosts(`filters[postSlug][$eq]=${params.postSlug}`);
 
         if (!blog.data || blog.data.length === 0) {
             notFound();
@@ -78,7 +118,7 @@ const BlogPost = async (props) => {
 
             if (recentBlogsResponse.data && recentBlogsResponse.data.length > 0) {
                 recentPosts = recentBlogsResponse.data
-                    .filter(post => post.postMetadata?.slug !== `${params.postSlug}`)
+                    .filter(post => post.postSlug !== `${params.postSlug}`)
                     .slice(0, 5);
             }
         } catch (recentPostsError) {
@@ -116,10 +156,6 @@ const BlogPost = async (props) => {
 
         return (
             <>
-                {/* <div className="hidden lg:block">
-                    <Topbar />
-                </div>
-                <Navbar2 /> */}
                 <Header />
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
 
@@ -127,13 +163,15 @@ const BlogPost = async (props) => {
 
                     {/* Add JSON-LD structured data */}
                     {blog.data.map((post) => {
+                        const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
+
                         const jsonLd = {
                             '@context': 'https://schema.org',
                             '@type': 'Article',
-                            headline: post.title,
-                            description: post.postMetadata?.metaDescription || post.title,
-                            image: post.postPrimary?.featuredImage?.url
-                                ? `${config.api}${post.postPrimary.featuredImage.url}`
+                            headline: post.postMetadata?.postTitle || post.title,
+                            description: post.postMetadata?.metaDescription || post.postPrimary?.excerpt || post.title,
+                            image: post.postMetadata?.thumbnail?.url
+                                ? `${config.externalApi}${post.postMetadata?.thumbnail?.url}`
                                 : undefined,
                             datePublished: post.createdAt,
                             dateModified: post.updatedAt,
@@ -141,7 +179,7 @@ const BlogPost = async (props) => {
                                 '@type': 'Person',
                                 name: post.authorDetails?.authorName || 'Unknown Author',
                                 ...(post.authorDetails?.authorImage?.url && {
-                                    image: `${config.api}${post.authorDetails.authorImage.url}`
+                                    image: `${config.externalApi}${post.authorDetails.authorImage.url}`
                                 }),
                                 ...(post.authorDetails?.authorDescription && {
                                     description: post.authorDetails.authorDescription
@@ -152,7 +190,7 @@ const BlogPost = async (props) => {
                                 name: 'SeekaHost',
                                 logo: {
                                     '@type': 'ImageObject',
-                                    url: `${typeof window !== 'undefined' ? window.location.origin : ''}/images/shared/header-logo.webp`
+                                    url: `${baseUrl}/images/shared/header-logo.webp`
                                 }
                             },
                             mainEntityOfPage: {
@@ -164,12 +202,65 @@ const BlogPost = async (props) => {
                             })
                         };
 
+                        // Generate breadcrumb for this post
+                        const breadcrumbItems = [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": {
+                                    "@type": "WebPage",
+                                    "@id": baseUrl
+                                }
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Blog",
+                                "item": {
+                                    "@type": "WebPage",
+                                    "@id": `${baseUrl}/blog`
+                                }
+                            }
+                        ];
+
+                        // Add category if exists
+                        if (post.postPrimary?.category) {
+                            breadcrumbItems.push({
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": post.postPrimary.category,
+                                "item": {
+                                    "@type": "WebPage",
+                                    "@id": `${baseUrl}/blog/category/${post.postPrimary.category.toLowerCase().replace(/\s+/g, '-')}`
+                                }
+                            });
+                        }
+
+                        // Add current post (no link for current page)
+                        breadcrumbItems.push({
+                            "@type": "ListItem",
+                            "position": breadcrumbItems.length + 1,
+                            "name": post.postMetadata?.postTitle || post.title
+                        });
+
+                        const breadcrumbSchema = {
+                            "@context": "https://schema.org",
+                            "@type": "BreadcrumbList",
+                            "itemListElement": breadcrumbItems
+                        };
+
                         return (
-                            <script
-                                key={`jsonld-${post.id}`}
-                                type="application/ld+json"
-                                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-                            />
+                            <div key={post.id}>
+                                <script
+                                    type="application/ld+json"
+                                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                                />
+                                <script
+                                    type="application/ld+json"
+                                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+                                />
+                            </div>
                         );
                     })}
 
@@ -192,7 +283,7 @@ const BlogPost = async (props) => {
                                         </h1>
 
                                         <div className="mb-4 pb-5 border-b border-gray-200">
-                                            {post.postPrimary?.isDisplayAuthor && (
+                                            {post.postPrimary?.isDisplayAuthor === "YES" && (
                                                 <div className="flex items-center space-x-4">
                                                     {renderAuthorAvatar(post.authorDetails?.authorImage, post.authorDetails?.authorName)}
                                                     <div>
@@ -223,11 +314,12 @@ const BlogPost = async (props) => {
                                         )}
 
                                         <div className="relative">
+
                                             <div className="prose mx-auto">
-                                                <BlocksRendererClient content={post.content} />
+                                                <HTMLRendererClient content={post.content} />
                                             </div>
 
-                                            {post.postPrimary?.isDisplayAuthor && (
+                                            {post.postPrimary?.isDisplayAuthor === "YES" && (
                                                 <div className="mt-12 p-6 bg-gray-50 rounded-2xl border border-gray-200">
                                                     <h3 className="text-xl font-bold mb-6 pb-5 border-b border-gray-200">Author Profile</h3>
 
@@ -248,28 +340,12 @@ const BlogPost = async (props) => {
                                                 </div>
                                             )}
 
-                                            <div className="mt-8 pt-6 border-t border-gray-200">
-                                                <div className="flex items-center justify-between">
-                                                    <span className="text-sm text-gray-500">Share this article</span>
-                                                    <div className="flex space-x-3">
-                                                        <button className="w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full flex items-center justify-center transition-colors">
-                                                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-                                                            </svg>
-                                                        </button>
-                                                        <button className="w-10 h-10 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-colors">
-                                                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                                            </svg>
-                                                        </button>
-                                                        <button className="w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center transition-colors">
-                                                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
-                                                            </svg>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            {/* Replace the static share buttons with the functional ShareButtons component */}
+                                            <ShareButtons
+                                                title={post.title}
+                                                url={`${process.env.NEXT_PUBLIC_BASE_URL || 'https://dev.seekahost.co.uk'}/${post.postSlug}`}
+                                                description={post.postMetadata?.metaDescription || post.postPrimary?.excerpt || 'Read our latest blog post about web hosting, domains, and technology solutions.'}
+                                            />
                                         </div>
                                     </div>
                                 ))}
@@ -294,7 +370,7 @@ const BlogPost = async (props) => {
                                             recentPosts.map((post) => (
                                                 <Link
                                                     key={post.id}
-                                                    href={`/${post.postMetadata?.slug}`}
+                                                    href={`/${post.postSlug}`}
                                                     className="block group"
                                                 >
                                                     <h4 className="text-[#2072CC] group-hover:text-blue-800 font-medium leading-snug transition-colors duration-200">

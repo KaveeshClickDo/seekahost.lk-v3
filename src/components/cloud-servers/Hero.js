@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import SeePlansButton from '../wordpress-hosting/SeePlansButton';
+import TestimonialSlider from '../home/Testimonials';
 
 export default function Hero() {
 
@@ -19,42 +20,18 @@ export default function Hero() {
 
                 <div className="text-white w-full max-w-2xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Cloud Servers
+                        🚀 Next-Gen Cloud Hosting with SeekaHost
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl   font-bold">
-                        Ultrafast, Managed, Simple to Use
+                    <p className="mt-4 text-md md:text-lg font-bold">
+                        Power. Speed. Reliability. Scalability.
                     </p>
 
-                    <ul className="mt-6">
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Automated setup, migration & updates
-                        </li>
+                    <p className="text-sm md:text-base text-gray-300 max-w-xl">
+                        Take your website or application to the next level with SeekaHost&apos;s cutting-edge cloud hosting solutions. Enjoy blazing-fast performance, real-time scalability, and ironclad security — all backed by 24/7 expert support.
+                    </p>
 
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Multi-level security for extra peace of mind
-                        </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Top-rated 24/7 expert support
-                        </li>
-                    </ul>
-
-                    <div className="mt-6">
+                    {/* <div className="mt-6">
                         <div className="bg-yellow-500 text-blue-950 text-xs font-semibold inline-block px-2 py-1 rounded">
                             Save 90%
                         </div>
@@ -68,16 +45,32 @@ export default function Hero() {
                         </div>
                         <div className="text-sm">with a 1-year term</div>
                     </div>
-                    <SeePlansButton />
+                    <SeePlansButton /> */}
+                    <div className="mt-8">
+                        <TestimonialSlider />
+                    </div>
+
+                    <p className="mt-4 text-sm md:text-base font-bold">
+                        → Launch your site with confidence. Experience cloud hosting, reimagined.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                        <button className="bg-[#0081FF] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
+                            Get Started Now
+                        </button>
+                        <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
+                            Compare Plans
+                        </button>
+                    </div>
 
                 </div>
 
-                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto my-8 lg:my-0">
+                <div className="relative w-full max-w-lg 2xl:max-w-xl z-1 ml-auto my-8 lg:my-0">
                     <Image
                         src="/images/cloud-servers/cloud-servers-hero-image.webp"
                         alt="Hero Image"
-                        width={1186}
-                        height={1136}
+                        width={1464}
+                        height={1242}
                         className="w-full"
                         priority
                     />

@@ -36,7 +36,7 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
   };
 
   const renderAuthorSection = (featuredBlog) => {
-    const shouldDisplayAuthor = featuredBlog.postPrimary?.isDisplayAuthor !== false;
+    const shouldDisplayAuthor = featuredBlog.postPrimary?.isDisplayAuthor !== "NO";
     const authorName = featuredBlog.authorDetails?.authorName;
     const authorImage = featuredBlog.authorDetails?.authorImage?.url;
     
@@ -97,7 +97,7 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
           <div className={`${hasImage ? 'md:w-1/2' : 'w-full'} p-6`}>
             <div className="text-base text-[#2072CC] font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
             <h1 className="text-2xl font-bold mb-4">
-              <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
+              <Link href={`/${featuredBlog.postSlug || '#'}`} className="hover:text-blue-700">
                 {featuredBlog.title || 'Blog post title'}
               </Link>
             </h1>
@@ -136,7 +136,7 @@ const FeaturedSlider = ({ featuredBlogs, config }) => {
                   <div className={`${hasImage ? 'md:w-1/2' : 'w-full'} p-6`}>
                     <div className="text-base text-[#2072CC] font-bold tracking-wide uppercase mb-2">FEATURED STORY</div>
                     <h1 className="text-2xl font-bold mb-4">
-                      <Link href={`/${featuredBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
+                      <Link href={`/${featuredBlog.postSlug || '#'}`} className="hover:text-blue-700">
                         {featuredBlog.title || 'Blog post title'}
                       </Link>
                     </h1>

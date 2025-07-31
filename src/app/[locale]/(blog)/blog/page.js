@@ -1,6 +1,5 @@
+import Header from '@/components/shared/Header';
 import Footer from '@/components/shared/Footer';
-import Navbar2 from '@/components/shared/Navbar2';
-import Topbar from '@/components/shared/Topbar';
 import Image from 'next/image';
 import Link from 'next/link';
 import BacktoTop from "@/components/shared/BacktoTop";
@@ -8,8 +7,6 @@ import config from '@/config';
 import fetchPosts from '@/data/fetchPosts';
 import FeaturedSlider from '@/components/blogs/FeatureSlider';
 import { MdArrowForward } from "react-icons/md";
-import Header from '@/components/shared/Header';
-
 export const metadata = {
     title: "Blog"
 }
@@ -18,7 +15,7 @@ const Blog = async () => {
 
     try {
 
-        const featuredPosts = await fetchPosts('filters[postMetadata][isFeatured][$eq]=true&sort[0]=publishedAt:desc');
+        const featuredPosts = await fetchPosts('filters[postMetadata][isFeatured][$eq]=YES&sort[0]=publishedAt:desc');
 
         const topStoriesPosts = await fetchPosts('pagination[limit]=3&sort[0]=publishedAt:desc');
 
@@ -38,10 +35,6 @@ const Blog = async () => {
 
         return (
             <>
-                {/* <div className="hidden lg:block">
-                    <Topbar />
-                </div>
-                <Navbar2 /> */}
                 <Header />
                 <div className="relative inset-0 w-[72%] h-5 bg-gradient-to-r from-[#09407A] to-[#136CC9] rounded-br-[100px]"></div>
                 <section className="container mx-auto px-4 py-8 max-w-7xl">
@@ -83,7 +76,7 @@ const Blog = async () => {
                                             </div>
 
                                             <h3 className="text-lg md:text-xl font-bold mb-3">
-                                                <Link href={`/${topBlog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
+                                                <Link href={`/${topBlog.postSlug || '#'}`} className="hover:text-blue-700">
                                                     {topBlog.title || 'Blog post title'}
                                                 </Link>
                                             </h3>
@@ -135,7 +128,7 @@ const Blog = async () => {
                                                     </div>
 
                                                     <h3 className="text-lg md:text-xl font-bold mb-3">
-                                                        <Link href={`/${blog.postMetadata?.slug || '#'}`} className="hover:text-blue-700">
+                                                        <Link href={`/${blog.postSlug || '#'}`} className="hover:text-blue-700">
                                                             {blog.title || 'Blog post title'}
                                                         </Link>
                                                     </h3>
@@ -152,7 +145,7 @@ const Blog = async () => {
                                     </div>
                                 )}
                                 <Link
-                                    href={`/blog/${category ? category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : '#'}`}
+                                    href={`/category/${category ? category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : '#'}`}
                                     className="flex items-center font-bold text-lg hover:text-[#2072CC] transition-colors gap-1 sm:gap-2 py-6 ml-2"
                                 >
                                     Read More <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />

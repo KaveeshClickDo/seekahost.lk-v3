@@ -64,14 +64,23 @@ export default function Hero() {
                         </li>
                     </ul>
 
+                    <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                        <button className="bg-[#0081FF] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
+                            Get Started Now
+                        </button>
+                        <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
+                            Compare Plans
+                        </button>
+                    </div>
+
                 </div>
 
                 <div className="relative w-full max-w-lg 2xl:max-w-xl z-1 ml-auto my-8 lg:my-0">
                     <Image
                         src="/images/dedicated-servers/dedicated-servers-hero-image.webp"
                         alt="Hero Image"
-                        width={1114}
-                        height={1154}
+                        width={1292}
+                        height={1342}
                         className="w-full"
                         priority
                     />
