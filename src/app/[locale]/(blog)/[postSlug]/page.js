@@ -265,6 +265,26 @@ const BlogPost = async (props) => {
                     })}
 
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                        <nav className="text-sm text-gray-500 mb-4">
+                            <Link href="/" className="hover:text-[#2072CC]">Home</Link>
+                            <span className="mx-2">›</span>
+                            <Link href="/blog" className="hover:text-[#2072CC]">Blog</Link>
+                            <span className="mx-2">›</span>
+
+                            {blog.data?.[0]?.postPrimary?.category && (
+                                <>
+                                    <Link
+                                        href={`/category/${blog.data[0].postPrimary.category.toLowerCase().replace(/\s+/g, '-')}`}
+                                        className="hover:text-[#2072CC]"
+                                    >
+                                        {blog.data[0].postPrimary.category}
+                                    </Link>
+                                    <span className="mx-2">›</span>
+                                </>
+                            )}
+
+                            <span className="text-gray-700">{blog.data?.[0]?.title}</span>
+                        </nav>
                         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                             <div className="lg:col-span-3">
                                 {blog.data.map((post) => (
@@ -320,16 +340,18 @@ const BlogPost = async (props) => {
                                             </div>
 
                                             {post.postPrimary?.isDisplayAuthor === "YES" && (
-                                                <div className="mt-12 p-6 bg-gray-50 rounded-2xl border border-gray-200">
-                                                    <h3 className="text-xl font-bold mb-6 pb-5 border-b border-gray-200">Author Profile</h3>
+                                                <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200">
+                                                    <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 pb-3 sm:pb-5 border-b border-gray-200">
+                                                        Author Profile
+                                                    </h3>
 
-                                                    <div className="flex items-start space-x-4">
-                                                        <div className="flex-shrink-0">
+                                                    <div className="flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                                                        <div className="flex-shrink-0 self-center sm:self-start">
                                                             {renderAuthorAvatar(post.authorDetails?.authorImage, post.authorDetails?.authorName, 100)}
                                                         </div>
 
-                                                        <div className="flex-1 ml-3">
-                                                            <h4 className="text-lg font-bold mb-2">
+                                                        <div className="flex-1 text-center sm:text-left sm:ml-3">
+                                                            <h4 className="text-base sm:text-lg font-bold mb-2">
                                                                 {post.authorDetails?.authorName || 'Unknown'}
                                                             </h4>
                                                             <p className="text-gray-700 text-sm leading-relaxed">
@@ -386,7 +408,7 @@ const BlogPost = async (props) => {
                                     </div>
                                 </div>
 
-                                <div className="text-center mb-6 sticky top-4">
+                                <div className="text-center mb-6 sticky top-15">
                                     <Image src="/images/blog/blogAds.webp" alt="SeekaHost" className="mx-auto" width={266} height={124} />
                                 </div>
                             </div>
