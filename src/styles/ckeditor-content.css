@@ -1,0 +1,205 @@
+/* CKEditor 5 Specific Styles - Only what Tailwind Typography doesn't provide */
+
+/* Override prose img styles that might interfere with floating */
+.ck-content img {
+  margin: 0; /* Reset prose margin */
+  display: inline-block; /* Allow floating */
+}
+
+/* WordPress-style alignment classes (common in CKEditor configurations) */
+.ck-content .alignleft {
+  float: left !important;
+  margin: 0 1em 1em 0 !important;
+  clear: left;
+  display: block;
+}
+
+.ck-content .alignright {
+  float: right !important;
+  margin: 0 0 1em 1em !important;
+  clear: right;
+  display: block;
+}
+
+.ck-content .aligncenter {
+  display: block !important;
+  margin: 1em auto !important;
+  clear: both;
+  float: none !important;
+}
+
+/* Legacy CKEditor image alignment classes (if your setup uses them) */
+.ck-content .image-inline {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.ck-content .image,
+.ck-content .image-block {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.ck-content .image-left {
+  float: left;
+  margin: 0 1em 1em 0;
+  clear: left;
+}
+
+.ck-content .image-right {
+  float: right;
+  margin: 0 0 1em 1em;
+  clear: right;
+}
+
+.ck-content .image-center {
+  display: block;
+  margin: 1em auto;
+  clear: both;
+}
+
+/* CKEditor specific image wrapper styles */
+.ck-content .image-style-align-left,
+.ck-content img.image-style-align-left {
+  float: left !important;
+  margin: 0 1em 1em 0 !important;
+  clear: left;
+  display: block;
+}
+
+.ck-content .image-style-align-right,
+.ck-content img.image-style-align-right {
+  float: right !important;
+  margin: 0 0 1em 1em !important;
+  clear: right;
+  display: block;
+}
+
+.ck-content .image-style-side,
+.ck-content img.image-style-side {
+  float: right !important;
+  margin: 0 0 1em 1em !important;
+  max-width: 50%;
+  clear: right;
+  display: block;
+}
+
+/* Text wrapping support */
+.ck-content .image-style-wrap-text,
+.ck-content img.image-style-wrap-text {
+  float: left !important;
+  margin: 0 1em 1em 0 !important;
+  max-width: 50%;
+  clear: left;
+  display: block;
+}
+
+.ck-content .image-style-break-text {
+  display: block;
+  margin: 1em auto;
+  clear: both;
+}
+
+/* Figure styles for images with captions - CKEditor specific */
+.ck-content figure.image {
+  display: block;
+  margin: 1em auto;
+}
+
+.ck-content figure.image-left {
+  float: left;
+  margin: 0 1em 1em 0;
+  clear: left;
+}
+
+.ck-content figure.image-right {
+  float: right;
+  margin: 0 0 1em 1em;
+  clear: right;
+}
+
+.ck-content figure.image-style-align-left {
+  float: left;
+  margin: 0 1em 1em 0;
+  clear: left;
+}
+
+.ck-content figure.image-style-align-right {
+  float: right;
+  margin: 0 0 1em 1em;
+  clear: right;
+}
+
+.ck-content figure.image-style-align-center {
+  display: block;
+  margin: 1em auto;
+  clear: both;
+}
+
+.ck-content figure.image-style-side {
+  float: right;
+  margin: 0 0 1em 1em;
+  max-width: 50%;
+  clear: right;
+}
+
+.ck-content figure.image-style-wrap-text {
+  float: left;
+  margin: 0 1em 1em 0;
+  max-width: 50%;
+  clear: left;
+}
+
+.ck-content figure.image-style-break-text {
+  display: block;
+  margin: 1em auto;
+  clear: both;
+}
+
+/* Clear floats after content - Important for proper layout */
+.ck-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive image adjustments - Make floated images stack on mobile */
+@media (max-width: 768px) {
+  .ck-content .image-left,
+  .ck-content .image-right,
+  .ck-content .image-style-align-left,
+  .ck-content .image-style-align-right,
+  .ck-content .image-style-side,
+  .ck-content .image-style-wrap-text,
+  .ck-content figure.image-left,
+  .ck-content figure.image-right,
+  .ck-content figure.image-style-align-left,
+  .ck-content figure.image-style-align-right,
+  .ck-content figure.image-style-side,
+  .ck-content figure.image-style-wrap-text {
+    float: none;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+    clear: both;
+  }
+}
+
+/* Text alignment classes - CKEditor specific */
+.ck-content .text-left {
+  text-align: left;
+}
+
+.ck-content .text-center {
+  text-align: center;
+}
+
+.ck-content .text-right {
+  text-align: right;
+}
+
+.ck-content .text-justify {
+  text-align: justify;
+}
