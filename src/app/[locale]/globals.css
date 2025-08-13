@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --breakpoint-xl: 75rem;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #092a44;

@@ -36,7 +36,7 @@ const LanguageSelector = () => {
     { name: 'Japan', language: '日本語', flag: '/images/flags/Japan.svg', locale: 'jp', active: true },
     { name: 'Brasil', language: 'Português', flag: '/images/flags/Brazil.svg', locale: 'pt', active: true },
     { name: 'Portugal', language: 'Português', flag: '/images/flags/Portugal.svg', locale: 'pt', active: true },
-    { name: 'Russia', language: 'Russian', flag: '/images/flags/Russia.svg', locale: 'ru', active: true },
+    { name: 'Russia', language: 'Русский', flag: '/images/flags/Russia.svg', locale: 'ru', active: true },
     { name: 'France', language: 'Français', flag: '/images/flags/France.svg', locale: 'fr', active: true },
     { name: 'الدول العربية', language: 'العربية', flag: '/images/flags/Arabic-countries.svg', locale: 'ae', active: true },
     { name: 'Indonesia', language: 'Bahasa Indonesia', flag: '/images/flags/Indonesia.svg', locale: 'id', active: true },

@@ -24,7 +24,7 @@ export default function Footer() {
 
               <div className="flex md:flex-col mt-6">
                 <div className="flex">
-                  <Link href="#">
+                  <Link href="https://www.youtube.com/@SeekaHost">
                     <div className="p-2">
                       <Image
                         src="/images/socialmedia-icons/youtube.svg"
@@ -34,7 +34,7 @@ export default function Footer() {
                       />
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="https://x.com/atSeekaHost">
                     <div className="p-2">
                       <Image
                         src="/images/socialmedia-icons/twitter.svg"
@@ -44,7 +44,7 @@ export default function Footer() {
                       />
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.facebook.com/seekahost">
                     <div className="p-2">
                       <Image
                         src="/images/socialmedia-icons/facebook.svg"
@@ -56,7 +56,7 @@ export default function Footer() {
                   </Link>
                 </div>
                 <div className="flex">
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/company/seekahost/">
                     <div className="p-2">
                       <Image
                         src="/images/socialmedia-icons/linkedin.svg"
@@ -76,7 +76,7 @@ export default function Footer() {
                       />
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.tiktok.com/@seekahost?_t=8dvP0XE03Fj&_r=1">
                     <div className="p-2">
                       <Image
                         src="/images/socialmedia-icons/tiktok.svg"
@@ -153,6 +153,7 @@ export default function Footer() {
             <div className="text-gray-300 text-sm mb-4 md:mb-0 font-medium">
               {t('Copyright.text')} <br />
               {t('Copyright.companyNumber')} <br />
+              {t('Copyright.busunessAddress')} <br />
               <Link href="/privacy-policy" className="hover:text-white">{t('Copyright.links.privacyPolicy')}</Link>
               <span className="mx-2">|</span>
               <Link href="#" className="hover:text-white">{t('Copyright.links.termsCondition')}</Link>
