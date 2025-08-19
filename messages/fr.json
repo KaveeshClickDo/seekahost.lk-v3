@@ -144,138 +144,78 @@
       ]
     },
     "PackagePrices": {
-      "title1": "Forfaits tarifaires",
-      "title2": "Meilleurs forfaits et prix les plus bas avec SeekaHost",
-      "toggleLeft": "Mensuel",
-      "toggleRight": "Annuel",
-      "buttonText": "Comparer les forfaits",
+      "title1": "Plans Tarifaires",
+      "title2": "Meilleurs Plans & Prix les Moins Chers avec SeekaHost",
+      "buttonText": "Comparer les Forfaits",
       "homePkgPrices": [
         {
-          "title": "Plus",
-          "buttonName": "Obtenir Plus",
-          "link": "#",
-          "monthlyPrice": 29,
-          "yearlyPrice": 290,
-          "discountYear": 0,
-          "discountMonth": 10,
-          "specialTextMonth": "30 jours d'essai gratuit",
-          "specialTextYear": "Renouvellement: £300/an",
-          "featureSections": [
-            {
-              "title": "Fonctionnalités générales",
-              "features": [
-                "1 site web",
-                "10 Go d'espace web",
-                "~10 000 visites mensuelles",
-                "Trafic illimité"
-              ]
-            },
-            {
-              "title": "Fonctionnalités exclusives",
-              "features": [
-                "Installation automatique de WordPress",
-                "Migrations automatisées gratuites",
-                "Mises à jour entièrement gérées",
-                "Plugin d'optimisation de vitesse pour WP"
-              ]
-            },
-            {
-              "title": "Fonctionnalités d'hébergement",
-              "features": [
-                "SSL et email gratuits",
-                "Base de données illimitée",
-                "Sauvegarde quotidienne",
-                "Sécurité renforcée"
-              ]
-            }
+          "title": "Hébergement Web",
+          "buttonName": "Voir les Forfaits",
+          "link": "/wordpress-hosting",
+          "price": 9.99,
+          "period": "mois",
+          "specialText": "sur 3 ans HT",
+          "features": [
+            "Pour Sites Web d’Entreprise",
+            "Espace Web Évolutif",
+            "Panneau de Contrôle cPanel",
+            "Installeur d’Applications en Un Clic",
+            "Certificat SSL Gratuit",
+            "Support Technique 24/7"
           ],
           "isBestValue": false
         },
         {
-          "title": "Pro",
-          "buttonName": "Obtenir Pro",
-          "link": "#",
-          "monthlyPrice": 59,
-          "yearlyPrice": 590,
-          "discountYear": 15,
-          "discountMonth": 15,
-          "specialTextMonth": "Renouvellement: £60/mois",
-          "specialTextYear": "Renouvellement: £600/an",
-          "featureSections": [
-            {
-              "title": "Fonctionnalités générales",
-              "features": [
-                "Sites web illimités",
-                "20 Go d'espace web",
-                "~100 000 visites mensuelles",
-                "Trafic illimité"
-              ]
-            },
-            {
-              "title": "Fonctionnalités exclusives",
-              "features": [
-                "Installation automatique de WordPress",
-                "Migrations automatisées gratuites",
-                "Mises à jour entièrement gérées",
-                "Plugin d'optimisation de vitesse pour WP",
-                "Environnement de test WordPress"
-              ]
-            },
-            {
-              "title": "Fonctionnalités d'hébergement",
-              "features": [
-                "SSL et email gratuits",
-                "Base de données illimitée",
-                "Sauvegarde quotidienne",
-                "Sécurité renforcée",
-                "Copies de sauvegarde à la demande"
-              ]
-            }
+          "title": "Serveurs de Londres",
+          "buttonName": "Voir les Forfaits",
+          "link": "/london-server-hosting",
+          "price": 11.58,
+          "period": "mois",
+          "specialText": "sur 1 an HT",
+          "features": [
+            "Installeur en Un Clic",
+            "Compte cPanel",
+            "Localisation à Londres",
+            "Adapté aux Développeurs",
+            "Disponibilité Garantie",
+            "Nom de Domaine Gratuit",
+            "Serveur Lite Speed"
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "Hébergement VPS",
+          "buttonName": "Voir les Forfaits",
+          "link": "https://portal.seekahost.co.uk/index.php/store/vps-server-hosting",
+          "price": 8.58,
+          "period": "mois",
+          "specialText": "sur 3 ans HT",
+          "features": [
+            "Hébergement Intelligent",
+            "Adapté aux Développeurs",
+            "Disponibilité Garantie",
+            "Serveurs Haute Vitesse",
+            "Ressources Garantis",
+            "Systèmes d’Exploitation",
+            "IP Dédiée"
           ],
           "isBestValue": true
         },
         {
-          "title": "Entreprise",
-          "buttonName": "Contacter les ventes",
-          "link": "/personalized-hosting",
-          "monthlyPrice": 119,
-          "yearlyPrice": 1190,
-          "discountYear": 0,
-          "discountMonth": 0,
-          "specialTextMonth": "Renouvellement: £120/mois",
-          "specialTextYear": "Renouvellement: £1200/an",
-          "featureSections": [
-            {
-              "title": "Fonctionnalités générales",
-              "features": [
-                "Sites web illimités",
-                "40 Go d'espace web",
-                "~400 000 visites mensuelles",
-                "Trafic illimité"
-              ]
-            },
-            {
-              "title": "Fonctionnalités exclusives",
-              "features": [
-                "Installation automatique de WordPress",
-                "Migrations automatisées gratuites",
-                "Mises à jour entièrement gérées",
-                "Plugin d'optimisation de vitesse pour WP",
-                "Environnement de test WordPress",
-                "PHP 30% plus rapide"
-              ]
-            },
-            {
-              "title": "Fonctionnalités d'hébergement",
-              "features": [
-                "SSL et email gratuits",
-                "Base de données illimitée",
-                "Sauvegarde quotidienne",
-                "Sécurité renforcée",
-                "Copies de sauvegarde à la demande",
-                "DNS privé gratuit"
-              ]
-            }
+          "title": "Serveurs Dédiés",
+          "buttonName": "Voir les Forfaits",
+          "link": "/dedicated-servers",
+          "price": 199,
+          "period": "mois",
+          "specialText": "HT",
+          "features": [
+            "Ressources Dédiées",
+            "Serveurs Haute Vitesse",
+            "Mise en Service Instantanée",
+            "Adapté aux Développeurs",
+            "Disponibilité Garantie",
+            "Serveurs Windows/Linux",
+            "Certificat SSL Gratuit"
           ],
           "isBestValue": false
         }

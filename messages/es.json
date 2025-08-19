@@ -145,137 +145,77 @@
     },
     "PackagePrices": {
       "title1": "Planes de Precios",
-      "title2": "Mejores Planes y Precios Más Económicos con SeekaHost",
-      "toggleLeft": "Mensual",
-      "toggleRight": "Anual",
+      "title2": "Mejores Planes y Precios Más Baratos con SeekaHost",
       "buttonText": "Comparar Paquetes",
       "homePkgPrices": [
         {
-          "title": "Plus",
-          "buttonName": "Obtener Plus",
-          "link": "#",
-          "monthlyPrice": 29,
-          "yearlyPrice": 290,
-          "discountYear": 0,
-          "discountMonth": 10,
-          "specialTextMonth": "30 días de prueba gratuita",
-          "specialTextYear": "Renovación: £300/año",
-          "featureSections": [
-            {
-              "title": "Características Generales",
-              "features": [
-                "1 Sitio web",
-                "10 GB de espacio web",
-                "~10,000 visitas mensuales",
-                "Tráfico ilimitado"
-              ]
-            },
-            {
-              "title": "Características Exclusivas",
-              "features": [
-                "Autoinstalación de WordPress",
-                "Migraciones automáticas gratuitas",
-                "Actualizaciones totalmente gestionadas",
-                "Plugin de optimización de velocidad para WP"
-              ]
-            },
-            {
-              "title": "Características de Alojamiento",
-              "features": [
-                "SSL y correo electrónico gratuitos",
-                "Base de datos ilimitada",
-                "Copia de seguridad diaria",
-                "Seguridad mejorada"
-              ]
-            }
+          "title": "Alojamiento Web",
+          "buttonName": "Ver Paquetes",
+          "link": "/wordpress-hosting",
+          "price": 9.99,
+          "period": "mes",
+          "specialText": "en 3 años sin IVA",
+          "features": [
+            "Para Sitios Web Empresariales",
+            "Espacio Web Escalable",
+            "Panel de Control cPanel",
+            "Instalador de Aplicaciones con Un Clic",
+            "Certificado SSL Gratis",
+            "Soporte Técnico 24/7"
           ],
           "isBestValue": false
         },
         {
-          "title": "Pro",
-          "buttonName": "Obtener Pro",
-          "link": "#",
-          "monthlyPrice": 59,
-          "yearlyPrice": 590,
-          "discountYear": 15,
-          "discountMonth": 15,
-          "specialTextMonth": "Renovación: £60/mes",
-          "specialTextYear": "Renovación: £600/año",
-          "featureSections": [
-            {
-              "title": "Características Generales",
-              "features": [
-                "Sitios web ilimitados",
-                "20 GB de espacio web",
-                "~100,000 visitas mensuales",
-                "Tráfico ilimitado"
-              ]
-            },
-            {
-              "title": "Características Exclusivas",
-              "features": [
-                "Autoinstalación de WordPress",
-                "Migraciones automáticas gratuitas",
-                "Actualizaciones totalmente gestionadas",
-                "Plugin de optimización de velocidad para WP",
-                "Entorno de pruebas para WordPress"
-              ]
-            },
-            {
-              "title": "Características de Alojamiento",
-              "features": [
-                "SSL y correo electrónico gratuitos",
-                "Base de datos ilimitada",
-                "Copia de seguridad diaria",
-                "Seguridad mejorada",
-                "Copias de seguridad bajo demanda"
-              ]
-            }
+          "title": "Servidores de Londres",
+          "buttonName": "Ver Paquetes",
+          "link": "/london-server-hosting",
+          "price": 11.58,
+          "period": "mes",
+          "specialText": "en 1 año sin IVA",
+          "features": [
+            "Instalador con Un Clic",
+            "Cuenta cPanel",
+            "Ubicación en Londres",
+            "Amigable para Desarrolladores",
+            "Tiempo de Actividad Garantizado",
+            "Nombre de Dominio Gratis",
+            "Servidor Lite Speed"
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "Alojamiento VPS",
+          "buttonName": "Ver Paquetes",
+          "link": "https://portal.seekahost.co.uk/index.php/store/vps-server-hosting",
+          "price": 8.58,
+          "period": "mes",
+          "specialText": "en 3 años sin IVA",
+          "features": [
+            "Alojamiento Inteligente",
+            "Amigable para Desarrolladores",
+            "Tiempo de Actividad Garantizado",
+            "Servidores de Alta Velocidad",
+            "Recursos Garantizados",
+            "Sistemas Operativos",
+            "IP Dedicada"
           ],
           "isBestValue": true
         },
         {
-          "title": "Empresa",
-          "buttonName": "Hablar con Ventas",
-          "link": "/personalized-hosting",
-          "monthlyPrice": 119,
-          "yearlyPrice": 1190,
-          "discountYear": 0,
-          "discountMonth": 0,
-          "specialTextMonth": "Renovación: £120/mes",
-          "specialTextYear": "Renovación: £1200/año",
-          "featureSections": [
-            {
-              "title": "Características Generales",
-              "features": [
-                "Sitios web ilimitados",
-                "40 GB de espacio web",
-                "~400,000 visitas mensuales",
-                "Tráfico ilimitado"
-              ]
-            },
-            {
-              "title": "Características Exclusivas",
-              "features": [
-                "Autoinstalación de WordPress",
-                "Migraciones automáticas gratuitas",
-                "Actualizaciones totalmente gestionadas",
-                "Plugin de optimización de velocidad para WP",
-                "Entorno de pruebas para WordPress",
-                "PHP 30% más rápido"
-              ]
-            },
-            {
-              "title": "Características de Alojamiento",
-              "features": [
-                "SSL y correo electrónico gratuitos",
-                "Base de datos ilimitada",
-                "Copia de seguridad diaria",
-                "Seguridad mejorada",
-                "Copias de seguridad bajo demanda",
-                "DNS privado gratuito"
-              ]
-            }
+          "title": "Servidores Dedicados",
+          "buttonName": "Ver Paquetes",
+          "link": "/dedicated-servers",
+          "price": 199,
+          "period": "mes",
+          "specialText": "sin IVA",
+          "features": [
+            "Recursos Dedicados",
+            "Servidores de Alta Velocidad",
+            "Provisionamiento Instantáneo",
+            "Amigable para Desarrolladores",
+            "Tiempo de Actividad Garantizado",
+            "Servidores Windows/Linux",
+            "Certificado SSL Gratis"
           ],
           "isBestValue": false
         }

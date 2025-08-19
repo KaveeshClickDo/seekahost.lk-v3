@@ -145,137 +145,77 @@
     },
     "PackagePrices": {
       "title1": "料金プラン",
-      "title2": "SeekaHostで最高のプランと最安値",
-      "toggleLeft": "月額",
-      "toggleRight": "年額",
-      "buttonText": "パッケージ比較",
+      "title2": "SeekaHostで最適なプランと最安値",
+      "buttonText": "プランを比較",
       "homePkgPrices": [
         {
-          "title": "プラス",
-          "buttonName": "プラスを取得",
-          "link": "#",
-          "monthlyPrice": 29,
-          "yearlyPrice": 290,
-          "discountYear": 0,
-          "discountMonth": 10,
-          "specialTextMonth": "30日間無料トライアル",
-          "specialTextYear": "更新 £300/年",
-          "featureSections": [
-            {
-              "title": "一般機能",
-              "features": [
-                "1ウェブサイト",
-                "10 GB ウェブスペース",
-                "月間約10,000ビジット",
-                "無制限トラフィック"
-              ]
-            },
-            {
-              "title": "限定機能",
-              "features": [
-                "WordPress自動インストール",
-                "無料自動移行",
-                "完全管理更新",
-                "スピード最適化WPプラグイン"
-              ]
-            },
-            {
-              "title": "ホスティング機能",
-              "features": [
-                "無料SSL、メール",
-                "無制限データベース",
-                "毎日バックアップ",
-                "強化セキュリティ"
-              ]
-            }
+          "title": "ウェブホスティング",
+          "buttonName": "プランを見る",
+          "link": "/wordpress-hosting",
+          "price": 9.99,
+          "period": "月",
+          "specialText": "3年間契約、税抜き",
+          "features": [
+            "ビジネス向けウェブサイト",
+            "スケーラブルなウェブスペース",
+            "cPanel コントロールパネル",
+            "ワンクリックアプリインストーラー",
+            "無料SSL証明書",
+            "24時間365日テクニカルサポート"
           ],
           "isBestValue": false
         },
         {
-          "title": "プロ",
-          "buttonName": "プロを取得",
-          "link": "#",
-          "monthlyPrice": 59,
-          "yearlyPrice": 590,
-          "discountYear": 15,
-          "discountMonth": 15,
-          "specialTextMonth": "更新 £60/月",
-          "specialTextYear": "更新 £600/年",
-          "featureSections": [
-            {
-              "title": "一般機能",
-              "features": [
-                "無制限ウェブサイト",
-                "20 GB ウェブスペース",
-                "月間約100,000ビジット",
-                "無制限トラフィック"
-              ]
-            },
-            {
-              "title": "限定機能",
-              "features": [
-                "WordPress自動インストール",
-                "無料自動移行",
-                "完全管理更新",
-                "スピード最適化WPプラグイン",
-                "WordPressステージング"
-              ]
-            },
-            {
-              "title": "ホスティング機能",
-              "features": [
-                "無料SSL、メール",
-                "無制限データベース",
-                "毎日バックアップ",
-                "強化セキュリティ",
-                "オンデマンドバックアップ"
-              ]
-            }
+          "title": "ロンドンサーバー",
+          "buttonName": "プランを見る",
+          "link": "/london-server-hosting",
+          "price": 11.58,
+          "period": "月",
+          "specialText": "1年間契約、税抜き",
+          "features": [
+            "ワンクリックインストーラー",
+            "cPanel アカウント",
+            "ロンドンロケーション",
+            "開発者向け",
+            "稼働時間保証",
+            "無料ドメイン名",
+            "Lite Speed サーバー"
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "VPSホスティング",
+          "buttonName": "プランを見る",
+          "link": "https://portal.seekahost.co.uk/index.php/store/vps-server-hosting",
+          "price": 8.58,
+          "period": "月",
+          "specialText": "3年間契約、税抜き",
+          "features": [
+            "スマートホスティング",
+            "開発者向け",
+            "稼働時間保証",
+            "高速サーバー",
+            "保証されたリソース",
+            "オペレーティングシステム",
+            "専用IP"
           ],
           "isBestValue": true
         },
         {
-          "title": "エンタープライズ",
-          "buttonName": "セールスに相談",
-          "link": "/personalized-hosting",
-          "monthlyPrice": 119,
-          "yearlyPrice": 1190,
-          "discountYear": 0,
-          "discountMonth": 0,
-          "specialTextMonth": "更新 £120/月",
-          "specialTextYear": "更新 £1200/年",
-          "featureSections": [
-            {
-              "title": "一般機能",
-              "features": [
-                "無制限ウェブサイト",
-                "40 GB ウェブスペース",
-                "月間約400,000ビジット",
-                "無制限トラフィック"
-              ]
-            },
-            {
-              "title": "限定機能",
-              "features": [
-                "WordPress自動インストール",
-                "無料自動移行",
-                "完全管理更新",
-                "スピード最適化WPプラグイン",
-                "WordPressステージング",
-                "PHP 30%高速化"
-              ]
-            },
-            {
-              "title": "ホスティング機能",
-              "features": [
-                "無料SSL、メール",
-                "無制限データベース",
-                "毎日バックアップ",
-                "強化セキュリティ",
-                "オンデマンドバックアップ",
-                "無料プライベートDNS"
-              ]
-            }
+          "title": "専用サーバー",
+          "buttonName": "プランを見る",
+          "link": "/dedicated-servers",
+          "price": 199,
+          "period": "月",
+          "specialText": "税抜き",
+          "features": [
+            "専用リソース",
+            "高速サーバー",
+            "即時プロビジョニング",
+            "開発者向け",
+            "稼働時間保証",
+            "Windows/Linux サーバー",
+            "無料SSL証明書"
           ],
           "isBestValue": false
         }

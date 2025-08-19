@@ -145,137 +145,77 @@
     },
     "PackagePrices": {
       "title1": "Preispläne",
-      "title2": "Beste Pläne & Günstigste Preise bei SeekaHost",
-      "toggleLeft": "Monatlich",
-      "toggleRight": "Jährlich",
-      "buttonText": "Pakete vergleichen",
+      "title2": "Beste Pläne & Günstigste Preise mit SeekaHost",
+      "buttonText": "Pakete Vergleichen",
       "homePkgPrices": [
         {
-          "title": "Plus",
-          "buttonName": "Plus erhalten",
-          "link": "#",
-          "monthlyPrice": 29,
-          "yearlyPrice": 290,
-          "discountYear": 0,
-          "discountMonth": 10,
-          "specialTextMonth": "30 Tage kostenlose Testversion",
-          "specialTextYear": "Verlängerung: £300/Jahr",
-          "featureSections": [
-            {
-              "title": "Allgemeine Funktionen",
-              "features": [
-                "1 Website",
-                "10 GB Webspace",
-                "~10.000 Besuche monatlich",
-                "Unbegrenzter Traffic"
-              ]
-            },
-            {
-              "title": "Exklusive Funktionen",
-              "features": [
-                "WordPress-Auto-Install",
-                "Kostenlose automatisierte Migrationen",
-                "Vollständig verwaltete Updates",
-                "Speed Optimizer WP-Plugin"
-              ]
-            },
-            {
-              "title": "Hosting-Funktionen",
-              "features": [
-                "Kostenloses SSL, E-Mail",
-                "Unbegrenzte Datenbanken",
-                "Tägliches Backup",
-                "Erweiterte Sicherheit"
-              ]
-            }
+          "title": "Webhosting",
+          "buttonName": "Pakete Ansehen",
+          "link": "/wordpress-hosting",
+          "price": 9.99,
+          "period": "Monat",
+          "specialText": "bei 3 Jahren zzgl. MwSt.",
+          "features": [
+            "Für Geschäftswebseiten",
+            "Skalierbarer Webspeicher",
+            "cPanel Steuerungspanel",
+            "Ein-Klick App-Installer",
+            "Kostenloses SSL-Zertifikat",
+            "24/7 Technischer Support"
           ],
           "isBestValue": false
         },
         {
-          "title": "Pro",
-          "buttonName": "Pro erhalten",
-          "link": "#",
-          "monthlyPrice": 59,
-          "yearlyPrice": 590,
-          "discountYear": 15,
-          "discountMonth": 15,
-          "specialTextMonth": "Verlängerung: £60/Monat",
-          "specialTextYear": "Verlängerung: £600/Jahr",
-          "featureSections": [
-            {
-              "title": "Allgemeine Funktionen",
-              "features": [
-                "Unbegrenzte Websites",
-                "20 GB Webspace",
-                "~100.000 Besuche monatlich",
-                "Unbegrenzter Traffic"
-              ]
-            },
-            {
-              "title": "Exklusive Funktionen",
-              "features": [
-                "WordPress-Auto-Install",
-                "Kostenlose automatisierte Migrationen",
-                "Vollständig verwaltete Updates",
-                "Speed Optimizer WP-Plugin",
-                "WordPress-Staging"
-              ]
-            },
-            {
-              "title": "Hosting-Funktionen",
-              "features": [
-                "Kostenloses SSL, E-Mail",
-                "Unbegrenzte Datenbanken",
-                "Tägliches Backup",
-                "Erweiterte Sicherheit",
-                "Backup-Kopien auf Abruf"
-              ]
-            }
+          "title": "London Server",
+          "buttonName": "Pakete Ansehen",
+          "link": "/london-server-hosting",
+          "price": 11.58,
+          "period": "Monat",
+          "specialText": "bei 1 Jahr zzgl. MwSt.",
+          "features": [
+            "Ein-Klick Installer",
+            "cPanel Konto",
+            "Standort London",
+            "Entwicklerfreundlich",
+            "Garantierte Verfügbarkeit",
+            "Kostenloser Domainname",
+            "Lite Speed Server"
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "VPS Hosting",
+          "buttonName": "Pakete Ansehen",
+          "link": "https://portal.seekahost.co.uk/index.php/store/vps-server-hosting",
+          "price": 8.58,
+          "period": "Monat",
+          "specialText": "bei 3 Jahren zzgl. MwSt.",
+          "features": [
+            "Intelligentes Hosting",
+            "Entwicklerfreundlich",
+            "Garantierte Verfügbarkeit",
+            "Hochgeschwindigkeitsserver",
+            "Garantierte Ressourcen",
+            "Betriebssysteme",
+            "Dedizierte IP"
           ],
           "isBestValue": true
         },
         {
-          "title": "Enterprise",
-          "buttonName": "Verkauf kontaktieren",
-          "link": "/personalized-hosting",
-          "monthlyPrice": 119,
-          "yearlyPrice": 1190,
-          "discountYear": 0,
-          "discountMonth": 0,
-          "specialTextMonth": "Verlängerung: £120/Monat",
-          "specialTextYear": "Verlängerung: £1200/Jahr",
-          "featureSections": [
-            {
-              "title": "Allgemeine Funktionen",
-              "features": [
-                "Unbegrenzte Websites",
-                "40 GB Webspace",
-                "~400.000 Besuche monatlich",
-                "Unbegrenzter Traffic"
-              ]
-            },
-            {
-              "title": "Exklusive Funktionen",
-              "features": [
-                "WordPress-Auto-Install",
-                "Kostenlose automatisierte Migrationen",
-                "Vollständig verwaltete Updates",
-                "Speed Optimizer WP-Plugin",
-                "WordPress-Staging",
-                "30% schnelleres PHP"
-              ]
-            },
-            {
-              "title": "Hosting-Funktionen",
-              "features": [
-                "Kostenloses SSL, E-Mail",
-                "Unbegrenzte Datenbanken",
-                "Tägliches Backup",
-                "Erweiterte Sicherheit",
-                "Backup-Kopien auf Abruf",
-                "Kostenloses privates DNS"
-              ]
-            }
+          "title": "Dedizierte Server",
+          "buttonName": "Pakete Ansehen",
+          "link": "/dedicated-servers",
+          "price": 199,
+          "period": "Monat",
+          "specialText": "zzgl. MwSt.",
+          "features": [
+            "Dedizierte Ressourcen",
+            "Hochgeschwindigkeitsserver",
+            "Sofortige Bereitstellung",
+            "Entwicklerfreundlich",
+            "Garantierte Verfügbarkeit",
+            "Windows/Linux Server",
+            "Kostenloses SSL-Zertifikat"
           ],
           "isBestValue": false
         }

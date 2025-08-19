@@ -144,138 +144,78 @@
       ]
     },
     "PackagePrices": {
-      "title1": "价格套餐",
-      "title2": "SeekaHost 提供最优惠的价格方案",
-      "toggleLeft": "月度",
-      "toggleRight": "年度",
+      "title1": "价格方案",
+      "title2": "SeekaHost 最佳方案与最便宜价格",
       "buttonText": "比较套餐",
       "homePkgPrices": [
         {
-          "title": "增强版",
-          "buttonName": "获取增强版",
-          "link": "#",
-          "monthlyPrice": 29,
-          "yearlyPrice": 290,
-          "discountYear": 0,
-          "discountMonth": 10,
-          "specialTextMonth": "30 天免费试用",
-          "specialTextYear": "续费 £300/年",
-          "featureSections": [
-            {
-              "title": "基础功能",
-              "features": [
-                "1 个网站",
-                "10 GB 网页空间",
-                "每月约 10,000 次访问",
-                "不限流量"
-              ]
-            },
-            {
-              "title": "专属功能",
-              "features": [
-                "WordPress 自动安装",
-                "免费自动迁移",
-                "全托管更新",
-                "WordPress 速度优化插件"
-              ]
-            },
-            {
-              "title": "托管功能",
-              "features": [
-                "免费 SSL 和邮箱",
-                "无限数据库",
-                "每日备份",
-                "增强安全性"
-              ]
-            }
+          "title": "虚拟主机",
+          "buttonName": "查看套餐",
+          "link": "/wordpress-hosting",
+          "price": 9.99,
+          "period": "月",
+          "specialText": "3 年计划，不含增值税",
+          "features": [
+            "适用于企业网站",
+            "可扩展的存储空间",
+            "cPanel 控制面板",
+            "一键应用安装器",
+            "免费 SSL 证书",
+            "24/7 技术支持"
           ],
           "isBestValue": false
         },
         {
-          "title": "专业版",
-          "buttonName": "获取专业版",
-          "link": "#",
-          "monthlyPrice": 59,
-          "yearlyPrice": 590,
-          "discountYear": 15,
-          "discountMonth": 15,
-          "specialTextMonth": "续费 £60/月",
-          "specialTextYear": "续费 £600/年",
-          "featureSections": [
-            {
-              "title": "基础功能",
-              "features": [
-                "无限网站",
-                "20 GB 网页空间",
-                "每月约 100,000 次访问",
-                "不限流量"
-              ]
-            },
-            {
-              "title": "专属功能",
-              "features": [
-                "WordPress 自动安装",
-                "免费自动迁移",
-                "全托管更新",
-                "WordPress 速度优化插件",
-                "WordPress 测试环境"
-              ]
-            },
-            {
-              "title": "托管功能",
-              "features": [
-                "免费 SSL 和邮箱",
-                "无限数据库",
-                "每日备份",
-                "增强安全性",
-                "按需备份副本"
-              ]
-            }
+          "title": "伦敦服务器",
+          "buttonName": "查看套餐",
+          "link": "/london-server-hosting",
+          "price": 11.58,
+          "period": "月",
+          "specialText": "1 年计划，不含增值税",
+          "features": [
+            "一键安装器",
+            "cPanel 帐户",
+            "伦敦机房",
+            "开发者友好",
+            "保证正常运行时间",
+            "免费域名",
+            "Lite Speed 服务器"
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "VPS 主机",
+          "buttonName": "查看套餐",
+          "link": "https://portal.seekahost.co.uk/index.php/store/vps-server-hosting",
+          "price": 8.58,
+          "period": "月",
+          "specialText": "3 年计划，不含增值税",
+          "features": [
+            "智能托管",
+            "开发者友好",
+            "保证正常运行时间",
+            "高速服务器",
+            "保证资源",
+            "操作系统选择",
+            "独立 IP"
           ],
           "isBestValue": true
         },
         {
-          "title": "企业版",
-          "buttonName": "联系销售",
-          "link": "/personalized-hosting",
-          "monthlyPrice": 119,
-          "yearlyPrice": 1190,
-          "discountYear": 0,
-          "discountMonth": 0,
-          "specialTextMonth": "续费 £120/月",
-          "specialTextYear": "续费 £1200/年",
-          "featureSections": [
-            {
-              "title": "基础功能",
-              "features": [
-                "无限网站",
-                "40 GB 网页空间",
-                "每月约 400,000 次访问",
-                "不限流量"
-              ]
-            },
-            {
-              "title": "专属功能",
-              "features": [
-                "WordPress 自动安装",
-                "免费自动迁移",
-                "全托管更新",
-                "WordPress 速度优化插件",
-                "WordPress 测试环境",
-                "PHP 速度快 30%"
-              ]
-            },
-            {
-              "title": "托管功能",
-              "features": [
-                "免费 SSL 和邮箱",
-                "无限数据库",
-                "每日备份",
-                "增强安全性",
-                "按需备份副本",
-                "免费私有 DNS"
-              ]
-            }
+          "title": "独立服务器",
+          "buttonName": "查看套餐",
+          "link": "/dedicated-servers",
+          "price": 199,
+          "period": "月",
+          "specialText": "不含增值税",
+          "features": [
+            "独立资源",
+            "高速服务器",
+            "即时配置",
+            "开发者友好",
+            "保证正常运行时间",
+            "Windows/Linux 服务器",
+            "免费 SSL 证书"
           ],
           "isBestValue": false
         }

@@ -71,7 +71,7 @@ export default function Hero() {
 
                     <div className="mt-4">
                         <div className="flex items-baseline">
-                            <span className="text-xl md:text-5xl font-bold">£1.99</span>
+                            <span className="text-xl md:text-5xl font-bold">£1.49</span>
                             <span className="text-sm md:text-xl ml-1">/month</span>
                         </div>
                         <div className="text-sm">with a 1-year term</div>

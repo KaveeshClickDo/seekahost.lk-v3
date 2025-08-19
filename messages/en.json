@@ -146,136 +146,76 @@
     "PackagePrices": {
       "title1": "Price Plans",
       "title2": "Best Plans & Cheapest Prices With SeekaHost",
-      "toggleLeft": "Monthly",
-      "toggleRight": "Yearly",
       "buttonText": "Compare Packages",
       "homePkgPrices": [
         {
-          "title": "Plus",
-          "buttonName": "Get Plus",
-          "link": "#",
-          "monthlyPrice": 29,
-          "yearlyPrice": 290,
-          "discountYear": 0,
-          "discountMonth": 10,
-          "specialTextMonth": "30 days of Free Trial",
-          "specialTextYear": "Renews for £300/yr",
-          "featureSections": [
-            {
-              "title": "General Features",
-              "features": [
-                "1 Website",
-                "10 GB Web Space",
-                "~10,000 Visits Monthly",
-                "Unmetered Traffic"
-              ]
-            },
-            {
-              "title": "Exclusive Features",
-              "features": [
-                "WordPress Auto-Install",
-                "Free Automated Migrations",
-                "Fully Managed Updates",
-                "Speed Optimizer WP Plugin"
-              ]
-            },
-            {
-              "title": "Hosting Features",
-              "features": [
-                "Free SSL, Email",
-                "Unlimited Database",
-                "Daily Backup",
-                "Enhanced Security"
-              ]
-            }
+          "title": "Web Hosting",
+          "buttonName": "View Packages",
+          "link": "/wordpress-hosting",
+          "price": 9.99,
+          "period": "mon",
+          "specialText": "on 3 years excl. VAT",
+          "features": [
+            "For Business Websites",
+            "Scalable Web Space",
+            "cPanel Control Panel",
+            "One-Click App Installer",
+            "Free SSL Certificate",
+            "24/7 Tech Support"
           ],
           "isBestValue": false
         },
         {
-          "title": "Pro",
-          "buttonName": "Get Pro",
-          "link": "#",
-          "monthlyPrice": 59,
-          "yearlyPrice": 590,
-          "discountYear": 15,
-          "discountMonth": 15,
-          "specialTextMonth": "Renews at £60/mo",
-          "specialTextYear": "Renews for £600/yr",
-          "featureSections": [
-            {
-              "title": "General Features",
-              "features": [
-                "Unlimited Websites",
-                "20 GB Web Space",
-                "~100,000 Visits Monthly",
-                "Unmetered Traffic"
-              ]
-            },
-            {
-              "title": "Exclusive Features",
-              "features": [
-                "WordPress Auto-Install",
-                "Free Automated Migrations",
-                "Fully Managed Updates",
-                "Speed Optimizer WP Plugin",
-                "WordPress Staging"
-              ]
-            },
-            {
-              "title": "Hosting Features",
-              "features": [
-                "Free SSL, Email",
-                "Unlimited Database",
-                "Daily Backup",
-                "Enhanced Security",
-                "On-Demand Backup Copies"
-              ]
-            }
+          "title": "London Servers",
+          "buttonName": "View Packages",
+          "link": "/london-server-hosting",
+          "price": 11.58,
+          "period": "mon",
+          "specialText": "on 1 year excl. VAT",
+          "features": [
+            "One-Click Installer",
+            "cPanel Account",
+            "London Location",
+            "Developer Friendly",
+            "Guaranteed Uptime",
+            "Free Domain Name",
+            "Lite Speed Server"
+          ],
+          "isBestValue": false
+        },
+        {
+          "title": "VPS Hosting",
+          "buttonName": "View Packages",
+          "link": "https://portal.seekahost.co.uk/index.php/store/vps-server-hosting",
+          "price": 8.58,
+          "period": "mon",
+          "specialText": "on 3 years excl. VAT",
+          "features": [
+            "Smart Hosting",
+            "Developer Friendly",
+            "Guaranteed Uptime",
+            "High Speed Servers",
+            "Guaranteed Resources",
+            "Operating Systems",
+            "Dedicated IP"
           ],
           "isBestValue": true
         },
         {
-          "title": "Enterprise",
-          "buttonName": "Talk to Sales",
-          "link": "/personalized-hosting",
-          "monthlyPrice": 119,
-          "yearlyPrice": 1190,
-          "discountYear": 0,
-          "discountMonth": 0,
-          "specialTextMonth": "Renews at £120/mo",
-          "specialTextYear": "Renews for £1200/yr",
-          "featureSections": [
-            {
-              "title": "General Features",
-              "features": [
-                "Unlimited Websites",
-                "40 GB Web Space",
-                "~400,000 Visits Monthly",
-                "Unmetered Traffic"
-              ]
-            },
-            {
-              "title": "Exclusive Features",
-              "features": [
-                "WordPress Auto-Install",
-                "Free Automated Migrations",
-                "Fully Managed Updates",
-                "Speed Optimizer WP Plugin",
-                "WordPress Staging",
-                "30% Faster PHP"
-              ]
-            },
-            {
-              "title": "Hosting Features",
-              "features": [
-                "Free SSL, Email",
-                "Unlimited Database",
-                "Daily Backup",
-                "Enhanced Security",
-                "On-Demand Backup Copies",
-                "Free Private DNS"
-              ]
-            }
+          "title": "Dedicated Servers",
+          "buttonName": "View Packages",
+          "link": "/dedicated-servers",
+          "price": 199,
+          "period": "mon",
+          "specialText": "excl. VAT",
+          "features": [
+            "Dedicated Resources",
+            "High Speed Servers",
+            "Instant Provisioning",
+            "Developer Friendly",
+            "Guaranteed Uptime",
+            "Windows/Linux Servers",
+            "Free SSL Certificate"
           ],
           "isBestValue": false
         }
@@ -815,5 +755,5 @@
       "paragraph3": "SeekaHost have created the best digital marketing course online free access for you, so get online and start building your successful business online.",
       "imageAlt": "Order now Image"
     }
-  } 
+  }
 }

@@ -12,7 +12,7 @@ import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import PackagesPrices from "@/components//home/PackagePrices";
+import PackagesPrices from "@/components//wordpress-hosting/PackagePrices";
 import Header from "@/components/shared/Header";
 
 export const metadata = {
