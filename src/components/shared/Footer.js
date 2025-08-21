@@ -115,8 +115,8 @@ export default function Footer() {
                 <li><Link href="/register-domain" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.registerDomain')}</Link></li>
                 <li><Link href="/domain-pricing" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.domainPricing')}</Link></li>
                 <li><Link href="/domain-transfer" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.domainTransfer')}</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.premiumDomain')}</Link></li>
-                <li><Link href="#" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.sslCertificates')}</Link></li>
+                <li><Link href="/category/domain-registration" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.premiumDomain')}</Link></li>
+                <li><Link href="/free-ssl-certificates-lets-encrypt" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.sslCertificates')}</Link></li>
               </ul>
 
               <h3 className="md:text-lg font-medium mb-5 mt-10">{t('WordPress.title')}</h3>
@@ -156,7 +156,7 @@ export default function Footer() {
               {t('Copyright.busunessAddress')} <br />
               <Link href="/privacy-policy" className="hover:text-white">{t('Copyright.links.privacyPolicy')}</Link>
               <span className="mx-2">|</span>
-              <Link href="#" className="hover:text-white">{t('Copyright.links.termsCondition')}</Link>
+              <Link href="terms-conditions" className="hover:text-white">{t('Copyright.links.termsCondition')}</Link>
               <span className="mx-2">|</span>
               <Link href="/refund-policy" className="hover:text-white">{t('Copyright.links.refundPolicy')}</Link>
             </div>
