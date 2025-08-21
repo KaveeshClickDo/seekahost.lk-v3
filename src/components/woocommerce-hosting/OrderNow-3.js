@@ -15,7 +15,7 @@ export default function OrderNow3() {
                     <p className="text-[#1D216A] mb-4">
                         As the leading PBN host for WordPress sites in the world, you get unbeatable prices via the blog hosting control penal.
                     </p>
-                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
+                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now
                     </button>
                 </div>

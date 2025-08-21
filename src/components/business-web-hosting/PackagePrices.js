@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import Link from 'next/link';
-import { londonServerPackageData } from '@/data/londonServerPackageData';
+import { businessPackageData } from '@/data/businessPackageData';
 
 // Custom Dropdown Component
 const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) => {
@@ -61,10 +61,10 @@ const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) =
 
                 {/* Dropdown Arrow */}
                 <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
-                    <svg 
-                        className={`w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-all duration-200 ${isOpen ? 'rotate-180 text-[#2072CC]' : ''}`} 
-                        fill="none" 
-                        stroke="currentColor" 
+                    <svg
+                        className={`w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-all duration-200 ${isOpen ? 'rotate-180 text-[#2072CC]' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
                         viewBox="0 0 24 24"
                     >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -76,7 +76,7 @@ const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) =
                     <>
                         {/* Backdrop overlay for mobile */}
                         <div className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden" onClick={() => setIsOpen(false)} />
-                        
+
                         <div className="absolute z-50 w-full mt-2 bg-white border-2 border-gray-300 rounded-xl shadow-xl max-h-64 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200">
                             {/* Custom scrollbar container */}
                             <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
@@ -84,15 +84,12 @@ const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) =
                                     <div
                                         key={option.value}
                                         onClick={() => handleSelect(option.value)}
-                                        className={`px-4 py-3 cursor-pointer text-gray-700 hover:bg-gradient-to-r hover:from-[#2072CC]/5 hover:to-[#2072CC]/10 hover:text-[#2072CC] transition-all duration-150 relative group/item ${
-                                            option.value === currentPeriod 
-                                                ? 'bg-[#2072CC]/10 text-[#2072CC] font-semibold border-l-4 border-[#2072CC]' 
-                                                : ''
-                                        } ${
-                                            index === 0 ? 'rounded-t-lg' : ''
-                                        } ${
-                                            index === periodOptions.length - 1 ? 'rounded-b-lg' : ''
-                                        }`}
+                                        className={`px-4 py-3 cursor-pointer text-gray-700 hover:bg-gradient-to-r hover:from-[#2072CC]/5 hover:to-[#2072CC]/10 hover:text-[#2072CC] transition-all duration-150 relative group/item ${option.value === currentPeriod
+                                            ? 'bg-[#2072CC]/10 text-[#2072CC] font-semibold border-l-4 border-[#2072CC]'
+                                            : ''
+                                            } ${index === 0 ? 'rounded-t-lg' : ''
+                                            } ${index === periodOptions.length - 1 ? 'rounded-b-lg' : ''
+                                            }`}
                                         role="option"
                                         aria-selected={option.value === currentPeriod}
                                     >
@@ -104,7 +101,7 @@ const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) =
                                                 </svg>
                                             )}
                                         </div>
-                                        
+
                                         {/* Hover effect bar */}
                                         <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#2072CC] transform scale-y-0 group-hover/item:scale-y-100 transition-transform duration-200 origin-center rounded-r-full" />
                                     </div>
@@ -119,9 +116,9 @@ const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) =
 };
 
 export default function PackagesPrices() {
-    const pricing = londonServerPackageData[0].homePkgPrices;
-    const packageInfo = londonServerPackageData[0];
-    
+    const pricing = businessPackageData[0].homePkgPrices;
+    const packageInfo = businessPackageData[0];
+
     const [isClient, setIsClient] = useState(false);
     const [selectedPeriods, setSelectedPeriods] = useState({});
 
@@ -168,7 +165,7 @@ export default function PackagesPrices() {
     };
 
     const getCurrentPeriod = (planIndex) => {
-        return selectedPeriods[planIndex] || '1year';
+        return selectedPeriods[planIndex] || '3years';
     };
 
     const getCurrentPricing = (plan, planIndex) => {
@@ -178,15 +175,16 @@ export default function PackagesPrices() {
 
     const getCurrentLink = (plan, planIndex) => {
         const period = getCurrentPeriod(planIndex);
-        const pricing = plan.pricing[period];        
+        const pricing = plan.pricing[period];
         return `${plan.baseLink}?billingcycle=${pricing.billingCycle}`;
     };
 
     const periodOptions = [
         { value: '1month', label: '1 Month' },
-        { value: '3months', label: '3 Months' },
         { value: '6months', label: '6 Months' },
-        { value: '1year', label: '1 Year' }
+        { value: '1year', label: '1 Year' },
+        { value: '2years', label: '2 Years' },
+        { value: '3years', label: '3 Years' }
     ];
 
     return (
@@ -212,7 +210,7 @@ export default function PackagesPrices() {
                             {pricing.map((plan, idx) => {
                                 const currentPricing = getCurrentPricing(plan, idx);
                                 const currentPeriod = getCurrentPeriod(idx);
-                                
+
                                 return (
                                     <div key={idx} className="p-4">
                                         <div className="relative border rounded-2xl p-6 h-full transition-all duration-500 shadow-md hover:shadow-xl bg-white border-gray-200 hover:bg-[#2072CC] hover:border-none group transform hover:scale-[1.02] hover:-translate-y-1 overflow-hidden">
@@ -235,9 +233,9 @@ export default function PackagesPrices() {
                                                 <div className="flex-shrink-0 pb-2 transform group-hover:scale-110 transition-transform duration-500">
                                                     <Image src="/images/shared/package-price-icon.svg" width={75} height={75} alt="Package Icon" />
                                                 </div>
-                                                
+
                                                 <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
-                                                
+
                                                 {/* Custom Dropdown for Package Period */}
                                                 <CustomDropdown
                                                     currentPeriod={currentPeriod}
@@ -257,7 +255,7 @@ export default function PackagesPrices() {
                                                     </span>
                                                 </div>
                                                 <p className="mb-4 text-gray-500 group-hover:text-white transition-colors duration-400 text-left">{currentPricing.specialText}</p>
-                                                
+
                                                 <Link href={getCurrentLink(plan, idx)} className="w-full">
                                                     <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-[#2072CC] group-hover:bg-white group-hover:text-[#2072CC] group-hover:shadow-lg group-hover:scale-105 relative overflow-hidden">
                                                         {/* Button shimmer effect */}

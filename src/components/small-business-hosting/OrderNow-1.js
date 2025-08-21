@@ -28,7 +28,7 @@ export default function OrderNow1() {
                     <p className="text-[#1D216A] mb-4">
                         At SeekAhost, we keep it clear and honest. You’ll know the exact cost before you transfer, and most domain transfers even include a free 1-year extension.
                     </p>
-                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
+                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now
                     </button>
 

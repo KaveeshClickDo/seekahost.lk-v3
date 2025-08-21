@@ -14,7 +14,7 @@ export default function OrderNow1() {
                     <p className="text-[#1D216A] mb-4">
                     Boost your site&apos;s speed with code minification, data center rerouting, and automatic image optimization. SeekaHost&apos;s free, unlimited CDN enhances performance, increasing your website&apos;s speed score by up to 40%.
                     </p>
-                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
+                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now
                     </button>
 

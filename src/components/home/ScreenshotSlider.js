@@ -116,7 +116,7 @@ export default function ScreenshotSlider() {
                             
                             {/* Mobile-first button layout */}
                             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
-                                <button className="w-full sm:w-auto bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-700 active:bg-blue-800 transition-colors font-bold">
+                                <button className="w-full sm:w-auto bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full active:bg-blue-800 transition-colors font-bold">
                                     {t('buttons.getStarted')}
                                 </button>
                                 <Link

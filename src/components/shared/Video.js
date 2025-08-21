@@ -84,7 +84,7 @@ export default function Video() {
         <div className="text-center">
           <Link
             href="#"
-            className="inline-block bg-gradient-to-r from-[#0A488B] via-[#083D78] to-[#063265] hover:bg-gradient-to-r hover:from-[#063265] hover:via-[#083D78] hover:to-[#0A488B] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 text-white border border-[#0066CC] px-15 py-2 rounded-full transition-all duration-300 cursor-pointer font-bold md:mt-8"
+            className="inline-block bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-15 py-2 rounded-full transition-all cursor-pointer font-bold md:mt-8"
           >
             {t('button')}
           </Link>

@@ -7,7 +7,7 @@ import PackagesPrices from "@/components/london-server-hosting/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
-import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
 import Solution from "@/components/shared/Solution";

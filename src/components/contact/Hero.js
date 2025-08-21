@@ -13,10 +13,10 @@ export default function Hero() {
                         Receive answers to your questions within minutes, any time of day or night, 365 days a year, from our Customer Success Team via live chat. Our experience shows this method is significantly more effective and efficient than phone support.
                     </p>
                     <div className="flex flex-col space-y-4 max-w-xs">
-                        <button className="bg-[#0066CC] text-white font-bold border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer">
+                        <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white font-bold border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer">
                             Get Live Chat Support
                         </button>
-                        <button className="bg-white text-[#0066CC] font-bold border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 hover:text-white transition-colors cursor-pointer">
+                        <button className="bg-white text-[#0066CC] font-bold border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0A488A] hover:text-white transition-colors cursor-pointer">
                             Talk With our Sales Team
                         </button>
                     </div>

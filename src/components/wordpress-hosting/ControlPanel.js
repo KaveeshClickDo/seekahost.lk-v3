@@ -15,7 +15,7 @@ export default function ControlPanel() {
 
                     With high resource limits, caching tools, and scalable infrastructure, you’ll never have to worry about slowdowns—even during peak hours or flash sales.
                 </p>
-                <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-7">
+                <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-7">
                     Get Started
                 </button>
             </div>

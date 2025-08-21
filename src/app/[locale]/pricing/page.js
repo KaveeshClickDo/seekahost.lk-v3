@@ -6,7 +6,7 @@ import Header from "@/components/shared/Header";
 import Navbar2 from "@/components/shared/Navbar2";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
-import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 
 export const metadata = {
     title: "Pricing"

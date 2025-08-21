@@ -2,7 +2,7 @@ import FAQs from "@/components/shared/FAQ";
 import Footer from "@/components/shared/Footer";
 import Reviews from "@/components/shared/Review";
 import Hero from "@/components/cloud-servers/Hero";
-import PeopleCards from "@/components/wordpress-hosting/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PackagesPrices from "@/components/dedicated-servers/PackagePrice";
 import Header from "@/components/shared/Header";

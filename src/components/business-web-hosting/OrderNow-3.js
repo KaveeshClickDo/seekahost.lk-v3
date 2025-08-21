@@ -15,7 +15,7 @@ export default function OrderNow3() {
                     <p className="text-[#1D216A] mb-4">
                         We have several hosting options that will suit your business website hosting requirements and you can see on our listed packages and pick. With that being said, if you are a UK based business and that&apos;s planning to thrive in Ceylon Island and cater for the internal markets, you can ask about hosting international server locations. We are here to support your business to grow online with the best hosting services.
                     </p>
-                    <button className="bg-[#0066CC] text-white border border-[#0066CC] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold md:mt-8">
+                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
                         Order Now
                     </button>
                 </div>

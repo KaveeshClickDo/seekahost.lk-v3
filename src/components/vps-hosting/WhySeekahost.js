@@ -18,7 +18,7 @@ export default function WhySeekahost() {
           </p>
 
           <div className="flex items-center gap-6">
-            <button className="bg-[#0A488B] text-white border border-[#0A488B] px-6 py-2 rounded-full hover:bg-blue-900 transition-colors cursor-pointer font-bold">
+            <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold">
               Get Started
             </button>
             <button className="flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-900 transition-colors">

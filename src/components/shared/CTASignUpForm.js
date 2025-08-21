@@ -39,7 +39,7 @@ export default function CTASignUpForm() {
             />
             <button 
                 onClick={handleSignup}
-                className="bg-[#0A488A] text-white font-bold px-4 lg:px-6 py-2 rounded-full hover:bg-blue-600 transition"
+                className="bg-[#0066CC] hover:bg-[#0A488A] text-white font-bold px-4 lg:px-6 py-2 rounded-full transition"
             >
                 <span className="max-[400px]:hidden">{t('buttonName1')}</span>
                 <span className="hidden max-[400px]:inline">{t('buttonName2')}</span>

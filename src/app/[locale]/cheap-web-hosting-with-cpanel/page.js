@@ -10,7 +10,7 @@ import PackagesPrices from "@/components/home/PackagePrices";
 import Reviews from "@/components/shared/Review";
 import Topbar from "@/components/shared/Topbar";
 import ControlPanel from "@/components/cheap-web-hosting-with-cpanel/ControlPanel";
-import PeopleCards from "@/components/home/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 import ScreenshotSlider from "@/components/cheap-web-hosting-with-cpanel/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";

@@ -11,7 +11,7 @@ import Navbar2 from "@/components/shared/Navbar2";
 import BacktoTop from "@/components/shared/BacktoTop";
 import CTA from "@/components/shared/CTA";
 import Header from "@/components/shared/Header";
-import PeopleCards from "@/components/home/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 import PopularDomains from "@/components/register-domain/PopularDomains";
 
 export const metadata = {

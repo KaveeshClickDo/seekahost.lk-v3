@@ -2,9 +2,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image"
 import PopUpVideo from "../shared/PopUpVideo";
-import { people } from "@/data/peopleCardData";
+import { useTranslations } from 'next-intl';
 
 export default function PeopleCards() {
+    const t = useTranslations('HomePage');
+    const people = t.raw('PeopleCards');
+    
     const [currentSlide, setCurrentSlide] = useState(0);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
@@ -12,11 +15,11 @@ export default function PeopleCards() {
         if (!isVideoPlaying) {
             const interval = setInterval(() => {
                 setCurrentSlide((prev) => (prev + 1) % people.length);
-            }, 3000);
+            }, 5000);
 
             return () => clearInterval(interval);
         }
-    }, [isVideoPlaying]);
+    }, [isVideoPlaying, people.length]);
 
     const handleVideoState = (isPlaying) => {
         setIsVideoPlaying(isPlaying);
@@ -25,16 +28,15 @@ export default function PeopleCards() {
     return (
         <section className="relative min-h-[600px]">
             <div className="absolute top-0 left-0 w-full h-full md:h-3/4 bg-[#0A488A]" />
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 h-full">
-                <div className="md:w-1/3 md:mr-15">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 h-full">
+                <div className="w-full max-w-xs md:max-w-none md:w-1/3 md:mr-15 flex justify-center md:justify-start">
                     <div className="w-full relative">
-                        <div className="w-1/2 md:w-full relative min-w-50">
+                        <div className="w-full relative">
                             {people.map((person, index) => (
                                 <div
                                     key={index}
-                                    className={`${index === currentSlide ? "opacity-100" : "opacity-0"
-                                        } absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out`}
-                                    style={{ display: index === currentSlide ? "block" : "none" }}
+                                    className={`${index === currentSlide ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                                        } absolute top-0 left-0 w-full h-full transition-all duration-700 ease-in-out ${index === currentSlide ? '' : 'pointer-events-none'}`}
                                 >
                                     <div className="relative">
                                         <Image
@@ -45,7 +47,7 @@ export default function PeopleCards() {
                                             className="w-full h-auto rounded-3xl shadow-2xl shadow-black/50 md:ml-4"
                                         />
 
-                                        <div className="absolute top-7/16 left-6/16 md:left-7/16">
+                                        <div className="absolute top-7/16 left-6/16 md:left-7/16 z-40">
                                             <PopUpVideo
                                                 videoId={person.videoUrl}
                                                 onVideoStateChange={handleVideoState}
@@ -68,21 +70,28 @@ export default function PeopleCards() {
                     </div>
                 </div>
 
-                <div className="md:w-2/3 mt-6 md:mt-0 md:mb-20 px-5">
-                    <p className="text-white mb-4 text-xl md:text-4xl">
-                        &apos;&apos;{people[currentSlide].comment}&apos;&apos;
-                    </p>
-                    <hr className="border-t-2 border-gray-300 m-4" />
-                    <p className="mb-2 text-lg md:text-xl text-white font-semibold">{people[currentSlide].name}</p>
-                    <p className="text-white">{people[currentSlide].company}</p>
+                <div className="w-full md:w-2/3 mt-6 md:mt-0 md:mb-20 px-5 text-center md:text-left">
+                    <div className="transition-all duration-700 ease-in-out">
+                        <p className="text-white mb-4 text-xl md:text-4xl transform transition-all duration-700 ease-in-out">
+                            &apos;&apos;{people[currentSlide].comment}&apos;&apos;
+                        </p>
+                    </div>
+                    <hr className="border-t-2 border-gray-300 m-4 transition-all duration-300 ease-in-out" />
+                    <div className="transition-all duration-700 ease-in-out">
+                        <p className="mb-2 text-lg md:text-xl text-white font-semibold transform transition-all duration-700 ease-in-out">
+                            {people[currentSlide].name}
+                        </p>
+                        <p className="text-white transform transition-all duration-700 ease-in-out">
+                            {people[currentSlide].company}
+                        </p>
+                    </div>
 
-
-                    <div className="flex justify-start space-x-2 mt-4">
+                    <div className="flex justify-center md:justify-start space-x-2 mt-4">
                         {people.map((_, index) => (
                             <button
                                 key={index}
                                 onClick={() => setCurrentSlide(index)}
-                                className={`md:w-3.5 md:h-3.5 w-2.5 h-2.5 rounded-full ${index === currentSlide ? "bg-white" : "bg-white opacity-30"
+                                className={`md:w-3.5 md:h-3.5 w-2.5 h-2.5 rounded-full transition-all duration-300 ease-in-out transform hover:scale-110 ${index === currentSlide ? "bg-white" : "bg-white opacity-30"
                                     }`}
                                 aria-label={`Go to slide ${index + 1}`}
                             />

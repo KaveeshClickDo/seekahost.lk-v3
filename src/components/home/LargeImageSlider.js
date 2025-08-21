@@ -4,14 +4,21 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 
-const LargeImageSlider = ({ slides = [] }) => {
+const LargeImageSlider = ({ 
+  slides = [], 
+  autoSlide = true, 
+  autoSlideInterval = 5000, // 5 seconds default
+  pauseOnHover = true 
+}) => {
   const t = useTranslations('HomePage.LargeImageSlider');
   const defaultSlides = t.raw('defaultSlides');
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDragging, setIsDragging] = useState(false)
   const [startX, setStartX] = useState(0)
   const [dragOffset, setDragOffset] = useState(0)
+  const [isHovered, setIsHovered] = useState(false)
   const sliderRef = useRef(null)
+  const autoSlideTimer = useRef(null)
 
   const slidesData = slides.length > 0 ? slides : defaultSlides
 
@@ -23,10 +30,54 @@ const LargeImageSlider = ({ slides = [] }) => {
     setCurrentIndex((prev) => (prev - 1 + slidesData.length) % slidesData.length)
   }, [slidesData.length])
 
+  // Auto-slide functionality
+  const startAutoSlide = useCallback(() => {
+    if (autoSlide && slidesData.length > 1) {
+      autoSlideTimer.current = setInterval(() => {
+        nextSlide()
+      }, autoSlideInterval)
+    }
+  }, [autoSlide, autoSlideInterval, nextSlide, slidesData.length])
+
+  const stopAutoSlide = useCallback(() => {
+    if (autoSlideTimer.current) {
+      clearInterval(autoSlideTimer.current)
+      autoSlideTimer.current = null
+    }
+  }, [])
+
+  const resetAutoSlide = useCallback(() => {
+    stopAutoSlide()
+    startAutoSlide()
+  }, [stopAutoSlide, startAutoSlide])
+
+  // Start auto-slide on mount and restart when dependencies change
+  useEffect(() => {
+    const shouldAutoSlide = autoSlide && !isDragging && (!pauseOnHover || !isHovered)
+    
+    if (shouldAutoSlide) {
+      startAutoSlide()
+    } else {
+      stopAutoSlide()
+    }
+
+    return stopAutoSlide
+  }, [autoSlide, isDragging, isHovered, pauseOnHover, startAutoSlide, stopAutoSlide])
+
+  // Handle mouse enter/leave for pause on hover
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+  }
+
   const handleStart = (clientX) => {
     setIsDragging(true)
     setStartX(clientX)
     setDragOffset(0)
+    stopAutoSlide() // Stop auto-slide when user starts dragging
   }
 
   const handleMove = useCallback((clientX) => {
@@ -49,14 +100,16 @@ const LargeImageSlider = ({ slides = [] }) => {
     }
 
     setDragOffset(0)
-  }, [isDragging, dragOffset, prevSlide, nextSlide])
+    // Reset auto-slide after user interaction
+    setTimeout(() => {
+      resetAutoSlide()
+    }, 100)
+  }, [isDragging, dragOffset, prevSlide, nextSlide, resetAutoSlide])
 
   const handleMouseDown = (e) => {
     e.preventDefault()
     handleStart(e.clientX)
   }
-
-
 
   const handleTouchStart = (e) => {
     handleStart(e.touches[0].clientX)
@@ -69,6 +122,22 @@ const LargeImageSlider = ({ slides = [] }) => {
 
   const handleTouchEnd = () => {
     handleEnd()
+  }
+
+  // Manual navigation with auto-slide reset
+  const handlePrevSlide = () => {
+    prevSlide()
+    resetAutoSlide()
+  }
+
+  const handleNextSlide = () => {
+    nextSlide()
+    resetAutoSlide()
+  }
+
+  const handleIndicatorClick = (index) => {
+    setCurrentIndex(index)
+    resetAutoSlide()
   }
 
   useEffect(() => {
@@ -106,7 +175,11 @@ const LargeImageSlider = ({ slides = [] }) => {
   }
 
   return (
-    <div className="w-full bg-[#0A488B] py-22 px-4 overflow-hidden">
+    <div 
+      className="w-full bg-[#0A488B] py-22 px-4 overflow-hidden"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header Text */}
         <div className="text-center mb-12">
@@ -208,7 +281,7 @@ const LargeImageSlider = ({ slides = [] }) => {
 
           {/* Navigation Buttons */}
           <button
-            onClick={prevSlide}
+            onClick={handlePrevSlide}
             className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors z-10"
             aria-label="Previous slide"
           >
@@ -218,7 +291,7 @@ const LargeImageSlider = ({ slides = [] }) => {
           </button>
 
           <button
-            onClick={nextSlide}
+            onClick={handleNextSlide}
             className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors z-10"
             aria-label="Next slide"
           >
@@ -233,7 +306,7 @@ const LargeImageSlider = ({ slides = [] }) => {
           {slidesData.map((_, index) => (
             <button
               key={index}
-              onClick={() => setCurrentIndex(index)}
+              onClick={() => handleIndicatorClick(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
                 index === currentIndex ? 'bg-white' : 'bg-white/40'
               }`}

@@ -1,15 +1,124 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import Link from 'next/link';
 import { wordPressPackageData } from '@/data/wordPressPackageData';
 
+// Custom Dropdown Component
+const CustomDropdown = ({ currentPeriod, periodOptions, onPeriodChange, idx }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
+
+    // Close dropdown on escape key
+    useEffect(() => {
+        const handleEscape = (event) => {
+            if (event.key === 'Escape') {
+                setIsOpen(false);
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener('keydown', handleEscape);
+        }
+
+        return () => document.removeEventListener('keydown', handleEscape);
+    }, [isOpen]);
+
+    const handleSelect = (value) => {
+        onPeriodChange(idx, value);
+        setIsOpen(false);
+    };
+
+    const selectedOption = periodOptions.find(option => option.value === currentPeriod);
+
+    return (
+        <div className="mb-4 text-left">
+            <div className="relative" ref={dropdownRef}>
+                {/* Dropdown Button */}
+                <button
+                    type="button"
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="w-full bg-white border-2 border-gray-200 rounded-lg px-4 py-3 pr-10 text-gray-700 text-lg font-medium focus:outline-none focus:border-[#2072CC] focus:ring-2 focus:ring-[#2072CC]/20 transition-all duration-300 group-hover:bg-white/90 group-hover:border-white cursor-pointer hover:border-[#2072CC] text-left shadow-sm hover:shadow-md"
+                    aria-haspopup="listbox"
+                    aria-expanded={isOpen}
+                >
+                    {selectedOption?.label}
+                </button>
+
+                {/* Dropdown Arrow */}
+                <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+                    <svg
+                        className={`w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-all duration-200 ${isOpen ? 'rotate-180 text-[#2072CC]' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+
+                {/* Dropdown Options */}
+                {isOpen && (
+                    <>
+                        {/* Backdrop overlay for mobile */}
+                        <div className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden" onClick={() => setIsOpen(false)} />
+
+                        <div className="absolute z-50 w-full mt-2 bg-white border-2 border-gray-300 rounded-xl shadow-xl max-h-64 overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200">
+                            {/* Custom scrollbar container */}
+                            <div className="max-h-64 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                                {periodOptions.map((option, index) => (
+                                    <div
+                                        key={option.value}
+                                        onClick={() => handleSelect(option.value)}
+                                        className={`px-4 py-3 cursor-pointer text-gray-700 hover:bg-gradient-to-r hover:from-[#2072CC]/5 hover:to-[#2072CC]/10 hover:text-[#2072CC] transition-all duration-150 relative group/item ${option.value === currentPeriod
+                                            ? 'bg-[#2072CC]/10 text-[#2072CC] font-semibold border-l-4 border-[#2072CC]'
+                                            : ''
+                                            } ${index === 0 ? 'rounded-t-lg' : ''
+                                            } ${index === periodOptions.length - 1 ? 'rounded-b-lg' : ''
+                                            }`}
+                                        role="option"
+                                        aria-selected={option.value === currentPeriod}
+                                    >
+                                        <div className="flex items-center justify-between">
+                                            <span className="font-medium">{option.label}</span>
+                                            {option.value === currentPeriod && (
+                                                <svg className="w-4 h-4 text-[#2072CC]" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                                                </svg>
+                                            )}
+                                        </div>
+
+                                        {/* Hover effect bar */}
+                                        <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#2072CC] transform scale-y-0 group-hover/item:scale-y-100 transition-transform duration-200 origin-center rounded-r-full" />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </>
+                )}
+            </div>
+        </div>
+    );
+};
+
 export default function PackagesPrices() {
     const pricing = wordPressPackageData[0].homePkgPrices;
     const packageInfo = wordPressPackageData[0];
-    
+
     const [isClient, setIsClient] = useState(false);
     const [selectedPeriods, setSelectedPeriods] = useState({});
 
@@ -56,7 +165,7 @@ export default function PackagesPrices() {
     };
 
     const getCurrentPeriod = (planIndex) => {
-        return selectedPeriods[planIndex] || '1month';
+        return selectedPeriods[planIndex] || '3years';
     };
 
     const getCurrentPricing = (plan, planIndex) => {
@@ -66,7 +175,7 @@ export default function PackagesPrices() {
 
     const getCurrentLink = (plan, planIndex) => {
         const period = getCurrentPeriod(planIndex);
-        const pricing = plan.pricing[period];        
+        const pricing = plan.pricing[period];
         return `${plan.baseLink}?billingcycle=${pricing.billingCycle}`;
     };
 
@@ -101,7 +210,7 @@ export default function PackagesPrices() {
                             {pricing.map((plan, idx) => {
                                 const currentPricing = getCurrentPricing(plan, idx);
                                 const currentPeriod = getCurrentPeriod(idx);
-                                
+
                                 return (
                                     <div key={idx} className="p-4">
                                         <div className="relative border rounded-2xl p-6 h-full transition-all duration-500 shadow-md hover:shadow-xl bg-white border-gray-200 hover:bg-[#2072CC] hover:border-none group transform hover:scale-[1.02] hover:-translate-y-1 overflow-hidden">
@@ -115,7 +224,7 @@ export default function PackagesPrices() {
                                             <div className="absolute inset-0 bg-gradient-to-br from-[#2072CC]/30 to-[#2072CC]/40 opacity-0 group-hover:opacity-100 transition-all duration-500 rounded-2xl"></div>
 
                                             {plan.isBestValue && (
-                                                <div className="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-20">
+                                                <div className="absolute top-4 right-4 bg-[#F0B100] text-white text-xs font-bold px-3 py-1 rounded-full z-20">
                                                     Best Value
                                                 </div>
                                             )}
@@ -124,30 +233,16 @@ export default function PackagesPrices() {
                                                 <div className="flex-shrink-0 pb-2 transform group-hover:scale-110 transition-transform duration-500">
                                                     <Image src="/images/shared/package-price-icon.svg" width={75} height={75} alt="Package Icon" />
                                                 </div>
-                                                
+
                                                 <h3 className="text-lg md:text-xl font-bold mb-4 text-gray-800 group-hover:text-white transition-colors duration-400 text-left">{plan.title}</h3>
-                                                
-                                                {/* Stylish Dropdown for Package Period */}
-                                                <div className="mb-4 text-left">
-                                                    <div className="relative">
-                                                        <select
-                                                            value={currentPeriod}
-                                                            onChange={(e) => handlePeriodChange(idx, e.target.value)}
-                                                            className="w-full appearance-none bg-white border-2 border-gray-200 rounded-lg px-4 py-2 pr-8 text-gray-700 text-sm font-medium focus:outline-none focus:border-[#2072CC] transition-all duration-300 group-hover:bg-white/90 group-hover:border-white cursor-pointer hover:border-[#2072CC]"
-                                                        >
-                                                            {periodOptions.map((option) => (
-                                                                <option key={option.value} value={option.value}>
-                                                                    {option.label}
-                                                                </option>
-                                                            ))}
-                                                        </select>
-                                                        <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
-                                                            <svg className="w-4 h-4 text-gray-500 group-hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
+                                                {/* Custom Dropdown for Package Period */}
+                                                <CustomDropdown
+                                                    currentPeriod={currentPeriod}
+                                                    periodOptions={periodOptions}
+                                                    onPeriodChange={handlePeriodChange}
+                                                    idx={idx}
+                                                />
 
                                                 <div className="flex items-baseline justify-start mt-4">
                                                     <span className="text-5xl font-bold mr-1 leading-tight group-hover:text-white transition-colors duration-400 group-hover:drop-shadow-lg">
@@ -160,7 +255,7 @@ export default function PackagesPrices() {
                                                     </span>
                                                 </div>
                                                 <p className="mb-4 text-gray-500 group-hover:text-white transition-colors duration-400 text-left">{currentPricing.specialText}</p>
-                                                
+
                                                 <Link href={getCurrentLink(plan, idx)} className="w-full">
                                                     <button className="w-full mb-4 py-3 border border-gray-200 rounded-xl font-bold transition-all duration-400 cursor-pointer bg-white hover:bg-white hover:text-[#2072CC] group-hover:bg-white group-hover:text-[#2072CC] group-hover:shadow-lg group-hover:scale-105 relative overflow-hidden">
                                                         {/* Button shimmer effect */}

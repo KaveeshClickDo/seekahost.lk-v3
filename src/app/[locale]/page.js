@@ -16,7 +16,7 @@ import PersonalConsultant from "@/components/home/PersonalConsultant";
 import CTA from "@/components/shared/CTA";
 import Header from "@/components/shared/Header";
 import ScreenshotSlider from "@/components/home/ScreenshotSlider";
-import PeopleCards from "@/components/home/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 import GetStarted from "@/components/home/GetStarted";
 import LargeImageSlider from "@/components/home/LargeImageSlider";
 

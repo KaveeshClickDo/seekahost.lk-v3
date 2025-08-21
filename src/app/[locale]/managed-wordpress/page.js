@@ -9,7 +9,7 @@ import Hero from "@/components/managed-wordpress/Hero";
 import OrderNow1 from "@/components/managed-wordpress/OrderNow-1";
 import OrderNow2 from "@/components/managed-wordpress/OrderNow-2";
 import OrderNow3 from "@/components/managed-wordpress/OrderNow-3";
-import PeopleCards from "@/components/managed-wordpress/PeopleCards";
+import PeopleCards from "@/components/shared/PeopleCards";
 import ScreenshotSlider from "@/components/managed-wordpress/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import PackagesPrices from "@/components/managed-wordpress/PackagePrice";
