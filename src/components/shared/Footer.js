@@ -166,7 +166,7 @@ export default function Footer() {
                 src="/images/shared/payment-methods-new.png"
                 alt="payment methods"
                 width={350}
-                height={36}
+                height={30}
                 className="mt-1"
               />
             </div>
