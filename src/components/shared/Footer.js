@@ -105,7 +105,7 @@ export default function Footer() {
                 <li><Link href="/about" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.aboutSeekaHost')}</Link></li>
                 <li><Link href="https://university.seekahost.com/" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.seekaHostUniversity')}</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.seekaHostBlog')}</Link></li>
-                <li><Link href="/contact" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.contactUs')}</Link></li>
+                <li><Link href="/contact-us" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.contactUs')}</Link></li>
               </ul>
             </div>
 
@@ -124,7 +124,7 @@ export default function Footer() {
                 <li><Link href="/wordpress-hosting" className="text-gray-300 hover:text-white font-medium">{t('WordPress.links.wordpressWebHosting')}</Link></li>
                 <li><Link href="/managed-wordpress" className="text-gray-300 hover:text-white font-medium">{t('WordPress.links.managedWordpress')}</Link></li>
                 <li><Link href="/woocommerce-hosting" className="text-gray-300 hover:text-white font-medium">{t('WordPress.links.woocommerceHosting')}</Link></li>
-                <li><Link href="/contact" className="text-gray-300 hover:text-white font-medium">{t('WordPress.links.wordpressTechnicalSupport')}</Link></li>
+                <li><Link href="/contact-us" className="text-gray-300 hover:text-white font-medium">{t('WordPress.links.wordpressTechnicalSupport')}</Link></li>
               </ul>
             </div>
 

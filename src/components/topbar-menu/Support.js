@@ -40,7 +40,7 @@ export default function Support() {
                             </div>
                         </Link>
 
-                        <Link href="/contact" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/contact-us" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/contact.svg"

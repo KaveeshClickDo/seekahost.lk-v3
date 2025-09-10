@@ -8,6 +8,7 @@ import Topbar from "@/components/shared/Topbar"
 import BacktoTop from "@/components/shared/BacktoTop";
 import CTA from "@/components/shared/CTA"
 import Header from "@/components/shared/Header"
+import ContactForm from "@/components/contact/ContactForm"
 
 export const metadata = {
     title: "Contact Us",
@@ -32,7 +33,8 @@ export default function contact() {
             <Header />
             <Hero />
             <Solution />
-            <FAQ />
+            {/* <FAQ /> */}
+            <ContactForm />
             <GetStarted />
             <BacktoTop />
             <CTA />
