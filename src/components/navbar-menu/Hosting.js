@@ -91,6 +91,22 @@ export default function Hosting() {
                             </div>
                         </Link>
 
+                        <Link href="/business-email-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                            <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
+                                <Image
+                                    src="/images/shared/business-web-hosting.svg"
+                                    alt="Business Web Hosting"
+                                    width={24}
+                                    height={24}
+                                    className="w-6 h-6"
+                                />
+                            </div>
+                            <div className="flex-1">
+                                <p className="font-bold text-gray-800 group-hover:text-blue-500">Business Email Hosting</p>
+                                <p className="text-sm text-gray-600">Professional and personalized email addresses.</p>
+                            </div>
+                        </Link>
+
                     </div>
 
                     <h3 className="font-bold text-gray-700 mt-6 mb-4 uppercase text-sm">LOCATION & SERVICES</h3>

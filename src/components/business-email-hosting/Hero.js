@@ -15,11 +15,11 @@ export default function Hero() {
             <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt-0 xl:px-20">
                 <div className="text-white w-full max-w-xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        Business Web Hosting
+                        Business Email Hosting
                     </h1>
 
                     <p className="mt-6 font-medium">
-                        High performance, secure, super-fast business website hosting services in UK for UK business owners with 24/7 support. Ideal for startups and enterprises that need a reliable UK host.
+                        Professional, secure, and reliable business email hosting with your own domain. Perfect for teams and organizations that need enterprise-grade email with full privacy and support.
                     </p>
 
                     <ul className="space-y-5 mt-4">
@@ -29,7 +29,7 @@ export default function Hero() {
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            99.9% uptime guarantee with enterprise-grade servers.
+                            Custom email addresses with your domain name.
                         </li>
 
                         <li className="flex items-start text-sm md:text-base font-medium text-gray-300 mt-4">
@@ -38,7 +38,7 @@ export default function Hero() {
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            Free SSL, backups & advanced DDoS protection.
+                            Advanced spam filtering & malware protection.
                         </li>
 
                         <li className="flex items-start text-sm md:text-base font-medium text-gray-300 mt-4">
@@ -47,7 +47,7 @@ export default function Hero() {
                                     <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            24/7 expert UK support ready to help anytime.
+                            24/7 support and 99.9% guaranteed uptime.
                         </li>
                     </ul>
 
