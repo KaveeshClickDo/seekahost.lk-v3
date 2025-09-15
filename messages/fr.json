@@ -262,7 +262,7 @@
         {
           "id": 1,
           "badge": "Nos Solutions",
-          "title": "Créez une App Node.js en Quelques Minutes",
+          "title": "Créez une App en Quelques Minutes",
           "description": "Panneau de contrôle WordPress intuitif avec installation en 1 clic, certificats SSL gratuits et activation immédiate.",
           "additionalText": "Trouvez, enregistrez des noms de domaine, hébergez et créez des sites WordPress plus rapidement que jamais. La solution préférée des blogueurs et propriétaires d'entreprise."
         },
@@ -321,7 +321,7 @@
         "learnMore": "En Savoir Plus"
       },
       "image": {
-        "alt": "Créez NodeJS en quelques minutes"
+        "alt": "Hébergement sur Serveurs Britanniques Ultra-Rapides"
       }
     },
     "PeopleCards": [

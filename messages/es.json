@@ -262,7 +262,7 @@
         {
           "id": 1,
           "badge": "Nuestras soluciones",
-          "title": "Crea una app de Node.js en minutos",
+          "title": "Crea una app de en minutos",
           "description": "SeekaHost ofrece el mejor y más fácil panel de control de hosting WordPress. El panel personalizado de hosting web para WordPress te brinda una solución de hosting de WordPress con 1 clic, certificados SSL gratuitos y activación con 1 clic.",
           "additionalText": "Puedes buscar y registrar nombres de dominio, alojarlos y crear sitios WordPress con blogs más rápido que nunca. La elección preferida de los blogueros para hosting WP y el WordPress gestionado es el mejor aliado de los dueños de negocios."
         },
@@ -321,7 +321,7 @@
         "learnMore": "Saber más"
       },
       "image": {
-        "alt": "Crear una app NodeJS en minutos"
+        "alt": "Hosting ultrarrápido en servidores del Reino Unido"
       }
     },
     "PeopleCards": [

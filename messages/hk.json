@@ -262,7 +262,7 @@
         {
           "id": 1,
           "badge": "我们的解决方案",
-          "title": "几分钟构建 Node.js 应用",
+          "title": "几分钟构建 应用",
           "description": "SeekaHost 提供简易 WordPress 托管面板，一键激活 WordPress 和免费 SSL。",
           "additionalText": "更快注册域名、托管域名、创建 WordPress 博客，是博客作者首选。"
         },
@@ -321,7 +321,7 @@
         "learnMore": "了解更多"
       },
       "image": {
-        "alt": "几分钟构建 NodeJS"
+        "alt": "超级快速英国服务器托管"
       }
     },
     "PeopleCards": [

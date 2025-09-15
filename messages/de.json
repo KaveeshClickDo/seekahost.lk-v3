@@ -262,7 +262,7 @@
         {
           "id": 1,
           "badge": "Unsere Lösungen",
-          "title": "Node.js App in Minuten erstellen",
+          "title": "App in Minuten erstellen",
           "description": "SeekaHost bietet das beste und einfachste WordPress-Hosting‑Kontrollpanel.",
           "additionalText": "Domains finden, registrieren, hosten und WordPress‑Sites schneller erstellen – die Top‑Wahl für Blogger."
         },
@@ -321,7 +321,7 @@
         "learnMore": "Mehr erfahren"
       },
       "image": {
-        "alt": "NodeJS in Minuten erstellen"
+        "alt": "Superschnelles Hosting auf UK‑Servern"
       }
     },
     "PeopleCards": [

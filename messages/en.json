@@ -262,7 +262,7 @@
         {
           "id": 1,
           "badge": "Our Solutions",
-          "title": "Build a Node.js App in Minutes",
+          "title": "Build a App in Minutes",
           "description": "SeekaHost offers the best and easy to use WordPress hosting control panel. The custom-built web hosting control panel for WordPress gives you a 1-click WordPress hosting solution with free SSL certificates and 1-click activation.",
           "additionalText": "You can find, register domain names, host the domain and create WordPress websites with blogs faster than ever. Bloggers top choice for WP hosting and the managed WordPress is the business owners best WP partner."
         },
@@ -321,7 +321,7 @@
         "learnMore": "Learn More"
       },
       "image": {
-        "alt": "Build NodeJS in minutes"
+        "alt": "Super Fast UK Server Hosting"
       }
     },
     "PeopleCards": [

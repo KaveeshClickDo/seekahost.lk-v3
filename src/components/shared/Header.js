@@ -253,7 +253,7 @@ export default function Header() {
                 )}
             </div>
 
-            <div className="relative hover:underline">
+            {/* <div className="relative hover:underline">
                 <button
                     type="button"
                     className="flex items-center transition-all duration-300 focus:outline-none cursor-pointer p-4"
@@ -274,7 +274,7 @@ export default function Header() {
                         <Ecommers />
                     </div>
                 )}
-            </div>
+            </div> */}
             {/* <Link
                 href="/blog"
                 className={`font-light transition-all duration-300 p-4 ${isActive('/blog')
@@ -451,7 +451,7 @@ export default function Header() {
                                 </div>
                             </Link>
 
-                            <Link href="/nodejs-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            {/* <Link href="/nodejs-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 <div className="mr-3 text-blue-500 flex-shrink-0">
                                     <Image
                                         src="/images/shared/nodejs-hosting-white.svg"
@@ -464,7 +464,7 @@ export default function Header() {
                                 <div className="flex-1">
                                     Node.js Hosting
                                 </div>
-                            </Link>
+                            </Link> */}
 
                             <Link href="/small-business-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 <div className="mr-3 text-blue-500 flex-shrink-0">
@@ -670,7 +670,7 @@ export default function Header() {
                         </div>
                     )}
                 </div>
-                <div>
+                {/* <div>
                     <button
                         onClick={() => setECommersDropdownOpen(!eCommersDropdownOpen)}
                         className="w-full flex items-center justify-between text-left px-4 py-2 hover:bg-gray-100 focus:outline-none text-lg font-medium"
@@ -747,7 +747,7 @@ export default function Header() {
                             </Link>
                         </div>
                     )}
-                </div>
+                </div> */}
 
                 <Link href="/pricing" className="block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                     Pricing

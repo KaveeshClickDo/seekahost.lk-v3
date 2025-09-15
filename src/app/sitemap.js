@@ -18,7 +18,7 @@ export default async function sitemap() {
     // Hosting Services
     { path: '/business-web-hosting', changeFrequency: 'monthly', priority: 0.9 },
     { path: '/cheap-web-hosting-with-cpanel', changeFrequency: 'monthly', priority: 0.9 },
-    { path: '/nodejs-hosting', changeFrequency: 'monthly', priority: 0.8 },
+    // { path: '/nodejs-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/small-business-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/agency-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/hosting-migration', changeFrequency: 'monthly', priority: 0.7 },
@@ -32,10 +32,10 @@ export default async function sitemap() {
     { path: '/woocommerce-hosting', changeFrequency: 'monthly', priority: 0.9 },
 
     // Marketing Services
-    { path: '/google-advertising-campaigns', changeFrequency: 'monthly', priority: 0.7 },
-    { path: '/free-business-listing', changeFrequency: 'monthly', priority: 0.6 },
-    { path: '/seo-consultancy', changeFrequency: 'monthly', priority: 0.7 },
-    { path: '/online-marketing-courses', changeFrequency: 'monthly', priority: 0.6 },
+    // { path: '/google-advertising-campaigns', changeFrequency: 'monthly', priority: 0.7 },
+    // { path: '/free-business-listing', changeFrequency: 'monthly', priority: 0.6 },
+    // { path: '/seo-consultancy', changeFrequency: 'monthly', priority: 0.7 },
+    // { path: '/online-marketing-courses', changeFrequency: 'monthly', priority: 0.6 },
 
     // Servers
     { path: '/dedicated-servers', changeFrequency: 'monthly', priority: 0.8 },

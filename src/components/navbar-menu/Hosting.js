@@ -43,7 +43,7 @@ export default function Hosting() {
                             </div>
                         </Link>
 
-                        <Link href="/nodejs-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        {/* <Link href="/nodejs-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/nodejs-hosting.svg"
@@ -57,7 +57,7 @@ export default function Hosting() {
                                 <p className="font-bold text-gray-800 group-hover:text-blue-500">Node.js Hosting</p>
                                 <p className="text-sm text-gray-600">Specialized for Node.js apps</p>
                             </div>
-                        </Link>
+                        </Link> */}
 
                         <Link href="/small-business-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">

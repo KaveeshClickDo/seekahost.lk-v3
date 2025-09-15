@@ -95,7 +95,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li><Link href="/business-web-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.businessWebHosting')}</Link></li>
                 <li><Link href="/cheap-web-hosting-with-cpanel" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.cheapCpanelHosting')}</Link></li>
-                <li><Link href="/nodejs-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.nodejsHosting')}</Link></li>
+                {/* <li><Link href="/nodejs-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.nodejsHosting')}</Link></li> */}
                 <li><Link href="/agency-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.agencyHosting')}</Link></li>
                 <li><Link href="/hosting-migration" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.hostingMigration')}</Link></li>
               </ul>
@@ -115,7 +115,7 @@ export default function Footer() {
                 <li><Link href="/register-domain" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.registerDomain')}</Link></li>
                 <li><Link href="/domain-pricing" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.domainPricing')}</Link></li>
                 <li><Link href="/domain-transfer" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.domainTransfer')}</Link></li>
-                <li><Link href="/category/domain-registration" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.premiumDomain')}</Link></li>
+                {/* <li><Link href="/category/domain-registration" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.premiumDomain')}</Link></li> */}
                 <li><Link href="/free-ssl-certificates-lets-encrypt" className="text-gray-300 hover:text-white font-medium">{t('DomainRegistration.links.sslCertificates')}</Link></li>
               </ul>
 
@@ -129,16 +129,16 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="md:text-lg font-medium mb-5">{t('Marketing.title')}</h3>
+              {/* <h3 className="md:text-lg font-medium mb-5">{t('Marketing.title')}</h3>
               <ul className="space-y-4">
                 <li><Link href="/google-advertising-campaigns" className="text-gray-300 hover:text-white font-medium">{t('Marketing.links.googleAdvertising')}</Link></li>
                 <li><Link href="/free-business-listing" className="text-gray-300 hover:text-white font-medium">{t('Marketing.links.businessListing')}</Link></li>
                 <li><Link href="/seo-consultancy" className="text-gray-300 hover:text-white font-medium">{t('Marketing.links.seoConsultancy')}</Link></li>
                 <li><Link href="/online-marketing-courses" className="text-gray-300 hover:text-white font-medium">{t('Marketing.links.marketingCourses')}</Link></li>
                 <li><Link href="/personalized-hosting" className="text-gray-300 hover:text-white font-medium">{t('Marketing.links.personalizedHosting')}</Link></li>
-              </ul>
+              </ul> */}
 
-              <h3 className="md:text-lg font-medium mb-5 mt-10">{t('VpsServers.title')}</h3>
+              <h3 className="md:text-lg font-medium mb-5">{t('VpsServers.title')}</h3>
               <ul className="space-y-4">
                 <li><Link href="/dedicated-servers" className="text-gray-300 hover:text-white font-medium">{t('VpsServers.links.dedicatedServers')}</Link></li>
                 <li><Link href="/cloud-servers" className="text-gray-300 hover:text-white font-medium">{t('VpsServers.links.cloudServers')}</Link></li>

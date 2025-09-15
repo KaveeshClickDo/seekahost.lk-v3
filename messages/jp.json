@@ -262,7 +262,7 @@
         {
           "id": 1,
           "badge": "ソリューション",
-          "title": "数分で Node.js アプリを構築",
+          "title": "数分で アプリを構築",
           "description": "SeekaHost は使いやすい WordPress ホスティングコントロールパネルを提供。",
           "additionalText": "ドメイン検索、登録、ホスティング、WordPress サイト作成が以前より迅速に。ブロガーの第一選択。"
         },
@@ -321,7 +321,7 @@
         "learnMore": "もっと詳しく"
       },
       "image": {
-        "alt": "数分で NodeJS 構築"
+        "alt": "英国サーバーによる超高速ホスティング"
       }
     },
     "PeopleCards": [
