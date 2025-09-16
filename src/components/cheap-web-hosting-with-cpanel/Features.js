@@ -49,7 +49,7 @@ export default function Features() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">Easy cPanel Management</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Manage your hosting effortlessly with cPanel, the industry's most trusted and user-friendly control panel.
+                Manage your hosting effortlessly with cPanel, the industry&apos;s most trusted and user-friendly control panel.
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Features() {
               </div>
               <h3 className="text-lg md:text-2xl font-bold mb-2 text-[#324561] group-hover:text-[#0A488B] transition-colors duration-300">Free SSL Certificates</h3>
               <p className="text-[#2E4360] group-hover:text-[#1E3A5F] transition-colors duration-300">
-                Protect your websites with unlimited SSL certificates from Let's Encrypt—keeping your data and visitors safe.
+                Protect your websites with unlimited SSL certificates from Let&apos;s Encrypt—keeping your data and visitors safe.
               </p>
             </div>
           </div>
