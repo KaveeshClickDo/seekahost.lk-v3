@@ -18,6 +18,10 @@ const categoryToSlug = (category) => {
     return category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
 };
 
+const createCategoryUrl = (category) => {
+    return `/category/${category ? category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-') : '#'}`;
+};
+
 export async function generateMetadata({ params }) {
     const resolvedParams = await params;
     const categorySlug = resolvedParams.categorySlug;
@@ -103,9 +107,12 @@ const CategoryPage = async (props) => {
     try {
         const categoryName = slugToCategory(categorySlug);
 
+        // Get all posts to extract unique categories
         const allPostsResponse = await fetchPosts('pagination[pageSize]=100');
         const allCategories = [...new Set(
-            allPostsResponse.data?.map(post => post.postPrimary?.category).filter(Boolean) || []
+            allPostsResponse.data?.flatMap(post => 
+                post.postPrimary?.categories || []
+            ).filter(Boolean) || []
         )];
 
         const validCategory = allCategories.find(cat =>
@@ -116,12 +123,30 @@ const CategoryPage = async (props) => {
             notFound();
         }
 
-        const categoryPostsResponse = await fetchPosts(
-            `filters[postPrimary][category][$eq]=${encodeURIComponent(validCategory)}&sort[0]=publishedAt:desc&pagination[page]=${currentPage}&pagination[pageSize]=${postsPerPage}`
+        // Filter posts that have this category in their categories array
+        const filteredPosts = allPostsResponse.data?.filter(post => 
+            post.postPrimary?.categories?.includes(validCategory)
+        ) || [];
+
+        // Sort by creation date (newest first)
+        const sortedPosts = filteredPosts.sort((a, b) => 
+            new Date(b.createdAt) - new Date(a.createdAt)
         );
 
-        const categoryPosts = categoryPostsResponse.data || [];
-        const pagination = categoryPostsResponse.meta?.pagination;
+        // Manual pagination
+        const totalPosts = sortedPosts.length;
+        const totalPages = Math.ceil(totalPosts / postsPerPage);
+        const startIndex = (currentPage - 1) * postsPerPage;
+        const endIndex = startIndex + postsPerPage;
+        const categoryPosts = sortedPosts.slice(startIndex, endIndex);
+
+        // Create pagination object
+        const pagination = {
+            page: currentPage,
+            pageSize: postsPerPage,
+            pageCount: totalPages,
+            total: totalPosts
+        };
 
         return (
             <>
@@ -169,11 +194,27 @@ const CategoryPage = async (props) => {
 
                                         <div className="p-4">
                                             <div className="flex items-center text-xs md:text-sm text-gray-500 font-medium mb-2">
-                                                <time dateTime={blog.publishedAt}>
-                                                    {blog.publishedAt?.substring(0, 10) || 'No date'}
+                                                <time dateTime={blog.createdAt}>
+                                                    {blog.createdAt?.substring(0, 10) || 'No date'}
                                                 </time>
                                                 <span className="mx-2">•</span>
-                                                <span>{blog.postPrimary?.category || 'Uncategorized'}</span>
+                                                <span>
+                                                    {blog.postPrimary?.categories?.length > 0 ? (
+                                                        blog.postPrimary.categories.map((category, index) => (
+                                                            <span key={category}>
+                                                                <Link 
+                                                                    href={createCategoryUrl(category)}
+                                                                    className="hover:text-[#2072CC] hover:underline transition-colors"
+                                                                >
+                                                                    {category}
+                                                                </Link>
+                                                                {index < blog.postPrimary.categories.length - 1 && ', '}
+                                                            </span>
+                                                        ))
+                                                    ) : (
+                                                        'Uncategorized'
+                                                    )}
+                                                </span>
                                                 {blog.postPrimary?.readTime && (
                                                     <>
                                                         <span className="mx-2">•</span>

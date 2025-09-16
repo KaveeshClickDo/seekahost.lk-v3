@@ -11,7 +11,7 @@ export default function OrderNow1() {
                 <div className="md:w-1/2 md:mr-15">
                     <div className="w-full relative">
                         <Image
-                            src="/images/wordpress-hosting/order-now-1.webp"
+                            src="/images/cheap-web-hosting-with-cpanel/order-now-1.webp"
                             alt={t('imageAlt')}
                             width={2900}
                             height={2312}

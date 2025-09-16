@@ -43,11 +43,22 @@ const ImageSlider = () => {
             title: 'cPanel',
             subtitle: "cPanel Custom",
             description: "Our Custom cPanel gives you a simplified, intuitive, and fully tailored control panel designed to make website management easier than ever. With a modern interface and streamlined tools, you can manage domains, emails, databases, backups, and security settings—all from one place. Whether you’re a beginner or an advanced user, our custom-built enhancements ensure faster navigation, better performance, and full control over your hosting environment.",
-            features: [],
+            features: [
+                {
+                    icon: '/images/cheap-web-hosting-with-cpanel/streamlined-management.svg',
+                    title: 'Streamlined Management',
+                    description: 'Quickly access domains, emails, backups, and security tools with a cleaner, faster interface.'
+                },
+                {
+                    icon: '/images/cheap-web-hosting-with-cpanel/enhanced-control.svg',
+                    title: 'Enhanced Control',
+                    description: 'Enjoy added features and custom optimizations for better performance and flexibility.'
+                }
+            ],
         },
         {
             id: 3,
-            image: '/images/cheap-web-hosting-with-cpanel/bg1.webp',
+            image: '/images/cheap-web-hosting-with-cpanel/bg3.webp',
             title: 'Active Defense',
             subtitle: "Advanced Malware Scanning",
             description: "Proactive malware defense with instant detection, cleanup, and reporting.",
@@ -76,7 +87,7 @@ const ImageSlider = () => {
         },
         {
             id: 4,
-            image: '/images/cheap-web-hosting-with-cpanel/bg1.webp',
+            image: '/images/cheap-web-hosting-with-cpanel/bg4.webp',
             title: 'SecureVault',
             subtitle: "Complete Backup & Restore",
             description: "Effortless data protection with automated backups and fast recovery options.",
@@ -127,6 +138,20 @@ const ImageSlider = () => {
         }, 600);
     }, [isTransitioning, slides.length]);
 
+    const goToSlide = (index) => {
+        if (isTransitioning || index === currentSlide) return;
+
+        setIsTransitioning(true);
+
+        setTimeout(() => {
+            setCurrentSlide(index);
+        }, 150);
+
+        setTimeout(() => {
+            setIsTransitioning(false);
+        }, 600);
+    };
+
     useEffect(() => {
         const interval = setInterval(nextSlide, 5000);
         return () => clearInterval(interval);
@@ -169,6 +194,36 @@ const ImageSlider = () => {
         return null;
     };
 
+    // Helper function to render features based on count
+    const renderFeatures = (features, size = 'desktop') => {
+        if (!features || features.length === 0) return <EmptyFeaturesState size={size} />;
+        
+        if (features.length <= 2) {
+            // For 1-2 features, display horizontally
+            return (
+                <div className="grid grid-cols-2 gap-8 h-full">
+                    {features.map((feature, index) => (
+                        <FeatureItem key={index} feature={feature} size={size} />
+                    ))}
+                </div>
+            );
+        } else {
+            // For 3+ features, use the original 2x2 grid layout
+            return (
+                <div className="grid grid-cols-2 gap-8 h-full">
+                    <div className="grid gap-8">
+                        <FeatureItem feature={features[0]} size={size} />
+                        <FeatureItem feature={features[1]} size={size} />
+                    </div>
+                    <div className="grid gap-8">
+                        <FeatureItem feature={features[2]} size={size} />
+                        <FeatureItem feature={features[3]} size={size} />
+                    </div>
+                </div>
+            );
+        }
+    };
+
     return (
         <div className="w-full bg-[#F5FAFF] py-8">
             <div className="relative">
@@ -187,11 +242,27 @@ const ImageSlider = () => {
                                             src={slide.image}
                                             alt={slide.title}
                                             className="w-full h-140 2xl:h-185 object-cover"
-                                            width={2048}
-                                            height={910}
+                                            width={3714}
+                                            height={1652}
                                             priority={index === 0}
                                         />
                                     </div>
+                                ))}
+                            </div>
+
+                            {/* Desktop Slide Dots */}
+                            <div className="absolute bottom-6 left-6 flex space-x-2">
+                                {slides.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => goToSlide(index)}
+                                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                            index === currentSlide
+                                                ? 'bg-white scale-110'
+                                                : 'bg-white/50 hover:bg-white/75'
+                                        }`}
+                                        aria-label={`Go to slide ${index + 1}`}
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -219,22 +290,9 @@ const ImageSlider = () => {
                                             {slides[currentSlide].description}
                                         </p>
 
-                                        {/* Features Grid or Empty State */}
+                                        {/* Features Grid */}
                                         <div className="flex-1">
-                                            {currentSlideHasFeatures() ? (
-                                                <div className="grid grid-cols-2 gap-8 h-full">
-                                                    <div className="grid gap-8">
-                                                        <FeatureItem feature={getFeature(0)} size="desktop" />
-                                                        <FeatureItem feature={getFeature(1)} size="desktop" />
-                                                    </div>
-                                                    <div className="grid gap-8">
-                                                        <FeatureItem feature={getFeature(2)} size="desktop" />
-                                                        <FeatureItem feature={getFeature(3)} size="desktop" />
-                                                    </div>
-                                                </div>
-                                            ) : (
-                                                <EmptyFeaturesState size="desktop" />
-                                            )}
+                                            {renderFeatures(slides[currentSlide].features, 'desktop')}
                                         </div>
                                     </div>
                                 </div>
@@ -258,11 +316,27 @@ const ImageSlider = () => {
                                             src={slide.image}
                                             alt={slide.title}
                                             className="w-full h-64 object-cover object-left"
-                                            width={1024}
-                                            height={455}
+                                            width={1857}
+                                            height={826}
                                             priority={index === 0}
                                         />
                                     </div>
+                                ))}
+                            </div>
+
+                            {/* Mobile Slide Dots */}
+                            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                {slides.map((_, index) => (
+                                    <button
+                                        key={index}
+                                        onClick={() => goToSlide(index)}
+                                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                                            index === currentSlide
+                                                ? 'bg-white scale-110'
+                                                : 'bg-white/50 hover:bg-white/75'
+                                        }`}
+                                        aria-label={`Go to slide ${index + 1}`}
+                                    />
                                 ))}
                             </div>
                         </div>
@@ -290,19 +364,29 @@ const ImageSlider = () => {
                                                 {slide.description}
                                             </p>
 
-                                            {/* Mobile Features Grid or Empty State */}
+                                            {/* Mobile Features Grid */}
                                             <div className="mb-4">
                                                 {slide.features && slide.features.length > 0 ? (
-                                                    <div className="grid grid-cols-2 gap-4">
-                                                        <div className="grid gap-4">
-                                                            <FeatureItem feature={slide.features[0]} size="mobile" />
-                                                            <FeatureItem feature={slide.features[1]} size="mobile" />
+                                                    slide.features.length <= 2 ? (
+                                                        // For 1-2 features on mobile, display horizontally
+                                                        <div className="grid grid-cols-2 gap-4">
+                                                            {slide.features.map((feature, featureIndex) => (
+                                                                <FeatureItem key={featureIndex} feature={feature} size="mobile" />
+                                                            ))}
                                                         </div>
-                                                        <div className="grid gap-4">
-                                                            <FeatureItem feature={slide.features[2]} size="mobile" />
-                                                            <FeatureItem feature={slide.features[3]} size="mobile" />
+                                                    ) : (
+                                                        // For 3+ features, use original 2x2 grid
+                                                        <div className="grid grid-cols-2 gap-4">
+                                                            <div className="grid gap-4">
+                                                                <FeatureItem feature={slide.features[0]} size="mobile" />
+                                                                <FeatureItem feature={slide.features[1]} size="mobile" />
+                                                            </div>
+                                                            <div className="grid gap-4">
+                                                                <FeatureItem feature={slide.features[2]} size="mobile" />
+                                                                <FeatureItem feature={slide.features[3]} size="mobile" />
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    )
                                                 ) : (
                                                     <EmptyFeaturesState size="mobile" />
                                                 )}

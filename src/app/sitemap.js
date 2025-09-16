@@ -1,4 +1,5 @@
 import { routing } from '@/i18n/routing';
+import fetchPosts from '@/data/fetchPosts';
 
 export default async function sitemap() {
   // Define your routes (without locale prefix)
@@ -53,33 +54,118 @@ export default async function sitemap() {
     { path: '/personalized-hosting', changeFrequency: 'monthly', priority: 0.7 },
   ];
 
-  // Generate sitemap entries for all locales
-  const sitemapEntries = [];
-  
-  routing.locales.forEach(locale => {
-    routes.forEach(route => {
-      let url;
-      
-      if (locale === routing.defaultLocale) {
-        // For default locale (en), don't include locale prefix
-        url = route.path === '' 
-          ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
-          : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
-      } else {
-        // For non-default locales, include locale prefix
-        url = route.path === '' 
-          ? `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`
-          : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`;
-      }
+  try {
+    // Fetch all blogs
+    const allBlogs = await fetchPosts('sort[0]=publishedAt:desc');
+
+    // Get categories from blogs if they exist
+    const categoriesResponse = await fetchPosts();
+    const uniqueCategories = [...new Set(
+      categoriesResponse.data?.flatMap(post => 
+        post.postPrimary?.categories || []
+      ).filter(Boolean) || []
+    )];
+    // Generate sitemap entries for all locales
+    const sitemapEntries = [];
+    
+    routing.locales.forEach(locale => {
+      // Add static routes
+      routes.forEach(route => {
+        let url;
         
-      sitemapEntries.push({
-        url,
-        lastModified: new Date(),
-        changeFrequency: route.changeFrequency,
-        priority: route.priority,
+        if (locale === routing.defaultLocale) {
+          // For default locale (en), don't include locale prefix
+          url = route.path === '' 
+            ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
+            : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
+        } else {
+          // For non-default locales, include locale prefix
+          url = route.path === '' 
+            ? `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`
+            : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`;
+        }
+          
+        sitemapEntries.push({
+          url,
+          lastModified: new Date(),
+          changeFrequency: route.changeFrequency,
+          priority: route.priority,
+        });
+      });
+
+      // Add blog posts for each locale
+      if (allBlogs.data?.length) {
+        allBlogs.data.forEach(blog => {
+          let blogUrl;
+          
+          if (locale === routing.defaultLocale) {
+            blogUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${blog.postSlug}`;
+          } else {
+            blogUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/${blog.postSlug}`;
+          }
+
+          sitemapEntries.push({
+            url: blogUrl,
+            lastModified: new Date(blog.updatedAt || blog.publishedAt),
+            changeFrequency: 'weekly',
+            priority: 1,
+          });
+        });
+      }
+
+      // Add category pages for each locale
+      if (uniqueCategories.length) {
+        uniqueCategories.forEach(category => {
+          let categoryUrl;
+          const categorySlug = category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+          
+          if (locale === routing.defaultLocale) {
+            categoryUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/blog/category/${categorySlug}`;
+          } else {
+            categoryUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/blog/category/${categorySlug}`;
+          }
+
+          sitemapEntries.push({
+            url: categoryUrl,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.9,
+          });
+        });
+      }
+    });
+
+    return sitemapEntries;
+
+  } catch (error) {
+    console.error('Error generating sitemap:', error);
+
+    // Generate basic sitemap without blogs if fetch fails
+    const sitemapEntries = [];
+    
+    routing.locales.forEach(locale => {
+      routes.forEach(route => {
+        let url;
+        
+        if (locale === routing.defaultLocale) {
+          url = route.path === '' 
+            ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
+            : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
+        } else {
+          url = route.path === '' 
+            ? `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`
+            : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`;
+        }
+          
+        sitemapEntries.push({
+          url,
+          lastModified: new Date(),
+          changeFrequency: route.changeFrequency,
+          priority: route.priority,
+        });
       });
     });
-  });
 
-  return sitemapEntries;
+    return sitemapEntries;
+  }
 }
