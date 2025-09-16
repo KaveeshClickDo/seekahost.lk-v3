@@ -12,13 +12,14 @@ import Topbar from "@/components/shared/Topbar";
 import ControlPanel from "@/components/cheap-web-hosting-with-cpanel/ControlPanel";
 import PeopleCards from "@/components/shared/PeopleCards";
 import ScreenshotSlider from "@/components/cheap-web-hosting-with-cpanel/ScreenshotSlider";
+import ImageSlider from "@/components/cheap-web-hosting-with-cpanel/ImageSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
+import Features from "@/components/cheap-web-hosting-with-cpanel/Features";
 
 export const metadata = {
     title: "Cheap Web Hosting With cPanel - UK's Best Host"
 }
-
 
 export default function CheapWebHostingWithcPanel() {
     return (
@@ -30,9 +31,11 @@ export default function CheapWebHostingWithcPanel() {
             <Header />
             <Hero />
             <PackagesPrices />
+            <Features />
             <PeopleCards />
             <OrderNow1 />
-            <ScreenshotSlider />
+            {/* <ScreenshotSlider /> */}
+            <ImageSlider />
             <ControlPanel />
             <OrderNow2 />
             <OrderNow3 />
