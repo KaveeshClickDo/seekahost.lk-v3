@@ -659,19 +659,19 @@
     "OrderNow2": {
       "titleLine": "Fair & Predictable Renewals",
       "description": "We hate pricing games as much as you do. While other hosts lure you in with low introductory rates only to triple your renewal price later, we keep it honest. With SeekaHost, you’ll always know what to expect at renewal time. No hidden fees. No sudden jumps. Just stable pricing that respects your budget, year after year.",
-      "buttonName": "Order Now",
+      "buttonName": "See Plans",
       "imageAlt": "Order now Image"
     },
     "OrderNow3": {
       "titleLine": "Free SSL for Every Domain",
       "description": "SSL certificates are essential for website security and SEO, but some hosts still charge you for them. With SeekaHost, every domain you host with us gets free SSL protection—automatically. Whether you're running one site or twenty, you can keep your visitors safe and your Google rankings strong—without spending extra",
-      "buttonName": "Order Now",
+      "buttonName": "Start Free Today",
       "imageAlt": "Order now Image"
     },
     "OrderNow4": {
       "titleLine": "Ultimate Website Performance with cPanel Software",
       "description": "Your SeekaHost cPanel Hosting account is loaded with software to maximize your website&apos;s performance. You can use CloudFlare to improve your site&apos;s content caching to decrease latency and enhance security against DDoS attacks. Access content compression settings for a faster loading site and instantly download backups to restore your website with DropMySute or choose your preferred PHP version and PHP extension. It&apos;s a powerhouse for the best web hosting experience.",
-      "buttonName": "Order Now",
+      "buttonName": "Choose Your Plan",
       "imageAlt": "Order now Image"
     }
   },

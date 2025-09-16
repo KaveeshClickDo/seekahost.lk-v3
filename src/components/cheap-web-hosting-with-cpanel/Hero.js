@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
+import SeePlansButton from './SeePlansButtons';
 
 export default function Hero() {
     const t = useTranslations('CheapHostingPage.Hero');
-    
+
     const features = [
         {
             icon: '💰',
@@ -58,10 +59,11 @@ export default function Hero() {
                             </li>
                         ))}
                     </ul>
-
-                    <button className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7">
-                        {t('buttonName')}
-                    </button>
+                    <SeePlansButton
+                        text={t('buttonName')}
+                        baseClasses={true}
+                        className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
+                    />
 
                 </div>
 

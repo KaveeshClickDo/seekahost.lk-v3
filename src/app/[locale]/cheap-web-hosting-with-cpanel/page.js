@@ -30,7 +30,9 @@ export default function CheapWebHostingWithcPanel() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <PackagesPrices />
+            <div id="package-prices-section">
+                <PackagesPrices />
+            </div>
             <Features />
             <PeopleCards />
             <OrderNow1 />

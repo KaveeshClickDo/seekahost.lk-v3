@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SeePlansButton from "./SeePlansButtons";
 
 export default function ControlPanel() {
     return (
@@ -12,9 +13,11 @@ export default function ControlPanel() {
                 <p className="text-[#1D216A] mb-4">
                     Migrating your website shouldn&apos;t be a hassle—or a cost. We offer free website migration from any existing cPanel® hosting provider. Our expert team will handle everything for you—files, databases, emails—so there’s no downtime or stress. You get a smooth switch without lifting a finger.
                 </p>
-                <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-7">
-                    Get Started
-                </button>
+                <SeePlansButton
+                        text="Hosting Plans"
+                        baseClasses={true}
+                        className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-7"
+                    />
             </div>
 
 

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useTranslations } from 'next-intl';
+import SeePlansButton from "./SeePlansButtons";
 
 export default function OrderNow3() {
     const t = useTranslations('CheapHostingPage.OrderNow3');
@@ -10,14 +11,16 @@ export default function OrderNow3() {
                 <div className="md:w-1/2 px-5 md:mr-15">
 
                     <h2 className="text-2xl md:text-4xl font-bold text-[#1D276A] mb-4 md:mb-8">
-                    {t('titleLine')}
+                        {t('titleLine')}
                     </h2>
                     <p className="text-[#1D216A] mb-4">
-                    {t('description')}
+                        {t('description')}
                     </p>
-                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
-                        {t('buttonName')}
-                    </button>
+                    <SeePlansButton
+                        text={t('buttonName')}
+                        baseClasses={true}
+                        className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8"
+                    />
                 </div>
                 <div className="md:w-1/2 mt-6 md:mt-0">
                     <div className="w-full relative">
