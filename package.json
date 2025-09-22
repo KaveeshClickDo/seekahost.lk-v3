@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@accessible360/accessible-slick": "^1.0.1",
-    "@strapi/blocks-react-renderer": "^1.0.2",
     "next": "15.2.2",
     "next-intl": "^4.3.3",
     "nodemailer": "^7.0.6",
