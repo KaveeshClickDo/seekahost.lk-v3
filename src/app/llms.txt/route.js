@@ -72,12 +72,6 @@ Default Language: ${routing.defaultLocale}
 - VPS Hosting: ${baseUrl}/vps-hosting
 - N8N VPS Hosting: ${baseUrl}/n8n-vps-hosting
 
-### Feature Comparison Pages
-- Shared Hosting Features: ${baseUrl}/shared-hosting-features
-- Managed WordPress Features: ${baseUrl}/managed-wordpress-features
-- WooCommerce Hosting Features: ${baseUrl}/woocommerce-hosting-features
-- WordPress Hosting Features: ${baseUrl}/wordpress-hosting-features
-
 ### Custom Solutions
 - Personalized Hosting: ${baseUrl}/personalized-hosting
 

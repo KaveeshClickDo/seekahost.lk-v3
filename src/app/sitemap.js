@@ -45,10 +45,10 @@ export default async function sitemap() {
     { path: '/n8n-vps-hosting', changeFrequency: 'monthly', priority: 0.7 },
 
     // Feature Comparison Pages
-    { path: '/shared-hosting-features', changeFrequency: 'monthly', priority: 0.7 },
-    { path: '/managed-wordpress-features', changeFrequency: 'monthly', priority: 0.7 },
-    { path: '/woocommerce-hosting-features', changeFrequency: 'monthly', priority: 0.7 },
-    { path: '/wordpress-hosting-features', changeFrequency: 'monthly', priority: 0.7 },
+    // { path: '/shared-hosting-features', changeFrequency: 'monthly', priority: 0.7 },
+    // { path: '/managed-wordpress-features', changeFrequency: 'monthly', priority: 0.7 },
+    // { path: '/woocommerce-hosting-features', changeFrequency: 'monthly', priority: 0.7 },
+    // { path: '/wordpress-hosting-features', changeFrequency: 'monthly', priority: 0.7 },
 
     // Custom Plans
     { path: '/personalized-hosting', changeFrequency: 'monthly', priority: 0.7 },

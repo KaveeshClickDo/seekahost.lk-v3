@@ -326,9 +326,9 @@ export default function PackagesPrices() {
                         </div>
                     )}
                 </div>
-                <Link href="/shared-hosting-features" className="inline-block bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
+                {/* <Link href="/shared-hosting-features" className="inline-block bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
                     {packageInfo.buttonText}
-                </Link>
+                </Link> */}
             </div>
         </section>
     );
