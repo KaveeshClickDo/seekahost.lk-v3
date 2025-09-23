@@ -1,4 +1,5 @@
 import Image from "next/image"
+import SeePlansButton from '../shared/SeePlansButtons';
 export default function OrderNow1() {
     return (
         <>
@@ -12,14 +13,16 @@ export default function OrderNow1() {
                         <span className="font-bold">Fast, local, and built for UK websites</span><br />
                         Our WordPress hosting is powered by high-speed NVMe SSD servers located right here in the UK. That means your site loads faster for your local visitors, improves SEO, and delivers a smoother browsing experience.
 
-                        
+
                     </p>
                     <p className="text-[#1D216A] mb-4">
                         Whether you&apos;re serving customers in London, Manchester, or across Europe, your website performs at peak speed—every time.
                     </p>
-                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
-                        Order Now
-                    </button>
+                    <SeePlansButton
+                        text="Launch Now"
+                        baseClasses={true}
+                        className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8"
+                    />
 
                 </div>
 

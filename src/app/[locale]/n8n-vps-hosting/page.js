@@ -28,7 +28,7 @@ export default function n8nVPSHosting() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <div id="wordpress-package-prices-section">
+            <div id="package-prices-section">
                 <PackagesPrices />
             </div>
             <PeopleCards />

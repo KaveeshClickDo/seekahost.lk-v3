@@ -8,7 +8,7 @@ export default function Support() {
 
                 <div className="w-2xs p-4">
                     <div className="grid grid-cols-1 gap-4">
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/blog" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/knowledge-base.svg"
@@ -24,7 +24,7 @@ export default function Support() {
                             </div>
                         </Link>
 
-                        <Link href="#" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="https://www.youtube.com/@SeekaHost" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/tutorials.svg"
@@ -64,15 +64,15 @@ export default function Support() {
                 <div className="w-2xs bg-gray-50 p-6 flex flex-col justify-center rounded-2xl">
                     <div className="mb-2">
                         <Image
-                            src="/images/wordpress-hosting/screenshot-1.webp"
-                            alt="Website builder preview"
-                            width={760}
-                            height={530}
+                            src="/images/navbar-menu/support.webp"
+                            alt="Support"
+                            width={1434}
+                            height={1004}
                             className="rounded-md shadow-sm"
                         />
                     </div>
-                    <h3 className="font-bold text-[#2072CC] text-lg mt-2">Learn About CMS</h3>
-                    <p className="text-gray-600 mb-2">Find the right way to build your website.</p>
+                    <h3 className="font-bold text-[#2072CC] text-lg mt-2">Support</h3>
+                    <p className="text-gray-600 mb-2">Friendly, expert support whenever you need it most.</p>
                 </div>
             </div>
         </div>

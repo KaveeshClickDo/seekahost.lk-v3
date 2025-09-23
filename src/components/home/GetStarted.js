@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { MdArrowForward } from "react-icons/md";
 import { useTranslations } from 'next-intl';
-import SeePlansButton from "./SeePlansButtons";
+import SeePlansButton from "../shared/SeePlansButtons";
 
 export default function GetStarted() {
     const t = useTranslations('HomePage.GetStarted');

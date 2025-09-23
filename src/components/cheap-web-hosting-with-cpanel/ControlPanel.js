@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SeePlansButton from "./SeePlansButtons";
+import SeePlansButton from '../shared/SeePlansButtons';
 
 export default function ControlPanel() {
     return (

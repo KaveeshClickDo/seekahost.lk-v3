@@ -11,7 +11,7 @@ import Topbar from "@/components/shared/Topbar";
 import Video from "@/components/shared/Video";
 import ControlPanel from "@/components/wordpress-hosting/ControlPanel";
 import PeopleCards from "@/components/shared/PeopleCards";
-import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
+import ScreenshotSlider from "@/components/home/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
 import Header from "@/components/shared/Header";
 

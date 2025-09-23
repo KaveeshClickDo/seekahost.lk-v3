@@ -89,42 +89,42 @@ export default function Servers() {
                
                 <div className="w-full lg:w-1/3 rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
                     <h3 className="font-bold text-[#2072CC] text-lg mb-2">Server Platforms</h3>
-                    <p className="text-gray-600 mb-4">Find the right way to build your website.</p>
+                    <p className="text-gray-600 mb-4">Powerful server hosting designed for businesses and high-traffic websites.</p>
 
                     <ul className="space-y-2 text-gray-700">
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Tools
+                                • Fully managed or self-managed options
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • AI Tools
+                                • Scalable resources (CPU, RAM, storage)
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Templates
+                                • Advanced DDoS & firewall protection
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Checker
+                                • Root access for full control
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Domain Check
+                                • 24/7 monitoring and uptime guarantee
                             </Link>
                         </li>
                     </ul>
 
                     <div className="mt-6">
                         <Image
-                            src="/images/wordpress-hosting/screenshot-1.webp"
-                            alt="Website builder preview"
-                            width={760}
-                            height={530}
+                            src="/images/navbar-menu/server.webp"
+                            alt="Server Platforms"
+                            width={1434}
+                            height={1004}
                             className="rounded-md shadow-sm"
                         />
                     </div>

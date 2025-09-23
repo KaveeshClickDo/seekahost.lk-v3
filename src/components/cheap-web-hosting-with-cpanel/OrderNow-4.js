@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { useTranslations } from 'next-intl';
-import SeePlansButton from "./SeePlansButtons";
+import SeePlansButton from '../shared/SeePlansButtons';
 
 export default function OrderNow4() {
     const t = useTranslations('CheapHostingPage.OrderNow4');

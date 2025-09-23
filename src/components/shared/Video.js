@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
 import ProcessSteps from '../home/ProcessSteps';
-import SeePlansButton from '../home/SeePlansButtons';
+import SeePlansButton from './SeePlansButtons';
 
 export default function Video() {
   const t = useTranslations('HomePage.Video');

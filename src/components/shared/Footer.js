@@ -66,11 +66,11 @@ export default function Footer() {
                       />
                     </div>
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.instagram.com/seekahost/">
                     <div className="p-2">
                       <Image
-                        src="/images/socialmedia-icons/whatsapp.svg"
-                        alt="Whatsapp"
+                        src="/images/socialmedia-icons/instagram.svg"
+                        alt="Instagram"
                         width={40}
                         height={40}
                       />

@@ -177,43 +177,43 @@ export default function Hosting() {
 
 
                 <div className="w-full lg:w-1/3 rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
-                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">Website Platforms</h3>
-                    <p className="text-gray-600 mb-4">Find the right way to build your website.</p>
+                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">Hosting</h3>
+                    <p className="text-gray-600 mb-4">Reliable, secure, and high-performance hosting tailored for any website.</p>
 
                     <ul className="space-y-2 text-gray-700">
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Tools
+                                • Unlimited websites & storage options
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • AI Tools
+                                • Free SSL certificates for all domains
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Templates
+                                • Fast SSD-powered performance
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Checker
+                                • Daily automated backups included
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Domain Check
+                                • 99.9% uptime guarantee
                             </Link>
                         </li>
                     </ul>
 
                     <div className="mt-6">
                         <Image
-                            src="/images/wordpress-hosting/screenshot-1.webp"
+                            src="/images/navbar-menu/hosting.webp"
                             alt="Website builder preview"
-                            width={760}
-                            height={530}
+                            width={1434}
+                            height={1004}
                             className="rounded-md shadow-sm"
                         />
                     </div>

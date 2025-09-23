@@ -1,4 +1,5 @@
 import Image from "next/image"
+import SeePlansButton from '../shared/SeePlansButtons';
 export default function OrderNow2() {
     return (
         <>
@@ -29,9 +30,11 @@ export default function OrderNow2() {
                     <p className="text-[#1D216A] mb-4">
                         From plugin issues to performance tweaks, we’re here to help you every step of the way—by email, live chat, or support ticket.
                     </p>
-                    <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8">
-                        Order Now
-                    </button>
+                    <SeePlansButton
+                        text="Get Hosting"
+                        baseClasses={true}
+                        className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold md:mt-8"
+                    />
                 </div>
             </section>
         </>

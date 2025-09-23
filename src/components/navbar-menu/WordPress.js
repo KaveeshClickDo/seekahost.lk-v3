@@ -69,43 +69,43 @@ export default function WordPress() {
 
           
                 <div className="w-full lg:w-1/3 rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
-                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">WordPress Platforms</h3>
-                    <p className="text-gray-600 mb-4">Find the right way to build your website.</p>
+                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">WordPress Hosting</h3>
+                    <p className="text-gray-600 mb-4">Optimized WordPress hosting for speed, security, and simplicity.</p>
 
                     <ul className="space-y-2 text-gray-700">
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Tools
+                                • 1-click WordPress installation
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • AI Tools
+                                • Pre-configured performance & caching
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Templates
+                                • Automatic updates & patching
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Checker
+                                • Free WordPress migration
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Domain Check
+                                • Expert WordPress support
                             </Link>
                         </li>
                     </ul>
 
                     <div className="mt-6">
                         <Image
-                            src="/images/wordpress-hosting/screenshot-1.webp"
-                            alt="Website builder preview"
-                            width={760}
-                            height={530}
+                            src="/images/navbar-menu/wordpress.webp"
+                            alt="WordPress Hosting"
+                            width={1434}
+                            height={1004}
                             className="rounded-md shadow-sm"
                         />
                     </div>

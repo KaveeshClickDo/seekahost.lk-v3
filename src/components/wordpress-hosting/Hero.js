@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import SeePlansButton from './SeePlansButton';
+import SeePlansButton from '../shared/SeePlansButtons';
+
 
 export default function Hero() {
 
@@ -76,7 +77,11 @@ export default function Hero() {
                         </div>
                         <div className="text-sm">with a 1-year term</div>
                     </div>
-                    <SeePlansButton />
+                    <SeePlansButton
+                        text="See Plans"
+                        baseClasses={true}
+                        className="inline-block bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
+                    />
 
                 </div>
 

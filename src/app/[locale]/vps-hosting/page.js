@@ -32,7 +32,9 @@ export default function VPSHosting() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <PackagesPrices />
+            <div id="package-prices-section">
+                <PackagesPrices />
+            </div>
             <Solution />
             <PeopleCards />
             <WhySeekahost />

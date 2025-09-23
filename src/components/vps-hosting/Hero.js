@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import SeePlansButton from '../wordpress-hosting/SeePlansButton';
 import TestimonialSlider from '../home/Testimonials';
+import SeePlansButton from '../shared/SeePlansButtons';
 
 export default function Hero() {
 
@@ -17,7 +17,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-4 text-md md:text-lg font-bold">
-                        Full Control. Lightning Speed. Unmatched Flexibility. 
+                        Full Control. Lightning Speed. Unmatched Flexibility.
                     </p>
 
                     <p className="text-sm md:text-base text-gray-300 max-w-xl">
@@ -33,12 +33,14 @@ export default function Hero() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                        <button className="bg-[#0081FF] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
-                            Get Started Now
-                        </button>
-                        <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
-                            Compare Plans
-                        </button>
+                        {/* <button className="bg-[#0081FF] hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-4xl transition-colors duration-200">
+                                                    Get Started Now
+                                                </button> */}
+                        <SeePlansButton
+                            text="Compare Plans"
+                            baseClasses={true}
+                            className="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-6 rounded-4xl transition-colors duration-200"
+                        />
                     </div>
 
                 </div>

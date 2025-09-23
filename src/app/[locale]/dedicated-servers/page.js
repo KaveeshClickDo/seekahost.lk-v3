@@ -31,7 +31,9 @@ export default function DedicatedServers() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <PackagesPrices />
+            <div id="package-prices-section">
+                <PackagesPrices />
+            </div>
             <PeopleCards />
             <Solution />
             <WhySeekahost />
