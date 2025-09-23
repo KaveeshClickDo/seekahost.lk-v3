@@ -22,40 +22,38 @@ export default function ControlPanel() {
 
 
             <div className="md:w-1/2 grid grid-cols-2 gap-6 relative md:my-10">
-
+                
                 <div className="grid gap-6 mb-10">
                     <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
-                            src="/images/shared/ddos-protected.svg"
-                            alt="Domain Registration"
+                            src="/images/cheap-web-hosting-with-cpanel/seamless-transfer.svg"
+                            alt="Seamless Transfer"
                             className="mb-4 mx-auto"
                             width={75}
                             height={75}
                         />
                         <h3 className="md:text-2xl font-bold mb-2">
-                            Domain Registration
+                            Seamless Transfer
                         </h3>
                         <p className="text-sm md:text-base text-gray-700 mx-2">
-                            You can easily register your ideal domain names inside the
-                            control panel now.
+                            We’ll migrate your website, files, databases, and emails safely and securely.
                         </p>
                     </div>
 
 
                     <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
-                            src="/images/shared/ddos-protected.svg"
-                            alt="WP Hosting Plans"
+                            src="/images/cheap-web-hosting-with-cpanel/expert-assistance.svg"
+                            alt="Expert Assistance"
                             className="mb-4 mx-auto"
                             width={75}
                             height={75}
                         />
                         <h3 className="md:text-2xl font-bold mb-2">
-                            WP Hosting Plans
+                            Expert Assistance
                         </h3>
                         <p className="text-sm md:text-base text-gray-700 mx-2">
-                            4 best WordPress hosting packages suitable for bloggers
-                            and business owners.
+                            Our migration specialists ensure everything is set up and working perfectly
                         </p>
                     </div>
                 </div>
@@ -63,32 +61,31 @@ export default function ControlPanel() {
                 <div className="grid gap-6 mt-10">
                     <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
-                            src="/images/shared/ddos-protected.svg"
-                            alt="1-Click WP Installer"
+                            src="/images/cheap-web-hosting-with-cpanel/zero-downtime.svg"
+                            alt="Zero Downtime"
                             className="mb-4 mx-auto"
                             width={75}
                             height={75}
                         />
                         <h3 className="md:text-2xl font-bold mb-2">
-                            1-Click WP Installer
+                            Zero Downtime
                         </h3>
                         <p className="text-sm md:text-base text-gray-700 mx-2">
-                            Easiest way to just 1-click install WordPress on your domain
-                            and get online.
+                            Your site stays online throughout the migration process without interruptions.
                         </p>
                     </div>
 
 
                     <div className="bg-[#F4F7FA] rounded-2xl p-4 text-center shadow hover:shadow-lg transition-shadow">
                         <Image
-                            src="/images/shared/ddos-protected.svg"
-                            alt="Website Traffic/Data"
+                            src="/images/cheap-web-hosting-with-cpanel/completely-free.svg"
+                            alt="Completely Free"
                             className="mb-4 mx-auto"
                             width={75}
                             height={75}
                         />
                         <h3 className="md:text-2xl font-bold mb-2">
-                            Website Traffic/Data
+                            Completely Free
                         </h3>
                         <p className="text-sm md:text-base text-gray-700 mx-2">
                             Track your WordPress site traffic daily via cPanel & Google

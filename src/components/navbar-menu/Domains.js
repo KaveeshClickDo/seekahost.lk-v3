@@ -66,43 +66,43 @@ export default function Domains() {
 
                 {/* Right side - Promotional content */}
                 <div className="w-full lg:w-1/3 rounded-xl bg-gray-50 p-6 flex flex-col justify-center">
-                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">Domain Platforms</h3>
-                    <p className="text-gray-600 mb-4">Find the right way to build your website.</p>
+                    <h3 className="font-bold text-[#2072CC] text-lg mb-2">Domains & SSL</h3>
+                    <p className="text-gray-600 mb-4">Secure your online identity with reliable domains and SSL protection.</p>
 
                     <ul className="space-y-2 text-gray-700">
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Tools
+                                • Wide range of domain extensions available 
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • AI Tools
+                                • Easy domain management with DNS control
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Templates
+                                • Free SSL certificates for every website
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Website Checker
+                                • Boost trust with HTTPS encryption & site security
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Domain Check
+                                • Automatic renewal options to keep your domain active
                             </Link>
                         </li>
                     </ul>
 
                     <div className="mt-6">
                         <Image
-                            src="/images/wordpress-hosting/screenshot-1.webp"
-                            alt="Website builder preview"
-                            width={760}
-                            height={530}
+                            src="/images/navbar-menu/domain.webp"
+                            alt="Domains & SSL"
+                            width={1434}
+                            height={1004}
                             className="rounded-md shadow-sm"
                         />
                     </div>
