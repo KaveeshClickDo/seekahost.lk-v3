@@ -2,10 +2,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { MdArrowForward } from "react-icons/md";
 import { useTranslations } from 'next-intl';
+import SeePlansButton from "./SeePlansButtons";
 
 export default function GetStarted() {
     const t = useTranslations('HomePage.GetStarted');
-    
+
     return (
         <>
             <section className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto py-12 px-4 md:px-0 md:mb-10">
@@ -23,15 +24,17 @@ export default function GetStarted() {
                         </p>
                     ))}
                     <div className="flex items-center space-x-4">
-                        <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold">
-                            {t('buttons.getStarted')}
-                        </button>
-                        <Link
+                        <SeePlansButton
+                            text={t('buttons.getStarted')}
+                            baseClasses={true}
+                            className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold"
+                        />
+                        {/* <Link
                             href="#"
                             className="flex items-center justify-center text-black text-base font-bold hover:text-[#2072CC] transition-colors gap-1 sm:gap-2 py-2"
                         >
                             {t('buttons.learnMore')} <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                        </Link>
+                        </Link> */}
                     </div>
 
                 </div>

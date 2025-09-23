@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
+import SeePlansButton from "./SeePlansButtons";
 
 export default function WhySeekahost() {
   const t = useTranslations('HomePage.WhySeekahost');
@@ -33,15 +34,17 @@ export default function WhySeekahost() {
           </ul>
 
           <div className="flex items-center gap-6">
-            <button className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold">
-              {t('buttons.getStarted')}
-            </button>
-            <button className="flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-900 transition-colors">
+            <SeePlansButton
+              text={t('buttons.getStarted')}
+              baseClasses={true}
+              className="bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full transition-colors cursor-pointer font-bold"
+            />
+            {/* <button className="flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-900 transition-colors">
               {t('buttons.learnMore')}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+            </button> */}
           </div>
         </div>
 

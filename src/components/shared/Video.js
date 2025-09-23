@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
 import ProcessSteps from '../home/ProcessSteps';
+import SeePlansButton from '../home/SeePlansButtons';
 
 export default function Video() {
   const t = useTranslations('HomePage.Video');
@@ -82,12 +83,17 @@ export default function Video() {
 
         {/* Get Started Button */}
         <div className="text-center">
-          <Link
+          {/* <Link
             href="#"
             className="inline-block bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-15 py-2 rounded-full transition-all cursor-pointer font-bold md:mt-8"
           >
             {t('button')}
-          </Link>
+          </Link> */}
+          <SeePlansButton
+            text={t('button')}
+            baseClasses={true}
+            className="inline-block bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-15 py-2 rounded-full transition-all cursor-pointer font-bold md:mt-8"
+          />
         </div>
       </div>
     </section>

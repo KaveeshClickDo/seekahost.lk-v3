@@ -43,7 +43,7 @@ export default function ScreenshotSlider() {
 
     return (
         <section className="bg-[#F5FAFF] min-h-screen">
-            <div className="mx-auto px-4 sm:px-6 lg:px-8 min-h-screen">
+            <div className="mx-auto min-h-screen">
                 <div className="flex flex-col lg:flex-row min-h-screen">
                     {/* Image section - Responsive height */}
                     <div className="w-full lg:w-1/2 flex justify-center relative h-[40vh] sm:h-[50vh] md:h-[60vh] lg:min-h-screen order-1 lg:order-1">
@@ -80,11 +80,10 @@ export default function ScreenshotSlider() {
                                     <button
                                         key={index}
                                         onClick={() => changeSlide(index)}
-                                        className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
-                                            index === currentSlide 
-                                                ? "bg-white scale-110 shadow-lg" 
-                                                : "bg-white/50 hover:bg-white/70 active:bg-white/80"
-                                        }`}
+                                        className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                                            ? "bg-white scale-110 shadow-lg"
+                                            : "bg-white/50 hover:bg-white/70 active:bg-white/80"
+                                            }`}
                                         aria-label={`Go to slide ${index + 1}`}
                                         disabled={isTransitioning}
                                     />
@@ -101,31 +100,36 @@ export default function ScreenshotSlider() {
                                     {currentSlideData.badge}
                                 </span>
                             </div>
-                            
+
                             <h2 className="mt-2 mb-4 text-2xl md:text-4xl font-bold text-[#1D216A]">
                                 {currentSlideData.title}
                             </h2>
-                            
+
                             <p className="text-[#1D216A] mb-4">
                                 {currentSlideData.description}
                             </p>
-                            
+
                             <p className="text-[#1D216A] mb-6">
                                 {currentSlideData.additionalText}
                             </p>
-                            
+
                             {/* Mobile-first button layout */}
-                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
-                                <button className="w-full sm:w-auto bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full active:bg-blue-800 transition-colors font-bold">
-                                    {t('buttons.getStarted')}
-                                </button>
-                                <Link
+                            {currentSlideData.id === 2 && (
+                                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+                                    <Link
+                                        href="/wordpress-hosting"
+                                        className="w-full sm:w-auto bg-[#0066CC] hover:bg-[#0A488A] text-white border border-[#0066CC] px-6 py-2 rounded-full active:bg-blue-800 transition-colors font-bold text-center"
+                                    >
+                                        {t('buttons.getStarted')}
+                                    </Link>
+                                    {/* <Link
                                     href="#"
                                     className="flex items-center text-[#1D216A] text-base sm:text-lg font-bold hover:text-[#0066CC] active:text-[#004499] transition-colors gap-2"
                                 >
                                     {t('buttons.learnMore')} <MdArrowForward className="w-4 h-4 sm:w-5 sm:h-5" />
-                                </Link>
-                            </div>
+                                </Link> */}
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

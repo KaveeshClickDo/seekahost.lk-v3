@@ -282,14 +282,14 @@
         }
       ],
       "buttons": {
-        "getStarted": "Get Started",
+        "getStarted": "Host My WordPress Site",
         "learnMore": "Learn More"
       }
     },
     "Video": {
       "title": "Website Migration",
       "description": "Migrating your website doesn’t have to be complicated. With the right tools and support, you can move everything smoothly and securely.",
-      "button": "Get Started",
+      "button": "Start Migration",
       "ProcessSteps": [
         {
           "number": "01",
@@ -317,7 +317,7 @@
         "All our technical staff have undergone extensive training for dealing with web hosting services, UK servers and data centres, so they can help you with all your questions."
       ],
       "buttons": {
-        "getStarted": "Get Started",
+        "getStarted": "Get UK Hosting",
         "learnMore": "Learn More"
       },
       "image": {
