@@ -152,7 +152,7 @@
           "title": "Hébergement Web",
           "buttonName": "Voir les Forfaits",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "mois",
           "specialText": "sur 3 ans HT",
           "features": [

@@ -152,7 +152,7 @@
           "title": "Web Hosting",
           "buttonName": "Lihat Paket",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "bulan",
           "specialText": "kontrak 3 tahun belum termasuk PPN",
           "features": [

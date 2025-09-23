@@ -135,10 +135,10 @@ export const managedWPPkgPrices = [
         title: 'Starter',
         buttonName: 'Get Starter',
         link : '#',
-        monthlyPrice: 280,
-        yearlyPrice: 2000,
+        monthlyPrice: 2.8,
+        yearlyPrice: 20,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for £2800/yr',
+        specialTextYear: 'Renews for £28/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -174,10 +174,10 @@ export const managedWPPkgPrices = [
         title: 'Turbo',
         buttonName: 'Get Turbo',
         link : '#',
-        monthlyPrice: 500,
-        yearlyPrice: 5000,
-        specialTextMonth: 'Renews at £580/mo',
-        specialTextYear: 'Renews for £5800/yr',
+        monthlyPrice: 5,
+        yearlyPrice: 50,
+        specialTextMonth: 'Renews at £5.8/mo',
+        specialTextYear: 'Renews for £58/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -215,10 +215,10 @@ export const managedWPPkgPrices = [
         title: 'Supersonic',
         buttonName: 'Get Supersonic',
         link : '#',
-        monthlyPrice: 700,
-        yearlyPrice: 7000,
-        specialTextMonth: 'Renews at £780/mo',
-        specialTextYear: 'Renews for £7800/yr',
+        monthlyPrice: 7,
+        yearlyPrice: 70,
+        specialTextMonth: 'Renews at £7.8/mo',
+        specialTextYear: 'Renews for £78/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -261,10 +261,10 @@ export const woocommercePkgPrices = [
         title: 'Starter',
         buttonName: 'Get Starter',
         link : '#',
-        monthlyPrice: 280,
-        yearlyPrice: 2000,
+        monthlyPrice: 2.8,
+        yearlyPrice: 20,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for £2800/yr',
+        specialTextYear: 'Renews for £28/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -300,10 +300,10 @@ export const woocommercePkgPrices = [
         title: 'Turbo',
         buttonName: 'Get Turbo',
         link : '#',
-        monthlyPrice: 500,
-        yearlyPrice: 5000,
-        specialTextMonth: 'Renews at £580/mo',
-        specialTextYear: 'Renews for £5800/yr',
+        monthlyPrice: 5,
+        yearlyPrice: 50,
+        specialTextMonth: 'Renews at £5.8/mo',
+        specialTextYear: 'Renews for £58/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -341,10 +341,10 @@ export const woocommercePkgPrices = [
         title: 'Supersonic',
         buttonName: 'Get Supersonic',
         link : '#',
-        monthlyPrice: 700,
-        yearlyPrice: 7000,
-        specialTextMonth: 'Renews at £780/mo',
-        specialTextYear: 'Renews for £7800/yr',
+        monthlyPrice: 7,
+        yearlyPrice: 70,
+        specialTextMonth: 'Renews at £7.8/mo',
+        specialTextYear: 'Renews for £78/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -387,10 +387,10 @@ export const wordPressPkgPrices = [
         title: 'Starter',
         buttonName: 'Get Starter',
         link : '#',
-        monthlyPrice: 280,
-        yearlyPrice: 2000,
+        monthlyPrice: 2.8,
+        yearlyPrice: 20,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for £2800/yr',
+        specialTextYear: 'Renews for £28/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -426,10 +426,10 @@ export const wordPressPkgPrices = [
         title: 'Turbo',
         buttonName: 'Get Turbo',
         link : '#',
-        monthlyPrice: 500,
-        yearlyPrice: 5000,
-        specialTextMonth: 'Renews at £580/mo',
-        specialTextYear: 'Renews for £5800/yr',
+        monthlyPrice: 5,
+        yearlyPrice: 50,
+        specialTextMonth: 'Renews at £5.8/mo',
+        specialTextYear: 'Renews for £58/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -467,10 +467,10 @@ export const wordPressPkgPrices = [
         title: 'Supersonic',
         buttonName: 'Get Supersonic',
         link : '#',
-        monthlyPrice: 700,
-        yearlyPrice: 7000,
-        specialTextMonth: 'Renews at £780/mo',
-        specialTextYear: 'Renews for £7800/yr',
+        monthlyPrice: 7,
+        yearlyPrice: 70,
+        specialTextMonth: 'Renews at £7.8/mo',
+        specialTextYear: 'Renews for £78/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -513,10 +513,10 @@ export const agencyPkgPrices = [
         title: 'Agency Starter',
         buttonName: 'Get Starter',
         link : '#',
-        monthlyPrice: 280,
-        yearlyPrice: 2000,
+        monthlyPrice: 2.8,
+        yearlyPrice: 20,
         specialTextMonth: '30 days of Free Trial',
-        specialTextYear: 'Renews for £2800/yr',
+        specialTextYear: 'Renews for £28/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -540,8 +540,8 @@ export const agencyPkgPrices = [
         title: 'Agency Custom',
         buttonName: 'Talk with a Specialist',
         link : '/personalized-hosting',
-        monthlyPrice: 500,
-        yearlyPrice: 5000,
+        monthlyPrice: 5,
+        yearlyPrice: 50,
         specialTextMonth: 'Starting Price',
         specialTextYear: 'Starting Price',
         featureSections: [
@@ -567,10 +567,10 @@ export const agencyPkgPrices = [
         title: 'Agency Professional',
         buttonName: 'Get Professional',
         link : '#',
-        monthlyPrice: 700,
-        yearlyPrice: 7000,
-        specialTextMonth: 'Renews at £780/mo',
-        specialTextYear: 'Renews for £7800/yr',
+        monthlyPrice: 7,
+        yearlyPrice: 70,
+        specialTextMonth: 'Renews at £7.8/mo',
+        specialTextYear: 'Renews for £78/yr',
         featureSections: [
             {
                 title: 'General Features',
@@ -589,5 +589,86 @@ export const agencyPkgPrices = [
             }
         ],
         isBestValue: false,
+    },
+];
+
+export const dedicatedPkgPrices = [
+    {
+        title: 'Server Rise',
+        buttonName: 'Get Started!',
+        link: 'https://www.seekahost.com/index.php/store/wordpress-web-hosting',
+        monthlyPrice: 199,
+        yearlyPrice: 0,
+        discountYear: 0,
+        discountMonth: 0,
+        specialTextMonth: 'Renews at £199/mo',
+        specialTextYear: '',
+        featureSections: [
+            {
+                title: 'Specifications',
+                features: [
+                    'Processor: Intel Xeon E3-1270v6 - 4c / 8t - 3.8 GHz / 4.2 GHz',
+                    '32GB Memory',
+                    'Storage: 2x HDD SATA 2TB / 450GB SSD',
+                    'Disk NVMe, SATA available',
+                    'WHM/cPanel',
+                    'SSH Access',
+                    'Delivery within 24-36 hours',
+                ]
+            }
+        ],
+        isBestValue: false,
+    },
+    {
+        title: 'Server Rise II',
+        buttonName: 'Get Started!',
+        link: 'https://www.seekahost.com/index.php/store/wordpress-web-hosting',
+        monthlyPrice: 249,
+        yearlyPrice: 0,
+        discountYear: 0,
+        discountMonth: 0,
+        specialTextMonth: 'Renews at £249/mo',
+        specialTextYear: '',
+        featureSections: [
+            {
+                title: 'Specifications',
+                features: [
+                    'Processor: Intel Xeon D-1540 - 8c / 16t - 2.0 GHz / 2.6 GHz',
+                    '64GB Memory',
+                    'Storage: 2x HDD SATA 2TB / 450GB SSD',
+                    'Disk NVMe, SATA available',
+                    'WHM/cPanel',
+                    'SSH Access',
+                    'Delivery within 24-36 hours',
+                ]
+            }
+        ],
+        isBestValue: false,
+    },
+    {
+        title: 'Server Advance',
+        buttonName: 'Get Started!',
+        link: 'https://www.seekahost.com/index.php/store/wordpress-web-hosting',
+        monthlyPrice: 299,
+        yearlyPrice: 0,
+        discountYear: 0,
+        discountMonth: 0,
+        specialTextMonth: 'Renews at £299/mo',
+        specialTextYear: '',
+        featureSections: [
+            {
+                title: 'Specifications',
+                features: [
+                    'Processor: AMD Epyc 7351P - 16c / 32t - 2.4 GHz / 2.9 GHz',
+                    '128GB Memory',
+                    'Storage: 2x HDD SATA 2TB / 500GB SSD',
+                    'Disk NVMe, SATA available',
+                    'WHM/cPanel',
+                    'SSH Access',
+                    'Delivery within 24-36 hours',
+                ]
+            }
+        ],
+        isBestValue: true,
     },
 ];

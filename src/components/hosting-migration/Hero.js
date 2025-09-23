@@ -58,12 +58,12 @@ export default function Hero() {
                         <div className="bg-yellow-500 text-blue-950 text-xs font-semibold inline-block px-2 py-1 rounded">
                             Save 90%
                         </div>
-                        <div className="line-through text-gray-300 text-sm mt-1">£2,800/month</div>
+                        <div className="line-through text-gray-300 text-sm mt-1">£2.8/month</div>
                     </div>
 
                     <div className="mt-4">
                         <div className="flex items-baseline">
-                            <span className="text-xl md:text-5xl font-bold">£280</span>
+                            <span className="text-xl md:text-5xl font-bold">£2.8</span>
                             <span className="text-sm md:text-xl ml-1">/month</span>
                         </div>
                         <div className="text-sm">with a 1-year term</div>

@@ -152,7 +152,7 @@
           "title": "Веб-хостинг",
           "buttonName": "Посмотреть пакеты",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "мес",
           "specialText": "при 3-летнем сроке, без НДС",
           "features": [

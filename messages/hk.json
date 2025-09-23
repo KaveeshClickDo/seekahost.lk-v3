@@ -152,7 +152,7 @@
           "title": "虚拟主机",
           "buttonName": "查看套餐",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "月",
           "specialText": "3 年计划，不含增值税",
           "features": [

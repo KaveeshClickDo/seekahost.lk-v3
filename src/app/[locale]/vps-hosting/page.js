@@ -12,7 +12,7 @@ import OrderNow3 from "@/components/wordpress-hosting/OrderNow-3";
 import PeopleCards from "@/components/shared/PeopleCards";
 import ScreenshotSlider from "@/components/wordpress-hosting/ScreenshotSlider";
 import BacktoTop from "@/components/shared/BacktoTop";
-import PackagesPrices from "@/components/dedicated-servers/PackagePrice";
+import PackagesPrices from "@/components/vps-hosting/PackagePrice";
 import Header from "@/components/shared/Header";
 import Solution from "@/components/vps-hosting/Solution";
 import WhySeekahost from "@/components/vps-hosting/WhySeekahost";

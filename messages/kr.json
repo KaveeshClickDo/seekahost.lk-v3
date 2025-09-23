@@ -152,7 +152,7 @@
           "title": "웹 호스팅",
           "buttonName": "패키지 보기",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "월",
           "specialText": "3년 계약, 부가세 제외",
           "features": [

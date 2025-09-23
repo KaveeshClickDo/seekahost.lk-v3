@@ -9,37 +9,32 @@ import {
     managedWPPkgPrices,
     woocommercePkgPrices,
     wordPressPkgPrices,
-    agencyPkgPrices,
-    dedicatedPkgPrices
+    agencyPkgPrices
 } from '@/data/packagePricesData';
 
 export default function PackagesPrices() {
-    const [activePackageType, setActivePackageType] = useState('dedicated');
+    const [activePackageType, setActivePackageType] = useState('entry');
     const [isMonthly, setIsMonthly] = useState(true);
     const [isClient, setIsClient] = useState(false);
 
     // Package type configurations
     const packageTypes = {
-        dedicated: {
-            label: 'Dedicated Server',
-            data: dedicatedPkgPrices
+        entry: {
+            label: 'Entry Level',
+            data: homePkgPrices
         },
-        // entry: {
-        //     label: 'Entry Level',
-        //     data: homePkgPrices
-        // },
-        // medium: {
-        //     label: 'Medium Level',
-        //     data: managedWPPkgPrices
-        // },
-        // high: {
-        //     label: 'High end Level',
-        //     data: woocommercePkgPrices
-        // },
-        // enterprise: {
-        //     label: 'Enterprise Level',
-        //     data: wordPressPkgPrices
-        // }
+        medium: {
+            label: 'Medium Level',
+            data: managedWPPkgPrices
+        },
+        high: {
+            label: 'High end Level',
+            data: woocommercePkgPrices
+        },
+        enterprise: {
+            label: 'Enterprise Level',
+            data: wordPressPkgPrices
+        }
     };
 
     // Get current pricing data based on active package type
@@ -100,11 +95,11 @@ export default function PackagesPrices() {
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:my-10">
                 <h1 className="inline-block text-[#1276DF] text-sm md:text-lg mb-4 font-semibold">Price Plans</h1>
                 <h2 className="text-2xl md:text-4xl font-bold mb-8">
-                    Reliable and Dedicated Performance with High Security
+                    Best Plans & Cheapest Prices With SeekaHost
                 </h2>
 
                 {/* Package Type Buttons */}
-                {/* <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-4 mb-8">
+                <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-center gap-4 mb-8">
                     {Object.entries(packageTypes).map(([key, config]) => (
                         <button
                             key={key}
@@ -126,10 +121,10 @@ export default function PackagesPrices() {
                             {config.label}
                         </button>
                     ))}
-                </div> */}
+                </div>
 
                 {/* Monthly/Yearly Toggle */}
-                {/* <div className="flex items-center justify-center space-x-4 mb-10">
+                <div className="flex items-center justify-center space-x-4 mb-10">
                     <span
                         className={`cursor-pointer md:text-lg ${isMonthly ? 'text-[#2072CC]' : ''}`}
                         onClick={() => setIsMonthly(true)}
@@ -160,7 +155,7 @@ export default function PackagesPrices() {
                     >
                         Yearly
                     </span>
-                </div> */}
+                </div>
 
                 <div className="min-h-[420px]">
                     {isClient ? (

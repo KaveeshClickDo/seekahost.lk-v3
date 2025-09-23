@@ -4,7 +4,7 @@ import Reviews from "@/components/shared/Review";
 import Hero from "@/components/cloud-servers/Hero";
 import PeopleCards from "@/components/shared/PeopleCards";
 import BacktoTop from "@/components/shared/BacktoTop";
-import PackagesPrices from "@/components/dedicated-servers/PackagePrice";
+import PackagesPrices from "@/components/vps-hosting/PackagePrice";
 import Header from "@/components/shared/Header";
 import Solution from "@/components/cloud-servers/Solution";
 import WhySeekahost from "@/components/cloud-servers/WhySeekahost";

@@ -152,7 +152,7 @@
           "title": "Web Hosting",
           "buttonName": "View Packages",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "mon",
           "specialText": "on 3 years excl. VAT",
           "features": [

@@ -152,7 +152,7 @@
           "title": "Hospedagem Web",
           "buttonName": "Ver Pacotes",
           "link": "/wordpress-hosting",
-          "price": 9.99,
+          "price": 0.99,
           "period": "mês",
           "specialText": "em 3 anos sem IVA",
           "features": [
