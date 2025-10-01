@@ -7,9 +7,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: process.env.NEXT_PUBLIC_STRAPI_PROTOCOL || 'https',
-        hostname: process.env.NEXT_PUBLIC_STRAPI_HOSTNAME || 'admin.seekahost.co.uk',
-        port: process.env.NEXT_PUBLIC_STRAPI_PORT || '',
+        protocol: 'https',
+        hostname: 'admin.seekahost.co.uk',
         pathname: '/uploads/**',
       },
     ],
