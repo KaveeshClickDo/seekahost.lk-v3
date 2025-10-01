@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing';
 import './globals.css';
 import './ckeditor-content.css';
 import { siteSchema } from './schema';
+import TawkToChat from '@/components/shared/TawkToChat';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -60,6 +61,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
+        <TawkToChat />
       </body>
     </html>
   );
