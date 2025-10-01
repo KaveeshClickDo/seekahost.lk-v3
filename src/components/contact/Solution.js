@@ -21,7 +21,7 @@ export default function Solution () {
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Security, spam and malware</h3>
                 <p className="text-gray-700">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
+                  Protect your websites and emails with strong anti-spam filters and malware protection tools.
                 </p>
               </div>
               <div className="ml-4">
@@ -42,7 +42,7 @@ export default function Solution () {
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Knowledge Base</h3>
                 <p className="text-gray-700">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
+                  Access detailed guides, FAQs, and articles to quickly resolve common hosting issues.
                 </p>
               </div>
               <div className="ml-4">
@@ -63,7 +63,7 @@ export default function Solution () {
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">SeekaHost Academy</h3>
                 <p className="text-gray-700">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
+                  Learn digital skills, SEO, blogging, and hosting with step-by-step courses and training.
                 </p>
               </div>
               <div className="ml-4">
@@ -84,7 +84,7 @@ export default function Solution () {
               <div className="flex-1">
                 <h3 className="text-lg md:text-2xl font-bold mb-2">Tutorials</h3>
                 <p className="text-gray-700">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu augue eget nisl bibendum tincidunt.
+                  Step-by-step tutorials and video lessons to help you manage hosting and websites easily.
                 </p>
               </div>
               <div className="ml-4">
