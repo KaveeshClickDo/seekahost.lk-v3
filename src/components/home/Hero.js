@@ -50,7 +50,7 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:px-20">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:mt-0 xl:px-20">
                 <div className="text-white w-full max-w-lg z-3">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         {t('titleLine1')}<br />

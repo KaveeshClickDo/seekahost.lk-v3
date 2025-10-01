@@ -80,7 +80,7 @@ export default function WordPress() {
                         </li>
                         <li className="hover:text-blue-500">
                             <Link href="#" className="block">
-                                • Pre-configured performance & caching
+                                • Ready caching & speed
                             </Link>
                         </li>
                         <li className="hover:text-blue-500">

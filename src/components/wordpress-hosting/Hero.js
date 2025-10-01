@@ -15,7 +15,7 @@ export default function Hero() {
                 priority
             /> */}
 
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:mt-0 xl:px-20">
 
 
                 <div className="text-white w-full max-w-2xl z-2">
@@ -72,10 +72,10 @@ export default function Hero() {
 
                     <div className="mt-4">
                         <div className="flex items-baseline">
-                            <span className="text-xl md:text-5xl font-bold">£1.49</span>
+                            <span className="text-xl md:text-5xl font-bold">£0.99</span>
                             <span className="text-sm md:text-xl ml-1">/month</span>
                         </div>
-                        <div className="text-sm">with a 1-year term</div>
+                        <div className="text-sm">with a 3-year term</div>
                     </div>
                     <SeePlansButton
                         text="See Plans"

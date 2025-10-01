@@ -12,7 +12,7 @@ export default function Hero() {
                 priority
             /> */}
 
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:mt-0 xl:px-20">
 
 
                 <div className="text-white w-full max-w-xl z-2">
@@ -35,7 +35,7 @@ export default function Hero() {
                         src="/images/small-business-hosting/small-business-hosting-hero-image.webp"
                         alt="Hero Image"
                         width={1292}
-                        height={1294}
+                        height={1168}
                         className="w-full"
                         priority
                     />

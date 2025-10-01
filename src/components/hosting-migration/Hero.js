@@ -2,6 +2,28 @@ import Image from 'next/image';
 import SeePlansButton from '../shared/SeePlansButtons';
 
 export default function Hero() {
+    const features = [
+        {
+            icon: '🚀',
+            title: 'Seamless Migration Process',
+            description: 'We handle the entire migration process for you—zero downtime, zero hassle.'
+        },
+        {
+            icon: '⚡',
+            title: 'Lightning-Fast Performance',
+            description: 'Experience ultrafast loading speeds with our optimized hosting infrastructure.'
+        },
+        {
+            icon: '🛡️',
+            title: 'Enterprise-Grade Security',
+            description: 'Multi-level security protection keeps your website safe 24/7.'
+        },
+        {
+            icon: '🎯',
+            title: 'Expert Support Team',
+            description: 'Our top-rated support team is available around the clock to assist you.'
+        }
+    ];
 
     return (
         <section className="relative lg:h-[700px] w-full flex items-center overflow-hidden">
@@ -14,69 +36,34 @@ export default function Hero() {
                 priority
             /> */}
 
-            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 lg:mt:0 xl:px-20">
-
-
-                <div className="text-white w-full max-w-2xl z-2">
+            <div className="relative container mx-auto px-6 flex flex-col lg:flex-row items-center mt-10 xl:mt-0 xl:px-20">
+                <div className="text-white w-full max-w-xl z-2">
                     <h1 className="text-2xl md:text-4xl font-bold">
                         Hosting Migration
                     </h1>
 
-                    <p className="mt-4 text-md md:text-xl   font-bold">
-                        Ultrafast, Managed, Simple to Use
-                    </p>
-
-                    <ul className="mt-6">
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Automated setup, migration & updates
-                        </li>
-
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Multi-level security for extra peace of mind
-                        </li>
-                        <li className="flex items-start text-sm md:text-base text-gray-300">
-                            <span className="mr-3 w-5 flex-shrink-0">
-                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 10l3 3 7-7" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </span>
-                            Top-rated 24/7 expert support
-                        </li>
+                    <ul className="space-y-5 mt-4">
+                        {features.map((feature, index) => (
+                            <li key={index} className="flex items-start text-sm md:text-base text-gray-300 mt-4">
+                                <div className="flex-shrink-0 mr-3">
+                                    <span className="text-lg">{feature.icon}</span>
+                                </div>
+                                <div>
+                                    <h2 className="font-semibold text-white mb-1">{feature.title}</h2>
+                                    <p className="text-gray-300 text-sm leading-relaxed">{feature.description}</p>
+                                </div>
+                            </li>
+                        ))}
                     </ul>
 
-                    <div className="mt-6">
-                        <div className="bg-yellow-500 text-blue-950 text-xs font-semibold inline-block px-2 py-1 rounded">
-                            Save 90%
-                        </div>
-                        <div className="line-through text-gray-300 text-sm mt-1">£2.8/month</div>
-                    </div>
-
-                    <div className="mt-4">
-                        <div className="flex items-baseline">
-                            <span className="text-xl md:text-5xl font-bold">£2.8</span>
-                            <span className="text-sm md:text-xl ml-1">/month</span>
-                        </div>
-                        <div className="text-sm">with a 1-year term</div>
-                    </div>
                     <SeePlansButton
                         text="See Plans"
                         baseClasses={true}
-                        className="inline-block bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
+                        className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
                     />
-
                 </div>
 
-                <div className="relative w-full max-w-lg 2xl:max-w-xl z-1 ml-auto my-8 lg:my-0">
+                <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto my-8 lg:my-0">
                     <Image
                         src="/images/hosting-migration/hosting-migration-hero-image.webp"
                         alt="Hero Image"
@@ -86,8 +73,6 @@ export default function Hero() {
                         priority
                     />
                 </div>
-
-
             </div>
         </section>
     );

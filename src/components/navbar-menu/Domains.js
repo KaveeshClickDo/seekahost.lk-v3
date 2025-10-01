@@ -71,31 +71,22 @@ export default function Domains() {
 
                     <ul className="space-y-2 text-gray-700">
                         <li className="hover:text-blue-500">
-                            <Link href="#" className="block">
-                                • Wide range of domain extensions available 
-                            </Link>
+                            <Link href="#" className="block">• Wide domain extensions</Link>
                         </li>
                         <li className="hover:text-blue-500">
-                            <Link href="#" className="block">
-                                • Easy domain management with DNS control
-                            </Link>
+                            <Link href="#" className="block">• Easy DNS management</Link>
                         </li>
                         <li className="hover:text-blue-500">
-                            <Link href="#" className="block">
-                                • Free SSL certificates for every website
-                            </Link>
+                            <Link href="#" className="block">• Free SSL included</Link>
                         </li>
                         <li className="hover:text-blue-500">
-                            <Link href="#" className="block">
-                                • Boost trust with HTTPS encryption & site security
-                            </Link>
+                            <Link href="#" className="block">• Secure HTTPS encryption</Link>
                         </li>
                         <li className="hover:text-blue-500">
-                            <Link href="#" className="block">
-                                • Automatic renewal options to keep your domain active
-                            </Link>
+                            <Link href="#" className="block">• Auto domain renewal</Link>
                         </li>
                     </ul>
+
 
                     <div className="mt-6">
                         <Image
