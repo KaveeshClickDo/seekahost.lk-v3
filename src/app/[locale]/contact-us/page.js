@@ -34,7 +34,9 @@ export default function contact() {
             <Hero />
             <Solution />
             {/* <FAQ /> */}
-            <ContactForm />
+            <div id="contactform-section">
+                <ContactForm />
+            </div>
             <GetStarted />
             <BacktoTop />
             <CTA />

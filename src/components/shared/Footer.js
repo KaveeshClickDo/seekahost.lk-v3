@@ -102,7 +102,7 @@ export default function Footer() {
 
               <h3 className="md:text-lg font-medium mb-5 mt-10">{t('OurCompany.title')}</h3>
               <ul className="space-y-4">
-                <li><Link href="/about" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.aboutSeekaHost')}</Link></li>
+                <li><Link href="/about-us" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.aboutSeekaHost')}</Link></li>
                 <li><Link href="https://university.seekahost.com/" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.seekaHostUniversity')}</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.seekaHostBlog')}</Link></li>
                 <li><Link href="/contact-us" className="text-gray-300 hover:text-white font-medium">{t('OurCompany.links.contactUs')}</Link></li>

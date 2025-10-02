@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
 export default function Hero() {
     const t = useTranslations('AboutPage.Hero');
     return (
@@ -14,9 +15,11 @@ export default function Hero() {
                     <p className="text-[#1D216A] mb-7">
                         {t('description')}
                     </p>
-                    <button className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
-                        {t('buttonName')}
-                    </button>
+                    <Link href="/contact-us">
+                        <button className="bg-white text-[#0066CC] border border-[#0066CC] px-6 py-2 rounded-full hover:bg-[#0066CC] hover:text-white transition-colors cursor-pointer font-bold">
+                            {t('buttonName')}
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="md:w-1/2 mt-6 md:mt-0 gap-4 grid">
@@ -56,13 +59,13 @@ export default function Hero() {
                         </div>
                     </div> */}
                     <Image
-                            src="/images/about/about-hero-image.webp"
-                            alt={t('aboutImageAlt')}
-                            width={1102}
-                            height={1172}
-                            className="w-full h-auto"
-                            priority
-                        />
+                        src="/images/about/about-hero-image.webp"
+                        alt={t('aboutImageAlt')}
+                        width={1102}
+                        height={1172}
+                        className="w-full h-auto"
+                        priority
+                    />
                 </div>
             </section>
         </>

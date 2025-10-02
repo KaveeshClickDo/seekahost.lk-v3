@@ -41,7 +41,7 @@ Default Language: ${routing.defaultLocale}
 
 ### Main Pages
 - Homepage: ${baseUrl}
-- About: ${baseUrl}/about
+- About: ${baseUrl}/about-us
 - Contact: ${baseUrl}/contact-us
 - Pricing: ${baseUrl}/pricing
 - Blog: ${baseUrl}/blog
