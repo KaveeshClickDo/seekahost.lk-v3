@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import SeePlansButton from '../shared/SeePlansButtons';
 
 export default function Hero() {
     return (
@@ -50,10 +51,11 @@ export default function Hero() {
                             24/7 expert UK support ready to help anytime.
                         </li>
                     </ul>
-
-                    <button className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7">
-                        Get Started
-                    </button>
+                    <SeePlansButton
+                        text="Get Started"
+                        baseClasses={true}
+                        className="inline-block bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
+                    />
                 </div>
 
                 <div className="relative w-full max-w-lg 2xl:max-w-2xl z-1 ml-auto my-8 lg:my-0">

@@ -63,7 +63,7 @@ export default function Hero() {
                         alt={t('aboutImageAlt')}
                         width={1102}
                         height={1172}
-                        className="w-full h-auto"
+                        className="w-full h-auto px-12"
                         priority
                     />
                 </div>

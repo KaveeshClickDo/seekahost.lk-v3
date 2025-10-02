@@ -2,7 +2,7 @@ import DomainSearchHomeHero from "../home/DomainSearchHomeHero";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-[600px] w-full flex items-center bg-[#0A488A] overflow-hidden">
+        <section className="relative min-h-[640px] w-full flex items-center bg-[#0A488A] overflow-hidden">
             <div className="container mx-auto px-6 xl:px-20 py-16">
                 {/* Centered Content */}
                 <div className="text-center text-white max-w-4xl mx-auto">

@@ -94,7 +94,7 @@ export default function Footer() {
               <h3 className="md:text-lg font-medium mb-5">{t('HostingServices.title')}</h3>
               <ul className="space-y-4">
                 <li><Link href="/business-web-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.businessWebHosting')}</Link></li>
-                <li><Link href="/cheap-web-hosting-with-cpanel" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.cheapCpanelHosting')}</Link></li>
+                <li><Link href="/cheap-web-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.cheapCpanelHosting')}</Link></li>
                 {/* <li><Link href="/nodejs-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.nodejsHosting')}</Link></li> */}
                 <li><Link href="/agency-hosting" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.agencyHosting')}</Link></li>
                 <li><Link href="/hosting-migration" className="text-gray-300 hover:text-white font-medium">{t('HostingServices.links.hostingMigration')}</Link></li>

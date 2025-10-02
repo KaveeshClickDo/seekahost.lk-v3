@@ -27,7 +27,7 @@ export default function Hosting() {
                             </div>
                         </Link>
 
-                        <Link href="/cheap-web-hosting-with-cpanel" className="flex items-start p-3 hover:bg-gray-50 rounded group">
+                        <Link href="/cheap-web-hosting" className="flex items-start p-3 hover:bg-gray-50 rounded group">
                             <div className="mr-3 text-blue-500 mt-1 flex-shrink-0">
                                 <Image
                                     src="/images/shared/cheap-cpanel-hosting.svg"

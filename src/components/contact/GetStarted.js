@@ -10,7 +10,7 @@ export default function GetStarted() {
 
                     {/* Content Side */}
                     <div className="w-full lg:w-1/2 space-y-6">
-                        <span className="inline-block bg-[#CCE5FF] text-blue-700 text-sm md:text-lg font-medium  px-3 py-1 rounded-full mb-4">
+                        <span className="inline-block bg-blue-100 text-[#235E9D] text-sm md:text-lg px-3 py-1 rounded-full mb-4 font-medium">
                             Contact Us
                         </span>
 

@@ -33,7 +33,7 @@ export default function Hero() {
                             alt="Contact Hero Image"
                             width={1178}
                             height={1118}
-                            className="w-full h-auto"
+                            className="w-full h-auto py"
                             priority
                         />
                     </div>

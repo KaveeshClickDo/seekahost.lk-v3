@@ -18,7 +18,7 @@ export default async function sitemap() {
 
     // Hosting Services
     { path: '/business-web-hosting', changeFrequency: 'monthly', priority: 0.9 },
-    { path: '/cheap-web-hosting-with-cpanel', changeFrequency: 'monthly', priority: 0.9 },
+    { path: '/cheap-web-hosting', changeFrequency: 'monthly', priority: 0.9 },
     // { path: '/nodejs-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/small-business-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/agency-hosting', changeFrequency: 'monthly', priority: 0.8 },

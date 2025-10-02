@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import DomainSearchHomeHero from '../home/DomainSearchHomeHero';
 
 export default function Hero() {
     return (
@@ -21,19 +22,11 @@ export default function Hero() {
                     </h1>
 
                     <p className="mt-6">
-                       Transferring your domain shouldn’t be complicated. We make it easy with a seamless process, zero downtime, and no hidden fees. Enjoy full control, transparent pricing, and world-class support when you move your domain to us.
+                        Transferring your domain shouldn’t be complicated. We make it easy with a seamless process, zero downtime, and no hidden fees. Enjoy full control, transparent pricing, and world-class support when you move your domain to us.
                     </p>
 
-                    <div className="mt-6 flex items-center bg-white rounded-full pl-4 shadow-md w-full max-w-lg">
-                        <input
-                            id="searchDomain"
-                            type="text"
-                            placeholder="Search for a domain..."
-                            className="flex-grow outline-none text-black px-2"
-                        />
-                        <button className="bg-[#0081FF] text-white font-bold leading-4 px-5 md:px-10 py-4 rounded-full hover:bg-blue-600 transition">
-                            Search
-                        </button>
+                    <div className="max-w-lg mx-auto my-10">
+                        <DomainSearchHomeHero />
                     </div>
 
                     <div className="mt-4 grid grid-cols-2 xl:grid-cols-4 gap-4">
@@ -63,7 +56,7 @@ export default function Hero() {
                         alt="Hero Image"
                         width={1128}
                         height={1000}
-                        className="w-full"
+                        className="w-full xl:pb-20"
                         priority
                     />
                 </div>

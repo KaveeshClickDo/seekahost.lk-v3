@@ -29,7 +29,9 @@ export default function BusinessWebHosting() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <PackagesPrices />
+            <div id="package-prices-section">
+                <PackagesPrices />
+            </div>
             <PeopleCards />
             <OrderNow1 />
             <ScreenshotSlider />

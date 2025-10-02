@@ -48,7 +48,7 @@ Default Language: ${routing.defaultLocale}
 
 ### Hosting Services
 - Business Web Hosting: ${baseUrl}/business-web-hosting
-- Cheap Web Hosting with cPanel: ${baseUrl}/cheap-web-hosting-with-cpanel
+- Cheap Web Hosting with cPanel: ${baseUrl}/cheap-web-hosting
 - Small Business Hosting: ${baseUrl}/small-business-hosting
 - Agency Hosting: ${baseUrl}/agency-hosting
 - Hosting Migration: ${baseUrl}/hosting-migration

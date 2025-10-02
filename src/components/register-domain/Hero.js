@@ -56,7 +56,7 @@ export default function Hero() {
                         alt={t('registerDomainImageAlt')}
                         width={1254}
                         height={1038}
-                        className="w-full"
+                        className="w-full xl:pb-20"
                         priority
                     />
                 </div>

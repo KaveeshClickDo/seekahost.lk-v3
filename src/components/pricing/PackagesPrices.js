@@ -251,7 +251,7 @@ export default function PackagesPrices() {
     };
 
     return (
-        <section className="relative w-full py-12">
+        <section className="relative w-full py-5">
             <div className="relative z-1 max-w-7xl mx-auto px-7 text-center md:mt-10">
                 <h2 className="text-2xl md:text-[40px] font-bold mb-6 text-[#042552]">
                     Start Hosting at unbeatable prices

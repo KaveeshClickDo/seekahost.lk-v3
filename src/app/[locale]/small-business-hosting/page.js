@@ -27,7 +27,9 @@ export default function SmallBusinessHosting() {
             <Navbar2 /> */}
             <Header />
             <Hero />
-            <PackagesPrices />
+            <div id="package-prices-section">
+                <PackagesPrices />
+            </div>
             <Video />
             <Solution />
             <PeopleCards />

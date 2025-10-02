@@ -7,7 +7,7 @@ export default function CTA() {
     return (
         <section className="w-full">
             <div className="flex justify-center items-center pb-20">
-                <div className="relative bg-[#0A488A] rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg">
+                <div className="relative bg-[#0A488A] rounded-3xl px-4 md:px-16 w-full max-w-4xl flex flex-col md:flex-row items-center md:justify-between shadow-lg mx-1">
 
 
                     <div className="text-white md:w-2/3 py-10 md:py-16">

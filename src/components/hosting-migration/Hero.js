@@ -69,7 +69,7 @@ export default function Hero() {
                         alt="Hero Image"
                         width={1280}
                         height={1071}
-                        className="w-full"
+                        className="w-full xl:pb-20"
                         priority
                     />
                 </div>

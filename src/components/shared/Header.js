@@ -436,7 +436,7 @@ export default function Header() {
                                 </div>
                             </Link>
 
-                            <Link href="/cheap-web-hosting-with-cpanel" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
+                            <Link href="/cheap-web-hosting" className="flex items-start block px-4 py-2 hover:bg-gray-100 text-lg font-medium" onClick={() => setMobileMenuOpen(false)}>
                                 <div className="mr-3 text-blue-500 flex-shrink-0">
                                     <Image
                                         src="/images/shared/cheap-cpanel-hosting-white.svg"

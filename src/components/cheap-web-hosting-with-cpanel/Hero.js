@@ -73,7 +73,7 @@ export default function Hero() {
                         alt={t('cheapHostingImageAlt')}
                         width={1287}
                         height={1141}
-                        className="w-full"
+                        className="w-full xl:pb-20"
                         priority
                     />
                 </div>

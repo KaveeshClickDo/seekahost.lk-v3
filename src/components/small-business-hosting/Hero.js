@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import SeePlansButton from '../shared/SeePlansButtons';
 
 export default function Hero() {
     return (
@@ -24,9 +25,11 @@ export default function Hero() {
                         Launch, grow, and manage your business website with confidence. Our hosting plans are tailored for small businesses that need speed, security, and reliability—without the hefty price tag. Get everything you need to succeed online, from free SSL to expert support.
                     </p>
 
-                    <button className="bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7">
-                        Get Started
-                    </button>
+                    <SeePlansButton
+                        text="Start Hosting"
+                        baseClasses={true}
+                        className="inline-block bg-white text-[#0066CC] font-bold border border-none px-10 py-2 rounded-md hover:bg-gray-200 transition-colors cursor-pointer mt-7"
+                    />
 
                 </div>
 
@@ -36,7 +39,7 @@ export default function Hero() {
                         alt="Hero Image"
                         width={1292}
                         height={1168}
-                        className="w-full"
+                        className="w-full xl:pb-20"
                         priority
                     />
                 </div>

@@ -27,7 +27,6 @@ export const siteSchema = {
       "description": "Professional Web Hosting Services and Domain Registration",
       "foundingDate": "2019",
       "url": `${BASE_URL}/`,
-      "telephone": "+443300581995",
       "email": "support@seekahost.co.uk",
       "address": {
         "@type": "PostalAddress",
@@ -39,14 +38,12 @@ export const siteSchema = {
         {
           "@type": "ContactPoint",
           "contactType": "customer service",
-          "telephone": "+443300581995",
           "email": "support@seekahost.co.uk",
           "availableLanguage": "English"
         },
         {
           "@type": "ContactPoint",
           "contactType": "sales",
-          "telephone": "+443300581995",
           "email": "sales@seekahost.co.uk",
           "availableLanguage": "English"
         }
@@ -125,9 +122,7 @@ export const siteSchema = {
       "areaServed": ["GB", "UK", "United Kingdom"],
       "availableChannel": {
         "@type": "ServiceChannel",
-        "serviceUrl": `${BASE_URL}/`,
-        "serviceSmsNumber": "+443300581995",
-        "servicePhone": "+443300581995"
+        "serviceUrl": `${BASE_URL}/`
       }
     },
     {
