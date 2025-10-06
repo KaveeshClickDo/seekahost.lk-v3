@@ -341,9 +341,11 @@ const BlogPost = async (props) => {
                                                         <h3 className="text-lg font-semibold text-gray-900">
                                                             Written by {post.authorDetails?.authorName || 'Unknown'}
                                                         </h3>
-                                                        <p className="text-gray-600">
-                                                            {post.authorDetails?.authorRole || 'No role available'}
-                                                        </p>
+                                                        {post.authorDetails?.authorRole && (
+                                                            <p className="text-gray-600">
+                                                                {post.authorDetails.authorRole}
+                                                            </p>
+                                                        )}
                                                     </div>
                                                 </div>
                                             )}

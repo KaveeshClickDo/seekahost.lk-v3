@@ -52,6 +52,12 @@ export default async function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        {/* Clicky Analytics */}
+        <script 
+          async 
+          data-id="101280487" 
+          src="//static.getclicky.com/js"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
