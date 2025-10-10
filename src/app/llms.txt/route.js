@@ -51,6 +51,7 @@ Default Language: ${routing.defaultLocale}
 - Cheap Web Hosting with cPanel: ${baseUrl}/cheap-web-hosting
 - Small Business Hosting: ${baseUrl}/small-business-hosting
 - Agency Hosting: ${baseUrl}/agency-hosting
+- Business Email Hosting: ${baseUrl}/business-email-hosting
 - Hosting Migration: ${baseUrl}/hosting-migration
 - London Server Hosting: ${baseUrl}/london-server-hosting
 

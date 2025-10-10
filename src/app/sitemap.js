@@ -22,6 +22,7 @@ export default async function sitemap() {
     // { path: '/nodejs-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/small-business-hosting', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/agency-hosting', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/business-email-hosting', changeFrequency: 'monthly', priority: 0.9 },
     { path: '/hosting-migration', changeFrequency: 'monthly', priority: 0.7 },
     { path: '/london-server-hosting', changeFrequency: 'monthly', priority: 0.7 },
 
@@ -61,13 +62,60 @@ export default async function sitemap() {
     // Get categories from blogs if they exist
     const categoriesResponse = await fetchPosts();
     const uniqueCategories = [...new Set(
-      categoriesResponse.data?.flatMap(post => 
+      categoriesResponse.data?.flatMap(post =>
         post.postPrimary?.categories || []
       ).filter(Boolean) || []
     )];
     // Generate sitemap entries for all locales
     const sitemapEntries = [];
-    
+
+    // 🟢 Base routes only (no locale prefixes)
+    routes.forEach(route => {
+      const url =
+        route.path === ''
+          ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
+          : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
+
+      sitemapEntries.push({
+        url,
+        lastModified: new Date(),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+      });
+    });
+
+    // 🟢 Blog posts (base only)
+    if (allBlogs.data?.length) {
+      allBlogs.data.forEach(blog => {
+        sitemapEntries.push({
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}/${blog.postSlug}`,
+          lastModified: new Date(blog.updatedAt || blog.publishedAt),
+          changeFrequency: 'weekly',
+          priority: 1,
+        });
+      });
+    }
+
+    // 🟢 Category pages (base only)
+    if (uniqueCategories.length) {
+      uniqueCategories.forEach(category => {
+        const categorySlug = category
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/\s+/g, '-');
+
+        sitemapEntries.push({
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}/blog/category/${categorySlug}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.9,
+        });
+      });
+    }
+
+    // 🔴 Locale-based code (commented out for now)
+    /*
     routing.locales.forEach(locale => {
       // Add static routes
       routes.forEach(route => {
@@ -75,16 +123,16 @@ export default async function sitemap() {
         
         if (locale === routing.defaultLocale) {
           // For default locale (en), don't include locale prefix
-          url = route.path === '' 
+          url = route.path === ''
             ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
             : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
         } else {
           // For non-default locales, include locale prefix
-          url = route.path === '' 
+          url = route.path === ''
             ? `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`
             : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`;
         }
-          
+
         sitemapEntries.push({
           url,
           lastModified: new Date(),
@@ -118,7 +166,7 @@ export default async function sitemap() {
         uniqueCategories.forEach(category => {
           let categoryUrl;
           const categorySlug = category.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
-          
+
           if (locale === routing.defaultLocale) {
             categoryUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/blog/category/${categorySlug}`;
           } else {
@@ -134,29 +182,46 @@ export default async function sitemap() {
         });
       }
     });
+    */
 
     return sitemapEntries;
 
   } catch (error) {
     console.error('Error generating sitemap:', error);
 
-    // Generate basic sitemap without blogs if fetch fails
+    // 🟢 Fallback: Base routes only
     const sitemapEntries = [];
-    
+
+    routes.forEach(route => {
+      const url =
+        route.path === ''
+          ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
+          : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
+
+      sitemapEntries.push({
+        url,
+        lastModified: new Date(),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+      });
+    });
+
+    // 🔴 Fallback: Locale-based sitemap (commented out)
+    /*
     routing.locales.forEach(locale => {
       routes.forEach(route => {
         let url;
         
         if (locale === routing.defaultLocale) {
-          url = route.path === '' 
+          url = route.path === ''
             ? `${process.env.NEXT_PUBLIC_BASE_URL}/`
             : `${process.env.NEXT_PUBLIC_BASE_URL}${route.path}`;
         } else {
-          url = route.path === '' 
+          url = route.path === ''
             ? `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`
             : `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}${route.path}`;
         }
-          
+
         sitemapEntries.push({
           url,
           lastModified: new Date(),
@@ -165,6 +230,7 @@ export default async function sitemap() {
         });
       });
     });
+    */
 
     return sitemapEntries;
   }

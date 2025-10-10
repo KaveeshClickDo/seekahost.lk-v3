@@ -320,9 +320,9 @@ export default function Header() {
                     <Support />
                 )}
             </div>
-            <div className="relative p-1">
+            {/* <div className="relative p-1">
                 <LanguageSelector />
-            </div>
+            </div> */}
             <SignInDropdown />
 
         </div>
